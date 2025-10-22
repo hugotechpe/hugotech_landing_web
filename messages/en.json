@@ -1,0 +1,23 @@
+{
+  "Home": {
+    "title.make": "Make",
+    "title.beautiful": "beautiful",
+    "title.suffix": "websites regardless of your design experience.",
+    "subtitle": "Beautiful, fast and modern React UI library.",
+    "cta.docs": "Documentation",
+    "cta.github": "GitHub",
+    "snippet": "Get started by editing {file}"
+  },
+  "Footer": {
+    "poweredBy": "Powered by",
+    "brand": "HeroUI"
+  },
+  "Navbar": {
+    "home": "Home",
+    "docs": "Docs",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "about": "About",
+    "search": "Search..."
+  }
+}
