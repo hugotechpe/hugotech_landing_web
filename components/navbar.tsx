@@ -12,7 +12,6 @@ import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
 import { Input } from "@heroui/input";
 import { link as linkStyles } from "@heroui/theme";
-import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
@@ -25,11 +24,16 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
+import { useTranslations } from "next-intl";
+import { Link as IntlLink } from "@/i18n/navigation";
+import { LocaleSwitch } from "@/components/locale-switch";
 
 export const Navbar = () => {
+  const t = useTranslations("Navbar");
+
   const searchInput = (
     <Input
-      aria-label="Search"
+      aria-label={t("search")}
       classNames={{
         inputWrapper: "bg-default-100",
         input: "text-sm",
@@ -40,7 +44,7 @@ export const Navbar = () => {
         </Kbd>
       }
       labelPlacement="outside"
-      placeholder="Search..."
+      placeholder={t("search")}
       startContent={
         <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
       }
@@ -52,24 +56,23 @@ export const Navbar = () => {
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
+          <IntlLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
             <p className="font-bold text-inherit">ACME</p>
-          </NextLink>
+          </IntlLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <NextLink
+              <IntlLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
-                color="foreground"
-                href={item.href}
+                href={"/"}
               >
-                {item.label}
-              </NextLink>
+                {t(item.label.toLowerCase())}
+              </IntlLink>
             </NavbarItem>
           ))}
         </ul>
@@ -90,6 +93,7 @@ export const Navbar = () => {
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
+          <LocaleSwitch />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem className="hidden md:flex">

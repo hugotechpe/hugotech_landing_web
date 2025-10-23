@@ -1,0 +1,27 @@
+{
+  "Home": {
+    "title": {
+      "make": "Crea",
+      "beautiful": "sitios hermosos",
+      "suffix": "sin importar tu experiencia en diseño."
+    },
+    "subtitle": "Librería de UI para React: bella, rápida y moderna.",
+    "cta": {
+      "docs": "Documentación",
+      "github": "GitHub"
+    },
+    "snippet": "Empieza editando {file}"
+  },
+  "Footer": {
+    "poweredBy": "Desarrollado por",
+    "brand": "HeroUI"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "docs": "Docs",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "search": "Buscar..."
+  }
+}

@@ -6,10 +6,13 @@ import * as React from "react";
 import { HeroUIProvider } from "@heroui/system";
 import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { NextIntlClientProvider } from "next-intl";
 
 export interface ProvidersProps {
   children: React.ReactNode;
   themeProps?: ThemeProviderProps;
+  locale: string;
+  messages: any;
 }
 
 declare module "@react-types/shared" {
@@ -20,12 +23,21 @@ declare module "@react-types/shared" {
   }
 }
 
-export function Providers({ children, themeProps }: ProvidersProps) {
+export function Providers({
+  children,
+  themeProps,
+  locale,
+  messages,
+}: ProvidersProps) {
   const router = useRouter();
 
   return (
-    <HeroUIProvider navigate={router.push}>
-      <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-    </HeroUIProvider>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <HeroUIProvider navigate={router.push}>
+        <NextThemesProvider {...themeProps}>
+            {children}
+        </NextThemesProvider>
+      </HeroUIProvider>
+    </NextIntlClientProvider>
   );
 }

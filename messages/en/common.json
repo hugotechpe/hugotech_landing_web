@@ -1,11 +1,15 @@
 {
   "Home": {
-    "title.make": "Make",
-    "title.beautiful": "beautiful",
-    "title.suffix": "websites regardless of your design experience.",
+    "title": {
+      "make": "Make",
+      "beautiful": "beautiful",
+      "suffix": "websites regardless of your design experience."
+    },
     "subtitle": "Beautiful, fast and modern React UI library.",
-    "cta.docs": "Documentation",
-    "cta.github": "GitHub",
+    "cta": {
+      "docs": "Documentation",
+      "github": "GitHub"
+    },
     "snippet": "Get started by editing {file}"
   },
   "Footer": {
