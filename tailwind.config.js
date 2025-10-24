@@ -9,6 +9,23 @@ const config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#1D6362",
+        },
+        secondary: {
+          DEFAULT: "rgba(255, 255, 255, 0.1)",
+        },
+        brand: {
+          DEFAULT: "#F6CC76",
+        },
+        dark: {
+          DEFAULT: "#1E1E1E",
+        },
+      },
+      maxWidth: {
+        '1400': '1400px', // ahora puedes usar max-w-1400
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
