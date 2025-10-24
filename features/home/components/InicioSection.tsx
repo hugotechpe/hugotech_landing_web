@@ -61,6 +61,7 @@ export function InicioSection() {
                 href="#empresas"
                 size="lg"
                 color="primary"
+                variant="solid"
                 className="bg-[#115C5B] text-white"
                 onPress={(e) => {
 
@@ -87,14 +88,14 @@ export function InicioSection() {
                 alt="Liderazgo en tecnología"
                 width={368}
                 height={170}
-                className="absolute -right-20 bottom-5 md:right-2 md:-bottom-10"
+                className="hidden sm:block absolute -right-20 bottom-5 md:right-2 md:-bottom-10"
               />
               <Image
                 src="/images/lidertech-1.png"
                 alt="Desarrolla tu talento"
                 width={368}
                 height={170}
-                className="absolute -left-20 top-10 md:-left-25 md:top-25"
+                className="hidden sm:block absolute -left-20 top-10 md:-left-25 md:top-25"
               />
             </div>
           </div>

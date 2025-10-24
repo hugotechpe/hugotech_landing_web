@@ -3,6 +3,8 @@ import { MePresentoSection } from "@/features/home/components/MePresentoSection"
 import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
+import { PilaresSection } from "@/features/home/components/PilaresSection";
+
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
       <InicioSection />
       <MePresentoSection />
       <EmpresasSection />
+      <PilaresSection />
       <CoachingSection />
       <TestimoniosSection />
     </>

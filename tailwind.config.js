@@ -22,6 +22,9 @@ const config = {
         dark: {
           DEFAULT: "#1E1E1E",
         },
+        customgray: {
+          DEFAULT: "#333333",
+        },
       },
       maxWidth: {
         '1400': '1400px', // ahora puedes usar max-w-1400
