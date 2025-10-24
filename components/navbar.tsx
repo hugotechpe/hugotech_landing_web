@@ -16,15 +16,15 @@ export default function HerohNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    { label: "Inicio", href: "/" },
+    { label: "Inicio", href: "#inicio" },
     { label: "Me Presento", href: "#mepresento" },
-    { label: "Empresas", href: "/empresas" },
+    { label: "Empresas", href: "#empresas" },
     { label: "Coaching con Causa", href: "#cccausa" },
     { label: "Testimonios", href: "#testimonios" }
   ];
 
   return (
-    <header className='bg-primary shadow-sm'>
+    <header className='bg-primary shadow-sm border-b border-[#115C5B]'>
       <Navbar 
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
@@ -57,7 +57,7 @@ export default function HerohNavbar() {
               <Link
                 color="foreground"
                 href={item.href}
-                className="text-sm font-medium hover:text-brand transition-colors"
+                className="text-sm font-medium text-white hover:text-brand transition-colors"
               >
                 {item.label}
               </Link>
