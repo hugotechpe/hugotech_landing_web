@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
+import { motion } from "framer-motion";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 
 export function InicioSection() {
@@ -79,9 +80,10 @@ export function InicioSection() {
             </div>
           </div>
 
-          {/* Columna derecha: imágenes */}
+          {/* Columna derecha: imagen con tags flotantes */}
           <div className="relative">
             <div className="relative w-full max-w-md md:max-w-lg mx-auto">
+              {/* Imagen principal */}
               <Image
                 src="/images/image1.png"
                 alt="Retrato de Hugo Casanova, mentor y coach tech"
@@ -90,20 +92,106 @@ export function InicioSection() {
                 priority
                 className="rounded-xl object-cover w-full h-auto"
               />
-              <Image
-                src="/images/desarrollatutalento.png"
-                alt="Liderazgo en tecnología"
-                width={368}
-                height={170}
-                className="hidden sm:block absolute -right-20 bottom-5 md:right-2 md:-bottom-10"
-              />
-              <Image
-                src="/images/lidertech-1.png"
-                alt="Desarrolla tu talento"
-                width={368}
-                height={170}
-                className="hidden sm:block absolute -left-20 top-10 md:-left-25 md:top-25"
-              />
+              
+              {/* Tags Flotantes Animados */}
+              
+              {/* Tag 1: Fortalece tu líder interno - Top Left */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="hidden md:block absolute -left-20 top-16 z-10"
+              >
+                <motion.div
+                  animate={{ 
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="bg-brand rounded-full p-3 flex-shrink-0">
+                      <svg className="w-6 h-6 text-customgray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-customgray text-sm">Fortalece tu líder interno</h3>
+                      <p className="text-xs text-gray-600 mt-1">Guía tu carrera profesional hacia el crecimiento.</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              {/* Tag 2: Pule/libera tu talento - Bottom Right */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+                className="hidden md:block absolute -right-20 bottom-24 z-10"
+              >
+                <motion.div
+                  animate={{ 
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                  className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="bg-primary/10 rounded-full p-3 flex-shrink-0">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-customgray text-sm">Pule/libera tu talento</h3>
+                      <p className="text-xs text-gray-600 mt-1">Te acompaño a desenvolverte en el mundo tech.</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              {/* Tag 3: Coaching Anti-Burnout - Top Right */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1, duration: 0.6 }}
+                className="hidden lg:block absolute -right-24 top-5 z-10"
+              >
+                <motion.div
+                  animate={{ 
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2
+                  }}
+                  className="bg-white rounded-2xl shadow-xl p-4 max-w-[200px]"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
+                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-customgray text-sm">Anti-Burnout</h3>
+                      <p className="text-xs text-gray-600 mt-1">Carrera sostenible</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
