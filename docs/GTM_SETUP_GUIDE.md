@@ -74,7 +74,43 @@ Se dispara en clics de botones CTA:
 
 ---
 
-## 🛠️ Configuración en Google Tag Manager
+## � OPCIÓN RÁPIDA: Importar Configuración Completa
+
+**La forma más rápida de configurar todo** es importar el contenedor pre-configurado:
+
+### Paso 1: Importar JSON en GTM
+
+1. Ve a **Google Tag Manager** → https://tagmanager.google.com/
+2. Selecciona tu contenedor `GTM-5HH6QTFK`
+3. Haz clic en **Admin** (⚙️ abajo a la izquierda)
+4. En la columna **Contenedor**, haz clic en **Importar contenedor**
+5. **Selecciona archivo**: `/docs/GTM-5HH6QTFK_hugotech_container.json`
+6. **Elegir espacio de trabajo**: Selecciona "Existing" → "Default Workspace"
+7. **Elegir opción de importación**: Selecciona **Combinar** (Merge) con opción **Sobrescribir** (Overwrite)
+8. **Confirmar** → Haz clic en **Importar**
+
+✅ **Listo!** Todas las Variables, Triggers y Tags están configurados automáticamente.
+
+### Paso 2: Revisar la Importación
+
+Verás que se importaron:
+- ✅ **7 Tags** (GA4 Config + 6 eventos)
+- ✅ **6 Triggers** (All Pages + 5 eventos personalizados)
+- ✅ **9 Variables** del Data Layer
+- ✅ **11 Variables integradas** (Built-in)
+
+### Paso 3: Publicar el Contenedor
+
+1. Haz clic en **Enviar** (arriba a la derecha)
+2. Nombre de versión: `v1.0 - HugoTech Tracking Completo`
+3. Descripción: `Tracking de conversiones Calendly + CTAs + Scroll`
+4. **Publicar**
+
+---
+
+## 🛠️ OPCIÓN MANUAL: Configuración Paso a Paso
+
+Si prefieres configurar manualmente (o entender qué hace cada cosa):
 
 ### Paso 1: Configurar Variables del Data Layer
 
