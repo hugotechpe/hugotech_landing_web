@@ -7,6 +7,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import TestimonioCard from "@/components/cards/TestimonioCard";
 import { motion } from "framer-motion";
+import { useSectionTracking } from "@/hooks/useGTMTracking";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -20,6 +21,13 @@ const staggerContainer = {
 
 export function TestimoniosSection() {
   const messages = useMessages() as any;
+
+  // Track when user scrolls to testimonials section
+  useSectionTracking({
+    sectionId: "testimonios",
+    sectionName: "testimonials_section",
+    threshold: 0.4,
+  });
   const section = messages?.Sections?.Testimonios ?? {};
   const metrics = section?.metrics ?? [];
   const title = section?.title ?? "Historias que Inspiran y Transforman 🌱✨";

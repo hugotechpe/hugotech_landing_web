@@ -8,6 +8,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans, fontRubik } from "@/config/fonts";
 import { getMessages } from "next-intl/server";
+import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hugotech.pe'),
@@ -86,7 +87,9 @@ export default async function RootLayout({
 
   return (
     <html suppressHydrationWarning lang={locale} className="motion-safe:scroll-smooth motion-reduce:scroll-auto">
-      <head />
+      <head>
+        <GoogleTagManager />
+      </head>
       <body
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
@@ -94,6 +97,7 @@ export default async function RootLayout({
           fontRubik.variable,
         )}
       >
+        <GoogleTagManagerNoScript />
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }} locale={locale} messages={messages}>
           {children}
         </Providers>

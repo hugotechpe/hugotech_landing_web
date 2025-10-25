@@ -1,7 +1,12 @@
 "use client";
 
-import React from "react";
-import { InlineWidget } from "react-calendly";
+import React, { useEffect } from "react";
+import { InlineWidget, useCalendlyEventListener } from "react-calendly";
+import { 
+  trackCalendlyWidgetLoaded, 
+  trackCalendlyDateSelected, 
+  trackCalendlyEventScheduled 
+} from "@/lib/gtm";
 
 interface CalendlyEmbedProps {
   url?: string;
@@ -27,6 +32,26 @@ export function CalendlyEmbed({
   utm,
   height = "700px",
 }: CalendlyEmbedProps) {
+  
+  // Track when widget loads
+  useEffect(() => {
+    trackCalendlyWidgetLoaded();
+  }, []);
+
+  // Listen to Calendly events
+  useCalendlyEventListener({
+    onDateAndTimeSelected: () => {
+      trackCalendlyDateSelected();
+    },
+    onEventScheduled: (e) => {
+      trackCalendlyEventScheduled(
+        undefined,
+        e.data?.payload?.invitee?.uri,
+        e.data?.payload?.event?.uri
+      );
+    },
+  });
+
   return (
     <div className="w-full rounded-2xl overflow-hidden shadow-lg">
       <InlineWidget

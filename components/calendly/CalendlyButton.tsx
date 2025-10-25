@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useCalendlyEventListener, InlineWidget } from "react-calendly";
+import { trackCTAClick, trackCalendlyEventScheduled, trackCalendlyDateSelected } from "@/lib/gtm";
 
 interface CalendlyButtonProps {
   url?: string;
@@ -40,15 +41,22 @@ export function CalendlyButton({
   const [isOpen, setIsOpen] = React.useState(false);
 
   useCalendlyEventListener({
-    onEventScheduled: () => {
+    onDateAndTimeSelected: () => {
+      trackCalendlyDateSelected();
+    },
+    onEventScheduled: (e) => {
       setIsOpen(false);
-      // Opcional: tracking analytics
-      console.log("¡Evento agendado exitosamente!");
+      trackCalendlyEventScheduled(
+        undefined,
+        e.data?.payload?.invitee?.uri,
+        e.data?.payload?.event?.uri
+      );
     },
   });
 
   const handleClick = () => {
     setIsOpen(true);
+    trackCTAClick("calendly_button", text, url);
   };
 
   // Determinar clases de Tailwind basadas en props

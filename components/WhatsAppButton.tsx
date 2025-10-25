@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackWhatsAppClick } from "@/lib/gtm";
 
 interface WhatsAppButtonProps {
   phoneNumber?: string;
@@ -30,6 +31,10 @@ export function WhatsAppButton({
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+  const handleClick = () => {
+    trackWhatsAppClick(message);
+  };
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -55,6 +60,7 @@ export function WhatsAppButton({
               href={whatsappUrl}
               isExternal
               isIconOnly
+              onClick={handleClick}
               className="h-16 w-16 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white shadow-2xl hover:shadow-3xl transition-all"
               aria-label="Contactar por WhatsApp"
             >

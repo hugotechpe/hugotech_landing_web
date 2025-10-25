@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { CalendlyEmbed } from "@/components/calendly/CalendlyEmbed";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { motion } from "framer-motion";
+import { useSectionTracking } from "@/hooks/useGTMTracking";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -14,6 +15,13 @@ const fadeInUp = {
 
 export function AgendaSection() {
   const t = useTranslations("Sections.Agenda");
+
+  // Track when user scrolls to this section
+  useSectionTracking({
+    sectionId: "cita",
+    sectionName: "agenda_section",
+    threshold: 0.3,
+  });
 
   return (
     <section
