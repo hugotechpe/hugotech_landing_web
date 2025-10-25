@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { useCalendlyEventListener, InlineWidget } from "react-calendly";
+import React, { useEffect } from "react";
+import { InlineWidget } from "react-calendly";
 import { trackCTAClick, trackCalendlyEventScheduled, trackCalendlyDateSelected } from "@/lib/gtm";
 
 interface CalendlyButtonProps {
@@ -40,19 +40,41 @@ export function CalendlyButton({
 }: CalendlyButtonProps) {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  useCalendlyEventListener({
-    onDateAndTimeSelected: () => {
-      trackCalendlyDateSelected();
-    },
-    onEventScheduled: (e) => {
-      setIsOpen(false);
-      trackCalendlyEventScheduled(
-        undefined,
-        e.data?.payload?.invitee?.uri,
-        e.data?.payload?.event?.uri
-      );
-    },
-  });
+  // Listen to Calendly PostMessage events
+  useEffect(() => {
+    const handleCalendlyEvent = (e: MessageEvent) => {
+      if (e.origin !== "https://calendly.com") return;
+
+      const eventData = e.data;
+
+      if (eventData.event) {
+        console.log("[Calendly Event - Popup]", eventData.event, eventData);
+
+        switch (eventData.event) {
+          case "calendly.date_and_time_selected":
+            trackCalendlyDateSelected();
+            break;
+          case "calendly.event_scheduled":
+            trackCalendlyEventScheduled(
+              eventData.payload?.event?.uri,
+              eventData.payload?.invitee?.uri,
+              eventData.payload?.event?.start_time
+            );
+            // Cerrar modal después de agendar
+            setTimeout(() => setIsOpen(false), 2000);
+            break;
+        }
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener("message", handleCalendlyEvent);
+    }
+
+    return () => {
+      window.removeEventListener("message", handleCalendlyEvent);
+    };
+  }, [isOpen]);
 
   const handleClick = () => {
     setIsOpen(true);
