@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { 
   Navbar, 
   NavbarBrand, 
@@ -70,9 +71,12 @@ export default function HeroNavbar() {
           />
           <NavbarBrand>
             <Link href="/">
-              <img 
+              <Image 
                 src="https://hugotech.pe/wp-content/uploads/2025/08/1Recurso-1.svg" 
                 alt="HugoTech Logo" 
+                width={120}
+                height={36}
+                priority
                 className="h-6 md:h-9 w-auto"
               />
             </Link>
