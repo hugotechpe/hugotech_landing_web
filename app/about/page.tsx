@@ -7,6 +7,9 @@ import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 
+// Metadata se exporta desde un archivo separado para client components
+// Ver: app/about/metadata.ts
+
 export default function AboutPage() {
   return (
     <main className="bg-white">
