@@ -49,7 +49,7 @@ export default function HeroNavbar() {
   
   menuItems.unshift({
     label: "Mi Historia",
-    href: "/about",
+    href: `/${locale}/about`,
   });
 
   return (
