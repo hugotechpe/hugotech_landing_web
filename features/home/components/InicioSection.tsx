@@ -46,7 +46,7 @@ export function InicioSection() {
               <CalendlyButton 
                 text={t("ctas.mentoria")}
                 variant="solid"
-                className="bg-white text-primary hover:bg-gray-100"
+                color="default"
                 size="lg"
                 utm={{
                   utmSource: "hugotech.pe",
