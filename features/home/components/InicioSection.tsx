@@ -4,12 +4,14 @@ import React from "react";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function InicioSection() {
+  const t = useTranslations("Sections.Inicio");
   return (
     <section
       id="inicio"
-      aria-label="Inicio"
+      aria-label={t("title")}
       className="scroll-mt-0 bg-primary"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
@@ -17,27 +19,20 @@ export function InicioSection() {
           {/* Columna izquierda: contenido y CTA */}
           <div>
             <p className="inline-flex items-center rounded-full bg-brand text-gray-900 px-4 py-2 text-sm">
-              Propósito
+              {t("chipLabel")}
             </p>
 
             <h2 className="mt-4 text-3xl md:text-4xl font-heading font-bold text-white">
-              Forma y potencia tu talento o el de tu equipo en el mundo tech
+              {t("title")}
             </h2>
 
             <div className="mt-6 space-y-4 text-white leading-relaxed text-xl">
+              <p>{t("paragraphs.p1")}</p>
               <p>
-                Te acompaño a crecer con propósito: ya sea en sesiones
-                personalizadas para tu desarrollo profesional o en programas
-                para empresas que buscan equipos más conectados, humanos y de
-                alto rendimiento.
-              </p>
-              <p>
-                En <strong>HugoTech</strong>, integro
-                {" "}
-                <strong>mentoring, coaching y agilidad</strong> para que
-                desarrolles habilidades humanas que impulsen tus habilidades
-                técnicas, fortalezcas tu liderazgo interior y generes impacto
-                real desde la confianza y el propósito.
+                {t.rich("paragraphs.p2", {
+                  brand: (chunks) => <strong>{chunks}</strong>,
+                  b: (chunks) => <strong>{chunks}</strong>,
+                })}
               </p>
             </div>
 
@@ -53,7 +48,7 @@ export function InicioSection() {
 
                 }}
               >
-                Mentoría 1 a 1
+                {t("ctas.mentoria")}
               </Button>
 
               <Button
@@ -67,7 +62,7 @@ export function InicioSection() {
 
                 }}
               >
-                Soluciones para empresas
+                {t("ctas.empresas")}
               </Button>
             </div>
           </div>

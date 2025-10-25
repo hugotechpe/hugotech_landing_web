@@ -22,7 +22,9 @@
     "pricing": "Precios",
     "blog": "Blog",
     "about": "Acerca de",
-    "search": "Buscar..."
+    "search": "Buscar...",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   },
   "Sections": {
     "Testimonios": {
@@ -148,6 +150,106 @@
         "p2": "En nuestra sesión, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Ya sea que estés empezando en tecnología o quieras rediseñar tu rumbo, construiremos juntos un plan claro y real."
       },
       "ctaLabel": "Calendario"
+    },
+    "Inicio": {
+      "chipLabel": "Propósito",
+      "title": "Forma y potencia tu talento o el de tu equipo en el mundo tech",
+      "paragraphs": {
+        "p1": "Te acompaño a crecer con propósito: ya sea en sesiones personalizadas para tu desarrollo profesional o en programas para empresas que buscan equipos más conectados, humanos y de alto rendimiento.",
+        "p2": "En <brand>HugoTech</brand>, integro <b>mentoring, coaching y agilidad</b> para que desarrolles habilidades humanas que impulsen tus habilidades técnicas, fortalezcas tu liderazgo interior y generes impacto real desde la confianza y el propósito."
+      },
+      "ctas": {
+        "mentoria": "Mentoría 1 a 1",
+        "empresas": "Soluciones para empresas"
+      }
+    },
+    "Empresas": {
+      "header": {
+        "title": "¿Listo para dar el siguiente paso?",
+        "intro": {
+          "p1": "Te acompaño a crecer con propósito —ya seas un joven talento que busca claridad en su camino tech, o una empresa que quiere potenciar la mentalidad, comunicación y liderazgo de su equipo.",
+          "p2": "A través de <sb>mentoring, coaching y agilidad</sb>, te ayudo a transformar tu potencial en acción, tu talento en confianza y tu crecimiento en impacto real."
+        }
+      },
+      "mentoriaCard": {
+        "title": "Mentoría 1 a 1",
+        "subtitle": "Potencia tu mentalidad tech y tu crecimiento profesional",
+        "p1": "Un espacio diseñado para acompañarte a desarrollar <b>claridad, dirección y propósito</b> en tu camino tecnológico.",
+        "p2": "Combinamos <b>coaching profesional, mentoring y agilidad</b> para alinear tus habilidades técnicas con tus habilidades humanas, y así avanzar con confianza y sentido.",
+        "resultsTitle": "Resultados que lograrás:",
+        "resultsItems": [
+          "Claridad sobre tu propósito, fortalezas y próximos pasos profesionales.",
+          "Mentalidad de crecimiento, autoliderazgo y enfoque continuo.",
+          "Estrategia personalizada según tu rol (backend, frontend, QA, PO, SM, líder técnico etc.).",
+          "Feedback individual para mejorar comunicación, productividad y marca profesional."
+        ],
+        "ctaLabel": "Agenda tu Sesión de Coaching",
+        "note": "Crecimiento no es solo avanzar, es hacerlo con propósito, enfoque y mentalidad expansiva."
+      },
+      "empresasCard": {
+        "title": "Programas para Empresas",
+        "subtitle": "Fortalece la mentalidad, comunicación y liderazgo de tu equipo",
+        "p1": "Diseñamos programas a medida para equipos de tecnología y empresas que buscan <b>alinear resultados con propósito</b>.",
+        "p2": "Integramos <b>coaching profesional, agilidad, comunicación efectiva y liderazgo</b> para crear equipos más autónomos, conectados y confiados.",
+        "resultsTitle": "Resultados que logrará tu equipo:",
+        "resultsItems": [
+          "Cultura de aprendizaje continuo y mentalidad de crecimiento.",
+          "Mejor comunicación, colaboración y autoconfianza.",
+          "Liderazgo humano, con claridad, dirección y propósito.",
+          "Equipos alineados a objetivos estratégicos con indicadores de impacto."
+        ],
+        "ctaLabel": "Agenda una llamada para conocer tus necesidades",
+        "note": "El mejor resultado se construye cuando las personas tienen claridad, herramientas y propósito compartido.",
+        "imageAlt": "Programas para empresas: mentalidad, comunicación y liderazgo en equipos tech"
+      },
+      "businessCard": {
+        "title": "Servicio Business",
+        "subtitle": "Equipos tech de alto rendimiento y cultura data-driven",
+        "p1": "Acompañamiento <b>técnico, cultural y estratégico</b> para equipos que buscan mejorar su colaboración, entregar software de calidad y alinearse con una cultura ágil, humana y basada en datos.",
+        "p2": "Integro enfoques de <b>Management 3.0, Agile Team Facilitation, Lean, Coaching Profesional y Data Thinking</b> para desarrollar equipos autónomos, conectados y orientados a resultados reales.",
+        "benefitsTitle": "Beneficios reales para tu empresa y tu equipo:",
+        "benefitsItems": [
+          "Construcción de equipos de alto rendimiento con propósito y autonomía.",
+          "Reducción de deuda técnica y mejora de la calidad de entregables.",
+          "Optimización de sprints y alineamiento entre producto, QA y liderazgo.",
+          "Cultura data-driven: decisiones basadas en métricas y aprendizaje continuo.",
+          "Talleres de cultura, agilidad y liderazgo consciente.",
+          "Roadmap y dashboard de evolución técnica y humana."
+        ],
+        "ctaLabel": "Conocer más sobre el Programa Business",
+        "note": "Equipos que confían, deciden con datos y entregan con propósito."
+      }
+    },
+    "CCCausa": {
+      "title": "Crecimiento con Propósito 🌍✨",
+      "subtitle": "Tu desarrollo profesional también genera impacto.",
+      "content": {
+        "p1": "En HugoTech, cada sesión individual tiene un impacto que va más allá de ti. Mientras fortaleces tu mentalidad, claridad y crecimiento profesional, también contribuyes a abrir puertas para otros.",
+        "pBold1": "El 100 % de los ingresos de las mentorías 1 a 1 se destinan a apoyar iniciativas que:",
+        "bullets": [
+          "Impulsan la educación tecnológica y el desarrollo de jóvenes talentos en Latinoamérica.",
+          "Promueven la inclusión digital y el acceso equitativo al conocimiento."
+        ],
+        "p2": "Fomentan la adopción responsable y el bienestar animal, porque la empatía también transforma.",
+        "invite": {
+          "pBold": "¿Conoces alguna ONG o proyecto tech que esté transformando vidas?",
+          "p": "Compártelo aquí y sumemos más causas a este movimiento."
+        }
+      },
+      "form": {
+        "ariaLabel": "Comparte una ONG o proyecto",
+        "input": {
+          "placeholder": "Sitio Web",
+          "ariaLabel": "Sitio Web",
+          "name": "url"
+        },
+        "submitLabel": "Enviar"
+      },
+      "images": {
+        "mainAlt": "Retrato de Hugo Casanova, mentor y coach tech",
+        "badgeRightAlt": "Liderazgo en tecnología",
+        "badgeLeftAlt": "Desarrolla tu talento"
+      }
     }
   }
 }

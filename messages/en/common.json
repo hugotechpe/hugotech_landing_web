@@ -22,7 +22,9 @@
     "pricing": "Pricing",
     "blog": "Blog",
     "about": "About",
-    "search": "Search..."
+    "search": "Search...",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Sections": {
     "Testimonios": {
@@ -148,6 +150,106 @@
         "p2": "In our session, I'll help you <b>clarify your goals, understand your strengths and create your next step with purpose</b>. Whether you're starting in tech or want to redesign your path, we'll co-create a clear and realistic plan."
       },
       "ctaLabel": "Calendar"
+    },
+    "Inicio": {
+      "chipLabel": "Purpose",
+      "title": "Shape and boost your talent or your team's in the tech world",
+      "paragraphs": {
+        "p1": "I help you grow with purpose—whether in personalized sessions for your professional development or in programs for companies that seek more connected, human and high-performing teams.",
+        "p2": "At <brand>HugoTech</brand>, I integrate <b>mentoring, coaching and agility</b> so you develop human skills that empower your technical skills, strengthen your inner leadership and generate real impact from trust and purpose."
+      },
+      "ctas": {
+        "mentoria": "1:1 Mentoring",
+        "empresas": "Solutions for companies"
+      }
+    },
+    "Empresas": {
+      "header": {
+        "title": "Ready to take the next step?",
+        "intro": {
+          "p1": "I help you grow with purpose—whether you're a young talent seeking clarity in your tech path, or a company aiming to strengthen your team's mindset, communication and leadership.",
+          "p2": "Through <sb>mentoring, coaching and agility</sb>, I help transform your potential into action, your talent into confidence and your growth into real impact."
+        }
+      },
+      "mentoriaCard": {
+        "title": "1:1 Mentoring",
+        "subtitle": "Boost your tech mindset and professional growth",
+        "p1": "A space designed to help you develop <b>clarity, direction and purpose</b> in your technological journey.",
+        "p2": "We combine <b>professional coaching, mentoring and agility</b> to align your technical skills with your human skills, so you can move forward with confidence and meaning.",
+        "resultsTitle": "Results you'll achieve:",
+        "resultsItems": [
+          "Clarity about your purpose, strengths and next professional steps.",
+          "Growth mindset, self-leadership and continuous focus.",
+          "Personalized strategy according to your role (backend, frontend, QA, PO, SM, tech lead, etc.).",
+          "Individual feedback to improve communication, productivity and professional branding."
+        ],
+        "ctaLabel": "Book your Coaching Session",
+        "note": "Growth is not just moving forward, it's doing it with purpose, focus and an expansive mindset."
+      },
+      "empresasCard": {
+        "title": "Company Programs",
+        "subtitle": "Strengthen your team's mindset, communication and leadership",
+        "p1": "We design tailored programs for technology teams and companies seeking to <b>align results with purpose</b>.",
+        "p2": "We integrate <b>professional coaching, agility, effective communication and leadership</b> to build more autonomous, connected and confident teams.",
+        "resultsTitle": "Results your team will achieve:",
+        "resultsItems": [
+          "A culture of continuous learning and a growth mindset.",
+          "Improved communication, collaboration and self-confidence.",
+          "Human leadership with clarity, direction and purpose.",
+          "Teams aligned with strategic objectives and impact indicators."
+        ],
+        "ctaLabel": "Schedule a call to learn about your needs",
+        "note": "The best results are built when people have clarity, tools and a shared purpose.",
+        "imageAlt": "Programs for companies: mindset, communication and leadership in tech teams"
+      },
+      "businessCard": {
+        "title": "Business Service",
+        "subtitle": "High-performance tech teams and a data-driven culture",
+        "p1": "<b>Technical, cultural and strategic</b> support for teams seeking to improve collaboration, deliver quality software and align with an agile, human and data-driven culture.",
+        "p2": "I integrate approaches from <b>Management 3.0, Agile Team Facilitation, Lean, Professional Coaching and Data Thinking</b> to develop autonomous, connected teams oriented toward real results.",
+        "benefitsTitle": "Real benefits for your company and team:",
+        "benefitsItems": [
+          "Building high-performance teams with purpose and autonomy.",
+          "Reducing technical debt and improving the quality of deliverables.",
+          "Optimizing sprints and alignment between product, QA and leadership.",
+          "Data-driven culture: decisions based on metrics and continuous learning.",
+          "Workshops on culture, agility and conscious leadership.",
+          "Roadmap and dashboard for technical and human evolution."
+        ],
+        "ctaLabel": "Learn more about the Business Program",
+        "note": "Teams that trust, make decisions with data and deliver with purpose."
+      }
+    },
+    "CCCausa": {
+      "title": "Growth with Purpose 🌍✨",
+      "subtitle": "Your professional development also creates impact.",
+      "content": {
+        "p1": "At HugoTech, each individual session creates an impact that goes beyond you. As you strengthen your mindset, clarity and professional growth, you also help open doors for others.",
+        "pBold1": "100% of the income from 1:1 mentorships is dedicated to supporting initiatives that:",
+        "bullets": [
+          "Promote tech education and the development of young talent across Latin America.",
+          "Encourage digital inclusion and equitable access to knowledge."
+        ],
+        "p2": "We also promote responsible adoption and animal well-being—empathy transforms too.",
+        "invite": {
+          "pBold": "Do you know any NGO or tech project that's transforming lives?",
+          "p": "Share it here and let's add more causes to this movement."
+        }
+      },
+      "form": {
+        "ariaLabel": "Share an NGO or project",
+        "input": {
+          "placeholder": "Website",
+          "ariaLabel": "Website",
+          "name": "url"
+        },
+        "submitLabel": "Send"
+      },
+      "images": {
+        "mainAlt": "Portrait of Hugo Casanova, tech mentor and coach",
+        "badgeRightAlt": "Leadership in technology",
+        "badgeLeftAlt": "Develop your talent"
+      }
     }
   }
 }
