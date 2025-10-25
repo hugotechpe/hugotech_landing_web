@@ -23,12 +23,11 @@ export default function HeroNavbar() {
 
   // Tomamos las etiquetas del footer pero LIMITAMOS a los enlaces originales
   const footerItems = messages?.Sections?.Footer?.menu?.items ?? [];
-  const allowedAnchors = ["#inicio", "#mepresento", "#empresas", "#cccausa", "#testimonios"];
+  const allowedAnchors = ["#inicio", "#mepresento", "#empresas", "#testimonios"];
   const fallbackLabels: Record<string, string> = {
     "#inicio": "Inicio",
     "#mepresento": "Me Presento",
     "#empresas": "Empresas",
-    "#cccausa": "Coaching con causa",
     "#testimonios": "Testimonios",
   };
   const getAnchor = (href: string) => {
@@ -45,6 +44,12 @@ export default function HeroNavbar() {
       label: match?.label ?? fallbackLabels[anchor],
       href: resolveHref(anchor),
     };
+  });
+  
+  // Agregar "Mi Historia" al inicio del menú
+  menuItems.unshift({
+    label: "Mi Historia",
+    href: "/about",
   });
 
   return (

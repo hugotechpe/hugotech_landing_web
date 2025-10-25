@@ -17,6 +17,8 @@ const Footer: React.FC = () => {
   const legalLinks = messages?.Sections?.Footer?.legal?.links ?? [];
   const menuItems = messages?.Sections?.Footer?.menu?.items ?? [];
   const newsletter = messages?.Sections?.Footer?.newsletter ?? {};
+  const mission = messages?.Sections?.Footer?.mission ?? {};
+  const vision = messages?.Sections?.Footer?.vision ?? {};
   const copyright = messages?.Sections?.Footer?.bottom?.copyright ?? "";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,6 +29,18 @@ const Footer: React.FC = () => {
   return (
     <footer role="contentinfo" className="bg-primary text-white">
       <div className="container mx-auto max-w-screen-xl px-6 py-12">
+        {/* Misión y Visión */}
+        <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-xl font-bold mb-3">💚 {mission.title}</h2>
+            <p className="text-white/80 leading-relaxed">{mission.text}</p>
+          </div>
+          <div>
+            <h2 className="text-xl font-bold mb-3">🌱 {vision.title}</h2>
+            <p className="text-white/80 leading-relaxed">{vision.text}</p>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Información Legal */}
           <section aria-labelledby="footer-legal">

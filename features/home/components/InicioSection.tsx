@@ -39,16 +39,30 @@ export function InicioSection() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Button
                 as={Link}
-                href="#mepresento"
+                href="#cita"
                 size="lg"
                 color="primary"
                 variant="solid"
-                className="bg-white text-primary hover:bg-[#183F33] hover:text-white"
+                className="bg-white text-primary hover:bg-[#183F33] hover:text-white font-bold"
                 onPress={(e) => {
 
                 }}
               >
                 {t("ctas.mentoria")}
+              </Button>
+
+              <Button
+                as={Link}
+                href="/about"
+                size="lg"
+                color="primary"
+                variant="bordered"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
+                onPress={(e) => {
+
+                }}
+              >
+                {t("ctas.historia")}
               </Button>
 
               <Button

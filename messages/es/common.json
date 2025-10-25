@@ -28,12 +28,12 @@
   },
   "Sections": {
     "Testimonios": {
-      "title": "Historias que Inspiran y Transforman 🌱✨",
+      "title": "Historias de Transformación Real 🌱",
       "intro": [
-        "Cada historia es una prueba de que el talento florece cuando se combina con propósito, guía y mentalidad de crecimiento.",
-        "Conoce cómo he acompañado a jóvenes profesionales, líderes y equipos tech a descubrir su potencial, fortalecer su liderazgo y generar impacto real en sus proyectos y carreras."
+        "Estas no son solo reseñas, son historias de personas que transformaron su confusión en claridad, su miedo en acción y su talento en propósito.",
+        "Cada conversación fue única. Cada camino fue distinto. Pero todas comparten algo: <b>el momento donde algo hizo click y todo cambió</b>."
       ],
-      "cta": "Ver más testimonios",
+      "cta": "Conoce más historias",
       "metrics": [
         {
           "id": "rating",
@@ -74,13 +74,21 @@
         ]
       },
       "newsletter": {
-        "title": "Suscríbete",
-        "description": "Suscríbete a nuestro newsletter para disfrutar de consejos, inspiraciones y mucho más.",
-        "placeholder": "Correo electrónico",
-        "cta": "Suscribirme"
+        "title": "Reflexiones Tech con Propósito",
+        "description": "Recibe mensajes inspiradores, consejos de mentalidad tech y contenido que te ayude a crecer desde el ser, no solo desde el saber.",
+        "placeholder": "Tu correo electrónico",
+        "cta": "Quiero crecer con propósito"
+      },
+      "mission": {
+        "title": "Misión",
+        "text": "Guiar, inspirar y potenciar a jóvenes talentos tecnológicos y equipos organizacionales para que descubran su propósito, fortalezcan su mentalidad y transformen su talento en impacto real y sostenible."
+      },
+      "vision": {
+        "title": "Visión",
+        "text": "Ser un referente latinoamericano en el desarrollo humano y tecnológico con propósito, donde cada persona guiada por HugoTech se convierta en un agente de cambio."
       },
       "bottom": {
-        "copyright": "© 2025 Todos los derechos reservados por HugoTech"
+        "copyright": "© 2025 HugoTech - Transformando desde el ser, construyendo desde el propósito"
       }
     },
     "Pilares": {
@@ -120,10 +128,10 @@
     },
     "MePresento": {
       "title": "Me Presento",
-      "chips": ["18+ años de experiencia", "Mentoring • Coaching • Agilidad"],
+      "chips": ["18+ años de experiencia", "Coach Profesional ICF • Mentor Tech • Líder Ágil"],
       "paragraphs": {
-        "p1": "Soy <name>Hugo Casanova</name>, peruano e <job>ingeniero de sistemas</job>. Desde hace <b>18+ años</b> acompaño a talentos y equipos tech en LATAM y EE. UU. a crecer con <b>claridad, confianza y propósito</b>.",
-        "p2": "Descubrí que lo que transforma no es solo el código, sino <b>las personas que lo crean</b>. Por eso integro <b>mentoring, coaching y agilidad</b> para convertir habilidades humanas en resultados técnicos reales."
+        "p1": "Soy <name>Hugo Casanova</name>. Ingeniero, mentor, coach profesional y creyente de que el verdadero cambio empieza dentro. Durante <b>18+ años</b> he tenido el privilegio de acompañar a cientos de talentos en el momento donde <b>la confusión se transforma en claridad, el miedo en acción y el talento en propósito</b>.",
+        "p2": "Descubrí que lo que transforma no es solo el código, sino <b>las personas que lo crean</b>. Por eso cada conversación busca despertar conciencia, fortalecer el propósito y ayudar a que el talento encuentre su propio camino, sin juicios, con humanidad y profundidad."
       },
       "items": [
         {
@@ -144,63 +152,78 @@
       ]
     },
     "Agenda": {
-      "title": "Agenda tu sesión",
+      "title": "Agenda tu sesión gratuita",
       "paragraphs": {
         "p1": "No te preocupes, estoy aquí para guiarte. Este es tu momento para hacer una pausa, mirar hacia dónde vas y decidir cómo quieres crecer.",
         "p2": "En nuestra sesión, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Ya sea que estés empezando en tecnología o quieras rediseñar tu rumbo, construiremos juntos un plan claro y real."
       },
-      "ctaLabel": "Calendario"
+      "ctaLabel": "Agenda tu sesión ahora"
+    },
+    "PorQueGratuito": {
+      "title": "¿Por qué las sesiones 1 a 1 son gratuitas? 💚",
+      "paragraphs": {
+        "p1": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
+        "p2": "Cada conversación es un acto de gratitud. No es caridad, es responsabilidad. Si hoy puedo ayudar a alguien a encontrar su camino, es porque otros hicieron lo mismo por mí.",
+        "p3": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito</b>, sin barreras económicas, sin transacciones frías. Solo conversaciones honestas que transforman.",
+        "p4": "Las sesiones B2B para empresas sí tienen costo, porque requieren estructura, seguimiento y resultados medibles. Pero el corazón de HugoTech siempre será gratuito."
+      },
+      "highlight": {
+        "title": "Mi filosofía",
+        "quote": "Transformar desde el ser, construir desde el propósito y liderar con el alma.",
+        "description": "La verdadera innovación comienza dentro de las personas. Primero se transforma el ser, luego el hacer cobra sentido, y finalmente el tener llega como consecuencia natural."
+      }
     },
     "Inicio": {
-      "chipLabel": "Propósito",
-      "title": "Forma y potencia tu talento o el de tu equipo en el mundo tech",
+      "chipLabel": "Transformación con Propósito 🌱",
+      "title": "Un espacio para descubrir quién eres y hacia dónde quieres ir",
       "paragraphs": {
-        "p1": "Te acompaño a crecer con propósito: ya sea en sesiones personalizadas para tu desarrollo profesional o en programas para empresas que buscan equipos más conectados, humanos y de alto rendimiento.",
-        "p2": "En <brand>HugoTech</brand>, integro <b>mentoring, coaching y agilidad</b> para que desarrolles habilidades humanas que impulsen tus habilidades técnicas, fortalezcas tu liderazgo interior y generes impacto real desde la confianza y el propósito."
+        "p1": "HugoTech no es una academia ni una consultora tradicional. Es una comunidad viva de crecimiento, donde acompaño a jóvenes talentos tecnológicos a transformar su confusión en claridad, su miedo en acción y su potencial en valor real.",
+        "p2": "A través de <b>sesiones 1 a 1 gratuitas</b>, combino coaching profesional ICF, mentoring tecnológico y desarrollo humano para ayudarte a encontrar tu propio camino, sin juicios, con humanidad y profundidad."
       },
       "ctas": {
-        "mentoria": "Mentoría 1 a 1",
-        "empresas": "Soluciones para empresas"
+        "mentoria": "Agenda tu sesión gratuita",
+        "historia": "Conoce mi historia",
+        "empresas": "HugoTech para empresas"
       }
     },
     "Empresas": {
       "header": {
-        "title": "¿Listo para dar el siguiente paso?",
+        "title": "HugoTech B2B - Equipos que Transforman 🚀",
         "intro": {
-          "p1": "Te acompaño a crecer con propósito —ya seas un joven talento que busca claridad en su camino tech, o una empresa que quiere potenciar la mentalidad, comunicación y liderazgo de su equipo.",
-          "p2": "A través de <sb>mentoring, coaching y agilidad</sb>, te ayudo a transformar tu potencial en acción, tu talento en confianza y tu crecimiento en impacto real."
+          "p1": "¿Tu equipo de tecnología tiene talento, pero le falta cohesión, claridad o liderazgo? No estás solo.",
+          "p2": "A través de <sb>mentoring, coaching profesional y agilidad</sb>, ayudo a empresas a <b>potenciar el talento interno, construir equipos de alto rendimiento y alinear crecimiento humano con resultados medibles</b>."
         }
       },
       "mentoriaCard": {
-        "title": "Mentoría 1 a 1",
-        "subtitle": "Potencia tu mentalidad tech y tu crecimiento profesional",
-        "p1": "Un espacio diseñado para acompañarte a desarrollar <b>claridad, dirección y propósito</b> en tu camino tecnológico.",
-        "p2": "Combinamos <b>coaching profesional, mentoring y agilidad</b> para alinear tus habilidades técnicas con tus habilidades humanas, y así avanzar con confianza y sentido.",
-        "resultsTitle": "Resultados que lograrás:",
+        "title": "Sesiones 1 a 1 Gratuitas 💚",
+        "subtitle": "Transformación personal para jóvenes talentos tech",
+        "p1": "Un espacio <b>íntimo, reflexivo y sin costo</b> diseñado para acompañarte a descubrir tu propósito, fortalecer tu mentalidad y encontrar tu propio camino en tecnología.",
+        "p2": "Estas sesiones son <b>conversaciones honestas que transforman</b>. No hay plantillas ni fórmulas mágicas, solo escucha profunda, preguntas poderosas y acompañamiento humano.",
+        "resultsTitle": "Lo que puedes esperar:",
         "resultsItems": [
           "Claridad sobre tu propósito, fortalezas y próximos pasos profesionales.",
-          "Mentalidad de crecimiento, autoliderazgo y enfoque continuo.",
-          "Estrategia personalizada según tu rol (backend, frontend, QA, PO, SM, líder técnico etc.).",
-          "Feedback individual para mejorar comunicación, productividad y marca profesional."
+          "Mentalidad de crecimiento, autoliderazgo y confianza real.",
+          "Estrategia personalizada según tu rol y momento de carrera.",
+          "Un espacio seguro para reflexionar sin juicios, con humanidad y profundidad."
         ],
-        "ctaLabel": "Agenda tu Sesión de Coaching",
-        "note": "Crecimiento no es solo avanzar, es hacerlo con propósito, enfoque y mentalidad expansiva."
+        "ctaLabel": "Agenda tu Sesión Gratuita",
+        "note": "Las sesiones 1 a 1 son gratuitas porque creo en devolver al mundo lo que la vida me dio. Cada conversación es un acto de gratitud."
       },
       "empresasCard": {
-        "title": "Programas para Empresas",
-        "subtitle": "Fortalece la mentalidad, comunicación y liderazgo de tu equipo",
-        "p1": "Diseñamos programas a medida para equipos de tecnología y empresas que buscan <b>alinear resultados con propósito</b>.",
-        "p2": "Integramos <b>coaching profesional, agilidad, comunicación efectiva y liderazgo</b> para crear equipos más autónomos, conectados y confiados.",
-        "resultsTitle": "Resultados que logrará tu equipo:",
+        "title": "HugoTech B2B",
+        "subtitle": "Equipos de alto rendimiento con propósito y resultados",
+        "p1": "Programas diseñados para empresas que quieren <b>potenciar el talento interno, fortalecer la cultura ágil y alinear el crecimiento de las personas con los objetivos del negocio</b>.",
+        "p2": "A través de <b>coaching, mentoring, agilidad y liderazgo consciente</b>, transformo equipos técnicos en equipos humanos, autónomos y orientados a resultados sostenibles.",
+        "resultsTitle": "Lo que lograrás con tu equipo:",
         "resultsItems": [
-          "Cultura de aprendizaje continuo y mentalidad de crecimiento.",
-          "Mejor comunicación, colaboración y autoconfianza.",
-          "Liderazgo humano, con claridad, dirección y propósito.",
-          "Equipos alineados a objetivos estratégicos con indicadores de impacto."
+          "Equipos cohesionados con confianza, comunicación efectiva y autonomía real.",
+          "Liderazgo técnico y humano que inspira sin imponer.",
+          "Cultura ágil basada en aprendizaje continuo, feedback y propósito compartido.",
+          "Resultados medibles: menos deuda técnica, más calidad, mejor clima laboral."
         ],
-        "ctaLabel": "Agenda una llamada para conocer tus necesidades",
-        "note": "El mejor resultado se construye cuando las personas tienen claridad, herramientas y propósito compartido.",
-        "imageAlt": "Programas para empresas: mentalidad, comunicación y liderazgo en equipos tech"
+        "ctaLabel": "Conversemos sobre tu equipo",
+        "note": "Los servicios B2B tienen costo porque requieren estructura, seguimiento y resultados medibles. Pero siempre trabajamos desde el propósito, no solo desde el proceso.",
+        "imageAlt": "HugoTech B2B: equipos tech de alto rendimiento con propósito y resultados"
       },
       "businessCard": {
         "title": "Servicio Business",
@@ -221,16 +244,16 @@
       }
     },
     "CCCausa": {
-      "title": "Crecimiento con Propósito 🌍✨",
-      "subtitle": "Tu desarrollo profesional también genera impacto.",
+      "title": "Coaching con Causa 🌍💚",
+      "subtitle": "Tu crecimiento también genera impacto en el mundo.",
       "content": {
-        "p1": "En HugoTech, cada sesión individual tiene un impacto que va más allá de ti. Mientras fortaleces tu mentalidad, claridad y crecimiento profesional, también contribuyes a abrir puertas para otros.",
-        "pBold1": "El 100 % de los ingresos de las mentorías 1 a 1 se destinan a apoyar iniciativas que:",
+        "p1": "Las sesiones 1 a 1 son gratuitas para ti, pero eso no significa que no tengan valor. Empresas e individuos que trabajan conmigo en servicios B2B invierten en el crecimiento de sus equipos, y parte de ese impacto se transforma en acción social.",
+        "pBold1": "Una porción de los ingresos de HugoTech B2B se destina a:",
         "bullets": [
-          "Impulsan la educación tecnológica y el desarrollo de jóvenes talentos en Latinoamérica.",
-          "Promueven la inclusión digital y el acceso equitativo al conocimiento."
+          "Impulsar la educación tecnológica y el desarrollo de jóvenes talentos en Latinoamérica.",
+          "Promover la inclusión digital y el acceso equitativo al conocimiento tech."
         ],
-        "p2": "Fomentan la adopción responsable y el bienestar animal, porque la empatía también transforma.",
+        "p2": "Fomentar la adopción responsable y el bienestar animal, porque la empatía también transforma.",
         "invite": {
           "pBold": "¿Conoces alguna ONG o proyecto tech que esté transformando vidas?",
           "p": "Compártelo aquí y sumemos más causas a este movimiento."
