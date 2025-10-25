@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
+import { motion } from "framer-motion";
 import IconBoxCard from "@/components/cards/IconBoxCard";
 import MentoringCoachingIcon from "@/common/icons/custom/MentoringCoachingIcon";
 import EquiposAltoRendimientoIcon from "@/common/icons/custom/EquiposAltoRendimientoIcon";
@@ -11,8 +12,25 @@ import LiderazgoAgilTransformaIcon from "@/common/icons/custom/LiderazgoAgilTran
 import { useMessages, useTranslations } from "next-intl";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
+// Variantes de animación para scroll
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
 
-
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
 export function MePresentoSection() {
   const messages = useMessages() as any;
   const t = useTranslations("Sections.MePresento");
@@ -48,7 +66,13 @@ export function MePresentoSection() {
         <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
           {/* Encabezado y presentación */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10">
-            <div>
+            {/* Columna izquierda con animación */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+            >
               <h2 className="text-3xl md:text-4xl font-bold text-customgray">
                 {title}
               </h2>
@@ -83,10 +107,16 @@ export function MePresentoSection() {
                   />
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Imagen de perfil */}
-            <div className="relative">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="relative"
+            >
               <div className="relative w-full max-w-md md:max-w-lg mx-auto">
                 <Image
                   src="/images/image2.png"
@@ -96,7 +126,7 @@ export function MePresentoSection() {
                   className="object-cover w-full h-auto"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

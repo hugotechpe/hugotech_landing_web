@@ -5,6 +5,12 @@ import { Card, CardBody } from "@heroui/card";
 import { useTranslations } from "next-intl";
 import { CalendlyEmbed } from "@/components/calendly/CalendlyEmbed";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 export function AgendaSection() {
   const t = useTranslations("Sections.Agenda");
@@ -19,7 +25,13 @@ export function AgendaSection() {
     >
       <div className="container mx-auto max-w-1400 px-6 py-16 md:py-24">
         {/* Encabezado */}
-        <div className="max-w-3xl mx-auto text-center mb-12">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+          className="max-w-3xl mx-auto text-center mb-12"
+        >
           <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
             {t("title")}
           </h2>
@@ -39,10 +51,16 @@ export function AgendaSection() {
               </p>
             </CardBody>
           </Card>
-        </div>
+        </motion.div>
 
         {/* Calendly Embed Inline */}
-        <div className="max-w-5xl mx-auto">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+          className="max-w-5xl mx-auto"
+        >
           <CalendlyEmbed 
             url="https://calendly.com/hugotech/mentoria1a1"
             height="700px"
@@ -71,7 +89,7 @@ export function AgendaSection() {
               * {t("note")}
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

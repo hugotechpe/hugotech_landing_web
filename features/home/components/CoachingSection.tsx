@@ -1,9 +1,17 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 import { Link } from "@heroui/link";
 import { useTranslations, useMessages } from "next-intl";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 export function CoachingSection() {
   const t = useTranslations("Sections.CCCausa");
@@ -19,7 +27,13 @@ export function CoachingSection() {
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
           {/* Columna izquierda: imagen de referencia */}
-            <div className="relative w-full mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            className="relative w-full mx-auto"
+          >
               <Image
                 src="/images/image6.png"
                 alt={t("images.mainAlt")}
@@ -43,10 +57,15 @@ export function CoachingSection() {
                 height={171}
                 className="hidden sm:block absolute left-0 top-0 md:-left-5 md:-top-0"
               />
-            </div>
+            </motion.div>
 
           {/* Columna derecha: contenido SEO semántico */}
-          <div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+          >
             <h2 itemProp="headline" className="text-3xl md:text-4xl font-bold text-white">
               {t("title")}
             </h2>
@@ -105,7 +124,7 @@ export function CoachingSection() {
                 </Button>
               </div> */}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

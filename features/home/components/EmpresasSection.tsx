@@ -1,9 +1,22 @@
+"use client";
+
 import React from "react";
 import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { Image } from "@heroui/image";
 import { useTranslations, useMessages } from "next-intl";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+};
 
 export function EmpresasSection() {
   const t = useTranslations("Sections.Empresas");
@@ -18,7 +31,13 @@ export function EmpresasSection() {
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         {/* Encabezado principal de la sección */}
-        <header className="mb-12">
+        <motion.header
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+          className="mb-12"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-customgray">
             {t("header.title")}
           </h2>
@@ -30,14 +49,21 @@ export function EmpresasSection() {
           <p className="mt-2 text-black">
             {t.rich("header.intro.p2", { sb: (chunks) => <span className="font-semibold">{chunks}</span> })}
           </p>
-        </header>
+        </motion.header>
 
         {/* Contenedor de dos columnas con los servicios: Mentoring 1 a 1 y Servicio Business */}
-        <div className="w-full">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+          className="w-full"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
-            <Card as="article" shadow="none" className="bg-[#FFE8DB] p-5 pb-0 pr-0 relative">
-              <CardBody className="flex flex-col gap-3 text-customgray">
+            <motion.div variants={fadeInUp}>
+              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-5 pb-0 pr-0 relative h-full">
+                <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-3xl font-bold">{t("mentoriaCard.title")}</h3>
                 <p className="text-base md:text-xl font-semibold my-8">
                   {t("mentoriaCard.subtitle")}
@@ -72,11 +98,13 @@ export function EmpresasSection() {
                   />
                 </div>
               </CardBody>
-            </Card>
+              </Card>
+            </motion.div>
 
             {/* Columna derecha: Servicio Business */}
-            <Card as="article" shadow="none" className="bg-[#E0F6F5] p-5 pb-0 pr-0 relative">
-              <CardBody className="flex flex-col gap-3 text-customgray">
+            <motion.div variants={fadeInUp}>
+              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-5 pb-0 pr-0 relative h-full">
+                <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-3xl font-bold">{t("empresasCard.title")}</h3>
                 <p className="text-base md:text-xl font-semibold my-8">
                   {t("empresasCard.subtitle")}
@@ -111,9 +139,10 @@ export function EmpresasSection() {
                   />
                 </div>
               </CardBody>
-            </Card>
+              </Card>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

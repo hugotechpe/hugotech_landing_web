@@ -10,8 +10,17 @@ import EquiposAltoRendimientoIcon from "@/common/icons/custom/EquiposAltoRendimi
 import LiderazgoAgilTransformaIcon from "@/common/icons/custom/LiderazgoAgilTransformaIcon";
 import { useMessages } from "next-intl";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
+import { motion } from "framer-motion";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+};
 
 export function PilaresSection() {
   const messages = useMessages() as any;
@@ -31,14 +40,26 @@ export function PilaresSection() {
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         {/* Encabezado y presentación */}
         <div className="grid grid-cols-1 md:grid-cols-[65%_35%] items-start gap-10">
-          <div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-customgray">
               {sectionTitle}
             </h2>
 
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6" role="list">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={staggerContainer}
+              className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6"
+              role="list"
+            >
               {items.map((item) => (
-                <div key={item.title} role="listitem">
+                <motion.div key={item.title} variants={fadeInUp} role="listitem">
                   <IconBoxCard
                     title={item.title}
                     description={item.description}
@@ -46,13 +67,19 @@ export function PilaresSection() {
                     headingAs="h3"
                     classNameCardBody="flex-col"
                   />
-                </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Imagen de perfil */}
-          <div className="relative h-full flex items-end justify-end">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            className="relative h-full flex items-end justify-end"
+          >
             <div className="relative w-full max-w-sm md:max-w-md mx-auto">
               <Image
                 src="/images/image5.png"
@@ -62,7 +89,7 @@ export function PilaresSection() {
                 className="object-cover w-full h-auto"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
