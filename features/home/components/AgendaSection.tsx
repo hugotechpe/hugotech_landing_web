@@ -53,7 +53,7 @@ export function AgendaSection() {
             </Button>
 
             <p className="mt-4 text-sm text-gray-500">
-              * Usamos Calendly para agendar. Elige el día y hora que mejor te funcione.
+              * {t("note")}
             </p>
           </div>
 

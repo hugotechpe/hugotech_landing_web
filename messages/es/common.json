@@ -74,9 +74,9 @@
         ]
       },
       "newsletter": {
-        "title": "Reflexiones Tech con Propósito",
-        "description": "Recibe mensajes inspiradores, consejos de mentalidad tech y contenido que te ayude a crecer desde el ser, no solo desde el saber.",
-        "placeholder": "Tu correo electrónico",
+        "title": "Únete a la Conversación 💬",
+        "description": "Recibe reflexiones tech con propósito: mentalidad, IA humanizada, liderazgo consciente y herramientas para crecer sin quemarte. Un correo semanal, cero spam.",
+        "placeholder": "tu@email.com",
         "cta": "Quiero crecer con propósito"
       },
       "mission": {
@@ -153,12 +153,13 @@
       ]
     },
     "Agenda": {
-      "title": "Agenda tu sesión gratuita",
+      "title": "¿Listo para diseñar tu futuro tech con propósito?",
       "paragraphs": {
-        "p1": "No te preocupes, estoy aquí para guiarte. Este es tu momento para hacer una pausa, mirar hacia dónde vas y decidir cómo quieres crecer.",
-        "p2": "En nuestra sesión, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Ya sea que estés empezando en tecnología o quieras rediseñar tu rumbo, construiremos juntos un plan claro y real."
+        "p1": "El mejor momento para tomar control de tu carrera fue ayer. El segundo mejor es ahora.",
+        "p2": "En nuestra sesión 1 a 1, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
       },
-      "ctaLabel": "Agenda tu sesión ahora"
+      "ctaLabel": "Empezar mi transformación (Sin costo)",
+      "note": "Plazas limitadas por mes. 100% confidencial."
     },
     "PorQueGratuito": {
       "title": "¿Por qué las sesiones 1 a 1 son gratuitas? 💚",
@@ -190,42 +191,42 @@
     },
     "Empresas": {
       "header": {
-        "title": "HugoTech B2B - Equipos que Transforman 🚀",
+        "title": "Equipos de Alto Rendimiento con Cultura Consciente",
         "intro": {
-          "p1": "¿Tu equipo de tecnología tiene talento, pero le falta cohesión, claridad o liderazgo? No estás solo.",
-          "p2": "A través de <sb>mentoring, coaching profesional y agilidad</sb>, ayudo a empresas a <b>potenciar el talento interno, construir equipos de alto rendimiento y alinear crecimiento humano con resultados medibles</b>."
+          "p1": "El talento tech (Gen Z y Millennials) no solo busca un buen salario; busca <b>impacto, propósito y un liderazgo humano</b>. Dejarán tu empresa por una mala cultura, no por un mal 'framework'.",
+          "p2": "Dejemos de gestionar 'recursos'. Empecemos a <sb>liderar humanos</sb>. A través de workshops de liderazgo ágil, coaching ejecutivo y programas de cultura, transformo tu equipo tech en una fuerza imparable, innovadora y, sobre todo, humana."
         }
       },
       "mentoriaCard": {
-        "title": "Sesiones 1 a 1 Gratuitas 💚",
-        "subtitle": "Transformación personal para jóvenes talentos tech",
-        "p1": "Un espacio <b>íntimo, reflexivo y sin costo</b> diseñado para acompañarte a descubrir tu propósito, fortalecer tu mentalidad y encontrar tu propio camino en tecnología.",
-        "p2": "Estas sesiones son <b>conversaciones honestas que transforman</b>. No hay plantillas ni fórmulas mágicas, solo escucha profunda, preguntas poderosas y acompañamiento humano.",
-        "resultsTitle": "Lo que puedes esperar:",
+        "title": "Tu Mentoría Tech 1 a 1 💚",
+        "subtitle": "Coaching de propósito + Mentoring tecnológico. Gratis.",
+        "p1": "¿Te sientes estancado en tu primer empleo TI? ¿No sabes qué 'path' tomar (DevOps, AI Engineer, Product Manager)? ¿Síndrome del impostor? <b>No estás solo</b>.",
+        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>coaching de autoconocimiento con mentoring tecnológico</b>. Antes del 'qué' viene el 'por qué'. Descubre tus valores, define tu propósito y supera las barreras mentales que te frenan.",
+        "resultsTitle": "Lo que lograrás en tus sesiones:",
         "resultsItems": [
-          "Claridad sobre tu propósito, fortalezas y próximos pasos profesionales.",
-          "Mentalidad de crecimiento, autoliderazgo y confianza real.",
-          "Estrategia personalizada según tu rol y momento de carrera.",
-          "Un espacio seguro para reflexionar sin juicios, con humanidad y profundidad."
+          "Claridad sobre tu propósito profesional y próximos pasos en tech.",
+          "Hoja de ruta personalizada según tu perfil (backend, frontend, QA, PM, etc.)",
+          "Mentalidad de crecimiento y herramientas anti-burnout aplicadas al día a día.",
+          "Revisión de CV, LinkedIn y estrategia de marca personal tech."
         ],
-        "ctaLabel": "Agenda tu Sesión Gratuita",
-        "note": "Las sesiones 1 a 1 son gratuitas porque creo en devolver al mundo lo que la vida me dio. Cada conversación es un acto de gratitud."
+        "ctaLabel": "Quiero mi sesión de claridad (Es gratis)",
+        "note": "Las sesiones 1 a 1 son 100% gratuitas. Es mi forma de devolver lo que la vida me dio. Sin letra chica, sin agenda oculta."
       },
       "empresasCard": {
         "title": "HugoTech B2B",
-        "subtitle": "Equipos de alto rendimiento con propósito y resultados",
-        "p1": "Programas diseñados para empresas que quieren <b>potenciar el talento interno, fortalecer la cultura ágil y alinear el crecimiento de las personas con los objetivos del negocio</b>.",
-        "p2": "A través de <b>coaching, mentoring, agilidad y liderazgo consciente</b>, transformo equipos técnicos en equipos humanos, autónomos y orientados a resultados sostenibles.",
-        "resultsTitle": "Lo que lograrás con tu equipo:",
+        "subtitle": "Retención de Talento + Seguridad Psicológica + Innovación Ágil",
+        "p1": "Ayudo a tus líderes a evolucionar. A través de <b>workshops de liderazgo ágil, coaching ejecutivo y programas de cultura</b>, transformo tu equipo tech en una fuerza imparable.",
+        "p2": "No más rotación por 'mala cultura'. No más burnout en devs talentosos. Construyamos <b>equipos que confían, innovan y entregan</b> de forma sostenible.",
+        "resultsTitle": "Beneficios medibles para tu empresa:",
         "resultsItems": [
-          "Equipos cohesionados con confianza, comunicación efectiva y autonomía real.",
-          "Liderazgo técnico y humano que inspira sin imponer.",
-          "Cultura ágil basada en aprendizaje continuo, feedback y propósito compartido.",
-          "Resultados medibles: menos deuda técnica, más calidad, mejor clima laboral."
+          "+ Retención de Talento: Equipos felices no renuncian.",
+          "+ Seguridad Psicológica: Innovación sin miedo a fallar.",
+          "+ Innovación y Agilidad: Sprints eficientes, menos deuda técnica.",
+          "- Burnout y Rotación: Cultura sostenible de alto rendimiento."
         ],
-        "ctaLabel": "Conversemos sobre tu equipo",
-        "note": "Los servicios B2B tienen costo porque requieren estructura, seguimiento y resultados medibles. Pero siempre trabajamos desde el propósito, no solo desde el proceso.",
-        "imageAlt": "HugoTech B2B: equipos tech de alto rendimiento con propósito y resultados"
+        "ctaLabel": "Desarrollar a mis líderes (Agendar Demo)",
+        "note": "Los servicios B2B tienen inversión porque requieren estructura y seguimiento. Pero siempre trabajamos desde el propósito, no solo desde el proceso.",
+        "imageAlt": "Equipos tech de alto rendimiento con cultura consciente"
       },
       "businessCard": {
         "title": "Servicio Business",
