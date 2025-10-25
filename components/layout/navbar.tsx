@@ -23,30 +23,30 @@ export default function HeroNavbar() {
 
   // Tomamos las etiquetas del footer pero LIMITAMOS a los enlaces originales
   const footerItems = messages?.Sections?.Footer?.menu?.items ?? [];
-  const allowedAnchors = ["#inicio", "#mepresento", "#empresas", "#testimonios"];
+  const allowedAnchors = ["#inicio", "#mepresento", "#testimonios"];
   const fallbackLabels: Record<string, string> = {
     "#inicio": "Inicio",
     "#mepresento": "Me Presento",
-    "#empresas": "Empresas",
     "#testimonios": "Testimonios",
   };
   const getAnchor = (href: string) => {
     const i = href?.indexOf('#');
     return i >= 0 ? href.substring(i) : href;
   };
-  const resolveHref = (anchor: string) => {
-    if (anchor === "#empresas") return `/${locale}/empresas`;
-    return anchor;
-  };
   const menuItems = allowedAnchors.map((anchor) => {
     const match = footerItems.find((it: any) => getAnchor(it?.href) === anchor);
     return {
       label: match?.label ?? fallbackLabels[anchor],
-      href: resolveHref(anchor),
+      href: anchor,
     };
   });
   
-  // Agregar "Mi Historia" al inicio del menú
+  // Agregar páginas personalizadas
+  menuItems.push({
+    label: "Empresas",
+    href: `/${locale}/empresas`,
+  });
+  
   menuItems.unshift({
     label: "Mi Historia",
     href: "/about",

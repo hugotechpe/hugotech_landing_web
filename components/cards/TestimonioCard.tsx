@@ -34,7 +34,14 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
   className,
 }) => {
   return (
-    <Card shadow="none" className={clsx("bg-white rounded-2xl p-3 border border-default-200", className)}>
+    <Card 
+      shadow="none" 
+      className={clsx(
+        "bg-white rounded-2xl p-3 border border-default-200",
+        "hover:border-primary/30 transition-all duration-300 cursor-default",
+        className
+      )}
+    >
       <CardBody>
         <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
           <blockquote itemProp="reviewBody" className="text-customgray text-sm md:text-base leading-relaxed">
@@ -47,7 +54,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
               alt={avatarAlt}
               width={64}
               height={64}
-              className="rounded-full object-cover w-16 h-16"
+              className="rounded-full object-cover w-16 h-16 ring-2 ring-transparent hover:ring-primary/20 transition-all duration-300"
             />
             <div>
               <p className="font-semibold text-customgray">
@@ -55,7 +62,12 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
               </p>
               <p className="text-default-500 text-sm">{role}</p>
               {linkedInUrl ? (
-                <Link isExternal href={linkedInUrl} title={`Perfil de ${authorName} en LinkedIn`} className="text-customgray text-bold text-sm">
+                <Link 
+                  isExternal 
+                  href={linkedInUrl} 
+                  title={`Perfil de ${authorName} en LinkedIn`} 
+                  className="text-customgray text-bold text-sm hover:text-primary transition-colors"
+                >
                   <LinkedInSquareIcon className="h-4 w-4 mr-1 text-[#0e76a8]" /> Conéctate conmigo en LinkedIn
                 </Link>
               ) : null}

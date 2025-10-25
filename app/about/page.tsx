@@ -32,6 +32,20 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-4xl px-6">
           
+          {/* Propósito */}
+          <div className="mb-16 text-center">
+            <Chip color="primary" variant="flat" className="mb-4">
+              Mi Propósito
+            </Chip>
+            <h2 className="text-4xl font-bold text-customgray mb-6">
+              Transformar desde el ser, construir desde el propósito, liderar con el alma
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Ayudar a profesionales tech a encontrar su camino con <strong>claridad, propósito y humanidad</strong>. 
+              Porque la mejor tecnología la construyen personas que se conocen a sí mismas.
+            </p>
+          </div>
+
           {/* El Inicio */}
           <div className="mb-16">
             <Chip color="primary" variant="flat" className="mb-4">
@@ -181,6 +195,37 @@ export default function AboutPage() {
                 Si logro que una sola persona descubra su propósito, todo habrá valido la pena.
               </p>
             </div>
+          </div>
+
+          {/* Misión y Visión */}
+          <div className="mb-16 grid md:grid-cols-2 gap-8">
+            {/* Misión */}
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary" shadow="none">
+              <CardBody className="p-8">
+                <div className="text-4xl mb-4">🎯</div>
+                <h3 className="text-2xl font-bold text-customgray mb-4">Misión</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Acompañar a profesionales tech en su <strong>autoconocimiento y crecimiento consciente</strong>, 
+                  transformando equipos y organizaciones desde el ser hacia el hacer. 
+                  Ofrezco sesiones 1-a-1 gratuitas y programas empresariales que integran 
+                  liderazgo ágil, coaching ejecutivo y cultura de innovación humana.
+                </p>
+              </CardBody>
+            </Card>
+
+            {/* Visión */}
+            <Card className="bg-gradient-to-br from-[#E0F6F5] to-[#F0FAF9] border-2 border-[#0d4746]" shadow="none">
+              <CardBody className="p-8">
+                <div className="text-4xl mb-4">🌟</div>
+                <h3 className="text-2xl font-bold text-customgray mb-4">Visión</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Ser el referente latinoamericano en <strong>transformación humana dentro del mundo tech</strong>. 
+                  Crear una comunidad de líderes conscientes que lideren con empatía, 
+                  construyan productos con propósito y transformen la industria desde 
+                  la innovación con alma.
+                </p>
+              </CardBody>
+            </Card>
           </div>
 
           {/* CTA Final */}
