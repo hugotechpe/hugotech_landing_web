@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
+
 import clsx from "clsx";
 
 import { Providers } from "./providers";
+import Footer from "@/components/footer";
 
 import { siteConfig } from "@/config/site";
 import { fontSans, fontRubik } from "@/config/fonts";
@@ -54,17 +55,7 @@ export default async function RootLayout({
             <main className="flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=hugotech_landing_web"
-                title="heroui.com homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">HeroUI</p>
-              </Link>
-            </footer>
+            <Footer />
           </div>
         </Providers>
       </body>

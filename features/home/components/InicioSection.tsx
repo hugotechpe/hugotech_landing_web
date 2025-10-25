@@ -12,7 +12,7 @@ export function InicioSection() {
       aria-label="Inicio"
       className="scroll-mt-0 bg-primary"
     >
-      <div className="container mx-auto max-w-screen-2xl px-6 py-10 md:py-20">
+      <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
           {/* Columna izquierda: contenido y CTA */}
           <div>

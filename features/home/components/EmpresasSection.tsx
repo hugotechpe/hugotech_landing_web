@@ -11,7 +11,7 @@ export function EmpresasSection() {
       aria-label="Empresas"
       className="scroll-mt-0 bg-[#FBF7EC]"
     >
-      <div className="container mx-auto max-w-screen-2xl px-6 py-10 md:py-20">
+      <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         {/* Encabezado principal de la sección, tomado de nota.txt */}
         <header className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-customgray">

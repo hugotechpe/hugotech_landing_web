@@ -23,5 +23,131 @@
     "blog": "Blog",
     "about": "About",
     "search": "Search..."
+  },
+  "Sections": {
+    "Testimonios": {
+      "title": "Stories that Inspire and Transform 🌱✨",
+      "intro": [
+        "Each story proves that talent flourishes when combined with purpose, guidance and a growth mindset.",
+        "Discover how I've supported young professionals, leaders and tech teams to unlock their potential, strengthen their leadership and generate real impact in their projects and careers."
+      ],
+      "cta": "See more testimonials",
+      "metrics": [
+        {
+          "id": "rating",
+          "value": "4.9/5",
+          "text": "Experience valued for its closeness, clarity and real results. Each session leaves applicable learnings and visible change in how you think and act."
+        },
+        {
+          "id": "satisfaction",
+          "value": "90% satisfaction",
+          "text": "90% of those who have worked with me feel a tangible evolution in their mindset and professional performance."
+        },
+        {
+          "id": "guided",
+          "value": "+200 talents guided",
+          "text": "Young tech professionals, career changers and team leaders who now work with more purpose, focus and confidence."
+        }
+      ]
+    },
+    "Footer": {
+      "legal": {
+        "title": "Legal Information",
+        "links": [
+          { "label": "Terms & Conditions", "href": "https://hugotech.pe/terminos-y-condiciones/" },
+          { "label": "Privacy Policy", "href": "https://hugotech.pe/privacy-policy/" },
+          { "label": "Claims Book", "href": "https://hugotech.pe/libro-de-reclamaciones/" }
+        ]
+      },
+      "menu": {
+        "title": "Menu",
+        "items": [
+          { "label": "Home", "href": "/en/" },
+          { "label": "About me", "href": "/en/#mepresento" },
+          { "label": "Coaching with purpose", "href": "/en/#cccausa" },
+          { "label": "Companies", "href": "/en/#empresas" },
+          { "label": "Testimonials", "href": "/en/#testimonios" },
+          { "label": "Book a session", "href": "/en/#cita" },
+          { "label": "Blog", "href": "/en/blog" }
+        ]
+      },
+      "newsletter": {
+        "title": "Subscribe",
+        "description": "Subscribe to our newsletter for tips, inspiration and more.",
+        "placeholder": "Email address",
+        "cta": "Subscribe"
+      },
+      "bottom": {
+        "copyright": "© 2025 All rights reserved by HugoTech"
+      }
+    },
+    "Pilares": {
+      "title": "The 6 pillars of the HugoTech experience",
+      "items": [
+        {
+          "title": "Explore your purpose and tech mindset",
+          "description": "Discover your inner drive, redefine your beliefs and connect with the professional version you want to build. Change starts within: from personal clarity comes professional direction.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "Design your growth roadmap",
+          "description": "We co-create a realistic and ambitious roadmap: what to learn, how to apply it and how to measure your evolution without losing the balance between purpose and results.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Activate your agile and conscious leadership",
+          "description": "Develop the skills to influence positively, communicate clearly and lead from trust. I integrate Management 3.0, agile facilitation and coaching practices to inspire without imposing.",
+          "iconKey": "liderazgo"
+        },
+        {
+          "title": "Strengthen your personal and collaborative culture",
+          "description": "Learn to build high-value relationships, where feedback, empathy and transparent communication are part of the DNA. Strong teams are born from emotionally and professionally mature people.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "Build a data-driven culture",
+          "description": "Incorporate evidence-based decision making and results. We analyze performance metrics, climate, technical quality and collaboration to drive continuous improvement.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Accelerate sustainable results and performance",
+          "description": "Transform the way you and your team work: more effective deliveries, focused sprints, less technical debt and more innovation. When people grow, results multiply.",
+          "iconKey": "liderazgo"
+        }
+      ]
+    },
+    "MePresento": {
+      "title": "About me",
+      "chips": ["18+ years of experience", "Mentoring • Coaching • Agility"],
+      "paragraphs": {
+        "p1": "I'm <name>Hugo Casanova</name>, from Peru and a <job>systems engineer</job>. For over <b>18+ years</b> I have supported tech talents and teams across LATAM and the U.S. to grow with <b>clarity, confidence and purpose</b>.",
+        "p2": "I discovered that what truly transforms isn't just code, but <b>the people who create it</b>. That's why I bring together <b>mentoring, coaching and agility</b> to turn human skills into real technical results."
+      },
+      "items": [
+        {
+          "title": "Mentoring & Tech Coaching",
+          "description": "I've guided 200+ talents (backend, frontend, fullstack, midstack, DB, QA, mobile, UX/UI, PO, SM, tech leaders) to strengthen their mindset, gain direction and show their value with confidence.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "High-Performance Teams",
+          "description": "I work with teams to build trust, communication and feedback; applying Management 3.0, Agile Team Facilitation, Scrum/Kanban, Lean and Agile HR so high performance is sustainable and human.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Agile Leadership that Transforms",
+          "description": "I accompany leaders and organizations in digital and cultural transformation, combining strategic vision, data and culture to decide better and execute with focus.",
+          "iconKey": "liderazgo"
+        }
+      ]
+    },
+    "Agenda": {
+      "title": "Book your session",
+      "paragraphs": {
+        "p1": "Don't worry, I'm here to guide you. This is your moment to pause, look at where you're heading and decide how you want to grow.",
+        "p2": "In our session, I'll help you <b>clarify your goals, understand your strengths and create your next step with purpose</b>. Whether you're starting in tech or want to redesign your path, we'll co-create a clear and realistic plan."
+      },
+      "ctaLabel": "Calendar"
+    }
   }
 }

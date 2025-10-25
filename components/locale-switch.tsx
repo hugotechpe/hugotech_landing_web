@@ -19,6 +19,7 @@ export function LocaleSwitch() {
       <Button
         size="sm"
         variant={locale === "en" ? "flat" : "ghost"}
+        className="text-white"
         onPress={() => changeLocale("en")}
       >
         EN
@@ -26,6 +27,7 @@ export function LocaleSwitch() {
       <Button
         size="sm"
         variant={locale === "es" ? "flat" : "ghost"}
+        className="text-white"
         onPress={() => changeLocale("es")}
       >
         ES

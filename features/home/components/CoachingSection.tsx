@@ -11,7 +11,7 @@ export function CoachingSection() {
       aria-label="Coaching con Causa"
       className="scroll-mt-0 bg-primary"
     >
-      <div className="container mx-auto max-w-screen-2xl px-6 py-10 md:py-20">
+      <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
           {/* Columna izquierda: imagen de referencia */}
             <div className="relative w-full mx-auto">
@@ -36,7 +36,7 @@ export function CoachingSection() {
                 alt="Desarrolla tu talento"
                 width={300}
                 height={171}
-                className="hidden sm:block absolute left-0 top-0 md:-left-10 md:-top-0"
+                className="hidden sm:block absolute left-0 top-0 md:-left-5 md:-top-0"
               />
             </div>
 

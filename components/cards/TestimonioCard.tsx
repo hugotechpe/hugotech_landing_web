@@ -33,12 +33,13 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
   className,
 }) => {
   return (
-    <Card shadow="sm" className={clsx("bg-white rounded-2xl", className)}>
+    <Card shadow="none" className={clsx("bg-white rounded-2xl p-3", className)}>
       <CardBody>
         <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
           <blockquote itemProp="reviewBody" className="text-customgray text-sm md:text-base leading-relaxed">
             {quote}
           </blockquote>
+          <hr className="my-6 border-default-200" />
           <figcaption className="mt-6 flex items-center gap-4">
             <Image
               src={avatarSrc}

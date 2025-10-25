@@ -23,5 +23,131 @@
     "blog": "Blog",
     "about": "Acerca de",
     "search": "Buscar..."
+  },
+  "Sections": {
+    "Testimonios": {
+      "title": "Historias que Inspiran y Transforman 🌱✨",
+      "intro": [
+        "Cada historia es una prueba de que el talento florece cuando se combina con propósito, guía y mentalidad de crecimiento.",
+        "Conoce cómo he acompañado a jóvenes profesionales, líderes y equipos tech a descubrir su potencial, fortalecer su liderazgo y generar impacto real en sus proyectos y carreras."
+      ],
+      "cta": "Ver más testimonios",
+      "metrics": [
+        {
+          "id": "rating",
+          "value": "4,9/5",
+          "text": "Experiencia valorada por su cercanía, claridad y resultados reales. Cada sesión deja aprendizajes aplicables y un cambio visible en la forma de pensar y actuar."
+        },
+        {
+          "id": "satisfaction",
+          "value": "90 % de satisfacción",
+          "text": "El 90 % de quienes han trabajado conmigo sienten una evolución tangible en su mentalidad y desempeño profesional."
+        },
+        {
+          "id": "guided",
+          "value": "+200 talentos guiados",
+          "text": "Jóvenes tech, profesionales en transición y líderes de equipos que hoy trabajan con más propósito, enfoque y confianza."
+        }
+      ]
+    },
+    "Footer": {
+      "legal": {
+        "title": "Información Legal",
+        "links": [
+          { "label": "Términos y Condiciones", "href": "https://hugotech.pe/terminos-y-condiciones/" },
+          { "label": "Políticas de Privacidad", "href": "https://hugotech.pe/privacy-policy/" },
+          { "label": "Libro de reclamaciones", "href": "https://hugotech.pe/libro-de-reclamaciones/" }
+        ]
+      },
+      "menu": {
+        "title": "Menú",
+        "items": [
+          { "label": "Inicio", "href": "/es/" },
+          { "label": "Me presento", "href": "/es/#mepresento" },
+          { "label": "Coaching con causa", "href": "/es/#cccausa" },
+          { "label": "Empresas", "href": "/es/#empresas" },
+          { "label": "Testimonios", "href": "/es/#testimonios" },
+          { "label": "Agenda tu sesión", "href": "/es/#cita" },
+          { "label": "Blog", "href": "/es/blog" }
+        ]
+      },
+      "newsletter": {
+        "title": "Suscríbete",
+        "description": "Suscríbete a nuestro newsletter para disfrutar de consejos, inspiraciones y mucho más.",
+        "placeholder": "Correo electrónico",
+        "cta": "Suscribirme"
+      },
+      "bottom": {
+        "copyright": "© 2025 Todos los derechos reservados por HugoTech"
+      }
+    },
+    "Pilares": {
+      "title": "Los 6 pilares de la experiencia HugoTech",
+      "items": [
+        {
+          "title": "Explora tu propósito y mentalidad tech",
+          "description": "Descubre tu motor interno, redefine tus creencias y conecta con la versión profesional que quieres construir. El cambio empieza dentro: de la claridad personal nace la dirección profesional.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "Diseña tu mapa de crecimiento",
+          "description": "Creamos juntos una hoja de ruta realista y ambiciosa. Qué aprender, cómo aplicarlo y cómo medir tu evolución sin perder el equilibrio entre propósito y resultados.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Activa tu liderazgo ágil y consciente",
+          "description": "Desarrolla habilidades para influir positivamente, comunicar con claridad y liderar desde la confianza. Integro prácticas de Management 3.0, facilitación ágil y coaching para inspirar sin imponer.",
+          "iconKey": "liderazgo"
+        },
+        {
+          "title": "Fortalece tu cultura personal y colaborativa",
+          "description": "Aprende a construir relaciones de alto valor, donde el feedback, la empatía y la comunicación transparente sean parte del ADN. Equipos fuertes nacen de personas maduras emocional y profesionalmente.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "Construye una cultura data-driven",
+          "description": "Incorpora la toma de decisiones basada en evidencia y resultados. Analizamos métricas de desempeño, clima, calidad técnica y colaboración para impulsar la mejora continua.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Acelera resultados y rendimiento sostenibles",
+          "description": "Transforma la forma en que tú y tu equipo trabajan: entregas más efectivas, sprints con foco, menos deuda técnica y más innovación. Cuando las personas crecen, los resultados se multiplican.",
+          "iconKey": "liderazgo"
+        }
+      ]
+    },
+    "MePresento": {
+      "title": "Me Presento",
+      "chips": ["18+ años de experiencia", "Mentoring • Coaching • Agilidad"],
+      "paragraphs": {
+        "p1": "Soy <name>Hugo Casanova</name>, peruano e <job>ingeniero de sistemas</job>. Desde hace <b>18+ años</b> acompaño a talentos y equipos tech en LATAM y EE. UU. a crecer con <b>claridad, confianza y propósito</b>.",
+        "p2": "Descubrí que lo que transforma no es solo el código, sino <b>las personas que lo crean</b>. Por eso integro <b>mentoring, coaching y agilidad</b> para convertir habilidades humanas en resultados técnicos reales."
+      },
+      "items": [
+        {
+          "title": "Mentoring & Coaching Tech",
+          "description": "He guiado a 200+ talentos (backend, frontend, fullstack, midstack, DB, QA, mobile, UX/UI, PO, SM, líderes tech) a fortalecer su mentalidad, ganar dirección y mostrar su valor con seguridad.",
+          "iconKey": "mentoring"
+        },
+        {
+          "title": "Equipos de Alto Rendimiento",
+          "description": "Trabajo con equipos para construir confianza, comunicación y feedback; aplico Management 3.0, Agile Team Facilitation, Scrum/Kanban, Lean y Agile HR para que el alto desempeño sea sostenible y humano.",
+          "iconKey": "equipos"
+        },
+        {
+          "title": "Liderazgo Ágil que Transforma",
+          "description": "Acompaño a líderes y organizaciones en transformación digital y cultural, uniendo visión estratégica, datos y cultura para decidir mejor y ejecutar con foco.",
+          "iconKey": "liderazgo"
+        }
+      ]
+    },
+    "Agenda": {
+      "title": "Agenda tu sesión",
+      "paragraphs": {
+        "p1": "No te preocupes, estoy aquí para guiarte. Este es tu momento para hacer una pausa, mirar hacia dónde vas y decidir cómo quieres crecer.",
+        "p2": "En nuestra sesión, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Ya sea que estés empezando en tecnología o quieras rediseñar tu rumbo, construiremos juntos un plan claro y real."
+      },
+      "ctaLabel": "Calendario"
+    }
   }
 }

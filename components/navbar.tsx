@@ -11,6 +11,7 @@ import {
 } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
+import { LocaleSwitch } from "@/components/locale-switch";
 
 export default function HerohNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -29,7 +30,7 @@ export default function HerohNavbar() {
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
         maxWidth="full"
-        className="bg-primary mx-auto max-w-screen-2xl"
+        className="bg-primary mx-auto max-w-1400"
         height="5rem"
         shouldHideOnScroll={false}
       >
@@ -63,6 +64,9 @@ export default function HerohNavbar() {
               </Link>
             </NavbarItem>
           ))}
+          <NavbarItem className="hidden lg:flex">
+            <LocaleSwitch />
+          </NavbarItem>
           <NavbarItem>
             <Button 
               as={Link}

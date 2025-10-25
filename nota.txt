@@ -1,471 +1,86 @@
 <div class="e-con-inner">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-bab3734 testimonios e-con-full e-flex e-con e-child" data-id="bab3734" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-b850611 e-con-full e-flex e-con e-child" data-id="b850611" data-element_type="container">
-				<div class="elementor-element elementor-element-2fd1085 elementor-widget elementor-widget-heading animated slide-up" data-id="2fd1085" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;}" data-widget_type="heading.default">
+		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-5bf37a1b e-con-full e-flex e-con e-child" data-id="5bf37a1b" data-element_type="container">
+				<div class="elementor-element elementor-element-527905cc elementor-widget elementor-widget-heading" data-id="527905cc" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Historias que Inspiran y Transforman <img draggable="false" role="img" class="emoji" alt="🌱" src="https://s.w.org/images/core/emoji/16.0.1/svg/1f331.svg"><img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/16.0.1/svg/2728.svg"></h2>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Información Legal</h4>				</div>
 				</div>
-				<div class="elementor-element elementor-element-8dc0983 elementor-widget__width-initial elementor-widget elementor-widget-text-editor animated slide-up" data-id="8dc0983" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-40d5468c elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="40d5468c" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
 				<div class="elementor-widget-container">
-									<p><span style="font-weight: 400;">Cada historia es una prueba de que el talento florece cuando se combina con propósito, guía y mentalidad de crecimiento.</span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"> Conoce cómo he acompañado a jóvenes profesionales, líderes y equipos tech a descubrir su potencial,</span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"> fortalecer su liderazgo y generar impacto real en sus proyectos y carreras.</span></p>								</div>
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-40d5468c" class="elementor-nav-menu sm-vertical" data-smartmenus-id="17613618214341118"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="https://hugotech.pe/terminos-y-condiciones/" class="elementor-item">Términos y Condiciones</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-478"><a rel="privacy-policy" href="https://hugotech.pe/privacy-policy/" class="elementor-item">Políticas de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="https://hugotech.pe/libro-de-reclamaciones/" class="elementor-item">Libro de reclamaciones</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="--menu-height: 0;">
+				<ul id="menu-2-40d5468c" class="elementor-nav-menu sm-vertical" data-smartmenus-id="17613618214348604"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="https://hugotech.pe/terminos-y-condiciones/" class="elementor-item" tabindex="-1">Términos y Condiciones</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-478"><a rel="privacy-policy" href="https://hugotech.pe/privacy-policy/" class="elementor-item" tabindex="-1">Políticas de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="https://hugotech.pe/libro-de-reclamaciones/" class="elementor-item" tabindex="-1">Libro de reclamaciones</a></li>
+</ul>			</nav>
+						</div>
 				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-d92962f e-con-full e-flex e-con e-child" data-id="d92962f" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-b75145c e-con-full e-flex e-con e-child" data-id="b75145c" data-element_type="container">
-				<div class="elementor-element elementor-element-43f7465 elementor-widget elementor-widget-heading animated slide-up" data-id="43f7465" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;}" data-widget_type="heading.default">
+				</div>
+		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-267d863a e-con-full e-flex e-con e-child" data-id="267d863a" data-element_type="container">
+				<div class="elementor-element elementor-element-255bf6a6 elementor-widget elementor-widget-heading" data-id="255bf6a6" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">4,9/5</h2>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Menú</h4>				</div>
 				</div>
-				<div class="elementor-element elementor-element-156625c elementor-widget__width-initial elementor-widget elementor-widget-text-editor animated slide-up" data-id="156625c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-af2216d elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="af2216d" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
 				<div class="elementor-widget-container">
-									<p><span style="font-weight: 400;">Experiencia valorada por su cercanía, claridad y resultados reales.</span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"> Cada sesión deja aprendizajes aplicables y un cambio visible en la forma de pensar y actuar.</span></p>								</div>
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-af2216d" class="elementor-nav-menu sm-vertical" data-smartmenus-id="17613618214349478"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2951 current_page_item menu-item-3198"><a href="https://hugotech.pe/" aria-current="page" class="elementor-item elementor-item-active">Inicio</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-687"><a href="https://hugotech.pe/#mepresento" aria-current="page" class="elementor-item elementor-item-anchor">Me presento</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-502"><a href="https://hugotech.pe/#cccausa" aria-current="" class="elementor-item elementor-item-anchor">Coaching con causa</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2858"><a href="https://hugotech.pe/empresas/" class="elementor-item">Empresas</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2106"><a href="https://hugotech.pe/#testimonios" aria-current="" class="elementor-item elementor-item-anchor">Testimonios</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-697"><a href="https://hugotech.pe/#cita" aria-current="location" class="elementor-item elementor-item-anchor elementor-item-active">Agenda tu sesión</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2703"><a href="https://hugotech.pe/blog/" class="elementor-item">Blog</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="--menu-height: 0;">
+				<ul id="menu-2-af2216d" class="elementor-nav-menu sm-vertical" data-smartmenus-id="17613618214357522"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2951 current_page_item menu-item-3198"><a href="https://hugotech.pe/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Inicio</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-687"><a href="https://hugotech.pe/#mepresento" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">Me presento</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-502"><a href="https://hugotech.pe/#cccausa" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">Coaching con causa</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2858"><a href="https://hugotech.pe/empresas/" class="elementor-item" tabindex="-1">Empresas</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2106"><a href="https://hugotech.pe/#testimonios" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">Testimonios</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-697"><a href="https://hugotech.pe/#cita" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">Agenda tu sesión</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2703"><a href="https://hugotech.pe/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+</ul>			</nav>
+						</div>
 				</div>
 				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-ff90335 e-con-full e-flex e-con e-child" data-id="ff90335" data-element_type="container">
-				<div class="elementor-element elementor-element-522f377 elementor-widget elementor-widget-heading animated slide-up" data-id="522f377" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;}" data-widget_type="heading.default">
+		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-7e43be95 e-con-full e-flex e-con e-child" data-id="7e43be95" data-element_type="container">
+				<div class="elementor-element elementor-element-3b2b5a77 elementor-widget elementor-widget-heading" data-id="3b2b5a77" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">90 % de satisfacción</h2>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Suscríbete</h4>				</div>
 				</div>
-				<div class="elementor-element elementor-element-2d73e10 elementor-widget__width-initial elementor-widget elementor-widget-text-editor animated slide-up" data-id="2d73e10" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-52e86b52 elementor-widget elementor-widget-text-editor" data-id="52e86b52" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p><span style="font-weight: 400;">El 90 % de quienes han trabajado conmigo sienten una evolución tangible en su mentalidad y desempeño profesional.</span></p>								</div>
+									<p>Suscríbase a nuestro newsletter para disfrutar de consejos, inspiraciones y mucho más.</p>								</div>
 				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-834847f e-con-full e-flex e-con e-child" data-id="834847f" data-element_type="container">
-				<div class="elementor-element elementor-element-42bd95d elementor-widget elementor-widget-heading animated slide-up" data-id="42bd95d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7fbfe760 elementor-button-align-center elementor-mobile-button-align-stretch elementor-widget elementor-widget-form" data-id="7fbfe760" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;40&quot;,&quot;button_width_tablet&quot;:&quot;30&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">+200 talentos guiados
-</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-8be0789 elementor-widget__width-initial elementor-widget elementor-widget-text-editor animated slide-up" data-id="8be0789" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slide-up&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p><span style="font-weight: 400;">Jóvenes tech, profesionales en transición y líderes de equipos que hoy trabajan con más propósito, enfoque y confianza.</span></p>								</div>
-				</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-a29198d elementor-widget__width-auto elementor-align-center elementor-widget elementor-widget-button animated fadeInLeft" data-id="a29198d" data-element_type="widget" data-settings="{&quot;_animation_delay&quot;:450,&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://hugotech.pe/testimonios/">
+							<form class="elementor-form" method="post" name="Newsletter Form" aria-label="Newsletter Form">
+			<input type="hidden" name="post_id" value="1696">
+			<input type="hidden" name="form_id" value="7fbfe760">
+			<input type="hidden" name="referer_title" value="Hugo Tech - Sesiones de coaching para&nbsp;jóvenes.">
+
+							<input type="hidden" name="queried_id" value="2951">
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-60 elementor-md-70 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Correo electronico" required="required">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-40 e-form__buttons elementor-md-30">
+					<button class="elementor-button elementor-size-md" type="submit">
 						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Ver mas testimonios</span>
-					</span>
-					</a>
+																						<span class="elementor-button-text">Suscribirme</span>
+													</span>
+					</button>
 				</div>
-								</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-14b4687 e-con-full e-flex e-con e-child" data-id="14b4687" data-element_type="container">
-				<div class="elementor-element elementor-element-4e61c5f elementor-widget__width-inherit eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-grid" data-id="4e61c5f" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;1&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="jet-listing-grid.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-grid jet-listing"><div class="jet-listing-grid__slider" data-slider_options="{&quot;autoplaySpeed&quot;:5000,&quot;autoplay&quot;:true,&quot;pauseOnHover&quot;:true,&quot;infinite&quot;:true,&quot;centerMode&quot;:false,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;dots&quot;:true,&quot;slidesToScroll&quot;:1,&quot;prevArrow&quot;:&quot;\u003Cdiv class=\u0027jet-listing-grid__slider-icon prev-arrow \u0027 role=\u0027button\u0027 aria-label=\u0027Previous\u0027\u003E\u003Csvg width=\u0027180\u0027 height=\u0027180\u0027 viewBox=\u00270 0 180 180\u0027 fill=\u0027none\u0027 xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027\u003E\u003Cpath d=\u0027M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z\u0027 fill=\u0027black\u0027\/\u003E\u003C\/svg\u003E\u003C\/div\u003E&quot;,&quot;nextArrow&quot;:&quot;\u003Cdiv class=\u0027jet-listing-grid__slider-icon next-arrow \u0027 role=\u0027button\u0027 aria-label=\u0027Next\u0027\u003E\u003Csvg width=\u0027180\u0027 height=\u0027180\u0027 viewBox=\u00270 0 180 180\u0027 fill=\u0027none\u0027 xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027\u003E\u003Cpath d=\u0027M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z\u0027 fill=\u0027black\u0027\/\u003E\u003C\/svg\u003E\u003C\/div\u003E&quot;,&quot;rtl&quot;:false,&quot;itemsCount&quot;:4,&quot;fade&quot;:false,&quot;slidesToShow&quot;:{&quot;desktop&quot;:1,&quot;tablet&quot;:1,&quot;mobile&quot;:1}}" dir="ltr"><div class="jet-listing-grid__items grid-col-desk-1 grid-col-tablet-1 grid-col-mobile-1 jet-listing-grid--2998 jet-equal-columns__wrapper slick-initialized slick-slider slick-dotted" data-queried-id="2951|WP_Post" data-nav="{&quot;enabled&quot;:false,&quot;type&quot;:null,&quot;more_el&quot;:null,&quot;query&quot;:[],&quot;widget_settings&quot;:{&quot;lisitng_id&quot;:2998,&quot;posts_num&quot;:6,&quot;columns&quot;:1,&quot;columns_tablet&quot;:1,&quot;columns_mobile&quot;:1,&quot;column_min_width&quot;:240,&quot;column_min_width_tablet&quot;:240,&quot;column_min_width_mobile&quot;:240,&quot;inline_columns_css&quot;:false,&quot;is_archive_template&quot;:&quot;&quot;,&quot;post_status&quot;:[&quot;publish&quot;],&quot;use_random_posts_num&quot;:&quot;&quot;,&quot;max_posts_num&quot;:9,&quot;not_found_message&quot;:&quot;No data was found&quot;,&quot;is_masonry&quot;:false,&quot;equal_columns_height&quot;:&quot;yes&quot;,&quot;use_load_more&quot;:&quot;&quot;,&quot;load_more_id&quot;:&quot;&quot;,&quot;load_more_type&quot;:&quot;click&quot;,&quot;load_more_offset&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;use_custom_post_types&quot;:&quot;&quot;,&quot;custom_post_types&quot;:[],&quot;hide_widget_if&quot;:&quot;&quot;,&quot;carousel_enabled&quot;:&quot;yes&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;arrow_icon&quot;:&quot;fa fa-angle-left&quot;,&quot;dots&quot;:&quot;true&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;pause_on_hover&quot;:&quot;true&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;true&quot;,&quot;center_mode&quot;:&quot;&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;inject_alternative_items&quot;:&quot;&quot;,&quot;injection_items&quot;:[],&quot;scroll_slider_enabled&quot;:&quot;&quot;,&quot;scroll_slider_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;custom_query&quot;:false,&quot;custom_query_id&quot;:&quot;&quot;,&quot;_element_id&quot;:&quot;&quot;,&quot;collapse_first_last_gap&quot;:false,&quot;list_tag_selection&quot;:&quot;&quot;,&quot;list_items_wrapper_tag&quot;:&quot;div&quot;,&quot;list_item_tag&quot;:&quot;div&quot;,&quot;empty_items_wrapper_tag&quot;:&quot;div&quot;}}" data-page="1" data-pages="1" data-listing-source="posts" data-listing-id="2998" data-query-id=""><div class="jet-listing-grid__slider-icon prev-arrow slick-arrow" role="button" aria-label="Previous" style=""><svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z" fill="black"></path></svg></div><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4680px; transform: translate3d(-520px, 0px, 0px);"><div class="jet-listing-grid__item jet-listing-dynamic-post-2513 jet-equal-columns slick-slide slick-cloned" data-post-id="2513" style="width: 520px;" role="tabpanel" id="" tabindex="-1" data-slick-index="-1" aria-hidden="true">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Desde un inicio me sentí apoyado en todo sentido, me incentivaba afrontar nuevo retos además tuve la confianza de proponer y debatir en un ambiente de seguro.</p>
-
-
-
-<p></p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
+			</div>
+		</form>
 						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514 lazyautosizes ls-is-cached lazyloaded" alt="1626583991442" title="Home 24" data-src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" data-sizes="auto" data-eio-rwidth="311" data-eio-rheight="311" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w"><noscript><img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514" alt="1626583991442" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" sizes="(max-width: 311px) 100vw, 311px" title="Home 24" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									José Antonio Ureta – 26								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"> Frontend Developer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/jos%C3%A9-antonio-ureta-chipana/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2909 jet-equal-columns slick-slide slick-current slick-active" data-post-id="2909" style="width: 520px;" role="tabpanel" id="slick-slide00" data-slick-index="0" aria-hidden="false">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Ha sido genial trabajar contigo, Hugo. Siempre tienes todo bien claro y lo explicas de una forma súper sencilla, lo que lo hace súper fácil de entender, sobre todo porque se nota que tienes muchísima experiencia en el mundo tech.</p>
-
-
-
-<p></p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="222" height="222" src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" class="attachment-large size-large wp-image-2950 lazyautosizes ls-is-cached lazyloaded" alt="1656965903121" title="Home 21" data-src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="222" data-eio-rheight="222" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="222" height="222" src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" class="attachment-large size-large wp-image-2950" alt="1656965903121" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w" sizes="(max-width: 222px) 100vw, 222px" title="Home 21" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Leenkim Altamirano – 26								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Full-Stack Web Developer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/leenkim-altamirano-tseng-856067233/" target="_blank" rel="noopener" tabindex="0"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2907 jet-equal-columns slick-slide" data-post-id="2907" style="width: 520px;" role="tabpanel" id="slick-slide01" tabindex="-1" data-slick-index="1" aria-hidden="true">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Trabajar con Hugo fue una de las mejores experiencias, obviamente no todo es perfecto, pero siempre se esforzaba por mejorar y crecer con nosotros</p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="800" height="800" src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" class="attachment-large size-large wp-image-2937 lazyautosizes ls-is-cached lazyloaded" alt="352982577 923272218744961 3546574323247743879 n" title="Home 22" data-src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="960" data-eio-rheight="960" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" class="attachment-large size-large wp-image-2937" alt="352982577 923272218744961 3546574323247743879 n" srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w" sizes="(max-width: 800px) 100vw, 800px" title="Home 22" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Angelo Moreno – 30								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Agente de Ventas</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.instagram.com/angelomoor/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2895 jet-equal-columns slick-slide" data-post-id="2895" style="width: 520px;" role="tabpanel" id="slick-slide02" data-slick-index="2" aria-hidden="true" tabindex="-1">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener mas confianza en mis habilidades y a ser cada día mejor a nivel profesional</p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="600" height="600" src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" class="attachment-large size-large wp-image-2927 lazyautosizes ls-is-cached lazyloaded" alt="1705494282267" title="Home 23" data-src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="600" data-eio-rheight="600" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="600" height="600" src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" class="attachment-large size-large wp-image-2927" alt="1705494282267" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px" title="Home 23" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Miguel Bustillos – 24								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"> Software Engineer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/miguel-angel-bustillos-alayo/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2513 jet-equal-columns slick-slide" data-post-id="2513" style="width: 520px;" role="tabpanel" id="slick-slide03" data-slick-index="3" aria-hidden="true" tabindex="-1">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Desde un inicio me sentí apoyado en todo sentido, me incentivaba afrontar nuevo retos además tuve la confianza de proponer y debatir en un ambiente de seguro.</p>
-
-
-
-<p></p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514 lazyautosizes ls-is-cached lazyloaded" alt="1626583991442" title="Home 24" data-src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" data-sizes="auto" data-eio-rwidth="311" data-eio-rheight="311" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w"><noscript><img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514" alt="1626583991442" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" sizes="(max-width: 311px) 100vw, 311px" title="Home 24" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									José Antonio Ureta – 26								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"> Frontend Developer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/jos%C3%A9-antonio-ureta-chipana/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2909 jet-equal-columns slick-slide slick-cloned" data-post-id="2909" style="width: 520px;" role="tabpanel" id="" tabindex="-1" data-slick-index="4" aria-hidden="true">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Ha sido genial trabajar contigo, Hugo. Siempre tienes todo bien claro y lo explicas de una forma súper sencilla, lo que lo hace súper fácil de entender, sobre todo porque se nota que tienes muchísima experiencia en el mundo tech.</p>
-
-
-
-<p></p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="222" height="222" src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" class="attachment-large size-large wp-image-2950 lazyautosizes ls-is-cached lazyloaded" alt="1656965903121" title="Home 21" data-src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="222" data-eio-rheight="222" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="222" height="222" src="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg" class="attachment-large size-large wp-image-2950" alt="1656965903121" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1656965903121.jpg 222w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1656965903121-100x100.jpg 100w" sizes="(max-width: 222px) 100vw, 222px" title="Home 21" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Leenkim Altamirano – 26								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Full-Stack Web Developer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/leenkim-altamirano-tseng-856067233/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2907 jet-equal-columns slick-slide slick-cloned" data-post-id="2907" style="width: 520px;" role="tabpanel" id="" tabindex="-1" data-slick-index="5" aria-hidden="true">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Trabajar con Hugo fue una de las mejores experiencias, obviamente no todo es perfecto, pero siempre se esforzaba por mejorar y crecer con nosotros</p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="800" height="800" src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" class="attachment-large size-large wp-image-2937 lazyautosizes ls-is-cached lazyloaded" alt="352982577 923272218744961 3546574323247743879 n" title="Home 22" data-src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="960" data-eio-rheight="960" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg" class="attachment-large size-large wp-image-2937" alt="352982577 923272218744961 3546574323247743879 n" srcset="https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n.jpg 960w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-768x768.jpg 768w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-600x600.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/352982577_923272218744961_3546574323247743879_n-100x100.jpg 100w" sizes="(max-width: 800px) 100vw, 800px" title="Home 22" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Angelo Moreno – 30								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Agente de Ventas</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.instagram.com/angelomoor/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2895 jet-equal-columns slick-slide slick-cloned" data-post-id="2895" style="width: 520px;" role="tabpanel" id="" data-slick-index="6" aria-hidden="true" tabindex="-1">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener mas confianza en mis habilidades y a ser cada día mejor a nivel profesional</p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="600" height="600" src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" class="attachment-large size-large wp-image-2927 lazyautosizes ls-is-cached lazyloaded" alt="1705494282267" title="Home 23" data-src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w" data-sizes="auto" data-eio-rwidth="600" data-eio-rheight="600" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w"><noscript><img loading="lazy" decoding="async" width="600" height="600" src="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg" class="attachment-large size-large wp-image-2927" alt="1705494282267" srcset="https://hugotech.pe/wp-content/uploads/2025/08/1705494282267.jpg 600w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-300x300.jpg 300w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-150x150.jpg 150w, https://hugotech.pe/wp-content/uploads/2025/08/1705494282267-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px" title="Home 23" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									Miguel Bustillos – 24								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"> Software Engineer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/miguel-angel-bustillos-alayo/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-2513 jet-equal-columns slick-slide slick-cloned" data-post-id="2513" style="width: 520px;" role="tabpanel" id="" tabindex="-1" data-slick-index="7" aria-hidden="true">		<div data-elementor-type="jet-listing-items" data-elementor-id="2998" class="elementor elementor-2998" data-elementor-post-type="jet-engine">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-0eca1f4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="0eca1f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bb27a45 eael_liquid_glass-effect1 eael_liquid_glass_shadow-effect1 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="bb27a45" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-					<div class="jet-listing-dynamic-field__content">
-<p>Desde un inicio me sentí apoyado en todo sentido, me incentivaba afrontar nuevo retos además tuve la confianza de proponer y debatir en un ambiente de seguro.</p>
-
-
-
-<p></p>
-</div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fe5bbea elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe5bbea" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-6f845d7 e-con-full e-flex e-con e-child" data-id="6f845d7" data-element_type="container">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-885bb7f e-con-full e-flex e-con e-child" data-id="885bb7f" data-element_type="container">
-				<div class="elementor-element elementor-element-e0d6050 elementor-widget elementor-widget-image" data-id="e0d6050" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514 lazyautosizes ls-is-cached lazyloaded" alt="1626583991442" title="Home 24" data-src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" data-srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" data-sizes="auto" data-eio-rwidth="311" data-eio-rheight="311" sizes="120px" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w"><noscript><img loading="lazy" decoding="async" width="311" height="311" src="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg" class="attachment-large size-large wp-image-2514" alt="1626583991442" srcset="https://hugotech.pe/wp-content/uploads/2025/01/1626583991442.jpeg 311w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-300x300.jpeg 300w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-150x150.jpeg 150w, https://hugotech.pe/wp-content/uploads/2025/01/1626583991442-100x100.jpeg 100w" sizes="(max-width: 311px) 100vw, 311px" title="Home 24" data-eio="l"></noscript>															</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-06732a7 e-con-full e-flex e-con e-child" data-id="06732a7" data-element_type="container">
-				<div class="elementor-element elementor-element-8f63026 elementor-widget elementor-widget-text-editor" data-id="8f63026" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									José Antonio Ureta – 26								</div>
-				</div>
-				<div class="elementor-element elementor-element-24f664f elementor-widget elementor-widget-heading" data-id="24f664f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"> Frontend Developer</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-344dba3 elementor-widget elementor-widget-heading" data-id="344dba3" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/in/jos%C3%A9-antonio-ureta-chipana/" target="_blank" rel="noopener" tabindex="-1"><span style="font-family: 'DM Sans', sans-serif;font-weight: 500;font-size: 15px;color: #232323;text-decoration: none;display: flex;align-items: center">
-    <i class="fab fa-linkedin" style="margin-right: 10px;color: #232323"></i> Conéctate conmigo en LinkedIn</span></a></h2>				</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div></div></div><div class="jet-listing-grid__slider-icon next-arrow slick-arrow" role="button" aria-label="Next" style=""><svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z" fill="black"></path></svg></div><ul class="jet-slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><span role="tab">1</span></li><li role="presentation"><span role="tab">2</span></li><li class="" role="presentation"><span role="tab">3</span></li><li role="presentation" class=""><span role="tab">4</span></li></ul></div></div></div>				</div>
-				</div>
 				</div>
 				</div>
 					</div>

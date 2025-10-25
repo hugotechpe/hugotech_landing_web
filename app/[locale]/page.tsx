@@ -4,6 +4,7 @@ import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
 import { PilaresSection } from "@/features/home/components/PilaresSection";
+import { AgendaSection } from "@/features/home/components/AgendaSection";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <PilaresSection />
       <CoachingSection />
       <TestimoniosSection />
+      <AgendaSection />
     </>
   );
 }
