@@ -21,6 +21,7 @@ export function MePresentoSection() {
   // Eliminado iconMap local, usamos el enum y mapa compartido
 
   const title = section.title ?? "Me Presento";
+  const subtitle = section.subtitle ?? "";
   const chips = (section.chips ?? ["18+ años de experiencia", "Mentoring • Coaching • Agilidad"]) as string[];
   const items = (section.items ?? []) as Array<{ title: string; description: string; iconKey?: string }>;
 
@@ -51,6 +52,12 @@ export function MePresentoSection() {
               <h2 className="text-3xl md:text-4xl font-bold text-customgray">
                 {title}
               </h2>
+              
+              {subtitle && (
+                <p className="mt-3 text-xl text-gray-600 italic">
+                  {subtitle}
+                </p>
+              )}
 
               <div className="mt-4 flex flex-wrap gap-3">
                 {chips.map((chip) => (
