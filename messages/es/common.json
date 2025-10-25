@@ -163,16 +163,33 @@
     },
     "PorQueGratuito": {
       "title": "¿Por qué las sesiones 1 a 1 son gratuitas? 💚",
-      "paragraphs": {
-        "p1": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
-        "p2": "Cada conversación es un acto de gratitud. No es caridad, es responsabilidad. Si hoy puedo ayudar a alguien a encontrar su camino, es porque otros hicieron lo mismo por mí.",
-        "p3": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito</b>, sin barreras económicas, sin transacciones frías. Solo conversaciones honestas que transforman.",
-        "p4": "Las sesiones B2B para empresas sí tienen costo, porque requieren estructura, seguimiento y resultados medibles. Pero el corazón de HugoTech siempre será gratuito."
+      "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
+      "mentoriaCard": {
+        "title": "Tu Mentoría Tech 1 a 1 💚",
+        "subtitle": "Coaching de propósito + Mentoring tecnológico. Gratis.",
+        "p1": "¿Te sientes estancado en tu primer empleo TI? ¿No sabes qué 'path' tomar (DevOps, AI Engineer, Product Manager)? ¿Síndrome del impostor? <b>No estás solo</b>.",
+        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>coaching de autoconocimiento con mentoring tecnológico</b>. Antes del 'qué' viene el 'por qué'. Descubre tus valores, define tu propósito y supera las barreras mentales que te frenan.",
+        "resultsTitle": "Lo que lograrás en tus sesiones:",
+        "resultsItems": [
+          "Claridad sobre tu propósito profesional y próximos pasos en tech.",
+          "Hoja de ruta personalizada según tu perfil (backend, frontend, QA, PM, etc.)",
+          "Mentalidad de crecimiento y herramientas anti-burnout aplicables al día a día."
+        ],
+        "ctaLabel": "Agenda tu sesión gratis",
+        "note": "100 % gratuito. Sin letra pequeña. Solo conversación honesta."
       },
-      "highlight": {
-        "title": "Mi filosofía",
-        "quote": "Transformar desde el ser, construir desde el propósito y liderar con el alma.",
-        "description": "La verdadera innovación comienza dentro de las personas. Primero se transforma el ser, luego el hacer cobra sentido, y finalmente el tener llega como consecuencia natural."
+      "filosofiaCard": {
+        "title": "Mi Filosofía 🌱",
+        "subtitle": "Transformar desde el ser, construir desde el propósito y liderar con el alma.",
+        "p1": "Cada conversación es un acto de gratitud. No es caridad, es <b>responsabilidad</b>. Si hoy puedo ayudar a alguien a encontrar su camino, es porque otros hicieron lo mismo por mí.",
+        "p2": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito</b>, sin barreras económicas, sin transacciones frías. Solo conversaciones honestas que transforman.",
+        "resultsTitle": "Cómo funciona esto:",
+        "resultsItems": [
+          "La verdadera innovación comienza dentro de las personas.",
+          "Primero se transforma el ser, luego el hacer cobra sentido.",
+          "El tener llega como consecuencia natural."
+        ],
+        "note": "Las sesiones B2B para empresas sí tienen costo, porque requieren estructura, seguimiento y resultados medibles. Pero el corazón de HugoTech siempre será gratuito."
       }
     },
     "Inicio": {
