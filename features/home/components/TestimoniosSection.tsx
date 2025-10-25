@@ -59,20 +59,20 @@ export function TestimoniosSection() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
-              className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-20"
+              className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 md:gap-20"
               aria-label="Métricas de impacto"
             >
               {Array.isArray(metrics) && metrics.map((m: {id: string; value: string; text: string}) => (
-                <motion.article key={m.id} variants={fadeInUp}>
-                  <h3 className="text-3xl font-bold text-customgray">{m.value}</h3>
-                  <p className="mt-4 text-customgray text-sm">{m.text}</p>
+                <motion.article key={m.id} variants={fadeInUp} className="text-center sm:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-customgray">{m.value}</h3>
+                  <p className="mt-2 sm:mt-4 text-customgray text-sm">{m.text}</p>
                 </motion.article>
               ))}
             </motion.div>
 
             <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div>
-                <Button as={Link} href="/testimonios" size="lg" color="primary" variant="solid" className="mt-2 text-white bg-customgray">
+                <Button as={Link} href="/testimonios" size="lg" color="primary" variant="solid" className="mt-2 text-white bg-customgray w-full sm:w-auto">
                   {cta}
                 </Button>
               </div>

@@ -37,47 +37,47 @@ export function PorQueGratuitoSection() {
             <Card
               as="article"
               shadow="none"
-              className="bg-[#FFE8DB] p-5 pb-6"
+              className="bg-[#FFE8DB] p-4 sm:p-5 pb-6"
             >
               <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-2xl sm:text-3xl font-bold">
                   {t("mentoriaCard.title")}
                 </h3>
-                <p className="text-base md:text-xl font-semibold my-8">
+                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
                   {t("mentoriaCard.subtitle")}
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   {t.rich("mentoriaCard.p1", {
                     b: (chunks) => <span className="font-bold">{chunks}</span>,
                   })}
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   {t.rich("mentoriaCard.p2", {
                     b: (chunks) => <span className="font-bold">{chunks}</span>,
                   })}
                 </p>
-                <h4 className="mt-2 md:text-base font-semibold">
+                <h4 className="mt-2 text-sm sm:text-base font-semibold">
                   {t("mentoriaCard.resultsTitle")}
                 </h4>
-                <ul className="list-disc pl-10 space-y-2 text-customgray">
+                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray text-sm sm:text-base">
                   {(pgr?.mentoriaCard?.resultsItems ?? []).map(
                     (item: string, idx: number) => (
                       <li key={`res-${idx}`}>{item}</li>
                     )
                   )}
                 </ul>
-                <div className="mt-6">
+                <div className="mt-4 sm:mt-6">
                   <Button
                     as={Link}
                     href="#cita"
                     size="md"
                     color="primary"
                     variant="solid"
-                    className="bg-customgray w-fit"
+                    className="bg-customgray w-full sm:w-fit"
                   >
                     {t("mentoriaCard.ctaLabel")}
                   </Button>
-                  <p className="mt-4 text-customgray">
+                  <p className="mt-4 text-xs sm:text-sm text-customgray">
                     {t("mentoriaCard.note")}
                   </p>
                 </div>
@@ -88,37 +88,37 @@ export function PorQueGratuitoSection() {
             <Card
               as="article"
               shadow="none"
-              className="bg-[#E0F6F5] p-5 pb-6"
+              className="bg-[#E0F6F5] p-4 sm:p-5 pb-6"
             >
               <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-2xl sm:text-3xl font-bold">
                   {t("filosofiaCard.title")}
                 </h3>
-                <p className="text-base md:text-xl font-semibold my-8">
+                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
                   {t("filosofiaCard.subtitle")}
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   {t.rich("filosofiaCard.p1", {
                     b: (chunks) => <span className="font-bold">{chunks}</span>,
                   })}
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   {t.rich("filosofiaCard.p2", {
                     b: (chunks) => <span className="font-bold">{chunks}</span>,
                   })}
                 </p>
-                <h4 className="mt-2 md:text-base font-semibold">
+                <h4 className="mt-2 text-sm sm:text-base font-semibold">
                   {t("filosofiaCard.resultsTitle")}
                 </h4>
-                <ul className="list-disc pl-10 space-y-2 text-customgray">
+                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray text-sm sm:text-base">
                   {(pgr?.filosofiaCard?.resultsItems ?? []).map(
                     (item: string, idx: number) => (
                       <li key={`filo-${idx}`}>{item}</li>
                     )
                   )}
                 </ul>
-                <div className="mt-6">
-                  <p className="mt-4 text-customgray italic text-sm">
+                <div className="mt-4 sm:mt-6">
+                  <p className="mt-4 text-customgray italic text-xs sm:text-sm">
                     {t("filosofiaCard.note")}
                   </p>
                 </div>

@@ -62,29 +62,29 @@ export function EmpresasSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
             <motion.div variants={fadeInUp}>
-              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-5 pb-0 pr-0 relative h-full">
+              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full">
                 <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-3xl font-bold">{t("mentoriaCard.title")}</h3>
-                <p className="text-base md:text-xl font-semibold my-8">
+                <h3 className="text-2xl sm:text-3xl font-bold">{t("mentoriaCard.title")}</h3>
+                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
                   {t("mentoriaCard.subtitle")}
                 </p>
-                <p className="mr-5">
+                <p className="mr-0 sm:mr-5">
                   {t.rich("mentoriaCard.p1", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
                 </p>
-                <p className="mr-5">
+                <p className="mr-0 sm:mr-5">
                   {t.rich("mentoriaCard.p2", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
                 </p>
-                <h4 className="mt-2 md:text-base font-semibold w-[85%]">{t("mentoriaCard.resultsTitle")}</h4>
-                <ul className="list-disc pl-10 space-y-2 text-customgray w-[70%]">
+                <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">{t("mentoriaCard.resultsTitle")}</h4>
+                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
                   {(emp?.mentoriaCard?.resultsItems ?? []).map((item: string, idx: number) => (
                     <li key={`res-${idx}`}>{item}</li>
                   ))}
                 </ul>
-                <div className="h-full flex flex-col justify-between w-[70%] mt-6">
-                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-fit">
+                <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
+                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-full sm:w-fit">
                     {t("mentoriaCard.ctaLabel")}
                   </Button>
-                  <p className="mt-4 text-customgray">
+                  <p className="mt-4 text-sm sm:text-base text-customgray">
                     {t("mentoriaCard.note")}
                   </p>
                 </div>
@@ -103,29 +103,29 @@ export function EmpresasSection() {
 
             {/* Columna derecha: Servicio Business */}
             <motion.div variants={fadeInUp}>
-              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-5 pb-0 pr-0 relative h-full">
+              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full">
                 <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-3xl font-bold">{t("empresasCard.title")}</h3>
-                <p className="text-base md:text-xl font-semibold my-8">
+                <h3 className="text-2xl sm:text-3xl font-bold">{t("empresasCard.title")}</h3>
+                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
                   {t("empresasCard.subtitle")}
                 </p>
-                <p className="mr-5">
+                <p className="mr-0 sm:mr-5">
                   {t.rich("empresasCard.p1", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
                 </p>
-                <p className="mr-5">
+                <p className="mr-0 sm:mr-5">
                   {t.rich("empresasCard.p2", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
                 </p>
-                <h4 className="mt-2 md:text-base font-semibold w-[85%]">{t("empresasCard.resultsTitle")}</h4>
-                <ul className="list-disc pl-10 space-y-2 text-customgray w-[70%]">
+                <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">{t("empresasCard.resultsTitle")}</h4>
+                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
                   {(emp?.empresasCard?.resultsItems ?? []).map((item: string, idx: number) => (
                     <li key={`eres-${idx}`}>{item}</li>
                   ))}
                 </ul>
-                <div className="h-full flex flex-col justify-between w-[70%] mt-6">
-                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-fit">
+                <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
+                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-full sm:w-fit">
                     {t("empresasCard.ctaLabel")}
                   </Button>
-                  <p className="mt-4 text-customgray">
+                  <p className="mt-4 text-sm sm:text-base text-customgray">
                     {t("empresasCard.note")}
                   </p>
                 </div>

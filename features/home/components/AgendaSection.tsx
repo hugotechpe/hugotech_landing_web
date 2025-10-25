@@ -69,32 +69,35 @@ export function AgendaSection() {
           variants={fadeInUp}
           className="max-w-5xl mx-auto"
         >
-          <CalendlyEmbed 
-            url="https://calendly.com/hugotech/mentoria1a1"
-            height="700px"
-            utm={{
-              utmSource: "hugotech.pe",
-              utmMedium: "website",
-              utmCampaign: "homepage_cita_section"
-            }}
-          />
+          {/* Desktop: Embed inline */}
+          <div className="hidden md:block">
+            <CalendlyEmbed 
+              url="https://calendly.com/hugotech/mentoria1a1"
+              height="700px"
+              utm={{
+                utmSource: "hugotech.pe",
+                utmMedium: "website",
+                utmCampaign: "homepage_cita_section"
+              }}
+            />
+          </div>
 
-          {/* Botón alternativo para móviles */}
-          <div className="mt-8 text-center md:hidden">
+          {/* Mobile: Botón modal popup (mejor UX en pantallas pequeñas) */}
+          <div className="block md:hidden text-center">
             <CalendlyButton 
               text={t("ctaLabel")}
               variant="solid"
               color="primary"
               size="lg"
-              fullWidth
+              className="w-full sm:w-auto"
               utm={{
                 utmSource: "hugotech.pe",
                 utmMedium: "website_mobile",
-                utmCampaign: "homepage_cta_mobile"
+                utmCampaign: "homepage_cita_section_mobile"
               }}
             />
-            <p className="mt-4 text-sm text-gray-500">
-              * {t("note")}
+            <p className="mt-4 text-sm text-gray-600">
+              💚 {t("note")}
             </p>
           </div>
         </motion.div>

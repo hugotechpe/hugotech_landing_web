@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           {/* Newsletter */}
           <section aria-labelledby="footer-newsletter">
             <h2 id="footer-newsletter" className="text-lg font-bold">{newsletter.title}</h2>
-            <p className="mt-3 text-white/50">{newsletter.description}</p>
+            <p className="mt-3 text-sm sm:text-base text-white/50">{newsletter.description}</p>
             <form onSubmit={handleSubmit} className="mt-4 flex flex-col sm:flex-row gap-3" aria-label={newsletter.title}>
               <Input
                 aria-label={newsletter.placeholder}
@@ -90,7 +90,12 @@ const Footer: React.FC = () => {
                 required
                 className="flex-1"
               />
-              <Button type="submit" size="lg" color="default" className="bg-[#115C5B] text-white hover:bg-[#183F33]">
+              <Button 
+                type="submit" 
+                size="lg" 
+                color="default" 
+                className="bg-[#115C5B] text-white hover:bg-[#183F33] w-full sm:w-auto"
+              >
                 {newsletter.cta}
               </Button>
             </form>
@@ -98,16 +103,16 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Barra inferior */}
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between border-t border-white/20 pt-6">
-          <p className="text-white/80 text-sm">{copyright}</p>
-          <div className="mt-4 md:mt-0 flex items-center gap-5">
-            <Link href="https://facebook.com/" aria-label="Facebook" title="Facebook" className="text-white/50 hover:text-white">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-white/20 pt-6">
+          <p className="text-white/80 text-xs sm:text-sm text-center md:text-left">{copyright}</p>
+          <div className="flex items-center gap-5">
+            <Link href="https://facebook.com/" aria-label="Facebook" title="Facebook" className="text-white/50 hover:text-white transition-colors">
               <FacebookIcon className="h-5 w-5" />
             </Link>
-            <Link href="https://instagram.com/" aria-label="Instagram" title="Instagram" className="text-white/50 hover:text-white">
+            <Link href="https://instagram.com/" aria-label="Instagram" title="Instagram" className="text-white/50 hover:text-white transition-colors">
               <InstagramIcon className="h-5 w-5" />
             </Link>
-            <Link href="https://linkedin.com/" aria-label="LinkedIn" title="LinkedIn" className="text-white/50 hover:text-white">
+            <Link href="https://linkedin.com/" aria-label="LinkedIn" title="LinkedIn" className="text-white/50 hover:text-white transition-colors">
               <LinkedInIcon className="h-5 w-5" />
             </Link>
           </div>

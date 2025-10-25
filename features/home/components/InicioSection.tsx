@@ -44,12 +44,13 @@ export function InicioSection() {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
               <CalendlyButton 
                 text={t("ctas.mentoria")}
                 variant="solid"
                 color="default"
                 size="lg"
+                className="w-full sm:w-auto"
                 utm={{
                   utmSource: "hugotech.pe",
                   utmMedium: "website",
@@ -63,7 +64,7 @@ export function InicioSection() {
                 size="lg"
                 color="primary"
                 variant="bordered"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
+                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
               >
                 {t("ctas.historia")}
               </Button>
@@ -74,7 +75,7 @@ export function InicioSection() {
                 size="lg"
                 color="primary"
                 variant="solid"
-                className="bg-[#115C5B] text-white hover:bg-[#183F33]"
+                className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
               >
                 {t("ctas.empresas")}
               </Button>
