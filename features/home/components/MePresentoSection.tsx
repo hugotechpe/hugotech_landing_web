@@ -56,7 +56,7 @@ export function MePresentoSection() {
                 <Chip color="primary" variant="flat" className="bg-gray-200 text-customgray font-semibold">Mentoring • Coaching • Agilidad</Chip>
               </div>
 
-              <div className="mt-6 space-y-4 text-black leading-relaxed text-sm" itemProp="description">
+              <div className="mt-6 space-y-4 text-black leading-relaxed text-base" itemProp="description">
                 <p>
                   Soy <strong itemProp="name">Hugo Casanova</strong>, peruano e <strong itemProp="jobTitle">ingeniero de sistemas</strong>.
                   Desde hace <strong>18+ años</strong> acompaño a talentos y equipos tech en LATAM y EE. UU. a crecer con

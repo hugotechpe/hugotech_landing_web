@@ -50,7 +50,7 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
               <HeadingTag id={titleId} className="text-lg font-semibold text-customgray">
                 {title}
               </HeadingTag>
-              <p className="mt-4 text-customgray text-sm">{description}</p>
+              <p className="mt-4 text-customgray text-base">{description}</p>
             </div>
           </div>
         </CardBody>

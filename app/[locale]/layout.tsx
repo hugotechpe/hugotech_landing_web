@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import { fontSans, fontRubik } from "@/config/fonts";
 import HeroNavbar from "@/components/navbar";
 import { getMessages } from "next-intl/server";
 
@@ -45,9 +45,10 @@ export default async function RootLayout({
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
           fontSans.variable,
+          fontRubik.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }} locale={locale} messages={messages}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }} locale={locale} messages={messages}>
           <div className="relative flex flex-col h-screen">
             <HeroNavbar />
             <main className="flex-grow">

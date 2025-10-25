@@ -10,9 +10,9 @@ export function InicioSection() {
     <section
       id="inicio"
       aria-label="Inicio"
-      className="scroll-mt-0 bg-primary py-10"
+      className="scroll-mt-0 bg-primary"
     >
-      <div className="container mx-auto max-w-screen-2xl px-6">
+      <div className="container mx-auto max-w-screen-2xl px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
           {/* Columna izquierda: contenido y CTA */}
           <div>
@@ -20,7 +20,7 @@ export function InicioSection() {
               Propósito
             </p>
 
-            <h2 className="mt-4 text-3xl md:text-4xl font-bold">
+            <h2 className="mt-4 text-3xl md:text-4xl font-heading font-bold text-white">
               Forma y potencia tu talento o el de tu equipo en el mundo tech
             </h2>
 
@@ -48,7 +48,7 @@ export function InicioSection() {
                 size="lg"
                 color="primary"
                 variant="solid"
-                className="bg-white text-primary"
+                className="bg-white text-primary hover:bg-[#183F33] hover:text-white"
                 onPress={(e) => {
 
                 }}
@@ -62,7 +62,7 @@ export function InicioSection() {
                 size="lg"
                 color="primary"
                 variant="solid"
-                className="bg-[#115C5B] text-white"
+                className="bg-[#115C5B] text-white hover:bg-[#183F33]"
                 onPress={(e) => {
 
                 }}
