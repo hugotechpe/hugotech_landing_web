@@ -4,10 +4,13 @@ import React from "react";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 
 export function InicioSection() {
   const t = useTranslations("Sections.Inicio");
+  const locale = useLocale();
+  
   return (
     <section
       id="inicio"
@@ -40,44 +43,36 @@ export function InicioSection() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button
-                as={Link}
-                href="#cita"
-                size="lg"
-                color="primary"
+              <CalendlyButton 
+                text={t("ctas.mentoria")}
                 variant="solid"
-                className="bg-white text-primary hover:bg-[#183F33] hover:text-white font-bold"
-                onPress={(e) => {
-
+                className="bg-white text-primary hover:bg-gray-100"
+                size="lg"
+                utm={{
+                  utmSource: "hugotech.pe",
+                  utmMedium: "website",
+                  utmCampaign: "hero_section_cta"
                 }}
-              >
-                {t("ctas.mentoria")}
-              </Button>
+              />
 
               <Button
                 as={Link}
-                href="/about"
+                href={`/${locale}/about`}
                 size="lg"
                 color="primary"
                 variant="bordered"
                 className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
-                onPress={(e) => {
-
-                }}
               >
                 {t("ctas.historia")}
               </Button>
 
               <Button
                 as={Link}
-                href="#empresas"
+                href={`/${locale}/empresas`}
                 size="lg"
                 color="primary"
                 variant="solid"
                 className="bg-[#115C5B] text-white hover:bg-[#183F33]"
-                onPress={(e) => {
-
-                }}
               >
                 {t("ctas.empresas")}
               </Button>
