@@ -27,10 +27,13 @@ export function InicioSection() {
             </h2>
 
             <div className="mt-6 space-y-4 text-white leading-relaxed text-xl">
-              <p>{t("paragraphs.p1")}</p>
+              <p>
+                {t.rich("paragraphs.p1", {
+                  b: (chunks) => <strong>{chunks}</strong>,
+                })}
+              </p>
               <p>
                 {t.rich("paragraphs.p2", {
-                  brand: (chunks) => <strong>{chunks}</strong>,
                   b: (chunks) => <strong>{chunks}</strong>,
                 })}
               </p>
