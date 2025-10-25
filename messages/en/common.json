@@ -149,7 +149,39 @@
         "p1": "Don't worry, I'm here to guide you. This is your moment to pause, look at where you're heading and decide how you want to grow.",
         "p2": "In our session, I'll help you <b>clarify your goals, understand your strengths and create your next step with purpose</b>. Whether you're starting in tech or want to redesign your path, we'll co-create a clear and realistic plan."
       },
-      "ctaLabel": "Calendar"
+      "ctaLabel": "Calendar",
+      "note": "Limited spots per month. 100% confidential."
+    },
+    "PorQueGratuito": {
+      "title": "Why are 1:1 sessions free? 💚",
+      "intro": "Because I believe in <b>giving back to the world what life gave me</b>: knowledge, opportunities and faith.",
+      "mentoriaCard": {
+        "title": "Your 1:1 Tech Mentoring 💚",
+        "subtitle": "Purpose coaching + Tech mentoring. Free.",
+        "p1": "Feeling stuck in your first IT job? Don't know which path to take (DevOps, AI Engineer, Product Manager)? Imposter syndrome? <b>You're not alone</b>.",
+        "p2": "Our 1:1 sessions (no cost) combine <b>self-awareness coaching with tech mentoring</b>. Before the 'what' comes the 'why'. Discover your values, define your purpose and overcome the mental barriers holding you back.",
+        "resultsTitle": "What you'll achieve in your sessions:",
+        "resultsItems": [
+          "Clarity about your professional purpose and next steps in tech.",
+          "Personalized roadmap based on your profile (backend, frontend, QA, PM, etc.)",
+          "Growth mindset and anti-burnout tools applicable to day-to-day."
+        ],
+        "ctaLabel": "Book your free session",
+        "note": "100% free. No fine print. Just honest conversation."
+      },
+      "filosofiaCard": {
+        "title": "My Philosophy 🌱",
+        "subtitle": "Transform from being, build from purpose and lead with soul.",
+        "p1": "Every conversation is an act of gratitude. It's not charity, it's <b>responsibility</b>. If today I can help someone find their way, it's because others did the same for me.",
+        "p2": "HugoTech was born to be a space where <b>talent meets purpose</b>, without economic barriers, without cold transactions. Just honest conversations that transform.",
+        "resultsTitle": "How this works:",
+        "resultsItems": [
+          "True innovation begins within people.",
+          "First the being transforms, then the doing makes sense.",
+          "Having comes as a natural consequence."
+        ],
+        "note": "B2B sessions for companies do have a cost, because they require structure, follow-up and measurable results. But the heart of HugoTech will always be free."
+      }
     },
     "Inicio": {
       "chipLabel": "Purpose",
@@ -160,6 +192,7 @@
       },
       "ctas": {
         "mentoria": "1:1 Mentoring",
+        "historia": "Learn my story",
         "empresas": "Solutions for companies"
       }
     },

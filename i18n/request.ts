@@ -12,5 +12,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
   return {
     locale,
     messages: (await import(`../messages/${locale}/common.json`)).default,
+    timeZone: "America/Lima", // Perú timezone (GMT-5)
   };
 });
