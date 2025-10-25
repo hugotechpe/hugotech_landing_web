@@ -23,7 +23,9 @@ export function EmpresasSection() {
             {t("header.title")}
           </h2>
           <p className="mt-4 text-black">
-            {t("header.intro.p1")}
+            {t.rich("header.intro.p1", { 
+              b: (chunks) => <strong>{chunks}</strong> 
+            })}
           </p>
           <p className="mt-2 text-black">
             {t.rich("header.intro.p2", { sb: (chunks) => <span className="font-semibold">{chunks}</span> })}
