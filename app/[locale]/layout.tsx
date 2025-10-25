@@ -4,11 +4,9 @@ import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
-import Footer from "@/components/footer";
 
 import { siteConfig } from "@/config/site";
 import { fontSans, fontRubik } from "@/config/fonts";
-import HeroNavbar from "@/components/navbar";
 import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
@@ -50,13 +48,7 @@ export default async function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }} locale={locale} messages={messages}>
-          <div className="relative flex flex-col h-screen">
-            <HeroNavbar />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
+          {children}
         </Providers>
       </body>
     </html>

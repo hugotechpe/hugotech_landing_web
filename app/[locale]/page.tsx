@@ -5,18 +5,21 @@ import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
 import { PilaresSection } from "@/features/home/components/PilaresSection";
 import { AgendaSection } from "@/features/home/components/AgendaSection";
+import HomeLayout from "./homeLayout";
 
 
 export default function Home() {
   return (
     <>
-      <InicioSection />
-      <MePresentoSection />
-      <EmpresasSection />
-      <PilaresSection />
-      <CoachingSection />
-      <TestimoniosSection />
-      <AgendaSection />
+      <HomeLayout>
+        <InicioSection />
+        <MePresentoSection />
+        <EmpresasSection />
+        <PilaresSection />
+        <CoachingSection />
+        <TestimoniosSection />
+        <AgendaSection />
+      </HomeLayout>
     </>
   );
 }

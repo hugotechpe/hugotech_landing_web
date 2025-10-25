@@ -14,7 +14,7 @@ import { Link } from "@heroui/link";
 import { LocaleSwitch } from "@/components/locale-switch";
 import { useMessages, useTranslations, useLocale } from "next-intl";
 
-export default function HerohNavbar() {
+export default function HeroNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const messages = useMessages() as any;
   const tNavbar = useTranslations("Navbar");
