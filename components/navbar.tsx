@@ -12,13 +12,14 @@ import {
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { LocaleSwitch } from "@/components/locale-switch";
-import { useMessages, useTranslations } from "next-intl";
+import { useMessages, useTranslations, useLocale } from "next-intl";
 
 export default function HerohNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const messages = useMessages() as any;
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
+  const locale = useLocale();
 
   // Tomamos las etiquetas del footer pero LIMITAMOS a los enlaces originales
   const footerItems = messages?.Sections?.Footer?.menu?.items ?? [];
@@ -34,11 +35,15 @@ export default function HerohNavbar() {
     const i = href?.indexOf('#');
     return i >= 0 ? href.substring(i) : href;
   };
+  const resolveHref = (anchor: string) => {
+    if (anchor === "#empresas") return `/${locale}/empresas`;
+    return anchor;
+  };
   const menuItems = allowedAnchors.map((anchor) => {
     const match = footerItems.find((it: any) => getAnchor(it?.href) === anchor);
     return {
       label: match?.label ?? fallbackLabels[anchor],
-      href: anchor,
+      href: resolveHref(anchor),
     };
   });
 

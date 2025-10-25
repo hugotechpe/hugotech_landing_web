@@ -7,6 +7,7 @@ export const routing = defineRouting({
   // Mapea rutas por idioma (opcional, útil para SEO):
   pathnames: {
     "/": "/",
+    "/testimonials": { es: "/testimonios", en: "/testimonials" },
     "/terms": { es: "/terms", en: "/terms" },
     "/privacy": { es: "/privacy", en: "/privacy" },
   },
