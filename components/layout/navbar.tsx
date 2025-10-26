@@ -1,11 +1,11 @@
 "use client";
-import React from 'react';
-import Image from 'next/image';
-import { 
-  Navbar, 
-  NavbarBrand, 
-  NavbarContent, 
-  NavbarItem, 
+import React from "react";
+import Image from "next/image";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -47,8 +47,8 @@ export default function HeroNavbar() {
   ];
 
   return (
-    <header className='bg-primary shadow-sm border-b border-[#115C5B]'>
-      <Navbar 
+    <header className="bg-primary shadow-sm border-b border-[#115C5B]">
+      <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
         maxWidth="full"
@@ -64,9 +64,9 @@ export default function HeroNavbar() {
           />
           <NavbarBrand>
             <Link href="/">
-              <Image 
-                src="/images/logo-hugotech.png" 
-                alt="HugoTech - Innovación con Alma, Tech con Propósito" 
+              <Image
+                src="/images/logo-hugotech.png"
+                alt="HugoTech - Innovación con Alma, Tech con Propósito"
                 width={180}
                 height={54}
                 priority
@@ -79,7 +79,10 @@ export default function HeroNavbar() {
         {/* Desktop Menu - Hidden on mobile/tablet */}
         <NavbarContent className="gap-8" justify="end">
           {menuItems.map((item: any, index: number) => (
-            <NavbarItem key={`desktop-${item.label}-${index}`} className='hidden lg:block'>
+            <NavbarItem
+              key={`desktop-${item.label}-${index}`}
+              className="hidden lg:block"
+            >
               <Link
                 color="foreground"
                 href={item.href}
@@ -93,7 +96,7 @@ export default function HeroNavbar() {
             <LocaleSwitch />
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
-            <Button 
+            <Button
               as={Link}
               color="primary"
               href="/#cita"
@@ -107,7 +110,7 @@ export default function HeroNavbar() {
         </NavbarContent>
 
         {/* Mobile Menu */}
-        <NavbarMenu  className="p-6 bg-white !h-fit">
+        <NavbarMenu className="p-6 bg-white !h-fit">
           {menuItems.map((item: any, index: number) => (
             <NavbarMenuItem key={`mobile-${item.label}-${index}`}>
               <Link

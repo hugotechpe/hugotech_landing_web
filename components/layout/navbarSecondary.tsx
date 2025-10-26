@@ -1,10 +1,10 @@
 "use client";
-import React from 'react';
-import { 
-  Navbar, 
-  NavbarBrand, 
-  NavbarContent, 
-  NavbarItem, 
+import React from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -28,7 +28,7 @@ export default function NavbarSecondary() {
   const menuItems = footerItems.map((it: any) => {
     const href: string = it?.href ?? "";
     const labelLower = (it?.label ?? "").toLowerCase();
-    const i = href.indexOf('#');
+    const i = href.indexOf("#");
     const isAnchor = i >= 0;
     const anchor = isAnchor ? href.substring(i) : "";
 
@@ -45,8 +45,8 @@ export default function NavbarSecondary() {
   });
 
   return (
-    <header className='bg-white shadow-sm'>
-      <Navbar 
+    <header className="bg-white shadow-sm">
+      <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
         maxWidth="full"
@@ -77,7 +77,10 @@ export default function NavbarSecondary() {
         {/* Desktop Menu - Hidden on mobile/tablet */}
         <NavbarContent className="gap-8" justify="end">
           {menuItems.map((item: any, index: number) => (
-            <NavbarItem key={`desktop-${item.label}-${index}`} className='hidden lg:block'>
+            <NavbarItem
+              key={`desktop-${item.label}-${index}`}
+              className="hidden lg:block"
+            >
               <Link
                 color="foreground"
                 href={item.href}
@@ -93,7 +96,7 @@ export default function NavbarSecondary() {
         </NavbarContent>
 
         {/* Mobile Menu */}
-        <NavbarMenu  className="p-6 bg-white !h-fit">
+        <NavbarMenu className="p-6 bg-white !h-fit">
           {menuItems.map((item: any, index: number) => (
             <NavbarMenuItem key={`mobile-${item.label}-${index}`}>
               <Link

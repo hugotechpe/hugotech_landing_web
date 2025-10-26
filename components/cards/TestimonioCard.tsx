@@ -41,48 +41,50 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
   highlight,
 }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
-  
+
   // Detectar si el testimonio es largo (más de 280 caracteres)
   const isLongQuote = quote.length > 280;
-  const truncatedQuote = isLongQuote && !isExpanded 
-    ? quote.substring(0, 280) + "..." 
-    : quote;
+  const truncatedQuote =
+    isLongQuote && !isExpanded ? quote.substring(0, 280) + "..." : quote;
 
   // Función para resaltar la frase clave si existe
   const renderQuoteWithHighlight = (text: string) => {
     if (!highlight) return text;
-    
-    const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
-    return parts.map((part, i) => 
+
+    const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+    return parts.map((part, i) =>
       part.toLowerCase() === highlight.toLowerCase() ? (
-        <strong key={i} className="text-primary font-semibold bg-brand/10 px-1 rounded">
+        <strong
+          key={i}
+          className="text-primary font-semibold bg-brand/10 px-1 rounded"
+        >
           {part}
         </strong>
       ) : (
         part
-      )
+      ),
     );
   };
 
   return (
     <motion.div
-      whileHover={{ 
+      whileHover={{
         scale: 1.02,
         y: -8,
       }}
-      transition={{ 
+      transition={{
         type: "spring",
         stiffness: 300,
-        damping: 20
+        damping: 20,
       }}
     >
-      <Card 
-        shadow="none" 
+      <Card
+        shadow="none"
         className={clsx(
           "bg-white rounded-2xl p-4 border-2 border-default-200",
           "hover:border-primary/40 hover:shadow-2xl transition-all duration-300 cursor-default",
           "backdrop-blur-sm bg-white/90",
-          className
+          className,
         )}
       >
         <CardBody className="gap-4">
@@ -90,10 +92,10 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
           {tags && tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-2">
               {tags.map((tag, idx) => (
-                <Chip 
-                  key={idx} 
-                  size="sm" 
-                  variant="flat" 
+                <Chip
+                  key={idx}
+                  size="sm"
+                  variant="flat"
                   color="primary"
                   className="text-xs font-medium"
                 >
@@ -103,11 +105,22 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             </div>
           )}
 
-          <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
-            <blockquote itemProp="reviewBody" className="text-customgray/90 text-base md:text-lg leading-[1.8] font-body">
-              <span className="text-3xl text-primary/20 font-heading leading-none mr-1">"</span>
+          <figure
+            aria-label={`Testimonio de ${authorName}`}
+            itemScope
+            itemType="https://schema.org/Review"
+          >
+            <blockquote
+              itemProp="reviewBody"
+              className="text-customgray/90 text-base md:text-lg leading-[1.8] font-body"
+            >
+              <span className="text-3xl text-primary/20 font-heading leading-none mr-1">
+                &ldquo;
+              </span>
               {renderQuoteWithHighlight(truncatedQuote)}
-              <span className="text-3xl text-primary/20 font-heading leading-none ml-1">"</span>
+              <span className="text-3xl text-primary/20 font-heading leading-none ml-1">
+                &rdquo;
+              </span>
             </blockquote>
 
             {/* Botón expandir/colapsar para testimonios largos */}
@@ -124,7 +137,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             )}
 
             <hr className="my-6 border-default-200" />
-            
+
             <figcaption className="mt-4 flex items-center gap-4">
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
@@ -140,17 +153,20 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
               </motion.div>
               <div className="flex-1">
                 <p className="font-semibold font-heading text-customgray text-base md:text-lg leading-tight">
-                  {authorName}{authorAge ? ` – ${authorAge}` : ""}
+                  {authorName}
+                  {authorAge ? ` – ${authorAge}` : ""}
                 </p>
-                <p className="text-default-500 text-sm leading-relaxed mt-1">{role}</p>
+                <p className="text-default-500 text-sm leading-relaxed mt-1">
+                  {role}
+                </p>
                 {linkedInUrl && (
-                  <Link 
-                    isExternal 
-                    href={linkedInUrl} 
-                    title={`Perfil de ${authorName} en LinkedIn`} 
+                  <Link
+                    isExternal
+                    href={linkedInUrl}
+                    title={`Perfil de ${authorName} en LinkedIn`}
                     className="text-customgray text-sm hover:text-primary transition-colors inline-flex items-center gap-1 mt-2"
                   >
-                    <LinkedInSquareIcon className="h-4 w-4 text-[#0e76a8]" /> 
+                    <LinkedInSquareIcon className="h-4 w-4 text-[#0e76a8]" />
                     <span className="font-medium">Ver perfil</span>
                   </Link>
                 )}

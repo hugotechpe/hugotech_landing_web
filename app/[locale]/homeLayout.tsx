@@ -1,7 +1,12 @@
-import Footer from "@/components/layout/footer"
+import Footer from "@/components/layout/footer";
 import HeroNavbar from "@/components/layout/navbar";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { JsonLd, personSchema, organizationSchema, serviceSchema } from "@/components/seo/JsonLd";
+import {
+  JsonLd,
+  personSchema,
+  organizationSchema,
+  serviceSchema,
+} from "@/components/seo/JsonLd";
 
 export default function HomeLayout({
   children,
@@ -14,16 +19,14 @@ export default function HomeLayout({
       <JsonLd data={personSchema} />
       <JsonLd data={organizationSchema} />
       <JsonLd data={serviceSchema} />
-      
+
       <div className="relative flex flex-col h-screen">
         <HeroNavbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <Footer />
-        
+
         {/* WhatsApp Floating Button */}
-        <WhatsAppButton 
+        <WhatsAppButton
           phoneNumber="51946483010"
           message="Hola Hugo, me gustaría agendar una sesión de mentoring 1-a-1"
         />

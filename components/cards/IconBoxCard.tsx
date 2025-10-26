@@ -30,7 +30,7 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
   iconAriaLabel,
   headingAs = "h3",
   className,
-  classNameCardBody,  
+  classNameCardBody,
 }) => {
   const HeadingTag = headingAs;
   const titleId = React.useId();
@@ -41,13 +41,13 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
         <CardBody>
           <div className={clsx("flex items-start gap-4", classNameCardBody)}>
             <motion.div
-              whileHover={{ 
+              whileHover={{
                 scale: 1.1,
                 rotate: [0, -5, 5, -5, 0],
               }}
-              transition={{ 
+              transition={{
                 duration: 0.5,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
               className="flex h-18 w-18 items-center justify-center rounded-full bg-[#E0F1DF] text-primary shrink-0"
               aria-hidden={iconAriaLabel ? undefined : true}
@@ -56,7 +56,10 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
               {Icon ? <Icon size={35} aria-label={iconAriaLabel} /> : null}
             </motion.div>
             <div>
-              <HeadingTag id={titleId} className="text-lg font-semibold text-customgray">
+              <HeadingTag
+                id={titleId}
+                className="text-lg font-semibold text-customgray"
+              >
                 {title}
               </HeadingTag>
               <p className="mt-4 text-customgray text-base">{description}</p>

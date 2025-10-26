@@ -2,7 +2,11 @@
 
 import React, { useEffect } from "react";
 import { InlineWidget } from "react-calendly";
-import { trackCTAClick, trackCalendlyEventScheduled, trackCalendlyDateSelected } from "@/lib/gtm";
+import {
+  trackCTAClick,
+  trackCalendlyEventScheduled,
+  trackCalendlyDateSelected,
+} from "@/lib/gtm";
 
 interface CalendlyButtonProps {
   url?: string;
@@ -21,8 +25,21 @@ interface CalendlyButtonProps {
     utmTerm?: string;
   };
   className?: string;
-  variant?: "solid" | "bordered" | "light" | "flat" | "faded" | "shadow" | "ghost";
-  color?: "default" | "primary" | "secondary" | "success" | "warning" | "danger";
+  variant?:
+    | "solid"
+    | "bordered"
+    | "light"
+    | "flat"
+    | "faded"
+    | "shadow"
+    | "ghost";
+  color?:
+    | "default"
+    | "primary"
+    | "secondary"
+    | "success"
+    | "warning"
+    | "danger";
   size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
 }
@@ -58,7 +75,7 @@ export function CalendlyButton({
             trackCalendlyEventScheduled(
               eventData.payload?.event?.uri,
               eventData.payload?.invitee?.uri,
-              eventData.payload?.event?.start_time
+              eventData.payload?.event?.start_time,
             );
             // Cerrar modal después de agendar
             setTimeout(() => setIsOpen(false), 2000);
@@ -83,8 +100,9 @@ export function CalendlyButton({
 
   // Determinar clases de Tailwind basadas en props
   const getButtonClasses = () => {
-    const baseClasses = "font-bold transition-all rounded-lg inline-flex items-center justify-center";
-    
+    const baseClasses =
+      "font-bold transition-all rounded-lg inline-flex items-center justify-center";
+
     const sizeClasses = {
       sm: "px-4 py-2 text-sm",
       md: "px-6 py-3 text-base",
@@ -97,8 +115,10 @@ export function CalendlyButton({
         default: "bg-white text-primary hover:bg-gray-100",
       },
       bordered: {
-        primary: "border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent",
-        default: "border-2 border-customgray text-customgray hover:bg-customgray hover:text-white bg-transparent",
+        primary:
+          "border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent",
+        default:
+          "border-2 border-customgray text-customgray hover:bg-customgray hover:text-white bg-transparent",
       },
     };
 
@@ -123,13 +143,20 @@ export function CalendlyButton({
 
       {/* Modal/Popup con Calendly */}
       {isOpen && (
-        <div 
+        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+        <div
+          role="dialog"
+          aria-modal="true"
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
+          onKeyDown={(e) => e.key === "Escape" && setIsOpen(false)}
         >
-          <div 
+          {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+          <div
+            role="document"
             className="relative w-full max-w-4xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
+            onKeyDown={(e) => e.stopPropagation()}
           >
             {/* Botón cerrar */}
             <button
@@ -137,8 +164,18 @@ export function CalendlyButton({
               className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
               aria-label="Cerrar"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
@@ -148,8 +185,8 @@ export function CalendlyButton({
               prefill={prefill}
               utm={utm}
               styles={{
-                height: '100%',
-                width: '100%',
+                height: "100%",
+                width: "100%",
               }}
             />
           </div>

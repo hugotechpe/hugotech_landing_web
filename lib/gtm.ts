@@ -20,7 +20,10 @@ export interface CTAClickEvent extends GTMEvent {
 }
 
 export interface CalendlyEvent extends GTMEvent {
-  event: "calendly_widget_loaded" | "calendly_date_selected" | "calendly_event_scheduled";
+  event:
+    | "calendly_widget_loaded"
+    | "calendly_date_selected"
+    | "calendly_event_scheduled";
   event_type_name?: string;
   invitee_email?: string;
   event_start_time?: string;
@@ -50,7 +53,7 @@ declare global {
 export const pushToDataLayer = (event: GTMEvent): void => {
   if (typeof window !== "undefined" && window.dataLayer) {
     window.dataLayer.push(event);
-    
+
     // Debug mode in development
     if (process.env.NODE_ENV === "development") {
       console.log("[GTM Event]", event);
@@ -61,7 +64,11 @@ export const pushToDataLayer = (event: GTMEvent): void => {
 /**
  * Track page view
  */
-export const trackPageView = (path: string, title: string, locale?: string): void => {
+export const trackPageView = (
+  path: string,
+  title: string,
+  locale?: string,
+): void => {
   pushToDataLayer({
     event: "page_view",
     page_path: path,
@@ -73,7 +80,11 @@ export const trackPageView = (path: string, title: string, locale?: string): voi
 /**
  * Track CTA button click
  */
-export const trackCTAClick = (location: string, text: string, destination?: string): void => {
+export const trackCTAClick = (
+  location: string,
+  text: string,
+  destination?: string,
+): void => {
   pushToDataLayer({
     event: "cta_click",
     cta_location: location,
@@ -95,7 +106,10 @@ export const trackWhatsAppClick = (message?: string): void => {
 /**
  * Track scroll to section
  */
-export const trackScrollToSection = (sectionName: string, scrollDepth?: number): void => {
+export const trackScrollToSection = (
+  sectionName: string,
+  scrollDepth?: number,
+): void => {
   pushToDataLayer({
     event: "scroll_to_section",
     section_name: sectionName,
@@ -128,7 +142,7 @@ export const trackCalendlyDateSelected = (eventTypeName?: string): void => {
 export const trackCalendlyEventScheduled = (
   eventTypeName?: string,
   inviteeEmail?: string,
-  eventStartTime?: string
+  eventStartTime?: string,
 ): void => {
   pushToDataLayer({
     event: "calendly_event_scheduled",

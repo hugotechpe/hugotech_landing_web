@@ -40,11 +40,15 @@ export function AnimatedCounter({
           useEasing
           easingFn={(t, b, c, d) => {
             // easeOutExpo
-            return c * (-Math.pow(2, -10 * t / d) + 1) + b;
+            return c * (-Math.pow(2, (-10 * t) / d) + 1) + b;
           }}
         />
       ) : (
-        <span>{prefix}{end}{suffix}</span>
+        <span>
+          {prefix}
+          {end}
+          {suffix}
+        </span>
       )}
     </span>
   );

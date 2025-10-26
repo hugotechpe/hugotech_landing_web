@@ -1,14 +1,23 @@
 "use client";
 
 import { Button } from "@heroui/button";
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@heroui/dropdown";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@heroui/dropdown";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 
 export type LocaleSwitchVariant = "onPrimary" | "onWhite" | "onDark";
 
-export function LocaleSwitch({ variant = "onPrimary" }: { variant?: LocaleSwitchVariant }) {
+export function LocaleSwitch({
+  variant = "onPrimary",
+}: {
+  variant?: LocaleSwitchVariant;
+}) {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -38,9 +47,24 @@ export function LocaleSwitch({ variant = "onPrimary" }: { variant?: LocaleSwitch
 
   const ui = palette[variant];
 
-  const options: Array<{ code: "en" | "es"; label: string; name: string; iconSrc: string }> = [
-    { code: "es", label: "ES", name: "Español", iconSrc: "/images/flag/pe.svg" },
-    { code: "en", label: "EN", name: "English", iconSrc: "/images/flag/us.svg" },
+  const options: Array<{
+    code: "en" | "es";
+    label: string;
+    name: string;
+    iconSrc: string;
+  }> = [
+    {
+      code: "es",
+      label: "ES",
+      name: "Español",
+      iconSrc: "/images/flag/pe.svg",
+    },
+    {
+      code: "en",
+      label: "EN",
+      name: "English",
+      iconSrc: "/images/flag/us.svg",
+    },
   ];
 
   const current = options.find((o) => o.code === locale) ?? options[0];
@@ -53,7 +77,13 @@ export function LocaleSwitch({ variant = "onPrimary" }: { variant?: LocaleSwitch
           variant="bordered"
           className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
         >
-          <Image src={current.iconSrc} alt={`${current.name} flag`} width={20} height={14} className="rounded-sm" />
+          <Image
+            src={current.iconSrc}
+            alt={`${current.name} flag`}
+            width={20}
+            height={14}
+            className="rounded-sm"
+          />
           <span className="font-semibold">{current.label}</span>
         </Button>
       </DropdownTrigger>
@@ -65,9 +95,18 @@ export function LocaleSwitch({ variant = "onPrimary" }: { variant?: LocaleSwitch
         onAction={(key) => changeLocale(key as "en" | "es")}
       >
         {options.map((o) => (
-          <DropdownItem key={o.code} className={locale === o.code ? ui.itemActive : ""}>
+          <DropdownItem
+            key={o.code}
+            className={locale === o.code ? ui.itemActive : ""}
+          >
             <div className="flex items-center gap-2 bg-red">
-              <Image src={o.iconSrc} alt={`${o.name} flag`} width={20} height={14} className="rounded-sm" />
+              <Image
+                src={o.iconSrc}
+                alt={`${o.name} flag`}
+                width={20}
+                height={14}
+                className="rounded-sm"
+              />
               <span className="font-semibold">{o.label}</span>
             </div>
           </DropdownItem>

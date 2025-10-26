@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Políticas de Privacidad | HugoTech",
-  description: "Políticas de privacidad y protección de datos personales de HugoTech. Conoce cómo recopilamos, usamos y protegemos tu información.",
+  description:
+    "Políticas de privacidad y protección de datos personales de HugoTech. Conoce cómo recopilamos, usamos y protegemos tu información.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -21,17 +23,17 @@ export default function PrivacyPolicyPage() {
 
         {/* Content */}
         <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-10">
-          
           {/* Introducción */}
           <section>
             <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               Introducción
             </h2>
             <p className="text-gray-700 leading-[1.9] tracking-wide text-[15px] md:text-base">
-              En HugoTech, valoramos y respetamos tu privacidad. Esta política describe cómo 
-              recopilamos, utilizamos, almacenamos y protegemos tu información personal de acuerdo 
-              con la Ley N° 29733 - Ley de Protección de Datos Personales de Perú y el Reglamento 
-              General de Protección de Datos (GDPR) de la Unión Europea.
+              En HugoTech, valoramos y respetamos tu privacidad. Esta política
+              describe cómo recopilamos, utilizamos, almacenamos y protegemos tu
+              información personal de acuerdo con la Ley N° 29733 - Ley de
+              Protección de Datos Personales de Perú y el Reglamento General de
+              Protección de Datos (GDPR) de la Unión Europea.
             </p>
           </section>
 
@@ -50,9 +52,11 @@ export default function PrivacyPolicyPage() {
                 <li>Número de teléfono</li>
                 <li>Empresa u organización (si aplica)</li>
                 <li>Cargo o rol profesional</li>
-                <li>Información profesional relevante para nuestros servicios</li>
+                <li>
+                  Información profesional relevante para nuestros servicios
+                </li>
               </ul>
-              
+
               <p className="mt-4 leading-[1.9] tracking-wide">
                 <strong>1.2 Información recopilada automáticamente:</strong>
               </p>
@@ -78,7 +82,10 @@ export default function PrivacyPolicyPage() {
               <li>Proporcionar nuestros servicios de mentoring y coaching</li>
               <li>Programar y gestionar sesiones individuales o grupales</li>
               <li>Comunicarnos contigo sobre nuestros servicios</li>
-              <li>Enviar información relevante, newsletters y recursos educativos (con tu consentimiento)</li>
+              <li>
+                Enviar información relevante, newsletters y recursos educativos
+                (con tu consentimiento)
+              </li>
               <li>Procesar pagos y gestionar facturación</li>
               <li>Mejorar nuestros servicios y experiencia del usuario</li>
               <li>Cumplir con obligaciones legales y regulatorias</li>
@@ -92,13 +99,26 @@ export default function PrivacyPolicyPage() {
               3. Base Legal para el Procesamiento
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Procesamos tu información personal bajo las siguientes bases legales:
+              Procesamos tu información personal bajo las siguientes bases
+              legales:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li><strong>Consentimiento:</strong> Cuando nos das tu consentimiento explícito</li>
-              <li><strong>Ejecución de contrato:</strong> Para proporcionar los servicios contratados</li>
-              <li><strong>Interés legítimo:</strong> Para mejorar nuestros servicios y comunicación</li>
-              <li><strong>Obligación legal:</strong> Cuando lo requiere la ley peruana</li>
+              <li>
+                <strong>Consentimiento:</strong> Cuando nos das tu
+                consentimiento explícito
+              </li>
+              <li>
+                <strong>Ejecución de contrato:</strong> Para proporcionar los
+                servicios contratados
+              </li>
+              <li>
+                <strong>Interés legítimo:</strong> Para mejorar nuestros
+                servicios y comunicación
+              </li>
+              <li>
+                <strong>Obligación legal:</strong> Cuando lo requiere la ley
+                peruana
+              </li>
             </ul>
           </section>
 
@@ -108,14 +128,24 @@ export default function PrivacyPolicyPage() {
               4. Compartir Información con Terceros
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              No vendemos tu información personal. Podemos compartir tu información solo con:
+              No vendemos tu información personal. Podemos compartir tu
+              información solo con:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li><strong>Proveedores de servicios:</strong> Plataformas de pago, email marketing, 
-              calendario (como Stripe, Mailchimp, Calendly), bajo acuerdos de confidencialidad</li>
-              <li><strong>Autoridades:</strong> Cuando lo requiera la ley o para proteger derechos legales</li>
-              <li><strong>Empresas contratantes:</strong> Si trabajas con nosotros a través de tu empleador, 
-              podemos compartir información relevante del programa</li>
+              <li>
+                <strong>Proveedores de servicios:</strong> Plataformas de pago,
+                email marketing, calendario (como Stripe, Mailchimp, Calendly),
+                bajo acuerdos de confidencialidad
+              </li>
+              <li>
+                <strong>Autoridades:</strong> Cuando lo requiera la ley o para
+                proteger derechos legales
+              </li>
+              <li>
+                <strong>Empresas contratantes:</strong> Si trabajas con nosotros
+                a través de tu empleador, podemos compartir información
+                relevante del programa
+              </li>
             </ul>
           </section>
 
@@ -134,8 +164,9 @@ export default function PrivacyPolicyPage() {
               <li>Personalizar tu experiencia</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Puedes gestionar las cookies desde la configuración de tu navegador. Ten en cuenta 
-              que deshabilitar cookies puede afectar la funcionalidad del sitio.
+              Puedes gestionar las cookies desde la configuración de tu
+              navegador. Ten en cuenta que deshabilitar cookies puede afectar la
+              funcionalidad del sitio.
             </p>
           </section>
 
@@ -145,8 +176,9 @@ export default function PrivacyPolicyPage() {
               6. Seguridad de la Información
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Implementamos medidas técnicas y organizativas apropiadas para proteger tu información 
-              personal contra acceso no autorizado, pérdida, destrucción o alteración. Esto incluye:
+              Implementamos medidas técnicas y organizativas apropiadas para
+              proteger tu información personal contra acceso no autorizado,
+              pérdida, destrucción o alteración. Esto incluye:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-4">
               <li>Cifrado SSL/TLS para transmisión de datos</li>
@@ -162,10 +194,12 @@ export default function PrivacyPolicyPage() {
               7. Retención de Datos
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Conservamos tu información personal solo durante el tiempo necesario para cumplir 
-              con los propósitos descritos en esta política, a menos que la ley requiera o permita 
-              un período de retención más largo. Los datos de facturación se conservan por el 
-              período requerido por las leyes tributarias peruanas (generalmente 5 años).
+              Conservamos tu información personal solo durante el tiempo
+              necesario para cumplir con los propósitos descritos en esta
+              política, a menos que la ley requiera o permita un período de
+              retención más largo. Los datos de facturación se conservan por el
+              período requerido por las leyes tributarias peruanas (generalmente
+              5 años).
             </p>
           </section>
 
@@ -178,16 +212,38 @@ export default function PrivacyPolicyPage() {
               Bajo la legislación peruana y el GDPR, tienes derecho a:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li><strong>Acceso:</strong> Solicitar una copia de tus datos personales</li>
-              <li><strong>Rectificación:</strong> Corregir datos inexactos o incompletos</li>
-              <li><strong>Eliminación:</strong> Solicitar la eliminación de tus datos (derecho al olvido)</li>
-              <li><strong>Portabilidad:</strong> Recibir tus datos en formato estructurado y legible</li>
-              <li><strong>Oposición:</strong> Oponerte al procesamiento de tus datos</li>
-              <li><strong>Limitación:</strong> Solicitar la limitación del procesamiento</li>
-              <li><strong>Revocación:</strong> Retirar tu consentimiento en cualquier momento</li>
+              <li>
+                <strong>Acceso:</strong> Solicitar una copia de tus datos
+                personales
+              </li>
+              <li>
+                <strong>Rectificación:</strong> Corregir datos inexactos o
+                incompletos
+              </li>
+              <li>
+                <strong>Eliminación:</strong> Solicitar la eliminación de tus
+                datos (derecho al olvido)
+              </li>
+              <li>
+                <strong>Portabilidad:</strong> Recibir tus datos en formato
+                estructurado y legible
+              </li>
+              <li>
+                <strong>Oposición:</strong> Oponerte al procesamiento de tus
+                datos
+              </li>
+              <li>
+                <strong>Limitación:</strong> Solicitar la limitación del
+                procesamiento
+              </li>
+              <li>
+                <strong>Revocación:</strong> Retirar tu consentimiento en
+                cualquier momento
+              </li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Para ejercer estos derechos, contáctanos en: <strong>info@hugotech.pe</strong>
+              Para ejercer estos derechos, contáctanos en:{" "}
+              <strong>info@hugotech.pe</strong>
             </p>
           </section>
 
@@ -197,9 +253,10 @@ export default function PrivacyPolicyPage() {
               9. Transferencias Internacionales
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Algunos de nuestros proveedores de servicios pueden estar ubicados fuera de Perú. 
-              En estos casos, nos aseguramos de que existan garantías adecuadas para la protección 
-              de tu información, como cláusulas contractuales estándar aprobadas por la UE o 
+              Algunos de nuestros proveedores de servicios pueden estar ubicados
+              fuera de Perú. En estos casos, nos aseguramos de que existan
+              garantías adecuadas para la protección de tu información, como
+              cláusulas contractuales estándar aprobadas por la UE o
               certificaciones de Privacy Shield.
             </p>
           </section>
@@ -210,9 +267,9 @@ export default function PrivacyPolicyPage() {
               10. Menores de Edad
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Nuestros servicios están dirigidos a adultos. No recopilamos intencionalmente 
-              información personal de menores de 18 años sin el consentimiento de sus padres o 
-              tutores legales.
+              Nuestros servicios están dirigidos a adultos. No recopilamos
+              intencionalmente información personal de menores de 18 años sin el
+              consentimiento de sus padres o tutores legales.
             </p>
           </section>
 
@@ -222,9 +279,10 @@ export default function PrivacyPolicyPage() {
               11. Cambios en esta Política
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Podemos actualizar esta política de privacidad periódicamente. Te notificaremos sobre 
-              cambios significativos mediante un aviso en nuestro sitio web o por correo electrónico. 
-              Te recomendamos revisar esta página regularmente.
+              Podemos actualizar esta política de privacidad periódicamente. Te
+              notificaremos sobre cambios significativos mediante un aviso en
+              nuestro sitio web o por correo electrónico. Te recomendamos
+              revisar esta página regularmente.
             </p>
           </section>
 
@@ -234,12 +292,16 @@ export default function PrivacyPolicyPage() {
               12. Autoridad de Control
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Si consideras que tus derechos de protección de datos han sido vulnerados, puedes 
-              presentar una reclamación ante:
+              Si consideras que tus derechos de protección de datos han sido
+              vulnerados, puedes presentar una reclamación ante:
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-gray-700 font-semibold">Autoridad Nacional de Protección de Datos Personales</p>
-              <p className="text-gray-600 text-sm mt-2">Ministerio de Justicia y Derechos Humanos</p>
+              <p className="text-gray-700 font-semibold">
+                Autoridad Nacional de Protección de Datos Personales
+              </p>
+              <p className="text-gray-600 text-sm mt-2">
+                Ministerio de Justicia y Derechos Humanos
+              </p>
               <p className="text-gray-600 text-sm">Lima, Perú</p>
               <p className="text-gray-600 text-sm">Web: www.minjus.gob.pe</p>
             </div>
@@ -251,34 +313,41 @@ export default function PrivacyPolicyPage() {
               13. Contacto
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Para cualquier consulta sobre esta Política de Privacidad o sobre el tratamiento 
-              de tus datos personales, contáctanos:
+              Para cualquier consulta sobre esta Política de Privacidad o sobre
+              el tratamiento de tus datos personales, contáctanos:
             </p>
             <ul className="list-none space-y-2 text-gray-700">
-              <li><strong>Responsable:</strong> Hugo Casanova / HugoTech</li>
-              <li><strong>Email:</strong> info@hugotech.pe</li>
-              <li><strong>Sitio Web:</strong> https://hugotech.pe</li>
-              <li><strong>LinkedIn:</strong> linkedin.com/in/hcasanovam</li>
+              <li>
+                <strong>Responsable:</strong> Hugo Casanova / HugoTech
+              </li>
+              <li>
+                <strong>Email:</strong> info@hugotech.pe
+              </li>
+              <li>
+                <strong>Sitio Web:</strong> https://hugotech.pe
+              </li>
+              <li>
+                <strong>LinkedIn:</strong> linkedin.com/in/hcasanovam
+              </li>
             </ul>
           </section>
-
         </div>
 
         {/* Footer Navigation */}
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
-          <a 
-            href="/es/terminos-y-condiciones" 
+          <Link
+            href="/es/terminos-y-condiciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
           >
             ← Ver Términos y Condiciones
-          </a>
+          </Link>
           <span className="hidden md:inline text-gray-400">|</span>
-          <a 
-            href="/es/libro-de-reclamaciones" 
+          <Link
+            href="/es/libro-de-reclamaciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
           >
             Libro de Reclamaciones →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

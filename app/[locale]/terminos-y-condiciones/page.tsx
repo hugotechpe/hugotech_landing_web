@@ -1,10 +1,10 @@
+import Link from "next/link";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Legal.TermsAndConditions");
-  
+
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
@@ -27,16 +27,16 @@ export default function TerminosYCondicionesPage() {
 
         {/* Content */}
         <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-10">
-          
           {/* Sección 1 */}
           <section>
             <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               1. Aceptación de los Términos
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Al acceder y utilizar los servicios de HugoTech, aceptas estar vinculado por estos 
-              Términos y Condiciones. Si no estás de acuerdo con alguna parte de estos términos, 
-              no debes utilizar nuestros servicios.
+              Al acceder y utilizar los servicios de HugoTech, aceptas estar
+              vinculado por estos Términos y Condiciones. Si no estás de acuerdo
+              con alguna parte de estos términos, no debes utilizar nuestros
+              servicios.
             </p>
           </section>
 
@@ -52,7 +52,10 @@ export default function TerminosYCondicionesPage() {
               <li>Mentoring y coaching tecnológico individual (1 a 1)</li>
               <li>Programas de desarrollo para equipos de tecnología</li>
               <li>Consultoría en agilidad y transformación digital</li>
-              <li>Talleres de liderazgo y desarrollo de equipos de alto rendimiento</li>
+              <li>
+                Talleres de liderazgo y desarrollo de equipos de alto
+                rendimiento
+              </li>
             </ul>
           </section>
 
@@ -67,8 +70,12 @@ export default function TerminosYCondicionesPage() {
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>Proporcionar información veraz y actualizada</li>
               <li>Mantener la confidencialidad de tu cuenta si corresponde</li>
-              <li>No utilizar los servicios para fines ilegales o no autorizados</li>
-              <li>Respetar la propiedad intelectual de HugoTech y sus materiales</li>
+              <li>
+                No utilizar los servicios para fines ilegales o no autorizados
+              </li>
+              <li>
+                Respetar la propiedad intelectual de HugoTech y sus materiales
+              </li>
             </ul>
           </section>
 
@@ -79,21 +86,25 @@ export default function TerminosYCondicionesPage() {
             </h2>
             <div className="space-y-3 text-gray-700 leading-relaxed">
               <p>
-                <strong>4.1 Reserva de Sesiones:</strong> Las sesiones de mentoring y coaching 
-                se reservan a través de nuestro sistema de calendario. Al reservar, te comprometes 
-                a asistir a la hora acordada.
+                <strong>4.1 Reserva de Sesiones:</strong> Las sesiones de
+                mentoring y coaching se reservan a través de nuestro sistema de
+                calendario. Al reservar, te comprometes a asistir a la hora
+                acordada.
               </p>
               <p>
-                <strong>4.2 Pagos:</strong> Los pagos se procesan de forma segura a través de 
-                plataformas autorizadas. Los precios están sujetos a cambios sin previo aviso.
+                <strong>4.2 Pagos:</strong> Los pagos se procesan de forma
+                segura a través de plataformas autorizadas. Los precios están
+                sujetos a cambios sin previo aviso.
               </p>
               <p>
-                <strong>4.3 Cancelaciones:</strong> Las cancelaciones deben realizarse con al menos 
-                24 horas de anticipación. Cancelaciones tardías pueden resultar en cargos.
+                <strong>4.3 Cancelaciones:</strong> Las cancelaciones deben
+                realizarse con al menos 24 horas de anticipación. Cancelaciones
+                tardías pueden resultar en cargos.
               </p>
               <p>
-                <strong>4.4 Reembolsos:</strong> Los reembolsos se evaluarán caso por caso según 
-                nuestra política de satisfacción del cliente.
+                <strong>4.4 Reembolsos:</strong> Los reembolsos se evaluarán
+                caso por caso según nuestra política de satisfacción del
+                cliente.
               </p>
             </div>
           </section>
@@ -104,9 +115,10 @@ export default function TerminosYCondicionesPage() {
               5. Propiedad Intelectual
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Todo el contenido, materiales, metodologías y recursos proporcionados por HugoTech 
-              son propiedad exclusiva de Hugo Casanova / HugoTech y están protegidos por las leyes 
-              de propiedad intelectual. No está permitida su reproducción, distribución o uso 
+              Todo el contenido, materiales, metodologías y recursos
+              proporcionados por HugoTech son propiedad exclusiva de Hugo
+              Casanova / HugoTech y están protegidos por las leyes de propiedad
+              intelectual. No está permitida su reproducción, distribución o uso
               comercial sin autorización expresa.
             </p>
           </section>
@@ -117,10 +129,10 @@ export default function TerminosYCondicionesPage() {
               6. Confidencialidad
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              HugoTech se compromete a mantener la confidencialidad de toda la información 
-              compartida durante las sesiones de mentoring y coaching. Del mismo modo, esperamos 
-              que los clientes mantengan la confidencialidad de las metodologías y materiales 
-              compartidos.
+              HugoTech se compromete a mantener la confidencialidad de toda la
+              información compartida durante las sesiones de mentoring y
+              coaching. Del mismo modo, esperamos que los clientes mantengan la
+              confidencialidad de las metodologías y materiales compartidos.
             </p>
           </section>
 
@@ -130,10 +142,12 @@ export default function TerminosYCondicionesPage() {
               7. Limitación de Responsabilidad
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              HugoTech proporciona servicios de mentoring y coaching con el objetivo de apoyar 
-              el desarrollo profesional. Sin embargo, no garantizamos resultados específicos y 
-              no nos hacemos responsables de decisiones tomadas por los clientes basadas en 
-              nuestras sesiones. Los resultados dependen del compromiso y aplicación del cliente.
+              HugoTech proporciona servicios de mentoring y coaching con el
+              objetivo de apoyar el desarrollo profesional. Sin embargo, no
+              garantizamos resultados específicos y no nos hacemos responsables
+              de decisiones tomadas por los clientes basadas en nuestras
+              sesiones. Los resultados dependen del compromiso y aplicación del
+              cliente.
             </p>
           </section>
 
@@ -143,9 +157,10 @@ export default function TerminosYCondicionesPage() {
               8. Modificaciones de los Términos
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              HugoTech se reserva el derecho de modificar estos términos en cualquier momento. 
-              Las modificaciones entrarán en vigor inmediatamente después de su publicación en 
-              este sitio web. Es tu responsabilidad revisar periódicamente estos términos.
+              HugoTech se reserva el derecho de modificar estos términos en
+              cualquier momento. Las modificaciones entrarán en vigor
+              inmediatamente después de su publicación en este sitio web. Es tu
+              responsabilidad revisar periódicamente estos términos.
             </p>
           </section>
 
@@ -155,8 +170,9 @@ export default function TerminosYCondicionesPage() {
               9. Ley Aplicable y Jurisdicción
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Estos términos se rigen por las leyes de la República del Perú. Cualquier disputa 
-              será resuelta en los tribunales competentes de Lima, Perú.
+              Estos términos se rigen por las leyes de la República del Perú.
+              Cualquier disputa será resuelta en los tribunales competentes de
+              Lima, Perú.
             </p>
           </section>
 
@@ -166,32 +182,38 @@ export default function TerminosYCondicionesPage() {
               10. Contacto
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Para cualquier consulta sobre estos Términos y Condiciones, puedes contactarnos:
+              Para cualquier consulta sobre estos Términos y Condiciones, puedes
+              contactarnos:
             </p>
             <ul className="list-none space-y-2 text-gray-700 mt-4">
-              <li><strong>Email:</strong> info@hugotech.pe</li>
-              <li><strong>Sitio Web:</strong> https://hugotech.pe</li>
-              <li><strong>LinkedIn:</strong> linkedin.com/in/hcasanovam</li>
+              <li>
+                <strong>Email:</strong> info@hugotech.pe
+              </li>
+              <li>
+                <strong>Sitio Web:</strong> https://hugotech.pe
+              </li>
+              <li>
+                <strong>LinkedIn:</strong> linkedin.com/in/hcasanovam
+              </li>
             </ul>
           </section>
-
         </div>
 
         {/* Footer Navigation */}
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
-          <a 
-            href="/es/privacy-policy" 
+          <Link
+            href="/es/privacy-policy"
             className="text-primary hover:text-primary/80 font-medium text-center"
           >
             Ver Políticas de Privacidad →
-          </a>
+          </Link>
           <span className="hidden md:inline text-gray-400">|</span>
-          <a 
-            href="/es/libro-de-reclamaciones" 
+          <Link
+            href="/es/libro-de-reclamaciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
           >
             Libro de Reclamaciones →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -10,10 +10,10 @@ interface RippleEffect {
   id: number;
 }
 
-export function AnimatedButton({ 
-  children, 
+export function AnimatedButton({
+  children,
   className = "",
-  ...props 
+  ...props
 }: ButtonProps) {
   const [ripples, setRipples] = useState<RippleEffect[]>([]);
   const [isHovered, setIsHovered] = useState(false);
@@ -53,7 +53,7 @@ export function AnimatedButton({
         }}
       >
         <span className="relative z-10">{children}</span>
-        
+
         {/* Ripple effects */}
         <AnimatePresence>
           {ripples.map((ripple) => (

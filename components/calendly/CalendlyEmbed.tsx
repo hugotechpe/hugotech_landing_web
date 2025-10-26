@@ -2,10 +2,10 @@
 
 import React, { useEffect } from "react";
 import { InlineWidget } from "react-calendly";
-import { 
-  trackCalendlyWidgetLoaded, 
-  trackCalendlyDateSelected, 
-  trackCalendlyEventScheduled 
+import {
+  trackCalendlyWidgetLoaded,
+  trackCalendlyDateSelected,
+  trackCalendlyEventScheduled,
 } from "@/lib/gtm";
 
 interface CalendlyEmbedProps {
@@ -32,7 +32,6 @@ export function CalendlyEmbed({
   utm,
   height = "700px",
 }: CalendlyEmbedProps) {
-  
   // Track when widget loads
   useEffect(() => {
     trackCalendlyWidgetLoaded();
@@ -43,7 +42,7 @@ export function CalendlyEmbed({
       if (e.origin !== "https://calendly.com") return;
 
       const eventData = e.data;
-      
+
       // Calendly envía eventos con esta estructura
       if (eventData.event) {
         console.log("[Calendly Event]", eventData.event, eventData);
@@ -56,7 +55,7 @@ export function CalendlyEmbed({
             trackCalendlyEventScheduled(
               eventData.payload?.event?.uri,
               eventData.payload?.invitee?.uri,
-              eventData.payload?.event?.start_time
+              eventData.payload?.event?.start_time,
             );
             break;
         }
@@ -78,7 +77,7 @@ export function CalendlyEmbed({
         utm={utm}
         styles={{
           height: height,
-          width: '100%',
+          width: "100%",
         }}
       />
     </div>

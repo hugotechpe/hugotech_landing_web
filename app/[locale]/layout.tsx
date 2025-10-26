@@ -8,10 +8,13 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans, fontHeading, fontQuote } from "@/config/fonts";
 import { getMessages } from "next-intl/server";
-import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from "@/components/analytics/GoogleTagManager";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hugotech.pe'),
+  metadataBase: new URL("https://hugotech.pe"),
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
@@ -27,9 +30,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    type: 'website',
-    locale: 'es_PE',
-    alternateLocale: ['en_US'],
+    type: "website",
+    locale: "es_PE",
+    alternateLocale: ["en_US"],
     url: siteConfig.url,
     title: siteConfig.title,
     description: siteConfig.description,
@@ -39,16 +42,16 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: 'HugoTech - Mentoring Tech con Propósito',
+        alt: "HugoTech - Mentoring Tech con Propósito",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@hugotechpe',
+    creator: "@hugotechpe",
   },
   robots: {
     index: true,
@@ -56,20 +59,20 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: "/apple-touch-icon.png",
   },
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
@@ -90,7 +93,11 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html suppressHydrationWarning lang={locale} className="motion-safe:scroll-smooth motion-reduce:scroll-auto">
+    <html
+      suppressHydrationWarning
+      lang={locale}
+      className="motion-safe:scroll-smooth motion-reduce:scroll-auto"
+    >
       <head>
         <GoogleTagManager />
       </head>
@@ -103,7 +110,11 @@ export default async function RootLayout({
         )}
       >
         <GoogleTagManagerNoScript />
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }} locale={locale} messages={messages}>
+        <Providers
+          themeProps={{ attribute: "class", defaultTheme: "light" }}
+          locale={locale}
+          messages={messages}
+        >
           {children}
         </Providers>
       </body>

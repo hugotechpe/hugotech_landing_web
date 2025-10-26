@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transformación de Equipos Tech desde el SER | HugoTech Empresas",
-  description: "Acompañamos equipos tecnológicos hacia el alto rendimiento con programas de cultura ágil, coaching ejecutivo y mentoring técnico. Transformamos personas, culturas y equipos tech con propósito.",
+  description:
+    "Acompañamos equipos tecnológicos hacia el alto rendimiento con programas de cultura ágil, coaching ejecutivo y mentoring técnico. Transformamos personas, culturas y equipos tech con propósito.",
   keywords: [
     "transformación equipos tech",
     "cultura ágil empresas",
@@ -16,11 +17,12 @@ export const metadata: Metadata = {
     "equipos ágiles",
     "cultura organizacional tech",
     "acompañamiento técnico",
-    "desarrollo de líderes tech"
+    "desarrollo de líderes tech",
   ],
   openGraph: {
     title: "Transformación de Equipos Tech desde el SER | HugoTech Empresas",
-    description: "Programas de cultura ágil, coaching y mentoring para equipos tecnológicos. De equipos buenos a equipos extraordinarios.",
+    description:
+      "Programas de cultura ágil, coaching y mentoring para equipos tecnológicos. De equipos buenos a equipos extraordinarios.",
     type: "website",
   },
 };
@@ -34,13 +36,11 @@ export default function EmpresasLayout({
     <>
       <div className="relative flex flex-col min-h-screen">
         <HeroNavbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <Footer />
-        
+
         {/* WhatsApp Floating Button */}
-        <WhatsAppButton 
+        <WhatsAppButton
           phoneNumber="51946483010"
           message="Hola Hugo, quiero agendar una consultoría empresarial"
         />
