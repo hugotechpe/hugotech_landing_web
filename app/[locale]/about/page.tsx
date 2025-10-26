@@ -34,12 +34,11 @@ export default function AboutPage() {
       phase: "El Inicio",
       icon: "🌱",
       color: "from-green-400 to-green-600",
-      title: "Perú, sistemas, y la curiosidad",
+      title: "Del código a las conversaciones",
       content: [
-        "Nací en Perú. Estudié <strong>Ingeniería de Sistemas</strong> porque me fascinaba cómo la tecnología transformaba vidas.",
-        "Aprendí Java, .NET, arquitecturas, frameworks... Pensé que dominar el código era el camino.",
-        "Pero algo no encajaba: <strong>los mejores talentos tech que conocí estaban desconectados de su propósito</strong>.",
-        "Vi brillantez técnica sin dirección, equipos sin cohesión, líderes cansados que no sabían cómo pedir ayuda."
+        "Empecé escribiendo código a las 3am, apasionado por encontrar la solución perfecta. <strong>PHP, MySQL, arquitecturas complejas</strong>... siempre fui hacia adelante: del desarrollo full-stack al liderazgo técnico, de Product Owner a transformar culturas organizacionales completas.",
+        "Nunca me detuve. Pero en ese camino descubrí algo más poderoso que el framework perfecto: <strong>el impacto de acompañar a personas tech a encontrar su propósito</strong>.",
+        "Hoy ya no programo en PHP ni JavaScript, pero sigo siendo el mismo innovador comprometido. Solo que ahora mi código son <strong>conversaciones que transforman equipos</strong>, mi deployment es <strong>ayudar a líderes a crecer</strong>, y mi mejor arquitectura es <strong>construir culturas donde las personas florecen</strong>."
       ]
     },
     {
