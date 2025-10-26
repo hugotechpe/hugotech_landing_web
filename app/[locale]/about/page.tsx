@@ -372,133 +372,60 @@ export default function AboutPage() {
                 title={
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl">🎓</span>
-                    <span>Coaching & Liderazgo</span>
+                    <span>{t("certifications.tabs.coaching")}</span>
                   </div>
                 }
               >
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {/* Newfield Coaching Ontológico */}
-                      <div className="flex items-start gap-4 pb-6 border-b-2 border-brand/30">
-                        <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            NEWFIELD
-                            <br />
-                            NETWORK
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2 flex-wrap">
-                            <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
-                              Coaching Profesional Ontológico (en proceso)
-                            </h3>
-                            <Chip
-                              className="font-semibold"
-                              color="success"
-                              size="sm"
-                              variant="flat"
-                            >
-                              Activo
-                            </Chip>
+                      {(messages.Sections?.About?.certifications?.coaching_items || []).map((cert: any, index: number) => {
+                        const colors: Record<string, string> = {
+                          orange: "from-orange-500 to-orange-600 text-orange-600",
+                          blue: "from-blue-600 to-blue-700 text-blue-600",
+                          red: "from-red-600 to-red-700 text-red-600",
+                          "blue-dark": "from-blue-800 to-blue-900 text-blue-800"
+                        };
+                        const colorClass = colors[cert.color] || "from-primary to-brand text-primary";
+                        const isLast = index === (messages.Sections?.About?.certifications?.coaching_items?.length || 0) - 1;
+
+                        return (
+                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b" : ""} ${index === 0 ? "border-b-2 border-brand/30" : "border-gray-200"}`}>
+                            <div className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}>
+                              <span className="text-white font-bold text-sm text-center leading-tight">
+                                {cert.organization.includes("Newfield") ? "NEWFIELD\nNETWORK" :
+                                 cert.organization.includes("Ruwalab") ? "RUWALAB\nICF" :
+                                 cert.organization.includes("UPC") || cert.organization.includes("Ciencias Aplicadas") ? "UPC" :
+                                 "ISIL"}
+                              </span>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                                <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
+                                  {cert.title}
+                                </h3>
+                                {cert.status && (
+                                  <Chip
+                                    className="font-semibold"
+                                    color={cert.status === "Activo" || cert.status === "Active" ? "success" : "warning"}
+                                    size="sm"
+                                    variant="flat"
+                                  >
+                                    {cert.status}
+                                  </Chip>
+                                )}
+                              </div>
+                              <p className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}>
+                                {cert.organization}
+                              </p>
+                              <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
+                                {cert.description}
+                              </p>
+                              <p className="text-xs text-gray-500">{cert.period}</p>
+                            </div>
                           </div>
-                          <p className="text-base font-semibold text-orange-600 mb-2">
-                            Newfield Network
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Formación en coaching ontológico profesional -
-                            Transformación del ser, lenguaje, emocionalidad y
-                            corporalidad
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            oct. 2025 - en curso
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Ruwalab ICF */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            RUWALAB
-                            <br />
-                            <span className="text-xs">ICF</span>
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2 flex-wrap">
-                            <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
-                              Coach Profesional ICF (en proceso)
-                            </h3>
-                            <Chip
-                              className="font-semibold"
-                              color="warning"
-                              size="sm"
-                              variant="flat"
-                            >
-                              En curso
-                            </Chip>
-                          </div>
-                          <p className="text-base font-semibold text-blue-600 mb-2">
-                            Ruwalab - International Coaching Federation (ICF)
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Formación acreditada por ICF - Desarrollo personal y
-                            liderazgo
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            abr. 2024 - nov. 2025
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* UPC Coaching & Mentoring */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-2xl">
-                            UPC
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Herramientas de Coaching y Mentoring para el
-                            Liderazgo
-                          </h3>
-                          <p className="text-base font-semibold text-red-600 mb-2">
-                            Universidad Peruana de Ciencias Aplicadas
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Programa especializado en coaching como líder,
-                            competencias para liderazgo adaptativo del siglo XXI
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            feb. 2025 - oct. 2025
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* ISIL Gestión Talento Humano */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-2xl">
-                            ISIL
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Gestión de Talento Humano
-                          </h3>
-                          <p className="text-base font-semibold text-blue-800 mb-2">
-                            ISIL
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Retención de personal, liderazgo servicial,
-                            dirección de talentos, desarrollo de talento,
-                            liderazgo organizacional
-                          </p>
-                          <p className="text-xs text-gray-500">ene. 2023</p>
-                        </div>
-                      </div>
+                        );
+                      })}
                     </div>
                   </CardBody>
                 </Card>

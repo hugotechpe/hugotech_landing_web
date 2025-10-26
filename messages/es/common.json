@@ -448,8 +448,201 @@
         "tabs": {
           "coaching": "Coaching & Liderazgo",
           "agility": "Agilidad & Frameworks",
-          "technology": "Tecnología & Cloud"
-        }
+          "technology": "Tecnología & Cloud",
+          "education": "Educación"
+        },
+        "coaching_items": [
+          {
+            "organization": "Newfield Network",
+            "title": "Coaching Profesional Ontológico (en proceso)",
+            "status": "Activo",
+            "description": "Formación en coaching ontológico profesional - Transformación del ser, lenguaje, emocionalidad y corporalidad",
+            "period": "oct. 2025 - en curso",
+            "color": "orange"
+          },
+          {
+            "organization": "Ruwalab - International Coaching Federation (ICF)",
+            "title": "Coach Profesional ICF (en proceso)",
+            "status": "En curso",
+            "description": "Formación acreditada por ICF - Desarrollo personal y liderazgo",
+            "period": "abr. 2024 - nov. 2025",
+            "color": "blue"
+          },
+          {
+            "organization": "Universidad Peruana de Ciencias Aplicadas",
+            "title": "Herramientas de Coaching y Mentoring para el Liderazgo",
+            "description": "Programa especializado en coaching como líder, competencias para liderazgo adaptativo del siglo XXI",
+            "period": "feb. 2025 - oct. 2025",
+            "color": "red"
+          },
+          {
+            "organization": "ISIL",
+            "title": "Gestión de Talento Humano",
+            "description": "Retención de personal, liderazgo servicial, dirección de talentos, desarrollo de talento, liderazgo organizacional",
+            "period": "ene. 2023",
+            "color": "blue-dark"
+          }
+        ],
+        "agility_items": [
+          {
+            "organization": "ICAgile",
+            "title": "ICAgile Certified Professional - Agile Coaching (ICP ACC)",
+            "description": "Agile methodologies, liderazgo de equipos, product owner, agile coach",
+            "period": "jun. 2024",
+            "credential": "ID: 346-44232-c7a7699f-6c03-4440-8152-5def04f215fd",
+            "color": "blue"
+          },
+          {
+            "organization": "ICAgile",
+            "title": "ICAgile Certified Professional - Agility in HR",
+            "description": "Agilidad aplicada a recursos humanos y gestión de personas",
+            "period": "sept. 2025",
+            "credential": "ID: 316-53764-c7a7699f-6c03-4440-8152-5def04f215fd",
+            "color": "green"
+          },
+          {
+            "organization": "Management 3.0",
+            "title": "Management 3.0 - Energizing People Plus & Fundamentals",
+            "description": "Gestión de personas, entrenamiento personal, estrategia empresarial, liderazgo moderno",
+            "period": "ago. 2022",
+            "color": "purple"
+          },
+          {
+            "organization": "Vabro.ai and VMEdu.com",
+            "title": "SCRUMstudy Agile Master Certified (SAMC)",
+            "description": "Agile methodologies, Waterfall, Lean software development, Agile leadership, Entorno Agile",
+            "period": "jun. 2024",
+            "credential": "ID: 775162",
+            "color": "orange"
+          },
+          {
+            "organization": "Project Management Institute",
+            "title": "PMI Agile Certified Practitioner (PMI-ACP)",
+            "description": "Certificación en metodologías ágiles y gestión de proyectos",
+            "period": "oct. 2024",
+            "credential": "ID: 3956641",
+            "color": "yellow"
+          },
+          {
+            "organization": "SCRUMstudy",
+            "title": "Scrum Master, Product Owner & Developer Certified",
+            "description": "Scrum Master, Product Owner, Developer - Framework completo Scrum",
+            "period": "2021-2024",
+            "color": "teal"
+          },
+          {
+            "organization": "Kanban University",
+            "title": "Kanban Management Professional (KMP)",
+            "description": "Gestión de programas, operaciones lean, transformación lean, transformación digital, Kanban",
+            "period": "oct. 2021",
+            "color": "indigo"
+          },
+          {
+            "organization": "CertJoin",
+            "title": "Lean StartUp Certified Associate",
+            "description": "Lean Startup, operaciones lean, modelo-vista-presentador (MVP)",
+            "period": "ago. 2021",
+            "credential": "ID: 6dBxDaN1C1",
+            "color": "amber"
+          },
+          {
+            "organization": "UTEC Posgrado",
+            "title": "Lean UX",
+            "description": "Liderazgo de equipos de desarrollo, Lean Startup, herramientas Lean, desarrollo de software lean, Lean UX, transformación lean",
+            "period": "dic. 2022",
+            "color": "pink"
+          }
+        ],
+        "technology_items": [
+          {
+            "organization": "MIT Professional Education",
+            "title": "Transformación Digital: Tecnologías y Aplicaciones Prácticas",
+            "description": "Programa ejecutivo del MIT: IA, Big Data, Machine Learning, IoT, Blockchain. Transformación organizacional y análisis de casos prácticos.",
+            "period": "jun. 2025 - nov. 2025",
+            "credential": "ID: 161063771",
+            "icon": "MIT"
+          },
+          {
+            "organization": "Google",
+            "title": "Google Cloud Certified - Cloud Digital Leader",
+            "description": "Google Cloud Platform - Liderazgo digital en la nube",
+            "period": "sept. 2024 - sept. 2027",
+            "icon": "☁️"
+          },
+          {
+            "organization": "Amazon Web Services (AWS)",
+            "title": "AWS Certified Cloud Practitioner",
+            "description": "Seguridad de Cloud, Amazon Web Services (AWS), Computación en la nube",
+            "period": "ago. 2024 - ago. 2027",
+            "icon": "🟠"
+          },
+          {
+            "organization": "Microsoft",
+            "title": "Microsoft Certified: Azure Fundamentals",
+            "description": "Fundamentos de Microsoft Azure Cloud",
+            "period": "jul. 2024",
+            "credential": "ID: DA756991C65912ABE",
+            "icon": "🔷"
+          },
+          {
+            "organization": "CertiProf",
+            "title": "DevOps Foundation Professional Certification (DFPC)",
+            "description": "DevOps, Microsoft Azure, DevSecOps",
+            "period": "jul. 2024 - jul. 2027",
+            "icon": "⚙️"
+          },
+          {
+            "organization": "CertiProf",
+            "title": "Lead CyberSecurity Professional Certification (LCSPC™)",
+            "description": "Liderazgo en ciberseguridad profesional",
+            "period": "abr. 2025 - abr. 2027",
+            "icon": "🔐"
+          },
+          {
+            "organization": "SCRUMstudy",
+            "title": "Scrum for Ops and DevOps Fundamentals Certified",
+            "description": "Scrum/Kanban/AI/Business Analysis/OKRs/Six Sigma - Integración continua",
+            "period": "2024",
+            "icon": "🔄"
+          }
+        ],
+        "education_items": [
+          {
+            "organization": "ESAN Graduate School of Business",
+            "title": "PADE Internacional en Transformación Digital",
+            "description": "Tecnología en la gestión empresarial / Procesamiento de datos",
+            "period": "jun. 2024 - jun. 2025",
+            "icon": "E"
+          },
+          {
+            "organization": "Universidad del Pacífico (PE)",
+            "title": "Programa Alta Dirección CTO - Excelencia en Gestión Estratégica de la Tecnología",
+            "description": "Informática, comunicaciones y servicios de asistencia. Emplear nuevas tecnologías de manera estratégica, desarrollar capacidad de liderazgo e influencia personal para liderar la transformación a través de Tecnología, Innovación y Transformación Digital. IA, Big Data, ML, Robotics, Blockchain, Biotechnology.",
+            "period": "ene. 2023 - sept. 2024",
+            "icon": "🎯"
+          },
+          {
+            "organization": "Universidad Privada del Norte",
+            "title": "Maestría en Tecnologías de la Información (TI)",
+            "description": "Ingeniería de sistemas",
+            "period": "feb. 2018 - abr. 2020",
+            "icon": "🎓"
+          },
+          {
+            "organization": "Universidad Nacional de Trujillo",
+            "title": "Master of Business Administration (MBA)",
+            "description": "Ciencias Económicas",
+            "period": "feb. 2009 - jul. 2011",
+            "icon": "📊"
+          },
+          {
+            "organization": "CertiProf",
+            "title": "Design Thinking Professional & OKR Certified Professional",
+            "description": "Gestión de productos, planificación de proyectos, planificación estratégica, indicadores clave de desempeño, planificación de negocios, planificación de procesos, objetivos y resultados clave (OKR)",
+            "period": "2021-2023",
+            "icon": "🎨"
+          }
+        ]
       },
       "evolution": {
         "title": "18+ años transformándome (y transformando)",
