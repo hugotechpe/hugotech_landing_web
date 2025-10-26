@@ -8,8 +8,11 @@ import { Link } from "@heroui/link";
 import { Tabs, Tab } from "@heroui/tabs";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { useTranslations, useMessages } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("Sections.About");
+  const messages = useMessages() as any;
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
@@ -29,67 +32,21 @@ export default function AboutPage() {
     }
   };
 
-  const timelineData = [
-    {
-      phase: "El Inicio",
-      icon: "🌱",
-      color: "from-green-400 to-green-600",
-      title: "Del código a las conversaciones",
-      content: [
-        "Empecé escribiendo código a las 3am, apasionado por encontrar la solución perfecta. <strong>PHP, MySQL, arquitecturas complejas</strong>... siempre fui hacia adelante: del desarrollo full-stack al liderazgo técnico, de Product Owner a transformar culturas organizacionales completas.",
-        "Nunca me detuve. Pero en ese camino descubrí algo más poderoso que el framework perfecto: <strong>el impacto de acompañar a personas tech a encontrar su propósito</strong>.",
-        "Hoy ya no programo en PHP ni JavaScript, pero sigo siendo el mismo innovador comprometido. Solo que ahora mi código son <strong>conversaciones que transforman equipos</strong>, mi deployment es <strong>ayudar a líderes a crecer</strong>, y mi mejor arquitectura es <strong>construir culturas donde las personas florecen</strong>."
-      ]
-    },
-    {
-      phase: "El Despertar",
-      icon: "💡",
-      color: "from-yellow-400 to-orange-500",
-      title: "Los desafíos reales no están en el código",
-      content: [
-        "Como Tech Lead descubrí algo: <strong>el mejor código no transforma si quien lo escribe no se siente conectado</strong>.",
-        "Developers talentosos sin espacios para crecer. Product Owners sin claridad de visión. Equipos sin conversaciones reales.",
-        "Ahí empezó mi búsqueda: estudié coaching, agilidad, facilitación, liderazgo consciente.",
-        "Me certifiqué en <strong>Coaching ICF, Management 3.0, Scrum, Lean</strong>... buscando respuestas más allá del código."
-      ]
-    },
-    {
-      phase: "La Pausa",
-      icon: "🌧️",
-      color: "from-gray-400 to-slate-600",
-      title: "Cuando el éxito no es suficiente",
-      content: [
-        "<strong>A los 35, me detuve</strong>. Lideraba equipos, proyectos importantes, reconocimiento... pero algo faltaba.",
-        "Noches preguntándome: <strong>¿Estoy construyendo lo que realmente importa?</strong>",
-        "Esa pausa fue incómoda y necesaria. Me llevó al coaching profesional, a conversaciones honestas, a preguntarme quién era sin el cargo.",
-        "Descubrí que <strong>muchos comparten esta sensación</strong>. Ese entendimiento se volvió mi punto de partida."
-      ]
-    },
-    {
-      phase: "La Transformación",
-      icon: "🚀",
-      color: "from-blue-400 to-indigo-600",
-      title: "De tecnología a personas",
-      content: [
-        "Trabajé <strong>18+ años</strong> en tech (Perú, LATAM, EE.UU.). Lideré transformaciones digitales, equipos ágiles, productos escalables.",
-        "Pero lo que más sentido me dio fueron las conversaciones de mentoring con alguien buscando su camino.",
-        "Ver a alguien <strong>conectar con su propósito</strong> en una sesión valía más que cualquier milestone técnico.",
-        "Cada vez que alguien decía <em>\"esta conversación me dio claridad\"</em>, sentía que estaba aportando algo real."
-      ]
-    },
-    {
-      phase: "El Propósito",
-      icon: "✨",
-      color: "from-primary to-[#0d4746]",
-      title: "HugoTech: compartir lo aprendido",
-      content: [
-        "HugoTech nació de una pregunta: <strong>¿Cómo acompañar sin que el dinero sea obstáculo?</strong>",
-        "Decidí que las sesiones 1 a 1 serían <strong>100% gratuitas</strong>. No como estrategia, sino como compromiso.",
-        "Si hoy puedo acompañar a alguien, es porque otros hicieron lo mismo conmigo en momentos clave.",
-        "Este espacio es mi forma de <strong>devolver lo que recibí y construir con propósito</strong>."
-      ]
-    }
-  ];
+  // Get timeline data from translations
+  const timelineDataFromTranslations = messages.Sections?.About?.journey?.phases || [];
+  const timelineData = timelineDataFromTranslations.map((phase: any, index: number) => {
+    const colors = [
+      "from-green-400 to-green-600",
+      "from-yellow-400 to-orange-500",
+      "from-gray-400 to-slate-600",
+      "from-blue-400 to-indigo-600",
+      "from-primary to-[#0d4746]"
+    ];
+    return {
+      ...phase,
+      color: colors[index] || "from-primary to-brand"
+    };
+  });
 
   return (
     <main className="bg-white overflow-hidden">

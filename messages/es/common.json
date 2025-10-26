@@ -294,6 +294,156 @@
         "badgeRightAlt": "Liderazgo en tecnología",
         "badgeLeftAlt": "Desarrolla tu talento"
       }
+    },
+    "About": {
+      "hero": {
+        "title": "Más que código, transformo personas",
+        "subtitle": "18+ años construyendo tech, equipos y líderes conscientes"
+      },
+      "journey": {
+        "title": "Mi Camino: Del Código a las Personas",
+        "phases": [
+          {
+            "phase": "El Inicio",
+            "icon": "🌱",
+            "title": "Del código a las conversaciones",
+            "content": [
+              "Empecé escribiendo código a las 3am, apasionado por encontrar la solución perfecta. <strong>PHP, MySQL, arquitecturas complejas</strong>... siempre fui hacia adelante: del desarrollo full-stack al liderazgo técnico, de Product Owner a transformar culturas organizacionales completas.",
+              "Nunca me detuve. Pero en ese camino descubrí algo más poderoso que el framework perfecto: <strong>el impacto de acompañar a personas tech a encontrar su propósito</strong>.",
+              "Hoy ya no programo en PHP ni JavaScript, pero sigo siendo el mismo innovador comprometido. Solo que ahora mi código son <strong>conversaciones que transforman equipos</strong>, mi deployment es <strong>ayudar a líderes a crecer</strong>, y mi mejor arquitectura es <strong>construir culturas donde las personas florecen</strong>."
+            ]
+          },
+          {
+            "phase": "El Despertar",
+            "icon": "💡",
+            "title": "Los desafíos reales no están en el código",
+            "content": [
+              "Como Tech Lead descubrí algo: <strong>el mejor código no transforma si quien lo escribe no se siente conectado</strong>.",
+              "Developers talentosos sin espacios para crecer. Product Owners sin claridad de visión. Equipos sin conversaciones reales.",
+              "Ahí empezó mi búsqueda: estudié coaching, agilidad, facilitación, liderazgo consciente.",
+              "Me certifiqué en <strong>Coaching ICF, Management 3.0, Scrum, Lean</strong>... buscando respuestas más allá del código."
+            ]
+          },
+          {
+            "phase": "La Pausa",
+            "icon": "🌧️",
+            "title": "Cuando el éxito no es suficiente",
+            "content": [
+              "<strong>A los 35, me detuve</strong>. Lideraba equipos, proyectos importantes, reconocimiento... pero algo faltaba.",
+              "Noches preguntándome: <strong>¿Estoy construyendo lo que realmente importa?</strong>",
+              "Esa pausa fue incómoda y necesaria. Me llevó al coaching profesional, a conversaciones honestas, a preguntarme quién era sin el cargo.",
+              "Descubrí que <strong>muchos comparten esta sensación</strong>. Ese entendimiento se volvió mi punto de partida."
+            ]
+          },
+          {
+            "phase": "La Transformación",
+            "icon": "🚀",
+            "title": "De tecnología a personas",
+            "content": [
+              "Trabajé <strong>18+ años</strong> en tech (Perú, LATAM, EE.UU.). Lideré transformaciones digitales, equipos ágiles, productos escalables.",
+              "Pero lo que más sentido me dio fueron las conversaciones de mentoring con alguien buscando su camino.",
+              "Ver a alguien <strong>conectar con su propósito</strong> en una sesión valía más que cualquier milestone técnico.",
+              "Cada vez que alguien decía <em>\"esta conversación me dio claridad\"</em>, sentía que estaba aportando algo real."
+            ]
+          },
+          {
+            "phase": "El Propósito",
+            "icon": "✨",
+            "title": "HugoTech: compartir lo aprendido",
+            "content": [
+              "HugoTech nació de una pregunta: <strong>¿Cómo acompañar sin que el dinero sea obstáculo?</strong>",
+              "Decidí que las sesiones 1 a 1 serían <strong>100% gratuitas</strong>. No como estrategia, sino como compromiso.",
+              "Si hoy puedo acompañar a alguien, es porque otros hicieron lo mismo conmigo en momentos clave.",
+              "Este espacio es mi forma de <strong>devolver lo que recibí y construir con propósito</strong>."
+            ]
+          }
+        ]
+      },
+      "certifications": {
+        "title": "31+ Certificaciones que respaldan mi experiencia",
+        "tabs": {
+          "coaching": "Coaching & Liderazgo",
+          "agility": "Agilidad & Frameworks",
+          "technology": "Tecnología & Cloud"
+        }
+      },
+      "evolution": {
+        "title": "18+ años transformándome (y transformando)",
+        "subtitle": "De escribir mi primera línea de código a liderar transformaciones culturales en equipos de alto rendimiento",
+        "phases": [
+          {
+            "title": "Backend Developer → El amor por la arquitectura",
+            "description": "Empecé con <strong>PHP, MySQL, arquitecturas MVC</strong>. Construía sistemas desde cero: plataformas de e-commerce, ERPs, sistemas de pasajes para transporte. <strong>Aprendí que el código limpio no es solo sintaxis, es empatía con quien viene después</strong>.",
+            "chips": ["PHP", "MySQL", "APIs REST", "Arquitectura de Software"]
+          },
+          {
+            "title": "Frontend Developer → La experiencia importa (y me apasiona)",
+            "description": "Descubrí que <strong>la interfaz es donde el usuario siente el producto</strong>. JavaScript, React, animaciones, performance, accesibilidad. <strong>No bastaba con que funcionara, tenía que sentirse bien, fluir, emocionar</strong>. El UX se volvió mi obsesión: entender cada clic, cada microinteracción, cada segundo de carga. <strong>Me enamoré de crear experiencias que la gente ama usar</strong>.",
+            "chips": ["JavaScript", "React", "UX/UI Design", "Performance", "User Experience", "Design Thinking"]
+          },
+          {
+            "title": "Full Stack Developer → Ver el panorama completo + Growth",
+            "description": "Junté ambos mundos: <strong>arquitectura backend + experiencia frontend</strong>. Ahora podía ver el producto completo, entender trade-offs, tomar decisiones técnicas pensando en el negocio. Pero no bastaba con construir bien: <strong>descubrí mi pasión por el marketing digital y growth</strong>. Analytics, conversión, funnels, A/B testing. <strong>Cada línea de código era una oportunidad para crecer el negocio</strong>.",
+            "chips": ["Full Stack", "Cloud (AWS, Azure)", "DevOps", "Marketing Digital", "Growth Hacking", "Analytics"]
+          },
+          {
+            "title": "Tech Lead & Product Owner → El código no es suficiente",
+            "description": "Lideré equipos, definí roadmaps, negocié con stakeholders. Pero aquí descubrí la verdad: <strong>los mejores productos nacen de equipos alineados y motivados</strong>. No bastaba el código perfecto si <strong>las personas no tenían claridad, propósito o espacios para crecer</strong>.",
+            "chips": ["Product Management", "Scrum", "Liderazgo Técnico", "Agile"]
+          },
+          {
+            "title": "Country Manager → Cultura Data-Driven y visión estratégica",
+            "description": "Gestioné operaciones en Perú coordinando <strong>equipos de desarrollo, marketing, call center, ventas y gestión de talento</strong>. Aprendí que el éxito no está solo en el producto, sino en <strong>alinear múltiples áreas hacia un objetivo común, midiendo impacto con KPIs y OKRs</strong>. Me obsesioné con <strong>construir una cultura data-driven: cada decisión respaldada por datos, cada estrategia validada con métricas</strong>. Entendí que las personas son la estrategia más poderosa, y los datos son su mejor aliado.",
+            "chips": ["Gestión Comercial", "KPIs & OKRs", "Data-Driven Culture", "Gestión de Talento", "Estrategia de Negocio", "ROI & Analytics", "Liderazgo Multifuncional"]
+          },
+          {
+            "title": "Estratega Digital & Agile Coach → Transformar personas y culturas",
+            "description": "Hoy mi código son <strong>conversaciones que transforman equipos</strong>. Mi deployment es <strong>ayudar a líderes a encontrar su voz</strong>. Mi mejor arquitectura es <strong>construir culturas donde las personas florecen y el talento se convierte en impacto real</strong>. Ya no programo en JavaScript, pero sigo innovando: ahora en el desarrollo humano.",
+            "chips": ["Coaching Profesional", "Transformación Digital", "Cultura Organizacional", "Liderazgo Consciente", "Innovación"]
+          }
+        ],
+        "quote": "Del código backend a liderar países. De gestionar KPIs a transformar culturas. <strong>Sigo siendo innovador, solo que ahora mi lenguaje son las personas</strong>.",
+        "author": "Hugo Casanova, 18+ años de evolución continua"
+      },
+      "mission": {
+        "title": "Lo que hago hoy",
+        "content": "Acompaño a profesionales tech en su <strong>transformación personal y profesional</strong>. Ofrezco <strong>sesiones 1-a-1 100% gratuitas</strong> para quien las necesite, y programas empresariales que transforman equipos con <strong>agilidad, innovación y mentalidad de crecimiento</strong>. Del autoconocimiento al liderazgo consciente, del propósito a la acción con impacto."
+      },
+      "vision": {
+        "title": "A dónde voy",
+        "content": "Quiero ser referente en <strong>transformación humana en tech latinoamericano</strong>. Crear una comunidad de líderes conscientes que lideren con empatía, construyan productos con propósito, y transformen la industria desde <strong>la innovación con alma</strong>."
+      },
+      "values": {
+        "title": "Los 4 pilares que me sostienen",
+        "items": [
+          {
+            "title": "Humanidad",
+            "description": "Tech al servicio de personas, no al revés"
+          },
+          {
+            "title": "Propósito",
+            "description": "Sin por qué, no hay cómo que valga"
+          },
+          {
+            "title": "Crecimiento",
+            "description": "Evolución consciente, no éxito vacío"
+          },
+          {
+            "title": "Excellence",
+            "description": "Alto rendimiento con alma, no solo métricas"
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para construir con claridad?",
+        "subtitle": "No esperes años para hacer las preguntas importantes.",
+        "description": "Agenda tu sesión gratuita. Conversemos con honestidad. Sin agendas ocultas, sin discursos ensayados. <strong>Solo tú, tus preguntas, y un espacio seguro para explorarlas</strong>.",
+        "buttons": {
+          "session": "Agenda tu sesión gratuita →",
+          "companies": "Programas para empresas"
+        },
+        "quote": "Si una sola persona encuentra su propósito gracias a esta conversación, todo habrá valido la pena."
+      }
     }
   }
 }
