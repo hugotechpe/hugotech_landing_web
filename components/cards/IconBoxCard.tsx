@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card, CardBody } from "@heroui/card";
 import clsx from "clsx";
 import { IconSvgProps } from "@/types";
+import { motion } from "framer-motion";
 
 export type IconComponent = React.FC<IconSvgProps>;
 
@@ -39,13 +40,21 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
       <Card shadow="none" className="bg-transparent">
         <CardBody>
           <div className={clsx("flex items-start gap-4", classNameCardBody)}>
-            <div
+            <motion.div
+              whileHover={{ 
+                scale: 1.1,
+                rotate: [0, -5, 5, -5, 0],
+              }}
+              transition={{ 
+                duration: 0.5,
+                ease: "easeInOut"
+              }}
               className="flex h-18 w-18 items-center justify-center rounded-full bg-[#E0F1DF] text-primary shrink-0"
               aria-hidden={iconAriaLabel ? undefined : true}
               aria-label={iconAriaLabel}
             >
               {Icon ? <Icon size={35} aria-label={iconAriaLabel} /> : null}
-            </div>
+            </motion.div>
             <div>
               <HeadingTag id={titleId} className="text-lg font-semibold text-customgray">
                 {title}

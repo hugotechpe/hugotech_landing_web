@@ -61,8 +61,12 @@ export function EmpresasSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
-            <motion.div variants={fadeInUp}>
-              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full">
+            <motion.div 
+              variants={fadeInUp}
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300">
                 <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-2xl sm:text-3xl font-bold">{t("mentoriaCard.title")}</h3>
                 <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
@@ -102,8 +106,12 @@ export function EmpresasSection() {
             </motion.div>
 
             {/* Columna derecha: Servicio Business */}
-            <motion.div variants={fadeInUp}>
-              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full">
+            <motion.div 
+              variants={fadeInUp}
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300">
                 <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-2xl sm:text-3xl font-bold">{t("empresasCard.title")}</h3>
                 <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
