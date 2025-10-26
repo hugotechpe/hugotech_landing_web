@@ -74,10 +74,10 @@ export default function HeroNavbar() {
               <Image 
                 src="/images/logo-hugotech.png" 
                 alt="HugoTech - Innovación con Alma, Tech con Propósito" 
-                width={160}
-                height={48}
+                width={180}
+                height={54}
                 priority
-                className="h-8 md:h-12 w-auto"
+                className="h-7 sm:h-10 md:h-14 w-auto"
               />
             </Link>
           </NavbarBrand>
@@ -99,7 +99,7 @@ export default function HeroNavbar() {
           <NavbarItem className="hidden lg:flex">
             <LocaleSwitch />
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="hidden md:flex">
             <Button 
               as={Link}
               color="primary"
