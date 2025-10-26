@@ -46,6 +46,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Melissa Calderon",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Líder humano", "Vulnerabilidad", "Empatía"],
+    highlight: "Aprendiste a reconocer tus errores",
   },
     [TestimonioId.MAGALY_AYERBE]: {
     quote: `Cuando te conocí, en la primera entrevista, creo que fue química al instante, a pesar de que dicen que soy sociable, yo siento que soy muy distante cuando conozco a una persona por primera vez, pero contigo fue distinto.
@@ -57,6 +59,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Magaly Ayerbe",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Empoderamiento", "Agilidad", "Mentoring"],
+    highlight: "reconocer y potenciar mis habilidades",
   },
     [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Fue una experiencia bonita como todo trabajo tiene sus altos y bajos. Pero muy contento por la manera de apoyar y guiar a ser mejores profesionales `,
@@ -73,6 +77,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Miguel Bustillos",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Familia", "Confianza", "Crecimiento"],
+    highlight: "parte de una familia",
   },
   [TestimonioId.KATHERINE_CRUZ]: {
     quote: `Bueno hablaré de cuando llegue a la empresa, ya que realmente cambio mi mentalidad de trabajo. Viendo y sintiéndome parte de la familia que estábamos formando, fue muy alentador  aprender a ser parte de …. Se qué hay muchos cambios pero e tratado de adaptarme a lo que venga ya que siento que siempre vendrá algo mejor contigo de líder 😌💪🏽`,
@@ -105,6 +111,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image1.png",
     avatarAlt: "Foto de perfil de Estefani Ayquipa",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Seguridad psicológica", "Reconocimiento", "Apertura"],
+    highlight: "confianza de expresarte mi opinión",
   },
   [TestimonioId.FRANCIS_MATEO]: {
     quote: `Gracias por tu guía, siempre práctica y orientada a resultados. Me ayudaste a enfocarme en lo importante y a seguir avanzando.`,
