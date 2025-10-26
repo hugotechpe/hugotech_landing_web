@@ -13,7 +13,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { LocaleSwitch } from "@/components/locale-switch";
 import { useMessages, useTranslations, useLocale } from "next-intl";
-import AltLogo from "@/common/icons/logo/AltLogo";
+import Image from "next/image";
 
 export default function NavbarSecondary() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -62,8 +62,14 @@ export default function NavbarSecondary() {
           />
           <NavbarBrand>
             <Link href={`/${locale}/`}>
-              {/* Logo alterno */}
-              <AltLogo className="h-6 md:h-9 w-auto" aria-label="HugoTech Logo" />
+              <Image
+                src="/images/logo-hugotech.png"
+                alt="HugoTech - Innovación con Alma, Tech con Propósito"
+                width={160}
+                height={48}
+                className="h-7 sm:h-9 md:h-11 w-auto"
+                priority
+              />
             </Link>
           </NavbarBrand>
         </NavbarContent>
