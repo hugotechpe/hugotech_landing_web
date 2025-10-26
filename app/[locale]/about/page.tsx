@@ -1039,6 +1039,41 @@ export default function AboutPage() {
                 </Card>
               </motion.div>
 
+              {/* Country Manager */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-indigo-500 hover:shadow-xl transition-all duration-300" shadow="md">
+                  <CardBody className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <span className="text-3xl">📊</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Country Manager → La visión estratégica del negocio completo
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Gestioné operaciones en Perú coordinando <strong className="text-indigo-600">equipos de desarrollo, 
+                          marketing, call center, ventas y gestión de talento</strong>. Aprendí que el éxito no está solo en 
+                          el producto, sino en <strong className="text-customgray">alinear múltiples áreas hacia un objetivo 
+                          común, midiendo impacto con KPIs y OKRs</strong>. Aquí entendí que <strong className="text-indigo-600">las 
+                          personas son la estrategia más poderosa</strong>, y que sin equipos motivados, ningún plan funciona.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Gestión Comercial</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">KPIs & OKRs</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Gestión de Talento</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Estrategia de Negocio</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">ROI</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Liderazgo Multifuncional</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
               {/* Estratega & Coach */}
               <motion.div variants={fadeIn}>
                 <Card className="border-l-4 border-primary hover:shadow-2xl transition-all duration-300" shadow="lg">
@@ -1082,11 +1117,11 @@ export default function AboutPage() {
               <Card className="bg-gradient-to-br from-gray-900 to-customgray border-2 border-primary/30" shadow="xl">
                 <CardBody className="p-12">
                   <p className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic">
-                    "Del backend al liderazgo consciente. De escribir código a escribir historias. 
-                    <strong className="text-primary font-sans not-italic"> Sigo siendo innovador, solo cambió el lenguaje</strong>."
+                    "Del código backend a liderar países. De gestionar KPIs a transformar culturas. 
+                    <strong className="text-primary font-sans not-italic"> Sigo siendo innovador, solo que ahora mi lenguaje son las personas</strong>."
                   </p>
                   <p className="text-base md:text-lg text-white/70 mt-6 font-body">
-                    — Hugo Casanova, 18+ años evolucionando
+                    — Hugo Casanova, 18+ años de evolución continua
                   </p>
                 </CardBody>
               </Card>
