@@ -357,6 +357,10 @@
         "mainAlt": "Portrait of Hugo Casanova, mentor and tech coach",
         "badgeRightAlt": "Leadership in technology",
         "badgeLeftAlt": "Develop your talent"
+      },
+      "badges": {
+        "adoption": "We promote responsible adoption.",
+        "support": "We support young talents."
       }
     },
     "About": {

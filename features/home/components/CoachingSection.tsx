@@ -59,22 +59,27 @@ export function CoachingSection() {
                   style={{ width: "100%", height: "auto" }}
                 />
                 
-                {/* Badges mejorados */}
+                {/* Badges mejorados con texto traducible */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0, rotate: -20 }}
                   whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="absolute -right-10 lg:-right-20 bottom-5 md:bottom-20 z-20"
+                  className="absolute -right-10 lg:-right-20 bottom-5 md:bottom-20 z-20 hidden sm:block"
                 >
-                  <Image
-                    src="/images/image8.png"
-                    alt={t("images.badgeRightAlt")}
-                    width={300}
-                    height={171}
-                    className="hidden sm:block shadow-2xl"
-                  />
+                  <div className="bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border-4 border-green-500">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-green-500 rounded-full p-2 flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                        </svg>
+                      </div>
+                      <p className="text-sm font-bold text-gray-800 leading-relaxed">
+                        {t("badges.support")}
+                      </p>
+                    </div>
+                  </div>
                 </motion.div>
                 
                 <motion.div
@@ -83,15 +88,20 @@ export function CoachingSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: -5 }}
-                  className="absolute left-0 top-0 md:-left-5 md:-top-0 z-20"
+                  className="absolute left-0 top-0 md:-left-5 md:-top-0 z-20 hidden sm:block"
                 >
-                  <Image
-                    src="/images/image7.png"
-                    alt={t("images.badgeLeftAlt")}
-                    width={300}
-                    height={171}
-                    className="hidden sm:block shadow-2xl"
-                  />
+                  <div className="bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border-4 border-green-500">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-green-500 rounded-full p-2 flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-sm font-bold text-gray-800 leading-relaxed">
+                        {t("badges.adoption")}
+                      </p>
+                    </div>
+                  </div>
                 </motion.div>
               </motion.div>
             </div>
