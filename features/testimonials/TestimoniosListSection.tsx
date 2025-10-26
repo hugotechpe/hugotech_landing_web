@@ -51,7 +51,7 @@ export function TestimoniosListSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-            {TESTIMONIOS_LIST.length}+ Personas Transformadas
+            Historias Reales de Crecimiento
           </h2>
           <p className="text-lg md:text-xl text-gray-600 leading-[1.9] tracking-wide max-w-3xl mx-auto">
             Cada testimonio es una historia real de crecimiento, vulnerabilidad y valentía. 

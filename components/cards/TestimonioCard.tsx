@@ -8,7 +8,7 @@ import { Button } from "@heroui/button";
 import LinkedInSquareIcon from "@/common/icons/social/LinkedInSquareIcon";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export interface TestimonioCardProps {
   quote: string;
@@ -106,17 +106,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
           <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
             <blockquote itemProp="reviewBody" className="text-customgray text-[15px] md:text-base leading-[2] tracking-wide font-quote italic">
               <span className="text-4xl text-primary/30 font-heading leading-none">"</span>
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={isExpanded ? 'expanded' : 'truncated'}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {renderQuoteWithHighlight(truncatedQuote)}
-                </motion.span>
-              </AnimatePresence>
+              {renderQuoteWithHighlight(truncatedQuote)}
               <span className="text-4xl text-primary/30 font-heading leading-none">"</span>
             </blockquote>
 
