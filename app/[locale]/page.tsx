@@ -8,6 +8,13 @@ import { PilaresSection } from "@/features/home/components/PilaresSection";
 import dynamic from "next/dynamic";
 import HomeLayout from "./homeLayout";
 import { Metadata } from "next";
+import {
+  JsonLd,
+  personSchema,
+  organizationSchema,
+  serviceSchema,
+  aggregateRatingSchema,
+} from "@/components/seo/JsonLd";
 
 // Lazy load AgendaSection (contiene Calendly que es pesado)
 const AgendaSection = dynamic(
@@ -89,6 +96,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      {/* Schemas JSON-LD para SEO */}
+      <JsonLd data={personSchema} />
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={serviceSchema} />
+      <JsonLd data={aggregateRatingSchema} />
+
       <HomeLayout>
         <InicioSection />
         <MePresentoSection />
