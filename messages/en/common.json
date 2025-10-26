@@ -24,7 +24,14 @@
     "about": "About",
     "search": "Search...",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "menuItems": {
+      "myStory": "My Story",
+      "home": "Home",
+      "aboutMe": "About Me",
+      "testimonials": "Testimonials",
+      "companies": "Companies"
+    }
   },
   "Sections": {
     "Testimonios": {
