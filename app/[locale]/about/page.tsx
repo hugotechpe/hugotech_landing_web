@@ -436,243 +436,63 @@ export default function AboutPage() {
                 title={
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl">⚡</span>
-                    <span>Agilidad & Frameworks</span>
+                    <span>{t("certifications.tabs.agility")}</span>
                   </div>
                 }
               >
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {/* ICAgile ACC */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            IC
-                            <br />
-                            AGILE
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            ICAgile Certified Professional - Agile Coaching (ICP
-                            ACC)
-                          </h3>
-                          <p className="text-base font-semibold text-blue-600 mb-2">
-                            ICAgile
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Agile methodologies, liderazgo de equipos, product
-                            owner, agile coach
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jun. 2024 | ID:
-                            346-44232-c7a7699f-6c03-4440-8152-5def04f215fd
-                          </p>
-                        </div>
-                      </div>
+                      {(messages.Sections?.About?.certifications?.agility_items || []).map((cert: any, index: number) => {
+                        const colors: Record<string, string> = {
+                          blue: "from-blue-500 to-blue-600 text-blue-600",
+                          green: "from-green-500 to-green-600 text-green-600",
+                          purple: "from-purple-600 to-purple-700 text-purple-600",
+                          orange: "from-orange-500 to-orange-600 text-orange-600",
+                          yellow: "from-yellow-600 to-yellow-700 text-yellow-700",
+                          teal: "from-teal-500 to-teal-600 text-teal-600",
+                          indigo: "from-indigo-600 to-indigo-700 text-indigo-600",
+                          amber: "from-yellow-500 to-amber-600 text-amber-600",
+                          pink: "from-pink-500 to-pink-600 text-pink-600"
+                        };
+                        const colorClass = colors[cert.color] || "from-primary to-brand text-primary";
+                        const isLast = index === (messages.Sections?.About?.certifications?.agility_items?.length || 0) - 1;
+                        
+                        const getOrgLabel = () => {
+                          if (cert.organization.includes("ICAgile")) return cert.title.includes("HR") ? "IC\nAGILE\nHR" : "IC\nAGILE";
+                          if (cert.organization.includes("Management 3.0")) return "MGMT\n3.0";
+                          if (cert.organization.includes("Vabro") || cert.title.includes("SAMC")) return "SCRUM\nSTUDY";
+                          if (cert.organization.includes("PMI") || cert.organization.includes("Project Management")) return "PMI";
+                          if (cert.title.includes("Scrum Master")) return "SCRUM\nTRIPLE";
+                          if (cert.organization.includes("Kanban")) return "KANBAN\nKMP";
+                          if (cert.organization.includes("CertJoin")) return "LEAN\nSTARTUP";
+                          return "LEAN\nUX";
+                        };
 
-                      {/* ICAgile HR */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            IC
-                            <br />
-                            AGILE
-                            <br />
-                            <span className="text-xs">HR</span>
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            ICAgile Certified Professional - Agility in HR
-                          </h3>
-                          <p className="text-base font-semibold text-green-600 mb-2">
-                            ICAgile
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Agilidad aplicada a recursos humanos y gestión de
-                            personas
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            sept. 2025 | ID:
-                            316-53764-c7a7699f-6c03-4440-8152-5def04f215fd
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Management 3.0 */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            MGMT
-                            <br />
-                            3.0
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Management 3.0 - Energizing People Plus &
-                            Fundamentals
-                          </h3>
-                          <p className="text-base font-semibold text-purple-600 mb-2">
-                            Management 3.0
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Gestión de personas, entrenamiento personal,
-                            estrategia empresarial, liderazgo moderno
-                          </p>
-                          <p className="text-xs text-gray-500">ago. 2022</p>
-                        </div>
-                      </div>
-
-                      {/* SCRUMstudy SAMC */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            SCRUM
-                            <br />
-                            STUDY
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            SCRUMstudy Agile Master Certified (SAMC)
-                          </h3>
-                          <p className="text-base font-semibold text-orange-600 mb-2">
-                            Vabro.ai and VMEdu.com
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Agile methodologies, Waterfall, Lean software
-                            development, Agile leadership, Entorno Agile
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jun. 2024 | ID: 775162
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* PMI-ACP */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-2xl">
-                            PMI
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            PMI Agile Certified Practitioner (PMI-ACP)
-                          </h3>
-                          <p className="text-base font-semibold text-yellow-700 mb-2">
-                            Project Management Institute
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Certificación en metodologías ágiles y gestión de
-                            proyectos
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            oct. 2024 | ID: 3956641
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Scrum Master/Product Owner/Developer */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            SCRUM
-                            <br />
-                            TRIPLE
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Scrum Master, Product Owner & Developer Certified
-                          </h3>
-                          <p className="text-base font-semibold text-teal-600 mb-2">
-                            SCRUMstudy
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Scrum Master, Product Owner, Developer - Framework
-                            completo Scrum
-                          </p>
-                          <p className="text-xs text-gray-500">2021-2024</p>
-                        </div>
-                      </div>
-
-                      {/* Kanban */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            KANBAN
-                            <br />
-                            <span className="text-xs">KMP</span>
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Kanban Management Professional (KMP)
-                          </h3>
-                          <p className="text-base font-semibold text-indigo-600 mb-2">
-                            Kanban University
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Gestión de programas, operaciones lean,
-                            transformación lean, transformación digital, Kanban
-                          </p>
-                          <p className="text-xs text-gray-500">oct. 2021</p>
-                        </div>
-                      </div>
-
-                      {/* Lean Startup */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            LEAN
-                            <br />
-                            STARTUP
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Lean StartUp Certified Associate
-                          </h3>
-                          <p className="text-base font-semibold text-amber-600 mb-2">
-                            CertJoin
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Lean Startup, operaciones lean,
-                            modelo-vista-presentador (MVP)
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            ago. 2021 | ID: 6dBxDaN1C1
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Lean UX */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <span className="text-white font-bold text-sm text-center leading-tight">
-                            LEAN
-                            <br />
-                            UX
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Lean UX
-                          </h3>
-                          <p className="text-base font-semibold text-pink-600 mb-2">
-                            UTEC Posgrado
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Liderazgo de equipos de desarrollo, Lean Startup,
-                            herramientas Lean, desarrollo de software lean, Lean
-                            UX, transformación lean
-                          </p>
-                          <p className="text-xs text-gray-500">dic. 2022</p>
-                        </div>
-                      </div>
+                        return (
+                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
+                            <div className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}>
+                              <span className="text-white font-bold text-sm text-center leading-tight whitespace-pre-line">
+                                {getOrgLabel()}
+                              </span>
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
+                                {cert.title}
+                              </h3>
+                              <p className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}>
+                                {cert.organization}
+                              </p>
+                              <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
+                                {cert.description}
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </CardBody>
                 </Card>
@@ -683,165 +503,40 @@ export default function AboutPage() {
                 title={
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl">💻</span>
-                    <span>Tecnología & Cloud</span>
+                    <span>{t("certifications.tabs.technology")}</span>
                   </div>
                 }
               >
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {/* MIT */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl font-bold text-red-700">
-                            MIT
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Transformación Digital: Tecnologías y Aplicaciones
-                            Prácticas
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            MIT Professional Education
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Programa ejecutivo del MIT: IA, Big Data, Machine
-                            Learning, IoT, Blockchain. Transformación
-                            organizacional y análisis de casos prácticos.
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jun. 2025 - nov. 2025 | ID: 161063771
-                          </p>
-                        </div>
-                      </div>
+                      {(messages.Sections?.About?.certifications?.technology_items || []).map((cert: any, index: number) => {
+                        const isLast = index === (messages.Sections?.About?.certifications?.technology_items?.length || 0) - 1;
 
-                      {/* Google Cloud */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">☁️</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Google Cloud Certified - Cloud Digital Leader
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Google
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Google Cloud Platform - Liderazgo digital en la nube
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            sept. 2024 - sept. 2027
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* AWS */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🟠</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            AWS Certified Cloud Practitioner
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Amazon Web Services (AWS)
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Seguridad de Cloud, Amazon Web Services (AWS),
-                            Computación en la nube
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            ago. 2024 - ago. 2027
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Microsoft Azure */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🔷</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Microsoft Certified: Azure Fundamentals
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Microsoft
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Fundamentos de Microsoft Azure Cloud
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jul. 2024 | ID: DA756991C65912ABE
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* DevOps */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">⚙️</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            DevOps Foundation Professional Certification (DFPC)
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            CertiProf
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            DevOps, Microsoft Azure, DevSecOps
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jul. 2024 - jul. 2027
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Cybersecurity */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🔐</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Lead CyberSecurity Professional Certification
-                            (LCSPC™)
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            CertiProf
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Liderazgo en ciberseguridad profesional
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            abr. 2025 - abr. 2027
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Scrum for Ops */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🔄</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Scrum for Ops and DevOps Fundamentals Certified
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            SCRUMstudy
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Scrum/Kanban/AI/Business Analysis/OKRs/Six Sigma -
-                            Integración continua
-                          </p>
-                          <p className="text-xs text-gray-500">2024</p>
-                        </div>
-                      </div>
+                        return (
+                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
+                            <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                              <span className="text-3xl">
+                                {cert.icon}
+                              </span>
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
+                                {cert.title}
+                              </h3>
+                              <p className="text-base font-semibold text-primary mb-2">
+                                {cert.organization}
+                              </p>
+                              <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
+                                {cert.description}
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </CardBody>
                 </Card>
@@ -852,129 +547,40 @@ export default function AboutPage() {
                 title={
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl">🎓</span>
-                    <span>Educación</span>
+                    <span>{t("certifications.tabs.education")}</span>
                   </div>
                 }
               >
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {/* ESAN */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl font-bold text-red-700">
-                            E
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            PADE Internacional en Transformación Digital
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            ESAN Graduate School of Business
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Tecnología en la gestión empresarial / Procesamiento
-                            de datos
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            jun. 2024 - jun. 2025
-                          </p>
-                        </div>
-                      </div>
+                      {(messages.Sections?.About?.certifications?.education_items || []).map((cert: any, index: number) => {
+                        const isLast = index === (messages.Sections?.About?.certifications?.education_items?.length || 0) - 1;
 
-                      {/* UPC CTO */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🎯</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Programa Alta Dirección CTO - Excelencia en Gestión
-                            Estratégica de la Tecnología
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Universidad del Pacífico (PE)
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Informática, comunicaciones y servicios de
-                            asistencia. Emplear nuevas tecnologías de manera
-                            estratégica, desarrollar capacidad de liderazgo e
-                            influencia personal para liderar la transformación a
-                            través de Tecnología, Innovación y Transformación
-                            Digital. IA, Big Data, ML, Robotics, Blockchain,
-                            Biotechnology.
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            ene. 2023 - sept. 2024
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* UPN Maestría */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-yellow-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🎓</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Maestría en Tecnologías de la Información (TI)
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Universidad Privada del Norte
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Ingeniería de sistemas
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            feb. 2018 - abr. 2020
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* MBA */}
-                      <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">📊</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Master of Business Administration (MBA)
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            Universidad Nacional de Trujillo
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Ciencias Económicas
-                          </p>
-                          <p className="text-xs text-gray-500">
-                            feb. 2009 - jul. 2011
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Design Thinking & OKR */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🎨</span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Design Thinking Professional & OKR Certified
-                            Professional
-                          </h3>
-                          <p className="text-base font-semibold text-primary mb-2">
-                            CertiProf
-                          </p>
-                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Gestión de productos, planificación de proyectos,
-                            planificación estratégica, indicadores clave de
-                            desempeño, planificación de negocios, planificación
-                            de procesos, objetivos y resultados clave (OKR)
-                          </p>
-                          <p className="text-xs text-gray-500">2021-2023</p>
-                        </div>
-                      </div>
+                        return (
+                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
+                            <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                              <span className="text-3xl">
+                                {cert.icon}
+                              </span>
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
+                                {cert.title}
+                              </h3>
+                              <p className="text-base font-semibold text-primary mb-2">
+                                {cert.organization}
+                              </p>
+                              <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
+                                {cert.description}
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </CardBody>
                 </Card>
