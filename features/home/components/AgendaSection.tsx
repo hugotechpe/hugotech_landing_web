@@ -53,9 +53,7 @@ export function AgendaSection() {
           <Card className="bg-primary/10 border-l-4 border-primary mb-8" shadow="none">
             <CardBody className="p-6">
               <p className="text-base text-gray-700">
-                💚 <strong>Recuerda:</strong> Las sesiones 1 a 1 son completamente gratuitas. 
-                Este es un espacio sin presiones, sin agenda oculta. Solo tú, tus dudas y 
-                un acompañamiento honesto.
+                {t("reminder.emoji")} <strong>{t("reminder.title")}</strong> {t("reminder.text")}
               </p>
             </CardBody>
           </Card>

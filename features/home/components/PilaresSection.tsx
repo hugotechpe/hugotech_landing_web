@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { motion } from "framer-motion";
 import IconBoxCard from "@/components/cards/IconBoxCard";
-import { useMessages } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
 const fadeInUp = {
@@ -19,6 +19,7 @@ const staggerContainer = {
 };
 
 export function PilaresSection() {
+  const t = useTranslations("Sections.Pilares");
   const messages = useMessages() as any;
 
   const sectionTitle = messages?.Sections?.Pilares?.title ?? "Los 6 pilares de la experiencia HugoTech";
@@ -166,7 +167,7 @@ export function PilaresSection() {
                 >
                   <Card className="bg-gradient-to-r from-primary to-brand text-white shadow-2xl" shadow="lg">
                     <CardBody className="px-6 py-3 text-center">
-                      <p className="text-sm font-bold">✨ Transformación con Propósito</p>
+                      <p className="text-sm font-bold">{t("badge")}</p>
                     </CardBody>
                   </Card>
                 </motion.div>

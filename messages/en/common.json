@@ -85,6 +85,7 @@
     },
     "Pilares": {
       "title": "The 6 pillars of the HugoTech experience",
+      "badge": "✨ Transformation with Purpose",
       "items": [
         {
           "title": "Explore your purpose and tech mindset",
@@ -121,6 +122,12 @@
     "MePresento": {
       "title": "About me",
       "chips": ["18+ years of experience", "Mentoring • Coaching • Agility"],
+      "stats": {
+        "experience": "Years of Experience",
+        "empowered": "Empowered Lives",
+        "learning": "Years and Still Learning",
+        "community": "Community that Unites Us"
+      },
       "paragraphs": {
         "p1": "I'm <name>Hugo Casanova</name>, from Peru and a <job>systems engineer</job>. For over <b>18+ years</b> I have supported tech talents and teams across LATAM and the U.S. to grow with <b>clarity, confidence and purpose</b>.",
         "p2": "I discovered that what truly transforms isn't just code, but <b>the people who create it</b>. That's why I bring together <b>mentoring, coaching and agility</b> to turn human skills into real technical results."
@@ -149,12 +156,26 @@
         "p1": "Don't worry, I'm here to guide you. This is your moment to pause, look at where you're heading and decide how you want to grow.",
         "p2": "In our session, I'll help you <b>clarify your goals, understand your strengths and create your next step with purpose</b>. Whether you're starting in tech or want to redesign your path, we'll co-create a clear and realistic plan."
       },
+      "reminder": {
+        "emoji": "💚",
+        "title": "Remember:",
+        "text": "1-on-1 sessions are completely free. This is a pressure-free space, with no hidden agenda. Just you, your questions and honest support."
+      },
       "ctaLabel": "Calendar",
       "note": "Limited spots per month. 100% confidential."
     },
     "PorQueGratuito": {
       "title": "Why are 1:1 sessions free? 💚",
       "intro": "Because I believe in <b>giving back to the world what life gave me</b>: knowledge, opportunities and faith.",
+      "stats": {
+        "mentored": "Young Mentees",
+        "freeSessions": "Free Sessions",
+        "experience": "Years of Experience"
+      },
+      "quote": {
+        "text": "If today I can guide someone, it's because <highlight1>others lifted me up when I needed it most</highlight1>. I've been at the bottom of burnout, questioned everything, doubted myself. Those moments taught me that <highlight2>vulnerability is strength</highlight2>, not weakness. That's why sessions are free: <highlight3>to give back what life gave me when I was lost</highlight3>.",
+        "author": "Hugo Casanova"
+      },
       "mentoriaCard": {
         "title": "Your 1:1 Tech Mentoring 💚",
         "subtitle": "Purpose coaching + Tech mentoring. Free.",
@@ -212,6 +233,12 @@
         }
       },
       "imageAlt": "Portrait of Hugo Casanova, mentor and tech coach"
+    },
+    "TestimoniosLanding": {
+      "miguel": {
+        "quote": "You helped me in my professional career, in feeling like part of a family in a work team, to have more confidence in my abilities and to be better every day at a professional level.",
+        "highlight": "part of a family"
+      }
     },
     "Empresas": {
       "header": {
@@ -271,8 +298,13 @@
       }
     },
     "CCCausa": {
+      "badge": "🌟 Coaching with a Cause",
       "title": "Coaching with a Cause 🌍💚",
       "subtitle": "Your growth also creates impact in the world.",
+      "ctas": {
+        "schedule": "🚀 Schedule Your Free Session",
+        "learnMore": "📖 Learn More"
+      },
       "content": {
         "p1": "1-on-1 sessions are free for you, but that doesn't mean they have no value. Companies and individuals who work with me on B2B services invest in their teams' growth, and part of that impact transforms into social action.",
         "pBold1": "A portion of HugoTech B2B revenue is dedicated to:",

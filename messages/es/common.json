@@ -93,6 +93,7 @@
     },
     "Pilares": {
       "title": "Los 6 pilares de la experiencia HugoTech",
+      "badge": "✨ Transformación con Propósito",
       "items": [
         {
           "title": "Autoconocimiento y desarrollo personal",
@@ -130,6 +131,12 @@
       "title": "Nuestro Manifiesto: Innovación con Alma",
       "subtitle": "No estamos aquí para 'hackear' el sistema. Estamos aquí para construir uno mejor.",
       "chips": ["18+ años de experiencia", "Coach ICF • Mentor Tech • Líder Ágil"],
+      "stats": {
+        "experience": "Años de Experiencia",
+        "empowered": "Vidas Potenciadas",
+        "learning": "Años y Aún Aprendiendo",
+        "community": "Comunidad que nos Une"
+      },
       "paragraphs": {
         "p1": "Soy <name>Hugo Casanova</name>. Ingeniero, mentor, coach profesional y creyente de que <b>la tecnología no es el fin, es el medio</b>. Durante 18+ años he acompañado a cientos de talentos en el momento donde la confusión se transforma en claridad, el miedo en acción y el talento en propósito.",
         "p2": "Los desafíos reales en tech no son solo burnout. Vi brillantes desarrolladores luchando con <b>baja confianza, dificultad para comunicar, introversión mal gestionada, control emocional frágil, ego disfrazado de expertise, o simplemente desconectados de su propósito</b>. La verdadera transformación no empieza en el código, <b>empieza en el ser</b>."
@@ -158,12 +165,26 @@
         "p1": "El mejor momento para tomar control de tu carrera fue ayer. El segundo mejor es ahora.",
         "p2": "En nuestra sesión 1 a 1, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
       },
+      "reminder": {
+        "emoji": "💚",
+        "title": "Recuerda:",
+        "text": "Las sesiones 1 a 1 son completamente gratuitas. Este es un espacio sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
+      },
       "ctaLabel": "Empezar mi transformación (Sin costo)",
       "note": "Plazas limitadas por mes. 100% confidencial."
     },
     "PorQueGratuito": {
       "title": "¿Por qué las sesiones 1 a 1 son gratuitas? 💚",
       "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
+      "stats": {
+        "mentored": "Jóvenes Mentorados",
+        "freeSessions": "Sesiones Gratuitas",
+        "experience": "Años de Experiencia"
+      },
+      "quote": {
+        "text": "Si hoy puedo guiar a alguien, es porque <highlight1>otros me levantaron cuando más lo necesitaba</highlight1>. He estado en el fondo del burnout, he cuestionado todo, he dudado de mí mismo. Esos momentos me enseñaron que <highlight2>la vulnerabilidad es fortaleza</highlight2>, no debilidad. Por eso las sesiones son gratuitas: <highlight3>devolver lo que la vida me dio cuando estaba perdido</highlight3>.",
+        "author": "Hugo Casanova"
+      },
       "mentoriaCard": {
         "title": "Tu Mentoría Tech 1 a 1 💚",
         "subtitle": "Coaching de autoconocimiento + Mentoring tecnológico. Gratis.",
@@ -223,6 +244,12 @@
       },
       "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
     },
+    "TestimoniosLanding": {
+      "miguel": {
+        "quote": "Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener más confianza en mis habilidades y a ser cada día mejor a nivel profesional.",
+        "highlight": "parte de una familia"
+      }
+    },
     "Empresas": {
       "header": {
         "title": "Equipos de Alto Rendimiento con Cultura Consciente",
@@ -281,8 +308,13 @@
       }
     },
     "CCCausa": {
+      "badge": "🌟 Coaching con Causa",
       "title": "Coaching con Causa 🌍💚",
       "subtitle": "Tu crecimiento también genera impacto en el mundo.",
+      "ctas": {
+        "schedule": "🚀 Agendá tu Sesión Gratuita",
+        "learnMore": "📖 Conoce Más"
+      },
       "content": {
         "p1": "Las sesiones 1 a 1 son gratuitas para ti, pero eso no significa que no tengan valor. Empresas e individuos que trabajan conmigo en servicios B2B invierten en el crecimiento de sus equipos, y parte de ese impacto se transforma en acción social.",
         "pBold1": "Una porción de los ingresos de HugoTech B2B se destina a:",

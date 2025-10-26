@@ -109,7 +109,7 @@ export function CoachingSection() {
               viewport={{ once: true }}
               className="inline-block bg-brand text-customgray px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
             >
-              🌟 Coaching con Causa
+              {t("badge")}
             </motion.div>
 
             <h2 itemProp="headline" className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white mb-6 leading-tight">
@@ -173,7 +173,7 @@ export function CoachingSection() {
                   size="lg"
                   className="bg-brand hover:bg-yellow-400 text-customgray font-bold shadow-2xl hover:shadow-brand/50 transition-all hover:scale-105"
                 >
-                  🚀 Agendá tu Sesión Gratuita
+                  {t("ctas.schedule")}
                 </Button>
                 <Button
                   as={Link}
@@ -182,7 +182,7 @@ export function CoachingSection() {
                   variant="bordered"
                   className="border-2 border-white text-white hover:bg-white/10 font-semibold"
                 >
-                  📖 Conoce Más
+                  {t("ctas.learnMore")}
                 </Button>
               </div>
             </div>

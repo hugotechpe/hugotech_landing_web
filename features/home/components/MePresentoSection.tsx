@@ -90,7 +90,7 @@ export function MePresentoSection() {
                     <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                       <AnimatedCounter end={18} suffix="+" />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">Años de Experiencia</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.experience")}</p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -101,7 +101,7 @@ export function MePresentoSection() {
                     <div className="text-4xl md:text-5xl font-bold text-customgray mb-2">
                       <AnimatedCounter end={200} prefix="+" />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">Vidas Potenciadas</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.empowered")}</p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -112,7 +112,7 @@ export function MePresentoSection() {
                     <div className="text-4xl md:text-5xl font-bold text-orange-600 mb-2">
                       <AnimatedCounter end={40} />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">Años y Aún Aprendiendo</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.learning")}</p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -123,7 +123,7 @@ export function MePresentoSection() {
                     <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
                       <AnimatedCounter end={1} />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">Comunidad que nos Une</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.community")}</p>
                   </CardBody>
                 </Card>
               </motion.div>

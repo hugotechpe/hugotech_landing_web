@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useMessages } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
@@ -22,6 +22,7 @@ const staggerContainer = {
 
 export function TestimoniosSection() {
   const messages = useMessages() as any;
+  const tMiguel = useTranslations("Sections.TestimoniosLanding.miguel");
 
   // Track when user scrolls to testimonials section
   useSectionTracking({
@@ -129,7 +130,7 @@ export function TestimoniosSection() {
             variants={fadeInUp}
           >
             <TestimonioCard
-              quote="Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener más confianza en mis habilidades y a ser cada día mejor a nivel profesional."
+              quote={tMiguel("quote")}
               authorName="Miguel Bustillos"
               authorAge={24}
               role="Software Engineer"
@@ -137,7 +138,7 @@ export function TestimoniosSection() {
               avatarSrc="/images/image5.png"
               avatarAlt="Foto de perfil de Miguel Bustillos"
               tags={["Familia", "Confianza", "Crecimiento"]}
-              highlight="parte de una familia"
+              highlight={tMiguel("highlight")}
             />
           </motion.div>
           </div>

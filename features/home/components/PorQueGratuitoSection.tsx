@@ -68,7 +68,7 @@ export function PorQueGratuitoSection() {
                   <div className="text-4xl font-bold mb-2">
                     <AnimatedCounter end={200} prefix="+" />
                   </div>
-                  <p className="text-white/90 font-medium">Jóvenes Mentorados</p>
+                  <p className="text-white/90 font-medium">{t("stats.mentored")}</p>
                 </CardBody>
               </Card>
             </motion.div>
@@ -80,7 +80,7 @@ export function PorQueGratuitoSection() {
                   <div className="text-4xl font-bold text-customgray mb-2">
                     <AnimatedCounter end={100} suffix="%" />
                   </div>
-                  <p className="text-customgray/90 font-medium">Sesiones Gratuitas</p>
+                  <p className="text-customgray/90 font-medium">{t("stats.freeSessions")}</p>
                 </CardBody>
               </Card>
             </motion.div>
@@ -92,7 +92,7 @@ export function PorQueGratuitoSection() {
                   <div className="text-4xl font-bold mb-2">
                     <AnimatedCounter end={18} suffix="+" />
                   </div>
-                  <p className="text-white/90 font-medium">Años de Experiencia</p>
+                  <p className="text-white/90 font-medium">{t("stats.experience")}</p>
                 </CardBody>
               </Card>
             </motion.div>
@@ -258,9 +258,13 @@ export function PorQueGratuitoSection() {
             <CardBody className="p-8 md:p-12 text-center">
               <div className="text-5xl md:text-6xl mb-6">💬</div>
               <blockquote className="text-lg md:text-xl font-quote italic text-gray-700 mb-8 leading-[2] tracking-wide max-w-4xl mx-auto">
-                "Si hoy puedo guiar a alguien, es porque <strong className="text-primary not-italic font-sans font-semibold">otros me levantaron cuando más lo necesitaba</strong>. He estado en el fondo del burnout, he cuestionado todo, he dudado de mí mismo. Esos momentos me enseñaron que <strong className="text-primary not-italic font-sans font-semibold">la vulnerabilidad es fortaleza</strong>, no debilidad. Por eso las sesiones son gratuitas: <strong className="text-brand not-italic font-sans font-semibold">devolver lo que la vida me dio cuando estaba perdido</strong>."
+                {t.rich("quote.text", {
+                  highlight1: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
+                  highlight2: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
+                  highlight3: (chunks) => <strong className="text-brand not-italic font-sans font-semibold">{chunks}</strong>,
+                })}
               </blockquote>
-              <p className="text-gray-600 text-base font-medium">— Hugo Casanova</p>
+              <p className="text-gray-600 text-base font-medium">— {t("quote.author")}</p>
             </CardBody>
           </Card>
         </motion.div>
