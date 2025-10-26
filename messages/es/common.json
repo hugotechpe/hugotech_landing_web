@@ -141,6 +141,9 @@
         "p1": "Soy <name>Hugo Casanova</name>. Ingeniero, mentor, coach profesional y creyente de que <b>la tecnología no es el fin, es el medio</b>. Durante 18+ años he acompañado a cientos de talentos en el momento donde la confusión se transforma en claridad, el miedo en acción y el talento en propósito.",
         "p2": "Los desafíos reales en tech no son solo burnout. Vi brillantes desarrolladores luchando con <b>baja confianza, dificultad para comunicar, introversión mal gestionada, control emocional frágil, ego disfrazado de expertise, o simplemente desconectados de su propósito</b>. La verdadera transformación no empieza en el código, <b>empieza en el ser</b>."
       },
+      "vulnerability": {
+        "text": "No siempre tuve esto claro. Durante años me enfoqué solo en el código, en la arquitectura perfecta, en los frameworks de moda... hasta que <highlight1>el burnout me golpeó</highlight1>. A los 35 años me di cuenta: había olvidado por qué comencé. Ese momento de quiebre me llevó a estudiar coaching, agilidad, liderazgo... no para \"agregar skills\", sino para <highlight2>reconectarme con el lado humano de la tech</highlight2>."
+      },
       "items": [
         {
           "title": "Autoconocimiento + Habilidades Humanas",

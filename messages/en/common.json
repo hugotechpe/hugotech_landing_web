@@ -79,6 +79,14 @@
         "placeholder": "Email address",
         "cta": "Subscribe"
       },
+      "mission": {
+        "title": "Mission",
+        "text": "Accompany tech professionals on their journey of self-discovery and growth. Create safe spaces where they can discover their purpose, strengthen their confidence and transform their talent into something that truly matters."
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "That every person who walks with me not only grows professionally, but becomes someone who inspires genuine change in their environment. Build a more human, conscious and purposeful tech community."
+      },
       "bottom": {
         "copyright": "© 2025 All rights reserved by HugoTech"
       }
@@ -131,6 +139,9 @@
       "paragraphs": {
         "p1": "I'm <name>Hugo Casanova</name>, from Peru and a <job>systems engineer</job>. For over <b>18+ years</b> I have supported tech talents and teams across LATAM and the U.S. to grow with <b>clarity, confidence and purpose</b>.",
         "p2": "I discovered that what truly transforms isn't just code, but <b>the people who create it</b>. That's why I bring together <b>mentoring, coaching and agility</b> to turn human skills into real technical results."
+      },
+      "vulnerability": {
+        "text": "I didn't always have this clarity. For years I focused only on code, perfect architecture, trendy frameworks... until <highlight1>burnout hit me</highlight1>. At 35 I realized: I had forgotten why I started. That breaking point led me to study coaching, agility, leadership... not to \"add skills\", but to <highlight2>reconnect with the human side of tech</highlight2>."
       },
       "items": [
         {
