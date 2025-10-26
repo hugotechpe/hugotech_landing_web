@@ -37,7 +37,7 @@ export default function EmpresasPage() {
             variants={staggerContainer}
           >
             <motion.h1 
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight"
               variants={fadeIn}
             >
               Transformamos equipos tecnológicos{" "}
@@ -45,14 +45,14 @@ export default function EmpresasPage() {
               hacia el alto rendimiento
             </motion.h1>
             <motion.p 
-              className="text-lg md:text-xl lg:text-2xl mb-4 text-white/90 leading-relaxed"
+              className="text-lg md:text-xl mb-6 text-white/90 leading-[1.9] tracking-wide"
               variants={fadeIn}
             >
               En Hugotech acompañamos a empresas que buscan <strong>mucho más que mejorar procesos</strong>: 
               buscan transformar personas, culturas y equipos.
             </motion.p>
             <motion.p 
-              className="text-base md:text-lg lg:text-xl mb-10 text-white/80"
+              className="text-base md:text-lg mb-10 text-white/80 leading-[1.8] tracking-wide"
               variants={fadeIn}
             >
               Porque la verdadera innovación no empieza en la tecnología, sino en quienes la crean.
@@ -92,7 +92,7 @@ export default function EmpresasPage() {
             </p>
           </motion.div>
 
-          <motion.p className="text-center text-lg md:text-xl font-semibold text-customgray mb-12 leading-relaxed">
+          <motion.p className="text-center text-lg md:text-xl font-semibold font-heading text-customgray mb-12 leading-relaxed">
             Trabajamos desde tres dimensiones complementarias:
           </motion.p>
 
@@ -231,18 +231,18 @@ export default function EmpresasPage() {
             <Card className="bg-gradient-to-br from-primary/5 to-brand/5 border-2 border-primary/20" shadow="lg">
               <CardBody className="p-8 md:p-12">
                 <div className="text-center mb-8">
-                  <div className="inline-block bg-primary text-white px-6 py-2 rounded-full text-sm font-bold mb-4">
-                    💔 LO APRENDÍ EN CARNE PROPIA
+                  <div className="inline-block bg-primary text-white px-6 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider">
+                    💔 Lo Aprendí en Carne Propia
                   </div>
-                  <h3 className="text-2xl md:text-4xl font-bold text-customgray mb-6">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-customgray mb-6 leading-tight">
                     No te vendo teoría. Te comparto cicatrices.
                   </h3>
                 </div>
-                <div className="max-w-4xl mx-auto">
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                <div className="max-w-4xl mx-auto space-y-6">
+                  <p className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide">
                     Lideré equipos brillantes que <strong className="text-primary">colapsaron por falta de claridad</strong>. Vi desarrolladores senior renunciar no por salario, sino por <strong className="text-primary">falta de propósito</strong>. <strong className="text-customgray">Fui ese líder que priorizaba el sprint por encima de las personas</strong>... hasta que el equipo se desmoronó.
                   </p>
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                  <p className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide">
                     Esa experiencia me <strong className="text-brand">transformó</strong>. Ahora ayudo a otros líderes a <strong className="text-customgray">no cometer los mismos errores que yo</strong>. Porque sé lo que duele ver un equipo romperse. Y sé lo que se siente cuando lo reconstruyes desde el alma.
                   </p>
                 </div>
@@ -257,7 +257,7 @@ export default function EmpresasPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
               🚀 Casos de transformación: de equipos buenos a equipos extraordinarios
             </h2>
           </motion.div>
@@ -270,32 +270,32 @@ export default function EmpresasPage() {
           >
             <Card shadow="lg" className="mb-8">
               <CardBody className="p-8">
-                <h3 className="text-2xl font-bold text-customgray mb-6">
+                <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 leading-tight">
                   Hemos acompañado a equipos tecnológicos que atravesaban desafíos comunes:
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
                     <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl">❌</span>
-                      <span>Comunicación fragmentada entre roles técnicos y de negocio</span>
+                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">❌</span>
+                      <span className="leading-relaxed">Comunicación fragmentada entre roles técnicos y de negocio</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl">❌</span>
-                      <span>Falta de enfoque y priorización</span>
+                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">❌</span>
+                      <span className="leading-relaxed">Falta de enfoque y priorización</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl">❌</span>
-                      <span>Sobrecarga emocional y resistencia al cambio</span>
+                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">❌</span>
+                      <span className="leading-relaxed">Sobrecarga emocional y resistencia al cambio</span>
                     </li>
                   </ul>
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
                     <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl">❌</span>
-                      <span>Cultura reactiva más que proactiva</span>
+                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">❌</span>
+                      <span className="leading-relaxed">Cultura reactiva más que proactiva</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl">❌</span>
-                      <span>Desconexión entre propósito, tarea y resultado</span>
+                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">❌</span>
+                      <span className="leading-relaxed">Desconexión entre propósito, tarea y resultado</span>
                     </li>
                   </ul>
                 </div>
@@ -305,26 +305,26 @@ export default function EmpresasPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <Card shadow="lg" className="border-l-4 border-primary">
                 <CardBody className="p-8">
-                  <h3 className="text-2xl font-bold text-customgray mb-6 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 flex items-center leading-tight">
                     <span className="mr-3">🔧</span>
                     Nuestro modelo de intervención
                   </h3>
-                  <ul className="space-y-4 text-gray-700">
+                  <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span><strong>Acompañamiento semanal técnico y cultural:</strong> revisión de código, arquitectura, base de datos, prácticas ágiles y sincronía de equipo.</span>
+                      <span className="text-primary mr-3 text-lg flex-shrink-0">✓</span>
+                      <span className="leading-relaxed"><strong>Acompañamiento semanal técnico y cultural:</strong> revisión de código, arquitectura, base de datos, prácticas ágiles y sincronía de equipo.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span><strong>Talleres de Cultura y Agilidad:</strong> sesiones colectivas para despertar conciencia, vulnerabilidad y propósito compartido.</span>
+                      <span className="text-primary mr-3 text-lg flex-shrink-0">✓</span>
+                      <span className="leading-relaxed"><strong>Talleres de Cultura y Agilidad:</strong> sesiones colectivas para despertar conciencia, vulnerabilidad y propósito compartido.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span><strong>Modelo Tuckman aplicado</strong> (Forming–Storming–Norming–Performing): medición real de evolución grupal.</span>
+                      <span className="text-primary mr-3 text-lg flex-shrink-0">✓</span>
+                      <span className="leading-relaxed"><strong>Modelo Tuckman aplicado</strong> (Forming–Storming–Norming–Performing): medición real de evolución grupal.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span><strong>Transformación del SER:</strong> cada integrante redescubre quién es, qué lo motiva y cómo puede aportar valor desde su autenticidad.</span>
+                      <span className="text-primary mr-3 text-lg flex-shrink-0">✓</span>
+                      <span className="leading-relaxed"><strong>Transformación del SER:</strong> cada integrante redescubre quién es, qué lo motiva y cómo puede aportar valor desde su autenticidad.</span>
                     </li>
                   </ul>
                 </CardBody>
@@ -332,26 +332,26 @@ export default function EmpresasPage() {
 
               <Card shadow="lg" className="border-l-4 border-brand bg-gradient-to-br from-white to-brand/5">
                 <CardBody className="p-8">
-                  <h3 className="text-2xl font-bold text-customgray mb-6 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 flex items-center leading-tight">
                     <span className="mr-3">✨</span>
                     Resultados visibles
                   </h3>
-                  <ul className="space-y-4 text-gray-700">
+                  <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
                     <li className="flex items-start">
-                      <span className="text-brand mr-2 text-xl">→</span>
-                      <span className="font-semibold">Equipos más alineados, conscientes y colaborativos.</span>
+                      <span className="text-brand mr-3 text-xl flex-shrink-0">→</span>
+                      <span className="font-semibold leading-relaxed">Equipos más alineados, conscientes y colaborativos.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-brand mr-2 text-xl">→</span>
-                      <span className="font-semibold">Líderes técnicos que se comunican desde la empatía y la claridad.</span>
+                      <span className="text-brand mr-3 text-xl flex-shrink-0">→</span>
+                      <span className="font-semibold leading-relaxed">Líderes técnicos que se comunican desde la empatía y la claridad.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-brand mr-2 text-xl">→</span>
-                      <span className="font-semibold">Mayor fluidez en la toma de decisiones y en la ejecución técnica.</span>
+                      <span className="text-brand mr-3 text-xl flex-shrink-0">→</span>
+                      <span className="font-semibold leading-relaxed">Mayor fluidez en la toma de decisiones y en la ejecución técnica.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-brand mr-2 text-xl">→</span>
-                      <span className="font-semibold">Cultura de mejora continua: del "hacer por cumplir" al "hacer con propósito".</span>
+                      <span className="text-brand mr-3 text-xl flex-shrink-0">→</span>
+                      <span className="font-semibold leading-relaxed">Cultura de mejora continua: del "hacer por cumplir" al "hacer con propósito".</span>
                     </li>
                   </ul>
                 </CardBody>
@@ -371,24 +371,24 @@ export default function EmpresasPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-8 leading-tight">
               🧠 Nuestra filosofía
             </h2>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-white/20 mb-8">
-              <p className="text-2xl md:text-3xl font-bold text-brand mb-6">
+              <p className="text-xl md:text-2xl lg:text-3xl font-bold font-quote italic text-brand mb-6 leading-[1.8]">
                 "No vendo fórmulas mágicas. Vendo 18 años de caídas, levantadas y aprendizajes dolorosos."
               </p>
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-[2] tracking-wide">
                 La transformación real <strong>duele, incomoda, cuestiona</strong>. Pero es la única que dura.
               </p>
             </div>
-            <p className="text-xl md:text-2xl leading-relaxed">
+            <p className="text-lg md:text-xl leading-[2] tracking-wide mb-8">
               Creemos que el alto rendimiento no se impone, se despierta.<br />
               Cada empresa tiene su propio ritmo, energía y esencia.<br />
               Nosotros solo acompañamos el proceso: desafiamos, guiamos y sostenemos el cambio desde la empatía y la experiencia.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-brand">
-              <p className="text-2xl md:text-4xl font-bold text-brand leading-relaxed italic">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border-2 border-brand">
+              <p className="text-xl md:text-2xl lg:text-3xl font-bold font-quote text-brand leading-[1.9] italic">
                 "El verdadero cambio ocurre cuando las personas dejan de trabajar solo por metas y comienzan a trabajar desde propósito."
               </p>
             </div>
@@ -406,7 +406,7 @@ export default function EmpresasPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
               💬 Cómo trabajamos
             </h2>
           </motion.div>
@@ -447,14 +447,14 @@ export default function EmpresasPage() {
               >
                 <Card shadow="lg" className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                   <CardBody className="p-6 text-center">
-                    <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                    <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold font-heading mx-auto mb-4">
                       {step.number}
                     </div>
                     <div className="text-4xl mb-3">{step.icon}</div>
-                    <h3 className="text-xl font-bold text-customgray mb-3">
+                    <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-3 leading-tight">
                       {step.title}
                     </h3>
-                    <p className="text-gray-700 text-sm leading-relaxed">
+                    <p className="text-gray-700 text-[14px] md:text-[15px] leading-[1.8] tracking-wide">
                       {step.desc}
                     </p>
                   </CardBody>
@@ -475,7 +475,7 @@ export default function EmpresasPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
               ✨ Qué hace diferente a Hugotech
             </h2>
           </motion.div>
@@ -608,8 +608,8 @@ export default function EmpresasPage() {
             ].map((service, idx) => (
               <Card key={idx} shadow="md" className="hover:shadow-lg transition-shadow">
                 <CardBody className="p-6">
-                  <h3 className="font-bold text-lg text-primary mb-2">{service.cat}</h3>
-                  <p className="text-gray-700 mb-3">{service.desc}</p>
+                  <h3 className="font-bold text-base md:text-lg font-heading text-primary mb-2 leading-tight">{service.cat}</h3>
+                  <p className="text-gray-700 mb-3 text-[15px] leading-relaxed">{service.desc}</p>
                   <p className="text-sm text-gray-600">
                     <strong>Modalidad:</strong> {service.mod}
                   </p>
@@ -633,13 +633,13 @@ export default function EmpresasPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-8 leading-tight">
               🤝 ¿Tu equipo está listo para transformarse?
             </h2>
-            <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto leading-[2] tracking-wide">
               Cada empresa tiene su propio camino, pero todas comparten el mismo punto de partida: <strong>las personas</strong>.
             </p>
-            <p className="text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg mb-10 text-white/90 max-w-2xl mx-auto leading-[1.9] tracking-wide">
               Si buscas acompañar a tus talentos a dar su siguiente salto, Hugotech está listo para caminar contigo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -647,7 +647,7 @@ export default function EmpresasPage() {
                 as={Link}
                 href="https://calendly.com/hugotech/reunion-exploratoria"
                 size="lg"
-                className="bg-brand text-white font-bold text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                className="bg-brand text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300"
                 isExternal
               >
                 👉 Agenda una reunión exploratoria
@@ -657,12 +657,12 @@ export default function EmpresasPage() {
                 href="mailto:hola@hugotech.pe"
                 size="lg"
                 variant="bordered"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold text-base md:text-lg transition-all duration-300"
               >
                 Enviar email
               </Button>
             </div>
-            <p className="mt-8 text-white/80 italic text-lg">
+            <p className="mt-8 text-white/80 italic font-quote text-base md:text-lg leading-[1.9]">
               "Descubramos juntos qué necesita tu equipo para alcanzar su mejor versión."
             </p>
           </motion.div>
