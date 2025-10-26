@@ -107,37 +107,27 @@
       }
     },
     "Pilares": {
-      "title": "The 6 pillars of the HugoTech experience",
+      "title": "The 4 pillars of the HugoTech experience",
       "badge": "✨ Transformation with Purpose",
       "items": [
         {
-          "title": "Explore your purpose and tech mindset",
-          "description": "Discover your inner drive, redefine your beliefs and connect with the professional version you want to build. Change starts within: from personal clarity comes professional direction.",
+          "title": "Self-awareness and personal development",
+          "description": "We work on your confidence, effective communication, emotional intelligence and empathy. We explore your values, strengths and growth areas. Change starts within: when you know yourself, you make better decisions.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Design your growth roadmap",
-          "description": "We co-create a realistic and ambitious roadmap: what to learn, how to apply it and how to measure your evolution without losing the balance between purpose and results.",
+          "title": "Growth mindset (vs. burnout)",
+          "description": "We stop glorifying exhaustion. We build a sustainable tech career with well-being, clear purpose and real balance. Anti-burnout tools, energy management and growth mindset applied daily.",
           "iconKey": "equipos"
         },
         {
-          "title": "Activate your agile and conscious leadership",
-          "description": "Develop the skills to influence positively, communicate clearly and lead from trust. I integrate Management 3.0, agile facilitation and coaching practices to inspire without imposing.",
-          "iconKey": "liderazgo"
-        },
-        {
-          "title": "Strengthen your personal and collaborative culture",
-          "description": "Learn to build high-value relationships, where feedback, empathy and transparent communication are part of the DNA. Strong teams are born from emotionally and professionally mature people.",
-          "iconKey": "mentoring"
-        },
-        {
-          "title": "Build a data-driven culture",
-          "description": "Incorporate evidence-based decision making and results. We analyze performance metrics, climate, technical quality and collaboration to drive continuous improvement.",
+          "title": "Agile leadership and high-performance teams",
+          "description": "Develop the ability to influence positively, create psychological safety and build extraordinary teams. Management 3.0, agile facilitation, applied coaching. We lead from trust, not fear.",
           "iconKey": "equipos"
         },
         {
-          "title": "Accelerate sustainable results and performance",
-          "description": "Transform the way you and your team work: more effective deliveries, focused sprints, less technical debt and more innovation. When people grow, results multiply.",
+          "title": "Purpose + Tech Strategy",
+          "description": "We create your clear roadmap that connects your purpose with action. Backend, frontend, QA, PM, DevOps, AI... we decide together based on your essence and goals. Because the best technology is built by people who know themselves.",
           "iconKey": "liderazgo"
         }
       ]
@@ -152,26 +142,26 @@
         "community": "Community that Unites Us"
       },
       "paragraphs": {
-        "p1": "I'm <name>Hugo Casanova</name>, from Peru and a <job>systems engineer</job>. For over <b>18+ years</b> I have supported tech talents and teams across LATAM and the U.S. to grow with <b>clarity, confidence and purpose</b>.",
-        "p2": "I discovered that what truly transforms isn't just code, but <b>the people who create it</b>. That's why I bring together <b>mentoring, coaching and agility</b> to turn human skills into real technical results."
+        "p1": "I'm <name>Hugo Casanova</name>. ICF Professional Coach, Tech Mentor & Agile Leader with 18+ years supporting talents at the moment where <b>confusion transforms into clarity, fear into action, and talent into purpose</b>.",
+        "p2": "Real challenges aren't just technical. I've seen brilliant developers struggling with <b>low confidence, communication, introversion, or simply disconnected from their purpose</b>. Transformation doesn't start in code, <b>it starts in the being</b>."
       },
       "vulnerability": {
-        "text": "I didn't always have this clarity. For years I focused only on code, perfect architecture, trendy frameworks... until <highlight1>burnout hit me</highlight1>. At 35 I realized: I had forgotten why I started. That breaking point led me to study coaching, agility, leadership... not to \"add skills\", but to <highlight2>reconnect with the human side of tech</highlight2>."
+        "text": "At 35 burnout hit me. I had forgotten why I started. That breaking point led me to coaching to <highlight2>reconnect with the human side of tech</highlight2>."
       },
       "items": [
         {
           "title": "Mentoring & Tech Coaching",
-          "description": "I've guided 200+ talents (backend, frontend, fullstack, midstack, DB, QA, mobile, UX/UI, PO, SM, tech leaders) to strengthen their mindset, gain direction and show their value with confidence.",
+          "description": "200+ talents guided to strengthen mindset, gain direction and show their value with confidence.",
           "iconKey": "mentoring"
         },
         {
           "title": "High-Performance Teams",
-          "description": "I work with teams to build trust, communication and feedback; applying Management 3.0, Agile Team Facilitation, Scrum/Kanban, Lean and Agile HR so high performance is sustainable and human.",
+          "description": "Building trust, communication and feedback with Management 3.0, Scrum/Kanban and Agile HR.",
           "iconKey": "equipos"
         },
         {
           "title": "Agile Leadership that Transforms",
-          "description": "I accompany leaders and organizations in digital and cultural transformation, combining strategic vision, data and culture to decide better and execute with focus.",
+          "description": "Accompanying leaders in transformation, combining strategic vision, data and culture.",
           "iconKey": "liderazgo"
         }
       ]
@@ -199,33 +189,34 @@
         "experience": "Years of Experience"
       },
       "quote": {
-        "text": "If today I can guide someone, it's because <highlight1>others lifted me up when I needed it most</highlight1>. I've been at the bottom of burnout, questioned everything, doubted myself. Those moments taught me that <highlight2>vulnerability is strength</highlight2>, not weakness. That's why sessions are free: <highlight3>to give back what life gave me when I was lost</highlight3>.",
+        "text": "If today I can guide someone, it's because <highlight1>others lifted me up when I needed it most</highlight1>. I've been at the bottom of burnout, questioned everything. Those moments taught me that <highlight2>vulnerability is strength</highlight2>. That's why sessions are free: <highlight3>to give back what life gave me when I was lost</highlight3>.",
         "author": "Hugo Casanova"
       },
       "mentoriaCard": {
         "title": "Your 1:1 Tech Mentoring 💚",
         "subtitle": "Purpose coaching + Tech mentoring. Free.",
-        "p1": "Feeling stuck in your first IT job? Don't know which path to take (DevOps, AI Engineer, Product Manager)? Imposter syndrome? <b>You're not alone</b>.",
-        "p2": "Our 1:1 sessions (no cost) combine <b>self-awareness coaching with tech mentoring</b>. Before the 'what' comes the 'why'. Discover your values, define your purpose and overcome the mental barriers holding you back.",
-        "resultsTitle": "What you'll achieve in your sessions:",
+        "p1": "Imposter syndrome? Introversion holding you back? Stuck without knowing which path to take? <b>You're not alone</b>. Our 1:1 sessions (no cost) combine <b>human development with tech strategy</b> to transform your confidence and professional clarity.",
+        "p2": "",
+        "resultsTitle": "What you'll achieve:",
         "resultsItems": [
-          "Clarity about your professional purpose and next steps in tech.",
-          "Personalized roadmap based on your profile (backend, frontend, QA, PM, etc.)",
-          "Growth mindset and anti-burnout tools applicable to day-to-day."
+          "Clarity about your purpose and next steps in tech",
+          "Human skills: confidence, communication, emotional intelligence",
+          "Personalized roadmap based on your profile",
+          "Growth mindset and anti-burnout tools"
         ],
         "ctaLabel": "Book your free session",
         "note": "100% free. No fine print. Just honest conversation."
       },
       "filosofiaCard": {
         "title": "My Philosophy 🌱",
-        "subtitle": "Transform from being, build from purpose and lead with soul.",
-        "p1": "Every conversation is an act of gratitude. It's not charity, it's <b>responsibility</b>. If today I can help someone find their way, it's because others did the same for me.",
-        "p2": "HugoTech was born to be a space where <b>talent meets purpose</b>, without economic barriers, without cold transactions. Just honest conversations that transform.",
+        "subtitle": "First the being, then the doing. Real transformation starts within.",
+        "p1": "HugoTech was born to be a space where <b>talent meets purpose, the technical with the human</b>, without economic barriers. Just honest conversations that transform from within.",
+        "p2": "",
         "resultsTitle": "How this works:",
         "resultsItems": [
-          "True innovation begins within people.",
-          "First the being transforms, then the doing makes sense.",
-          "Having comes as a natural consequence."
+          "Innovation begins within people, not in code",
+          "First the being transforms, then the doing makes sense",
+          "Results come as a natural consequence"
         ],
         "note": "B2B sessions for companies do have a cost, because they require structure, follow-up and measurable results. But the heart of HugoTech will always be free."
       }
@@ -776,20 +767,12 @@
             "description": "Because each person's emotional backend defines the architecture of their future."
           },
           {
-            "title": "Accompany without imposing",
-            "description": "Because no one needs a savior, but someone to walk beside them."
-          },
-          {
             "title": "Transform without masks",
             "description": "Because tech talents also feel, doubt, break down and need real spaces to heal and grow."
           },
           {
             "title": "Build with purpose",
             "description": "Because when a backend, frontend, QA, designer or marketer connects with their 'why', the team transforms."
-          },
-          {
-            "title": "Mentor to liberate, not to control",
-            "description": "Because the best legacy is helping others fly higher, not making them depend on you."
           }
         ],
         "quote": "A line of code can change a system, but an honest conversation can change a life."

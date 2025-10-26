@@ -33,26 +33,6 @@ export default function AboutPage() {
     },
   };
 
-  // Get timeline data from translations
-  const timelineDataFromTranslations =
-    messages.Sections?.About?.journey?.phases || [];
-  const timelineData = timelineDataFromTranslations.map(
-    (phase: any, index: number) => {
-      const colors = [
-        "from-green-400 to-green-600",
-        "from-yellow-400 to-orange-500",
-        "from-gray-400 to-slate-600",
-        "from-blue-400 to-indigo-600",
-        "from-primary to-[#0d4746]",
-      ];
-
-      return {
-        ...phase,
-        color: colors[index] || "from-primary to-brand",
-      };
-    },
-  );
-
   return (
     <main className="bg-white overflow-hidden">
       {/* Hero Section con Parallax */}
@@ -171,77 +151,6 @@ export default function AboutPage() {
               </CardBody>
             </Card>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Timeline Interactivo */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto max-w-6xl px-6">
-          <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-16 text-center leading-tight"
-            initial={{ opacity: 0, y: 30 }}
-            viewport={{ once: true }}
-            whileInView={{ opacity: 1, y: 0 }}
-          >
-            {t("journeySection.title")}
-          </motion.h2>
-
-          <div className="relative">
-            {/* Línea vertical */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-brand to-primary transform md:-translate-x-1/2" />
-
-            {timelineData.map((item: any, index: number) => (
-              <motion.div
-                key={index}
-                className="relative mb-16 md:mb-24"
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                transition={{ delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, x: 0 }}
-              >
-                <div
-                  className={`md:flex md:items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
-                >
-                  {/* Content Card */}
-                  <div className="md:w-5/12 ml-20 md:ml-0">
-                    <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                      <CardBody className="p-8">
-                        <Chip className="mb-4" color="primary" variant="flat">
-                          {item.phase}
-                        </Chip>
-                        <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4 leading-tight">
-                          {item.title}
-                        </h3>
-                        <div className="space-y-3">
-                          {item.content.map((text: string, i: number) => (
-                            <p
-                              dangerouslySetInnerHTML={{ __html: text }}
-                              key={i}
-                              className="text-gray-700 leading-[1.9] tracking-wide text-[15px] md:text-base"
-                            />
-                          ))}
-                        </div>
-                      </CardBody>
-                    </Card>
-                  </div>
-
-                  {/* Icon Circle */}
-                  <div className="absolute left-8 top-8 md:static md:w-2/12 flex justify-center transform -translate-x-1/2 md:translate-x-0">
-                    <motion.div
-                      className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-3xl md:text-4xl shadow-2xl`}
-                      transition={{ duration: 0.5 }}
-                      whileHover={{ scale: 1.2, rotate: 360 }}
-                    >
-                      {item.icon}
-                    </motion.div>
-                  </div>
-
-                  {/* Spacer */}
-                  <div className="hidden md:block md:w-5/12" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
