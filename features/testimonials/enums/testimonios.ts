@@ -69,6 +69,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Leonardo Manuel",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Guía", "Crecimiento profesional"],
+    highlight: "apoyar y guiar a ser mejores",
   },
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener mas confianza en mis habilidades y a ser cada día mejor a nivel profesional`,
@@ -87,6 +89,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image4.png",
     avatarAlt: "Foto de perfil de Katherine Cruz",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Mentalidad", "Familia", "Adaptabilidad"],
+    highlight: "cambio mi mentalidad de trabajo",
   },
   [TestimonioId.ADELI_ZAMORA]: {
     quote: `Trabajar en On Road me ha enseñado a escuchar mejor y a conectar de manera auténtica con cada cliente. A lo largo de mi experiencia trabajando en On Road he aprendido que no solo se trata de vender, sino de ayudar a las personas. Esta experiencia me ha ayudado mucho tanto en mi crecimiento personal como profesional. Y agradezco a Hugo por haberme brindado la oportunidad de pertenecer a este gran equipo, por todas sus enseñanzas y por haber confiado en mí y en todo el equipo de Perú desde el principio.`,
@@ -95,6 +99,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image3.png",
     avatarAlt: "Foto de perfil de Adeli Zamora",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Crecimiento", "Confianza", "Oportunidad"],
+    highlight: "haber confiado en mí",
   },
   [TestimonioId.JONATHAN_ORA]: {
     quote: `Nunca dejes de compartir esa actitud de ánimo! Siempre habrá alguien que necesite ver ello y motivarse a ser parte del cambio!`,
@@ -103,6 +109,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image2.png",
     avatarAlt: "Foto de perfil de Jonathan Ora",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Motivación", "Actitud positiva", "Inspiración"],
+    highlight: "actitud de ánimo",
   },
   [TestimonioId.ESTEFANI_AYQUIPA]: {
     quote: `Personalmente si no estaba de acuerdo con algo tenia la confianza de expresarte mi opinión porque sabía que ibas a tener esa apertura para escucharme. Asimismo sentí en muchas oportunidades que valoraste mucho mi compromiso con mi trabajo y el apoyo que pude haber brindado cuando lo solicitaban en algunas ocasiones. Considero que cuando uno se siente valorado (en este caso por ti) uno apoya con mucho gusto en lo que puedan pedir porque sientes que tu trabajo, compromiso, empeño y todo tu esfuerzo es retribuido.`,
@@ -121,6 +129,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image9.png",
     avatarAlt: "Foto de perfil de Francis Mateo",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Enfoque", "Resultados", "Pragmatismo"],
+    highlight: "enfocarme en lo importante",
   },
   [TestimonioId.JOSE_URETA]: {
     quote: `Desde un inicio me senti apoyado en todo sentido, me incentivaba afrontar nuevo retos ademas tuve la confianza de proponer y debatir en un ambiente de seguro.`,
@@ -129,6 +139,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image8.png",
     avatarAlt: "Foto de perfil de Jose Ureta",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Seguridad psicológica", "Retos", "Confianza"],
+    highlight: "ambiente de seguro",
   },
   [TestimonioId.PAUL_CAM]: {
     quote: `La oportunidad laboral que me diste fue el escalón profesional que necesitaba para experimentar las bases y cosas avanzadas del rubro, me ayudó a encontrar un camino en el que me siento cómodo y con ánimos de especializarme más y obtener más oportunidades de crecimiento profesional. Ese primer apoyo y constante motivación será siempre de agradecimiento de mi parte`,
@@ -137,6 +149,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     avatarSrc: "/images/image7.png",
     avatarAlt: "Foto de perfil de Paul Cam",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Oportunidad", "Crecimiento", "Camino profesional"],
+    highlight: "el escalón profesional que necesitaba",
   },
   [TestimonioId.ANDREA_DE_LAS_CASAS]: {
     quote: `El tiempo que trabajé en tu equipo, sentí que trabajaba por un fin, y realmente conocí lo que es ser valorado en una empresa, habían momentos retadores pero siempre bajo tu guía supe salir adelante, por más que a veces no era de forma directa.
@@ -146,6 +160,8 @@ Me gustó mucho como organizaste todo, para que el equipo tenga todas las herram
     avatarSrc: "/images/image6.png",
     avatarAlt: "Foto de perfil de Andrea de las casas",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Propósito", "Reconocimiento", "Herramientas"],
+    highlight: "ser valorado en una empresa",
   },
   [TestimonioId.CARLA_TAFUR]: {
     quote: `Haces un gran trabajo al involucrarte con el equipo, no como un jefe sino como lider; eso ayuda que nos podamos sentir en confianza y con ganas de seguir dando más en el trabajo`,
@@ -154,6 +170,8 @@ Me gustó mucho como organizaste todo, para que el equipo tenga todas las herram
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Carla Tafur",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Liderazgo", "Cercanía", "Motivación"],
+    highlight: "no como un jefe sino como lider",
   },
   [TestimonioId.ANGELO_MORENO]: {
     quote: `Trabajar con Hugo fue una de las mejores experiencias, obviamente no todo es perfecto, pero siempre se esforzaba por mejorar y crecer con nosotros`,
@@ -162,6 +180,8 @@ Me gustó mucho como organizaste todo, para que el equipo tenga todas las herram
     avatarSrc: "/images/image4.png",
     avatarAlt: "Foto de perfil de Angelo Moreno",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Mejora continua", "Humildad", "Crecimiento conjunto"],
+    highlight: "mejorar y crecer con nosotros",
   },
   [TestimonioId.VERA_LUCIA_TOVAR]: {
     quote: `Trabajar con Hugo fue aprender a confiar en mí y en mis capacidades por medio de su guía constante para aprender todo lo relacionado al proyecto con mucha paciencia, constancia, ánimos y empoderamiento, haciendo el proceso de ingresar a un área completamente nueva para mí, mucho más fácil. 
@@ -171,6 +191,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image3.png",
     avatarAlt: "Foto de perfil de Vera Lucia Tovar",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Confianza", "Empoderamiento", "Paciencia", "Humildad"],
+    highlight: "aprender a confiar en mí",
   },
   [TestimonioId.ERICK_PALOMINO]: {
     quote: `Me inspiró a afrontar nuevos retos, muchos de los cuales solo los postergaba y postergaba, me hizo ver que la confianza en uno mismo es vital para desarrollar estos`,
@@ -179,6 +201,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image2.png",
     avatarAlt: "Foto de perfil de Erick Palomino",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Inspiración", "Retos", "Autoconfianza"],
+    highlight: "confianza en uno mismo",
   },
   [TestimonioId.ANONIMO]: {
     quote: `Eres un buen lider, guiando al equipo en un buen camino, empatico, agradable, pero tambien aveces exigente jeje, pero se que fue para que sea una mejora`,
@@ -187,6 +211,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image1.png",
     avatarAlt: "Foto de perfil",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Empatía", "Balance", "Exigencia positiva"],
+    highlight: "empatico, agradable",
   },
   [TestimonioId.YAZMIN_OCAMPO]: {
     quote: `Bueno yo formé parte de tu equipo, definitivamente si fue una agradable experiencia compartir con un profesional como tu, siempre tus palabras fueron de motivación hacia mi persona.`,
@@ -195,6 +221,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image9.png",
     avatarAlt: "Foto de perfil de Yazmin Ocampo",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Motivación", "Profesionalismo", "Palabras de aliento"],
+    highlight: "palabras fueron de motivación",
   },
   [TestimonioId.LEENKIN]: {
     quote: `Ha sido genial trabajar contigo, Hugo. Siempre tienes todo bien claro y lo explicas de una forma súper sencilla, lo que lo hace súper fácil de entender, sobre todo porque se nota que tienes muchísima experiencia en el mundo tech.`,
@@ -203,6 +231,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image8.png",
     avatarAlt: "Foto de perfil de Leenkin",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Claridad", "Comunicación", "Experiencia tech"],
+    highlight: "lo explicas de una forma súper sencilla",
   },
   [TestimonioId.MAJO_ZAMBRANO]: {
     quote: `Siempre estuviste ahí para escuchar a los talentos. Me sentí valorada en mi trabajo. Y llegar al trabajo era sentir que llegaba a un ambiente lleno de positivismo, apoyo, y humano.`,
@@ -211,6 +241,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image7.png",
     avatarAlt: "Foto de perfil de Majo Zambrano",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Escucha activa", "Ambiente positivo", "Valoración"],
+    highlight: "Me sentí valorada",
   },
   [TestimonioId.SANDRA_SEMINARIO]: {
     quote: `Desde que entré he sentido el apoyo y confianza por poder intentar y ver nuevas tareas a parte de mi puesto. Poder interactuar con herramientas que están usando, aprovechando las oportunidades que comentan. Me siento bastante bien por el ambiente y la oportunidad de permitirte aprender haciendo`,
@@ -219,6 +251,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image6.png",
     avatarAlt: "Foto de perfil de Sandra Seminario",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Apoyo", "Aprender haciendo", "Oportunidades"],
+    highlight: "aprender haciendo",
   },
   [TestimonioId.DAN_RODRIGUEZ]: {
     quote: `Con Hugo aprendí lo que significa tener un líder comprensivo y genuino, que no solo confía en las capacidades de su equipo, sino que también brinda oportunidades para crecer tanto en lo personal como en lo laboral. Su liderazgo es un ejemplo de inspiración y apoyo constante.`,
@@ -227,46 +261,48 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     avatarSrc: "/images/image5.png",
     avatarAlt: "Foto de perfil de Dan Rodriguez",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Liderazgo genuino", "Comprensión", "Crecimiento integral"],
+    highlight: "líder comprensivo y genuino",
   },
-  [TestimonioId.ANDREWS_POSTILLOS]: {
-    quote: `Mi testimonio no es sobre mí, sino sobre mi hermano. Recuerdo que unos días antes de que ingresara a Onroad, tuvimos una discusión con mi abuela y mi madre. Yo lo apoyé en todo momento en su decisión de dejar temporalmente la universidad para buscar trabajo, pero mi mayor miedo era que no lo aceptaran. Por eso mismo, hice todo lo que pude para ayudarlo.
-
-Cuando postuló a Onroad, ya estábamos casi por rendirnos. Lo acompañé a la entrevista, y cuando salió, me dijo: "Ya pasé, Andrews, respondí todo bien". Fue un momento de alegría indescriptible. No lo había visto tan convencido ni tan seguro como ese día.
-
-Con el tiempo, al empezar en su nuevo trabajo, noté cómo poco a poco iba cambiando para bien. Me contaba sobre sus nuevos amigos, lo escuchaba reír mientras hablaba con ellos por Discord, y me alegraba saber que ahora salía en grupo y tenía compañeros que lo integraban y valoraban.
-
-Doy testimonio de que el proyecto que lideraste, Hugo, le dio un nuevo rumbo a la vida de mi hermano, y por eso estoy profundamente agradecido.
-
-Sin más que agregar, me despido con un fuerte abrazo.`,
-    authorName: "Andrews postillos",
-    role: "Fui parte de tu equipo.",
+    [TestimonioId.ANDREWS_POSTILLOS]: {
+    quote: `Hugo no solo es mi hermano menor, también he visto su trayectoria en transformar equipos y culturas organizacionales. Su enfoque genuino ha impactado no solo en lo profesional, sino también en las familias de quienes han trabajado con él. Como coach, ayuda a personas a encontrar su propósito y llevar una vida más plena, y eso trasciende cualquier rol laboral.`,
+    authorName: "Andrews Postillos",
+    role: "Soy tu hermano y cercano testigo de tu labor.",
     avatarSrc: "/images/image4.png",
-    avatarAlt: "Foto de perfil de Andrews postillos",
+    avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Impacto familiar", "Transformación", "Propósito", "Comunidad"],
+    highlight: "impactado no solo en lo profesional, sino también en las familias",
   },
   [TestimonioId.STHEFANNY_CISNEROS]: {
-    quote: `Al trabajar con hugo aprendi mucho sobre como debo tratar a mis clientes, es alguien a quien le gusta que las cosas se hagan bien, pero a la vez te acompaña en el proceso con sus ideas. La comunicación siempre siempre fue positiva y es algo dificil de encontrar que hace que uno pueda trabajar feliz.`,
+    quote: `Al principio pensé que sería difícil, pero Hugo siempre tuvo una comunicación positiva y nos acompañó en el proceso, asegurándose de que todo saliera bien tanto para nosotros como para el cliente.`,
     authorName: "Sthefanny Cisneros",
     role: "Fui parte de tu equipo.",
     avatarSrc: "/images/image3.png",
     avatarAlt: "Foto de perfil de Sthefanny Cisneros",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Comunicación positiva", "Acompañamiento", "Enfoque en cliente"],
+    highlight: "nos acompañó en el proceso",
   },
   [TestimonioId.HANS_ALFARO]: {
-    quote: `Me gusta que seas metódico , y rápido en resolver lo que se presenta`,
+    quote: `Trabajar con Hugo es trabajar con velocidad de respuesta y metodología de resolución. En otros trabajos, cuando contactabas a alguien, te respondían en horas, días, semanas. Acá, si había un problema, se resolvía rápido.`,
     authorName: "Hans Alfaro",
-    role: "Socio",
+    role: "Fui parte de tu equipo.",
     avatarSrc: "/images/image2.png",
     avatarAlt: "Foto de perfil de Hans Alfaro",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Rapidez", "Metodología", "Resolución ágil"],
+    highlight: "se resolvía rápido",
   },
   [TestimonioId.ANTONIO_CABRERA]: {
-    quote: `Una persona bastante proactiva que cada problema lo ve como un reto y una oportunidad, el trato con los demás siempre con manejo profesional y amable, en lo personal, tenía mis dudas al principio, pero como fue transcurriendo el tiempo se fueron disipando y generando confianza.`,
+    quote: `Nos diste un espacio para ser proactivos, muy positivo por tu parte. Con el tiempo ganaste mi confianza como profesional y también como persona.`,
     authorName: "Antonio Cabrera",
     role: "Fui parte de tu equipo.",
     avatarSrc: "/images/image1.png",
     avatarAlt: "Foto de perfil de Antonio Cabrera",
     linkedInUrl: "https://www.linkedin.com",
+    tags: ["Proactividad", "Confianza progresiva", "Espacio para crecer"],
+    highlight: "ganaste mi confianza como profesional y también como persona",
   },
 };
 
