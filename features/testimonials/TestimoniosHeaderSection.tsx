@@ -50,13 +50,13 @@ export function TestimoniosHeaderSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center px-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
             >
               <Button
                 as={Link}
                 href="#historias"
                 size="lg"
-                className="bg-brand text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
+                className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
               >
                 Ver historias reales →
               </Button>
@@ -65,7 +65,7 @@ export function TestimoniosHeaderSection() {
                 href="/#cita"
                 size="lg"
                 variant="bordered"
-                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
+                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
               >
                 Agenda tu sesión gratuita
               </Button>
