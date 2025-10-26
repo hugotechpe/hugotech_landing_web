@@ -286,8 +286,22 @@
     },
     "About": {
       "hero": {
-        "title": "More than code, I transform people",
-        "subtitle": "18+ years building tech, teams and conscious leaders"
+        "chip": "My Story 🌱",
+        "title": "I was also <highlight>searching for my north star</highlight>",
+        "subtitle": "18+ years building tech, teams and conscious leaders",
+        "description": "Today I know that <strong>talent without purpose is potential without direction</strong>. And that the best transformations begin with a single honest conversation.",
+        "cta": "Discover my journey →",
+        "scrollText": "Scroll to discover more"
+      },
+      "purpose": {
+        "title": "What I learned along the way",
+        "quote": "Purpose doesn't appear in a dashboard. It's discovered in honest conversations.",
+        "intro": "<strong>At 40 years old</strong>, after necessary pauses and uncomfortable questions, I understood something: <strong>I wasn't alone</strong>. There were thousands of tech professionals feeling the same. Talented in code, searching for purpose.",
+        "conclusion": "That's where my north star was born: <strong>Be authentic</strong> (no corporate poses), <strong>accompany those who come behind</strong>, and <strong>build with soul</strong> where the human matters as much as the code.",
+        "mission": "I don't want you to wait years to ask the important questions. <strong>Today I accompany tech professionals</strong> to find their path <strong>with clarity and purpose</strong>. Because the best technology is built by people who <strong>know themselves</strong>."
+      },
+      "journeySection": {
+        "title": "The Journey"
       },
       "journey": {
         "title": "My Path: From Code to People",

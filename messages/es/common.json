@@ -297,8 +297,22 @@
     },
     "About": {
       "hero": {
-        "title": "Más que código, transformo personas",
-        "subtitle": "18+ años construyendo tech, equipos y líderes conscientes"
+        "chip": "Mi Historia 🌱",
+        "title": "Yo también estuve <highlight>buscando mi norte</highlight>",
+        "subtitle": "18+ años construyendo tech, equipos y líderes conscientes",
+        "description": "Hoy sé que <strong>el talento sin propósito es potencial sin dirección</strong>. Y que las mejores transformaciones empiezan con una sola conversación honesta.",
+        "cta": "Conoce mi viaje →",
+        "scrollText": "Scroll para descubrir más"
+      },
+      "purpose": {
+        "title": "Lo que aprendí en el camino",
+        "quote": "El propósito no aparece en un dashboard. Se descubre en conversaciones honestas.",
+        "intro": "<strong>A mis 40 años</strong>, después de pausas necesarias y preguntas incómodas, entendí algo: <strong>No estaba solo</strong>. Había miles de profesionales tech sintiendo lo mismo. Talentosos en código, buscando propósito.",
+        "conclusion": "Ahí nació mi norte: <strong>Ser auténtico</strong> (sin poses corporativas), <strong>acompañar a quienes vienen detrás</strong>, y <strong>construir con alma</strong> donde lo humano importa tanto como el código.",
+        "mission": "No quiero que esperes años para hacer las preguntas importantes. <strong>Hoy acompaño a profesionales tech</strong> a encontrar su camino <strong>con claridad y propósito</strong>. Porque la mejor tecnología la construyen personas que <strong>se conocen a sí mismas</strong>."
+      },
+      "journeySection": {
+        "title": "El Viaje"
       },
       "journey": {
         "title": "Mi Camino: Del Código a las Personas",
