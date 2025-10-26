@@ -405,17 +405,17 @@ export default function AboutPage() {
                     <div className="space-y-6">
                       {/* Newfield Coaching Ontológico */}
                       <div className="flex items-start gap-4 pb-6 border-b-2 border-brand/30">
-                        <div className="w-16 h-16 bg-gradient-to-br from-brand to-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">✨</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">NEWFIELD<br/>NETWORK</span>
                         </div>
                         <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2">
+                          <div className="flex items-center gap-2 mb-2 flex-wrap">
                             <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
                               Coaching Profesional Ontológico (en proceso)
                             </h3>
-                            <Chip size="sm" color="success" variant="flat">Activo</Chip>
+                            <Chip size="sm" color="success" variant="flat" className="font-semibold">Activo</Chip>
                           </div>
-                          <p className="text-base font-semibold text-brand mb-2">Newfield Network</p>
+                          <p className="text-base font-semibold text-orange-600 mb-2">Newfield Network</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Formación en coaching ontológico profesional - Transformación del ser, lenguaje, emocionalidad y corporalidad
                           </p>
@@ -425,19 +425,19 @@ export default function AboutPage() {
 
                       {/* Ruwalab ICF */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">💬</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">RUWALAB<br/><span className="text-xs">ICF</span></span>
                         </div>
                         <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2">
+                          <div className="flex items-center gap-2 mb-2 flex-wrap">
                             <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
                               Coach Profesional ICF (en proceso)
                             </h3>
-                            <Chip size="sm" color="warning" variant="flat">En curso</Chip>
+                            <Chip size="sm" color="warning" variant="flat" className="font-semibold">En curso</Chip>
                           </div>
-                          <p className="text-base font-semibold text-primary mb-2">Ruwalab</p>
+                          <p className="text-base font-semibold text-blue-600 mb-2">Ruwalab - International Coaching Federation (ICF)</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
-                            Formación acreditada por International Coaching Federation (ICF) - Desarrollo personal y liderazgo
+                            Formación acreditada por ICF - Desarrollo personal y liderazgo
                           </p>
                           <p className="text-xs text-gray-500">abr. 2024 - nov. 2025</p>
                         </div>
@@ -445,14 +445,14 @@ export default function AboutPage() {
 
                       {/* UPC Coaching & Mentoring */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🔴</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-2xl">UPC</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Herramientas de Coaching y Mentoring para el Liderazgo
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">Universidad Peruana de Ciencias Aplicadas</p>
+                          <p className="text-base font-semibold text-red-600 mb-2">Universidad Peruana de Ciencias Aplicadas</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Programa especializado en coaching como líder, competencias para liderazgo adaptativo del siglo XXI
                           </p>
@@ -462,14 +462,14 @@ export default function AboutPage() {
 
                       {/* ISIL Gestión Talento Humano */}
                       <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">👥</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-2xl">ISIL</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Gestión de Talento Humano
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">ISIL</p>
+                          <p className="text-base font-semibold text-blue-800 mb-2">ISIL</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Retención de personal, liderazgo servicial, dirección de talentos, desarrollo de talento, liderazgo organizacional
                           </p>
@@ -495,14 +495,14 @@ export default function AboutPage() {
                     <div className="space-y-6">
                       {/* ICAgile ACC */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🎯</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">IC<br/>AGILE</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             ICAgile Certified Professional - Agile Coaching (ICP ACC)
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">ICAgile</p>
+                          <p className="text-base font-semibold text-blue-600 mb-2">ICAgile</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Agile methodologies, liderazgo de equipos, product owner, agile coach
                           </p>
@@ -512,14 +512,14 @@ export default function AboutPage() {
 
                       {/* ICAgile HR */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🌱</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">IC<br/>AGILE<br/><span className="text-xs">HR</span></span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             ICAgile Certified Professional - Agility in HR
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">ICAgile</p>
+                          <p className="text-base font-semibold text-green-600 mb-2">ICAgile</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Agilidad aplicada a recursos humanos y gestión de personas
                           </p>
@@ -529,14 +529,14 @@ export default function AboutPage() {
 
                       {/* Management 3.0 */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🚀</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">MGMT<br/>3.0</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Management 3.0 - Energizing People Plus & Fundamentals
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">Management 3.0</p>
+                          <p className="text-base font-semibold text-purple-600 mb-2">Management 3.0</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Gestión de personas, entrenamiento personal, estrategia empresarial, liderazgo moderno
                           </p>
@@ -546,14 +546,14 @@ export default function AboutPage() {
 
                       {/* SCRUMstudy SAMC */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">📊</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">SCRUM<br/>STUDY</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             SCRUMstudy Agile Master Certified (SAMC)
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">Vabro.ai and VMEdu.com</p>
+                          <p className="text-base font-semibold text-orange-600 mb-2">Vabro.ai and VMEdu.com</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Agile methodologies, Waterfall, Lean software development, Agile leadership, Entorno Agile
                           </p>
@@ -563,14 +563,14 @@ export default function AboutPage() {
 
                       {/* PMI-ACP */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">📋</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-2xl">PMI</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             PMI Agile Certified Practitioner (PMI-ACP)
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">Project Management Institute</p>
+                          <p className="text-base font-semibold text-yellow-700 mb-2">Project Management Institute</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Certificación en metodologías ágiles y gestión de proyectos
                           </p>
@@ -580,14 +580,14 @@ export default function AboutPage() {
 
                       {/* Scrum Master/Product Owner/Developer */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">✅</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">SCRUM<br/>TRIPLE</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Scrum Master, Product Owner & Developer Certified
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">SCRUMstudy</p>
+                          <p className="text-base font-semibold text-teal-600 mb-2">SCRUMstudy</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Scrum Master, Product Owner, Developer - Framework completo Scrum
                           </p>
@@ -597,14 +597,14 @@ export default function AboutPage() {
 
                       {/* Kanban */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">📌</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">KANBAN<br/><span className="text-xs">KMP</span></span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Kanban Management Professional (KMP)
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">Kanban University</p>
+                          <p className="text-base font-semibold text-indigo-600 mb-2">Kanban University</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Gestión de programas, operaciones lean, transformación lean, transformación digital, Kanban
                           </p>
@@ -614,14 +614,14 @@ export default function AboutPage() {
 
                       {/* Lean Startup */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
-                        <div className="w-16 h-16 bg-yellow-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">💡</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">LEAN<br/>STARTUP</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Lean StartUp Certified Associate
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">CertJoin</p>
+                          <p className="text-base font-semibold text-amber-600 mb-2">CertJoin</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Lean Startup, operaciones lean, modelo-vista-presentador (MVP)
                           </p>
@@ -631,14 +631,14 @@ export default function AboutPage() {
 
                       {/* Lean UX */}
                       <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 bg-pink-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-3xl">🎨</span>
+                        <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <span className="text-white font-bold text-sm text-center leading-tight">LEAN<br/>UX</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                             Lean UX
                           </h3>
-                          <p className="text-base font-semibold text-primary mb-2">UTEC Posgrado</p>
+                          <p className="text-base font-semibold text-pink-600 mb-2">UTEC Posgrado</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Liderazgo de equipos de desarrollo, Lean Startup, herramientas Lean, desarrollo de software lean, Lean UX, transformación lean
                           </p>
