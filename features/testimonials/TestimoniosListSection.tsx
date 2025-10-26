@@ -6,12 +6,14 @@ import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import TestimonioCard from "@/components/cards/TestimonioCard";
 import { TESTIMONIOS_LIST } from "@/features/testimonials/enums/testimonios";
+import { useTranslations } from "next-intl";
 
 // Definir qué testimonios serán "destacados" (más grandes)
 const FEATURED_INDICES = [0, 6, 13, 20, 27, 35, 42]; // Distribuidos cada 6-7 testimonios
 const ITEMS_PER_PAGE = 12; // Mostrar 12 testimonios por carga
 
 export function TestimoniosListSection() {
+  const t = useTranslations("Sections.Testimonials.list");
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   
   const hasMore = visibleCount < TESTIMONIOS_LIST.length;
@@ -36,12 +38,12 @@ export function TestimoniosListSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-            Historias Reales de Crecimiento
+            {t("title")}
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 leading-[1.9] tracking-wide max-w-3xl mx-auto">
-            Cada testimonio es una historia real de crecimiento, vulnerabilidad y valentía. 
-            Personas tech que se atrevieron a <strong className="text-primary">mirarse dentro</strong> para crecer afuera.
-          </p>
+          <p 
+            dangerouslySetInnerHTML={{ __html: t.raw("description") }}
+            className="text-lg md:text-xl text-gray-600 leading-[1.9] tracking-wide max-w-3xl mx-auto"
+          />
         </motion.div>
 
         {/* Bento Grid: layout asimétrico con cards destacadas */}
@@ -92,7 +94,7 @@ export function TestimoniosListSection() {
               onClick={loadMore}
               className="font-semibold text-lg px-10 py-7 border-2 hover:bg-primary hover:text-white hover:scale-105 transition-all duration-300"
             >
-              Ver más historias reales ({TESTIMONIOS_LIST.length - visibleCount} restantes) →
+              {t("loadMore", { count: TESTIMONIOS_LIST.length - visibleCount })}
             </Button>
           </motion.div>
         )}
@@ -107,13 +109,14 @@ export function TestimoniosListSection() {
           >
             <Card className="bg-gradient-to-r from-primary/10 via-brand/10 to-primary/10 border-2 border-primary/20">
               <CardBody className="p-8 md:p-10 text-center">
-                <div className="text-5xl md:text-6xl mb-4">✨</div>
+                <div className="text-5xl md:text-6xl mb-4">{t("end.emoji")}</div>
                 <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-4">
-                  Conociste todas las historias
+                  {t("end.title")}
                 </h3>
                 <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
-                  {TESTIMONIOS_LIST.length} personas que se atrevieron a confiar, a mirarse dentro y a crecer. 
-                  <strong className="text-primary block mt-3">¿Te gustaría ser parte de estas historias?</strong>
+                  {t("end.description", { count: TESTIMONIOS_LIST.length })}
+                  {" "}
+                  <strong className="text-primary block mt-3">{t("end.cta_text")}</strong>
                 </p>
                 <Button
                   as="a"
@@ -121,7 +124,7 @@ export function TestimoniosListSection() {
                   size="lg"
                   className="bg-primary text-white font-bold text-base md:text-lg px-8 md:px-10 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300"
                 >
-                  Agenda tu sesión gratuita
+                  {t("end.button")}
                 </Button>
               </CardBody>
             </Card>

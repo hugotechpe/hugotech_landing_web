@@ -5,8 +5,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { Chip } from "@heroui/chip";
+import { useTranslations } from "next-intl";
 
 export function TestimoniosHeaderSection() {
+  const t = useTranslations("Sections.Testimonials.header");
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
@@ -34,16 +36,20 @@ export function TestimoniosHeaderSection() {
             transition={{ duration: 0.8 }}
           >
             <Chip color="warning" variant="shadow" size="lg" className="mb-8 text-base md:text-lg px-6 py-2">
-              Voces Reales 💬
+              {t("chip")}
             </Chip>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-8 leading-tight">
-              Historias de quienes <span className="text-brand">caminaron conmigo</span>
+              <span dangerouslySetInnerHTML={{ 
+                __html: t.raw("title").replace(
+                  /<highlight>(.*?)<\/highlight>/g, 
+                  '<span class="text-brand">$1</span>'
+                )
+              }} />
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-12 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto font-quote italic">
-              Más allá de los resultados, estas son las personas que confiaron, se atrevieron a mirarse dentro y decidieron crecer. 
-              Cada historia es única, cada transformación es real.
+              {t("description")}
             </p>
 
             <motion.div
@@ -58,7 +64,7 @@ export function TestimoniosHeaderSection() {
                 size="lg"
                 className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
               >
-                Ver historias reales →
+                {t("cta.primary")}
               </Button>
               <Button
                 as={Link}
@@ -67,7 +73,7 @@ export function TestimoniosHeaderSection() {
                 variant="bordered"
                 className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
               >
-                Agenda tu sesión gratuita
+                {t("cta.secondary")}
               </Button>
             </motion.div>
           </motion.div>
@@ -80,7 +86,7 @@ export function TestimoniosHeaderSection() {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
-        <div className="text-white/70 text-sm font-medium mb-2">Descubre las historias</div>
+        <div className="text-white/70 text-sm font-medium mb-2">{t("scroll.text")}</div>
         <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
           <motion.div 
             className="w-1.5 h-2.5 bg-white/60 rounded-full"

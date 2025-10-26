@@ -764,6 +764,32 @@
       "certifications_section": {
         "title": "Formación y Certificaciones"
       }
+    },
+    "Testimonials": {
+      "header": {
+        "chip": "Voces Reales 💬",
+        "title": "Historias de quienes <highlight>caminaron conmigo</highlight>",
+        "description": "Más allá de los resultados, estas son las personas que confiaron, se atrevieron a mirarse dentro y decidieron crecer. Cada historia es única, cada transformación es real.",
+        "cta": {
+          "primary": "Ver historias reales →",
+          "secondary": "Agenda tu sesión gratuita"
+        },
+        "scroll": {
+          "text": "Descubre las historias"
+        }
+      },
+      "list": {
+        "title": "Historias Reales de Crecimiento",
+        "description": "Cada testimonio es una historia real de crecimiento, vulnerabilidad y valentía. Personas tech que se atrevieron a <strong>mirarse dentro</strong> para crecer afuera.",
+        "loadMore": "Ver más historias reales ({count} restantes) →",
+        "end": {
+          "emoji": "✨",
+          "title": "Conociste todas las historias",
+          "description": "{count} personas que se atrevieron a confiar, a mirarse dentro y a crecer.",
+          "cta_text": "¿Te gustaría ser parte de estas historias?",
+          "button": "Agenda tu sesión gratuita"
+        }
+      }
     }
   },
   "WhatsAppButton": {
