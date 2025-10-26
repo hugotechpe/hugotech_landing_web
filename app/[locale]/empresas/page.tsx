@@ -506,7 +506,7 @@ export default function EmpresasPage() {
                 href="https://calendly.com/hugotech/reunion-exploratoria"
                 size="lg"
               >
-                {t("cta.button1")}
+                {t("cta.button_primary")}
               </Button>
               <Button
                 as={Link}
@@ -515,7 +515,7 @@ export default function EmpresasPage() {
                 size="lg"
                 variant="bordered"
               >
-                {t("cta.button2")}
+                {t("cta.button_secondary")}
               </Button>
             </div>
             <p className="mt-8 text-white/80 italic font-quote text-base md:text-lg leading-[1.9]">
