@@ -121,20 +121,20 @@ export function PorQueGratuitoSection() {
                       <span className="text-4xl">🎓</span>
                     </div>
 
-                    <h3 className="text-2xl md:text-3xl font-bold">
+                    <h3 className="text-2xl md:text-3xl font-bold font-heading">
                       {t("mentoriaCard.title")}
                     </h3>
-                    <p className="text-lg md:text-xl font-semibold text-primary">
+                    <p className="text-base md:text-lg font-semibold text-primary">
                       {t("mentoriaCard.subtitle")}
                     </p>
                     
-                    <div className="space-y-3">
-                      <p className="text-base">
+                    <div className="space-y-4">
+                      <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
                         {t.rich("mentoriaCard.p1", {
                           b: (chunks) => <span className="font-bold">{chunks}</span>,
                         })}
                       </p>
-                      <p className="text-base">
+                      <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
                         {t.rich("mentoriaCard.p2", {
                           b: (chunks) => <span className="font-bold">{chunks}</span>,
                         })}
@@ -142,15 +142,15 @@ export function PorQueGratuitoSection() {
                     </div>
 
                     <div className="mt-4">
-                      <h4 className="text-base font-bold mb-3 text-primary">
+                      <h4 className="text-sm md:text-base font-bold mb-3 text-primary uppercase tracking-wide">
                         {t("mentoriaCard.resultsTitle")}
                       </h4>
-                      <ul className="space-y-3 text-customgray text-sm md:text-base">
+                      <ul className="space-y-3 text-customgray text-[14px] md:text-[15px]">
                         {(pgr?.mentoriaCard?.resultsItems ?? []).map(
                           (item: string, idx: number) => (
                             <li key={`res-${idx}`} className="flex items-start gap-3">
                               <span className="text-primary text-xl flex-shrink-0">✓</span>
-                              <span>{item}</span>
+                              <span className="leading-relaxed">{item}</span>
                             </li>
                           )
                         )}
@@ -256,11 +256,11 @@ export function PorQueGratuitoSection() {
         >
           <Card className="bg-gradient-to-r from-primary/5 via-white to-brand/5 border-2 border-primary/10" shadow="lg">
             <CardBody className="p-8 md:p-12 text-center">
-              <div className="text-6xl mb-6">💬</div>
-              <blockquote className="text-xl md:text-2xl font-semibold text-gray-700 mb-6 leading-relaxed">
-                "Si hoy puedo guiar a alguien, es porque <strong className="text-primary">otros me levantaron cuando más lo necesitaba</strong>. He estado en el fondo del burnout, he cuestionado todo, he dudado de mí mismo. Esos momentos me enseñaron que <strong className="text-primary">la vulnerabilidad es fortaleza</strong>, no debilidad. Por eso las sesiones son gratuitas: <strong className="text-brand">devolver lo que la vida me dio cuando estaba perdido</strong>."
+              <div className="text-5xl md:text-6xl mb-6">💬</div>
+              <blockquote className="text-lg md:text-xl font-quote italic text-gray-700 mb-8 leading-[2] tracking-wide max-w-4xl mx-auto">
+                "Si hoy puedo guiar a alguien, es porque <strong className="text-primary not-italic font-sans font-semibold">otros me levantaron cuando más lo necesitaba</strong>. He estado en el fondo del burnout, he cuestionado todo, he dudado de mí mismo. Esos momentos me enseñaron que <strong className="text-primary not-italic font-sans font-semibold">la vulnerabilidad es fortaleza</strong>, no debilidad. Por eso las sesiones son gratuitas: <strong className="text-brand not-italic font-sans font-semibold">devolver lo que la vida me dio cuando estaba perdido</strong>."
               </blockquote>
-              <p className="text-gray-600 text-lg">- Hugo Casanova</p>
+              <p className="text-gray-600 text-base font-medium">— Hugo Casanova</p>
             </CardBody>
           </Card>
         </motion.div>

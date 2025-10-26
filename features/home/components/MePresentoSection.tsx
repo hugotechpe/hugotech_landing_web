@@ -139,12 +139,12 @@ export function MePresentoSection() {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
             >
-              <h2 className="text-3xl md:text-5xl font-bold text-customgray">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
                 {title}
               </h2>
               
               {subtitle && (
-                <p className="mt-3 text-xl md:text-2xl text-gray-600 italic font-light">
+                <p className="mt-4 text-lg md:text-xl text-gray-600 italic font-light font-quote leading-relaxed">
                   {subtitle}
                 </p>
               )}
@@ -180,15 +180,15 @@ export function MePresentoSection() {
               >
                 <Card className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl" shadow="lg">
                   <CardBody className="p-6 md:p-8">
-                    <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg" itemProp="description">
+                    <div className="space-y-6 text-gray-700 text-base md:text-lg" itemProp="description">
                       {paragraphNodes.map((node, idx) => (
-                        <p key={`p-${idx}`}>{node}</p>
+                        <p key={`p-${idx}`} className="text-[15px] md:text-[17px] leading-[2] tracking-wide">{node}</p>
                       ))}
                       
                       {/* Párrafo de vulnerabilidad agregado */}
-                      <div className="mt-6 pt-6 border-t-2 border-primary/10">
-                        <p className="text-gray-600 italic">
-                          No siempre tuve esto claro. Durante años me enfoqué solo en el código, en la arquitectura perfecta, en los frameworks de moda... hasta que <strong className="text-primary not-italic">el burnout me golpeó</strong>. A los 35 años me di cuenta: había olvidado por qué comencé. Ese momento de quiebre me llevó a estudiar coaching, agilidad, liderazgo... no para "agregar skills", sino para <strong className="text-primary not-italic">reconectarme con el lado humano de la tech</strong>.
+                      <div className="mt-8 pt-8 border-t-2 border-primary/10">
+                        <p className="text-gray-600 italic font-quote text-[15px] md:text-[17px] leading-[2.1] tracking-wide">
+                          No siempre tuve esto claro. Durante años me enfoqué solo en el código, en la arquitectura perfecta, en los frameworks de moda... hasta que <strong className="text-primary not-italic font-sans font-semibold">el burnout me golpeó</strong>. A los 35 años me di cuenta: había olvidado por qué comencé. Ese momento de quiebre me llevó a estudiar coaching, agilidad, liderazgo... no para "agregar skills", sino para <strong className="text-primary not-italic font-sans font-semibold">reconectarme con el lado humano de la tech</strong>.
                         </p>
                       </div>
                     </div>

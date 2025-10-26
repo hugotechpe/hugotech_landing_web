@@ -81,10 +81,10 @@ export default function EmpresasPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
               🧭 Nuestra propuesta para empresas
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-[1.9] tracking-wide">
               <strong>Hugotech Empresas</strong> nace para acompañar a organizaciones tecnológicas y digitales 
               que desean elevar el nivel humano, técnico y cultural de sus equipos.
               Combinamos <strong>agilidad, coaching, mentoring y pensamiento Lean</strong> para activar 
@@ -92,7 +92,7 @@ export default function EmpresasPage() {
             </p>
           </motion.div>
 
-          <motion.p className="text-center text-xl font-semibold text-customgray mb-12">
+          <motion.p className="text-center text-lg md:text-xl font-semibold text-customgray mb-12 leading-relaxed">
             Trabajamos desde tres dimensiones complementarias:
           </motion.p>
 
@@ -111,29 +111,29 @@ export default function EmpresasPage() {
               >
                 <CardBody className="p-8">
                   <div className="text-5xl mb-4">🎯</div>
-                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
                     1. Cultura y Mindset
                   </h3>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
                     Diseñamos talleres y experiencias inmersivas que despiertan conciencia, 
                     alinean valores y conectan a las personas con el propósito de la organización.
                   </p>
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Talleres de Cultura Ágil</span>
+                      <span className="leading-relaxed">Talleres de Cultura Ágil</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Mindset Lean & Pensamiento de Valor</span>
+                      <span className="leading-relaxed">Mindset Lean & Pensamiento de Valor</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Liderazgo consciente y colaboración efectiva</span>
+                      <span className="leading-relaxed">Liderazgo consciente y colaboración efectiva</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Programas de cultura organizacional y transformación del SER</span>
+                      <span className="leading-relaxed">Programas de cultura organizacional y transformación del SER</span>
                     </li>
                   </ul>
                 </CardBody>
@@ -148,14 +148,14 @@ export default function EmpresasPage() {
               >
                 <CardBody className="p-8">
                   <div className="text-5xl mb-4">⚡</div>
-                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
                     2. Equipos de Desarrollo y Agilidad Técnica
                   </h3>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
                     Acompañamos equipos técnicos y de producto para que evolucionen hacia 
                     equipos de alto rendimiento, fortaleciendo sus prácticas, estructura y sinergia.
                   </p>
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
                     <li className="flex items-start">
                       <span className="text-brand mr-2 font-bold">•</span>
                       <span>Acompañamiento técnico y cultural (programas de 4 a 6 meses)</span>
@@ -185,29 +185,29 @@ export default function EmpresasPage() {
               >
                 <CardBody className="p-8">
                   <div className="text-5xl mb-4">💼</div>
-                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
                     3. Mentoring y Coaching One-to-One
                   </h3>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
                     Procesos individuales diseñados para potenciar el liderazgo, 
                     la autogestión y la claridad mental de cada miembro del equipo.
                   </p>
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Sesiones de coaching profesional (enfoque ICF)</span>
+                      <span className="leading-relaxed">Sesiones de coaching profesional (enfoque ICF)</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Mentoring técnico y de liderazgo</span>
+                      <span className="leading-relaxed">Mentoring técnico y de liderazgo</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Conversaciones difíciles y feedback consciente</span>
+                      <span className="leading-relaxed">Conversaciones difíciles y feedback consciente</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span>Desarrollo personal orientado a resultados</span>
+                      <span className="leading-relaxed">Desarrollo personal orientado a resultados</span>
                     </li>
                   </ul>
                 </CardBody>

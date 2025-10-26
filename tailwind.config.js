@@ -39,7 +39,8 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
-        heading: ["var(--font-rubik)", "var(--font-sans)"],
+        heading: ["var(--font-heading)", "Georgia", "serif"],
+        quote: ["var(--font-quote)", "Georgia", "serif"],
       },
     },
   },

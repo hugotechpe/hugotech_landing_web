@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans, fontRubik } from "@/config/fonts";
+import { fontSans, fontHeading, fontQuote } from "@/config/fonts";
 import { getMessages } from "next-intl/server";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
 
@@ -98,7 +98,8 @@ export default async function RootLayout({
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
           fontSans.variable,
-          fontRubik.variable,
+          fontHeading.variable,
+          fontQuote.variable,
         )}
       >
         <GoogleTagManagerNoScript />

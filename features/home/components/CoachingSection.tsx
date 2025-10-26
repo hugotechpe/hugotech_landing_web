@@ -107,25 +107,25 @@ export function CoachingSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="inline-block bg-brand text-customgray px-5 py-2 rounded-full text-sm font-bold mb-6"
+              className="inline-block bg-brand text-customgray px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
             >
-              🌟 COACHING CON CAUSA
+              🌟 Coaching con Causa
             </motion.div>
 
-            <h2 itemProp="headline" className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h2 itemProp="headline" className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white mb-6 leading-tight">
               {t("title")}
             </h2>
-            <p className="text-xl text-brand font-semibold mb-6">
+            <p className="text-lg md:text-xl text-brand font-semibold mb-6">
               {t("subtitle")}
             </p>
 
             <div className="space-y-6">
-              <p itemProp="description" className="text-white/90 text-lg leading-relaxed">
+              <p itemProp="description" className="text-white/90 text-base md:text-lg leading-[1.9] tracking-wide">
                 {t("content.p1")}
               </p>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <p className="text-white font-semibold text-lg mb-4">
+                <p className="text-white font-semibold text-base md:text-lg mb-5 leading-relaxed">
                   {t.rich("content.pBold1", {
                     b: (chunk) => <span className="text-brand">{chunk}</span>,
                   })}
@@ -145,22 +145,22 @@ export function CoachingSection() {
                       <div className="flex-shrink-0 w-10 h-10 bg-brand rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                         <span className="text-xl">{bulletIcons[idx % bulletIcons.length]}</span>
                       </div>
-                      <span className="text-white/90 text-base leading-relaxed flex-1">{item}</span>
+                      <span className="text-white/90 text-[15px] leading-[1.9] flex-1">{item}</span>
                     </motion.li>
                   ))}
                 </ul>
               </div>
 
-              <p className="text-white/80 text-base italic pl-4 border-l-4 border-brand">
+              <p className="text-white/80 text-[15px] md:text-base italic font-quote pl-5 border-l-4 border-brand leading-[2] tracking-wide">
                 {t("content.p2")}
               </p>
 
               {/* Invite mejorado */}
               <div className="bg-gradient-to-r from-brand/20 to-yellow-400/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-brand/30">
-                <p className="font-bold text-white text-lg mb-2">
+                <p className="font-bold text-white text-base md:text-lg mb-2">
                   {t.rich("content.invite.pBold", { b: (chunk) => <span className="text-brand">{chunk}</span> })}
                 </p>
-                <p className="text-white/90">
+                <p className="text-white/90 text-[15px]">
                   {t("content.invite.p")}
                 </p>
               </div>

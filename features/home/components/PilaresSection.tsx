@@ -52,12 +52,12 @@ export function PilaresSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="inline-block bg-gradient-to-r from-primary to-brand text-white px-6 py-2 rounded-full text-sm font-bold mb-6"
+                className="inline-block bg-gradient-to-r from-primary to-brand text-white px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
               >
-                ⭐ 6 PILARES FUNDAMENTALES
+                ✨ 6 Pilares Fundamentales
               </motion.div>
               
-              <h2 className="text-3xl md:text-5xl font-bold text-customgray leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
                 {sectionTitle}
               </h2>
             </div>

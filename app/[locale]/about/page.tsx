@@ -115,13 +115,13 @@ export default function AboutPage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
             >
-              <Chip color="warning" variant="shadow" size="lg" className="mb-8 text-lg px-6 py-2">
+              <Chip color="warning" variant="shadow" size="lg" className="mb-8 text-base md:text-lg px-6 py-2">
                 Mi Historia 🌱
               </Chip>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-8 leading-tight">
                 De ingeniero <span className="text-brand">a guía de transformación</span>
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-12 text-white/90 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl lg:text-2xl mb-12 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto">
                 Cómo un ingeniero peruano descubrió que su verdadero propósito 
                 no estaba en el código, sino en <strong>las personas que lo crean</strong>.
               </p>
@@ -165,17 +165,17 @@ export default function AboutPage() {
             className="max-w-5xl mx-auto"
           >
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold text-customgray mb-8">
+              <h2 className="text-3xl md:text-5xl font-bold font-heading text-customgray mb-8 leading-tight">
                 Mi Propósito
               </h2>
               <div className="relative inline-block mb-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-brand blur-3xl opacity-20" />
-                <p className="relative text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
+                <p className="relative text-xl md:text-3xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
                   Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
                 </p>
               </div>
               <div className="max-w-4xl mx-auto mt-8">
-                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-600 leading-[2] tracking-wide">
                   <strong className="text-primary">A mis 40 años</strong>, después de caídas, burnouts y noches de cuestionarme todo, encontré mi norte: <strong className="text-customgray">Ser auténtico</strong> (incluso cuando duela), <strong className="text-customgray">inspirar</strong> a quienes están donde yo estuve, y <strong className="text-customgray">construir un legado</strong> que ponga el ALMA por encima del código.
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
             <Card className="bg-gradient-to-br from-primary/10 via-white to-brand/10 border-2 border-primary/20" shadow="lg">
               <CardBody className="p-10 md:p-16">
-                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed text-center">
+                <p className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide text-center">
                   Ayudar a profesionales tech a encontrar su camino con <strong className="text-primary">claridad, propósito y humanidad</strong>. 
                   Porque la mejor tecnología la construyen personas que se conocen a sí mismas.
                 </p>
@@ -197,7 +197,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto max-w-6xl px-6">
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-customgray mb-16 text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-16 text-center leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -233,7 +233,7 @@ export default function AboutPage() {
                           {item.content.map((text, i) => (
                             <p 
                               key={i} 
-                              className="text-gray-700 leading-relaxed"
+                              className="text-gray-700 leading-[1.9] tracking-wide text-[15px] md:text-base"
                               dangerouslySetInnerHTML={{ __html: text }}
                             />
                           ))}
@@ -275,10 +275,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6 leading-tight">
               El Impacto en Números
             </h2>
-            <p className="text-xl text-white/80">
+            <p className="text-lg md:text-xl text-white/80 leading-[1.8] tracking-wide">
               Cada número representa vidas transformadas, equipos fortalecidos, propósitos descubiertos.
             </p>
           </motion.div>
