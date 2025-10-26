@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import TestimonioCard from "@/components/cards/TestimonioCard";
-import { TESTIMONIOS_LIST } from "@/features/testimonials/enums/testimonios";
-import { useTranslations } from "next-intl";
+import { getTestimoniosList } from "@/features/testimonials/enums";
+import { useTranslations, useLocale } from "next-intl";
 
 // Definir qué testimonios serán "destacados" (más grandes)
 const FEATURED_INDICES = [0, 6, 13, 20, 27, 35, 42]; // Distribuidos cada 6-7 testimonios
@@ -14,6 +14,8 @@ const ITEMS_PER_PAGE = 12; // Mostrar 12 testimonios por carga
 
 export function TestimoniosListSection() {
   const t = useTranslations("Sections.Testimonials.list");
+  const locale = useLocale();
+  const TESTIMONIOS_LIST = getTestimoniosList(locale);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   
   const hasMore = visibleCount < TESTIMONIOS_LIST.length;
