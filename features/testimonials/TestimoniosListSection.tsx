@@ -100,28 +100,28 @@ export function TestimoniosListSection() {
         {/* Mensaje final cuando se muestran todos */}
         {!hasMore && TESTIMONIOS_LIST.length > ITEMS_PER_PAGE && (
           <motion.div
-            className="mt-16"
+            className="mt-16 mb-8"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
             <Card className="bg-gradient-to-r from-primary/10 via-brand/10 to-primary/10 border-2 border-primary/20">
-              <CardBody className="p-10 text-center">
-                <div className="text-6xl mb-4">✨</div>
+              <CardBody className="p-8 md:p-10 text-center">
+                <div className="text-5xl md:text-6xl mb-4">✨</div>
                 <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-4">
-                  Has visto todas las historias
+                  Conociste todas las historias
                 </h3>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  {TESTIMONIOS_LIST.length} personas que confiaron, crecieron y se transformaron. 
-                  <strong className="text-primary block mt-2">¿Quieres ser la próxima historia?</strong>
+                <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
+                  {TESTIMONIOS_LIST.length} personas que se atrevieron a confiar, a mirarse dentro y a crecer. 
+                  <strong className="text-primary block mt-3">¿Te gustaría ser parte de estas historias?</strong>
                 </p>
                 <Button
                   as="a"
                   href="/#cita"
                   size="lg"
-                  className="bg-primary text-white font-bold text-lg px-10 py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300"
+                  className="bg-primary text-white font-bold text-base md:text-lg px-8 md:px-10 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300"
                 >
-                  Agenda tu sesión gratuita 1-a-1
+                  Agenda tu sesión gratuita
                 </Button>
               </CardBody>
             </Card>

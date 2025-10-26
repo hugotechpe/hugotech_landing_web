@@ -29,17 +29,21 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer role="contentinfo" className="bg-primary text-white">
-      <div className="container mx-auto max-w-screen-xl px-6 py-12">
+    <footer role="contentinfo" className="bg-primary text-white mt-16 md:mt-20">
+      <div className="container mx-auto max-w-screen-xl px-6 py-12 md:py-16">
         {/* Misión y Visión */}
-        <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mb-12 md:mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div>
-            <h2 className="text-xl font-bold mb-3">💚 {mission.title}</h2>
-            <p className="text-white/80 leading-relaxed">{mission.text}</p>
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span>💚</span> {mission.title}
+            </h2>
+            <p className="text-white/90 leading-[1.8] text-base">{mission.text}</p>
           </div>
           <div>
-            <h2 className="text-xl font-bold mb-3">🌱 {vision.title}</h2>
-            <p className="text-white/80 leading-relaxed">{vision.text}</p>
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span>🌱</span> {vision.title}
+            </h2>
+            <p className="text-white/90 leading-[1.8] text-base">{vision.text}</p>
           </div>
         </div>
 

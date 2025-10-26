@@ -76,12 +76,12 @@ export function TestimoniosHeaderSection() {
 
       {/* Scroll Indicator */}
       <motion.div 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
-        <div className="text-white/60 text-sm">Descubre las historias</div>
-        <div className="w-6 h-10 border-2 border-white/40 rounded-full mt-2 mx-auto flex items-start justify-center p-2">
+        <div className="text-white/70 text-sm font-medium mb-2">Descubre las historias</div>
+        <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
           <motion.div 
             className="w-1.5 h-2.5 bg-white/60 rounded-full"
             animate={{ y: [0, 12, 0] }}
