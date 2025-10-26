@@ -41,7 +41,7 @@ export function TestimoniosHeaderSection() {
               Historias de quienes <span className="text-brand">caminaron conmigo</span>
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl mb-8 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto font-quote italic">
+            <p className="text-lg md:text-xl lg:text-2xl mb-12 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto font-quote italic">
               Más allá de los resultados, estas son las personas que confiaron, se atrevieron a mirarse dentro y decidieron crecer. 
               Cada historia es única, cada transformación es real.
             </p>
@@ -50,13 +50,13 @@ export function TestimoniosHeaderSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center px-4"
             >
               <Button
                 as={Link}
                 href="#historias"
                 size="lg"
-                className="bg-brand text-white font-bold text-lg px-10 py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300"
+                className="bg-brand text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
               >
                 Ver historias reales →
               </Button>
@@ -65,7 +65,7 @@ export function TestimoniosHeaderSection() {
                 href="/#cita"
                 size="lg"
                 variant="bordered"
-                className="border-2 border-white text-white font-bold text-lg px-10 py-7 hover:bg-white hover:text-primary transition-all duration-300"
+                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
               >
                 Agenda tu sesión gratuita
               </Button>
