@@ -72,12 +72,12 @@ export default function HeroNavbar() {
           <NavbarBrand>
             <Link href="/">
               <Image 
-                src="https://hugotech.pe/wp-content/uploads/2025/08/1Recurso-1.svg" 
-                alt="HugoTech Logo" 
-                width={120}
-                height={36}
+                src="/images/logo-hugotech.png" 
+                alt="HugoTech - Innovación con Alma, Tech con Propósito" 
+                width={160}
+                height={48}
                 priority
-                className="h-6 md:h-9 w-auto"
+                className="h-8 md:h-12 w-auto"
               />
             </Link>
           </NavbarBrand>
