@@ -104,10 +104,10 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
           )}
 
           <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
-            <blockquote itemProp="reviewBody" className="text-customgray text-[15px] md:text-base leading-[2] tracking-wide font-quote italic">
-              <span className="text-4xl text-primary/30 font-heading leading-none">"</span>
+            <blockquote itemProp="reviewBody" className="text-customgray/90 text-base md:text-lg leading-[1.8] font-body">
+              <span className="text-3xl text-primary/20 font-heading leading-none mr-1">"</span>
               {renderQuoteWithHighlight(truncatedQuote)}
-              <span className="text-4xl text-primary/30 font-heading leading-none">"</span>
+              <span className="text-3xl text-primary/20 font-heading leading-none ml-1">"</span>
             </blockquote>
 
             {/* Botón expandir/colapsar para testimonios largos */}

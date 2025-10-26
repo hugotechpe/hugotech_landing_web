@@ -14,7 +14,6 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { LocaleSwitch } from "@/components/locale-switch";
 import { useMessages, useTranslations, useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
 
 export default function HeroNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -22,12 +21,8 @@ export default function HeroNavbar() {
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
   const locale = useLocale();
-  const pathname = usePathname();
 
-  // Detectar si estamos en la home
-  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
-
-  // Menu items con rutas correctas
+  // Menu items con rutas completas (evita hydration mismatch)
   const menuItems = [
     {
       label: "Mi Historia",
@@ -35,15 +30,15 @@ export default function HeroNavbar() {
     },
     {
       label: "Inicio",
-      href: isHome ? "#inicio" : `/${locale}/#inicio`,
+      href: `/${locale}/#inicio`,
     },
     {
       label: "Me Presento",
-      href: isHome ? "#mepresento" : `/${locale}/#mepresento`,
+      href: `/${locale}/#mepresento`,
     },
     {
       label: "Testimonios",
-      href: isHome ? "#testimonios" : `/${locale}/#testimonios`,
+      href: `/${locale}/#testimonios`,
     },
     {
       label: "Empresas",
