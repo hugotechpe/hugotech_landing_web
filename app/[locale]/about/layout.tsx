@@ -41,7 +41,7 @@ export default function AboutLayout({
         
         {/* WhatsApp Floating Button */}
         <WhatsAppButton 
-          phoneNumber="51987654321"
+          phoneNumber="51946483010"
           message="Hola Hugo, me gustaría conocer más sobre tu historia y propósito"
         />
       </div>

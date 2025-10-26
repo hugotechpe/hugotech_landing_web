@@ -24,7 +24,7 @@ export default function HomeLayout({
         
         {/* WhatsApp Floating Button */}
         <WhatsAppButton 
-          phoneNumber="51987654321"
+          phoneNumber="51946483010"
           message="Hola Hugo, me gustaría agendar una sesión de mentoring 1-a-1"
         />
       </div>
