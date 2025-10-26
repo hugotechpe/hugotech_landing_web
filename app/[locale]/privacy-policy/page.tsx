@@ -11,23 +11,23 @@ export default function PrivacyPolicyPage() {
       <div className="container mx-auto max-w-4xl px-6 py-16">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-4 leading-tight">
             Políticas de Privacidad
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             Última actualización: 25 de octubre de 2025
           </p>
         </div>
 
         {/* Content */}
-        <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-8">
+        <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-10">
           
           {/* Introducción */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               Introducción
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-[1.9] tracking-wide text-[15px] md:text-base">
               En HugoTech, valoramos y respetamos tu privacidad. Esta política describe cómo 
               recopilamos, utilizamos, almacenamos y protegemos tu información personal de acuerdo 
               con la Ley N° 29733 - Ley de Protección de Datos Personales de Perú y el Reglamento 
@@ -37,14 +37,14 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 1 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               1. Información que Recopilamos
             </h2>
-            <div className="space-y-3 text-gray-700 leading-relaxed">
-              <p>
+            <div className="space-y-4 text-gray-700 text-[15px] md:text-base">
+              <p className="leading-[1.9] tracking-wide">
                 <strong>1.1 Información Personal que nos proporcionas:</strong>
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <ul className="list-disc list-inside space-y-2 ml-4 leading-relaxed">
                 <li>Nombre completo</li>
                 <li>Dirección de correo electrónico</li>
                 <li>Número de teléfono</li>
@@ -53,10 +53,10 @@ export default function PrivacyPolicyPage() {
                 <li>Información profesional relevante para nuestros servicios</li>
               </ul>
               
-              <p className="mt-4">
+              <p className="mt-4 leading-[1.9] tracking-wide">
                 <strong>1.2 Información recopilada automáticamente:</strong>
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <ul className="list-disc list-inside space-y-2 ml-4 leading-relaxed">
                 <li>Dirección IP</li>
                 <li>Tipo de navegador y dispositivo</li>
                 <li>Páginas visitadas y tiempo de navegación</li>
@@ -68,13 +68,13 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 2 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               2. Cómo Utilizamos tu Información
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-[1.9] tracking-wide mb-4 text-[15px] md:text-base">
               Utilizamos tu información personal para:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 text-[15px] md:text-base leading-relaxed">
               <li>Proporcionar nuestros servicios de mentoring y coaching</li>
               <li>Programar y gestionar sesiones individuales o grupales</li>
               <li>Comunicarnos contigo sobre nuestros servicios</li>
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 3 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               3. Base Legal para el Procesamiento
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -104,7 +104,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 4 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               4. Compartir Información con Terceros
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 5 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               5. Cookies y Tecnologías de Seguimiento
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -141,7 +141,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 6 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               6. Seguridad de la Información
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -158,7 +158,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 7 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               7. Retención de Datos
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -171,7 +171,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 8 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               8. Tus Derechos
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -193,7 +193,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 9 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               9. Transferencias Internacionales
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -206,7 +206,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 10 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               10. Menores de Edad
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -218,7 +218,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 11 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               11. Cambios en esta Política
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -230,7 +230,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 12 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               12. Autoridad de Control
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -247,7 +247,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Sección 13 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               13. Contacto
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">

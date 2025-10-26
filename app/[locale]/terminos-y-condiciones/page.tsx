@@ -17,20 +17,20 @@ export default function TerminosYCondicionesPage() {
       <div className="container mx-auto max-w-4xl px-6 py-16">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-4 leading-tight">
             Términos y Condiciones
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             Última actualización: 25 de octubre de 2025
           </p>
         </div>
 
         {/* Content */}
-        <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-8">
+        <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 space-y-10">
           
           {/* Sección 1 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               1. Aceptación de los Términos
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -42,7 +42,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 2 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               2. Descripción de los Servicios
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -58,7 +58,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 3 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               3. Uso de los Servicios
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -74,7 +74,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 4 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               4. Reservas y Pagos
             </h2>
             <div className="space-y-3 text-gray-700 leading-relaxed">
@@ -100,7 +100,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 5 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               5. Propiedad Intelectual
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -113,7 +113,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 6 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               6. Confidencialidad
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -126,7 +126,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 7 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               7. Limitación de Responsabilidad
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -139,7 +139,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 8 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               8. Modificaciones de los Términos
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -151,7 +151,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 9 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               9. Ley Aplicable y Jurisdicción
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -162,7 +162,7 @@ export default function TerminosYCondicionesPage() {
 
           {/* Sección 10 */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold font-heading text-gray-900 mb-4 leading-tight">
               10. Contacto
             </h2>
             <p className="text-gray-700 leading-relaxed">

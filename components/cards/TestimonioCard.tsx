@@ -56,7 +56,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
       >
         <CardBody>
           <figure aria-label={`Testimonio de ${authorName}`} itemScope itemType="https://schema.org/Review">
-            <blockquote itemProp="reviewBody" className="text-customgray text-sm md:text-base leading-relaxed">
+            <blockquote itemProp="reviewBody" className="text-customgray text-[15px] md:text-base leading-[1.9] tracking-wide">
               {quote}
             </blockquote>
             <hr className="my-6 border-default-200" />
@@ -74,10 +74,10 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
                 />
               </motion.div>
               <div>
-                <p className="font-semibold text-customgray">
+                <p className="font-semibold font-heading text-customgray text-base md:text-lg">
                   {authorName}{authorAge ? ` – ${authorAge}` : ""}
                 </p>
-                <p className="text-default-500 text-sm">{role}</p>
+                <p className="text-default-500 text-sm leading-relaxed">{role}</p>
                 {linkedInUrl ? (
                   <Link 
                     isExternal 

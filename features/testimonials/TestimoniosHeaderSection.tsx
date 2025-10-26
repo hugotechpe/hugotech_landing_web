@@ -19,8 +19,8 @@ export function TestimoniosHeaderSection() {
       className="scroll-mt-0 bg-[url('/images/imageBg.jpg')] bg-cover bg-center"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-customgray">Testimonios</h2>
-          <p className="text-base text-customgray mt-4">Personas a las que hemos tenido la oportunidad de apoyar en su camino hacia el mundo de la tecnología.</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-customgray leading-tight">Testimonios</h2>
+          <p className="text-base md:text-lg text-customgray mt-4 leading-[1.9] tracking-wide max-w-3xl">Personas a las que hemos tenido la oportunidad de apoyar en su camino hacia el mundo de la tecnología.</p>
       </div>
     </section>
   );
