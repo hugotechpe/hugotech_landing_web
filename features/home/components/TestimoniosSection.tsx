@@ -65,10 +65,12 @@ export function TestimoniosSection() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-customgray">{title}</h2>
-            <div className="mt-4 text-customgray text-base">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-customgray leading-tight">
+              {title}
+            </h2>
+            <div className="mt-6 text-customgray text-base sm:text-lg leading-relaxed space-y-3">
               {Array.isArray(intro) && intro.map((paragraph: string, idx: number) => (
-                <p key={idx}>{paragraph}</p>
+                <p key={idx} className="font-body">{paragraph}</p>
               ))}
             </div>
 
@@ -77,7 +79,7 @@ export function TestimoniosSection() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
-              className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 md:gap-20"
+              className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 md:gap-20"
               aria-label="Métricas de impacto"
             >
               {Array.isArray(metrics) && metrics.map((m: {id: string; value: string; text: string}) => {
@@ -86,7 +88,7 @@ export function TestimoniosSection() {
                 
                 return (
                   <motion.article key={m.id} variants={fadeInUp} className="text-center sm:text-left">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-customgray">
+                    <h3 className="text-2xl sm:text-3xl font-heading font-bold text-customgray">
                       <AnimatedCounter
                         end={number}
                         duration={2.5}
@@ -95,15 +97,24 @@ export function TestimoniosSection() {
                         suffix={suffix}
                       />
                     </h3>
-                    <p className="mt-2 sm:mt-4 text-customgray text-sm">{m.text}</p>
+                    <p className="mt-3 text-customgray/80 text-sm sm:text-base leading-relaxed font-body">
+                      {m.text}
+                    </p>
                   </motion.article>
                 );
               })}
             </motion.div>
 
-            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div>
-                <Button as={Link} href="/testimonios" size="lg" color="primary" variant="solid" className="mt-2 text-white bg-customgray w-full sm:w-auto">
+                <Button 
+                  as={Link} 
+                  href="/testimonios" 
+                  size="lg" 
+                  color="primary" 
+                  variant="solid" 
+                  className="mt-2 text-white bg-customgray w-full sm:w-auto font-body"
+                >
                   {cta}
                 </Button>
               </div>
@@ -125,6 +136,8 @@ export function TestimoniosSection() {
               linkedInUrl="https://www.linkedin.com/"
               avatarSrc="/images/image5.png"
               avatarAlt="Foto de perfil de Miguel Bustillos"
+              tags={["Familia", "Confianza", "Crecimiento"]}
+              highlight="parte de una familia"
             />
           </motion.div>
           </div>
