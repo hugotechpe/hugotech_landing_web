@@ -21,21 +21,6 @@ export function TestimoniosListSection() {
     setVisibleCount(prev => Math.min(prev + ITEMS_PER_PAGE, TESTIMONIOS_LIST.length));
   };
 
-  const fadeIn = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 }
-  };
-
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
   return (
     <section
       id="historias"
@@ -60,13 +45,7 @@ export function TestimoniosListSection() {
         </motion.div>
 
         {/* Bento Grid: layout asimétrico con cards destacadas */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-auto"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-auto">
           {visibleTestimonios.map((t, idx) => {
             const isFeatured = FEATURED_INDICES.includes(idx);
             
@@ -77,11 +56,13 @@ export function TestimoniosListSection() {
 
             return (
               <motion.div
-                key={idx}
+                key={`${t.authorName}-${idx}`}
                 className={gridSpan}
-                variants={fadeIn}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ 
                   duration: 0.5,
+                  delay: idx * 0.05,
                   ease: "easeOut" 
                 }}
                 whileHover={{ scale: 1.02 }}
@@ -93,7 +74,7 @@ export function TestimoniosListSection() {
               </motion.div>
             );
           })}
-        </motion.div>
+        </div>
 
         {/* Botón "Cargar más" con animación */}
         {hasMore && (
