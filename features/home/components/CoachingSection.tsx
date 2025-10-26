@@ -47,7 +47,7 @@ export function CoachingSection() {
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="relative"
+                className="relative z-10"
               >
                 <Image
                   src="/images/image6.png"
@@ -55,7 +55,7 @@ export function CoachingSection() {
                   width={538}
                   height={660}
                   priority
-                  className="block object-cover rounded-2xl shadow-2xl relative z-10"
+                  className="block object-cover rounded-2xl shadow-2xl"
                   style={{ width: "100%", height: "auto" }}
                 />
                 
@@ -66,14 +66,14 @@ export function CoachingSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="relative z-20"
+                  className="absolute -right-10 lg:-right-20 bottom-5 md:bottom-20 z-20"
                 >
                   <Image
                     src="/images/image8.png"
                     alt={t("images.badgeRightAlt")}
                     width={300}
                     height={171}
-                    className="hidden sm:block absolute -right-10 lg:-right-20 bottom-5 md:bottom-20 shadow-2xl"
+                    className="hidden sm:block shadow-2xl"
                   />
                 </motion.div>
                 
@@ -83,14 +83,14 @@ export function CoachingSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: -5 }}
-                  className="relative z-20"
+                  className="absolute left-0 top-0 md:-left-5 md:-top-0 z-20"
                 >
                   <Image
                     src="/images/image7.png"
                     alt={t("images.badgeLeftAlt")}
                     width={300}
                     height={171}
-                    className="hidden sm:block absolute left-0 top-0 md:-left-5 md:-top-0 shadow-2xl"
+                    className="hidden sm:block shadow-2xl"
                   />
                 </motion.div>
               </motion.div>

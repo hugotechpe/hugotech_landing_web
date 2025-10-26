@@ -26,23 +26,23 @@ export default function HeroNavbar() {
   const menuItems = [
     {
       label: tNavbar("menuItems.myStory"),
-      href: `/${locale}/about`,
+      href: "/about",
     },
     {
       label: tNavbar("menuItems.home"),
-      href: `/${locale}/#inicio`,
+      href: "/#inicio",
     },
     {
       label: tNavbar("menuItems.aboutMe"),
-      href: `/${locale}/#mepresento`,
+      href: "/#mepresento",
     },
     {
       label: tNavbar("menuItems.testimonials"),
-      href: `/${locale}/#testimonios`,
+      href: "/#testimonios",
     },
     {
       label: tNavbar("menuItems.companies"),
-      href: `/${locale}/empresas`,
+      href: "/empresas",
     },
   ];
 
