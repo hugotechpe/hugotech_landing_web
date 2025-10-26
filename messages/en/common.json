@@ -187,6 +187,7 @@
       "chipLabel": "Innovation with Soul • Tech with Purpose",
       "title": "Your tech career is more than code. Discover who you are beyond the keyboard",
       "subtitle": "It's not just about learning the next framework. It's about knowing yourself, connecting with your purpose and building with authenticity.",
+      "mantra": "Be authentic, inspire young tech talents and build with faith a legacy with soul.",
       "paragraphs": {
         "p1": "At <brand>HugoTech</brand>, I accompany tech talents like you. I combine <b>tech mentoring with self-awareness coaching and human development</b>. We work on your confidence, communication, emotional intelligence, purpose and growth mindset. Free. 1-on-1. No filters.",
         "p2": "AI boosts your efficiency, but your <b>empathy, creativity and leadership are irreplaceable</b>. I prepare you to lead conscious digital transformation, avoiding burnout and building a sustainable career that energizes you every morning."
@@ -195,7 +196,22 @@
         "mentoria": "Schedule your 1-on-1 session (Free)",
         "historia": "Learn my story",
         "empresas": "Transform your team?"
-      }
+      },
+      "badges": {
+        "leader": {
+          "title": "Strengthen your inner leader",
+          "description": "Guide your professional career toward growth."
+        },
+        "talent": {
+          "title": "Polish/unleash your talent",
+          "description": "I accompany you to develop in the tech world."
+        },
+        "antiBurnout": {
+          "title": "Anti-Burnout",
+          "description": "Sustainable career"
+        }
+      },
+      "imageAlt": "Portrait of Hugo Casanova, mentor and tech coach"
     },
     "Empresas": {
       "header": {

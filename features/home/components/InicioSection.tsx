@@ -39,7 +39,7 @@ export function InicioSection() {
             >
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
                 <p className="text-lg md:text-xl font-medium text-center bg-gradient-to-r from-brand via-white to-brand bg-clip-text text-transparent leading-relaxed">
-                  Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
+                  {t("mantra")}
                 </p>
               </div>
             </motion.div>
@@ -103,7 +103,7 @@ export function InicioSection() {
               {/* Imagen principal */}
               <Image
                 src="/images/image1.png"
-                alt="Retrato de Hugo Casanova, mentor y coach tech"
+                alt={t("imageAlt")}
                 width={538}
                 height={660}
                 priority
@@ -137,8 +137,8 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">Fortalece tu líder interno</h3>
-                      <p className="text-xs text-gray-600 mt-1">Guía tu carrera profesional hacia el crecimiento.</p>
+                      <h3 className="font-bold text-customgray text-sm">{t("badges.leader.title")}</h3>
+                      <p className="text-xs text-gray-600 mt-1">{t("badges.leader.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -170,8 +170,8 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">Pule/libera tu talento</h3>
-                      <p className="text-xs text-gray-600 mt-1">Te acompaño a desenvolverte en el mundo tech.</p>
+                      <h3 className="font-bold text-customgray text-sm">{t("badges.talent.title")}</h3>
+                      <p className="text-xs text-gray-600 mt-1">{t("badges.talent.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -203,8 +203,8 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">Anti-Burnout</h3>
-                      <p className="text-xs text-gray-600 mt-1">Carrera sostenible</p>
+                      <h3 className="font-bold text-customgray text-sm">{t("badges.antiBurnout.title")}</h3>
+                      <p className="text-xs text-gray-600 mt-1">{t("badges.antiBurnout.description")}</p>
                     </div>
                   </div>
                 </motion.div>

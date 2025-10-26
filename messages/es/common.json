@@ -197,6 +197,7 @@
       "chipLabel": "Innovación con Alma • Tech con Propósito",
       "title": "Tu carrera tech es más que código. Descubre quién eres más allá del teclado",
       "subtitle": "No se trata solo de aprender el próximo framework. Se trata de conocerte a ti mismo, conectar con tu propósito y construir con autenticidad.",
+      "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "paragraphs": {
         "p1": "En <brand>HugoTech</brand>, acompaño a talentos tech como tú. Combino <b>mentoring tecnológico con coaching de autoconocimiento y desarrollo humano</b>. Trabajamos tu confianza, comunicación, inteligencia emocional, propósito y mentalidad de crecimiento. Gratis. 1 a 1. Sin filtros.",
         "p2": "La IA potencia tu eficiencia, pero tu <b>empatía, creatividad y liderazgo son irremplazables</b>. Te preparo para liderar la transformación digital consciente, evitando el burnout y construyendo una carrera sostenible que te energice cada mañana."
@@ -205,7 +206,22 @@
         "mentoria": "Agenda tu sesión 1 a 1 (Sin costo)",
         "historia": "Conoce mi historia",
         "empresas": "¿Transformar a tu equipo?"
-      }
+      },
+      "badges": {
+        "leader": {
+          "title": "Fortalece tu líder interno",
+          "description": "Guía tu carrera profesional hacia el crecimiento."
+        },
+        "talent": {
+          "title": "Pule/libera tu talento",
+          "description": "Te acompaño a desenvolverte en el mundo tech."
+        },
+        "antiBurnout": {
+          "title": "Anti-Burnout",
+          "description": "Carrera sostenible"
+        }
+      },
+      "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
     },
     "Empresas": {
       "header": {
