@@ -957,18 +957,22 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Frontend Developer → La experiencia importa
+                          Frontend Developer → La experiencia importa (y me apasiona)
                         </h3>
                         <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
                           Descubrí que <strong className="text-purple-600">la interfaz es donde el usuario siente el producto</strong>. 
                           JavaScript, React, animaciones, performance, accesibilidad. <strong className="text-customgray">No bastaba 
-                          con que funcionara, tenía que sentirse bien</strong>. Ahí aprendí que la tecnología sirve a las personas, no al revés.
+                          con que funcionara, tenía que sentirse bien, fluir, emocionar</strong>. El UX se volvió mi obsesión: 
+                          entender cada clic, cada microinteracción, cada segundo de carga. <strong className="text-purple-600">Me 
+                          enamoré de crear experiencias que la gente ama usar</strong>.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">JavaScript</Chip>
                           <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">React</Chip>
-                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">UX/UI</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">UX/UI Design</Chip>
                           <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">Performance</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">User Experience</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">Design Thinking</Chip>
                         </div>
                       </div>
                     </div>
@@ -988,18 +992,22 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Full Stack Developer → Ver el panorama completo
+                          Full Stack Developer → Ver el panorama completo + Growth
                         </h3>
                         <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
                           Junté ambos mundos: <strong className="text-orange-600">arquitectura backend + experiencia frontend</strong>. 
                           Ahora podía ver el producto completo, entender trade-offs, tomar decisiones técnicas pensando en el negocio. 
-                          <strong className="text-customgray">Ser full stack me enseñó a conectar puntos que otros no ven</strong>.
+                          Pero no bastaba con construir bien: <strong className="text-customgray">descubrí mi pasión por el marketing 
+                          digital y growth</strong>. Analytics, conversión, funnels, A/B testing. <strong className="text-orange-600">Cada 
+                          línea de código era una oportunidad para crecer el negocio</strong>.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Full Stack</Chip>
                           <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Cloud (AWS, Azure)</Chip>
                           <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">DevOps</Chip>
-                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Arquitectura Cloud</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Marketing Digital</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Growth Hacking</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Analytics</Chip>
                         </div>
                       </div>
                     </div>
@@ -1051,21 +1059,23 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Country Manager → La visión estratégica del negocio completo
+                          Country Manager → Cultura Data-Driven y visión estratégica
                         </h3>
                         <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
                           Gestioné operaciones en Perú coordinando <strong className="text-indigo-600">equipos de desarrollo, 
                           marketing, call center, ventas y gestión de talento</strong>. Aprendí que el éxito no está solo en 
                           el producto, sino en <strong className="text-customgray">alinear múltiples áreas hacia un objetivo 
-                          común, midiendo impacto con KPIs y OKRs</strong>. Aquí entendí que <strong className="text-indigo-600">las 
-                          personas son la estrategia más poderosa</strong>, y que sin equipos motivados, ningún plan funciona.
+                          común, midiendo impacto con KPIs y OKRs</strong>. Me obsesioné con <strong className="text-indigo-600">construir 
+                          una cultura data-driven: cada decisión respaldada por datos, cada estrategia validada con métricas</strong>. 
+                          Entendí que las personas son la estrategia más poderosa, y los datos son su mejor aliado.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Gestión Comercial</Chip>
                           <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">KPIs & OKRs</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Data-Driven Culture</Chip>
                           <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Gestión de Talento</Chip>
                           <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Estrategia de Negocio</Chip>
-                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">ROI</Chip>
+                          <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">ROI & Analytics</Chip>
                           <Chip size="sm" variant="flat" className="bg-indigo-100 text-indigo-700">Liderazgo Multifuncional</Chip>
                         </div>
                       </div>
