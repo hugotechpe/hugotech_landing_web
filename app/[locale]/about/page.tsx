@@ -291,10 +291,10 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
-              { end: 18, suffix: "+ años", label: "En tecnología y liderazgo", icon: "📅" },
-              { end: 200, prefix: "+", label: "Talentos guiados", icon: "🌟" },
-              { end: 10, suffix: "+", label: "Certificaciones profesionales", icon: "🎓" },
-              { end: 100, suffix: "%", label: "Compromiso con el propósito", icon: "💪" }
+              { end: 18, suffix: "+ años", label: "En tecnología y liderazgo", icon: "📅", description: "Innovación, agilidad y transformación digital" },
+              { end: 200, prefix: "+", label: "Talentos guiados", icon: "🌟", description: "Personas que encontraron claridad y propósito" },
+              { end: 31, suffix: "+", label: "Certificaciones profesionales", icon: "🎓", description: "Coaching, agilidad, tech y liderazgo" },
+              { end: 100, suffix: "%", label: "Compromiso con el propósito", icon: "💪", description: "Crecimiento consciente, no solo resultados" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -313,7 +313,8 @@ export default function AboutPage() {
                         suffix={stat.suffix}
                       />
                     </div>
-                    <p className="text-white/90 font-semibold text-lg">{stat.label}</p>
+                    <p className="text-white/90 font-semibold text-lg mb-2">{stat.label}</p>
+                    <p className="text-white/70 text-sm leading-relaxed">{stat.description}</p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -398,15 +399,38 @@ export default function AboutPage() {
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
+                      {/* Newfield Coaching Ontológico */}
+                      <div className="flex items-start gap-4 pb-6 border-b-2 border-brand/30">
+                        <div className="w-16 h-16 bg-gradient-to-br from-brand to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                          <span className="text-3xl">✨</span>
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
+                              Coaching Profesional Ontológico (en proceso)
+                            </h3>
+                            <Chip size="sm" color="success" variant="flat">Activo</Chip>
+                          </div>
+                          <p className="text-base font-semibold text-brand mb-2">Newfield Network</p>
+                          <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
+                            Formación en coaching ontológico profesional - Transformación del ser, lenguaje, emocionalidad y corporalidad
+                          </p>
+                          <p className="text-xs text-gray-500">oct. 2025 - en curso</p>
+                        </div>
+                      </div>
+
                       {/* Ruwalab ICF */}
                       <div className="flex items-start gap-4 pb-6 border-b border-gray-200">
                         <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
                           <span className="text-3xl">💬</span>
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                            Coach Profesional ICF (en proceso)
-                          </h3>
+                          <div className="flex items-center gap-2 mb-2">
+                            <h3 className="text-lg md:text-xl font-bold font-heading text-customgray">
+                              Coach Profesional ICF (en proceso)
+                            </h3>
+                            <Chip size="sm" color="warning" variant="flat">En curso</Chip>
+                          </div>
                           <p className="text-base font-semibold text-primary mb-2">Ruwalab</p>
                           <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                             Formación acreditada por International Coaching Federation (ICF) - Desarrollo personal y liderazgo
@@ -888,10 +912,10 @@ export default function AboutPage() {
                   <div className="text-6xl mb-6">🎯</div>
                   <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Lo que hago hoy</h3>
                   <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
-                    Acompaño a profesionales tech en su <strong className="text-primary font-sans font-semibold">autoconocimiento</strong> 
-                    antes del colapso. Ofrezco <strong className="text-customgray font-sans font-semibold">sesiones 1-a-1 100% gratuitas</strong> 
-                    para quien las necesite, y programas empresariales que transforman equipos desde el ser hacia el hacer. 
-                    Liderazgo ágil, coaching ejecutivo, cultura humana.
+                    Acompaño a profesionales tech en su <strong className="text-primary font-sans font-semibold">transformación personal y profesional</strong>. 
+                    Ofrezco <strong className="text-customgray font-sans font-semibold">sesiones 1-a-1 100% gratuitas</strong> 
+                    para quien las necesite, y programas empresariales que transforman equipos con <strong className="text-primary font-sans font-semibold">agilidad, 
+                    innovación y mentalidad de crecimiento</strong>. Del autoconocimiento al liderazgo consciente, del propósito a la acción con impacto.
                   </p>
                 </CardBody>
               </Card>
@@ -938,7 +962,7 @@ export default function AboutPage() {
                     { icon: "🤝", title: "Humanidad", desc: "Tech al servicio de personas, no al revés" },
                     { icon: "✨", title: "Propósito", desc: "Sin por qué, no hay cómo que valga" },
                     { icon: "🌱", title: "Crecimiento", desc: "Evolución consciente, no éxito vacío" },
-                    { icon: "💪", title: "Excelencia", desc: "Alto rendimiento con alma, no burnout" }
+                    { icon: "💪", title: "Excelencia", desc: "Alto rendimiento con alma, no solo métricas" }
                   ].map((value, index) => (
                     <motion.div
                       key={index}
