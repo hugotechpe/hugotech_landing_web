@@ -55,6 +55,18 @@ export default function AboutPage() {
       ]
     },
     {
+      phase: "La Caída",
+      icon: "🌧️",
+      color: "from-gray-400 to-slate-600",
+      title: "El burnout que me salvó",
+      content: [
+        "A los 35 años, <strong>el éxito profesional no me protegió del burnout</strong>. Lideraba equipos pero había perdido mi brújula interna.",
+        "Noches sin dormir. Cuestionándolo todo. Sintiendo que había olvidado <strong>por qué comencé</strong>.",
+        "<strong>Mi crisis fue mi mejor maestra</strong>: me llevó al coaching, a la vulnerabilidad, a lo humano. Descubrí que no estaba solo.",
+        "Muchos líderes tech sufren en silencio. Ese dolor compartido se convirtió en mi llamado: <strong>ayudar a otros a no llegar donde yo llegué</strong>."
+      ]
+    },
+    {
       phase: "La Transformación",
       icon: "🚀",
       color: "from-blue-400 to-indigo-600",
@@ -160,6 +172,11 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-brand blur-3xl opacity-20" />
                 <p className="relative text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
                   Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
+                </p>
+              </div>
+              <div className="max-w-4xl mx-auto mt-8">
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                  <strong className="text-primary">A mis 40 años</strong>, después de caídas, burnouts y noches de cuestionarme todo, encontré mi norte: <strong className="text-customgray">Ser auténtico</strong> (incluso cuando duela), <strong className="text-customgray">inspirar</strong> a quienes están donde yo estuve, y <strong className="text-customgray">construir un legado</strong> que ponga el ALMA por encima del código.
                 </p>
               </div>
             </div>

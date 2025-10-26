@@ -220,6 +220,36 @@ export default function EmpresasPage() {
       {/* Caso de Transformación */}
       <section className="py-16 md:py-24 bg-[#FBF7EC]">
         <div className="container mx-auto max-w-1400 px-6">
+          {/* Nueva sección: Lo Aprendí en Carne Propia */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <Card className="bg-gradient-to-br from-primary/5 to-brand/5 border-2 border-primary/20" shadow="lg">
+              <CardBody className="p-8 md:p-12">
+                <div className="text-center mb-8">
+                  <div className="inline-block bg-primary text-white px-6 py-2 rounded-full text-sm font-bold mb-4">
+                    💔 LO APRENDÍ EN CARNE PROPIA
+                  </div>
+                  <h3 className="text-2xl md:text-4xl font-bold text-customgray mb-6">
+                    No te vendo teoría. Te comparto cicatrices.
+                  </h3>
+                </div>
+                <div className="max-w-4xl mx-auto">
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                    Lideré equipos brillantes que <strong className="text-primary">colapsaron por falta de claridad</strong>. Vi desarrolladores senior renunciar no por salario, sino por <strong className="text-primary">falta de propósito</strong>. <strong className="text-customgray">Fui ese líder que priorizaba el sprint por encima de las personas</strong>... hasta que el equipo se desmoronó.
+                  </p>
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Esa experiencia me <strong className="text-brand">transformó</strong>. Ahora ayudo a otros líderes a <strong className="text-customgray">no cometer los mismos errores que yo</strong>. Porque sé lo que duele ver un equipo romperse. Y sé lo que se siente cuando lo reconstruyes desde el alma.
+                  </p>
+                </div>
+              </CardBody>
+            </Card>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -344,7 +374,15 @@ export default function EmpresasPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               🧠 Nuestra filosofía
             </h2>
-            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-white/20 mb-8">
+              <p className="text-2xl md:text-3xl font-bold text-brand mb-6">
+                "No vendo fórmulas mágicas. Vendo 18 años de caídas, levantadas y aprendizajes dolorosos."
+              </p>
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                La transformación real <strong>duele, incomoda, cuestiona</strong>. Pero es la única que dura.
+              </p>
+            </div>
+            <p className="text-xl md:text-2xl leading-relaxed">
               Creemos que el alto rendimiento no se impone, se despierta.<br />
               Cada empresa tiene su propio ritmo, energía y esencia.<br />
               Nosotros solo acompañamos el proceso: desafiamos, guiamos y sostenemos el cambio desde la empatía y la experiencia.

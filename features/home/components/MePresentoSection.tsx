@@ -6,9 +6,7 @@ import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
 import IconBoxCard from "@/components/cards/IconBoxCard";
-import MentoringCoachingIcon from "@/common/icons/custom/MentoringCoachingIcon";
-import EquiposAltoRendimientoIcon from "@/common/icons/custom/EquiposAltoRendimientoIcon";
-import LiderazgoAgilTransformaIcon from "@/common/icons/custom/LiderazgoAgilTransformaIcon";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { useMessages, useTranslations } from "next-intl";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
@@ -31,12 +29,20 @@ const staggerContainer = {
     }
   }
 };
+
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { 
+    opacity: 1, 
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" }
+  }
+};
+
 export function MePresentoSection() {
   const messages = useMessages() as any;
   const t = useTranslations("Sections.MePresento");
   const section = messages?.Sections?.MePresento ?? {};
-
-  // Eliminado iconMap local, usamos el enum y mapa compartido
 
   const title = section.title ?? "Me Presento";
   const subtitle = section.subtitle ?? "";
@@ -60,12 +66,72 @@ export function MePresentoSection() {
       aria-label={title}
       itemScope
       itemType="https://schema.org/Person"
-      className="scroll-mt-0 bg-primary"
+      className="scroll-mt-0 bg-gradient-to-b from-primary via-primary to-white relative overflow-hidden"
     >
-      <div className="bg-white rounded-t-[60px]">
-        <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
+      {/* Patrón de fondo sutil */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')]" />
+      </div>
+
+      <div className="bg-white/95 backdrop-blur-sm rounded-t-[60px] relative z-10">
+        <div className="container mx-auto max-w-1400 px-6 py-16 md:py-24">
+          {/* Stats Bar Premium con AnimatedCounter */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-12 md:mb-16"
+          >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
+                <Card className="bg-gradient-to-br from-primary/10 to-brand/10 border-2 border-primary/20 hover:border-primary/40 transition-all" shadow="lg">
+                  <CardBody className="text-center p-6">
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                      <AnimatedCounter end={18} suffix="+" />
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">Años de Experiencia</p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
+                <Card className="bg-gradient-to-br from-brand/10 to-yellow-100 border-2 border-brand/20 hover:border-brand/40 transition-all" shadow="lg">
+                  <CardBody className="text-center p-6">
+                    <div className="text-4xl md:text-5xl font-bold text-customgray mb-2">
+                      <AnimatedCounter end={200} prefix="+" />
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">Vidas Potenciadas</p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
+                <Card className="bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-orange-200 hover:border-orange-300 transition-all" shadow="lg">
+                  <CardBody className="text-center p-6">
+                    <div className="text-4xl md:text-5xl font-bold text-orange-600 mb-2">
+                      <AnimatedCounter end={40} />
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">Años y Aún Aprendiendo</p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
+                <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover:border-purple-300 transition-all" shadow="lg">
+                  <CardBody className="text-center p-6">
+                    <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
+                      <AnimatedCounter end={1} />
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">Comunidad que nos Une</p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            </div>
+          </motion.div>
+
           {/* Encabezado y presentación */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10 lg:gap-16">
             {/* Columna izquierda con animación */}
             <motion.div
               initial="hidden"
@@ -73,43 +139,91 @@ export function MePresentoSection() {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-customgray">
+              <h2 className="text-3xl md:text-5xl font-bold text-customgray">
                 {title}
               </h2>
               
               {subtitle && (
-                <p className="mt-3 text-xl text-gray-600 italic">
+                <p className="mt-3 text-xl md:text-2xl text-gray-600 italic font-light">
                   {subtitle}
                 </p>
               )}
 
-              <div className="mt-4 flex flex-wrap gap-3">
-                {chips.map((chip) => (
-                  <Chip key={chip} color="primary" variant="flat" className="bg-primary/90 text-white font-semibold">
-                    {chip}
-                  </Chip>
+              <div className="mt-6 flex flex-wrap gap-3">
+                {chips.map((chip, idx) => (
+                  <motion.div
+                    key={chip}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                  >
+                    <Chip 
+                      color="primary" 
+                      variant="flat" 
+                      className="bg-gradient-to-r from-primary to-[#0d4746] text-white font-semibold px-4 py-5 text-base"
+                      size="lg"
+                    >
+                      {chip}
+                    </Chip>
+                  </motion.div>
                 ))}
               </div>
 
-              <div className="mt-6 space-y-4 text-black leading-relaxed text-base" itemProp="description">
-                {paragraphNodes.map((node, idx) => (
-                  <p key={`p-${idx}`}>{node}</p>
-                ))}
-              </div>
-              <div className="mt-6 space-y-6" role="list">
-                {items.map((item) => (
-                  <IconBoxCard
+              {/* Glassmorphism Quote Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="mt-8"
+              >
+                <Card className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl" shadow="lg">
+                  <CardBody className="p-6 md:p-8">
+                    <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg" itemProp="description">
+                      {paragraphNodes.map((node, idx) => (
+                        <p key={`p-${idx}`}>{node}</p>
+                      ))}
+                      
+                      {/* Párrafo de vulnerabilidad agregado */}
+                      <div className="mt-6 pt-6 border-t-2 border-primary/10">
+                        <p className="text-gray-600 italic">
+                          No siempre tuve esto claro. Durante años me enfoqué solo en el código, en la arquitectura perfecta, en los frameworks de moda... hasta que <strong className="text-primary not-italic">el burnout me golpeó</strong>. A los 35 años me di cuenta: había olvidado por qué comencé. Ese momento de quiebre me llevó a estudiar coaching, agilidad, liderazgo... no para "agregar skills", sino para <strong className="text-primary not-italic">reconectarme con el lado humano de la tech</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              {/* Items con hover mejorado */}
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={staggerContainer}
+                className="mt-8 space-y-4"
+                role="list"
+              >
+                {items.map((item, idx) => (
+                  <motion.div
                     key={item.title}
-                    title={item.title}
-                    description={item.description}
-                    Icon={item.iconKey ? IconComponentMap[item.iconKey as IconKey] : undefined}
-                    headingAs="h3"
-                  />
+                    variants={fadeInUp}
+                    whileHover={{ x: 10, scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <IconBoxCard
+                      title={item.title}
+                      description={item.description}
+                      Icon={item.iconKey ? IconComponentMap[item.iconKey as IconKey] : undefined}
+                      headingAs="h3"
+                    />
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </motion.div>
 
-            {/* Imagen de perfil */}
+            {/* Imagen de perfil con efecto parallax sutil */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -117,15 +231,40 @@ export function MePresentoSection() {
               variants={fadeInUp}
               className="relative"
             >
-              <div className="relative w-full max-w-md md:max-w-lg mx-auto">
-                <Image
-                  src="/images/image2.png"
-                  alt="Foto de Hugo Casanova, mentor y coach en tecnología"
-                  width={623}
-                  height={563}
-                  className="object-cover w-full h-auto"
-                />
-              </div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+                className="relative w-full max-w-md md:max-w-lg mx-auto"
+              >
+                {/* Efecto glow detrás de la imagen */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-brand/20 blur-3xl rounded-full transform scale-90" />
+                
+                <div className="relative">
+                  <Image
+                    src="/images/image2.png"
+                    alt="Foto de Hugo Casanova, mentor y coach en tecnología"
+                    width={623}
+                    height={563}
+                    className="object-cover w-full h-auto rounded-2xl shadow-2xl relative z-10"
+                  />
+                  
+                  {/* Badge flotante */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5, type: "spring" }}
+                    className="absolute -bottom-6 -right-6 z-20"
+                  >
+                    <Card className="bg-gradient-to-br from-brand to-yellow-400 shadow-2xl" shadow="lg">
+                      <CardBody className="p-4 text-center">
+                        <p className="text-3xl font-bold text-customgray">🎯</p>
+                        <p className="text-sm font-bold text-customgray mt-1">Coach ICF</p>
+                      </CardBody>
+                    </Card>
+                  </motion.div>
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

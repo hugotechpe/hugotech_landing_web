@@ -12,19 +12,25 @@ const config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#1D6362",
+          DEFAULT: "#2E6B6B", // Verde bosque profundo - sabiduría y experiencia
         },
         secondary: {
-          DEFAULT: "#EEF8F2",
+          DEFAULT: "#F5F9F7", // Verde menta muy suave - calma y claridad
         },
         brand: {
-          DEFAULT: "#F6CC76",
+          DEFAULT: "#C9A167", // Bronce envejecido - madurez y calidez
+        },
+        accent: {
+          DEFAULT: "#7FADA9", // Verde agua sereno - calma y guía
+        },
+        sage: {
+          DEFAULT: "#A8C5B8", // Salvia - quotes y highlights sutiles
         },
         dark: {
           DEFAULT: "#1E1E1E",
         },
         customgray: {
-          DEFAULT: "#333333",
+          DEFAULT: "#2B2B2B", // Más profundo sin ser negro - profesionalismo
         },
       },
       maxWidth: {
