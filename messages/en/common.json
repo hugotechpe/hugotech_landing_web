@@ -525,6 +525,49 @@
           "companies": "Programs for companies"
         },
         "quote": "If one person finds their purpose thanks to this conversation, it will all have been worth it."
+      },
+      "stats": {
+        "title": "The Impact in Numbers",
+        "subtitle": "Each number represents transformed lives, strengthened teams, discovered purposes.",
+        "items": [
+          {
+            "icon": "📅",
+            "end": 18,
+            "suffix": "+ years",
+            "label": "In technology and leadership",
+            "description": "Innovating, failing and learning in tech"
+          },
+          {
+            "icon": "🌟",
+            "end": 200,
+            "prefix": "+",
+            "label": "Teams and talents",
+            "description": "Who taught me as much as I taught them"
+          },
+          {
+            "icon": "🎓",
+            "end": 31,
+            "suffix": "+",
+            "label": "Professional certifications",
+            "description": "Tools to serve better"
+          },
+          {
+            "icon": "🌱",
+            "end": 0,
+            "suffix": "∞",
+            "label": "Eternal learner",
+            "description": "Of the human being and life"
+          }
+        ]
+      },
+      "philosophy": {
+        "title": "What guides my work",
+        "quote": "First know yourself. Then build with meaning.",
+        "description": "I learned that first comes <strong>self-knowledge</strong> (who I am), then <strong>purpose</strong> (why I do it), and finally <strong>results</strong> come as a natural consequence.",
+        "footer": "Success without inner clarity becomes fragile over time."
+      },
+      "certifications_section": {
+        "title": "Education and Certifications"
       }
     }
   },

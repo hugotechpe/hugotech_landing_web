@@ -259,45 +259,15 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6 leading-tight">
-              El Impacto en Números
+              {t("stats.title")}
             </h2>
             <p className="text-lg md:text-xl text-white/80 leading-[1.8] tracking-wide">
-              Cada número representa vidas transformadas, equipos fortalecidos,
-              propósitos descubiertos.
+              {t("stats.subtitle")}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                end: 18,
-                suffix: "+ años",
-                label: "En tecnología y liderazgo",
-                icon: "📅",
-                description: "Innovando, fallando y aprendiendo en tech",
-              },
-              {
-                end: 200,
-                prefix: "+",
-                label: "Equipos y talentos",
-                icon: "🌟",
-                description: "Que me enseñaron tanto como yo a ellos",
-              },
-              {
-                end: 31,
-                suffix: "+",
-                label: "Certificaciones profesionales",
-                icon: "🎓",
-                description: "Herramientas para servir mejor",
-              },
-              {
-                end: 0,
-                suffix: "∞",
-                label: "Aprendiz eterno",
-                icon: "🌱",
-                description: "Del ser humano y la vida",
-              },
-            ].map((stat, index) => (
+            {(messages.Sections?.About?.stats?.items || []).map((stat: any, index: number) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -344,7 +314,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold font-heading text-customgray mb-12 text-center leading-tight">
-              Lo que guía mi trabajo
+              {t("philosophy.title")}
             </h2>
 
             <div className="relative">
@@ -354,26 +324,14 @@ export default function AboutPage() {
                   <div className="text-center">
                     <div className="text-6xl mb-6">🌟</div>
                     <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold font-quote text-transparent bg-clip-text bg-gradient-to-r from-primary to-brand mb-8 italic leading-tight">
-                      &ldquo;Primero conocerse. Luego construir con sentido.&rdquo;
+                      &ldquo;{t("philosophy.quote")}&rdquo;
                     </blockquote>
-                    <p className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide">
-                      Aprendí que primero viene el{" "}
-                      <strong className="text-primary font-sans font-semibold">
-                        autoconocimiento
-                      </strong>{" "}
-                      (quién soy), luego el{" "}
-                      <strong className="text-brand font-sans font-semibold">
-                        propósito
-                      </strong>{" "}
-                      (para qué lo hago), y finalmente los{" "}
-                      <strong className="text-primary font-sans font-semibold">
-                        resultados
-                      </strong>{" "}
-                      llegan como consecuencia natural.
-                    </p>
+                    <p
+                      dangerouslySetInnerHTML={{ __html: t.raw("philosophy.description") }}
+                      className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide"
+                    />
                     <p className="text-base md:text-lg text-gray-600 leading-[1.9] tracking-wide mt-6 italic">
-                      El éxito sin claridad interna se vuelve frágil con el
-                      tiempo.
+                      {t("philosophy.footer")}
                     </p>
                   </div>
                 </CardBody>
@@ -392,7 +350,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            Formación y Certificaciones
+            {t("certifications_section.title")}
           </motion.h2>
 
           <div className="max-w-6xl mx-auto">
@@ -1641,7 +1599,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            A dónde voy (y por qué)
+            {t("mission.title")} (y por qué)
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -1657,25 +1615,12 @@ export default function AboutPage() {
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🎯</div>
                   <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">
-                    Lo que hago hoy
+                    {t("mission.title")}
                   </h3>
-                  <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
-                    Acompaño a profesionales tech en su{" "}
-                    <strong className="text-primary font-sans font-semibold">
-                      transformación personal y profesional
-                    </strong>
-                    . Ofrezco{" "}
-                    <strong className="text-customgray font-sans font-semibold">
-                      sesiones 1-a-1 100% gratuitas
-                    </strong>{" "}
-                    para quien las necesite, y programas empresariales que
-                    transforman equipos con{" "}
-                    <strong className="text-primary font-sans font-semibold">
-                      agilidad, innovación y mentalidad de crecimiento
-                    </strong>
-                    . Del autoconocimiento al liderazgo consciente, del
-                    propósito a la acción con impacto.
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: t.raw("mission.content") }}
+                    className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide"
+                  />
                 </CardBody>
               </Card>
             </motion.div>
@@ -1692,22 +1637,12 @@ export default function AboutPage() {
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🌟</div>
                   <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">
-                    A dónde voy
+                    {t("vision.title")}
                   </h3>
-                  <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
-                    Quiero ser referente en{" "}
-                    <strong className="text-brand font-sans font-semibold">
-                      transformación humana en tech latinoamericano
-                    </strong>
-                    . Crear una comunidad de líderes conscientes que lideren con
-                    empatía, construyan productos con propósito, y transformen
-                    la industria desde
-                    <strong className="text-customgray font-sans font-semibold">
-                      {" "}
-                      la innovación con alma
-                    </strong>
-                    .
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: t.raw("vision.content") }}
+                    className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide"
+                  />
                 </CardBody>
               </Card>
             </motion.div>
@@ -1724,43 +1659,22 @@ export default function AboutPage() {
               <CardBody className="p-10">
                 <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-8 text-center flex items-center justify-center">
                   <span className="text-5xl mr-4">💎</span>
-                  Los 4 pilares que me sostienen
+                  {t("values.title")}
                 </h3>
                 <div className="grid md:grid-cols-4 gap-6">
-                  {[
-                    {
-                      icon: "🤝",
-                      title: "Humanidad",
-                      desc: "Tech al servicio de personas, no al revés",
-                    },
-                    {
-                      icon: "✨",
-                      title: "Propósito",
-                      desc: "Sin por qué, no hay cómo que valga",
-                    },
-                    {
-                      icon: "🌱",
-                      title: "Crecimiento",
-                      desc: "Evolución consciente, no éxito vacío",
-                    },
-                    {
-                      icon: "💪",
-                      title: "Excelencia",
-                      desc: "Alto rendimiento con alma, no solo métricas",
-                    },
-                  ].map((value, index) => (
+                  {(messages.Sections?.About?.values?.items || []).map((value: any, index: number) => (
                     <motion.div
                       key={index}
                       className="text-center"
                       transition={{ duration: 0.2 }}
                       whileHover={{ scale: 1.1, y: -5 }}
                     >
-                      <div className="text-5xl mb-3">{value.icon}</div>
+                      <div className="text-5xl mb-3">{["🤝", "✨", "🌱", "💪"][index]}</div>
                       <h4 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                         {value.title}
                       </h4>
                       <p className="text-sm md:text-[15px] text-gray-600">
-                        {value.desc}
+                        {value.description}
                       </p>
                     </motion.div>
                   ))}
@@ -1786,19 +1700,15 @@ export default function AboutPage() {
           >
             <div className="text-6xl mb-8">🚀</div>
             <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-heading mb-6 leading-tight">
-              ¿Listo para construir con claridad?
+              {t("cta.title")}
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-3xl mx-auto leading-[2] tracking-wide">
-              No esperes años para hacer las preguntas importantes.
+              {t("cta.subtitle")}
             </p>
-            <p className="text-base md:text-lg lg:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-[1.9]">
-              Agenda tu sesión gratuita. Conversemos con honestidad. Sin agendas
-              ocultas, sin discursos ensayados.{" "}
-              <strong>
-                Solo tú, tus preguntas, y un espacio seguro para explorarlas
-              </strong>
-              .
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw("cta.description") }}
+              className="text-base md:text-lg lg:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-[1.9]"
+            />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 as={Link}
@@ -1806,7 +1716,7 @@ export default function AboutPage() {
                 href="/#cita"
                 size="lg"
               >
-                Agenda tu sesión gratuita →
+                {t("cta.buttons.session")}
               </Button>
               <Button
                 as={Link}
@@ -1815,12 +1725,11 @@ export default function AboutPage() {
                 size="lg"
                 variant="bordered"
               >
-                Programas para empresas
+                {t("cta.buttons.companies")}
               </Button>
             </div>
             <p className="mt-10 text-white/70 font-quote italic text-base md:text-lg max-w-2xl mx-auto leading-[1.9]">
-              &ldquo;Si una sola persona encuentra su propósito gracias a esta
-              conversación, todo habrá valido la pena.&rdquo;
+              &ldquo;{t("cta.quote")}&rdquo;
             </p>
           </motion.div>
         </div>

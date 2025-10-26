@@ -527,6 +527,49 @@
           "companies": "Programas para empresas"
         },
         "quote": "Si una sola persona encuentra su propósito gracias a esta conversación, todo habrá valido la pena."
+      },
+      "stats": {
+        "title": "El Impacto en Números",
+        "subtitle": "Cada número representa vidas transformadas, equipos fortalecidos, propósitos descubiertos.",
+        "items": [
+          {
+            "icon": "📅",
+            "end": 18,
+            "suffix": "+ años",
+            "label": "En tecnología y liderazgo",
+            "description": "Innovando, fallando y aprendiendo en tech"
+          },
+          {
+            "icon": "🌟",
+            "end": 200,
+            "prefix": "+",
+            "label": "Equipos y talentos",
+            "description": "Que me enseñaron tanto como yo a ellos"
+          },
+          {
+            "icon": "🎓",
+            "end": 31,
+            "suffix": "+",
+            "label": "Certificaciones profesionales",
+            "description": "Herramientas para servir mejor"
+          },
+          {
+            "icon": "🌱",
+            "end": 0,
+            "suffix": "∞",
+            "label": "Aprendiz eterno",
+            "description": "Del ser humano y la vida"
+          }
+        ]
+      },
+      "philosophy": {
+        "title": "Lo que guía mi trabajo",
+        "quote": "Primero conocerse. Luego construir con sentido.",
+        "description": "Aprendí que primero viene el <strong>autoconocimiento</strong> (quién soy), luego el <strong>propósito</strong> (para qué lo hago), y finalmente los <strong>resultados</strong> llegan como consecuencia natural.",
+        "footer": "El éxito sin claridad interna se vuelve frágil con el tiempo."
+      },
+      "certifications_section": {
+        "title": "Formación y Certificaciones"
       }
     }
   },
