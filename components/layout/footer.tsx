@@ -104,7 +104,13 @@ const Footer: React.FC = () => {
 
         {/* Barra inferior */}
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-white/20 pt-6">
-          <p className="text-white/80 text-xs sm:text-sm text-center md:text-left">{copyright}</p>
+          <div className="flex-1 text-center md:text-left">
+            <p className="text-white/80 text-xs sm:text-sm">{copyright}</p>
+            {/* Mantra/Propósito */}
+            <p className="mt-3 text-sm md:text-base font-medium text-white/90 italic max-w-2xl">
+              "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma."
+            </p>
+          </div>
           <div className="flex items-center gap-5">
             <Link href="https://facebook.com/" aria-label="Facebook" title="Facebook" className="text-white/50 hover:text-white transition-colors">
               <FacebookIcon className="h-5 w-5" />

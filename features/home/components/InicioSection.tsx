@@ -30,6 +30,20 @@ export function InicioSection() {
               {t("title")}
             </h2>
 
+            {/* Mantra/Propósito Profundo */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="mt-6 relative"
+            >
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
+                <p className="text-lg md:text-xl font-medium text-center bg-gradient-to-r from-brand via-white to-brand bg-clip-text text-transparent leading-relaxed">
+                  Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
+                </p>
+              </div>
+            </motion.div>
+
             <div className="mt-6 space-y-4 text-white leading-relaxed text-xl">
               <p>
                 {t.rich("paragraphs.p1", {

@@ -156,10 +156,10 @@ export default function AboutPage() {
               <h2 className="text-4xl md:text-6xl font-bold text-customgray mb-8">
                 Mi Propósito
               </h2>
-              <div className="relative inline-block">
+              <div className="relative inline-block mb-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-brand blur-3xl opacity-20" />
-                <p className="relative text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
-                  Transformar desde el ser, construir desde el propósito, liderar con el alma
+                <p className="relative text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
+                  Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
                 </p>
               </div>
             </div>
