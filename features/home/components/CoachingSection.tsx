@@ -66,6 +66,7 @@ export function CoachingSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="relative z-20"
                 >
                   <Image
                     src="/images/image8.png"
@@ -82,6 +83,7 @@ export function CoachingSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, type: "spring" }}
                   whileHover={{ scale: 1.1, rotate: -5 }}
+                  className="relative z-20"
                 >
                   <Image
                     src="/images/image7.png"
