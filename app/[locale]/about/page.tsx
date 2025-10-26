@@ -890,6 +890,211 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mi Evolución Profesional */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto max-w-1400 px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-5xl mx-auto"
+          >
+            <motion.h2 
+              variants={fadeIn}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 text-center leading-tight"
+            >
+              18+ años transformándome (y transformando)
+            </motion.h2>
+            <motion.p 
+              variants={fadeIn}
+              className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed"
+            >
+              De escribir mi primera línea de código a liderar transformaciones culturales en equipos de alto rendimiento
+            </motion.p>
+
+            <div className="space-y-8">
+              {/* Backend Developer */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300" shadow="md">
+                  <CardBody className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <span className="text-3xl">💻</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Backend Developer → El amor por la arquitectura
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Empecé con <strong className="text-blue-600">PHP, MySQL, arquitecturas MVC</strong>. Construía sistemas desde cero: 
+                          plataformas de e-commerce, ERPs, sistemas de pasajes para transporte. <strong className="text-customgray">Aprendí 
+                          que el código limpio no es solo sintaxis, es empatía con quien viene después</strong>.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-blue-100 text-blue-700">PHP</Chip>
+                          <Chip size="sm" variant="flat" className="bg-blue-100 text-blue-700">MySQL</Chip>
+                          <Chip size="sm" variant="flat" className="bg-blue-100 text-blue-700">APIs REST</Chip>
+                          <Chip size="sm" variant="flat" className="bg-blue-100 text-blue-700">Arquitectura de Software</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              {/* Frontend Developer */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-purple-500 hover:shadow-xl transition-all duration-300" shadow="md">
+                  <CardBody className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <span className="text-3xl">🎨</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Frontend Developer → La experiencia importa
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Descubrí que <strong className="text-purple-600">la interfaz es donde el usuario siente el producto</strong>. 
+                          JavaScript, React, animaciones, performance, accesibilidad. <strong className="text-customgray">No bastaba 
+                          con que funcionara, tenía que sentirse bien</strong>. Ahí aprendí que la tecnología sirve a las personas, no al revés.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">JavaScript</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">React</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">UX/UI</Chip>
+                          <Chip size="sm" variant="flat" className="bg-purple-100 text-purple-700">Performance</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              {/* Full Stack Developer */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-orange-500 hover:shadow-xl transition-all duration-300" shadow="md">
+                  <CardBody className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <span className="text-3xl">🔧</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Full Stack Developer → Ver el panorama completo
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Junté ambos mundos: <strong className="text-orange-600">arquitectura backend + experiencia frontend</strong>. 
+                          Ahora podía ver el producto completo, entender trade-offs, tomar decisiones técnicas pensando en el negocio. 
+                          <strong className="text-customgray">Ser full stack me enseñó a conectar puntos que otros no ven</strong>.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Full Stack</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Cloud (AWS, Azure)</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">DevOps</Chip>
+                          <Chip size="sm" variant="flat" className="bg-orange-100 text-orange-700">Arquitectura Cloud</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              {/* Tech Lead / Product Owner */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-green-500 hover:shadow-xl transition-all duration-300" shadow="md">
+                  <CardBody className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <span className="text-3xl">🚀</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Tech Lead & Product Owner → El código no es suficiente
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Lideré equipos, definí roadmaps, negocié con stakeholders. Pero aquí descubrí la verdad: 
+                          <strong className="text-green-600">los mejores productos nacen de equipos alineados y motivados</strong>. 
+                          No bastaba el código perfecto si <strong className="text-customgray">las personas no tenían claridad, 
+                          propósito o espacios para crecer</strong>.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-green-100 text-green-700">Product Management</Chip>
+                          <Chip size="sm" variant="flat" className="bg-green-100 text-green-700">Scrum</Chip>
+                          <Chip size="sm" variant="flat" className="bg-green-100 text-green-700">Liderazgo Técnico</Chip>
+                          <Chip size="sm" variant="flat" className="bg-green-100 text-green-700">Agile</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              {/* Estratega & Coach */}
+              <motion.div variants={fadeIn}>
+                <Card className="border-l-4 border-primary hover:shadow-2xl transition-all duration-300" shadow="lg">
+                  <CardBody className="p-8 bg-gradient-to-br from-primary/5 to-brand/5">
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-gradient-to-br from-primary to-brand rounded-2xl flex items-center justify-center shadow-xl">
+                          <span className="text-3xl">✨</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                          Estratega Digital & Agile Coach → Transformar personas y culturas
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
+                          Hoy mi código son <strong className="text-primary">conversaciones que transforman equipos</strong>. 
+                          Mi deployment es <strong className="text-brand">ayudar a líderes a encontrar su voz</strong>. 
+                          Mi mejor arquitectura es <strong className="text-customgray">construir culturas donde las personas 
+                          florecen y el talento se convierte en impacto real</strong>. Ya no programo en JavaScript, pero 
+                          sigo innovando: ahora en el desarrollo humano.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Chip size="sm" variant="flat" className="bg-primary/20 text-primary">Coaching Profesional</Chip>
+                          <Chip size="sm" variant="flat" className="bg-primary/20 text-primary">Transformación Digital</Chip>
+                          <Chip size="sm" variant="flat" className="bg-primary/20 text-primary">Cultura Organizacional</Chip>
+                          <Chip size="sm" variant="flat" className="bg-primary/20 text-primary">Liderazgo Consciente</Chip>
+                          <Chip size="sm" variant="flat" className="bg-primary/20 text-primary">Innovación</Chip>
+                        </div>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            </div>
+
+            {/* Quote de cierre */}
+            <motion.div 
+              variants={fadeIn}
+              className="mt-16 text-center"
+            >
+              <Card className="bg-gradient-to-br from-gray-900 to-customgray border-2 border-primary/30" shadow="xl">
+                <CardBody className="p-12">
+                  <p className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic">
+                    "Del backend al liderazgo consciente. De escribir código a escribir historias. 
+                    <strong className="text-primary font-sans not-italic"> Sigo siendo innovador, solo cambió el lenguaje</strong>."
+                  </p>
+                  <p className="text-base md:text-lg text-white/70 mt-6 font-body">
+                    — Hugo Casanova, 18+ años evolucionando
+                  </p>
+                </CardBody>
+              </Card>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Misión y Visión con 3D Hover */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto max-w-1400 px-6">
