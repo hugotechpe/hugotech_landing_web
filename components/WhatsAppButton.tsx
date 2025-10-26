@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { trackWhatsAppClick } from "@/lib/gtm";
+import { useTranslations } from "next-intl";
 
 interface WhatsAppButtonProps {
   phoneNumber?: string;
@@ -16,6 +17,7 @@ export function WhatsAppButton({
   message = "Hola Hugo, me gustaría agendar una sesión de mentoring",
 }: WhatsAppButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const t = useTranslations("WhatsAppButton");
 
   useEffect(() => {
     // Mostrar el botón después de 2 segundos de scroll
@@ -78,7 +80,7 @@ export function WhatsAppButton({
             className="absolute right-20 top-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg shadow-lg whitespace-nowrap hidden md:block"
           >
             <p className="text-sm font-semibold text-gray-800">
-              ¿Necesitas ayuda? Escríbeme
+              {t("message")}
             </p>
             <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 w-2 h-2 bg-white"></div>
           </motion.div>

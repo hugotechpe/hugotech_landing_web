@@ -88,7 +88,15 @@
         "text": "That every person who walks with me not only grows professionally, but becomes someone who inspires genuine change in their environment. Build a more human, conscious and purposeful tech community."
       },
       "bottom": {
-        "copyright": "© 2025 All rights reserved by HugoTech"
+        "copyright": "© 2025 All rights reserved by HugoTech",
+        "mantra": "Be authentic, inspire young tech talents and build with faith a legacy with soul."
+      },
+      "contact": {
+        "title": "📞 Contact me",
+        "whatsappTitle": "Send WhatsApp to Hugo",
+        "whatsappLabel": "WhatsApp",
+        "emailTitle": "Send email to Hugo",
+        "emailLabel": "Email"
       }
     },
     "Pilares": {
@@ -508,5 +516,8 @@
         "quote": "If one person finds their purpose thanks to this conversation, it will all have been worth it."
       }
     }
+  },
+  "WhatsAppButton": {
+    "message": "Need help? Write me"
   }
 }

@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
           {/* Información de Contacto Directo */}
           <section aria-labelledby="footer-contact">
             <h2 id="footer-contact" className="text-lg font-bold mb-4">
-              📞 Contáctame
+              {t("contact.title")}
             </h2>
             <div className="space-y-4">
               {/* WhatsApp */}
@@ -63,13 +63,13 @@ const Footer: React.FC = () => {
                 href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión"
                 isExternal
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
-                title="Enviar WhatsApp a Hugo"
+                title={t("contact.whatsappTitle")}
               >
                 <div className="bg-green-500 p-2 rounded-full group-hover:scale-110 transition-transform">
                   <WhatsAppIcon className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-white">WhatsApp</p>
+                  <p className="font-semibold text-white">{t("contact.whatsappLabel")}</p>
                   <p className="text-sm">+51 946 483 010</p>
                 </div>
               </Link>
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
               <Link
                 href="mailto:hola@hugotech.pe"
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
-                title="Enviar email a Hugo"
+                title={t("contact.emailTitle")}
               >
                 <div className="bg-brand p-2 rounded-full group-hover:scale-110 transition-transform">
                   <svg
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-white">Email</p>
+                  <p className="font-semibold text-white">{t("contact.emailLabel")}</p>
                   <p className="text-sm">hola@hugotech.pe</p>
                 </div>
               </Link>
@@ -192,8 +192,7 @@ const Footer: React.FC = () => {
             <p className="text-white/80 text-xs sm:text-sm">{copyright}</p>
             {/* Mantra/Propósito */}
             <p className="mt-3 text-sm md:text-base font-medium text-white/90 italic max-w-2xl">
-              &ldquo;Ser auténtico, inspirar a jóvenes talentos tech y construir con
-              fe un legado con alma.&rdquo;
+              &ldquo;{t("bottom.mantra")}&rdquo;
             </p>
           </div>
           <div className="flex items-center gap-5">

@@ -88,7 +88,15 @@
         "text": "Que cada persona que camina conmigo no solo crezca profesionalmente, sino que se convierta en alguien que inspira cambio genuino en su entorno. Construir una comunidad tech más humana, consciente y con propósito."
       },
       "bottom": {
-        "copyright": "© 2025 HugoTech - Transformando desde el ser, construyendo desde el propósito"
+        "copyright": "© 2025 HugoTech - Transformando desde el ser, construyendo desde el propósito",
+        "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma."
+      },
+      "contact": {
+        "title": "📞 Contáctame",
+        "whatsappTitle": "Enviar WhatsApp a Hugo",
+        "whatsappLabel": "WhatsApp",
+        "emailTitle": "Enviar email a Hugo",
+        "emailLabel": "Email"
       }
     },
     "Pilares": {
@@ -510,5 +518,8 @@
         "quote": "Si una sola persona encuentra su propósito gracias a esta conversación, todo habrá valido la pena."
       }
     }
+  },
+  "WhatsAppButton": {
+    "message": "¿Necesitas ayuda? Escríbeme"
   }
 }
