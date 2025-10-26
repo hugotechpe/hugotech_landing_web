@@ -604,496 +604,69 @@ export default function AboutPage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 text-center leading-tight"
               variants={fadeIn}
             >
-              18+ años transformándome (y transformando)
+              {t("evolution.title")}
             </motion.h2>
             <motion.p
               className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed"
               variants={fadeIn}
             >
-              De escribir mi primera línea de código a liderar transformaciones
-              culturales en equipos de alto rendimiento
+              {t("evolution.subtitle")}
             </motion.p>
 
             <div className="space-y-8">
-              {/* Backend Developer */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300"
-                  shadow="md"
-                >
-                  <CardBody className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <span className="text-3xl">💻</span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Backend Developer → El amor por la arquitectura
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Empecé con{" "}
-                          <strong className="text-blue-600">
-                            PHP, MySQL, arquitecturas MVC
-                          </strong>
-                          . Construía sistemas desde cero: plataformas de
-                          e-commerce, ERPs, sistemas de pasajes para transporte.{" "}
-                          <strong className="text-customgray">
-                            Aprendí que el código limpio no es solo sintaxis, es
-                            empatía con quien viene después
-                          </strong>
-                          .
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-blue-100 text-blue-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            PHP
-                          </Chip>
-                          <Chip
-                            className="bg-blue-100 text-blue-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            MySQL
-                          </Chip>
-                          <Chip
-                            className="bg-blue-100 text-blue-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            APIs REST
-                          </Chip>
-                          <Chip
-                            className="bg-blue-100 text-blue-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Arquitectura de Software
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
+              {(messages.Sections?.About?.evolution?.phases || []).map((phase: any, index: number) => {
+                const colors = [
+                  { border: "border-blue-500", gradient: "from-blue-500 to-blue-600", bg: "bg-blue-100", text: "text-blue-700 text-blue-600" },
+                  { border: "border-purple-500", gradient: "from-purple-500 to-purple-600", bg: "bg-purple-100", text: "text-purple-700 text-purple-600" },
+                  { border: "border-orange-500", gradient: "from-orange-500 to-orange-600", bg: "bg-orange-100", text: "text-orange-700 text-orange-600" },
+                  { border: "border-green-500", gradient: "from-green-500 to-green-600", bg: "bg-green-100", text: "text-green-700 text-green-600" },
+                  { border: "border-indigo-500", gradient: "from-indigo-500 to-indigo-600", bg: "bg-indigo-100", text: "text-indigo-700 text-indigo-600" },
+                  { border: "border-primary", gradient: "from-primary to-brand", bg: "bg-primary/20", text: "text-primary" }
+                ];
+                const color = colors[index] || colors[0];
+                const icons = ["💻", "🎨", "🔧", "🚀", "📊", "✨"];
+                const isLast = index === 5; // Último elemento (Estratega & Coach)
 
-              {/* Frontend Developer */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-purple-500 hover:shadow-xl transition-all duration-300"
-                  shadow="md"
-                >
-                  <CardBody className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <span className="text-3xl">🎨</span>
+                return (
+                  <motion.div key={index} variants={fadeIn}>
+                    <Card
+                      className={`border-l-4 ${color.border} hover:shadow-xl transition-all duration-300 ${isLast ? "bg-gradient-to-br from-primary/5 to-brand/5" : ""}`}
+                      shadow={isLast ? "lg" : "md"}
+                    >
+                      <CardBody className="p-8">
+                        <div className="flex items-start gap-6">
+                          <div className="flex-shrink-0">
+                            <div className={`w-16 h-16 bg-gradient-to-br ${color.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
+                              <span className="text-3xl">{icons[index]}</span>
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                              {phase.title}
+                            </h3>
+                            <p
+                              dangerouslySetInnerHTML={{ __html: phase.description }}
+                              className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4"
+                            />
+                            <div className="flex flex-wrap gap-2">
+                              {phase.chips.map((chip: string, chipIndex: number) => (
+                                <Chip
+                                  key={chipIndex}
+                                  className={`${color.bg} ${color.text.split(" ")[0]}`}
+                                  size="sm"
+                                  variant="flat"
+                                >
+                                  {chip}
+                                </Chip>
+                              ))}
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Frontend Developer → La experiencia importa (y me
-                          apasiona)
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Descubrí que{" "}
-                          <strong className="text-purple-600">
-                            la interfaz es donde el usuario siente el producto
-                          </strong>
-                          . JavaScript, React, animaciones, performance,
-                          accesibilidad.{" "}
-                          <strong className="text-customgray">
-                            No bastaba con que funcionara, tenía que sentirse
-                            bien, fluir, emocionar
-                          </strong>
-                          . El UX se volvió mi obsesión: entender cada clic,
-                          cada microinteracción, cada segundo de carga.{" "}
-                          <strong className="text-purple-600">
-                            Me enamoré de crear experiencias que la gente ama
-                            usar
-                          </strong>
-                          .
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            JavaScript
-                          </Chip>
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            React
-                          </Chip>
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            UX/UI Design
-                          </Chip>
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Performance
-                          </Chip>
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            User Experience
-                          </Chip>
-                          <Chip
-                            className="bg-purple-100 text-purple-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Design Thinking
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
-
-              {/* Full Stack Developer */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-orange-500 hover:shadow-xl transition-all duration-300"
-                  shadow="md"
-                >
-                  <CardBody className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <span className="text-3xl">🔧</span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Full Stack Developer → Ver el panorama completo +
-                          Growth
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Junté ambos mundos:{" "}
-                          <strong className="text-orange-600">
-                            arquitectura backend + experiencia frontend
-                          </strong>
-                          . Ahora podía ver el producto completo, entender
-                          trade-offs, tomar decisiones técnicas pensando en el
-                          negocio. Pero no bastaba con construir bien:{" "}
-                          <strong className="text-customgray">
-                            descubrí mi pasión por el marketing digital y growth
-                          </strong>
-                          . Analytics, conversión, funnels, A/B testing.{" "}
-                          <strong className="text-orange-600">
-                            Cada línea de código era una oportunidad para crecer
-                            el negocio
-                          </strong>
-                          .
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Full Stack
-                          </Chip>
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Cloud (AWS, Azure)
-                          </Chip>
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            DevOps
-                          </Chip>
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Marketing Digital
-                          </Chip>
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Growth Hacking
-                          </Chip>
-                          <Chip
-                            className="bg-orange-100 text-orange-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Analytics
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
-
-              {/* Tech Lead / Product Owner */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-green-500 hover:shadow-xl transition-all duration-300"
-                  shadow="md"
-                >
-                  <CardBody className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <span className="text-3xl">🚀</span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Tech Lead & Product Owner → El código no es suficiente
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Lideré equipos, definí roadmaps, negocié con
-                          stakeholders. Pero aquí descubrí la verdad:
-                          <strong className="text-green-600">
-                            los mejores productos nacen de equipos alineados y
-                            motivados
-                          </strong>
-                          . No bastaba el código perfecto si{" "}
-                          <strong className="text-customgray">
-                            las personas no tenían claridad, propósito o
-                            espacios para crecer
-                          </strong>
-                          .
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-green-100 text-green-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Product Management
-                          </Chip>
-                          <Chip
-                            className="bg-green-100 text-green-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Scrum
-                          </Chip>
-                          <Chip
-                            className="bg-green-100 text-green-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Liderazgo Técnico
-                          </Chip>
-                          <Chip
-                            className="bg-green-100 text-green-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Agile
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
-
-              {/* Country Manager */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-indigo-500 hover:shadow-xl transition-all duration-300"
-                  shadow="md"
-                >
-                  <CardBody className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <span className="text-3xl">📊</span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Country Manager → Cultura Data-Driven y visión
-                          estratégica
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Gestioné operaciones en Perú coordinando{" "}
-                          <strong className="text-indigo-600">
-                            equipos de desarrollo, marketing, call center,
-                            ventas y gestión de talento
-                          </strong>
-                          . Aprendí que el éxito no está solo en el producto,
-                          sino en{" "}
-                          <strong className="text-customgray">
-                            alinear múltiples áreas hacia un objetivo común,
-                            midiendo impacto con KPIs y OKRs
-                          </strong>
-                          . Me obsesioné con{" "}
-                          <strong className="text-indigo-600">
-                            construir una cultura data-driven: cada decisión
-                            respaldada por datos, cada estrategia validada con
-                            métricas
-                          </strong>
-                          . Entendí que las personas son la estrategia más
-                          poderosa, y los datos son su mejor aliado.
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Gestión Comercial
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            KPIs & OKRs
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Data-Driven Culture
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Gestión de Talento
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Estrategia de Negocio
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            ROI & Analytics
-                          </Chip>
-                          <Chip
-                            className="bg-indigo-100 text-indigo-700"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Liderazgo Multifuncional
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
-
-              {/* Estratega & Coach */}
-              <motion.div variants={fadeIn}>
-                <Card
-                  className="border-l-4 border-primary hover:shadow-2xl transition-all duration-300"
-                  shadow="lg"
-                >
-                  <CardBody className="p-8 bg-gradient-to-br from-primary/5 to-brand/5">
-                    <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-primary to-brand rounded-2xl flex items-center justify-center shadow-xl">
-                          <span className="text-3xl">✨</span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                          Estratega Digital & Agile Coach → Transformar personas
-                          y culturas
-                        </h3>
-                        <p className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4">
-                          Hoy mi código son{" "}
-                          <strong className="text-primary">
-                            conversaciones que transforman equipos
-                          </strong>
-                          . Mi deployment es{" "}
-                          <strong className="text-brand">
-                            ayudar a líderes a encontrar su voz
-                          </strong>
-                          . Mi mejor arquitectura es{" "}
-                          <strong className="text-customgray">
-                            construir culturas donde las personas florecen y el
-                            talento se convierte en impacto real
-                          </strong>
-                          . Ya no programo en JavaScript, pero sigo innovando:
-                          ahora en el desarrollo humano.
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <Chip
-                            className="bg-primary/20 text-primary"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Coaching Profesional
-                          </Chip>
-                          <Chip
-                            className="bg-primary/20 text-primary"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Transformación Digital
-                          </Chip>
-                          <Chip
-                            className="bg-primary/20 text-primary"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Cultura Organizacional
-                          </Chip>
-                          <Chip
-                            className="bg-primary/20 text-primary"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Liderazgo Consciente
-                          </Chip>
-                          <Chip
-                            className="bg-primary/20 text-primary"
-                            size="sm"
-                            variant="flat"
-                          >
-                            Innovación
-                          </Chip>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>
+                      </CardBody>
+                    </Card>
+                  </motion.div>
+                );
+              })}
             </div>
 
             {/* Quote de cierre */}
@@ -1103,18 +676,12 @@ export default function AboutPage() {
                 shadow="lg"
               >
                 <CardBody className="p-12">
-                  <p className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic">
-                    &ldquo;Del código backend a liderar países. De gestionar KPIs a
-                    transformar culturas.
-                    <strong className="text-primary font-sans not-italic">
-                      {" "}
-                      Sigo siendo innovador, solo que ahora mi lenguaje son las
-                      personas
-                    </strong>
-                    .&rdquo;
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: t.raw("evolution.quote") }}
+                    className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic"
+                  />
                   <p className="text-base md:text-lg text-white/70 mt-6 font-body">
-                    — Hugo Casanova, 18+ años de evolución continua
+                    — {t("evolution.author")}
                   </p>
                 </CardBody>
               </Card>
