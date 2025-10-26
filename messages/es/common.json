@@ -95,33 +95,33 @@
       "title": "Los 6 pilares de la experiencia HugoTech",
       "items": [
         {
-          "title": "Explora tu propósito y mentalidad tech",
-          "description": "Descubre tu motor interno, redefine tus creencias y conecta con la versión profesional que quieres construir. El cambio empieza dentro: de la claridad personal nace la dirección profesional.",
+          "title": "Autoconocimiento y desarrollo personal",
+          "description": "Trabajamos tu confianza, comunicación efectiva, inteligencia emocional y empatía. Exploramos tus valores, fortalezas y áreas de crecimiento. El cambio empieza dentro: cuando te conoces, tomas mejores decisiones.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Diseña tu mapa de crecimiento",
-          "description": "Creamos juntos una hoja de ruta realista y ambiciosa. Qué aprender, cómo aplicarlo y cómo medir tu evolución sin perder el equilibrio entre propósito y resultados.",
+          "title": "Mentalidad de crecimiento (vs. burnout)",
+          "description": "Dejamos de glorificar el agotamiento. Construimos una carrera tech sostenible con bienestar, propósito claro y balance real. Herramientas anti-burnout, gestión de energía y mentalidad growth aplicadas al día a día.",
           "iconKey": "equipos"
         },
         {
-          "title": "Activa tu liderazgo ágil y consciente",
-          "description": "Desarrolla habilidades para influir positivamente, comunicar con claridad y liderar desde la confianza. Integro prácticas de Management 3.0, facilitación ágil y coaching para inspirar sin imponer.",
+          "title": "Habilidades humanas para tech (soft skills reales)",
+          "description": "Comunicación asertiva, gestión de emociones, vulnerabilidad auténtica (sin ego tóxico), feedback constructivo. Las habilidades técnicas te abren la puerta, las humanas te mantienen y te hacen crecer.",
           "iconKey": "liderazgo"
         },
         {
-          "title": "Fortalece tu cultura personal y colaborativa",
-          "description": "Aprende a construir relaciones de alto valor, donde el feedback, la empatía y la comunicación transparente sean parte del ADN. Equipos fuertes nacen de personas maduras emocional y profesionalmente.",
+          "title": "Estrategia de carrera tech personalizada",
+          "description": "Creamos tu hoja de ruta clara y realista. Qué aprender, cómo aplicarlo, cómo posicionarte. Backend, frontend, QA, PM, DevOps, IA... decidimos juntos según tu perfil y propósito.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Construye una cultura data-driven",
-          "description": "Incorpora la toma de decisiones basada en evidencia y resultados. Analizamos métricas de desempeño, clima, calidad técnica y colaboración para impulsar la mejora continua.",
+          "title": "Liderazgo ágil y equipos de alto rendimiento",
+          "description": "Desarrolla capacidad de influir positivamente, crear seguridad psicológica y construir equipos extraordinarios. Management 3.0, facilitación ágil, coaching aplicado. Lideramos desde la confianza, no desde el miedo.",
           "iconKey": "equipos"
         },
         {
-          "title": "Acelera resultados y rendimiento sostenibles",
-          "description": "Transforma la forma en que tú y tu equipo trabajan: entregas más efectivas, sprints con foco, menos deuda técnica y más innovación. Cuando las personas crecen, los resultados se multiplican.",
+          "title": "Cultura colaborativa y resultados sostenibles",
+          "description": "Transforma tu forma de trabajar: entregas efectivas, innovación colaborativa, menos deuda técnica. Cuando las personas crecen desde el ser, los resultados se multiplican naturalmente.",
           "iconKey": "liderazgo"
         }
       ]
@@ -132,22 +132,22 @@
       "chips": ["18+ años de experiencia", "Coach ICF • Mentor Tech • Líder Ágil"],
       "paragraphs": {
         "p1": "Soy <name>Hugo Casanova</name>. Ingeniero, mentor, coach profesional y creyente de que <b>la tecnología no es el fin, es el medio</b>. Durante 18+ años he acompañado a cientos de talentos en el momento donde la confusión se transforma en claridad, el miedo en acción y el talento en propósito.",
-        "p2": "El burnout es un error de diseño, no una medalla de honor. Te ayudo a <b>alinear tus objetivos profesionales con tu propósito de vida</b>, creando una carrera sostenible en la era de la IA."
+        "p2": "Los desafíos reales en tech no son solo burnout. Vi brillantes desarrolladores luchando con <b>baja confianza, dificultad para comunicar, introversión mal gestionada, control emocional frágil, ego disfrazado de expertise, o simplemente desconectados de su propósito</b>. La verdadera transformación no empieza en el código, <b>empieza en el ser</b>."
       },
       "items": [
         {
-          "title": "IA + Humana: Lo mejor de ambos mundos",
-          "description": "La IA potencia tu eficiencia, pero tu empatía, creatividad y liderazgo son irremplazables. Te preparo para liderar la transformación digital consciente, donde la tecnología sirve al humano, no al revés.",
+          "title": "Autoconocimiento + Habilidades Humanas",
+          "description": "Trabajamos tu confianza, comunicación efectiva, inteligencia emocional y empatía. La IA potencia tu eficiencia técnica, pero tus habilidades humanas son irremplazables. Te preparo para liderar con autenticidad, no con máscaras.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Crecimiento con Propósito (Anti-Burnout)",
-          "description": "El 'hustle culture' está muerto. Construimos juntos una carrera tech sostenible que integre bienestar desde el Día 1. Herramientas de mindfulness, gestión de energía y mentalidad de crecimiento aplicadas al mundo tech.",
+          "title": "De lo Técnico al Ser (Mentalidad de Crecimiento)",
+          "description": "Dejamos de obsesionarnos solo con frameworks y algoritmos. Exploramos tu propósito, valores, fortalezas y áreas de mejora personal. Construimos una carrera sostenible que integre bienestar, claridad y mentalidad anti-burnout desde el Día 1.",
           "iconKey": "equipos"
         },
         {
-          "title": "Liderazgo Ágil y Humano",
-          "description": "El futuro del trabajo es ágil y humano. Preparo líderes que crean seguridad psicológica, que inspiran sin imponer y que construyen equipos de alto rendimiento basados en la confianza, no en el miedo.",
+          "title": "Liderazgo Ágil y Equipos de Alto Rendimiento",
+          "description": "El futuro del trabajo es ágil y humano. Creamos seguridad psicológica, innovación colaborativa y equipos extraordinarios basados en confianza, vulnerabilidad auténtica y empatía real, no en el miedo ni en la soberbia técnica.",
           "iconKey": "liderazgo"
         }
       ]
@@ -166,12 +166,13 @@
       "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
       "mentoriaCard": {
         "title": "Tu Mentoría Tech 1 a 1 💚",
-        "subtitle": "Coaching de propósito + Mentoring tecnológico. Gratis.",
-        "p1": "¿Te sientes estancado en tu primer empleo TI? ¿No sabes qué 'path' tomar (DevOps, AI Engineer, Product Manager)? ¿Síndrome del impostor? <b>No estás solo</b>.",
-        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>coaching de autoconocimiento con mentoring tecnológico</b>. Antes del 'qué' viene el 'por qué'. Descubre tus valores, define tu propósito y supera las barreras mentales que te frenan.",
+        "subtitle": "Coaching de autoconocimiento + Mentoring tecnológico. Gratis.",
+        "p1": "¿Te cuesta comunicar tus ideas en reuniones? ¿Síndrome del impostor? ¿Introversión que te frena? ¿Ego disfrazado de expertise? ¿Estancado sin saber qué camino tomar? <b>No estás solo</b>.",
+        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>desarrollo humano con estrategia tecnológica</b>. Trabajamos tu confianza, comunicación efectiva, inteligencia emocional, propósito y mentalidad de crecimiento. Porque antes del 'qué hacer' viene el 'quién eres'.",
         "resultsTitle": "Lo que lograrás en tus sesiones:",
         "resultsItems": [
           "Claridad sobre tu propósito profesional y próximos pasos en tech.",
+          "Habilidades humanas: confianza, comunicación, inteligencia emocional, empatía.",
           "Hoja de ruta personalizada según tu perfil (backend, frontend, QA, PM, etc.)",
           "Mentalidad de crecimiento y herramientas anti-burnout aplicables al día a día."
         ],
@@ -180,24 +181,24 @@
       },
       "filosofiaCard": {
         "title": "Mi Filosofía 🌱",
-        "subtitle": "Transformar desde el ser, construir desde el propósito y liderar con el alma.",
-        "p1": "Cada conversación es un acto de gratitud. No es caridad, es <b>responsabilidad</b>. Si hoy puedo ayudar a alguien a encontrar su camino, es porque otros hicieron lo mismo por mí.",
-        "p2": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito</b>, sin barreras económicas, sin transacciones frías. Solo conversaciones honestas que transforman.",
+        "subtitle": "Primero el ser, luego el hacer. La transformación real empieza dentro.",
+        "p1": "Cada conversación es un acto de gratitud. No es caridad, es <b>responsabilidad</b>. Si hoy puedo acompañar a alguien en su autoconocimiento y crecimiento, es porque otros hicieron lo mismo por mí cuando más lo necesitaba.",
+        "p2": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito, lo técnico con lo humano</b>, sin barreras económicas, sin transacciones frías. Solo conversaciones honestas que transforman desde el ser.",
         "resultsTitle": "Cómo funciona esto:",
         "resultsItems": [
-          "La verdadera innovación comienza dentro de las personas.",
-          "Primero se transforma el ser, luego el hacer cobra sentido.",
-          "El tener llega como consecuencia natural."
+          "La verdadera innovación comienza dentro de las personas, no en el código.",
+          "Primero se transforma el ser (autoconocimiento, confianza, empatía), luego el hacer cobra sentido.",
+          "Los resultados (equipos de alto rendimiento, agilidad, innovación) llegan como consecuencia natural."
         ],
         "note": "Las sesiones B2B para empresas sí tienen costo, porque requieren estructura, seguimiento y resultados medibles. Pero el corazón de HugoTech siempre será gratuito."
       }
     },
     "Inicio": {
       "chipLabel": "Innovación con Alma • Tech con Propósito",
-      "title": "Tu carrera tech es más que código. Encuentra tu propósito en la era de la IA",
-      "subtitle": "Dejaste de ser un junior que solo escribe código. Eres un arquitecto del futuro. Te ayudo a construirlo con alma.",
+      "title": "Tu carrera tech es más que código. Descubre quién eres más allá del teclado",
+      "subtitle": "No se trata solo de aprender el próximo framework. Se trata de conocerte a ti mismo, conectar con tu propósito y construir con autenticidad.",
       "paragraphs": {
-        "p1": "En <brand>HugoTech</brand>, acompaño a jóvenes talentos tech como tú. Combino <b>mentoring tecnológico de vanguardia con coaching de propósito y autoconocimiento</b>. Gratis. 1 a 1. Sin filtros.",
+        "p1": "En <brand>HugoTech</brand>, acompaño a talentos tech como tú. Combino <b>mentoring tecnológico con coaching de autoconocimiento y desarrollo humano</b>. Trabajamos tu confianza, comunicación, inteligencia emocional, propósito y mentalidad de crecimiento. Gratis. 1 a 1. Sin filtros.",
         "p2": "La IA potencia tu eficiencia, pero tu <b>empatía, creatividad y liderazgo son irremplazables</b>. Te preparo para liderar la transformación digital consciente, evitando el burnout y construyendo una carrera sostenible que te energice cada mañana."
       },
       "ctas": {
