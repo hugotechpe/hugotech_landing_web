@@ -34,60 +34,60 @@ export default function AboutPage() {
       phase: "El Inicio",
       icon: "🌱",
       color: "from-green-400 to-green-600",
-      title: "Raíces en Perú, sueños sin fronteras",
+      title: "Perú, sistemas, y el sueño americano",
       content: [
-        "Nací en Perú con la curiosidad de entender cómo funcionan las cosas.",
-        "Estudié <strong>Ingeniería de Sistemas</strong> creyendo que la tecnología podía cambiar el mundo.",
-        "Trabajé en proyectos desafiantes, aprendí lenguajes, frameworks, arquitecturas... pero algo faltaba.",
-        "Veía equipos talentosos bloqueados no por falta de habilidad técnica, sino por <strong>falta de claridad, confianza y propósito</strong>."
+        "Nací en Perú. Estudié <strong>Ingeniería de Sistemas</strong> porque me fascinaba cómo la tecnología cambiaba el mundo.",
+        "Aprendí Java, .NET, arquitecturas, frameworks... Pensé que dominar el código era suficiente.",
+        "Pero algo no cuadraba: <strong>los mejores developers que conocí estaban rotos por dentro</strong>.",
+        "Vi talento brillante desperdiciado por falta de claridad, burnout silencioso, líderes tóxicos."
       ]
     },
     {
       phase: "El Despertar",
       icon: "💡",
       color: "from-yellow-400 to-orange-500",
-      title: "El mejor código no sirve si quien lo escribe está perdido",
+      title: "Los problemas reales no son bugs",
       content: [
-        "Como líder técnico descubrí que <strong>los problemas más grandes no eran técnicos, eran humanos</strong>.",
-        "Developers brillantes que no sabían comunicar. Product Owners sin visión clara. Equipos sin cohesión.",
-        "Ahí empezó mi verdadero camino: estudiar coaching profesional, liderazgo, agilidad, comunicación...",
-        "Me certifiqué como <strong>Coach Profesional ICF, Management 3.0, Agile Team Facilitation, Scrum, Lean</strong>..."
+        "Como Tech Lead descubrí la verdad incómoda: <strong>el mejor código no sirve si quien lo escribe está perdido</strong>.",
+        "Developers geniales que no sabían comunicar. Product Owners sin visión. Equipos sin alma.",
+        "Ahí empezó mi verdadero camino: estudié coaching, agilidad, facilitación, liderazgo consciente.",
+        "Me certifiqué en <strong>Coaching ICF, Management 3.0, Scrum, Lean</strong>... buscando respuestas fuera del código."
       ]
     },
     {
       phase: "La Caída",
       icon: "🌧️",
       color: "from-gray-400 to-slate-600",
-      title: "El burnout que me salvó",
+      title: "El burnout que me partió (y me salvó)",
       content: [
-        "A los 35 años, <strong>el éxito profesional no me protegió del burnout</strong>. Lideraba equipos pero había perdido mi brújula interna.",
-        "Noches sin dormir. Cuestionándolo todo. Sintiendo que había olvidado <strong>por qué comencé</strong>.",
-        "<strong>Mi crisis fue mi mejor maestra</strong>: me llevó al coaching, a la vulnerabilidad, a lo humano. Descubrí que no estaba solo.",
-        "Muchos líderes tech sufren en silencio. Ese dolor compartido se convirtió en mi llamado: <strong>ayudar a otros a no llegar donde yo llegué</strong>."
+        "<strong>A los 35, colapsé</strong>. Lideraba equipos, ganaba bien, tenía \"éxito\"... pero me sentía vacío.",
+        "Noches sin dormir. Ansiedad constante. Preguntándome: <strong>¿Para qué tanto esfuerzo?</strong>",
+        "Esa crisis fue mi maestra más cruel y generosa. Me llevó al coaching profesional, a la vulnerabilidad, a preguntarme quién era sin el título.",
+        "Descubrí que <strong>no estaba solo</strong>. Miles sufren en silencio. Ese dolor compartido se volvió mi llamado."
       ]
     },
     {
       phase: "La Transformación",
       icon: "🚀",
       color: "from-blue-400 to-indigo-600",
-      title: "De construir software a construir personas",
+      title: "De código a personas",
       content: [
-        "Durante <strong>18+ años</strong> lideré transformaciones digitales en LATAM y EE. UU.",
-        "Pero lo que más me llenó fueron las conversaciones de mentoring.",
-        "Ver a un junior descubrir su potencial. A un líder encontrar su voz. A un equipo construir confianza real.",
-        "Cada vez que alguien decía <em>\"esta conversación cambió mi perspectiva\"</em>, sentía que estaba en el camino correcto."
+        "Trabajé <strong>18+ años</strong> en tech (LATAM, EE.UU.). Lideré transformaciones digitales, equipos ágiles, productos millonarios.",
+        "Pero lo que más me llenó fueron las conversaciones de mentoring a las 11pm con un junior en crisis.",
+        "Ver a alguien <strong>descubrir su propósito</strong> en una sesión de 1 hora valía más que cualquier deploy a producción.",
+        "Cada vez que alguien decía <em>\"esta conversación cambió mi vida\"</em>, sentía que estaba donde debía estar."
       ]
     },
     {
       phase: "El Propósito",
       icon: "✨",
       color: "from-primary to-[#0d4746]",
-      title: "HugoTech: devolver lo que la vida me dio",
+      title: "HugoTech: devolver lo que recibí",
       content: [
-        "HugoTech nació de una pregunta: <strong>¿Cómo ayudar a más personas sin que el dinero sea una barrera?</strong>",
-        "Decidí que las sesiones 1 a 1 serían <strong>gratuitas</strong>. No por marketing, sino por responsabilidad.",
-        "Si hoy puedo guiar a alguien, es porque otros lo hicieron conmigo cuando más lo necesitaba.",
-        "Este espacio es mi forma de honrar ese camino y sembrar semillas para el futuro."
+        "HugoTech nació de una pregunta: <strong>¿Cómo ayudar sin que el dinero sea barrera?</strong>",
+        "Decidí que las sesiones 1 a 1 serían <strong>100% gratuitas</strong>. No por marketing, por responsabilidad.",
+        "Si hoy puedo guiar a alguien, es porque otros me guiaron cuando tocé fondo.",
+        "Este espacio es mi forma de honrar ese camino. <strong>De sembrar hoy lo que quiero cosechar mañana</strong>."
       ]
     }
   ];
@@ -119,11 +119,11 @@ export default function AboutPage() {
                 Mi Historia 🌱
               </Chip>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-8 leading-tight">
-                De ingeniero <span className="text-brand">a guía de transformación</span>
+                Yo también estuve <span className="text-brand">perdido en el éxito</span>
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl mb-12 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto">
-                Cómo un ingeniero peruano descubrió que su verdadero propósito 
-                no estaba en el código, sino en <strong>las personas que lo crean</strong>.
+                Trabajé 18 años en tech. Lideré equipos. Gané bien. 
+                Pero a los 35, <strong>el burnout me preguntó: ¿Y ahora qué?</strong>
               </p>
               <Button
                 as={Link}
@@ -166,26 +166,33 @@ export default function AboutPage() {
           >
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold font-heading text-customgray mb-8 leading-tight">
-                Mi Propósito
+                Lo que aprendí en el suelo
               </h2>
               <div className="relative inline-block mb-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-brand blur-3xl opacity-20" />
                 <p className="relative text-xl md:text-3xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#0d4746] to-brand leading-tight px-4">
-                  Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.
+                  El propósito no se encuentra en LinkedIn. Se descubre cuando te atreves a ser vulnerable.
                 </p>
               </div>
               <div className="max-w-4xl mx-auto mt-8">
                 <p className="text-base md:text-lg text-gray-600 leading-[2] tracking-wide">
-                  <strong className="text-primary">A mis 40 años</strong>, después de caídas, burnouts y noches de cuestionarme todo, encontré mi norte: <strong className="text-customgray">Ser auténtico</strong> (incluso cuando duela), <strong className="text-customgray">inspirar</strong> a quienes están donde yo estuve, y <strong className="text-customgray">construir un legado</strong> que ponga el ALMA por encima del código.
+                  <strong className="text-primary">A mis 40 años</strong>, después de burnouts, noches sin dormir y preguntarme si valía la pena seguir, entendí algo: 
+                  <strong className="text-customgray font-sans font-semibold"> No estaba solo</strong>. Había miles de profesionales tech sintiendo lo mismo. 
+                  Brillantes en código, perdidos en propósito.
+                </p>
+                <p className="text-base md:text-lg text-gray-600 leading-[2] tracking-wide mt-6">
+                  Ahí nació mi norte: <strong className="text-customgray font-sans font-semibold">Ser auténtico</strong> (aunque incomode), 
+                  <strong className="text-customgray font-sans font-semibold"> inspirar a quienes vienen atrás</strong>, y 
+                  <strong className="text-customgray font-sans font-semibold"> construir un legado con alma</strong> donde lo humano importa más que el código.
                 </p>
               </div>
-            </div>
-
-            <Card className="bg-gradient-to-br from-primary/10 via-white to-brand/10 border-2 border-primary/20" shadow="lg">
+            </div>            <Card className="bg-gradient-to-br from-primary/10 via-white to-brand/10 border-2 border-primary/20" shadow="lg">
               <CardBody className="p-10 md:p-16">
                 <p className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide text-center">
-                  Ayudar a profesionales tech a encontrar su camino con <strong className="text-primary">claridad, propósito y humanidad</strong>. 
-                  Porque la mejor tecnología la construyen personas que se conocen a sí mismas.
+                  No quiero que llegues al burnout para descubrir lo que importa. 
+                  <strong className="text-primary font-sans font-semibold"> Hoy acompaño a profesionales tech</strong> a encontrar su camino 
+                  <strong className="text-customgray font-sans font-semibold"> antes del colapso</strong>. 
+                  Porque la mejor tecnología la construyen personas que <strong className="text-brand font-sans font-semibold">se conocen a sí mismas</strong>.
                 </p>
               </CardBody>
             </Card>
@@ -326,8 +333,8 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-5xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-customgray mb-12 text-center">
-              Mi Filosofía de Vida
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-customgray mb-12 text-center leading-tight">
+              Lo que creo (después de romperme)
             </h2>
             
             <div className="relative">
@@ -337,12 +344,15 @@ export default function AboutPage() {
                   <div className="text-center">
                     <div className="text-6xl mb-6">🌟</div>
                     <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold font-quote text-transparent bg-clip-text bg-gradient-to-r from-primary to-brand mb-8 italic leading-tight">
-                      "Transformar desde el ser, construir desde el propósito y liderar con el alma."
+                      "Primero sé quien eres. Luego decide qué construyes."
                     </blockquote>
                     <p className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide">
-                      Creo que primero se transforma el <strong className="text-primary">ser</strong>, 
-                      luego el <strong className="text-brand">hacer</strong> cobra sentido, 
-                      y finalmente el <strong className="text-primary">tener</strong> llega como consecuencia natural.
+                      Aprendí a golpes que primero se transforma el <strong className="text-primary font-sans font-semibold">ser</strong> (autoconocimiento), 
+                      luego el <strong className="text-brand font-sans font-semibold">hacer</strong> cobra sentido (propósito), 
+                      y finalmente el <strong className="text-primary font-sans font-semibold">tener</strong> llega solo (consecuencia natural).
+                    </p>
+                    <p className="text-base md:text-lg text-gray-600 leading-[1.9] tracking-wide mt-6 italic">
+                      El éxito sin autoconocimiento es una bomba de tiempo. Lo sé. La viví.
                     </p>
                   </div>
                 </CardBody>
@@ -556,7 +566,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Misión, Visión y Valores
+            A dónde voy (y por qué)
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -571,12 +581,12 @@ export default function AboutPage() {
               <Card className="h-full bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary hover:shadow-2xl transition-all duration-300">
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🎯</div>
-                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Misión</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Lo que hago hoy</h3>
                   <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
-                    Acompañar a profesionales tech en su <strong className="text-primary font-sans font-semibold">autoconocimiento y crecimiento consciente</strong>, 
-                    transformando equipos y organizaciones desde el ser hacia el hacer. 
-                    Ofrezco sesiones 1-a-1 gratuitas y programas empresariales que integran 
-                    liderazgo ágil, coaching ejecutivo y cultura de innovación humana.
+                    Acompaño a profesionales tech en su <strong className="text-primary font-sans font-semibold">autoconocimiento</strong> 
+                    antes del colapso. Ofrezco <strong className="text-customgray font-sans font-semibold">sesiones 1-a-1 100% gratuitas</strong> 
+                    para quien las necesite, y programas empresariales que transforman equipos desde el ser hacia el hacer. 
+                    Liderazgo ágil, coaching ejecutivo, cultura humana.
                   </p>
                 </CardBody>
               </Card>
@@ -593,12 +603,12 @@ export default function AboutPage() {
               <Card className="h-full bg-gradient-to-br from-brand/10 to-brand/5 border-2 border-brand hover:shadow-2xl transition-all duration-300">
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🌟</div>
-                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Visión</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">A dónde voy</h3>
                   <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
-                    Ser el referente latinoamericano en <strong className="text-brand font-sans font-semibold">transformación humana dentro del mundo tech</strong>. 
+                    Quiero ser referente en <strong className="text-brand font-sans font-semibold">transformación humana en tech latinoamericano</strong>. 
                     Crear una comunidad de líderes conscientes que lideren con empatía, 
-                    construyan productos con propósito y transformen la industria desde 
-                    la innovación con alma.
+                    construyan productos con propósito, y transformen la industria desde 
+                    <strong className="text-customgray font-sans font-semibold"> la innovación con alma</strong>.
                   </p>
                 </CardBody>
               </Card>
@@ -616,14 +626,14 @@ export default function AboutPage() {
               <CardBody className="p-10">
                 <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-8 text-center flex items-center justify-center">
                   <span className="text-5xl mr-4">💎</span>
-                  Valores Fundamentales
+                  Los 4 pilares que me sostienen
                 </h3>
                 <div className="grid md:grid-cols-4 gap-6">
                   {[
-                    { icon: "🤝", title: "Humanidad", desc: "La tecnología al servicio de las personas" },
-                    { icon: "✨", title: "Propósito", desc: "Cada acción con sentido y dirección" },
-                    { icon: "🌱", title: "Crecimiento", desc: "Evolución constante y consciente" },
-                    { icon: "💪", title: "Excelencia", desc: "Alto rendimiento con alma" }
+                    { icon: "🤝", title: "Humanidad", desc: "Tech al servicio de personas, no al revés" },
+                    { icon: "✨", title: "Propósito", desc: "Sin por qué, no hay cómo que valga" },
+                    { icon: "🌱", title: "Crecimiento", desc: "Evolución consciente, no éxito vacío" },
+                    { icon: "💪", title: "Excelencia", desc: "Alto rendimiento con alma, no burnout" }
                   ].map((value, index) => (
                     <motion.div
                       key={index}
@@ -658,14 +668,14 @@ export default function AboutPage() {
           >
             <div className="text-6xl mb-8">🚀</div>
             <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-heading mb-6 leading-tight">
-              ¿Listo para tu propia transformación?
+              ¿Listo para encontrar tu norte?
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-3xl mx-auto leading-[2] tracking-wide">
-              Cada viaje comienza con una conversación honesta.
+              No esperes al burnout para preguntarte qué realmente importa.
             </p>
             <p className="text-base md:text-lg lg:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-[1.9]">
-              Agenda una sesión gratuita y empecemos a construir tu camino con propósito, 
-              claridad y autenticidad.
+              Agenda tu sesión gratuita. Hablemos con honestidad. 
+              Sin scripts corporativos, sin vender humo. <strong>Solo tú, yo, y lo que realmente necesitas escuchar</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -683,11 +693,11 @@ export default function AboutPage() {
                 variant="bordered"
                 className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold transition-all duration-300"
               >
-                Ver servicios para empresas
+                Programas para empresas
               </Button>
             </div>
             <p className="mt-10 text-white/70 font-quote italic text-base md:text-lg max-w-2xl mx-auto leading-[1.9]">
-              "Si logro que una sola persona descubra su propósito, todo habrá valido la pena."
+              "Si una sola persona encuentra su propósito gracias a esta conversación, todo habrá valido la pena."
             </p>
           </motion.div>
         </div>
