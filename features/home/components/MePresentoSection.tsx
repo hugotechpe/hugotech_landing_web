@@ -187,7 +187,7 @@ export function MePresentoSection() {
                       
                       {/* Párrafo de vulnerabilidad agregado */}
                       <div className="mt-8 pt-8 border-t-2 border-primary/10">
-                        <p className="text-gray-600 italic font-quote text-[15px] md:text-[17px] leading-[2.1] tracking-wide">
+                        <p className="text-gray-600 italic font-quote text-lg md:text-xl lg:text-2xl leading-[2] tracking-wide">
                           No siempre tuve esto claro. Durante años me enfoqué solo en el código, en la arquitectura perfecta, en los frameworks de moda... hasta que <strong className="text-primary not-italic font-sans font-semibold">el burnout me golpeó</strong>. A los 35 años me di cuenta: había olvidado por qué comencé. Ese momento de quiebre me llevó a estudiar coaching, agilidad, liderazgo... no para "agregar skills", sino para <strong className="text-primary not-italic font-sans font-semibold">reconectarme con el lado humano de la tech</strong>.
                         </p>
                       </div>
