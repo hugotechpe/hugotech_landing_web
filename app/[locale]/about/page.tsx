@@ -917,7 +917,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Lo que hago hoy</h3>
                   <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
                     Acompaño a profesionales tech en su <strong className="text-primary font-sans font-semibold">transformación personal y profesional</strong>. 
-                    Ofrezco <strong className="text-customgray font-sans font-semibold">sesiones 1-a-1 100% gratuitas</strong> 
+                    Ofrezco <strong className="text-customgray font-sans font-semibold">sesiones 1-a-1 100% gratuitas</strong>{" "}
                     para quien las necesite, y programas empresariales que transforman equipos con <strong className="text-primary font-sans font-semibold">agilidad, 
                     innovación y mentalidad de crecimiento</strong>. Del autoconocimiento al liderazgo consciente, del propósito a la acción con impacto.
                   </p>
