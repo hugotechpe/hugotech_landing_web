@@ -54,6 +54,7 @@ export function InicioSection() {
               <p>
                 {t.rich("paragraphs.p2", {
                   b: (chunks) => <strong>{chunks}</strong>,
+                  brand: (chunks) => <span className="font-semibold text-brand">{chunks}</span>,
                 })}
               </p>
             </div>

@@ -3,7 +3,7 @@ import { defineRouting } from "next-intl/routing";
 export const routing = defineRouting({
   locales: ["es", "en"] as string[],
   defaultLocale: "es",
-  localePrefix: "always", // URLs siempre con /es /en
+  localePrefix: "as-needed", // Solo muestra /en cuando es inglés, español sin prefijo
   // Mapea rutas por idioma (opcional, útil para SEO):
   pathnames: {
     "/": "/",
