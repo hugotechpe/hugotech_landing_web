@@ -291,10 +291,10 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
-              { end: 18, suffix: "+ años", label: "En tecnología y liderazgo", icon: "📅", description: "Innovación, agilidad y transformación digital" },
-              { end: 200, prefix: "+", label: "Talentos guiados", icon: "🌟", description: "Personas que encontraron claridad y propósito" },
-              { end: 31, suffix: "+", label: "Certificaciones profesionales", icon: "🎓", description: "Coaching, agilidad, tech y liderazgo" },
-              { end: 100, suffix: "%", label: "Compromiso con el propósito", icon: "💪", description: "Crecimiento consciente, no solo resultados" }
+              { end: 18, suffix: "+ años", label: "En tecnología y liderazgo", icon: "📅", description: "Innovando, fallando y aprendiendo en tech" },
+              { end: 200, prefix: "+", label: "Equipos y talentos", icon: "🌟", description: "Que me enseñaron tanto como yo a ellos" },
+              { end: 31, suffix: "+", label: "Certificaciones profesionales", icon: "🎓", description: "Herramientas para servir mejor" },
+              { end: 0, suffix: "∞", label: "Aprendiz eterno", icon: "🌱", description: "Del ser humano y la vida" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -307,11 +307,15 @@ export default function AboutPage() {
                   <CardBody className="p-8 text-center">
                     <div className="text-5xl mb-4">{stat.icon}</div>
                     <div className="text-5xl md:text-6xl font-bold text-brand mb-2">
-                      <AnimatedCounter 
-                        end={stat.end} 
-                        prefix={stat.prefix} 
-                        suffix={stat.suffix}
-                      />
+                      {stat.suffix === "∞" ? (
+                        <span>∞</span>
+                      ) : (
+                        <AnimatedCounter 
+                          end={stat.end} 
+                          prefix={stat.prefix} 
+                          suffix={stat.suffix}
+                        />
+                      )}
                     </div>
                     <p className="text-white/90 font-semibold text-lg mb-2">{stat.label}</p>
                     <p className="text-white/70 text-sm leading-relaxed">{stat.description}</p>
