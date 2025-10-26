@@ -158,38 +158,21 @@ export default function EmpresasPage() {
               <CardBody className="p-8 md:p-12">
                 <div className="text-center mb-8">
                   <div className="inline-block bg-primary text-white px-6 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider">
-                    💔 Lo Aprendí en Carne Propia
+                    {t("transformation.personal_learning.badge")}
                   </div>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-customgray mb-6 leading-tight">
-                    No te vendo teoría. Te comparto cicatrices.
+                    {t("transformation.personal_learning.title")}
                   </h3>
                 </div>
                 <div className="max-w-4xl mx-auto space-y-6">
-                  <p className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide">
-                    Lideré equipos brillantes que{" "}
-                    <strong className="text-primary">
-                      colapsaron por falta de claridad
-                    </strong>
-                    . Vi desarrolladores senior renunciar no por salario, sino
-                    por{" "}
-                    <strong className="text-primary">falta de propósito</strong>
-                    .{" "}
-                    <strong className="text-customgray">
-                      Fui ese líder que priorizaba el sprint por encima de las
-                      personas
-                    </strong>
-                    ... hasta que el equipo se desmoronó.
-                  </p>
-                  <p className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide">
-                    Esa experiencia me{" "}
-                    <strong className="text-brand">transformó</strong>. Ahora
-                    ayudo a otros líderes a{" "}
-                    <strong className="text-customgray">
-                      no cometer los mismos errores que yo
-                    </strong>
-                    . Porque sé lo que duele ver un equipo romperse. Y sé lo que
-                    se siente cuando lo reconstruyes desde el alma.
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: t.raw("transformation.personal_learning.paragraph1") }}
+                    className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide"
+                  />
+                  <p
+                    dangerouslySetInnerHTML={{ __html: t.raw("transformation.personal_learning.paragraph2") }}
+                    className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide"
+                  />
                 </div>
               </CardBody>
             </Card>
@@ -203,8 +186,7 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-              🚀 Casos de transformación: de equipos buenos a equipos
-              extraordinarios
+              {t("transformation.cases.title")}
             </h2>
           </motion.div>
 
@@ -217,54 +199,28 @@ export default function EmpresasPage() {
             <Card className="mb-8" shadow="lg">
               <CardBody className="p-8">
                 <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 leading-tight">
-                  Hemos acompañado a equipos tecnológicos que atravesaban
-                  desafíos comunes:
+                  {t("transformation.cases.challenges.title")}
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                        ❌
-                      </span>
-                      <span className="leading-relaxed">
-                        Comunicación fragmentada entre roles técnicos y de
-                        negocio
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                        ❌
-                      </span>
-                      <span className="leading-relaxed">
-                        Falta de enfoque y priorización
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                        ❌
-                      </span>
-                      <span className="leading-relaxed">
-                        Sobrecarga emocional y resistencia al cambio
-                      </span>
-                    </li>
+                    {t.raw("transformation.cases.challenges.list").slice(0, 3).map((challenge: string, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-red-500 mr-3 text-xl flex-shrink-0">
+                          ❌
+                        </span>
+                        <span className="leading-relaxed">{challenge}</span>
+                      </li>
+                    ))}
                   </ul>
                   <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                        ❌
-                      </span>
-                      <span className="leading-relaxed">
-                        Cultura reactiva más que proactiva
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                        ❌
-                      </span>
-                      <span className="leading-relaxed">
-                        Desconexión entre propósito, tarea y resultado
-                      </span>
-                    </li>
+                    {t.raw("transformation.cases.challenges.list").slice(3).map((challenge: string, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-red-500 mr-3 text-xl flex-shrink-0">
+                          ❌
+                        </span>
+                        <span className="leading-relaxed">{challenge}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </CardBody>
@@ -275,51 +231,19 @@ export default function EmpresasPage() {
                 <CardBody className="p-8">
                   <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 flex items-center leading-tight">
                     <span className="mr-3">🔧</span>
-                    Nuestro modelo de intervención
+                    {t("transformation.cases.intervention.title")}
                   </h3>
                   <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-3 text-lg flex-shrink-0">
-                        ✓
-                      </span>
-                      <span className="leading-relaxed">
-                        <strong>
-                          Acompañamiento semanal técnico y cultural:
-                        </strong>{" "}
-                        revisión de código, arquitectura, base de datos,
-                        prácticas ágiles y sincronía de equipo.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-3 text-lg flex-shrink-0">
-                        ✓
-                      </span>
-                      <span className="leading-relaxed">
-                        <strong>Talleres de Cultura y Agilidad:</strong>{" "}
-                        sesiones colectivas para despertar conciencia,
-                        vulnerabilidad y propósito compartido.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-3 text-lg flex-shrink-0">
-                        ✓
-                      </span>
-                      <span className="leading-relaxed">
-                        <strong>Modelo Tuckman aplicado</strong>{" "}
-                        (Forming–Storming–Norming–Performing): medición real de
-                        evolución grupal.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-3 text-lg flex-shrink-0">
-                        ✓
-                      </span>
-                      <span className="leading-relaxed">
-                        <strong>Transformación del SER:</strong> cada integrante
-                        redescubre quién es, qué lo motiva y cómo puede aportar
-                        valor desde su autenticidad.
-                      </span>
-                    </li>
+                    {t.raw("transformation.cases.intervention.items").map((item: any, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-primary mr-3 text-lg flex-shrink-0">
+                          ✓
+                        </span>
+                        <span className="leading-relaxed">
+                          <strong>{item.title}</strong> {item.description}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
                 </CardBody>
               </Card>
@@ -331,44 +255,19 @@ export default function EmpresasPage() {
                 <CardBody className="p-8">
                   <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-6 flex items-center leading-tight">
                     <span className="mr-3">✨</span>
-                    Resultados visibles
+                    {t("transformation.cases.results.title")}
                   </h3>
                   <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
-                    <li className="flex items-start">
-                      <span className="text-brand mr-3 text-xl flex-shrink-0">
-                        →
-                      </span>
-                      <span className="font-semibold leading-relaxed">
-                        Equipos más alineados, conscientes y colaborativos.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-3 text-xl flex-shrink-0">
-                        →
-                      </span>
-                      <span className="font-semibold leading-relaxed">
-                        Líderes técnicos que se comunican desde la empatía y la
-                        claridad.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-3 text-xl flex-shrink-0">
-                        →
-                      </span>
-                      <span className="font-semibold leading-relaxed">
-                        Mayor fluidez en la toma de decisiones y en la ejecución
-                        técnica.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-3 text-xl flex-shrink-0">
-                        →
-                      </span>
-                      <span className="font-semibold leading-relaxed">
-                        Cultura de mejora continua: del &ldquo;hacer por cumplir&rdquo; al
-                        &ldquo;hacer con propósito&rdquo;.
-                      </span>
-                    </li>
+                    {t.raw("transformation.cases.results.items").map((item: string, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-brand mr-3 text-xl flex-shrink-0">
+                          →
+                        </span>
+                        <span className="font-semibold leading-relaxed">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
                 </CardBody>
               </Card>
@@ -388,31 +287,24 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, scale: 1 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-8 leading-tight">
-              🧠 Nuestra filosofía
+              {t("philosophy.title")}
             </h2>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-white/20 mb-8">
               <p className="text-xl md:text-2xl lg:text-3xl font-bold font-quote italic text-brand mb-6 leading-[1.8]">
-                &ldquo;No vendo fórmulas mágicas. Vendo 18 años de caídas, levantadas
-                y aprendizajes dolorosos.&rdquo;
+                {t("philosophy.quote")}
               </p>
-              <p className="text-base md:text-lg text-white/90 leading-[2] tracking-wide">
-                La transformación real{" "}
-                <strong>duele, incomoda, cuestiona</strong>. Pero es la única
-                que dura.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{ __html: t.raw("philosophy.description") }}
+                className="text-base md:text-lg text-white/90 leading-[2] tracking-wide"
+              />
             </div>
-            <p className="text-lg md:text-xl leading-[2] tracking-wide mb-8">
-              Creemos que el alto rendimiento no se impone, se despierta.
-              <br />
-              Cada empresa tiene su propio ritmo, energía y esencia.
-              <br />
-              Nosotros solo acompañamos el proceso: desafiamos, guiamos y
-              sostenemos el cambio desde la empatía y la experiencia.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw("philosophy.belief") }}
+              className="text-lg md:text-xl leading-[2] tracking-wide mb-8"
+            />
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border-2 border-brand">
               <p className="text-xl md:text-2xl lg:text-3xl font-bold font-quote text-brand leading-[1.9] italic">
-                &ldquo;El verdadero cambio ocurre cuando las personas dejan de
-                trabajar solo por metas y comienzan a trabajar desde propósito.&rdquo;
+                {t("philosophy.quote2")}
               </p>
             </div>
           </motion.div>
@@ -430,37 +322,12 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-              💬 Cómo trabajamos
+              {t("how_we_work.title")}
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                number: "1",
-                title: "Diagnóstico inicial",
-                desc: "Exploramos la cultura actual, los retos técnicos y las tensiones invisibles que frenan el crecimiento.",
-                icon: "🔍",
-              },
-              {
-                number: "2",
-                title: "Diseño del proceso",
-                desc: "Co-creamos un plan integral con talleres, sesiones 1:1, acompañamiento técnico o cultural, según las necesidades del equipo.",
-                icon: "📋",
-              },
-              {
-                number: "3",
-                title: "Activación",
-                desc: "Ejecutamos sesiones, dinámicas y acompañamientos con foco en transformación real, no teórica.",
-                icon: "🚀",
-              },
-              {
-                number: "4",
-                title: "Medición y evolución",
-                desc: "Evaluamos la madurez técnica y cultural del equipo con herramientas visuales y feedbacks periódicos.",
-                icon: "📊",
-              },
-            ].map((step, idx) => (
+            {t.raw("how_we_work.steps").map((step: any, idx: number) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
@@ -481,7 +348,7 @@ export default function EmpresasPage() {
                       {step.title}
                     </h3>
                     <p className="text-gray-700 text-[14px] md:text-[15px] leading-[1.8] tracking-wide">
-                      {step.desc}
+                      {step.description}
                     </p>
                   </CardBody>
                 </Card>
@@ -502,29 +369,12 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-              ✨ Qué hace diferente a Hugotech
+              {t("differentiators.title")}
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                text: "Combinamos tecnología y humanidad en cada intervención.",
-                icon: "🤝",
-              },
-              {
-                text: "Unimos agilidad, coaching y mentoring en un solo lenguaje.",
-                icon: "🔄",
-              },
-              {
-                text: "Acompañamos con presencia real, no solo consultoría.",
-                icon: "👥",
-              },
-              {
-                text: "Convertimos procesos en aprendizajes y personas en líderes.",
-                icon: "🌟",
-              },
-            ].map((item, idx) => (
+            {t.raw("differentiators.items").map((item: any, idx: number) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -560,7 +410,7 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
-              💼 Servicios para empresas
+              {t("services.title")}
             </h2>
           </motion.div>
 
@@ -568,41 +418,15 @@ export default function EmpresasPage() {
             <table className="w-full max-w-6xl mx-auto">
               <thead>
                 <tr className="bg-primary text-white">
-                  <th className="p-4 text-left text-lg font-bold">Categoría</th>
+                  <th className="p-4 text-left text-lg font-bold">{t("services.table.headers.category")}</th>
                   <th className="p-4 text-left text-lg font-bold">
-                    Descripción
+                    {t("services.table.headers.description")}
                   </th>
-                  <th className="p-4 text-left text-lg font-bold">Modalidad</th>
+                  <th className="p-4 text-left text-lg font-bold">{t("services.table.headers.modality")}</th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  {
-                    cat: "Talleres de Cultura y Agilidad",
-                    desc: "Experiencias grupales para transformar el mindset del equipo.",
-                    mod: "Presencial / Virtual",
-                  },
-                  {
-                    cat: "Acompañamiento Técnico-Cultural (Squads)",
-                    desc: "Programas de 4–6 meses que combinan agilidad, mentoring y coaching.",
-                    mod: "Híbrido",
-                  },
-                  {
-                    cat: "Mentoring Ejecutivo / Coaching 1:1",
-                    desc: "Sesiones personalizadas para líderes técnicos o estratégicos.",
-                    mod: "Online",
-                  },
-                  {
-                    cat: "Transformación del SER en Equipos",
-                    desc: "Ruta de liderazgo, vulnerabilidad y propósito para equipos tech.",
-                    mod: "Presencial / Virtual",
-                  },
-                  {
-                    cat: "Diagnóstico de Madurez Ágil y Cultural",
-                    desc: "Evaluación de la cultura organizacional y su evolución.",
-                    mod: "Remoto / Presencial",
-                  },
-                ].map((service, idx) => (
+                {t.raw("services.table.items").map((service: any, idx: number) => (
                   <motion.tr
                     key={idx}
                     className={`border-b ${idx % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-brand/5 transition-colors`}
@@ -612,11 +436,11 @@ export default function EmpresasPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                   >
                     <td className="p-4 font-bold text-customgray">
-                      {service.cat}
+                      {service.category}
                     </td>
-                    <td className="p-4 text-gray-700">{service.desc}</td>
+                    <td className="p-4 text-gray-700">{service.description}</td>
                     <td className="p-4 text-gray-700 font-semibold">
-                      {service.mod}
+                      {service.modality}
                     </td>
                   </motion.tr>
                 ))}
@@ -626,33 +450,7 @@ export default function EmpresasPage() {
 
           {/* Versión Mobile de la Tabla */}
           <div className="md:hidden space-y-4 mt-8">
-            {[
-              {
-                cat: "Talleres de Cultura y Agilidad",
-                desc: "Experiencias grupales para transformar el mindset del equipo.",
-                mod: "Presencial / Virtual",
-              },
-              {
-                cat: "Acompañamiento Técnico-Cultural (Squads)",
-                desc: "Programas de 4–6 meses que combinan agilidad, mentoring y coaching.",
-                mod: "Híbrido",
-              },
-              {
-                cat: "Mentoring Ejecutivo / Coaching 1:1",
-                desc: "Sesiones personalizadas para líderes técnicos o estratégicos.",
-                mod: "Online",
-              },
-              {
-                cat: "Transformación del SER en Equipos",
-                desc: "Ruta de liderazgo, vulnerabilidad y propósito para equipos tech.",
-                mod: "Presencial / Virtual",
-              },
-              {
-                cat: "Diagnóstico de Madurez Ágil y Cultural",
-                desc: "Evaluación de la cultura organizacional y su evolución.",
-                mod: "Remoto / Presencial",
-              },
-            ].map((service, idx) => (
+            {t.raw("services.table.items").map((service: any, idx: number) => (
               <Card
                 key={idx}
                 className="hover:shadow-lg transition-shadow"
@@ -660,13 +458,13 @@ export default function EmpresasPage() {
               >
                 <CardBody className="p-6">
                   <h3 className="font-bold text-base md:text-lg font-heading text-primary mb-2 leading-tight">
-                    {service.cat}
+                    {service.category}
                   </h3>
                   <p className="text-gray-700 mb-3 text-[15px] leading-relaxed">
-                    {service.desc}
+                    {service.description}
                   </p>
                   <p className="text-sm text-gray-600">
-                    <strong>Modalidad:</strong> {service.mod}
+                    <strong>{t("services.table.headers.modality")}:</strong> {service.modality}
                   </p>
                 </CardBody>
               </Card>
@@ -692,15 +490,13 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-8 leading-tight">
-              🤝 ¿Tu equipo está listo para transformarse?
+              {t("cta.title")}
             </h2>
             <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto leading-[2] tracking-wide">
-              Cada empresa tiene su propio camino, pero todas comparten el mismo
-              punto de partida: <strong>las personas</strong>.
+              <span dangerouslySetInnerHTML={{ __html: t.raw("cta.subtitle") }} />
             </p>
             <p className="text-base md:text-lg mb-10 text-white/90 max-w-2xl mx-auto leading-[1.9] tracking-wide">
-              Si buscas acompañar a tus talentos a dar su siguiente salto,
-              Hugotech está listo para caminar contigo.
+              {t("cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -710,7 +506,7 @@ export default function EmpresasPage() {
                 href="https://calendly.com/hugotech/reunion-exploratoria"
                 size="lg"
               >
-                👉 Agenda una reunión exploratoria
+                {t("cta.button1")}
               </Button>
               <Button
                 as={Link}
@@ -719,12 +515,11 @@ export default function EmpresasPage() {
                 size="lg"
                 variant="bordered"
               >
-                Enviar email
+                {t("cta.button2")}
               </Button>
             </div>
             <p className="mt-8 text-white/80 italic font-quote text-base md:text-lg leading-[1.9]">
-              &ldquo;Descubramos juntos qué necesita tu equipo para alcanzar su mejor
-              versión.&rdquo;
+              {t("cta.quote")}
             </p>
           </motion.div>
         </div>
