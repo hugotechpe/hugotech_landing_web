@@ -1,27 +1,94 @@
+"use client";
+
 import React from "react";
-import { useMessages } from "next-intl";
-import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import TestimonioCard from "@/components/cards/TestimonioCard";
+import { Chip } from "@heroui/chip";
 
 export function TestimoniosHeaderSection() {
-  const messages = useMessages() as any;
-  const section = messages?.Sections?.Testimonios ?? {};
-  const metrics = section?.metrics ?? [];
-  const title = section?.title ?? "Historias que Inspiran y Transforman 🌱✨";
-  const intro = section?.intro ?? [];
-  const cta = section?.cta ?? "Ver más testimonios";
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
   return (
-    <section
-      id="testimonios"
-      aria-label="Testimonios"
-      className="scroll-mt-0 bg-[url('/images/imageBg.jpg')] bg-cover bg-center"
-    >
-      <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-customgray leading-tight">Testimonios</h2>
-          <p className="text-base md:text-lg text-customgray mt-4 leading-[1.9] tracking-wide max-w-3xl">Personas a las que hemos tenido la oportunidad de apoyar en su camino hacia el mundo de la tecnología.</p>
-      </div>
+    <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+      {/* Background con parallax */}
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-br from-primary via-[#0d4746] to-[#083635]"
+        style={{ y }}
+      >
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')]" />
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="container mx-auto max-w-1400 px-6 relative z-10"
+        style={{ opacity }}
+      >
+        <div className="max-w-5xl mx-auto text-center text-white">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <Chip color="warning" variant="shadow" size="lg" className="mb-8 text-base md:text-lg px-6 py-2">
+              Voces Reales 💬
+            </Chip>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-8 leading-tight">
+              Historias de quienes <span className="text-brand">caminaron conmigo</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl lg:text-2xl mb-8 text-white/90 leading-[1.8] tracking-wide max-w-4xl mx-auto font-quote italic">
+              Más allá de los resultados, estas son las personas que confiaron, se atrevieron a mirarse dentro y decidieron crecer. 
+              Cada historia es única, cada transformación es real.
+            </p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <Button
+                as={Link}
+                href="#historias"
+                size="lg"
+                className="bg-brand text-white font-bold text-lg px-10 py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300"
+              >
+                Ver historias reales →
+              </Button>
+              <Button
+                as={Link}
+                href="/#cita"
+                size="lg"
+                variant="bordered"
+                className="border-2 border-white text-white font-bold text-lg px-10 py-7 hover:bg-white hover:text-primary transition-all duration-300"
+              >
+                Agenda tu sesión gratuita
+              </Button>
+            </motion.div>
+          </motion.div>
+        </div>
+      </motion.div>
+
+      {/* Scroll Indicator */}
+      <motion.div 
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 1.5 }}
+      >
+        <div className="text-white/60 text-sm">Descubre las historias</div>
+        <div className="w-6 h-10 border-2 border-white/40 rounded-full mt-2 mx-auto flex items-start justify-center p-2">
+          <motion.div 
+            className="w-1.5 h-2.5 bg-white/60 rounded-full"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          />
+        </div>
+      </motion.div>
     </section>
   );
 }
