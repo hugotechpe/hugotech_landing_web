@@ -226,7 +226,7 @@ export default function AboutPage() {
                         <Chip color="primary" variant="flat" className="mb-4">
                           {item.phase}
                         </Chip>
-                        <h3 className="text-2xl font-bold text-customgray mb-4">
+                        <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4 leading-tight">
                           {item.title}
                         </h3>
                         <div className="space-y-3">
@@ -336,10 +336,10 @@ export default function AboutPage() {
                 <CardBody className="p-10 md:p-16">
                   <div className="text-center">
                     <div className="text-6xl mb-6">🌟</div>
-                    <blockquote className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-brand mb-8 italic leading-tight">
+                    <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold font-quote text-transparent bg-clip-text bg-gradient-to-r from-primary to-brand mb-8 italic leading-tight">
                       "Transformar desde el ser, construir desde el propósito y liderar con el alma."
                     </blockquote>
-                    <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide">
                       Creo que primero se transforma el <strong className="text-primary">ser</strong>, 
                       luego el <strong className="text-brand">hacer</strong> cobra sentido, 
                       y finalmente el <strong className="text-primary">tener</strong> llega como consecuencia natural.
@@ -356,7 +356,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto max-w-1400 px-6">
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-customgray mb-12 text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-12 text-center leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -551,7 +551,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto max-w-1400 px-6">
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-customgray mb-16 text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-16 text-center leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -571,9 +571,9 @@ export default function AboutPage() {
               <Card className="h-full bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary hover:shadow-2xl transition-all duration-300">
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🎯</div>
-                  <h3 className="text-3xl font-bold text-customgray mb-6">Misión</h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Acompañar a profesionales tech en su <strong className="text-primary">autoconocimiento y crecimiento consciente</strong>, 
+                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Misión</h3>
+                  <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
+                    Acompañar a profesionales tech en su <strong className="text-primary font-sans font-semibold">autoconocimiento y crecimiento consciente</strong>, 
                     transformando equipos y organizaciones desde el ser hacia el hacer. 
                     Ofrezco sesiones 1-a-1 gratuitas y programas empresariales que integran 
                     liderazgo ágil, coaching ejecutivo y cultura de innovación humana.
@@ -593,9 +593,9 @@ export default function AboutPage() {
               <Card className="h-full bg-gradient-to-br from-brand/10 to-brand/5 border-2 border-brand hover:shadow-2xl transition-all duration-300">
                 <CardBody className="p-10">
                   <div className="text-6xl mb-6">🌟</div>
-                  <h3 className="text-3xl font-bold text-customgray mb-6">Visión</h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Ser el referente latinoamericano en <strong className="text-brand">transformación humana dentro del mundo tech</strong>. 
+                  <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-6">Visión</h3>
+                  <p className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide">
+                    Ser el referente latinoamericano en <strong className="text-brand font-sans font-semibold">transformación humana dentro del mundo tech</strong>. 
                     Crear una comunidad de líderes conscientes que lideren con empatía, 
                     construyan productos con propósito y transformen la industria desde 
                     la innovación con alma.
@@ -614,7 +614,7 @@ export default function AboutPage() {
           >
             <Card className="bg-gradient-to-r from-primary/5 via-white to-brand/5 border-2 border-primary/20">
               <CardBody className="p-10">
-                <h3 className="text-3xl font-bold text-customgray mb-8 text-center flex items-center justify-center">
+                <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-8 text-center flex items-center justify-center">
                   <span className="text-5xl mr-4">💎</span>
                   Valores Fundamentales
                 </h3>
@@ -632,8 +632,8 @@ export default function AboutPage() {
                       transition={{ duration: 0.2 }}
                     >
                       <div className="text-5xl mb-3">{value.icon}</div>
-                      <h4 className="text-xl font-bold text-customgray mb-2">{value.title}</h4>
-                      <p className="text-gray-600">{value.desc}</p>
+                      <h4 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">{value.title}</h4>
+                      <p className="text-sm md:text-[15px] text-gray-600">{value.desc}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -657,13 +657,13 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <div className="text-6xl mb-8">🚀</div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-heading mb-6 leading-tight">
               ¿Listo para tu propia transformación?
             </h2>
-            <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-3xl mx-auto leading-[2] tracking-wide">
               Cada viaje comienza con una conversación honesta.
             </p>
-            <p className="text-lg md:text-xl mb-12 text-white/80 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-[1.9]">
               Agenda una sesión gratuita y empecemos a construir tu camino con propósito, 
               claridad y autenticidad.
             </p>
@@ -686,7 +686,7 @@ export default function AboutPage() {
                 Ver servicios para empresas
               </Button>
             </div>
-            <p className="mt-10 text-white/70 italic text-lg max-w-2xl mx-auto">
+            <p className="mt-10 text-white/70 font-quote italic text-base md:text-lg max-w-2xl mx-auto leading-[1.9]">
               "Si logro que una sola persona descubra su propósito, todo habrá valido la pena."
             </p>
           </motion.div>
