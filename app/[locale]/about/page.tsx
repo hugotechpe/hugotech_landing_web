@@ -190,7 +190,7 @@ export default function AboutPage() {
                           {item.title}
                         </h3>
                         <div className="space-y-3">
-                          {item.content.map((text, i) => (
+                          {item.content.map((text: string, i: number) => (
                             <p 
                               key={i} 
                               className="text-gray-700 leading-[1.9] tracking-wide text-[15px] md:text-base"
@@ -1078,7 +1078,7 @@ export default function AboutPage() {
               variants={fadeIn}
               className="mt-16 text-center"
             >
-              <Card className="bg-gradient-to-br from-gray-900 to-customgray border-2 border-primary/30" shadow="xl">
+              <Card className="bg-gradient-to-br from-gray-900 to-customgray border-2 border-primary/30" shadow="lg">
                 <CardBody className="p-12">
                   <p className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic">
                     "Del código backend a liderar países. De gestionar KPIs a transformar culturas. 
