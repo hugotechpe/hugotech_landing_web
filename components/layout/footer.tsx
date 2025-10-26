@@ -9,6 +9,8 @@ import { useMessages, useTranslations } from "next-intl";
 import FacebookIcon from "@/common/icons/social/FacebookIcon";
 import InstagramIcon from "@/common/icons/social/InstagramIcon";
 import LinkedInIcon from "@/common/icons/social/LinkedInIcon";
+import TikTokIcon from "@/common/icons/social/TikTokIcon";
+import WhatsAppIcon from "@/common/icons/social/WhatsAppIcon";
 
 const Footer: React.FC = () => {
   const messages = useMessages() as any;
@@ -42,6 +44,45 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Información de Contacto Directo */}
+          <section aria-labelledby="footer-contact">
+            <h2 id="footer-contact" className="text-lg font-bold mb-4">📞 Contáctame</h2>
+            <div className="space-y-4">
+              {/* WhatsApp */}
+              <Link 
+                href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión" 
+                isExternal
+                className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+                title="Enviar WhatsApp a Hugo"
+              >
+                <div className="bg-green-500 p-2 rounded-full group-hover:scale-110 transition-transform">
+                  <WhatsAppIcon className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <p className="font-semibold text-white">WhatsApp</p>
+                  <p className="text-sm">+51 946 483 010</p>
+                </div>
+              </Link>
+
+              {/* Email */}
+              <Link 
+                href="mailto:hola@hugotech.pe" 
+                className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+                title="Enviar email a Hugo"
+              >
+                <div className="bg-brand p-2 rounded-full group-hover:scale-110 transition-transform">
+                  <svg className="h-5 w-5 text-customgray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Email</p>
+                  <p className="text-sm">hola@hugotech.pe</p>
+                </div>
+              </Link>
+            </div>
+          </section>
+
           {/* Información Legal */}
           <section aria-labelledby="footer-legal">
             <h2 id="footer-legal" className="text-lg font-bold">{t("legal.title")}</h2>
@@ -112,14 +153,41 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="https://facebook.com/" aria-label="Facebook" title="Facebook" className="text-white/50 hover:text-white transition-colors">
-              <FacebookIcon className="h-5 w-5" />
-            </Link>
-            <Link href="https://instagram.com/" aria-label="Instagram" title="Instagram" className="text-white/50 hover:text-white transition-colors">
+            <Link 
+              href="https://www.instagram.com/hugotech.pe" 
+              isExternal
+              aria-label="Instagram de HugoTech" 
+              title="Sígueme en Instagram @hugotech.pe" 
+              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+            >
               <InstagramIcon className="h-5 w-5" />
             </Link>
-            <Link href="https://linkedin.com/" aria-label="LinkedIn" title="LinkedIn" className="text-white/50 hover:text-white transition-colors">
+            <Link 
+              href="https://www.linkedin.com/in/hcasanovam/" 
+              isExternal
+              aria-label="LinkedIn de Hugo Casanova" 
+              title="Conéctate en LinkedIn" 
+              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+            >
               <LinkedInIcon className="h-5 w-5" />
+            </Link>
+            <Link 
+              href="https://www.tiktok.com/@hugotech.pe" 
+              isExternal
+              aria-label="TikTok de HugoTech" 
+              title="Sígueme en TikTok @hugotech.pe" 
+              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+            >
+              <TikTokIcon className="h-5 w-5" />
+            </Link>
+            <Link 
+              href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión" 
+              isExternal
+              aria-label="WhatsApp de Hugo" 
+              title="Escríbeme por WhatsApp" 
+              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+            >
+              <WhatsAppIcon className="h-5 w-5" />
             </Link>
           </div>
         </div>
