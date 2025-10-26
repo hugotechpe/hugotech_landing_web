@@ -201,9 +201,9 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
               >
-                <div className={`md:flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                <div className={`md:flex md:items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   {/* Content Card */}
-                  <div className="md:w-5/12 ml-16 md:ml-0">
+                  <div className="md:w-5/12 ml-20 md:ml-0">
                     <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                       <CardBody className="p-8">
                         <Chip color="primary" variant="flat" className="mb-4">
@@ -226,9 +226,9 @@ export default function AboutPage() {
                   </div>
 
                   {/* Icon Circle */}
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 md:relative md:w-2/12 flex justify-center">
+                  <div className="absolute left-8 top-8 md:static md:w-2/12 flex justify-center transform -translate-x-1/2 md:translate-x-0">
                     <motion.div
-                      className={`w-20 h-20 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-4xl shadow-2xl`}
+                      className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-3xl md:text-4xl shadow-2xl`}
                       whileHover={{ scale: 1.2, rotate: 360 }}
                       transition={{ duration: 0.5 }}
                     >
