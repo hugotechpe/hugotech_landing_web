@@ -14,6 +14,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { LocaleSwitch } from "@/components/locale-switch";
 import { useMessages, useTranslations, useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function HeroNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -21,37 +22,34 @@ export default function HeroNavbar() {
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
   const locale = useLocale();
+  const pathname = usePathname();
 
-  // Tomamos las etiquetas del footer pero LIMITAMOS a los enlaces originales
-  const footerItems = messages?.Sections?.Footer?.menu?.items ?? [];
-  const allowedAnchors = ["#inicio", "#mepresento", "#testimonios"];
-  const fallbackLabels: Record<string, string> = {
-    "#inicio": "Inicio",
-    "#mepresento": "Me Presento",
-    "#testimonios": "Testimonios",
-  };
-  const getAnchor = (href: string) => {
-    const i = href?.indexOf('#');
-    return i >= 0 ? href.substring(i) : href;
-  };
-  const menuItems = allowedAnchors.map((anchor) => {
-    const match = footerItems.find((it: any) => getAnchor(it?.href) === anchor);
-    return {
-      label: match?.label ?? fallbackLabels[anchor],
-      href: anchor,
-    };
-  });
-  
-  // Agregar páginas personalizadas
-  menuItems.push({
-    label: "Empresas",
-    href: `/${locale}/empresas`,
-  });
-  
-  menuItems.unshift({
-    label: "Mi Historia",
-    href: `/${locale}/about`,
-  });
+  // Detectar si estamos en la home
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+
+  // Menu items con rutas correctas
+  const menuItems = [
+    {
+      label: "Mi Historia",
+      href: `/${locale}/about`,
+    },
+    {
+      label: "Inicio",
+      href: isHome ? "#inicio" : `/${locale}/#inicio`,
+    },
+    {
+      label: "Me Presento",
+      href: isHome ? "#mepresento" : `/${locale}/#mepresento`,
+    },
+    {
+      label: "Testimonios",
+      href: isHome ? "#testimonios" : `/${locale}/#testimonios`,
+    },
+    {
+      label: "Empresas",
+      href: `/${locale}/empresas`,
+    },
+  ];
 
   return (
     <header className='bg-primary shadow-sm border-b border-[#115C5B]'>
