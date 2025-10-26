@@ -788,6 +788,210 @@
           "button": "Schedule your free session"
         }
       }
+    },
+    "Companies": {
+      "hero": {
+        "title": "We transform technology teams <highlight>from BEING</highlight> to high performance",
+        "subtitle": "At Hugotech we accompany companies looking for <strong>much more than improving processes</strong>: they seek to transform people, cultures and teams.",
+        "description": "Because true innovation doesn't start with technology, but with those who create it.",
+        "cta": "Schedule an exploratory meeting"
+      },
+      "proposal": {
+        "title": "🧭 Our proposal for companies",
+        "description": "<strong>Hugotech Companies</strong> was born to accompany technological and digital organizations that want to elevate the human, technical and cultural level of their teams. We combine <strong>agility, coaching, mentoring and Lean thinking</strong> to activate purpose, collaboration and excellence in daily work.",
+        "subtitle": "We work from three complementary dimensions:",
+        "dimensions": [
+          {
+            "icon": "🎯",
+            "number": "1",
+            "title": "Culture and Mindset",
+            "description": "We design immersive workshops and experiences that awaken awareness, align values and connect people with the organization's purpose.",
+            "items": [
+              "Agile Culture Workshops",
+              "Lean Mindset & Value Thinking",
+              "Conscious leadership and effective collaboration",
+              "Organizational culture programs and transformation of BEING"
+            ]
+          },
+          {
+            "icon": "⚡",
+            "number": "2",
+            "title": "Development Teams and Technical Agility",
+            "description": "We accompany technical and product teams to evolve towards high-performance teams, strengthening their practices, structure and synergy.",
+            "items": [
+              "Technical and cultural accompaniment (4 to 6 month programs)",
+              "Technical and organizational roadmaps",
+              "Deep and liberating retrospective sessions",
+              "Liberating structures, design thinking and continuous learning"
+            ]
+          },
+          {
+            "icon": "💼",
+            "number": "3",
+            "title": "One-to-One Mentoring and Coaching",
+            "description": "Individual processes designed to enhance leadership, self-management and mental clarity of each team member.",
+            "items": [
+              "Professional coaching sessions (ICF approach)",
+              "Technical and leadership mentoring",
+              "Difficult conversations and conscious feedback",
+              "Personal development oriented to results"
+            ]
+          }
+        ]
+      },
+      "transformation": {
+        "personal_learning": {
+          "badge": "💔 I Learned It The Hard Way",
+          "title": "I'm not selling you theory. I'm sharing scars.",
+          "paragraph1": "I led brilliant teams that <strong>collapsed due to lack of clarity</strong>. I saw senior developers resign not because of salary, but because of <strong>lack of purpose</strong>. <strong>I was that leader who prioritized the sprint over people</strong>... until the team fell apart.",
+          "paragraph2": "That experience <strong>transformed</strong> me. Now I help other leaders <strong>not make the same mistakes I did</strong>. Because I know what it feels like to see a team break. And I know what it feels like when you rebuild it from the soul."
+        },
+        "cases": {
+          "title": "🚀 Transformation cases: from good teams to extraordinary teams",
+          "challenges": {
+            "title": "We have accompanied technology teams facing common challenges:",
+            "list": [
+              "Fragmented communication between technical and business roles",
+              "Lack of focus and prioritization",
+              "Emotional overload and resistance to change",
+              "Reactive rather than proactive culture",
+              "Disconnection between purpose, task and result"
+            ]
+          },
+          "intervention": {
+            "title": "🔧 Our intervention model",
+            "items": [
+              {
+                "title": "Weekly technical and cultural support:",
+                "description": "code review, architecture, database, agile practices and team synchrony."
+              },
+              {
+                "title": "Culture and Agility Workshops:",
+                "description": "collective sessions to awaken awareness, vulnerability and shared purpose."
+              },
+              {
+                "title": "Applied Tuckman Model",
+                "description": "(Forming–Storming–Norming–Performing): real measurement of group evolution."
+              },
+              {
+                "title": "Transformation of BEING:",
+                "description": "each member rediscovers who they are, what motivates them and how they can contribute value from their authenticity."
+              }
+            ]
+          },
+          "results": {
+            "title": "✨ Visible results",
+            "items": [
+              "More aligned, conscious and collaborative teams.",
+              "Technical leaders who communicate from empathy and clarity.",
+              "Greater fluidity in decision making and technical execution.",
+              "Culture of continuous improvement: from \"doing to comply\" to \"doing with purpose\"."
+            ]
+          }
+        }
+      },
+      "philosophy": {
+        "title": "🧠 Our philosophy",
+        "quote": "\"I'm not selling magic formulas. I'm selling 18 years of falls, recoveries and painful lessons.\"",
+        "description": "Real transformation <strong>hurts, makes uncomfortable, questions</strong>. But it's the only one that lasts.",
+        "belief": "We believe that high performance is not imposed, it is awakened.<br />Each company has its own rhythm, energy and essence.<br />We only accompany the process: we challenge, guide and sustain change from empathy and experience.",
+        "quote2": "\"True change occurs when people stop working only for goals and start working from purpose.\""
+      },
+      "how_we_work": {
+        "title": "💬 How we work",
+        "steps": [
+          {
+            "number": "1",
+            "icon": "🔍",
+            "title": "Initial diagnosis",
+            "description": "We explore the current culture, technical challenges and invisible tensions that slow growth."
+          },
+          {
+            "number": "2",
+            "icon": "📋",
+            "title": "Process design",
+            "description": "We co-create a comprehensive plan with workshops, 1:1 sessions, technical or cultural support, according to team needs."
+          },
+          {
+            "number": "3",
+            "icon": "🚀",
+            "title": "Activation",
+            "description": "We execute sessions, dynamics and accompaniments with focus on real transformation, not theoretical."
+          },
+          {
+            "number": "4",
+            "icon": "📊",
+            "title": "Measurement and evolution",
+            "description": "We evaluate the technical and cultural maturity of the team with visual tools and periodic feedback."
+          }
+        ]
+      },
+      "differentiators": {
+        "title": "✨ What makes Hugotech different",
+        "items": [
+          {
+            "icon": "🤝",
+            "text": "We combine technology and humanity in each intervention."
+          },
+          {
+            "icon": "🔄",
+            "text": "We unite agility, coaching and mentoring in one language."
+          },
+          {
+            "icon": "👥",
+            "text": "We accompany with real presence, not just consulting."
+          },
+          {
+            "icon": "🌟",
+            "text": "We turn processes into learnings and people into leaders."
+          }
+        ]
+      },
+      "services": {
+        "title": "💼 Services for companies",
+        "table": {
+          "headers": {
+            "category": "Category",
+            "description": "Description",
+            "modality": "Modality"
+          },
+          "items": [
+            {
+              "category": "Culture and Agility Workshops",
+              "description": "Group experiences to transform the team's mindset.",
+              "modality": "In-person / Virtual"
+            },
+            {
+              "category": "Technical-Cultural Support (Squads)",
+              "description": "4–6 month programs combining agility, mentoring and coaching.",
+              "modality": "Hybrid"
+            },
+            {
+              "category": "Executive Mentoring / 1:1 Coaching",
+              "description": "Personalized sessions for technical or strategic leaders.",
+              "modality": "Online"
+            },
+            {
+              "category": "Transformation of BEING in Teams",
+              "description": "Leadership, vulnerability and purpose path for tech teams.",
+              "modality": "In-person / Virtual"
+            },
+            {
+              "category": "Agile and Cultural Maturity Diagnosis",
+              "description": "Evaluation of organizational culture and its evolution.",
+              "modality": "Remote / In-person"
+            }
+          ]
+        }
+      },
+      "cta": {
+        "title": "🤝 Is your team ready to transform?",
+        "subtitle": "Each company has its own path, but they all share the same starting point: <strong>people</strong>.",
+        "description": "If you're looking to help your talents take their next leap, Hugotech is ready to walk with you.",
+        "button_primary": "👉 Schedule an exploratory meeting",
+        "button_secondary": "Send email",
+        "quote": "\"Let's discover together what your team needs to reach its best version.\""
+      }
     }
   },
   "WhatsAppButton": {

@@ -4,8 +4,11 @@ import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function EmpresasPage() {
+  const t = useTranslations("Sections.Companies");
+  
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -40,24 +43,23 @@ export default function EmpresasPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight"
               variants={fadeIn}
             >
-              Transformamos equipos tecnológicos{" "}
-              <span className="text-brand">desde el SER</span> hacia el alto
-              rendimiento
+              <span dangerouslySetInnerHTML={{ 
+                __html: t.raw("hero.title").replace(
+                  /<highlight>(.*?)<\/highlight>/g, 
+                  '<span class="text-brand">$1</span>'
+                )
+              }} />
             </motion.h1>
             <motion.p
+              dangerouslySetInnerHTML={{ __html: t.raw("hero.subtitle") }}
               className="text-lg md:text-xl mb-6 text-white/90 leading-[1.9] tracking-wide"
               variants={fadeIn}
-            >
-              En Hugotech acompañamos a empresas que buscan{" "}
-              <strong>mucho más que mejorar procesos</strong>: buscan
-              transformar personas, culturas y equipos.
-            </motion.p>
+            />
             <motion.p
               className="text-base md:text-lg mb-10 text-white/80 leading-[1.8] tracking-wide"
               variants={fadeIn}
             >
-              Porque la verdadera innovación no empieza en la tecnología, sino
-              en quienes la crean.
+              {t("hero.description")}
             </motion.p>
             <motion.div variants={fadeIn}>
               <Button
@@ -66,7 +68,7 @@ export default function EmpresasPage() {
                 href="#contacto-empresas"
                 size="lg"
               >
-                Agenda una reunión exploratoria
+                {t("hero.cta")}
               </Button>
             </motion.div>
           </motion.div>
@@ -84,20 +86,16 @@ export default function EmpresasPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
-              🧭 Nuestra propuesta para empresas
+              {t("proposal.title")}
             </h2>
-            <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-[1.9] tracking-wide">
-              <strong>Hugotech Empresas</strong> nace para acompañar a
-              organizaciones tecnológicas y digitales que desean elevar el nivel
-              humano, técnico y cultural de sus equipos. Combinamos{" "}
-              <strong>agilidad, coaching, mentoring y pensamiento Lean</strong>{" "}
-              para activar el propósito, la colaboración y la excelencia en el
-              día a día de trabajo.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw("proposal.description") }}
+              className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-[1.9] tracking-wide"
+            />
           </motion.div>
 
           <motion.p className="text-center text-lg md:text-xl font-semibold font-heading text-customgray mb-12 leading-relaxed">
-            Trabajamos desde tres dimensiones complementarias:
+            {t("proposal.subtitle")}
           </motion.p>
 
           <motion.div
@@ -107,144 +105,37 @@ export default function EmpresasPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            {/* Dimensión 1 */}
-            <motion.div variants={fadeIn}>
-              <Card
-                className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-primary"
-                shadow="lg"
-              >
-                <CardBody className="p-8">
-                  <div className="text-5xl mb-4">🎯</div>
-                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
-                    1. Cultura y Mindset
-                  </h3>
-                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
-                    Diseñamos talleres y experiencias inmersivas que despiertan
-                    conciencia, alinean valores y conectan a las personas con el
-                    propósito de la organización.
-                  </p>
-                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Talleres de Cultura Ágil
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Mindset Lean & Pensamiento de Valor
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Liderazgo consciente y colaboración efectiva
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Programas de cultura organizacional y transformación del
-                        SER
-                      </span>
-                    </li>
-                  </ul>
-                </CardBody>
-              </Card>
-            </motion.div>
-
-            {/* Dimensión 2 */}
-            <motion.div variants={fadeIn}>
-              <Card
-                className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-brand"
-                shadow="lg"
-              >
-                <CardBody className="p-8">
-                  <div className="text-5xl mb-4">⚡</div>
-                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
-                    2. Equipos de Desarrollo y Agilidad Técnica
-                  </h3>
-                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
-                    Acompañamos equipos técnicos y de producto para que
-                    evolucionen hacia equipos de alto rendimiento, fortaleciendo
-                    sus prácticas, estructura y sinergia.
-                  </p>
-                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
-                    <li className="flex items-start">
-                      <span className="text-brand mr-2 font-bold">•</span>
-                      <span>
-                        Acompañamiento técnico y cultural (programas de 4 a 6
-                        meses)
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-2 font-bold">•</span>
-                      <span>Roadmaps técnicos y organizacionales</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-2 font-bold">•</span>
-                      <span>
-                        Sesiones de retrospectiva profunda y liberadora
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand mr-2 font-bold">•</span>
-                      <span>
-                        Estructuras liberadoras, design thinking y aprendizaje
-                        continuo
-                      </span>
-                    </li>
-                  </ul>
-                </CardBody>
-              </Card>
-            </motion.div>
-
-            {/* Dimensión 3 */}
-            <motion.div variants={fadeIn}>
-              <Card
-                className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-primary"
-                shadow="lg"
-              >
-                <CardBody className="p-8">
-                  <div className="text-5xl mb-4">💼</div>
-                  <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
-                    3. Mentoring y Coaching One-to-One
-                  </h3>
-                  <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
-                    Procesos individuales diseñados para potenciar el liderazgo,
-                    la autogestión y la claridad mental de cada miembro del
-                    equipo.
-                  </p>
-                  <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Sesiones de coaching profesional (enfoque ICF)
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Mentoring técnico y de liderazgo
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Conversaciones difíciles y feedback consciente
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="leading-relaxed">
-                        Desarrollo personal orientado a resultados
-                      </span>
-                    </li>
-                  </ul>
-                </CardBody>
-              </Card>
-            </motion.div>
+            {t.raw("proposal.dimensions").map((dimension: any, index: number) => {
+              const borderColors = ["border-primary", "border-brand", "border-primary"];
+              const bulletColors = ["text-primary", "text-brand", "text-primary"];
+              
+              return (
+                <motion.div key={index} variants={fadeIn}>
+                  <Card
+                    className={`h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 ${borderColors[index]}`}
+                    shadow="lg"
+                  >
+                    <CardBody className="p-8">
+                      <div className="text-5xl mb-4">{dimension.icon}</div>
+                      <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
+                        {dimension.number}. {dimension.title}
+                      </h3>
+                      <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
+                        {dimension.description}
+                      </p>
+                      <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
+                        {dimension.items.map((item: string, itemIndex: number) => (
+                          <li key={itemIndex} className="flex items-start">
+                            <span className={`${bulletColors[index]} mr-2 font-bold`}>•</span>
+                            <span className="leading-relaxed">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardBody>
+                  </Card>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
