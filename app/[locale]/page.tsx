@@ -1,5 +1,6 @@
 import { InicioSection } from "@/features/home/components/InicioSection";
 import { MePresentoSection } from "@/features/home/components/MePresentoSection";
+import { HabilidadesBlandasSection } from "@/features/home/components/HabilidadesBlandasSection";
 import { PorQueGratuitoSection } from "@/features/home/components/PorQueGratuitoSection";
 import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
@@ -105,6 +106,7 @@ export default function Home() {
       <HomeLayout>
         <InicioSection />
         <MePresentoSection />
+        <HabilidadesBlandasSection />
         <PorQueGratuitoSection />
         <PilaresSection />
         <EmpresasSection />

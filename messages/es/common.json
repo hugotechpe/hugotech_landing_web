@@ -262,6 +262,64 @@
       },
       "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
     },
+    "HabilidadesBlandas": {
+      "badge": "🧠 Habilidades que trabajamos",
+      "title": "¿Te identificas con alguno de estos desafíos?",
+      "subtitle": "No son errores. Son oportunidades para crecer juntos.",
+      "intro": "Muchos talentos tech brillantes enfrentan estos retos. En nuestras sesiones 1 a 1, trabajamos desde la raíz:",
+      "skills": [
+        {
+          "icon": "🤐",
+          "text": "Baja confianza en ti mismo (aunque seas brillante)"
+        },
+        {
+          "icon": "💬",
+          "text": "Dificultad para comunicarte emocionalmente"
+        },
+        {
+          "icon": "😰",
+          "text": "Miedo a fallar o romper algo en producción"
+        },
+        {
+          "icon": "👻",
+          "text": "Sientes que nadie ve tu trabajo"
+        },
+        {
+          "icon": "⚡",
+          "text": "Autoexigencia extrema y burnout"
+        },
+        {
+          "icon": "🏝️",
+          "text": "Tendencia a aislarte sin querer"
+        },
+        {
+          "icon": "😶",
+          "text": "Miedo a hablar en reuniones"
+        },
+        {
+          "icon": "🎯",
+          "text": "Falta de gestión de prioridades"
+        },
+        {
+          "icon": "🧭",
+          "text": "No ves claro tu propósito ni camino de carrera"
+        },
+        {
+          "icon": "🚫",
+          "text": "Evitas el conflicto a toda costa"
+        },
+        {
+          "icon": "💭",
+          "text": "No sabes dar ni recibir feedback de forma sana"
+        },
+        {
+          "icon": "❓",
+          "text": "No sabes qué sigue después del rol técnico"
+        }
+      ],
+      "quote": "Cuando una persona se encuentra a sí misma, todo lo que construye cobra sentido.",
+      "cta": "Agenda tu sesión 1 a 1 gratuita"
+    },
     "TestimoniosLanding": {
       "miguel": {
         "quote": "Me ayudaste en mi carrera profesional, en sentirme como parte de una familia en un equipo de trabajo, a tener más confianza en mis habilidades y a ser cada día mejor a nivel profesional.",
@@ -711,6 +769,33 @@
           }
         ]
       },
+      "manifiesto": {
+        "title": "🗣️ Mi Manifiesto",
+        "subtitle": "Los principios que guían cada conversación, cada sesión, cada transformación.",
+        "items": [
+          {
+            "title": "Primero el ser",
+            "description": "Porque el backend emocional de cada persona define la arquitectura de su futuro."
+          },
+          {
+            "title": "Acompañar sin imponer",
+            "description": "Porque nadie necesita un salvador, sino alguien que camine a su lado."
+          },
+          {
+            "title": "Transformar sin máscaras",
+            "description": "Porque los talentos tech también sienten, dudan, se rompen y necesitan espacios reales para sanar y crecer."
+          },
+          {
+            "title": "Construir con propósito",
+            "description": "Porque cuando un backend, frontend, QA, diseñador o marketer conecta con su 'para qué', el equipo se transforma."
+          },
+          {
+            "title": "Mentorear para liberar, no para controlar",
+            "description": "Porque el mejor legado es ayudar a que otros vuelen más alto, no que dependan de ti."
+          }
+        ],
+        "quote": "Una línea de código puede cambiar un sistema, pero una conversación honesta puede cambiar una vida."
+      },
       "cta": {
         "title": "¿Listo para construir con claridad?",
         "subtitle": "No esperes años para hacer las preguntas importantes.",
@@ -946,6 +1031,10 @@
           {
             "icon": "🌟",
             "text": "Convertimos procesos en aprendizajes y personas en líderes."
+          },
+          {
+            "icon": "💡",
+            "text": "Impulsamos una cultura de innovación segura donde el error es aprendizaje y el equipo propone sin miedo."
           }
         ]
       },

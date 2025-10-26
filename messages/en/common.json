@@ -258,7 +258,65 @@
           "description": "Sustainable career"
         }
       },
-      "imageAlt": "Portrait of Hugo Casanova, mentor and tech coach"
+      "imageAlt": "Portrait of Hugo Casanova, tech mentor and coach"
+    },
+    "HabilidadesBlandas": {
+      "badge": "🧠 Skills we work on",
+      "title": "Do you identify with any of these challenges?",
+      "subtitle": "They're not mistakes. They're opportunities to grow together.",
+      "intro": "Many brilliant tech talents face these challenges. In our 1-on-1 sessions, we work from the root:",
+      "skills": [
+        {
+          "icon": "🤐",
+          "text": "Low self-confidence (even though you're brilliant)"
+        },
+        {
+          "icon": "💬",
+          "text": "Difficulty communicating emotionally"
+        },
+        {
+          "icon": "😰",
+          "text": "Fear of failing or breaking something in production"
+        },
+        {
+          "icon": "👻",
+          "text": "You feel nobody sees your work"
+        },
+        {
+          "icon": "⚡",
+          "text": "Extreme self-demand and burnout"
+        },
+        {
+          "icon": "🏝️",
+          "text": "Tendency to isolate yourself unintentionally"
+        },
+        {
+          "icon": "😶",
+          "text": "Fear of speaking up in meetings"
+        },
+        {
+          "icon": "🎯",
+          "text": "Lack of priority management"
+        },
+        {
+          "icon": "🧭",
+          "text": "No clear purpose or career path"
+        },
+        {
+          "icon": "🚫",
+          "text": "You avoid conflict at all costs"
+        },
+        {
+          "icon": "💭",
+          "text": "Don't know how to give or receive feedback healthily"
+        },
+        {
+          "icon": "❓",
+          "text": "Don't know what comes after the technical role"
+        }
+      ],
+      "quote": "When a person finds themselves, everything they build makes sense.",
+      "cta": "Schedule your free 1-on-1 session"
     },
     "TestimoniosLanding": {
       "miguel": {
@@ -709,6 +767,33 @@
           }
         ]
       },
+      "manifiesto": {
+        "title": "🗣️ My Manifesto",
+        "subtitle": "The principles that guide every conversation, every session, every transformation.",
+        "items": [
+          {
+            "title": "Being first",
+            "description": "Because each person's emotional backend defines the architecture of their future."
+          },
+          {
+            "title": "Accompany without imposing",
+            "description": "Because no one needs a savior, but someone to walk beside them."
+          },
+          {
+            "title": "Transform without masks",
+            "description": "Because tech talents also feel, doubt, break down and need real spaces to heal and grow."
+          },
+          {
+            "title": "Build with purpose",
+            "description": "Because when a backend, frontend, QA, designer or marketer connects with their 'why', the team transforms."
+          },
+          {
+            "title": "Mentor to liberate, not to control",
+            "description": "Because the best legacy is helping others fly higher, not making them depend on you."
+          }
+        ],
+        "quote": "A line of code can change a system, but an honest conversation can change a life."
+      },
       "cta": {
         "title": "Ready to build with clarity?",
         "subtitle": "Don't wait years to ask the important questions.",
@@ -944,6 +1029,10 @@
           {
             "icon": "🌟",
             "text": "We turn processes into learnings and people into leaders."
+          },
+          {
+            "icon": "💡",
+            "text": "We foster a culture of safe innovation where mistakes are learning and the team proposes fearlessly."
           }
         ]
       },

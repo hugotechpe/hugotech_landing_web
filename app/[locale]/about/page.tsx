@@ -785,6 +785,64 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mi Manifiesto */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto max-w-1400 px-6">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-4">
+              {t("manifiesto.title")}
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              {t("manifiesto.subtitle")}
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12"
+            initial="hidden"
+            variants={staggerContainer}
+            viewport={{ once: true }}
+            whileInView="visible"
+          >
+            {(messages.Sections?.About?.manifiesto?.items || []).map((item: any, index: number) => (
+              <motion.div key={index} variants={fadeIn}>
+                <Card
+                  className="h-full hover:shadow-2xl transition-all duration-300 border-t-4 border-primary"
+                  shadow="lg"
+                >
+                  <CardBody className="p-6">
+                    <h3 className="text-xl md:text-2xl font-bold font-heading text-primary mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1 }}
+          >
+            <blockquote className="text-xl md:text-2xl font-quote italic text-gray-700 max-w-4xl mx-auto">
+              &ldquo;{t("manifiesto.quote")}&rdquo;
+            </blockquote>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Final Impactante */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-[#0d4746] to-[#083635] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
