@@ -7,10 +7,10 @@ const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-5HH6QTFK";
 export function GoogleTagManager() {
   return (
     <>
-      {/* Google Tag Manager Script */}
+      {/* Google Tag Manager Script - Lazy loaded después del contenido principal */}
       <Script
         id="gtm-script"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

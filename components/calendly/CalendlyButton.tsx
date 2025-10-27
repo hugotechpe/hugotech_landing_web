@@ -1,12 +1,25 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { InlineWidget } from "react-calendly";
+import { useCalendlyScript } from "@/hooks/useCalendlyScript";
 import {
   trackCTAClick,
   trackCalendlyEventScheduled,
   trackCalendlyDateSelected,
 } from "@/lib/gtm";
+
+// Declaración de tipos para la API de Calendly
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: {
+        url: string;
+        prefill?: Record<string, any>;
+        utm?: Record<string, any>;
+      }) => void;
+    };
+  }
+}
 
 interface CalendlyButtonProps {
   url?: string;
@@ -56,6 +69,7 @@ export function CalendlyButton({
   fullWidth = false,
 }: CalendlyButtonProps) {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { isLoaded, loadCalendlyScript } = useCalendlyScript();
 
   // Listen to Calendly PostMessage events
   useEffect(() => {
@@ -96,9 +110,25 @@ export function CalendlyButton({
   }, [isOpen]);
 
   const handleClick = () => {
+    // Cargar script de Calendly si no está cargado
+    if (!isLoaded) {
+      loadCalendlyScript();
+    }
     setIsOpen(true);
     trackCTAClick("calendly_button", text, url);
   };
+
+  // Abrir popup de Calendly cuando el script esté cargado
+  useEffect(() => {
+    if (isOpen && isLoaded && window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url,
+        prefill,
+        utm,
+      });
+      setIsOpen(false); // Reset para próximas aperturas
+    }
+  }, [isOpen, isLoaded, url, prefill, utm]);
 
   // Determinar clases de Tailwind basadas en props
   const getButtonClasses = () => {
@@ -143,58 +173,6 @@ export function CalendlyButton({
       >
         {text}
       </button>
-
-      {/* Modal/Popup con Calendly */}
-      {isOpen && (
-        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-        <div
-          role="dialog"
-          aria-modal="true"
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm"
-          onClick={() => setIsOpen(false)}
-          onKeyDown={(e) => e.key === "Escape" && setIsOpen(false)}
-        >
-          {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-          <div
-            role="document"
-            className="relative w-full max-w-4xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-            onKeyDown={(e) => e.stopPropagation()}
-          >
-            {/* Botón cerrar */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
-              aria-label="Cerrar"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-
-            {/* Calendly Inline Widget */}
-            <InlineWidget
-              url={url}
-              prefill={prefill}
-              utm={utm}
-              styles={{
-                height: "100%",
-                width: "100%",
-              }}
-            />
-          </div>
-        </div>
-      )}
     </>
   );
 }

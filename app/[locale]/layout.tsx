@@ -103,6 +103,14 @@ export default async function RootLayout({
       className="motion-safe:scroll-smooth motion-reduce:scroll-auto"
     >
       <head>
+        {/* Preconnect para dominios externos - mejora performance */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        
         <GoogleTagManager />
       </head>
       <body
