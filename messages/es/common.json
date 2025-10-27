@@ -382,16 +382,16 @@
         "learnMore": "📖 Conoce Más"
       },
       "content": {
-        "p1": "Las sesiones 1 a 1 son gratuitas para ti, pero eso no significa que no tengan valor. Empresas e individuos que trabajan conmigo en servicios B2B invierten en el crecimiento de sus equipos, y parte de ese impacto se transforma en acción social.",
-        "pBold1": "Una porción de los ingresos de HugoTech B2B se destina a:",
+        "p1": "Todas las sesiones 1 a 1 son <b>100% gratuitas</b>. Siempre lo serán. No hay letra chica, no hay agenda oculta. Solo conversaciones honestas que transforman.",
+        "pBold1": "Mi compromiso con el impacto social:",
         "bullets": [
-          "Impulsar la educación tecnológica y el desarrollo de jóvenes talentos en Latinoamérica.",
-          "Promover la inclusión digital y el acceso equitativo al conocimiento tech."
+          "Las mentorías individuales serán siempre gratuitas como mi forma de devolver lo que la vida me dio.",
+          "Si en el futuro ofrezco programas adicionales pagos, una porción significativa se destinará a causas sociales enfocadas en educación tech y bienestar comunitario."
         ],
-        "p2": "Fomentar la adopción responsable y el bienestar animal, porque la empatía también transforma.",
+        "p2": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados.",
         "invite": {
-          "pBold": "¿Conoces alguna ONG o proyecto tech que esté transformando vidas?",
-          "p": "Compártelo aquí y sumemos más causas a este movimiento."
+          "pBold": "La inversión real está en las personas",
+          "p": "Cada sesión gratuita es una apuesta a que cuando encuentras tu propósito, tu impacto multiplica el de otros."
         }
       },
       "form": {

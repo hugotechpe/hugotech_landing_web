@@ -381,16 +381,16 @@
         "learnMore": "📖 Learn More"
       },
       "content": {
-        "p1": "1-on-1 sessions are free for you, but that doesn't mean they have no value. Companies and individuals who work with me on B2B services invest in their teams' growth, and part of that impact transforms into social action.",
-        "pBold1": "A portion of HugoTech B2B revenue is dedicated to:",
+        "p1": "All 1-on-1 sessions are <b>100% free</b>. They always will be. No fine print, no hidden agenda. Just honest conversations that transform.",
+        "pBold1": "My commitment to social impact:",
         "bullets": [
-          "Promoting tech education and the development of young talents in Latin America.",
-          "Encouraging digital inclusion and equitable access to tech knowledge."
+          "Individual mentoring will always be free as my way of giving back what life gave me.",
+          "If I offer additional paid programs in the future, a significant portion will be dedicated to social causes focused on tech education and community well-being."
         ],
-        "p2": "Promoting responsible adoption and animal welfare, because empathy also transforms.",
+        "p2": "Because I believe true success is measured in transformed lives, not just generated revenue.",
         "invite": {
-          "pBold": "Do you know any NGO or tech project that's transforming lives?",
-          "p": "Share it here and let's add more causes to this movement."
+          "pBold": "The real investment is in people",
+          "p": "Every free session is a bet that when you find your purpose, your impact multiplies that of others."
         }
       },
       "form": {
