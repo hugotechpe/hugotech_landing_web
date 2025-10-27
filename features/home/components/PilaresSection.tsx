@@ -55,7 +55,7 @@ export function PilaresSection() {
                 viewport={{ once: true }}
                 className="inline-block bg-gradient-to-r from-primary to-brand text-white px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
               >
-                ✨ 6 Pilares Fundamentales
+                {t("badge")}
               </motion.div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
