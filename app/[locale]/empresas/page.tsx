@@ -518,7 +518,7 @@ export default function EmpresasPage() {
                 {t("cta.button_secondary")}
               </Button>
             </div>
-            <p className="mt-8 text-white/80 italic font-quote text-base md:text-lg leading-[1.9]">
+            <p className="mt-8 text-white/80 italic font-quote text-lg md:text-xl lg:text-2xl leading-[1.9]">
               {t("cta.quote")}
             </p>
           </motion.div>
