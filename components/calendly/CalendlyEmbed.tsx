@@ -45,7 +45,9 @@ export function CalendlyEmbed({
 
       // Calendly envía eventos con esta estructura
       if (eventData.event) {
-        console.log("[Calendly Event]", eventData.event, eventData);
+        if (process.env.NODE_ENV === 'development') {
+          console.log("[Calendly Event]", eventData.event, eventData);
+        }
 
         switch (eventData.event) {
           case "calendly.date_and_time_selected":

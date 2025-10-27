@@ -26,9 +26,15 @@ export function InicioSection() {
               {t("chipLabel")}
             </p>
 
-            <h2 className="mt-4 text-3xl md:text-4xl font-heading font-bold text-white">
-              {t("title")}
-            </h2>
+                        <h1 className="mt-4 text-3xl md:text-4xl font-heading font-bold text-white">
+              {t.rich("title", {
+                highlight: (chunks) => (
+                  <span className="bg-gradient-to-r from-brand to-yellow-400 bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                ),
+              })}
+            </h1>
 
             {/* Mantra/Propósito Profundo */}
             <motion.div

@@ -65,7 +65,9 @@ export function CalendlyButton({
       const eventData = e.data;
 
       if (eventData.event) {
-        console.log("[Calendly Event - Popup]", eventData.event, eventData);
+        if (process.env.NODE_ENV === 'development') {
+          console.log("[Calendly Event - Popup]", eventData.event, eventData);
+        }
 
         switch (eventData.event) {
           case "calendly.date_and_time_selected":
