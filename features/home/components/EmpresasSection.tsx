@@ -99,6 +99,9 @@ export function EmpresasSection() {
                     alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
                     width={165}
                     height={220}
+                    loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 0px, 165px"
                     className="rounded-lg shadow-sm hidden md:block"
                   />
                 </div>
@@ -154,6 +157,9 @@ export function EmpresasSection() {
                     alt={t("empresasCard.imageAlt")}
                     width={227}
                     height={215}
+                    loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 0px, 227px"
                     className="rounded-lg shadow-sm hidden md:block"
                   />
                 </div>
