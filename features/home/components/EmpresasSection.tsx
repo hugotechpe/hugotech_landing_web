@@ -130,7 +130,16 @@ export function EmpresasSection() {
                   ))}
                 </ul>
                 <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
-                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-full sm:w-fit">
+                  <Button 
+                    as={Link} 
+                    href={emp?.empresasCard?.ctaUrl || "https://calendly.com/hugotech/reunion-exploratoria"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="md" 
+                    color="primary" 
+                    variant="solid" 
+                    className="bg-customgray w-full sm:w-fit"
+                  >
                     {t("empresasCard.ctaLabel")}
                   </Button>
                   <p className="mt-4 text-sm sm:text-base text-customgray">

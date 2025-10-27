@@ -320,39 +320,40 @@
       "header": {
         "title": "Equipos de Alto Rendimiento con Cultura Consciente",
         "intro": {
-          "p1": "El talento tech (Gen Z y Millennials) no solo busca un buen salario; busca <b>impacto, propósito y un liderazgo humano</b>. Dejarán tu empresa por una mala cultura, no por un mal 'framework'.",
-          "p2": "Dejemos de gestionar 'recursos'. Empecemos a <sb>liderar humanos</sb>. A través de workshops de liderazgo ágil, coaching ejecutivo y programas de cultura, transformo tu equipo tech en una fuerza imparable, innovadora y, sobre todo, humana."
+          "p1": "El talento tech (Gen Z y Millennials) no solo busca un buen salario; busca <b>impacto, propósito y liderazgo humano</b>. Dejarán tu empresa por una mala cultura, no por un mal framework.",
+          "p2": "Dejemos de gestionar 'recursos'. Empecemos a <b>liderar humanos</b>. A través de workshops de liderazgo ágil, coaching ejecutivo y programas de cultura, transformo tu equipo tech en una fuerza imparable, innovadora y humana."
         }
       },
       "mentoriaCard": {
         "title": "Tu Mentoría Tech 1 a 1 💚",
         "subtitle": "Coaching de propósito + Mentoring tecnológico. Gratis.",
-        "p1": "¿Te sientes estancado en tu primer empleo TI? ¿No sabes qué 'path' tomar (DevOps, AI Engineer, Product Manager)? ¿Síndrome del impostor? <b>No estás solo</b>.",
-        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>coaching de autoconocimiento con mentoring tecnológico</b>. Antes del 'qué' viene el 'por qué'. Descubre tus valores, define tu propósito y supera las barreras mentales que te frenan.",
-        "resultsTitle": "Lo que lograrás en tus sesiones:",
+        "p1": "¿Síndrome del impostor? ¿Introversión que te frena? ¿Estancado sin saber qué camino tomar? <b>No estás solo</b>.",
+        "p2": "Nuestras sesiones 1 a 1 (sin costo) combinan <b>desarrollo humano con estrategia tecnológica</b>. Te acompaño a descubrir quién eres, conectar con tu propósito y transformar tu carrera tech desde adentro. Porque cuando te conoces, decides mejor.",
+        "resultsTitle": "Lo que lograrás:",
         "resultsItems": [
-          "Claridad sobre tu propósito profesional y próximos pasos en tech.",
-          "Hoja de ruta personalizada según tu perfil (backend, frontend, QA, PM, etc.)",
-          "Mentalidad de crecimiento y herramientas anti-burnout aplicadas al día a día.",
-          "Revisión de CV, LinkedIn y estrategia de marca personal tech."
+          "Claridad sobre tu propósito profesional y próximos pasos en tech",
+          "Hoja de ruta personalizada según tu perfil (backend, frontend, QA, PM, DevOps, IA)",
+          "Herramientas para manejar síndrome del impostor, miedo a fallar y comunicación",
+          "Mentalidad de crecimiento y estrategias anti-burnout aplicables al día a día"
         ],
-        "ctaLabel": "Quiero mi sesión de claridad (Es gratis)",
-        "note": "Las sesiones 1 a 1 son 100% gratuitas. Es mi forma de devolver lo que la vida me dio. Sin letra chica, sin agenda oculta."
+        "ctaLabel": "Agenda tu sesión gratuita",
+        "note": "100% gratuito. Sin letra chica, sin agenda oculta. Solo conversación honesta que transforma."
       },
       "empresasCard": {
         "title": "HugoTech B2B",
         "subtitle": "Retención de Talento + Seguridad Psicológica + Innovación Ágil",
-        "p1": "Ayudo a tus líderes a evolucionar. A través de <b>workshops de liderazgo ágil, coaching ejecutivo y programas de cultura</b>, transformo tu equipo tech en una fuerza imparable.",
-        "p2": "No más rotación por 'mala cultura'. No más burnout en devs talentosos. Construyamos <b>equipos que confían, innovan y entregan</b> de forma sostenible.",
-        "resultsTitle": "Beneficios medibles para tu empresa:",
+        "p1": "Ayudo a tus líderes a evolucionar. A través de <b>workshops de liderazgo ágil, coaching ejecutivo y programas de cultura</b>, transformo tu equipo tech en una fuerza imparable que construye con autonomía y propósito.",
+        "p2": "No más rotación por 'mala cultura'. No más burnout en devs talentosos. Construyamos <b>equipos que confían, innovan y entregan</b> de forma sostenible, donde lo humano y lo técnico conviven.",
+        "resultsTitle": "Beneficios medibles:",
         "resultsItems": [
-          "+ Retención de Talento: Equipos felices no renuncian.",
-          "+ Seguridad Psicológica: Innovación sin miedo a fallar.",
-          "+ Innovación y Agilidad: Sprints eficientes, menos deuda técnica.",
-          "- Burnout y Rotación: Cultura sostenible de alto rendimiento."
+          "+ Retención de Talento: Equipos felices no renuncian",
+          "+ Seguridad Psicológica: Innovación sin miedo a fallar",
+          "+ Innovación y Agilidad: Sprints eficientes, menos deuda técnica",
+          "- Burnout y Rotación: Cultura sostenible de alto rendimiento"
         ],
-        "ctaLabel": "Desarrollar a mis líderes (Agendar Demo)",
-        "note": "Los servicios B2B tienen inversión porque requieren estructura y seguimiento. Pero siempre trabajamos desde el propósito, no solo desde el proceso.",
+        "ctaLabel": "Agendar Sesión Exploratoria",
+        "ctaUrl": "https://calendly.com/hugotech/reunion-exploratoria",
+        "note": "Los servicios B2B tienen inversión porque requieren estructura, seguimiento y resultados medibles. Pero siempre trabajamos desde el propósito, no solo desde el proceso.",
         "imageAlt": "Equipos tech de alto rendimiento con cultura consciente"
       },
       "businessCard": {

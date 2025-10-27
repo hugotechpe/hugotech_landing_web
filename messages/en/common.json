@@ -326,32 +326,33 @@
       "mentoriaCard": {
         "title": "Your 1-on-1 Tech Mentoring 💚",
         "subtitle": "Purpose coaching + Tech mentoring. Free.",
-        "p1": "Feeling stuck in your first IT job? Don't know what path to take (DevOps, AI Engineer, Product Manager)? Impostor syndrome? <b>You're not alone</b>.",
-        "p2": "Our 1-on-1 sessions (at no cost) combine <b>self-awareness coaching with tech mentoring</b>. Before the 'what' comes the 'why'. Discover your values, define your purpose and overcome the mental barriers holding you back.",
-        "resultsTitle": "What you'll achieve in your sessions:",
+        "p1": "Impostor syndrome? Introversion holding you back? Stuck without knowing which path to take? <b>You're not alone</b>.",
+        "p2": "Our 1-on-1 sessions (at no cost) combine <b>human development with tech strategy</b>. I accompany you to discover who you are, connect with your purpose and transform your tech career from within. Because when you know yourself, you decide better.",
+        "resultsTitle": "What you'll achieve:",
         "resultsItems": [
-          "Clarity about your professional purpose and next steps in tech.",
-          "Personalized roadmap according to your profile (backend, frontend, QA, PM, etc.)",
-          "Growth mindset and anti-burnout tools applied to daily life.",
-          "CV review, LinkedIn and personal tech branding strategy."
+          "Clarity about your professional purpose and next steps in tech",
+          "Personalized roadmap according to your profile (backend, frontend, QA, PM, DevOps, AI)",
+          "Tools to manage impostor syndrome, fear of failure and communication",
+          "Growth mindset and anti-burnout strategies applicable daily"
         ],
-        "ctaLabel": "I want my clarity session (It's free)",
-        "note": "1-on-1 sessions are 100% free. It's my way of giving back what life gave me. No fine print, no hidden agenda."
+        "ctaLabel": "Schedule your free session",
+        "note": "100% free. No fine print, no hidden agenda. Just honest conversation that transforms."
       },
       "empresasCard": {
         "title": "HugoTech B2B",
         "subtitle": "Talent Retention + Psychological Safety + Agile Innovation",
-        "p1": "I help your leaders evolve. Through <b>agile leadership workshops, executive coaching and culture programs</b>, I transform your tech team into an unstoppable force.",
-        "p2": "No more turnover due to 'bad culture'. No more burnout in talented devs. Let's build <b>teams that trust, innovate and deliver</b> sustainably.",
-        "resultsTitle": "Measurable benefits for your company:",
+        "p1": "I help your leaders evolve. Through <b>agile leadership workshops, executive coaching and culture programs</b>, I transform your tech team into an unstoppable force that builds with autonomy and purpose.",
+        "p2": "No more turnover due to 'bad culture'. No more burnout in talented devs. Let's build <b>teams that trust, innovate and deliver</b> sustainably, where the human and technical coexist.",
+        "resultsTitle": "Measurable benefits:",
         "resultsItems": [
-          "+ Talent Retention: Happy teams don't quit.",
-          "+ Psychological Safety: Innovation without fear of failure.",
-          "+ Innovation and Agility: Efficient sprints, less technical debt.",
-          "- Burnout and Turnover: Sustainable high-performance culture."
+          "+ Talent Retention: Happy teams don't quit",
+          "+ Psychological Safety: Innovation without fear of failure",
+          "+ Innovation and Agility: Efficient sprints, less technical debt",
+          "- Burnout and Turnover: Sustainable high-performance culture"
         ],
-        "ctaLabel": "Develop my leaders (Schedule Demo)",
-        "note": "B2B services have an investment because they require structure and follow-up. But we always work from purpose, not just process.",
+        "ctaLabel": "Schedule Exploratory Session",
+        "ctaUrl": "https://calendly.com/hugotech/reunion-exploratoria",
+        "note": "B2B services have an investment because they require structure, follow-up and measurable results. But we always work from purpose, not just process.",
         "imageAlt": "High-performance tech teams with conscious culture"
       },
       "businessCard": {
