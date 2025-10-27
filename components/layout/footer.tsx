@@ -178,7 +178,7 @@ const Footer: React.FC = () => {
                 required
                 className="flex-1"
                 classNames={{
-                  input: "placeholder:text-default-500"
+                  input: "placeholder:!text-gray-600"
                 }}
               />
               <Button
