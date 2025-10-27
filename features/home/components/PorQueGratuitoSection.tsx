@@ -246,7 +246,7 @@ export function PorQueGratuitoSection() {
           </div>
         </div>
 
-        {/* Testimonial Quote integrado */}
+        {/* Testimonial Quote con diseño mejorado - Efecto WOW */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -254,19 +254,83 @@ export function PorQueGratuitoSection() {
           variants={fadeInUp}
           className="mt-16"
         >
-          <Card className="bg-gradient-to-r from-primary/5 via-white to-brand/5 border-2 border-primary/10" shadow="lg">
-            <CardBody className="p-8 md:p-12 text-center">
-              <div className="text-5xl md:text-6xl mb-6">💬</div>
-              <blockquote className="text-lg md:text-xl font-quote italic text-gray-700 mb-8 leading-[2] tracking-wide max-w-4xl mx-auto">
-                {t.rich("quote.text", {
-                  highlight1: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
-                  highlight2: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
-                  highlight3: (chunks) => <strong className="text-brand not-italic font-sans font-semibold">{chunks}</strong>,
-                })}
-              </blockquote>
-              <p className="text-gray-600 text-base font-medium">— {t("quote.author")}</p>
-            </CardBody>
-          </Card>
+          <motion.div
+            whileHover={{ scale: 1.01 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <Card className="bg-gradient-to-br from-white via-primary/5 to-brand/10 border-2 border-primary/20 overflow-hidden relative" shadow="lg">
+              {/* Decorative corner accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand/20 to-transparent rounded-bl-[100px]" />
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-primary/20 to-transparent rounded-tr-[80px]" />
+              
+              <CardBody className="p-8 md:p-16 text-center relative z-10">
+                {/* Quote icon con animación */}
+                <motion.div 
+                  className="text-6xl md:text-7xl mb-8"
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 5, -5, 0]
+                  }}
+                  transition={{ 
+                    duration: 3,
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                  }}
+                >
+                  💬
+                </motion.div>
+                
+                {/* Quote text con mejor tipografía */}
+                <blockquote className="relative">
+                  {/* Comillas decorativas */}
+                  <span className="absolute -top-8 -left-4 md:-left-8 text-8xl text-primary/10 font-serif leading-none">"</span>
+                  
+                  <p className="text-xl md:text-2xl lg:text-3xl font-light italic text-gray-800 mb-10 leading-[1.8] tracking-wide max-w-5xl mx-auto relative">
+                    {t.rich("quote.text", {
+                      highlight1: (chunks) => (
+                        <motion.span 
+                          className="text-primary not-italic font-semibold relative inline-block"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          <span className="relative z-10">{chunks}</span>
+                          <span className="absolute inset-0 bg-primary/10 rounded -z-10 blur-sm" />
+                        </motion.span>
+                      ),
+                      highlight2: (chunks) => (
+                        <motion.span 
+                          className="text-primary not-italic font-semibold relative inline-block"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          <span className="relative z-10">{chunks}</span>
+                          <span className="absolute inset-0 bg-primary/10 rounded -z-10 blur-sm" />
+                        </motion.span>
+                      ),
+                      highlight3: (chunks) => (
+                        <motion.span 
+                          className="text-brand not-italic font-bold relative inline-block"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          <span className="relative z-10">{chunks}</span>
+                          <span className="absolute inset-0 bg-brand/20 rounded -z-10 blur-sm" />
+                        </motion.span>
+                      ),
+                    })}
+                  </p>
+                  
+                  <span className="absolute -bottom-8 -right-4 md:-right-8 text-8xl text-brand/10 font-serif leading-none">"</span>
+                </blockquote>
+                
+                {/* Author con diseño elegante */}
+                <div className="flex items-center justify-center gap-4 mt-8">
+                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/30" />
+                  <p className="text-lg md:text-xl text-customgray font-semibold tracking-wide">
+                    {t("quote.author")}
+                  </p>
+                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/30" />
+                </div>
+              </CardBody>
+            </Card>
+          </motion.div>
         </motion.div>
       </div>
     </section>
