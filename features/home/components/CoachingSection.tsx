@@ -133,14 +133,14 @@ export function CoachingSection() {
 
             <div className="space-y-6">
               <p itemProp="description" className="text-white/90 text-base md:text-lg leading-[1.9] tracking-wide">
-                {t("content.p1")}
+                {t.rich("content.p1", {
+                  b: (chunk) => <strong className="font-bold text-white">{chunk}</strong>,
+                })}
               </p>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 <p className="text-white font-semibold text-base md:text-lg mb-5 leading-relaxed">
-                  {t.rich("content.pBold1", {
-                    b: (chunk) => <span className="text-brand">{chunk}</span>,
-                  })}
+                  {t("content.pBold1")}
                 </p>
 
                 {/* Bullets mejorados con iconos */}
