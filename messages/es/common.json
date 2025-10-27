@@ -837,7 +837,7 @@
       "header": {
         "chip": "Voces Reales 💬",
         "title": "Historias de quienes <highlight>caminaron conmigo</highlight>",
-        "description": "Más allá de los resultados, estas son las personas que confiaron, se atrevieron a mirarse dentro y decidieron crecer. Cada historia es única, cada transformación es real.",
+        "description": "Más allá de los resultados, estas son las personas que confiaron en mí. Que se atrevieron a compartir sus miedos, sus dudas y también sus sueños. Cada camino fue distinto, pero todos comparten el mismo inicio: ese momento donde decidieron que querían algo diferente para su vida profesional y personal.",
         "cta": {
           "primary": "Ver historias reales →",
           "secondary": "Agenda tu sesión gratuita"
@@ -847,8 +847,8 @@
         }
       },
       "list": {
-        "title": "Historias Reales de Crecimiento",
-        "description": "Cada testimonio es una historia real de crecimiento, vulnerabilidad y valentía. Personas tech que se atrevieron a <strong>mirarse dentro</strong> para crecer afuera.",
+        "title": "Historias de quienes caminaron conmigo",
+        "description": "Desde los 22 años tuve la oportunidad de liderar equipos. Me equivoqué muchas veces, pero aprendí algo fundamental: <strong>el verdadero liderazgo es sacar el potencial de cada persona</strong>. Estos son los talentos que se atrevieron a pensar diferente, a arriesgarse, a desarrollar sus habilidades blandas y a empoderarse para construir su propia versión extraordinaria.",
         "loadMore": "Ver más historias reales ({count} restantes) →",
         "end": {
           "emoji": "✨",

@@ -836,7 +836,7 @@
       "header": {
         "chip": "Real Voices 💬",
         "title": "Stories from those who <highlight>walked with me</highlight>",
-        "description": "Beyond the results, these are the people who trusted, dared to look within and decided to grow. Each story is unique, each transformation is real.",
+        "description": "Beyond the results, these are the people who trusted me. Who dared to share their fears, their doubts and also their dreams. Each path was different, but all share the same beginning: that moment where they decided they wanted something different for their professional and personal life.",
         "cta": {
           "primary": "See real stories →",
           "secondary": "Schedule your free session"
@@ -846,8 +846,8 @@
         }
       },
       "list": {
-        "title": "Real Stories of Growth",
-        "description": "Each testimonial is a real story of growth, vulnerability and courage. Tech people who dared to <strong>look within</strong> to grow outward.",
+        "title": "Stories of those who walked with me",
+        "description": "Since I was 22, I've had the opportunity to lead teams. I made many mistakes, but I learned something fundamental: <strong>true leadership is bringing out each person's potential</strong>. These are the talents who dared to think differently, to take risks, to develop their soft skills and empower themselves to build their own extraordinary version.",
         "loadMore": "See more real stories ({count} remaining) →",
         "end": {
           "emoji": "✨",
