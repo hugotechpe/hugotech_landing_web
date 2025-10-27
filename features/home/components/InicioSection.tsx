@@ -54,13 +54,13 @@ export function InicioSection() {
               <p>
                 {t.rich("paragraphs.p1", {
                   b: (chunks) => <strong>{chunks}</strong>,
-                  brand: (chunks) => <span className="font-semibold text-brand">{chunks}</span>,
+                  brand: (chunks) => <span className="font-semibold text-white">{chunks}</span>,
                 })}
               </p>
               <p>
                 {t.rich("paragraphs.p2", {
                   b: (chunks) => <strong>{chunks}</strong>,
-                  brand: (chunks) => <span className="font-semibold text-brand">{chunks}</span>,
+                  brand: (chunks) => <span className="font-semibold text-white">{chunks}</span>,
                 })}
               </p>
             </div>
@@ -143,7 +143,7 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">{t("badges.leader.title")}</h3>
+                      <h2 className="font-bold text-customgray text-sm">{t("badges.leader.title")}</h2>
                       <p className="text-xs text-gray-600 mt-1">{t("badges.leader.description")}</p>
                     </div>
                   </div>
@@ -176,7 +176,7 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">{t("badges.talent.title")}</h3>
+                      <h2 className="font-bold text-customgray text-sm">{t("badges.talent.title")}</h2>
                       <p className="text-xs text-gray-600 mt-1">{t("badges.talent.description")}</p>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export function InicioSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-customgray text-sm">{t("badges.antiBurnout.title")}</h3>
+                      <h2 className="font-bold text-customgray text-sm">{t("badges.antiBurnout.title")}</h2>
                       <p className="text-xs text-gray-600 mt-1">{t("badges.antiBurnout.description")}</p>
                     </div>
                   </div>

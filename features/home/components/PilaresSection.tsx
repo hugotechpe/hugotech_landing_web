@@ -69,13 +69,11 @@ export function PilaresSection() {
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
-              role="list"
             >
               {items.map((item, index) => (
                 <motion.div 
                   key={item.title} 
                   variants={fadeInUp} 
-                  role="listitem"
                   whileHover={{ 
                     scale: 1.03, 
                     rotateY: 3,

@@ -97,8 +97,8 @@ export function EmpresasSection() {
                   <Image
                     src="/images/image3.png"
                     alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
-                    width={220}
-                    height={270}
+                    width={165}
+                    height={220}
                     className="rounded-lg shadow-sm hidden md:block"
                   />
                 </div>
@@ -152,8 +152,8 @@ export function EmpresasSection() {
                   <Image
                     src="/images/image4.png"
                     alt={t("empresasCard.imageAlt")}
-                    width={220}
-                    height={270}
+                    width={227}
+                    height={215}
                     className="rounded-lg shadow-sm hidden md:block"
                   />
                 </div>

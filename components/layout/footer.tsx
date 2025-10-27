@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                     <li key={`legal-${idx}`}>
                       <Link
                         href={link.href}
-                        className="text-white/50 hover:text-white"
+                        className="text-white/90 hover:text-white"
                         title={link.label}
                       >
                         {link.label}
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
                     <li key={`menu-${idx}`}>
                       <Link
                         href={item.href}
-                        className="text-white/50 hover:text-white"
+                        className="text-white/90 hover:text-white"
                       >
                         {item.label}
                       </Link>
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
             <h2 id="footer-newsletter" className="text-lg font-bold">
               {newsletter.title}
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-white/50">
+            <p className="mt-3 text-sm sm:text-base text-white/90">
               {newsletter.description}
             </p>
             <form
@@ -205,7 +205,7 @@ const Footer: React.FC = () => {
               isExternal
               aria-label="Instagram de HugoTech"
               title="Sígueme en Instagram @hugotech.pe"
-              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+              className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
             >
               <InstagramIcon className="h-5 w-5" />
             </Link>
@@ -214,7 +214,7 @@ const Footer: React.FC = () => {
               isExternal
               aria-label="LinkedIn de Hugo Casanova"
               title="Conéctate en LinkedIn"
-              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+              className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
             >
               <LinkedInIcon className="h-5 w-5" />
             </Link>
@@ -223,7 +223,7 @@ const Footer: React.FC = () => {
               isExternal
               aria-label="TikTok de HugoTech"
               title="Sígueme en TikTok @hugotech.pe"
-              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+              className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
             >
               <TikTokIcon className="h-5 w-5" />
             </Link>
@@ -232,7 +232,7 @@ const Footer: React.FC = () => {
               isExternal
               aria-label="WhatsApp de Hugo"
               title="Escríbeme por WhatsApp"
-              className="text-white/50 hover:text-white transition-colors hover:scale-110 transform"
+              className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
             >
               <WhatsAppIcon className="h-5 w-5" />
             </Link>

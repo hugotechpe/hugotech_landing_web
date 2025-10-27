@@ -206,7 +206,6 @@ export function MePresentoSection() {
                 viewport={{ once: true }}
                 variants={staggerContainer}
                 className="mt-8 space-y-4"
-                role="list"
               >
                 {items.map((item, idx) => (
                   <motion.div
