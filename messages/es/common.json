@@ -151,18 +151,18 @@
       },
       "items": [
         {
-          "title": "Autoconocimiento + Habilidades Humanas",
-          "description": "Trabajamos confianza, comunicación, inteligencia emocional y empatía. La IA potencia tu eficiencia, pero tus habilidades humanas son irremplazables.",
+          "title": "Transformación desde el SER",
+          "description": "No te enseño solo frameworks. Te acompaño a descubrir quién eres, conectar con tu propósito y transformar desde adentro. Porque cuando te conoces, decides mejor.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Mentalidad Anti-Burnout",
-          "description": "Exploramos tu propósito, valores y fortalezas. Construimos una carrera sostenible con bienestar, claridad y mentalidad de crecimiento.",
+          "title": "Carrera Tech Sostenible (Anti-Burnout)",
+          "description": "Construimos una carrera donde el éxito no te vacíe. Con bienestar, claridad de propósito y mentalidad de crecimiento. Sin glorificar el agotamiento.",
           "iconKey": "equipos"
         },
         {
-          "title": "Liderazgo Ágil Consciente",
-          "description": "Creamos equipos extraordinarios basados en seguridad psicológica, confianza y vulnerabilidad auténtica, no en miedo ni ego técnico.",
+          "title": "Liderar con Humanidad, no solo con Código",
+          "description": "Creamos equipos donde la vulnerabilidad es fortaleza. Basados en seguridad psicológica, confianza auténtica y conversaciones reales, no en miedo ni ego técnico.",
           "iconKey": "liderazgo"
         }
       ]

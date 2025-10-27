@@ -150,18 +150,18 @@
       },
       "items": [
         {
-          "title": "Mentoring & Tech Coaching",
-          "description": "200+ talents guided to strengthen mindset, gain direction and show their value with confidence.",
+          "title": "Transformation from the BEING",
+          "description": "I don't just teach frameworks. I accompany you to discover who you are, connect with your purpose and transform from within. Because when you know yourself, you decide better.",
           "iconKey": "mentoring"
         },
         {
-          "title": "High-Performance Teams",
-          "description": "Building trust, communication and feedback with Management 3.0, Scrum/Kanban and Agile HR.",
+          "title": "Sustainable Tech Career (Anti-Burnout)",
+          "description": "We build a career where success doesn't drain you. With well-being, purpose clarity and growth mindset. Without glorifying exhaustion.",
           "iconKey": "equipos"
         },
         {
-          "title": "Agile Leadership that Transforms",
-          "description": "Accompanying leaders in transformation, combining strategic vision, data and culture.",
+          "title": "Lead with Humanity, not just Code",
+          "description": "We create teams where vulnerability is strength. Based on psychological safety, authentic trust and real conversations, not fear or technical ego.",
           "iconKey": "liderazgo"
         }
       ]
