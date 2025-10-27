@@ -100,7 +100,6 @@ export function EmpresasSection() {
                     width={165}
                     height={220}
                     loading="lazy"
-                    quality={75}
                     sizes="(max-width: 768px) 0px, 165px"
                     className="rounded-lg shadow-sm hidden md:block"
                   />
@@ -158,7 +157,6 @@ export function EmpresasSection() {
                     width={227}
                     height={215}
                     loading="lazy"
-                    quality={75}
                     sizes="(max-width: 768px) 0px, 227px"
                     className="rounded-lg shadow-sm hidden md:block"
                   />
