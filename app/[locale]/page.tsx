@@ -108,9 +108,9 @@ export default function Home() {
         <PorQueGratuitoSection />
         <PilaresSection />
         <EmpresasSection />
-        <CoachingSection />
         <TestimoniosSection />
         <AgendaSection />
+        <CoachingSection />
       </HomeLayout>
     </>
   );

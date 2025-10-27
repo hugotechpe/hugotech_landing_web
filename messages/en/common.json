@@ -73,10 +73,10 @@
         "items": [
           { "label": "Home", "href": "/en/" },
           { "label": "About me", "href": "/en/#mepresento" },
-          { "label": "Coaching with purpose", "href": "/en/#cccausa" },
           { "label": "Companies", "href": "/en/#empresas" },
           { "label": "Testimonials", "href": "/en/#testimonios" },
           { "label": "Book a session", "href": "/en/#cita" },
+          { "label": "Coaching with purpose", "href": "/en/#cccausa" },
           { "label": "Blog", "href": "/en/blog" }
         ]
       },
