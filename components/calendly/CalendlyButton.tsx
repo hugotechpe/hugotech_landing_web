@@ -137,6 +137,7 @@ export function CalendlyButton({
         onClick={handleClick}
         className={getButtonClasses()}
         type="button"
+        aria-label={text}
       >
         {text}
       </button>
