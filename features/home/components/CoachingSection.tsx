@@ -163,7 +163,7 @@ export function CoachingSection() {
                 </ul>
               </div>
 
-              <p className="text-white/80 text-[15px] md:text-base italic font-quote pl-5 border-l-4 border-brand leading-[2] tracking-wide">
+              <p className="text-white/90 text-[15px] md:text-base italic font-quote pl-5 border-l-4 border-brand leading-[2] tracking-wide">
                 {t("content.p2")}
               </p>
 

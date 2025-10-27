@@ -163,7 +163,11 @@ const Footer: React.FC = () => {
               className="mt-4 flex flex-col sm:flex-row gap-3"
               aria-label={newsletter.title}
             >
+              <label htmlFor="newsletter-email" className="sr-only">
+                {newsletter.placeholder}
+              </label>
               <Input
+                id="newsletter-email"
                 aria-label={newsletter.placeholder}
                 name="email"
                 type="email"
