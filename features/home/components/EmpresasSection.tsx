@@ -47,7 +47,7 @@ export function EmpresasSection() {
             })}
           </p>
           <p className="mt-2 text-black">
-            {t.rich("header.intro.p2", { sb: (chunks) => <span className="font-semibold">{chunks}</span> })}
+            {t.rich("header.intro.p2", { b: (chunks) => <strong>{chunks}</strong> })}
           </p>
         </motion.header>
 
