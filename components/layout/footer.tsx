@@ -177,6 +177,9 @@ const Footer: React.FC = () => {
                 autoComplete="email"
                 required
                 className="flex-1"
+                classNames={{
+                  input: "placeholder:text-default-500"
+                }}
               />
               <Button
                 type="submit"
