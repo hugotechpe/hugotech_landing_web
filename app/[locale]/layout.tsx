@@ -12,6 +12,7 @@ import {
   GoogleTagManager,
   GoogleTagManagerNoScript,
 } from "@/components/analytics/GoogleTagManager";
+import { AlternateLinks } from "@/components/seo/AlternateLinks";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hugotech.pe"),
@@ -110,6 +111,9 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        
+        {/* SEO: hreflang para soporte multiidioma */}
+        <AlternateLinks locale={locale} />
         
         <GoogleTagManager />
       </head>
