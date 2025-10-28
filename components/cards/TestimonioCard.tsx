@@ -110,6 +110,12 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             itemScope
             itemType="https://schema.org/Review"
           >
+            {/* Schema.org required fields */}
+            <meta itemProp="author" content={authorName} />
+            <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Service">
+              <meta itemProp="name" content="HugoTech - Mentoring y Coaching Tech" />
+            </div>
+            
             <blockquote
               itemProp="reviewBody"
               className="text-customgray/90 text-base md:text-lg leading-[1.8] font-body"
