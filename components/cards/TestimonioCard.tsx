@@ -111,7 +111,9 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             itemType="https://schema.org/Review"
           >
             {/* Schema.org required fields */}
-            <meta itemProp="author" content={authorName} />
+            <div itemProp="author" itemScope itemType="https://schema.org/Person">
+              <meta itemProp="name" content={authorName} />
+            </div>
             <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Service">
               <meta itemProp="name" content="HugoTech - Mentoring y Coaching Tech" />
             </div>
