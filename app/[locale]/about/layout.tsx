@@ -7,53 +7,21 @@ import {
   personSchema,
   getBreadcrumbSchema,
 } from "@/components/seo/JsonLd";
+import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Mi Historia: De Ingeniero a Guía de Transformación | Hugo Casanova",
-  description:
-    "Conoce la historia de Hugo Casanova, ingeniero peruano con 18+ años transformando equipos tech. De construir código a construir personas con propósito, liderazgo consciente y alma.",
-  keywords: [
-    "Hugo Casanova",
-    "coach profesional ICF",
-    "liderazgo tech Perú",
-    "transformación digital",
-    "mentoring tecnológico",
-    "historia personal",
-    "propósito profesional",
-    "ingeniero peruano",
-    "cultura ágil",
-    "desarrollo de líderes",
-  ],
-  alternates: {
-    canonical: "https://hugotech.pe/about",
-    languages: {
-      es: "https://hugotech.pe/es/about",
-      en: "https://hugotech.pe/en/about",
-    },
-  },
-  openGraph: {
-    title: "Mi Historia: De Ingeniero a Guía de Transformación | Hugo Casanova",
-    description:
-      "18+ años transformando equipos tech con humanidad, propósito y excelencia. Conoce mi viaje desde el código hasta las personas.",
-    type: "profile",
-    url: "https://hugotech.pe/about",
-    images: [
-      {
-        url: "https://hugotech.pe/images/hugo-casanova.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Hugo Casanova - Coach y Mentor Tech",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mi Historia | Hugo Casanova",
-    description:
-      "18+ años transformando equipos tech con humanidad y propósito",
-    images: ["https://hugotech.pe/images/hugo-casanova.jpg"],
-  },
-};
+// Metadata dinámica para About page
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const isSpanish = locale === "es";
+  const metaData = isSpanish ? pageMetadata.about.es : pageMetadata.about.en;
+  
+  return genMetadata({
+    ...metaData,
+    locale,
+    path: "/about",
+    ogImage: "/images/hugo-casanova.jpg",
+  });
+}
 
 const breadcrumbData = [
   { name: "Inicio", url: "https://hugotech.pe" },

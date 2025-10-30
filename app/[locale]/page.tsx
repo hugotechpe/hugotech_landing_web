@@ -15,6 +15,8 @@ import {
   serviceSchema,
   aggregateRatingSchema,
 } from "@/components/seo/JsonLd";
+import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
+import { setRequestLocale } from "next-intl/server";
 
 // Lazy load AgendaSection (contiene Calendly que es pesado)
 const AgendaSection = dynamic(
@@ -32,68 +34,23 @@ const AgendaSection = dynamic(
   },
 );
 
-export const metadata: Metadata = {
-  title: "HugoTech - Mentoring Tech con Propósito en la Era de la IA",
-  description:
-    "Acompaño a jóvenes talentos tech a encontrar su propósito profesional. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Evita el burnout, construye una carrera sostenible.",
-  keywords: [
-    "mentoring tech",
-    "coaching tecnológico",
-    "desarrollo profesional",
-    "mentalidad tech",
-    "burnout tech",
-    "carrera sostenible",
-    "liderazgo ágil",
-    "transformación digital",
-  ],
-  authors: [{ name: "Hugo Casanova", url: "https://hugotech.pe" }],
-  creator: "Hugo Casanova",
-  publisher: "HugoTech",
-  alternates: {
-    canonical: "https://hugotech.pe",
-    languages: {
-      es: "https://hugotech.pe/es",
-      en: "https://hugotech.pe/en",
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "es_PE",
-    alternateLocale: ["en_US"],
-    url: "https://hugotech.pe",
-    siteName: "HugoTech",
-    title: "HugoTech - Mentoring Tech con Propósito",
-    description:
-      "Acompaño a jóvenes talentos tech a encontrar su propósito profesional. Sesiones 1 a 1 gratuitas.",
-    images: [
-      {
-        url: "https://hugotech.pe/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "HugoTech - Mentoring y Coaching Tech",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "HugoTech - Mentoring Tech con Propósito",
-    description: "Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico",
-    images: ["https://hugotech.pe/images/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-};
+// Metadata dinámica basada en locale
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const isSpanish = locale === "es";
+  const metaData = isSpanish ? pageMetadata.home.es : pageMetadata.home.en;
+  
+  return genMetadata({
+    ...metaData,
+    locale,
+    path: "",
+  });
+}
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  // Set locale para next-intl
+  setRequestLocale(locale);
   return (
     <>
       {/* Schemas JSON-LD para SEO */}
