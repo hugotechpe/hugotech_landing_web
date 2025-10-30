@@ -23,10 +23,13 @@ export function generateMetadata({
   const localePath = isDefaultLocale ? path : `/${locale}${path}`;
   const canonicalUrl = `${BASE_URL}${localePath}`;
   
-  // URLs alternativas para hreflang
+  // URLs alternativas para hreflang con x-default
   const alternateUrls = {
-    es: `${BASE_URL}${path}`,
-    en: `${BASE_URL}/en${path}`,
+    "es-PE": `${BASE_URL}${path}`,
+    "es": `${BASE_URL}${path}`,
+    "en-US": `${BASE_URL}/en${path}`,
+    "en": `${BASE_URL}/en${path}`,
+    "x-default": `${BASE_URL}${path}`, // Español como predeterminado
   };
 
   return {
