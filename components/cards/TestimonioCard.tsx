@@ -110,16 +110,17 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             itemScope
             itemType="https://schema.org/Review"
           >
-            {/* Schema.org required fields for Google Rich Results */}
-            <meta itemProp="author" content={authorName} />
-            <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization">
-              <meta itemProp="name" content="HugoTech" />
-              <meta itemProp="description" content="Coaching y Mentoring Tecnológico" />
-            </div>
-            <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-              <meta itemProp="ratingValue" content="5" />
-              <meta itemProp="bestRating" content="5" />
-            </div>
+            {/* Schema.org microdata for Google Rich Results */}
+            <span itemProp="author" itemScope itemType="https://schema.org/Person" style={{ display: 'none' }}>
+              <span itemProp="name">{authorName}</span>
+            </span>
+            <span itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization" style={{ display: 'none' }}>
+              <span itemProp="name">HugoTech</span>
+            </span>
+            <span itemProp="reviewRating" itemScope itemType="https://schema.org/Rating" style={{ display: 'none' }}>
+              <span itemProp="ratingValue">5</span>
+              <span itemProp="bestRating">5</span>
+            </span>
             
             <blockquote
               itemProp="reviewBody"
