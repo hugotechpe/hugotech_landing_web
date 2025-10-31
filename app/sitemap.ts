@@ -6,12 +6,12 @@ const locales = ["es", "en"] as const;
 // Rutas estáticas del sitio (sin el prefijo de locale)
 const routes = [
   { path: "", priority: 1.0, changeFrequency: "daily" as const },
-  { path: "/about", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/pricing", priority: 0.8, changeFrequency: "weekly" as const },
-  { path: "/blog", priority: 0.7, changeFrequency: "daily" as const },
+  { path: "/about", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
+  { path: "/empresas", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/testimonials", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
-  { path: "/empresas", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/testimonials", priority: 0.7, changeFrequency: "monthly" as const },
   {
     path: "/privacy-policy",
     priority: 0.3,
@@ -31,6 +31,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
+  const lastModified = new Date('2024-10-31'); // Fecha de la última actualización del sitio
 
   // Generar entradas para cada ruta en cada idioma
   routes.forEach((route) => {
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       sitemapEntries.push({
         url,
-        lastModified: new Date(),
+        lastModified,
         changeFrequency: route.changeFrequency,
         priority: route.priority,
         alternates: {
