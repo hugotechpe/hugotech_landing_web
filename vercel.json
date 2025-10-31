@@ -1,4 +1,0 @@
-{
-  "buildCommand": "NEXT_NO_TURBOPACK=1 npm run build",
-  "framework": "nextjs"
-}
