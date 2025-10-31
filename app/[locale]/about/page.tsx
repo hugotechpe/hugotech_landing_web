@@ -10,6 +10,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
 
 import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export default function AboutPage() {
   const t = useTranslations("Sections.About");
@@ -35,6 +36,9 @@ export default function AboutPage() {
 
   return (
     <main className="bg-white overflow-hidden">
+      {/* Breadcrumb Schema para SEO */}
+      <Breadcrumb />
+      
       {/* Hero Section con Parallax */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <motion.div

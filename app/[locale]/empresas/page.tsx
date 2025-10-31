@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export default function EmpresasPage() {
   const t = useTranslations("Sections.Companies");
@@ -26,6 +27,9 @@ export default function EmpresasPage() {
 
   return (
     <main className="bg-white">
+      {/* SEO: Breadcrumb Schema */}
+      <Breadcrumb />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-[#0d4746] to-[#083635] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
