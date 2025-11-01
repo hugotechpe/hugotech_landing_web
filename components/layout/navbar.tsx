@@ -124,6 +124,28 @@ export default function HeroNavbar() {
               </Link>
             </NavbarMenuItem>
           ))}
+          
+          {/* Language Switcher en mobile */}
+          <NavbarMenuItem>
+            <div className="py-4 border-t border-gray-200 mt-2">
+              <LocaleSwitch />
+            </div>
+          </NavbarMenuItem>
+          
+          {/* CTA Button en mobile */}
+          <NavbarMenuItem className="md:hidden mt-4">
+            <Button
+              as={Link}
+              color="primary"
+              href="/#cita"
+              variant="solid"
+              size="lg"
+              className="bg-primary text-white font-bold w-full"
+              onPress={() => setIsMenuOpen(false)}
+            >
+              {tAgenda("title")}
+            </Button>
+          </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
     </header>
