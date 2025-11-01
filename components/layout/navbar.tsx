@@ -92,7 +92,8 @@ export default function HeroNavbar() {
               </Link>
             </NavbarItem>
           ))}
-          <NavbarItem className="hidden lg:flex">
+          {/* Locale Switch - Visible en todos los tamaños */}
+          <NavbarItem>
             <LocaleSwitch />
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
@@ -124,13 +125,6 @@ export default function HeroNavbar() {
               </Link>
             </NavbarMenuItem>
           ))}
-          
-          {/* Language Switcher en mobile */}
-          <NavbarMenuItem>
-            <div className="py-4 border-t border-gray-200 mt-2">
-              <LocaleSwitch />
-            </div>
-          </NavbarMenuItem>
           
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
