@@ -75,6 +75,8 @@
           { "label": "About me", "href": "/en/#mepresento" },
           { "label": "Companies", "href": "/en/#empresas" },
           { "label": "Testimonials", "href": "/en/#testimonios" },
+          { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
+          { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
           { "label": "Book a session", "href": "/en/#cita" },
           { "label": "Coaching with purpose", "href": "/en/#cccausa" },
           { "label": "Blog", "href": "/en/blog" }

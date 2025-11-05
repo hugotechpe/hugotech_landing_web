@@ -75,6 +75,8 @@
           { "label": "Me presento", "href": "/es/#mepresento" },
           { "label": "Empresas", "href": "/es/#empresas" },
           { "label": "Testimonios", "href": "/es/#testimonios" },
+          { "label": "Coaching Personal 1 a 1", "href": "/es/coaching" },
+          { "label": "Mentor Coaching 1 a 1", "href": "/es/mentor-coaching" },
           { "label": "Agenda tu sesión", "href": "/es/#cita" },
           { "label": "Coaching con causa", "href": "/es/#cccausa" },
           { "label": "Blog", "href": "/es/blog" }
