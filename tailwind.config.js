@@ -8,6 +8,14 @@ const config = {
     "./features/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  // Purge CSS no usado en producción
+  safelist: [
+    // Mantener clases dinámicas si existen
+    'text-primary',
+    'text-brand',
+    'bg-primary',
+    'bg-brand',
+  ],
   theme: {
     extend: {
       colors: {
