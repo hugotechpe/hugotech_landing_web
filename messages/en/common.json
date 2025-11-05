@@ -77,8 +77,8 @@
           { "label": "Testimonials", "href": "/en/#testimonios" },
           { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
           { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
+          { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },
           { "label": "Book a session", "href": "/en/#cita" },
-          { "label": "Coaching with purpose", "href": "/en/#cccausa" },
           { "label": "Blog", "href": "/en/blog" }
         ]
       },
@@ -1275,6 +1275,122 @@
       },
       "quote": {
         "text": "Coaching is not about changing who you are, but about remembering who you've always been under all the layers you've built.",
+        "author": "Hugo Casanova"
+      }
+    },
+    "CoachingConCausa": {
+      "hero": {
+        "chip": "🌱 COACHING WITH A CAUSE",
+        "title": "Coaching with a Cause 🌍💚",
+        "subtitle": "Your growth also creates impact in the world.",
+        "tagline": "All 1-on-1 sessions are 100% free. They always will be. No fine print, no hidden agenda. Just honest conversations that transform."
+      },
+      "freeCommitment": {
+        "title": "My commitment to social impact:",
+        "items": {
+          "1": {
+            "icon": "🎯",
+            "text": "Individual mentorships will always be free as my way of giving back what life gave me."
+          },
+          "2": {
+            "icon": "💡",
+            "text": "If in the future I offer additional paid programs, a significant portion will be dedicated to social causes focused on tech education and community wellbeing."
+          }
+        },
+        "principle": "Because I believe true success is measured in transformed lives, not just generated income."
+      },
+      "howItWorks": {
+        "title": "How does it work?",
+        "intro": "A simple and transparent model:",
+        "steps": {
+          "1": {
+            "emoji": "🎁",
+            "title": "First session: 100% free",
+            "description": "Schedule your initial discovery session at no cost. We get to know each other, explore your current situation, challenges, and goals. No commitments."
+          },
+          "2": {
+            "emoji": "🤝",
+            "title": "Continuation sessions: Coaching with a Cause",
+            "description": "If you decide to continue your process, the following sessions have an economic contribution that YOU define according to your situation. This amount does NOT go to my pocket: it's entirely dedicated to social causes that impact those who need it most."
+          },
+          "3": {
+            "emoji": "💚",
+            "title": "Transparent impact",
+            "description": "You'll receive reports on how your contribution helped these causes. Total transparency."
+          }
+        }
+      },
+      "causes": {
+        "title": "The causes we support",
+        "subtitle": "Each session you book multiplies your impact in these four areas:",
+        "items": {
+          "1": {
+            "icon": "🐕",
+            "emoji": "🐾",
+            "title": "Rescued animal shelters",
+            "description": "Shelters like 'Huellitas de Amor' and 'ASPPA' that provide home, health, and love to abandoned dogs and cats in Lima and provinces.",
+            "impact": "Food, vaccines, and sterilizations"
+          },
+          "2": {
+            "icon": "💻",
+            "emoji": "👨‍💻",
+            "title": "Tech education for vulnerable communities",
+            "description": "Programming, design, and digital skills workshops in rural and peripheral areas of Peru, opening doors to new opportunities.",
+            "impact": "Scholarships, laptops, and internet access"
+          },
+          "3": {
+            "icon": "🍲",
+            "emoji": "❤️",
+            "title": "Community kitchens and soup kitchens",
+            "description": "Support for mothers and families who feed entire communities with daily effort and dedication in needy neighborhoods.",
+            "impact": "Food, pots, and utensils"
+          },
+          "4": {
+            "icon": "🌳",
+            "emoji": "🌿",
+            "title": "Reforestation in the Peruvian Amazon",
+            "description": "Environmental conservation projects to protect our forests, native communities, and unique biodiversity.",
+            "impact": "Tree planting and environmental education"
+          }
+        }
+      },
+      "investment": {
+        "title": "The real investment is in people",
+        "quote": "Each free session is a bet that when you find your purpose, your impact will multiply that of others.",
+        "cards": {
+          "1": {
+            "title": "We promote responsible adoption",
+            "description": "Every peso that doesn't go to my pocket goes to save four-legged lives that deserve a second chance."
+          },
+          "2": {
+            "title": "We support young talents",
+            "description": "Your growth finances the tech awakening of boys and girls who dream of changing their reality through technology."
+          }
+        }
+      },
+      "transparency": {
+        "title": "Total transparency",
+        "description": "Quarterly I'll share public reports showing:",
+        "items": {
+          "1": "Total amount raised from sessions",
+          "2": "Exact distribution among the 4 causes",
+          "3": "Receipts and evidence of each donation",
+          "4": "Testimonials from benefited organizations"
+        },
+        "commitment": "My commitment is that every sol you contribute generates the maximum possible impact."
+      },
+      "cta": {
+        "free": {
+          "title": "🎁 Schedule Your Free Session",
+          "subtitle": "First discovery session — No cost, no commitments"
+        },
+        "withCause": {
+          "title": "💚 Learn More About the Model",
+          "subtitle": "Discover how Coaching with a Cause works"
+        }
+      },
+      "finalMessage": {
+        "text": "Because I believe true success is measured in transformed lives, not just generated income.",
         "author": "Hugo Casanova"
       }
     }

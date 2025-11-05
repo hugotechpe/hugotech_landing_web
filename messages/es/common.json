@@ -77,8 +77,8 @@
           { "label": "Testimonios", "href": "/es/#testimonios" },
           { "label": "Coaching Personal 1 a 1", "href": "/es/coaching" },
           { "label": "Mentor Coaching 1 a 1", "href": "/es/mentor-coaching" },
+          { "label": "Coaching con Causa 🌍💚", "href": "/es/coaching-con-causa" },
           { "label": "Agenda tu sesión", "href": "/es/#cita" },
-          { "label": "Coaching con causa", "href": "/es/#cccausa" },
           { "label": "Blog", "href": "/es/blog" }
         ]
       },
@@ -1276,6 +1276,122 @@
       },
       "quote": {
         "text": "El coaching no se trata de cambiar quién eres, sino de recordarte quién siempre has sido bajo todas las capas que has construido.",
+        "author": "Hugo Casanova"
+      }
+    },
+    "CoachingConCausa": {
+      "hero": {
+        "chip": "🌱 COACHING CON CAUSA",
+        "title": "Coaching con Causa 🌍💚",
+        "subtitle": "Tu crecimiento también genera impacto en el mundo.",
+        "tagline": "Todas las sesiones 1 a 1 son 100% gratuitas. Siempre lo serán. No hay letra chica, no hay agenda oculta. Solo conversaciones honestas que transforman."
+      },
+      "freeCommitment": {
+        "title": "Mi compromiso con el impacto social:",
+        "items": {
+          "1": {
+            "icon": "🎯",
+            "text": "Las mentorías individuales serán siempre gratuitas como mi forma de devolver lo que la vida me dio."
+          },
+          "2": {
+            "icon": "💡",
+            "text": "Si en el futuro ofrezco programas adicionales pagos, una porción significativa se destinará a causas sociales enfocadas en educación tech y bienestar comunitario."
+          }
+        },
+        "principle": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados."
+      },
+      "howItWorks": {
+        "title": "¿Cómo funciona?",
+        "intro": "Un modelo simple y transparente:",
+        "steps": {
+          "1": {
+            "emoji": "🎁",
+            "title": "Primera sesión: 100% gratuita",
+            "description": "Agenda tu sesión de descubrimiento inicial sin costo. Nos conocemos, exploramos tu situación actual, tus desafíos y objetivos. Sin compromisos."
+          },
+          "2": {
+            "emoji": "🤝",
+            "title": "Sesiones de continuidad: Coaching con Causa",
+            "description": "Si decides continuar tu proceso, las sesiones siguientes tienen un aporte económico que TÚ defines según tu situación. Este monto NO va a mi bolsillo: se destina íntegramente a causas sociales que impactan a quienes más lo necesitan."
+          },
+          "3": {
+            "emoji": "💚",
+            "title": "Impacto transparente",
+            "description": "Recibirás reportes de cómo tu aporte ayudó a estas causas. Transparencia total."
+          }
+        }
+      },
+      "causes": {
+        "title": "Las causas que apoyamos",
+        "subtitle": "Cada sesión que agendas multiplica tu impacto en estas cuatro áreas:",
+        "items": {
+          "1": {
+            "icon": "🐕",
+            "emoji": "🐾",
+            "title": "Albergues de animales rescatados",
+            "description": "Refugios como 'Huellitas de Amor' y 'ASPPA' que brindan hogar, salud y amor a perritos y gatitos abandonados en Lima y provincias.",
+            "impact": "Alimentación, vacunas y esterilizaciones"
+          },
+          "2": {
+            "icon": "💻",
+            "emoji": "👨‍💻",
+            "title": "Educación tech para comunidades vulnerables",
+            "description": "Talleres de programación, diseño y habilidades digitales en zonas rurales y periféricas de Perú, abriendo puertas a nuevas oportunidades.",
+            "impact": "Becas, laptops y acceso a internet"
+          },
+          "3": {
+            "icon": "🍲",
+            "emoji": "❤️",
+            "title": "Comedores populares y ollas comunes",
+            "description": "Apoyo a madres y familias que alimentan a comunidades enteras con esfuerzo y dedicación diaria en barrios necesitados.",
+            "impact": "Alimentos, ollas y utensilios"
+          },
+          "4": {
+            "icon": "🌳",
+            "emoji": "🌿",
+            "title": "Reforestación en la Amazonía peruana",
+            "description": "Proyectos de conservación ambiental para proteger nuestros bosques, comunidades nativas y biodiversidad única.",
+            "impact": "Plantación de árboles y educación ambiental"
+          }
+        }
+      },
+      "investment": {
+        "title": "La inversión real está en las personas",
+        "quote": "Cada sesión gratuita es una apuesta a que cuando encuentres tu propósito, tu impacto multiplicará el de otros.",
+        "cards": {
+          "1": {
+            "title": "Promovemos la adopción responsable",
+            "description": "Cada peso que no va a mi bolsillo, va a salvar vidas de cuatro patas que merecen una segunda oportunidad."
+          },
+          "2": {
+            "title": "Brindamos apoyo a jóvenes talentos",
+            "description": "Tu crecimiento financia el despertar tech de chicos y chicas que sueñan con cambiar su realidad a través de la tecnología."
+          }
+        }
+      },
+      "transparency": {
+        "title": "Transparencia total",
+        "description": "Trimestralmente compartiré reportes públicos mostrando:",
+        "items": {
+          "1": "Monto total recaudado por sesiones",
+          "2": "Distribución exacta entre las 4 causas",
+          "3": "Comprobantes y evidencias de cada donación",
+          "4": "Testimonios de las organizaciones beneficiadas"
+        },
+        "commitment": "Mi compromiso es que cada sol que aportes genere el máximo impacto posible."
+      },
+      "cta": {
+        "free": {
+          "title": "🎁 Agendá tu Sesión Gratuita",
+          "subtitle": "Primera sesión de descubrimiento — Sin costo, sin compromisos"
+        },
+        "withCause": {
+          "title": "💚 Conoce Más sobre el Modelo",
+          "subtitle": "Descubre cómo funciona el Coaching con Causa"
+        }
+      },
+      "finalMessage": {
+        "text": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados.",
         "author": "Hugo Casanova"
       }
     }
