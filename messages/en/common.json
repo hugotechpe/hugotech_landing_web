@@ -1065,6 +1065,216 @@
         "button_secondary": "Send email",
         "quote": "\"Let's discover together what your team needs to reach its best version.\""
       }
+    },
+    "MentorCoaching": {
+      "hero": {
+        "chip": "1-on-1 Sessions",
+        "title": "Individual Mentor Coaching",
+        "subtitle": "Focused and personalized sessions to take your next professional leap with clarity and confidence",
+        "duration": "45 minutes of transformation"
+      },
+      "benefits": {
+        "title": "What will you achieve in each session?",
+        "subtitle": "Each session is designed to generate clarity, action, and tangible results",
+        "items": {
+          "1": {
+            "icon": "🎯",
+            "title": "Clarity in your goals",
+            "description": "Define precisely what you want to achieve and map out the most direct path to get there."
+          },
+          "2": {
+            "icon": "💡",
+            "title": "New perspectives",
+            "description": "Discover angles you hadn't considered and expand your vision on the challenges you face."
+          },
+          "3": {
+            "icon": "🚀",
+            "title": "Concrete action plan",
+            "description": "Not just reflection: leave each session with specific and actionable steps to move forward."
+          },
+          "4": {
+            "icon": "🧭",
+            "title": "Deep self-awareness",
+            "description": "Identify your strengths, limiting patterns, and how to enhance your best version."
+          },
+          "5": {
+            "icon": "💪",
+            "title": "Renewed confidence",
+            "description": "Strengthen your personal security and lead your career with authenticity and purpose."
+          },
+          "6": {
+            "icon": "⚡",
+            "title": "Sustainable transformation",
+            "description": "Integrate learnings that generate lasting changes in how you think and act."
+          }
+        }
+      },
+      "forWhom": {
+        "title": "Who is this session for?",
+        "items": {
+          "1": "Tech professionals seeking to take the next step in their career with clear direction",
+          "2": "Leaders who want to develop a more conscious and human leadership style",
+          "3": "People in professional transition who need clarity about their next move",
+          "4": "Talents who feel they've lost their purpose and want to reconnect with their essence",
+          "5": "Those who want to work on specific topics: confidence, communication, decision-making, or balance"
+        }
+      },
+      "howItWorks": {
+        "title": "How does it work?",
+        "steps": {
+          "1": {
+            "title": "Schedule your session",
+            "description": "Choose the day and time that best fits your schedule"
+          },
+          "2": {
+            "title": "Pre-session preparation",
+            "description": "You'll receive a brief form to focus the session on what you need most"
+          },
+          "3": {
+            "title": "1-on-1 Session",
+            "description": "45 minutes of deep conversation, reflection, and action design"
+          },
+          "4": {
+            "title": "Action plan",
+            "description": "End with clear steps and a plan to keep moving forward"
+          }
+        }
+      },
+      "schedule": {
+        "title": "Schedule your session",
+        "subtitle": "Select the day and time that works best for you. See you soon!"
+      },
+      "quote": {
+        "text": "It's not about having all the answers, but asking the right questions to discover them.",
+        "author": "Hugo Casanova"
+      }
+    },
+    "Coaching": {
+      "hero": {
+        "chip": "Personal Transformation",
+        "title": "1-on-1 Coaching",
+        "subtitle": "A safe space to explore who you are, discover your potential, and design the life you truly want to live",
+        "duration": "45 minutes of self-awareness"
+      },
+      "whatIs": {
+        "title": "What is Coaching?",
+        "description": "Coaching is a process of accompaniment where YOU are the protagonist. I don't give you answers, I help you discover them. Through powerful questions, deep reflection, and active listening, I guide you to find your own path to your goals and your best version.",
+        "principles": {
+          "1": {
+            "icon": "🔍",
+            "title": "Self-awareness",
+            "description": "Discover who you are beyond your professional roles"
+          },
+          "2": {
+            "icon": "🎯",
+            "title": "Goal clarity",
+            "description": "Define what you really want and why it's important to you"
+          },
+          "3": {
+            "icon": "🚀",
+            "title": "Conscious action",
+            "description": "Design concrete steps aligned with your values and purpose"
+          }
+        }
+      },
+      "benefits": {
+        "title": "What will you achieve with Coaching?",
+        "subtitle": "Real transformations that impact all areas of your life",
+        "items": {
+          "1": {
+            "icon": "🌟",
+            "title": "Reconnect with your essence",
+            "description": "Reconnect with who you really are, your values, and what deeply moves you."
+          },
+          "2": {
+            "icon": "💭",
+            "title": "Mental clarity",
+            "description": "Eliminate mental noise and make decisions from a place of awareness and security."
+          },
+          "3": {
+            "icon": "🧘",
+            "title": "Balance and well-being",
+            "description": "Find balance between your personal and professional life without sacrificing your well-being."
+          },
+          "4": {
+            "icon": "🎭",
+            "title": "Overcome your limitations",
+            "description": "Identify and transform limiting beliefs that have been holding you back for a long time."
+          },
+          "5": {
+            "icon": "💎",
+            "title": "Authenticity",
+            "description": "Live and act from your true self, without masks or external expectations."
+          },
+          "6": {
+            "icon": "🌈",
+            "title": "Life purpose",
+            "description": "Define your purpose and build a life with meaning and clear direction."
+          }
+        }
+      },
+      "forWhom": {
+        "title": "Who is Coaching for?",
+        "items": {
+          "1": "People who feel they're living on autopilot and want to regain control",
+          "2": "Those seeking to reconnect with their purpose and live with more authenticity",
+          "3": "Professionals who want to balance professional success with personal well-being",
+          "4": "People in moments of transition: career change, relationships, new life stages",
+          "5": "Those who want to work on self-awareness, confidence, emotional management, or decision-making"
+        }
+      },
+      "difference": {
+        "title": "Coaching or Mentor Coaching?",
+        "coaching": {
+          "title": "1-on-1 Coaching",
+          "description": "Focused on BEING: who you are, what you want, and how to achieve it from your essence. It's introspective, deep, and transformative.",
+          "focus": "When to choose Coaching?",
+          "topics": {
+            "1": "You seek self-awareness and personal transformation",
+            "2": "You want to work on balance, purpose, or well-being",
+            "3": "You face important decisions or life transitions"
+          }
+        },
+        "mentoring": {
+          "title": "Mentor Coaching",
+          "description": "Focused on DOING: your career, professional goals, and how to take the next step. Combines coaching with my experience in tech and leadership.",
+          "focus": "When to choose Mentor Coaching?",
+          "topics": {
+            "1": "You seek clarity in your tech career and next steps",
+            "2": "You want to develop leadership or communication skills",
+            "3": "You need strategic guidance and professional action plan"
+          }
+        }
+      },
+      "howItWorks": {
+        "title": "How does it work?",
+        "steps": {
+          "1": {
+            "title": "Schedule your session",
+            "description": "Choose the day and time that best fits you"
+          },
+          "2": {
+            "title": "Conscious preparation",
+            "description": "You'll receive reflective questions to arrive connected to the session"
+          },
+          "3": {
+            "title": "Coaching session",
+            "description": "45 minutes of deep exploration, powerful questions, and reflection"
+          },
+          "4": {
+            "title": "Action commitments",
+            "description": "Define concrete actions aligned with your discoveries"
+          }
+        }
+      },
+      "schedule": {
+        "title": "Schedule your Coaching session",
+        "subtitle": "Take the first step towards the transformation you seek. Select your schedule and let's begin."
+      },
+      "quote": {
+        "text": "Coaching is not about changing who you are, but about remembering who you've always been under all the layers you've built.",
+        "author": "Hugo Casanova"
+      }
     }
   },
   "WhatsAppButton": {

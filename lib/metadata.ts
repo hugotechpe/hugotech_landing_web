@@ -195,4 +195,60 @@ export const pageMetadata = {
       ],
     },
   },
+
+  mentorCoaching: {
+    es: {
+      title: "Mentor Coaching 1 a 1 - Sesiones Personalizadas de 45min | HugoTech",
+      description: "Agenda tu sesión individual de mentor coaching. 45 minutos de transformación para dar tu siguiente salto profesional con claridad, propósito y confianza renovada.",
+      keywords: [
+        "mentor coaching individual",
+        "sesiones coaching 1 a 1",
+        "coaching personalizado tech",
+        "mentoring profesional",
+        "desarrollo carrera tech",
+        "sesión coaching 45 minutos",
+      ],
+    },
+    en: {
+      title: "1-on-1 Mentor Coaching - Personalized 45min Sessions | HugoTech",
+      description: "Schedule your individual mentor coaching session. 45 minutes of transformation to take your next professional leap with clarity, purpose and renewed confidence.",
+      keywords: [
+        "individual mentor coaching",
+        "1-on-1 coaching sessions",
+        "personalized tech coaching",
+        "professional mentoring",
+        "tech career development",
+        "45 minute coaching session",
+      ],
+    },
+  },
+
+  coaching: {
+    es: {
+      title: "Coaching Personal 1 a 1 - Transformación desde el Ser | HugoTech",
+      description: "Sesiones de coaching individual para autoconocimiento, claridad mental y propósito de vida. 45 minutos de exploración profunda y transformación personal auténtica.",
+      keywords: [
+        "coaching personal",
+        "coaching individual",
+        "autoconocimiento",
+        "transformación personal",
+        "propósito de vida",
+        "coaching ontológico",
+        "bienestar personal",
+      ],
+    },
+    en: {
+      title: "Personal 1-on-1 Coaching - Transformation from Being | HugoTech",
+      description: "Individual coaching sessions for self-awareness, mental clarity and life purpose. 45 minutes of deep exploration and authentic personal transformation.",
+      keywords: [
+        "personal coaching",
+        "individual coaching",
+        "self-awareness",
+        "personal transformation",
+        "life purpose",
+        "ontological coaching",
+        "personal well-being",
+      ],
+    },
+  },
 };
