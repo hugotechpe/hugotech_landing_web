@@ -36,10 +36,7 @@ const AgendaSection = dynamic(
 
 // Lazy load ImpactSection (contador de impacto en tiempo real)
 const ImpactSection = dynamic(
-  () =>
-    import("@/features/home/components/ImpactSection").then((mod) => ({
-      default: mod.ImpactSection,
-    })),
+  () => import("@/features/home/components/ImpactSection"),
   {
     loading: () => (
       <div className="py-20 flex items-center justify-center">

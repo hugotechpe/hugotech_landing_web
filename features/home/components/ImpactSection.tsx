@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import ImpactCounter from "@/components/ImpactCounter";
 
-export function ImpactSection() {
+export default function ImpactSection() {
   const t = useTranslations("Sections.CoachingConCausa.impact");
 
   return (
