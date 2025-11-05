@@ -385,13 +385,13 @@
         "learnMore": "📖 Conoce Más"
       },
       "content": {
-        "p1": "Todas las sesiones 1 a 1 son <b>100% gratuitas</b>. Siempre lo serán. No hay letra chica, no hay agenda oculta. Solo conversaciones honestas que transforman.",
-        "pBold1": "Mi compromiso con el impacto social:",
+        "p1": "La <b>primera sesión es gratis</b>: es para conocernos y descubrir tu propósito. Si decides continuar, cada sesión cuesta <b>S/35 soles (~USD $10)</b> que van 100% a causas sociales. Tu crecimiento retribuye al mundo.",
+        "pBold1": "¿Por qué hago esto?",
         "bullets": [
-          "Las mentorías individuales serán siempre gratuitas como mi forma de devolver lo que la vida me dio.",
-          "Si en el futuro ofrezco programas adicionales pagos, una porción significativa se destinará a causas sociales enfocadas en educación tech y bienestar comunitario."
+          "La vida me dio mucho. Esta es mi forma de retribuir mientras acompaño a jóvenes talentos tech.",
+          "Cuando invertimos algo (aunque sea poco), le damos más valor al proceso. Ese dinero va a una bolsa solidaria para ONGs: albergues de animales, educación tech, comedores populares y reforestación."
         ],
-        "p2": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados.",
+        "p2": "Transparencia total: cada trimestre publico reportes mostrando exactamente a dónde fue cada sol donado.",
         "invite": {
           "pBold": "La inversión real está en las personas",
           "p": "Cada sesión gratuita es una apuesta a que cuando encuentras tu propósito, tu impacto multiplica el de otros."
@@ -487,9 +487,9 @@
             "title": "HugoTech: compartir lo aprendido",
             "content": [
               "HugoTech nació de una pregunta: <strong>¿Cómo acompañar sin que el dinero sea obstáculo?</strong>",
-              "Decidí que las sesiones 1 a 1 serían <strong>100% gratuitas</strong>. No como estrategia, sino como compromiso.",
+              "Decidí que la <strong>primera sesión sería gratis</strong> (para descubrir tu propósito), y las siguientes tendrían un <strong>costo accesible de S/35 que va 100% a causas sociales</strong>.",
               "Si hoy puedo acompañar a alguien, es porque otros hicieron lo mismo conmigo en momentos clave.",
-              "Este espacio es mi forma de <strong>devolver lo que recibí y construir con propósito</strong>."
+              "Este espacio es mi forma de <strong>retribuir mientras te acompaño a crecer</strong>."
             ]
           }
         ]
@@ -735,7 +735,7 @@
       },
       "mission": {
         "title": "Lo que hago hoy",
-        "content": "Acompaño a profesionales tech en su <strong>transformación personal y profesional</strong>. Ofrezco <strong>sesiones 1-a-1 100% gratuitas</strong> para quien las necesite, y programas empresariales que transforman equipos con <strong>agilidad, innovación y mentalidad de crecimiento</strong>. Del autoconocimiento al liderazgo consciente, del propósito a la acción con impacto."
+        "content": "Acompaño a profesionales tech en su <strong>transformación personal y profesional</strong>. Primera sesión <strong>gratis</strong>, siguientes <strong>S/35 que van 100% a causas sociales</strong>. También ofrezco programas empresariales que transforman equipos con <strong>agilidad, innovación y mentalidad de crecimiento</strong>. Del autoconocimiento al liderazgo consciente, del propósito a la acción con impacto."
       },
       "vision": {
         "title": "A dónde voy",
