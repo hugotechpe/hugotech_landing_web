@@ -335,7 +335,7 @@ export default function CoachingConCausaPage() {
         >
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div variants={fadeIn}>
-              <Card className="h-full border-4 border-success-400 dark:border-success-600 hover:shadow-2xl transition-shadow">
+              <Card className="h-full border-4 border-success-400 dark:border-success-600 hover:shadow-2xl transition-shadow bg-white dark:bg-gray-800">
                 <CardBody className="p-8 text-center flex flex-col items-center justify-between">
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
@@ -346,20 +346,20 @@ export default function CoachingConCausaPage() {
                     </p>
                   </div>
                   <a
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold bg-success-500 hover:bg-success-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold bg-success-600 hover:bg-success-700 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full"
                     href="https://calendly.com/hugotech/mentor-coaching-1-a-1-con-causa"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span className="text-2xl">🎁</span>
-                    <span>Agenda tu Sesión Gratuita</span>
+                    <span className="text-white">{t("cta.free.button")}</span>
                   </a>
                 </CardBody>
               </Card>
             </motion.div>
 
             <motion.div variants={fadeIn}>
-              <Card className="h-full border-4 border-primary-400 dark:border-primary-600 hover:shadow-2xl transition-shadow">
+              <Card className="h-full border-4 border-primary-400 dark:border-primary-600 hover:shadow-2xl transition-shadow bg-white dark:bg-gray-800">
                 <CardBody className="p-8 text-center flex flex-col items-center justify-between">
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
@@ -370,13 +370,13 @@ export default function CoachingConCausaPage() {
                     </p>
                   </div>
                   <a
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold bg-primary-500 hover:bg-primary-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold bg-primary-600 hover:bg-primary-700 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full"
                     href="https://calendly.com/hugotech/mentor-coaching-1-a-1-con-causa"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span className="text-2xl">💚</span>
-                    <span>Agenda Sesión con Causa (S/35)</span>
+                    <span className="text-white">{t("cta.withCause.button")}</span>
                   </a>
                 </CardBody>
               </Card>
