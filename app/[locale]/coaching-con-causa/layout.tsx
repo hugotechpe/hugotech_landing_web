@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { HeroNavbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import HeroNavbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 export async function generateMetadata({
   params,

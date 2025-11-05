@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/navigation";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
