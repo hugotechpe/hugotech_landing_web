@@ -1281,127 +1281,124 @@
     },
     "CoachingConCausa": {
       "hero": {
-        "chip": "🌱 COACHING CON CAUSA",
-        "title": "Coaching con Causa 🌍💚",
-        "subtitle": "Tu crecimiento profesional retribuye al mundo.",
-        "tagline": "La primera sesión es gratis. Es para conocernos, descubrir tu propósito y ver si conectamos. Si decides continuar, cada sesión tiene un costo de S/35 soles (~USD $10) que NO va a mi bolsillo: va 100% a causas sociales que necesitan apoyo."
+        "chip": "🌱 Tu crecimiento ayuda al mundo",
+        "title": "Crecer juntos, retribuir juntos",
+        "subtitle": "Primera sesión gratis. Las siguientes, S/35 que van 100% a causas que me importan.",
+        "tagline": "No quiero que el dinero sea una barrera para tu crecimiento. Pero tampoco creo que todo deba ser gratis. Cuando invertimos algo (aunque sea poco), le damos más valor. Y si ese dinero puede ayudar a otros mientras tú creces, ¿por qué no hacerlo así?"
       },
       "freeCommitment": {
         "title": "¿Por qué hago esto?",
         "items": {
           "1": {
-            "icon": "🎯",
-            "text": "La vida me dio mucho: oportunidades, aprendizajes, personas que creyeron en mí. Esta es mi forma de retribuir."
+            "icon": "💚",
+            "text": "La vida me dio muchas oportunidades. Gente que creyó en mí cuando yo no tenía nada. Esta es mi forma de retribuir, sin olvidar de dónde vengo."
           },
           "2": {
-            "icon": "💡",
-            "text": "Trabajo con jóvenes talentos tech que apenas están empezando. No quiero que el dinero sea una barrera, pero tampoco quiero que el proceso sea gratis. Cuando invertimos algo (aunque sea poco), le damos más valor."
+            "icon": "🌱",
+            "text": "Trabajo con jóvenes talentos tech que recién empiezan. La primera sesión es gratis porque quiero que nos conozcamos sin presión. Si decides continuar, el costo es accesible (S/35) y va directo a causas que necesitan apoyo."
           }
         },
-        "principle": "El modelo es simple: tu inversión retribuye al mundo mientras tú creces como profesional."
+        "principle": "Simple: tu inversión en ti mismo también ayuda a otros. Crecer y retribuir pueden ir de la mano."
       },
       "howItWorks": {
         "title": "¿Cómo funciona?",
-        "intro": "Te lo explico sin rodeos:",
+        "intro": "Sin vueltas, te lo cuento como es:",
         "steps": {
           "1": {
             "emoji": "🎁",
-            "title": "Primera sesión: Gratis, sin compromiso",
-            "description": "Nos tomamos 45 minutos para conocernos. Exploramos juntos qué buscas, cuáles son tus desafíos, hacia dónde quieres ir. Si al terminar sientes que no conectamos o que esto no es para ti, no pasa nada. No hay compromiso de continuar."
+            "title": "Primera sesión: Gratis, para conocernos",
+            "description": "45 minutos para explorar juntos qué buscas, qué te frena, hacia dónde quieres ir. Si al terminar sientes que no conectamos, no pasa nada. Sin compromiso, sin presión."
           },
           "2": {
             "emoji": "💰",
-            "title": "Segunda sesión en adelante: S/35 soles por sesión",
-            "description": "Si decides seguir trabajando juntos, cada sesión cuesta S/35 soles (unos USD $10). Es accesible para jóvenes talentos tech que recién empiezan. Ese dinero NO va a mi cuenta personal: va directo a una 'bolsa solidaria' que se destina a ONGs y causas sociales."
+            "title": "Desde la segunda: S/35 soles por sesión",
+            "description": "Si decides seguir, cada sesión cuesta S/35 (~USD $10). Accesible para jóvenes tech que recién arrancan. Ese dinero NO va a mi cuenta: va directo a una bolsa solidaria que distribuyo entre causas que me importan."
           },
           "3": {
-            "emoji": "💚",
-            "title": "Tu aporte genera impacto real",
-            "description": "Cada trimestre comparto reportes públicos mostrando exactamente a qué organizaciones se donó, con comprobantes y evidencias. No es marketing: es transparencia total. Tu crecimiento retribuye al mundo de forma concreta."
+            "emoji": "🌍",
+            "title": "Tu aporte tiene nombre y apellido",
+            "description": "Cada trimestre comparto reportes con nombres de ONGs, comprobantes, fotos. No es marketing: es mostrar que tu inversión sí llega. Transparencia total."
           }
         }
       },
       "causes": {
-        "title": "Las causas que apoyamos",
-        "subtitle": "Cada sesión que agendas multiplica tu impacto en estas cuatro áreas:",
-        "items": {
-          "1": {
-            "icon": "🐕",
-            "emoji": "🐾",
-            "title": "Albergues de animales rescatados",
-            "description": "Refugios como 'Huellitas de Amor' y 'ASPPA' que brindan hogar, salud y amor a perritos y gatitos abandonados en Lima y provincias.",
-            "impact": "Alimentación, vacunas y esterilizaciones"
-          },
-          "2": {
-            "icon": "💻",
-            "emoji": "👨‍💻",
-            "title": "Educación tech para comunidades vulnerables",
-            "description": "Talleres de programación, diseño y habilidades digitales en zonas rurales y periféricas de Perú, abriendo puertas a nuevas oportunidades.",
-            "impact": "Becas, laptops y acceso a internet"
-          },
-          "3": {
-            "icon": "🍲",
-            "emoji": "❤️",
-            "title": "Comedores populares y ollas comunes",
-            "description": "Apoyo a madres y familias que alimentan a comunidades enteras con esfuerzo y dedicación diaria en barrios necesitados.",
-            "impact": "Alimentos, ollas y utensilios"
-          },
-          "4": {
-            "icon": "🌳",
-            "emoji": "🌿",
-            "title": "Reforestación en la Amazonía peruana",
-            "description": "Proyectos de conservación ambiental para proteger nuestros bosques, comunidades nativas y biodiversidad única.",
-            "impact": "Plantación de árboles y educación ambiental"
+        "title": "Mi primer anhelo: ayudar a los que no tienen voz",
+        "subtitle": "Hoy, cada sesión apoya principalmente a perritos rescatados. Pero hay sueños más grandes esperando...",
+        "realCause": {
+          "title": "🐾 Albergues de animales (Mi prioridad hoy)",
+          "description": "Refugios como 'Huellitas de Amor' y 'ASPPA' que dan hogar, salud y amor a perritos y gatitos abandonados. Hacen milagros con muy poco.",
+          "impact": "✅ Alimentación, vacunas, esterilizaciones, atención veterinaria"
+        },
+        "dreams": {
+          "title": "� Anhelos para el futuro",
+          "subtitle": "Sueños que quiero hacer realidad cuando la bolsa solidaria crezca:",
+          "items": {
+            "1": {
+              "icon": "🌎",
+              "title": "Prácticas tech en empresas de USA",
+              "description": "Ayudar a jóvenes talentos peruanos a conseguir prácticas pre-profesionales remotas en empresas internacionales. Abrirles puertas que yo no tuve al inicio."
+            },
+            "2": {
+              "icon": "📚",
+              "title": "Becas para estudiar tech",
+              "description": "Financiar bootcamps, cursos, certificaciones para chicos con talento pero sin recursos. Que el dinero no frene su potencial."
+            },
+            "3": {
+              "icon": "💻",
+              "title": "Laptops para jóvenes programadores",
+              "description": "Una computadora decente puede cambiar una vida. Equipar a quienes tienen el talento pero no las herramientas."
+            },
+            "4": {
+              "icon": "🤝",
+              "title": "Mentoría grupal gratuita",
+              "description": "Sesiones grupales sin costo donde jóvenes tech compartan retos, aprendan juntos y se apoyen entre ellos."
+            },
+            "5": {
+              "icon": "�",
+              "title": "Primeros proyectos freelance",
+              "description": "Ayudar a conseguir sus primeros clientes, armar portafolio, cobrar lo justo. Que den el salto sin morir en el intento."
+            }
           }
-        }
+        },
+        "honestNote": "Hoy el foco son los perritos. Los demás son anhelos sinceros que iré cumpliendo a medida que la bolsa crezca. Sin prisa, pero sin pausa."
       },
       "investment": {
-        "title": "S/35 soles que transforman dos vidas",
-        "subtitle": "La tuya y la de alguien que lo necesita",
-        "quote": "No se trata de cobrar por cobrar. Se trata de que tu inversión en ti mismo también ayude a otros.",
+        "title": "S/35 soles que tienen impacto real",
+        "subtitle": "No es mucho dinero, pero sí es ayuda concreta",
+        "quote": "No cobro por cobrar. Cobro para que tu inversión en ti mismo también llegue a quien lo necesita.",
         "pricing": {
           "amount": "S/35 soles (~USD $10)",
-          "perSession": "por sesión (desde la segunda en adelante)",
-          "distribution": "100% va a la bolsa solidaria para ONGs",
-          "breakdown": "Se reparte entre 4 causas: aproximadamente S/8.75 para cada una"
-        },
-        "cards": {
-          "1": {
-            "title": "Promovemos la adopción responsable",
-            "description": "Refugios de animales rescatados que hacen lo posible con poco. Tu aporte ayuda con alimento, vacunas y esterilizaciones."
-          },
-          "2": {
-            "title": "Educación tech para chicos sin recursos",
-            "description": "Talleres de programación en zonas vulnerables. Becas, laptops y acceso a internet para jóvenes que sueñan con un futuro mejor."
-          }
+          "perSession": "por sesión (desde la segunda)",
+          "distribution": "100% va a la bolsa solidaria",
+          "breakdown": "Hoy va principalmente a albergues de perritos. Mañana, a más causas."
         }
       },
       "transparency": {
-        "title": "Transparencia sin excusas",
+        "title": "Transparencia, sin excusas",
         "description": "Cada 3 meses publico un reporte mostrando:",
         "items": {
-          "1": "¿Cuánto dinero se juntó en la bolsa solidaria?",
-          "2": "¿A qué ONGs o causas se donó?",
+          "1": "¿Cuánto dinero juntamos?",
+          "2": "¿A qué refugios/causas se donó?",
           "3": "Comprobantes escaneados de cada donación",
-          "4": "Fotos y testimonios de las organizaciones que recibieron el apoyo"
+          "4": "Fotos y testimonios de quienes recibieron el apoyo"
         },
-        "commitment": "No me quedo con nada. Esto no es un negocio: es una forma de retribuir mientras te acompaño en tu crecimiento."
+        "commitment": "No me quedo con nada. Esto no es un negocio: es una forma de crecer juntos mientras retribuimos."
       },
       "cta": {
         "free": {
-          "title": "🎁 Agendá tu Primera Sesión Gratuita",
-          "subtitle": "Primera sesión de descubrimiento — 100% sin costo, sin compromisos",
+          "title": "🎁 Primera Sesión Gratuita",
+          "subtitle": "Para conocernos, sin compromiso",
           "button": "Agenda tu Sesión Gratuita"
         },
         "withCause": {
-          "title": "💚 Segunda Sesión y Continuidad",
-          "subtitle": "A partir de la 2da sesión: S/35 soles que van 100% a causas sociales",
-          "button": "📅 Agenda Sesión con Causa (S/35)"
+          "title": "💚 Desde la Segunda Sesión",
+          "subtitle": "S/35 soles que van 100% a causas",
+          "button": "Agenda Sesión con Causa (S/35)"
         }
       },
       "finalMessage": {
-        "text": "Crecer como profesional y retribuir al mundo no son cosas separadas. Pueden ir juntas.",
-        "author": "Hugo Casanova"
+        "text": "Crecer y retribuir no son cosas separadas. Pueden ir de la mano.",
+        "author": "— Hugo"
       }
     }
   },
