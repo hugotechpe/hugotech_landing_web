@@ -1401,6 +1401,16 @@
       "finalMessage": {
         "text": "Growing as a professional and giving back to the world aren't separate things. They can go together.",
         "author": "Hugo Casanova"
+      },
+      "impact": {
+        "title": "Real Impact in Real Time",
+        "subtitle": "Every session you take generates concrete change. Here you can see exactly where every sol goes.",
+        "totalLabel": "Total Raised",
+        "sessionsLabel": "Sessions with Impact",
+        "causesLabel": "Breakdown by Cause",
+        "lastUpdateLabel": "Last update",
+        "loadingText": "Loading impact data...",
+        "errorText": "Could not load data. Please try again later."
       }
     }
   },

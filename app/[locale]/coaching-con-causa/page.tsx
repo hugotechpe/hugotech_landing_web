@@ -5,6 +5,8 @@ import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
 
+import ImpactCounter from "@/components/ImpactCounter";
+
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -324,6 +326,18 @@ export default function CoachingConCausaPage() {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* Sección de Impacto en Tiempo Real */}
+      <ImpactCounter
+        causesLabel={t("impact.causesLabel")}
+        errorText={t("impact.errorText")}
+        lastUpdateLabel={t("impact.lastUpdateLabel")}
+        loadingText={t("impact.loadingText")}
+        sessionsLabel={t("impact.sessionsLabel")}
+        subtitle={t("impact.subtitle")}
+        title={t("impact.title")}
+        totalLabel={t("impact.totalLabel")}
+      />
 
       {/* CTAs finales */}
       <section className="py-20 px-4 bg-white dark:bg-gray-900">

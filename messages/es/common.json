@@ -1399,6 +1399,16 @@
       "finalMessage": {
         "text": "Crecer y retribuir no son cosas separadas. Pueden ir de la mano.",
         "author": "— Hugo"
+      },
+      "impact": {
+        "title": "Impacto Real en Tiempo Real",
+        "subtitle": "Cada sesión que tomas genera un cambio concreto. Aquí puedes ver exactamente a dónde va cada sol.",
+        "totalLabel": "Total Recaudado",
+        "sessionsLabel": "Sesiones con Impacto",
+        "causesLabel": "Desglose por Causa",
+        "lastUpdateLabel": "Última actualización",
+        "loadingText": "Cargando datos de impacto...",
+        "errorText": "No se pudieron cargar los datos. Intenta más tarde."
       }
     }
   },
