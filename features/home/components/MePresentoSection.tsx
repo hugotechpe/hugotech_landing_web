@@ -247,6 +247,10 @@ export function MePresentoSection() {
                     alt="Foto de Hugo Casanova, mentor y coach en tecnología"
                     width={623}
                     height={563}
+                    quality={75}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nAE0AMv/ANLS0tPT09TU1NXV1QDW1tbX19fY2NjZ2dkA2tra29vb3Nzc3d3dAN7e3t/f3+Dg4OHh4SEvGxe4G8ycAAAAAElFTkSuQmCC"
                     className="object-cover w-full h-auto rounded-2xl shadow-2xl relative z-10"
                   />
                   
