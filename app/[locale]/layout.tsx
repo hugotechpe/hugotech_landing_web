@@ -108,11 +108,13 @@ export default async function RootLayout({
       {/* Preconnect to external services */}
       <link rel="preconnect" href="https://www.googletagmanager.com" />
       <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link rel="preconnect" href="https://calendly.com" />
       <link rel="preconnect" href="https://assets.calendly.com" />
 
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      <link rel="dns-prefetch" href="https://calendly.com" />
       <link rel="dns-prefetch" href="https://assets.calendly.com" />        {/* SEO: hreflang para soporte multiidioma */}
         <AlternateLinks locale={locale} />
         
