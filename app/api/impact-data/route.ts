@@ -1,15 +1,15 @@
 import { NextResponse } from "next/server";
 
 const SHEET_ID = "1TtNBTYc61-EfZWqdxIj88YnLwvLI_pD79RtPLyJidco";
-const SHEET_NAME = "Hoja 1"; // Ajusta si tu hoja tiene otro nombre
 
 export async function GET() {
   try {
-    // URL pública para leer el Google Sheet en formato CSV
-    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_NAME)}`;
+    // URL pública para leer el Google Sheet en formato CSV (gid=0 es la primera hoja)
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 
     const response = await fetch(url, {
       next: { revalidate: 3600 }, // Cache por 1 hora
+      redirect: "follow", // Seguir redirects
     });
 
     if (!response.ok) {
@@ -18,34 +18,44 @@ export async function GET() {
 
     const csvText = await response.text();
 
-    // Parsear CSV simple
+    // Parsear CSV - Separar por líneas y procesar
     const lines = csvText.split("\n").filter((line) => line.trim());
 
-    // Procesar datos
+    // Saltar la primera línea (headers)
     let totalRecaudado = 0;
     let totalSesiones = 0;
     const causas: { [key: string]: number } = {};
     let ultimaActualizacion = "";
 
     for (let i = 1; i < lines.length; i++) {
-      const values = lines[i].split(",").map((v) => v.replace(/"/g, "").trim());
+      const line = lines[i];
+      
+      // Simple CSV parsing - split por coma y limpiar comillas
+      const values = line.split(",").map((v) => v.trim().replace(/^"|"$/g, ""));
 
       if (values.length >= 3) {
         const fecha = values[0];
-        const monto = parseFloat(values[1]) || 0;
-        const causa = values[2] || "Otras causas";
+        const montoStr = values[1];
+        const causa = values[2];
 
-        totalRecaudado += monto;
-        totalSesiones += 1;
+        // Parsear monto
+        const monto = parseFloat(montoStr);
+        
+        if (!isNaN(monto) && monto > 0) {
+          totalRecaudado += monto;
+          totalSesiones += 1;
 
-        if (causas[causa]) {
-          causas[causa] += monto;
-        } else {
-          causas[causa] = monto;
-        }
+          // Agrupar por causa
+          if (causas[causa]) {
+            causas[causa] += monto;
+          } else {
+            causas[causa] = monto;
+          }
 
-        if (fecha && (!ultimaActualizacion || fecha > ultimaActualizacion)) {
-          ultimaActualizacion = fecha;
+          // Actualizar última fecha
+          if (fecha && (!ultimaActualizacion || fecha > ultimaActualizacion)) {
+            ultimaActualizacion = fecha;
+          }
         }
       }
     }
