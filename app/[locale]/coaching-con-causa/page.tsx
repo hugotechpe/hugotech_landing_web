@@ -274,7 +274,7 @@ export default function CoachingConCausaPage() {
           </Card>
 
           <p className="mt-10 text-xl italic text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            "{t("investment.quote")}"
+            &ldquo;{t("investment.quote")}&rdquo;
           </p>
         </motion.div>
       </section>
@@ -394,7 +394,7 @@ export default function CoachingConCausaPage() {
           variants={fadeIn}
         >
           <blockquote className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 italic">
-            "{t("finalMessage.text")}"
+            &ldquo;{t("finalMessage.text")}&rdquo;
           </blockquote>
           <p className="text-xl text-gray-700 dark:text-gray-300">
             {t("finalMessage.author")}
