@@ -391,10 +391,10 @@
           "La vida me dio mucho. Esta es mi forma de retribuir mientras acompaño a jóvenes talentos tech.",
           "Cuando invertimos algo (aunque sea poco), le damos más valor al proceso. Ese dinero va a una bolsa solidaria para ONGs: albergues de animales, educación tech, comedores populares y reforestación."
         ],
-        "p2": "Transparencia total: cada trimestre publico reportes mostrando exactamente a dónde fue cada sol donado.",
+        "p2": "Transparencia total: puedes ver exactamente a dónde va cada sol donado.",
         "invite": {
-          "pBold": "La inversión real está en las personas",
-          "p": "Cada sesión gratuita es una apuesta a que cuando encuentras tu propósito, tu impacto multiplica el de otros."
+          "pBold": "La inversión real siempre está en las personas",
+          "p": "Tu crecimiento personal crea un efecto multiplicador: cuando encuentras tu propósito, tu impacto alcanza a muchos otros."
         }
       },
       "form": {

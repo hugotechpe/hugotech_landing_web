@@ -181,7 +181,9 @@ export function CoachingSection() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   as={Link}
-                  href="#agenda"
+                  href="https://calendly.com/hugotech/mentor-coaching-discovery"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   size="lg"
                   className="bg-brand hover:bg-yellow-400 text-customgray font-bold shadow-2xl hover:shadow-brand/50 transition-all hover:scale-105"
                 >
@@ -189,7 +191,7 @@ export function CoachingSection() {
                 </Button>
                 <Button
                   as={Link}
-                  href="#mepresento"
+                  href="/coaching-con-causa"
                   size="lg"
                   variant="bordered"
                   className="border-2 border-white text-white hover:bg-white/10 font-semibold"
