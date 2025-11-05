@@ -2,9 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import NextLink from "next/link";
-import { useTranslations, useMessages } from "next-intl";
 import { motion } from "framer-motion";
+import { useTranslations, useMessages } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -186,12 +186,12 @@ export function CoachingSection() {
                 >
                   {t("ctas.schedule")}
                 </a>
-                <NextLink
+                <Link
                   href="/coaching-con-causa"
                   className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-white text-white hover:bg-white/10 rounded-xl transition-all"
                 >
                   {t("ctas.learnMore")}
-                </NextLink>
+                </Link>
               </div>
             </div>
           </motion.div>
