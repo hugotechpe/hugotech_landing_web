@@ -179,7 +179,7 @@ export function CoachingSection() {
               {/* CTA prominente */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
-                  href="https://calendly.com/hugotech/mentor-coaching-discovery"
+                  href="https://calendly.com/hugotech/mentor-coaching-1-a-1-con-causa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 py-3 text-lg font-bold bg-brand hover:bg-yellow-400 text-customgray rounded-xl shadow-2xl hover:shadow-brand/50 transition-all hover:scale-105"
