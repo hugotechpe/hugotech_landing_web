@@ -1283,41 +1283,41 @@
       "hero": {
         "chip": "🌱 COACHING CON CAUSA",
         "title": "Coaching con Causa 🌍💚",
-        "subtitle": "Tu crecimiento también genera impacto en el mundo.",
-        "tagline": "Todas las sesiones 1 a 1 son 100% gratuitas. Siempre lo serán. No hay letra chica, no hay agenda oculta. Solo conversaciones honestas que transforman."
+        "subtitle": "Tu crecimiento profesional retribuye al mundo.",
+        "tagline": "La primera sesión es gratis. Es para conocernos, descubrir tu propósito y ver si conectamos. Si decides continuar, cada sesión tiene un costo de S/35 soles (~USD $10) que NO va a mi bolsillo: va 100% a causas sociales que necesitan apoyo."
       },
       "freeCommitment": {
-        "title": "Mi compromiso con el impacto social:",
+        "title": "¿Por qué hago esto?",
         "items": {
           "1": {
             "icon": "🎯",
-            "text": "Las mentorías individuales serán siempre gratuitas como mi forma de devolver lo que la vida me dio."
+            "text": "La vida me dio mucho: oportunidades, aprendizajes, personas que creyeron en mí. Esta es mi forma de retribuir."
           },
           "2": {
             "icon": "💡",
-            "text": "Si en el futuro ofrezco programas adicionales pagos, una porción significativa se destinará a causas sociales enfocadas en educación tech y bienestar comunitario."
+            "text": "Trabajo con jóvenes talentos tech que apenas están empezando. No quiero que el dinero sea una barrera, pero tampoco quiero que el proceso sea gratis. Cuando invertimos algo (aunque sea poco), le damos más valor."
           }
         },
-        "principle": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados."
+        "principle": "El modelo es simple: tu inversión retribuye al mundo mientras tú creces como profesional."
       },
       "howItWorks": {
         "title": "¿Cómo funciona?",
-        "intro": "Un modelo simple y transparente:",
+        "intro": "Te lo explico sin rodeos:",
         "steps": {
           "1": {
             "emoji": "🎁",
-            "title": "Primera sesión: 100% gratuita",
-            "description": "Agenda tu sesión de descubrimiento inicial sin costo. Nos conocemos, exploramos tu situación actual, tus desafíos y objetivos. Sin compromisos."
+            "title": "Primera sesión: Gratis, sin compromiso",
+            "description": "Nos tomamos 45 minutos para conocernos. Exploramos juntos qué buscas, cuáles son tus desafíos, hacia dónde quieres ir. Si al terminar sientes que no conectamos o que esto no es para ti, no pasa nada. No hay compromiso de continuar."
           },
           "2": {
-            "emoji": "🤝",
-            "title": "Sesiones de continuidad: S/35 soles (~USD $10) por sesión",
-            "description": "Si decides continuar tu proceso de mentor coaching, cada sesión tiene un aporte de 35 soles (aproximadamente USD $10). Este monto NO va a mi bolsillo: el 100% se destina a las causas sociales que ves abajo. Tu crecimiento profesional financia el impacto que queremos generar juntos."
+            "emoji": "💰",
+            "title": "Segunda sesión en adelante: S/35 soles por sesión",
+            "description": "Si decides seguir trabajando juntos, cada sesión cuesta S/35 soles (unos USD $10). Es accesible para jóvenes talentos tech que recién empiezan. Ese dinero NO va a mi cuenta personal: va directo a una 'bolsa solidaria' que se destina a ONGs y causas sociales."
           },
           "3": {
             "emoji": "💚",
-            "title": "Impacto transparente y comprobable",
-            "description": "Recibirás reportes trimestrales detallados mostrando exactamente cómo tu aporte ayudó a cada causa: comprobantes de donación, testimonios de las organizaciones y evidencias del impacto real generado."
+            "title": "Tu aporte genera impacto real",
+            "description": "Cada trimestre comparto reportes públicos mostrando exactamente a qué organizaciones se donó, con comprobantes y evidencias. No es marketing: es transparencia total. Tu crecimiento retribuye al mundo de forma concreta."
           }
         }
       },
@@ -1356,36 +1356,36 @@
         }
       },
       "investment": {
-        "title": "La inversión real está en las personas",
-        "subtitle": "S/35 soles por sesión = Impacto multiplicado en 4 causas",
-        "quote": "Cada sesión gratuita es una apuesta a que cuando encuentres tu propósito, tu impacto multiplicará el de otros.",
+        "title": "S/35 soles que transforman dos vidas",
+        "subtitle": "La tuya y la de alguien que lo necesita",
+        "quote": "No se trata de cobrar por cobrar. Se trata de que tu inversión en ti mismo también ayude a otros.",
         "pricing": {
           "amount": "S/35 soles (~USD $10)",
-          "perSession": "por sesión de mentor coaching (a partir de la 2da)",
-          "distribution": "100% destinado a causas sociales",
-          "breakdown": "Aproximadamente S/8.75 soles para cada una de las 4 causas"
+          "perSession": "por sesión (desde la segunda en adelante)",
+          "distribution": "100% va a la bolsa solidaria para ONGs",
+          "breakdown": "Se reparte entre 4 causas: aproximadamente S/8.75 para cada una"
         },
         "cards": {
           "1": {
             "title": "Promovemos la adopción responsable",
-            "description": "Cada peso que no va a mi bolsillo, va a salvar vidas de cuatro patas que merecen una segunda oportunidad."
+            "description": "Refugios de animales rescatados que hacen lo posible con poco. Tu aporte ayuda con alimento, vacunas y esterilizaciones."
           },
           "2": {
-            "title": "Brindamos apoyo a jóvenes talentos",
-            "description": "Tu crecimiento financia el despertar tech de chicos y chicas que sueñan con cambiar su realidad a través de la tecnología."
+            "title": "Educación tech para chicos sin recursos",
+            "description": "Talleres de programación en zonas vulnerables. Becas, laptops y acceso a internet para jóvenes que sueñan con un futuro mejor."
           }
         }
       },
       "transparency": {
-        "title": "Transparencia total",
-        "description": "Trimestralmente compartiré reportes públicos mostrando:",
+        "title": "Transparencia sin excusas",
+        "description": "Cada 3 meses publico un reporte mostrando:",
         "items": {
-          "1": "Monto total recaudado por sesiones",
-          "2": "Distribución exacta entre las 4 causas",
-          "3": "Comprobantes y evidencias de cada donación",
-          "4": "Testimonios de las organizaciones beneficiadas"
+          "1": "¿Cuánto dinero se juntó en la bolsa solidaria?",
+          "2": "¿A qué ONGs o causas se donó?",
+          "3": "Comprobantes escaneados de cada donación",
+          "4": "Fotos y testimonios de las organizaciones que recibieron el apoyo"
         },
-        "commitment": "Mi compromiso es que cada sol que aportes genere el máximo impacto posible."
+        "commitment": "No me quedo con nada. Esto no es un negocio: es una forma de retribuir mientras te acompaño en tu crecimiento."
       },
       "cta": {
         "free": {
@@ -1400,7 +1400,7 @@
         }
       },
       "finalMessage": {
-        "text": "Porque creo que el verdadero éxito se mide en vidas transformadas, no solo en ingresos generados.",
+        "text": "Crecer como profesional y retribuir al mundo no son cosas separadas. Pueden ir juntas.",
         "author": "Hugo Casanova"
       }
     }
