@@ -240,16 +240,16 @@
       },
       "badges": {
         "leader": {
-          "title": "Fortalece tu líder interno",
-          "description": "Guía tu carrera profesional hacia el crecimiento."
+          "title": "Conversaciones honestas",
+          "description": "Sin recetas mágicas. Hablamos de lo que realmente te pasa y cómo salir de ahí."
         },
         "talent": {
-          "title": "Pule/libera tu talento",
-          "description": "Te acompaño a desenvolverte en el mundo tech."
+          "title": "Alguien que te entiende",
+          "description": "Pasé 18 años en tech. Sé lo que es sentirse perdido con tanto ruido."
         },
         "antiBurnout": {
-          "title": "Anti-Burnout",
-          "description": "Carrera sostenible"
+          "title": "Carrera que te sostenga",
+          "description": "No más burnout. Construimos algo que puedas mantener en el tiempo."
         }
       },
       "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"

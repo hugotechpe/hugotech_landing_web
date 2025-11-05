@@ -239,16 +239,16 @@
       },
       "badges": {
         "leader": {
-          "title": "Strengthen your inner leader",
-          "description": "Guide your professional career toward growth."
+          "title": "Honest conversations",
+          "description": "No magic formulas. We talk about what's really happening and how to move forward."
         },
         "talent": {
-          "title": "Polish/unleash your talent",
-          "description": "I accompany you to develop in the tech world."
+          "title": "Someone who gets it",
+          "description": "18 years in tech. I know what it's like to feel lost in all the noise."
         },
         "antiBurnout": {
-          "title": "Anti-Burnout",
-          "description": "Sustainable career"
+          "title": "Career that sustains you",
+          "description": "No more burnout. We build something you can actually maintain long-term."
         }
       },
       "imageAlt": "Portrait of Hugo Casanova, tech mentor and coach"
