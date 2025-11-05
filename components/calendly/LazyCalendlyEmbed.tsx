@@ -61,7 +61,7 @@ export function LazyCalendlyEmbed(props: LazyCalendlyEmbedProps) {
         });
       },
       {
-        rootMargin: "200px", // Cargar 200px antes de que sea visible
+        rootMargin: "50px", // Cargar solo cuando esté muy cerca (optimizado para PageSpeed)
       }
     );
 

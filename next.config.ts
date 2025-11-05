@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: false,
   compress: true,
   poweredByHeader: false,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error', 'warn'],
+    } : false,
+  },
   // Optimización de paquetes
   experimental: {
     optimizePackageImports: ['framer-motion', '@heroui/react'],

@@ -1,0 +1,11 @@
+# Browsers that we support
+# Optimized for modern browsers to reduce polyfills
+# Targets browsers with >0.2% market share, last 2 versions, and not dead
+
+>0.2%
+not dead
+not op_mini all
+chrome >= 90
+firefox >= 88
+safari >= 14
+edge >= 90
