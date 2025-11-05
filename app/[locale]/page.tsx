@@ -34,6 +34,22 @@ const AgendaSection = dynamic(
   },
 );
 
+// Lazy load ImpactSection (contador de impacto en tiempo real)
+const ImpactSection = dynamic(
+  () =>
+    import("@/features/home/components/ImpactSection").then((mod) => ({
+      default: mod.ImpactSection,
+    })),
+  {
+    loading: () => (
+      <div className="py-20 flex items-center justify-center">
+        <p className="text-gray-400">Cargando impacto...</p>
+      </div>
+    ),
+    ssr: false, // Client-side only para evitar problemas con fetch
+  },
+);
+
 // Metadata dinámica basada en locale
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -68,6 +84,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <TestimoniosSection />
         <AgendaSection />
         <CoachingSection />
+        <ImpactSection />
       </HomeLayout>
     </>
   );
