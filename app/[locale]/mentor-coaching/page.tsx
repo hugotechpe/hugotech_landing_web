@@ -8,7 +8,7 @@ import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-import { CalendlyEmbed } from "@/components/calendly/CalendlyEmbed";
+import { LazyCalendlyEmbed } from "@/components/calendly/LazyCalendlyEmbed";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export default function MentorCoachingPage() {
@@ -208,7 +208,7 @@ export default function MentorCoachingPage() {
               </p>
             </div>
 
-            <CalendlyEmbed
+            <LazyCalendlyEmbed
               url="https://calendly.com/hugotech/mentor-coaching-1-a-1"
               height="800px"
             />
