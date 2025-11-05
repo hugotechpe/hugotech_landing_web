@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
+import NextLink from "next/link";
 import { useTranslations, useMessages } from "next-intl";
 import { motion } from "framer-motion";
 
@@ -180,7 +180,7 @@ export function CoachingSection() {
               {/* CTA prominente */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
-                  as={Link}
+                  as={NextLink}
                   href="https://calendly.com/hugotech/mentor-coaching-discovery"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -190,7 +190,7 @@ export function CoachingSection() {
                   {t("ctas.schedule")}
                 </Button>
                 <Button
-                  as={Link}
+                  as={NextLink}
                   href="/coaching-con-causa"
                   size="lg"
                   variant="bordered"
