@@ -18,7 +18,6 @@ const nextConfig: NextConfig = {
   },
   // Producción optimizada
   productionBrowserSourceMaps: false,
-  swcMinify: true,
   compress: true,
   poweredByHeader: false,
   // Optimización de paquetes

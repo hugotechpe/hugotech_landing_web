@@ -45,14 +45,15 @@ export default [
             "!**/tsup.config.ts",
         ]
     },
-    {
-    extends: fixupConfigRules(compat.extends(
+    ...fixupConfigRules(compat.extends(
         "plugin:react/recommended",
         "plugin:prettier/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
         "plugin:@next/next/recommended",
     )),
+    {
+    files: ["**/*.ts", "**/*.tsx"],
 
     plugins: {
         react: fixupPluginRules(react),
@@ -85,8 +86,6 @@ export default [
             version: "detect",
         },
     },
-
-    files: ["**/*.ts", "**/*.tsx"],
 
     rules: {
         "no-console": "warn",
