@@ -53,12 +53,13 @@ export default function CoachingConCausaPage() {
             variants={fadeIn}
           >
             <a
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold bg-success-500 hover:bg-success-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold bg-success-500 hover:bg-success-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105"
               href="https://calendly.com/hugotech/mentor-coaching-1-a-1-con-causa"
               rel="noopener noreferrer"
               target="_blank"
             >
-              🎁 Agenda tu Primera Sesión Gratis
+              <span className="text-2xl">🎁</span>
+              <span>Agenda tu Primera Sesión Gratis</span>
             </a>
           </motion.div>
         </motion.div>
