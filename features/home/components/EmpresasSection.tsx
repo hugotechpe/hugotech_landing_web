@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { Image } from "@heroui/image";
+import Image from "next/image";
 import { useTranslations, useMessages } from "next-intl";
 import { motion } from "framer-motion";
 
@@ -97,11 +97,14 @@ export function EmpresasSection() {
                   <Image
                     src="/images/image3.png"
                     alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
-                    width={165}
-                    height={220}
-                    loading="lazy"
-                    sizes="(max-width: 768px) 0px, 165px"
-                    className="rounded-lg shadow-sm hidden md:block"
+                    width={220}
+                    height={293}
+                    priority
+                    quality={85}
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nGPY2fXqv0AAw87uV/8ZGBgYdna9BPL+MzAwMOzqfsXAwABm7Ox6xcDAwABmAwCMNwptBHo5GAAAAABJRU5ErkJggg=="
+                    sizes="(max-width: 768px) 0px, 220px"
+                    className="rounded-lg shadow-sm hidden md:block object-cover"
                   />
                 </div>
               </CardBody>
@@ -157,8 +160,11 @@ export function EmpresasSection() {
                     width={227}
                     height={215}
                     loading="lazy"
+                    quality={85}
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAAChtdzfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgQAL/kTADAwMDw8aOl//Xd738D+VsbHv5HyjGsKHtJVwCKIYsBgBXBQ5jPw6z9QAAAABJRU5ErkJggg=="
                     sizes="(max-width: 768px) 0px, 227px"
-                    className="rounded-lg shadow-sm hidden md:block"
+                    className="rounded-lg shadow-sm hidden md:block object-cover"
                   />
                 </div>
               </CardBody>
