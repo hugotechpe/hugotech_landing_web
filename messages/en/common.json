@@ -1310,13 +1310,13 @@
           },
           "2": {
             "emoji": "🤝",
-            "title": "Continuation sessions: Coaching with a Cause",
-            "description": "If you decide to continue your process, the following sessions have an economic contribution that YOU define according to your situation. This amount does NOT go to my pocket: it's entirely dedicated to social causes that impact those who need it most."
+            "title": "Continuation sessions: S/35 soles (~USD $10) per session",
+            "description": "If you decide to continue your mentor coaching process, each session has a contribution of 35 soles (approximately USD $10). This amount does NOT go to my pocket: 100% is dedicated to the social causes you see below. Your professional growth finances the impact we want to generate together."
           },
           "3": {
             "emoji": "💚",
-            "title": "Transparent impact",
-            "description": "You'll receive reports on how your contribution helped these causes. Total transparency."
+            "title": "Transparent and verifiable impact",
+            "description": "You'll receive detailed quarterly reports showing exactly how your contribution helped each cause: donation receipts, testimonials from organizations, and evidence of the real impact generated."
           }
         }
       },
@@ -1356,7 +1356,14 @@
       },
       "investment": {
         "title": "The real investment is in people",
+        "subtitle": "S/35 soles per session = Multiplied impact across 4 causes",
         "quote": "Each free session is a bet that when you find your purpose, your impact will multiply that of others.",
+        "pricing": {
+          "amount": "S/35 soles (~USD $10)",
+          "perSession": "per mentor coaching session (from 2nd onwards)",
+          "distribution": "100% dedicated to social causes",
+          "breakdown": "Approximately S/8.75 soles for each of the 4 causes"
+        },
         "cards": {
           "1": {
             "title": "We promote responsible adoption",
@@ -1381,12 +1388,14 @@
       },
       "cta": {
         "free": {
-          "title": "🎁 Schedule Your Free Session",
-          "subtitle": "First discovery session — No cost, no commitments"
+          "title": "🎁 Schedule Your First Free Session",
+          "subtitle": "First discovery session — 100% free, no commitments",
+          "button": "Schedule Your Free Session"
         },
         "withCause": {
-          "title": "💚 Learn More About the Model",
-          "subtitle": "Discover how Coaching with a Cause works"
+          "title": "💚 Second Session and Continuity",
+          "subtitle": "From 2nd session onwards: S/35 soles that go 100% to social causes",
+          "button": "📅 Schedule Session with a Cause (S/35)"
         }
       },
       "finalMessage": {

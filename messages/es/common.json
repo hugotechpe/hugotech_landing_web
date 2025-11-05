@@ -1311,13 +1311,13 @@
           },
           "2": {
             "emoji": "🤝",
-            "title": "Sesiones de continuidad: Coaching con Causa",
-            "description": "Si decides continuar tu proceso, las sesiones siguientes tienen un aporte económico que TÚ defines según tu situación. Este monto NO va a mi bolsillo: se destina íntegramente a causas sociales que impactan a quienes más lo necesitan."
+            "title": "Sesiones de continuidad: S/35 soles (~USD $10) por sesión",
+            "description": "Si decides continuar tu proceso de mentor coaching, cada sesión tiene un aporte de 35 soles (aproximadamente USD $10). Este monto NO va a mi bolsillo: el 100% se destina a las causas sociales que ves abajo. Tu crecimiento profesional financia el impacto que queremos generar juntos."
           },
           "3": {
             "emoji": "💚",
-            "title": "Impacto transparente",
-            "description": "Recibirás reportes de cómo tu aporte ayudó a estas causas. Transparencia total."
+            "title": "Impacto transparente y comprobable",
+            "description": "Recibirás reportes trimestrales detallados mostrando exactamente cómo tu aporte ayudó a cada causa: comprobantes de donación, testimonios de las organizaciones y evidencias del impacto real generado."
           }
         }
       },
@@ -1357,7 +1357,14 @@
       },
       "investment": {
         "title": "La inversión real está en las personas",
+        "subtitle": "S/35 soles por sesión = Impacto multiplicado en 4 causas",
         "quote": "Cada sesión gratuita es una apuesta a que cuando encuentres tu propósito, tu impacto multiplicará el de otros.",
+        "pricing": {
+          "amount": "S/35 soles (~USD $10)",
+          "perSession": "por sesión de mentor coaching (a partir de la 2da)",
+          "distribution": "100% destinado a causas sociales",
+          "breakdown": "Aproximadamente S/8.75 soles para cada una de las 4 causas"
+        },
         "cards": {
           "1": {
             "title": "Promovemos la adopción responsable",
@@ -1382,12 +1389,14 @@
       },
       "cta": {
         "free": {
-          "title": "🎁 Agendá tu Sesión Gratuita",
-          "subtitle": "Primera sesión de descubrimiento — Sin costo, sin compromisos"
+          "title": "🎁 Agendá tu Primera Sesión Gratuita",
+          "subtitle": "Primera sesión de descubrimiento — 100% sin costo, sin compromisos",
+          "button": "Agenda tu Sesión Gratuita"
         },
         "withCause": {
-          "title": "💚 Conoce Más sobre el Modelo",
-          "subtitle": "Descubre cómo funciona el Coaching con Causa"
+          "title": "💚 Segunda Sesión y Continuidad",
+          "subtitle": "A partir de la 2da sesión: S/35 soles que van 100% a causas sociales",
+          "button": "📅 Agenda Sesión con Causa (S/35)"
         }
       },
       "finalMessage": {

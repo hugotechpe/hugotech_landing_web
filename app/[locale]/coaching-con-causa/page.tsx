@@ -189,13 +189,38 @@ export default function CoachingConCausaPage() {
           initial="hidden"
           variants={stagger}
         >
-          <motion.div className="text-center mb-16" variants={fadeIn}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <motion.div className="text-center mb-12" variants={fadeIn}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t("investment.title")}
             </h2>
+            <p className="text-2xl font-semibold text-success-600 dark:text-success-400 mb-6">
+              {t("investment.subtitle")}
+            </p>
             <p className="text-xl italic text-primary-600 dark:text-primary-400 max-w-3xl mx-auto">
               &ldquo;{t("investment.quote")}&rdquo;
             </p>
+          </motion.div>
+
+          {/* Pricing Card */}
+          <motion.div className="mb-12" variants={fadeIn}>
+            <Card className="bg-gradient-to-br from-success-50 to-primary-50 dark:from-success-900/20 dark:to-primary-900/20 border-2 border-success-300 dark:border-success-700">
+              <CardBody className="p-8 text-center">
+                <div className="text-5xl font-bold text-success-600 dark:text-success-400 mb-2">
+                  {t("investment.pricing.amount")}
+                </div>
+                <p className="text-lg text-default-700 dark:text-default-300 mb-4">
+                  {t("investment.pricing.perSession")}
+                </p>
+                <div className="inline-block bg-white dark:bg-gray-800 px-6 py-3 rounded-full mb-4">
+                  <p className="font-semibold text-success-700 dark:text-success-300">
+                    ✓ {t("investment.pricing.distribution")}
+                  </p>
+                </div>
+                <p className="text-sm text-default-600 dark:text-default-400 italic">
+                  {t("investment.pricing.breakdown")}
+                </p>
+              </CardBody>
+            </Card>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -299,7 +324,7 @@ export default function CoachingConCausaPage() {
                 size="lg"
                 variant="shadow"
               >
-                Agenda tu Sesión Gratuita
+                {t("cta.free.button")}
               </Button>
             </div>
 
@@ -316,9 +341,9 @@ export default function CoachingConCausaPage() {
                 rel="noopener noreferrer"
                 size="lg"
                 target="_blank"
-                variant="ghost"
+                variant="shadow"
               >
-                📅 Conoce más sobre Coaching con Causa
+                {t("cta.withCause.button")}
               </Button>
             </div>
           </motion.div>
