@@ -352,7 +352,7 @@ export default function CoachingConCausaPage() {
                     target="_blank"
                   >
                     <span className="text-2xl">🎁</span>
-                    <span>{t("cta.free.button")}</span>
+                    <span>Agenda tu Sesión Gratuita</span>
                   </a>
                 </CardBody>
               </Card>
@@ -376,7 +376,7 @@ export default function CoachingConCausaPage() {
                     target="_blank"
                   >
                     <span className="text-2xl">💚</span>
-                    <span>{t("cta.withCause.button")}</span>
+                    <span>Agenda Sesión con Causa (S/35)</span>
                   </a>
                 </CardBody>
               </Card>
