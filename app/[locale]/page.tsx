@@ -43,7 +43,6 @@ const ImpactSection = dynamic(
         <p className="text-gray-400">Cargando impacto...</p>
       </div>
     ),
-    ssr: false, // Client-side only para evitar problemas con fetch
   },
 );
 
