@@ -314,6 +314,15 @@ export function PorQueGratuitoSection() {
                           <span className="absolute inset-0 bg-brand/20 rounded -z-10 blur-sm" />
                         </motion.span>
                       ),
+                      highlight4: (chunks) => (
+                        <motion.span 
+                          className="text-success-600 not-italic font-bold relative inline-block"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          <span className="relative z-10">{chunks}</span>
+                          <span className="absolute inset-0 bg-success/20 rounded -z-10 blur-sm" />
+                        </motion.span>
+                      ),
                     })}
                   </p>
                   

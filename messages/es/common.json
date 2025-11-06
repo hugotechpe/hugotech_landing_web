@@ -184,21 +184,21 @@
       "note": "Plazas limitadas por mes. 100% confidencial."
     },
     "PorQueGratuito": {
-      "title": "¿Por qué las sesiones 1 a 1 son gratuitas? 💚",
-      "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe.",
+      "title": "¿Por qué hago esto? 💚",
+      "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe. Sin que el dinero sea una barrera.",
       "stats": {
-        "mentored": "Jóvenes Mentorados",
-        "freeSessions": "Sesiones Gratuitas",
+        "mentored": "Jóvenes Acompañados",
+        "freeSessions": "Primera sesión gratis, siempre",
         "experience": "Años de Experiencia"
       },
       "quote": {
-        "text": "Si hoy puedo guiar a alguien, es porque <highlight1>otros me levantaron cuando más lo necesitaba</highlight1>. He estado en el fondo del burnout, he cuestionado todo. Esos momentos me enseñaron que <highlight2>la vulnerabilidad es fortaleza</highlight2>. Por eso las sesiones son gratuitas: <highlight3>devolver lo que la vida me dio cuando estaba perdido</highlight3>.",
+        "text": "Si hoy puedo guiar a alguien, es porque <highlight1>otros me levantaron cuando más lo necesitaba</highlight1>. He estado en el fondo del burnout, he cuestionado todo. Esos momentos me enseñaron que <highlight2>la vulnerabilidad es fortaleza</highlight2>. Por eso la primera sesión es gratis: <highlight3>que nos conozcamos sin presión</highlight3>. Si decides continuar, las siguientes cuestan S/35 que van 100% a causas sociales. <highlight4>Tu crecimiento también ayuda a otros</highlight4>.",
         "author": "Hugo Casanova"
       },
       "mentoriaCard": {
-        "title": "Tu Mentoría Tech 1 a 1 💚",
-        "subtitle": "Coaching de autoconocimiento + Mentoring tecnológico. Gratis.",
-        "p1": "¿Síndrome del impostor? ¿Introversión que te frena? ¿Estancado sin saber qué camino tomar? <b>No estás solo</b>. Nuestras sesiones 1 a 1 (sin costo) combinan <b>desarrollo humano con estrategia tecnológica</b> para transformar tu confianza y claridad profesional.",
+        "title": "Tu Primera Sesión: Gratis 💚",
+        "subtitle": "Coaching de autoconocimiento + Mentoring tecnológico. Sin compromiso.",
+        "p1": "¿Síndrome del impostor? ¿Introversión que te frena? ¿Estancado sin saber qué camino tomar? <b>No estás solo</b>. La primera sesión es <b>completamente gratis</b> para que nos conozcamos sin presión. Si decides continuar, las siguientes cuestan S/35 (~$10 USD) que van <b>100% a causas sociales</b>.",
         "p2": "",
         "resultsTitle": "Lo que lograrás:",
         "resultsItems": [
@@ -207,21 +207,22 @@
           "Hoja de ruta personalizada según tu perfil",
           "Mentalidad de crecimiento y herramientas anti-burnout"
         ],
-        "ctaLabel": "Agenda tu sesión gratis",
-        "note": "100 % gratuito. Sin letra pequeña. Solo conversación honesta."
+        "ctaLabel": "Agenda tu primera sesión gratis",
+        "note": "Primera sesión: gratis, sin compromiso. Siguientes: S/35 que ayudan a causas sociales."
       },
       "filosofiaCard": {
-        "title": "Mi Filosofía 🌱",
-        "subtitle": "Primero el ser, luego el hacer. La transformación real empieza dentro.",
-        "p1": "HugoTech nació para ser un espacio donde <b>el talento se encuentra con el propósito, lo técnico con lo humano</b>, sin barreras económicas. Solo conversaciones honestas que transforman desde el ser.",
+        "title": "¿Por qué S/35? 🌱",
+        "subtitle": "Crecer y retribuir pueden ir de la mano.",
+        "p1": "No quiero que el dinero sea una barrera, pero tampoco creo que todo deba ser gratis. <b>Cuando invertimos algo (aunque sea poco), le damos más valor al proceso</b>. Y si ese dinero puede ayudar a perritos rescatados, becas tech o comedores populares mientras tú creces, ¿por qué no?",
         "p2": "",
         "resultsTitle": "Cómo funciona:",
         "resultsItems": [
-          "La innovación comienza dentro de las personas, no en el código",
-          "Primero se transforma el ser, luego el hacer cobra sentido",
-          "Los resultados llegan como consecuencia natural"
+          "Primera sesión: Gratis. Para conocernos sin presión",
+          "Siguientes sesiones: S/35 soles (~$10 USD)",
+          "100% va a causas sociales (albergues, becas, educación)",
+          "Transparencia total: reportes trimestrales con comprobantes"
         ],
-        "note": "Las sesiones B2B para empresas sí tienen costo, porque requieren estructura, seguimiento y resultados medibles. Pero el corazón de HugoTech siempre será gratuito."
+        "note": "Tu inversión en ti mismo también ayuda a otros. Simple, honesto, con propósito."
       }
     },
     "Inicio": {
