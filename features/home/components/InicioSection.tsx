@@ -143,7 +143,7 @@ export function InicioSection() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="hidden md:block absolute left-0 top-16 z-10"
+                  className="hidden md:block absolute left-4 top-32 z-10"
                 >
                   <motion.div
                     animate={{ 
@@ -177,7 +177,7 @@ export function InicioSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
-                className="hidden md:block absolute right-0 bottom-24 z-10"
+                className="hidden md:block absolute right-4 bottom-24 z-10"
               >
                 <motion.div
                   animate={{ 
@@ -212,7 +212,7 @@ export function InicioSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="hidden lg:block absolute right-0 top-5 z-10"
+                className="hidden lg:block absolute right-4 top-5 z-10"
               >
                 <motion.div
                   animate={{ 
