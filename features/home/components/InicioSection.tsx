@@ -212,7 +212,7 @@ export function InicioSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="hidden lg:block absolute -right-24 top-5 z-10"
+                className="hidden lg:block absolute -right-16 top-5 z-10"
               >
                 <motion.div
                   animate={{ 
@@ -224,7 +224,7 @@ export function InicioSection() {
                     ease: "easeInOut",
                     delay: 2
                   }}
-                  className="bg-white rounded-2xl shadow-xl p-4 max-w-[200px]"
+                  className="bg-white rounded-2xl shadow-xl p-4 max-w-[240px]"
                 >
                   <div className="flex items-start gap-3">
                     <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
