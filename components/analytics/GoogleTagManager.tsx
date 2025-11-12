@@ -7,10 +7,30 @@ const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-5HH6QTFK";
 export function GoogleTagManager() {
   return (
     <>
+      {/* Google Consent Mode v2 - Configuración por defecto */}
+      <Script
+        id="gtm-consent"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            
+            gtag('consent', 'default', {
+              'analytics_storage': 'granted',
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'wait_for_update': 500
+            });
+          `,
+        }}
+      />
+
       {/* Google Tag Manager Script - Lazy loaded después del contenido principal */}
       <Script
         id="gtm-script"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
