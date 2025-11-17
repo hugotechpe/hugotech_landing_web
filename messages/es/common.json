@@ -1413,6 +1413,61 @@
       }
     }
   },
+  "FAQ": {
+    "hero": {
+      "chip": "💬 Preguntas Frecuentes",
+      "title": "¿Tienes dudas? Aquí las respuestas",
+      "subtitle": "Todo lo que necesitas saber sobre el mentoring tech con propósito, sesiones gratuitas y cómo empezar tu transformación"
+    },
+    "items": {
+      "mentoring-gratis": {
+        "question": "¿Las sesiones de mentoring son realmente gratis?",
+        "answer": "Sí, las sesiones 1-a-1 son 100% gratuitas. Sin letra chica, sin agenda oculta. Es mi forma de retribuir al mundo lo que la vida me dio. Quiero que el dinero no sea una barrera para tu crecimiento profesional."
+      },
+      "coaching-con-causa": {
+        "question": "¿Qué es Coaching con Causa?",
+        "answer": "Es una opción donde tu primera sesión es gratis. Si decides continuar, cada sesión cuesta S/35 soles (~USD $10) que van 100% a causas sociales: albergues de animales, becas tech, educación, reforestación. Tu crecimiento ayuda al mundo."
+      },
+      "diferencia-coaching-mentoring": {
+        "question": "¿Cuál es la diferencia entre Coaching y Mentor Coaching?",
+        "answer": "Coaching 1-a-1 se enfoca en el SER: autoconocimiento, propósito, equilibrio personal. Mentor Coaching se enfoca en el HACER: tu carrera tech, habilidades de liderazgo, próximos pasos profesionales. Ambos combinan desarrollo humano con estrategia."
+      },
+      "primera-sesion": {
+        "question": "¿Qué pasa en la primera sesión?",
+        "answer": "Es una conversación honesta de 45 minutos para conocernos. Exploramos qué buscas, qué te frena, hacia dónde quieres ir. Si al terminar sientes que no conectamos, no pasa nada. Sin compromiso, sin presión."
+      },
+      "sesiones-empresas": {
+        "question": "¿Ofrecen programas para empresas?",
+        "answer": "Sí. Trabajo con equipos tech a través de workshops de liderazgo ágil, coaching ejecutivo, programas de cultura organizacional y transformación de equipos de alto rendimiento. Los servicios B2B tienen inversión porque requieren estructura, seguimiento y resultados medibles."
+      },
+      "modalidad": {
+        "question": "¿Las sesiones son presenciales u online?",
+        "answer": "100% online, vía Google Meet o Zoom. Esto nos permite conectar sin importar dónde estés: Perú, Latinoamérica, Europa, EE.UU. Solo necesitas internet estable y un espacio tranquilo para la sesión."
+      },
+      "duracion-sesion": {
+        "question": "¿Cuánto dura cada sesión?",
+        "answer": "Cada sesión dura 45 minutos. Es tiempo suficiente para profundizar en un tema específico, explorar nuevas perspectivas y diseñar pasos de acción concretos. Si necesitas más tiempo, podemos coordinarlo."
+      },
+      "temas-trabajamos": {
+        "question": "¿Qué temas se pueden trabajar en las sesiones?",
+        "answer": "Autoconocimiento, propósito profesional, síndrome del impostor, comunicación efectiva, liderazgo, burnout, transición de carrera, toma de decisiones, gestión emocional, confianza, habilidades blandas, roadmap tech, balance vida-trabajo."
+      },
+      "quien-puede-solicitar": {
+        "question": "¿Quién puede solicitar una sesión?",
+        "answer": "Cualquier persona del mundo tech: desarrolladores, QA, diseñadores, product owners, scrum masters, líderes técnicos, estudiantes de tech, profesionales en transición. Si trabajas en tecnología o quieres entrar al sector, esto es para ti."
+      },
+      "como-agendar": {
+        "question": "¿Cómo agendo mi sesión?",
+        "answer": "Fácil: haz clic en 'Agenda tu sesión gratuita', elige el día y hora que mejor te funcione en Calendly, llena un formulario breve para enfocar la sesión, y listo. Recibirás un email de confirmación con el link de la videollamada."
+      }
+    },
+    "cta": {
+      "title": "¿No encontraste tu respuesta?",
+      "subtitle": "Contáctame directamente y resolveré todas tus dudas",
+      "buttonPrimary": "Agenda tu Sesión Gratuita",
+      "buttonSecondary": "Escríbeme por WhatsApp"
+    }
+  },
   "WhatsAppButton": {
     "message": "¿Necesitas ayuda? Escríbeme"
   }

@@ -1414,6 +1414,61 @@
       }
     }
   },
+  "FAQ": {
+    "hero": {
+      "chip": "💬 Frequently Asked Questions",
+      "title": "Have questions? Here are the answers",
+      "subtitle": "Everything you need to know about tech mentoring with purpose, free sessions, and how to start your transformation"
+    },
+    "items": {
+      "mentoring-gratis": {
+        "question": "Are the mentoring sessions really free?",
+        "answer": "Yes, 1-on-1 sessions are 100% free. No fine print, no hidden agenda. It's my way of giving back to the world what life gave me. I want money not to be a barrier to your professional growth."
+      },
+      "coaching-con-causa": {
+        "question": "What is Coaching with Purpose?",
+        "answer": "It's an option where your first session is free. If you decide to continue, each session costs S/35 soles (~USD $10) that goes 100% to social causes: animal shelters, tech scholarships, education, reforestation. Your growth helps the world."
+      },
+      "diferencia-coaching-mentoring": {
+        "question": "What's the difference between Coaching and Mentor Coaching?",
+        "answer": "1-on-1 Coaching focuses on BEING: self-knowledge, purpose, personal balance. Mentor Coaching focuses on DOING: your tech career, leadership skills, next professional steps. Both combine human development with strategy."
+      },
+      "primera-sesion": {
+        "question": "What happens in the first session?",
+        "answer": "It's an honest 45-minute conversation to get to know each other. We explore what you're looking for, what's holding you back, where you want to go. If by the end you feel we don't connect, that's okay. No commitment, no pressure."
+      },
+      "sesiones-empresas": {
+        "question": "Do you offer corporate programs?",
+        "answer": "Yes. I work with tech teams through agile leadership workshops, executive coaching, organizational culture programs and high-performance team transformation. B2B services have an investment because they require structure, follow-up and measurable results."
+      },
+      "modalidad": {
+        "question": "Are sessions in-person or online?",
+        "answer": "100% online, via Google Meet or Zoom. This allows us to connect no matter where you are: Peru, Latin America, Europe, USA. You just need stable internet and a quiet space for the session."
+      },
+      "duracion-sesion": {
+        "question": "How long does each session last?",
+        "answer": "Each session lasts 45 minutes. It's enough time to delve into a specific topic, explore new perspectives and design concrete action steps. If you need more time, we can coordinate it."
+      },
+      "temas-trabajamos": {
+        "question": "What topics can be worked on in sessions?",
+        "answer": "Self-knowledge, professional purpose, impostor syndrome, effective communication, leadership, burnout, career transition, decision making, emotional management, confidence, soft skills, tech roadmap, work-life balance."
+      },
+      "quien-puede-solicitar": {
+        "question": "Who can request a session?",
+        "answer": "Anyone in tech: developers, QA, designers, product owners, scrum masters, tech leads, tech students, professionals in transition. If you work in technology or want to enter the sector, this is for you."
+      },
+      "como-agendar": {
+        "question": "How do I schedule my session?",
+        "answer": "Easy: click 'Schedule your free session', choose the day and time that works best for you on Calendly, fill out a brief form to focus the session, and that's it. You'll receive a confirmation email with the video call link."
+      }
+    },
+    "cta": {
+      "title": "Didn't find your answer?",
+      "subtitle": "Contact me directly and I'll resolve all your doubts",
+      "buttonPrimary": "Schedule your Free Session",
+      "buttonSecondary": "Text me on WhatsApp"
+    }
+  },
   "WhatsAppButton": {
     "message": "Need help? Write me"
   }
