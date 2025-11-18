@@ -242,7 +242,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     quote: `Siempre estuviste ahí para escuchar a los talentos. Me sentí valorada en mi trabajo. Y llegar al trabajo era sentir que llegaba a un ambiente lleno de positivismo, apoyo, y humano.`,
     authorName: "Majo Zambrano",
     role: "Fui parte de tu equipo.",
-    avatarSrc: "/images/avatar-female.svg",
+    avatarSrc: "/images/testimonials/majo-zambrano.jpg",
     avatarAlt: "Foto de perfil de Majo Zambrano",
     linkedInUrl: "https://www.linkedin.com/in/maria-jose-zambrano-escobar/",
     tags: ["Escucha activa", "Ambiente positivo", "Valoración"],
@@ -273,7 +273,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     quote: `Hugo no solo es mi hermano menor, también he visto su trayectoria en transformar equipos y culturas organizacionales. Su enfoque genuino ha impactado no solo en lo profesional, sino también en las familias de quienes han trabajado con él. Como coach, ayuda a personas a encontrar su propósito y llevar una vida más plena, y eso trasciende cualquier rol laboral.`,
     authorName: "Andrews Postillos",
     role: "Soy tu hermano y cercano testigo de tu labor.",
-    avatarSrc: "/images/testimonials/andrews-postillos.jpg",
+    avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl:
       "https://www.linkedin.com/in/andrews-leonard-postillos-estrada-416537333/",

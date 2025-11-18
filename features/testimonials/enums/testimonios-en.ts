@@ -239,7 +239,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     quote: `I'm grateful for the opportunity you gave me and all the trust you placed in me. Even though I didn't stay longer, I carry with me everything I learned with you. Thank you Hugo 🫶`,
     authorName: "Majo Zambrano",
     role: "I was part of your team.",
-    avatarSrc: "/images/avatar-female.svg",
+    avatarSrc: "/images/testimonials/majo-zambrano.jpg",
     avatarAlt: "Profile photo of Majo Zambrano",
     linkedInUrl: "https://www.linkedin.com/in/maria-jose-zambrano-escobar/",
     tags: ["Opportunity", "Trust", "Learning"],
@@ -270,7 +270,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     quote: `I am your brother and close witness to your work. Not only have I seen your trajectory in transforming teams and organizational cultures. Your genuine approach has impacted not only professionally, but also in the families of those who have worked with you. As a coach, you help people find...`,
     authorName: "Andrews Postillos",
     role: "I'm your brother and close witness to your work.",
-    avatarSrc: "/images/testimonials/andrews-postillos.jpg",
+    avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Andrews Postillos",
     linkedInUrl:
       "https://www.linkedin.com/in/andrews-leonard-postillos-estrada-416537333/",
