@@ -287,8 +287,9 @@ export function PorQueGratuitoSection() {
                   
                   <p className="text-xl md:text-2xl lg:text-3xl font-light italic text-gray-800 mb-10 leading-[1.8] tracking-wide max-w-5xl mx-auto relative">
                     {t.rich("quote.text", {
-                      highlight1: (chunks) => (
+                      highlight1: (chunks: React.ReactNode) => (
                         <motion.span 
+                          key="h1"
                           className="text-primary not-italic font-semibold relative inline-block"
                           whileHover={{ scale: 1.05 }}
                         >
@@ -296,8 +297,9 @@ export function PorQueGratuitoSection() {
                           <span className="absolute inset-0 bg-primary/10 rounded -z-10 blur-sm" />
                         </motion.span>
                       ),
-                      highlight2: (chunks) => (
+                      highlight2: (chunks: React.ReactNode) => (
                         <motion.span 
+                          key="h2"
                           className="text-primary not-italic font-semibold relative inline-block"
                           whileHover={{ scale: 1.05 }}
                         >
@@ -305,8 +307,9 @@ export function PorQueGratuitoSection() {
                           <span className="absolute inset-0 bg-primary/10 rounded -z-10 blur-sm" />
                         </motion.span>
                       ),
-                      highlight3: (chunks) => (
+                      highlight3: (chunks: React.ReactNode) => (
                         <motion.span 
+                          key="h3"
                           className="text-brand not-italic font-bold relative inline-block"
                           whileHover={{ scale: 1.05 }}
                         >
@@ -314,8 +317,9 @@ export function PorQueGratuitoSection() {
                           <span className="absolute inset-0 bg-brand/20 rounded -z-10 blur-sm" />
                         </motion.span>
                       ),
-                      highlight4: (chunks) => (
+                      highlight4: (chunks: React.ReactNode) => (
                         <motion.span 
+                          key="h4"
                           className="text-success-600 not-italic font-bold relative inline-block"
                           whileHover={{ scale: 1.05 }}
                         >
