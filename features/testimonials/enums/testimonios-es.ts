@@ -29,6 +29,10 @@ export enum TestimonioId {
   STHEFANNY_CISNEROS = "Sthefanny Cisneros",
   HANS_ALFARO = "Hans Alfaro",
   ANTONIO_CABRERA = "Antonio Cabrera",
+  MANUEL_BAZAES = "Manuel Bazaes",
+  ALESSANDRA_PEREZ = "Alessandra Pérez",
+  GABRIEL_GRANADOS = "Gabriel Granados",
+  JOSE_LOSTAUNAU = "Jose Lostaunau",
 }
 
 // Mapa tipado de datos por cada testimonio
@@ -312,6 +316,46 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     tags: ["Proactividad", "Confianza progresiva", "Espacio para crecer"],
     highlight: "ganaste mi confianza como profesional y también como persona",
   },
+  [TestimonioId.MANUEL_BAZAES]: {
+    quote: `Trabajamos mucho estos últimos meses, tuvimos múltiples sesiones y estuviste apoyándome en cada una de ellas. También cuando hubo inconvenientes, sentí la motivación y el compromiso. Me fue grato trabajar juntos sinceramente, y aunque hubo momentos de estrés, vi cómo te apoyaste en mí. Espero seguir mejorando aspectos que siento son detalles normales cuando recién estamos empezando con nuestro nuevo Líder.`,
+    authorName: "Manuel Bazaes",
+    role: "Fui parte de tu equipo.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Foto de perfil de Manuel Bazaes",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Colaboración", "Apoyo mutuo", "Crecimiento conjunto"],
+    highlight: "sentí la motivación y el compromiso",
+  },
+  [TestimonioId.ALESSANDRA_PEREZ]: {
+    quote: `Al principio fue neutral ya que no te veía mucho, pero poco a poco nos conocimos mejor y surgió la buena comunicación. Ha sido tranquilo el trabajo, sobre todo sabiendo que hay alguien que nos apoya con los desafíos más grandes.`,
+    authorName: "Anónimo",
+    role: "Soy parte de tu equipo en OnRoad.",
+    avatarSrc: "/images/avatar-female.svg",
+    avatarAlt: "Foto de perfil anónimo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Comunicación", "Apoyo", "Confianza"],
+    highlight: "surgió la buena comunicación",
+  },
+  [TestimonioId.GABRIEL_GRANADOS]: {
+    quote: `A mis 23 años he tenido diversos mentores, y siento que no he podido conectar con muchos ni trabajar de la mano en armonía. Caso contrario trabajando con Hugo como mentor. La confianza, la motivación y el trabajo en equipo es algo que siempre se puede rescatar, sin contar el apoyo y los incentivos para emplear mejor nuestro trabajo. Sin duda alguna, la confianza y la cercanía con el equipo hace que vea de otra manera el trabajar, y ver de manera positiva mi futuro profesional.`,
+    authorName: "Anónimo",
+    role: "Soy parte de tu equipo.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Foto de perfil anónimo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Mentoría", "Conexión", "Trabajo en equipo", "Futuro profesional"],
+    highlight: "la confianza y la cercanía con el equipo",
+  },
+  [TestimonioId.JOSE_LOSTAUNAU]: {
+    quote: `Como jefe llegas a motivar a todos los que trabajan a tu alrededor y a mostrar tu apoyo para que los demás se sientan cómodos. Esa capacidad de crear un ambiente donde todos nos sentimos respaldados marca la diferencia.`,
+    authorName: "Anónimo",
+    role: "Fui parte de tu equipo.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Foto de perfil anónimo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Motivación", "Ambiente positivo", "Liderazgo cercano"],
+    highlight: "motivar a todos los que trabajan a tu alrededor",
+  },
 };
 
 // Lista en array, útil para recorrer directamente en el componente
@@ -341,4 +385,8 @@ export const TESTIMONIOS_LIST: TestimonioCardProps[] = [
   TESTIMONIOS[TestimonioId.ANDREA_DE_LAS_CASAS],
   TESTIMONIOS[TestimonioId.HANS_ALFARO],
   TESTIMONIOS[TestimonioId.KATHERINE_CRUZ],
+  TESTIMONIOS[TestimonioId.MANUEL_BAZAES],
+  TESTIMONIOS[TestimonioId.ALESSANDRA_PEREZ],
+  TESTIMONIOS[TestimonioId.GABRIEL_GRANADOS],
+  TESTIMONIOS[TestimonioId.JOSE_LOSTAUNAU],
 ];

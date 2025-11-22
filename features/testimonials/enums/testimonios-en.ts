@@ -29,6 +29,10 @@ export enum TestimonioId {
   STHEFANNY_CISNEROS = "Sthefanny Cisneros",
   HANS_ALFARO = "Hans Alfaro",
   ANTONIO_CABRERA = "Antonio Cabrera",
+  MANUEL_BAZAES = "Manuel Bazaes",
+  ALESSANDRA_PEREZ = "Alessandra Pérez",
+  GABRIEL_GRANADOS = "Gabriel Granados",
+  JOSE_LOSTAUNAU = "Jose Lostaunau",
 }
 
 // Type-safe map of data for each testimonial
@@ -308,6 +312,46 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     tags: ["Opportunity", "Trust", "Experience"],
     highlight: "value the experience",
   },
+  [TestimonioId.MANUEL_BAZAES]: {
+    quote: `We worked a lot these last months, we had multiple sessions and you were supporting me in each one of them. Also when there were setbacks, I felt the motivation and commitment. It was pleasant to work together honestly, and although there were stressful moments, I saw how you relied on me. I hope to continue improving aspects that I feel are normal details when we are just starting with our new Leader.`,
+    authorName: "Manuel Bazaes",
+    role: "I was part of your team.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Profile photo of Manuel Bazaes",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Collaboration", "Mutual support", "Growth together"],
+    highlight: "I felt the motivation and commitment",
+  },
+  [TestimonioId.ALESSANDRA_PEREZ]: {
+    quote: `At first it was neutral since I didn't see you much, but little by little we got to know each other better and good communication emerged. The work has been calm, especially knowing that there is someone who supports us with the biggest challenges.`,
+    authorName: "Anonymous",
+    role: "I am part of your team at OnRoad.",
+    avatarSrc: "/images/avatar-female.svg",
+    avatarAlt: "Anonymous profile photo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Communication", "Support", "Trust"],
+    highlight: "good communication emerged",
+  },
+  [TestimonioId.GABRIEL_GRANADOS]: {
+    quote: `At 23 years old I have had various mentors, and I feel that I have not been able to connect with many or work hand in hand in harmony. The opposite case working with Hugo as a mentor. Trust, motivation and teamwork is something that can always be rescued, not to mention the support and incentives to better employ our work. Without a doubt, the trust and closeness with the team makes me see work differently, and see my professional future in a positive way.`,
+    authorName: "Anonymous",
+    role: "I am part of your team.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Anonymous profile photo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Mentoring", "Connection", "Teamwork", "Professional future"],
+    highlight: "trust and closeness with the team",
+  },
+  [TestimonioId.JOSE_LOSTAUNAU]: {
+    quote: `As a boss you manage to motivate everyone who works around you and show your support so that others feel comfortable. That ability to create an environment where we all feel supported makes the difference.`,
+    authorName: "Anonymous",
+    role: "I was part of your team.",
+    avatarSrc: "/images/avatar-male.svg",
+    avatarAlt: "Anonymous profile photo",
+    linkedInUrl: "https://www.linkedin.com",
+    tags: ["Motivation", "Positive environment", "Close leadership"],
+    highlight: "motivate everyone who works around you",
+  },
 };
 
 // Exported list of testimonials in the desired display order
@@ -337,4 +381,8 @@ export const TESTIMONIOS_LIST: TestimonioCardProps[] = [
   TESTIMONIOS[TestimonioId.ANDREA_DE_LAS_CASAS],
   TESTIMONIOS[TestimonioId.HANS_ALFARO],
   TESTIMONIOS[TestimonioId.KATHERINE_CRUZ],
+  TESTIMONIOS[TestimonioId.MANUEL_BAZAES],
+  TESTIMONIOS[TestimonioId.ALESSANDRA_PEREZ],
+  TESTIMONIOS[TestimonioId.GABRIEL_GRANADOS],
+  TESTIMONIOS[TestimonioId.JOSE_LOSTAUNAU],
 ];
