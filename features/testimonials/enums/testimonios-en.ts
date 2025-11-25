@@ -84,11 +84,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   },
   [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Working with you was a beautiful experience. Like all work, it has its ups and downs, challenging moments that make us grow. But what I truly value is the genuine way you supported and guided us, always believing in our potential to become better professionals. Your way of leading from closeness and respect made a real difference in my development.`,
-    authorName: "Anonymous",
+    authorName: "Leonardo Manuel",
     role: "I was part of your team.",
-    avatarSrc: "/images/avatar-male.svg",
-    avatarAlt: "Profile photo of Anonymous",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/leonardo-manuel.jpg",
+    avatarAlt: "Profile photo of Leonardo Manuel",
+    linkedInUrl: "https://www.linkedin.com/in/leonardo-manuel-alvarez-27bb43123/",
     tags: [
       "Genuine guidance",
       "Close leadership",
@@ -99,11 +99,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   },
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `You helped me profoundly in my professional career, but above all in something more valuable: feeling part of a true family in the work team. Your close and genuine accompaniment helped me have more confidence in my abilities and become better every day, both professionally and as a person. That sense of belonging and authentic trust transformed my way of working.`,
-    authorName: "Anonymous",
+    authorName: "Miguel Bustillos",
     role: "I was part of your team.",
-    avatarSrc: "/images/avatar-male.svg",
-    avatarAlt: "Profile photo of Anonymous",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/miguel-bustillos.jpg",
+    avatarAlt: "Profile photo of Miguel Bustillos",
+    linkedInUrl: "https://www.linkedin.com/in/miguel-angel-bustillos-alayo/",
     tags: ["True family", "Genuine trust", "Belonging", "Close accompaniment"],
     highlight: "feeling part of a true family",
   },
@@ -163,11 +163,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     I felt on many occasions that you deeply valued my commitment to my work and the support I could provide when requested. That sincere validation made an immense difference in how I delivered my effort.
     
     I believe that when one feels truly valued—as I felt with you—one supports wholeheartedly in what they may ask, because you feel that your work, commitment, dedication, and all your effort is recognized and reciprocated with humanity.`,
-    authorName: "Anonymous",
+    authorName: "Estefani Ayquipa",
     role: "I was part of your team.",
-    avatarSrc: "/images/avatar-female.svg",
-    avatarAlt: "Profile photo of Anonymous",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/estefani-ayquipa.jpg",
+    avatarAlt: "Profile photo of Estefani Ayquipa",
+    linkedInUrl: "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
     tags: [
       "Authentic psychological safety",
       "Genuine recognition",
@@ -406,7 +406,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     I testify that the project you led, Hugo, gave my brother a new direction in life, and for that I am profoundly grateful. Your way of creating spaces where people can grow and belong transcends work—it transforms lives and entire families.`,
     authorName: "Andrews Postillos",
     role: "I'm your brother and close witness to your work.",
-    avatarSrc: "/images/avatar-male.svg",
+    avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Profile photo of Andrews Postillos",
     linkedInUrl:
       "https://www.linkedin.com/in/andrews-leonard-postillos-estrada-416537333/",

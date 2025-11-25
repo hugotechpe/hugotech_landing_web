@@ -76,10 +76,10 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   },
   [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Trabajar contigo fue una experiencia hermosa, como todo trabajo tiene sus altos y bajos, momentos retadores que nos hacen crecer. Pero lo que realmente valoro es la manera genuina en que nos apoyaste y guiaste, siempre creyendo en nuestro potencial para ser mejores profesionales. Tu forma de liderar desde la cercanía y el respeto marcó una diferencia real en mi desarrollo.`,
-    authorName: "Anónimo",
+    authorName: "Leonardo Manuel",
     role: "Fui parte de tu equipo.",
-    avatarSrc: "/images/avatar-male.svg",
-    avatarAlt: "Foto de perfil anónimo",
+    avatarSrc: "/images/testimonials/leonardo-manuel.jpg",
+    avatarAlt: "Foto de perfil de Leonardo Manuel",
     linkedInUrl:
       "https://www.linkedin.com/in/leonardo-manuel-alvarez-27bb43123/",
     tags: ["Guía humana", "Crecimiento profesional", "Liderazgo cercano"],
@@ -87,11 +87,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   },
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `Me ayudaste profundamente en mi carrera profesional, pero sobre todo en algo más valioso: sentirme parte de una verdadera familia en el equipo de trabajo. Generaste un espacio donde pude desarrollar más confianza en mis habilidades, donde sentí que mi voz importaba. Gracias a tu acompañamiento cercano y genuino, cada día me esfuerzo por ser mejor profesional, llevando conmigo esa sensación de pertenencia y apoyo mutuo que cultivaste en el equipo.`,
-    authorName: "Anónimo",
+    authorName: "Miguel Bustillos",
     role: "Fui parte de tu equipo.",
-    avatarSrc: "/images/avatar-male.svg",
-    avatarAlt: "Foto de perfil de Anónimo",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/miguel-bustillos.jpg",
+    avatarAlt: "Foto de perfil de Miguel Bustillos",
+    linkedInUrl: "https://www.linkedin.com/in/miguel-angel-bustillos-alayo/",
     tags: ["Familia laboral", "Confianza genuina", "Pertenencia"],
     highlight: "sentirme parte de una verdadera familia",
   },
@@ -145,11 +145,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     Sentí en muchas oportunidades que valoraste profundamente mi compromiso con mi trabajo y el apoyo que pude brindar cuando lo solicitaban. Esa validación sincera hizo una diferencia inmensa en mi forma de entregar mi esfuerzo.
     
     Considero que cuando uno se siente verdaderamente valorado—como yo me sentí contigo—uno apoya con todo el corazón en lo que puedan pedir, porque sientes que tu trabajo, compromiso, empeño y todo tu esfuerzo es reconocido y retribuido con humanidad.`,
-    authorName: "Anónimo",
+    authorName: "Estefani Ayquipa",
     role: "Fui parte de tu equipo.",
-    avatarSrc: "/images/avatar-female.svg",
-    avatarAlt: "Foto de perfil de Anónimo",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/estefani-ayquipa.jpg",
+    avatarAlt: "Foto de perfil de Estefani Ayquipa",
+    linkedInUrl: "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
     tags: [
       "Seguridad psicológica auténtica",
       "Reconocimiento genuino",
@@ -378,7 +378,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     Doy testimonio de que el proyecto que lideraste, Hugo, le dio un nuevo rumbo a la vida de mi hermano, y por eso estoy profundamente agradecido. Tu forma de crear espacios donde las personas pueden crecer y pertenecer trasciende lo laboral—transforma vidas y familias enteras.`,
     authorName: "Andrews Postillos",
     role: "Soy tu hermano y cercano testigo de tu labor.",
-    avatarSrc: "/images/avatar-male.svg",
+    avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl:
       "https://www.linkedin.com/in/andrews-leonard-postillos-estrada-416537333/",
