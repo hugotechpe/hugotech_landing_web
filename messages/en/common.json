@@ -190,10 +190,6 @@
         "freeSessions": "Free Sessions",
         "experience": "Years of Experience"
       },
-      "quote": {
-        "text": "If today I can guide someone, it's because <highlight1>others lifted me up when I needed it most</highlight1>. I've been at the bottom of burnout, questioned everything. Those moments taught me that <highlight2>vulnerability is strength</highlight2>. That's why sessions are free: <highlight3>to give back what life gave me when I was lost</highlight3>.",
-        "author": "Hugo Casanova"
-      },
       "mentoriaCard": {
         "title": "Your 1:1 Tech Mentoring 💚",
         "subtitle": "Purpose coaching + Tech mentoring. Free.",
@@ -240,15 +236,15 @@
       "badges": {
         "leader": {
           "title": "Reprogram your way of thinking",
-          "description": "There are beliefs and habits we learned without realizing it. Here I help you look at them calmly, understand them, and make space for new ways of thinking that serve you better."
+          "description": "Question what you learned. Create space for new ways to move forward."
         },
         "talent": {
           "title": "Reclaim your voice and leadership",
-          "description": "Sometimes we struggle to express what we feel or need. Together we'll work on that inner confidence so you can lead from your authenticity, without fear or guilt."
+          "description": "Your authenticity is your guide, not an obstacle."
         },
         "antiBurnout": {
-          "title": "Contribute with intention, not routine",
-          "description": "Your work can reflect who you are. It's not about doing for the sake of doing, but reconnecting with what moves you and contributing from there, with clarity and purpose."
+          "title": "Contribute with intention",
+          "description": "Make your work meaningful to you."
         }
       },
       "imageAlt": "Portrait of Hugo Casanova, tech mentor and coach"

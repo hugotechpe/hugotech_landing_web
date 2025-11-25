@@ -186,9 +186,10 @@
     "PorQueGratuito": {
       "title": "¿Por qué hago esto? 💚",
       "intro": "Creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento y oportunidades.",
-      "quote": {
-        "text": "Tu crecimiento ayuda a otros. Tu inversión en ti mismo también genera impacto.",
-        "author": "Hugo Casanova"
+      "stats": {
+        "mentored": "Jóvenes Guiados",
+        "freeSessions": "Sesiones Gratuitas",
+        "experience": "Años de Experiencia"
       },
       "mentoriaCard": {
         "title": "Tu Primera Sesión: Gratis 💚",
@@ -237,15 +238,15 @@
       "badges": {
         "leader": {
           "title": "Reprograma tu forma de pensar",
-          "description": "Cuestiona lo aprendido. Abre espacio para nuevas formas de verte y avanzar."
+          "description": "Cuestiona lo aprendido. Crea espacio para nuevas formas de avanzar."
         },
         "talent": {
           "title": "Recupera tu voz y tu liderazgo",
-          "description": "Expresarte con claridad también se entrena. Tu autenticidad es guía, no obstáculo."
+          "description": "Tu autenticidad es tu guía, no un obstáculo."
         },
         "antiBurnout": {
           "title": "Aporta con intención",
-          "description": "No más piloto automático. Que tu trabajo tenga sentido para ti."
+          "description": "Que tu trabajo tenga sentido para ti."
         }
       },
       "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
