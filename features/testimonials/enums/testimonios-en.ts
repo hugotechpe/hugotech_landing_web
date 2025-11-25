@@ -277,11 +277,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     I learned profoundly from his unwavering commitment to finish everything that is started, the humble perseverance to learn from scratch, the genuine humility with which one should lead, and that experience gives you solid confidence.
     
     Thanks to his transformative guidance and the opportunity he gave me to develop in the area, I was able to identify the direction I want to take my professional future. He showed me the path I should continue, and for that I will always be grateful.`,
-    authorName: "Anonymous",
+    authorName: "Vera Lucia Tovar",
     role: "I was part of your team · You guided me as a mentor or coach · You interviewed me in a selection process · My area leader",
-    avatarSrc: "/images/avatar-female.svg",
-    avatarAlt: "Profile photo of Anonymous",
-    linkedInUrl: "https://www.linkedin.com",
+    avatarSrc: "/images/testimonials/vera-lucia-tovar.jpg",
+    avatarAlt: "Profile photo of Vera Lucia Tovar",
+    linkedInUrl: "https://www.linkedin.com/in/veratovar/",
     tags: [
       "Deep trust",
       "Real empowerment",
