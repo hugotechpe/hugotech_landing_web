@@ -124,7 +124,7 @@ export default function CoachingNavbar() {
               </Link>
             </NavbarMenuItem>
           ))}
-          
+
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
             <Button

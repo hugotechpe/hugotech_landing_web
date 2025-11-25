@@ -9,7 +9,7 @@ import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export default function EmpresasPage() {
   const t = useTranslations("Sections.Companies");
-  
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -29,7 +29,7 @@ export default function EmpresasPage() {
     <main className="bg-white">
       {/* SEO: Breadcrumb Schema */}
       <Breadcrumb />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-[#0d4746] to-[#083635] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -47,12 +47,16 @@ export default function EmpresasPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight"
               variants={fadeIn}
             >
-              <span dangerouslySetInnerHTML={{ 
-                __html: t.raw("hero.title").replace(
-                  /<highlight>(.*?)<\/highlight>/g, 
-                  '<span class="text-brand">$1</span>'
-                )
-              }} />
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t
+                    .raw("hero.title")
+                    .replace(
+                      /<highlight>(.*?)<\/highlight>/g,
+                      '<span class="text-brand">$1</span>',
+                    ),
+                }}
+              />
             </motion.h1>
             <motion.p
               dangerouslySetInnerHTML={{ __html: t.raw("hero.subtitle") }}
@@ -93,7 +97,9 @@ export default function EmpresasPage() {
               {t("proposal.title")}
             </h2>
             <p
-              dangerouslySetInnerHTML={{ __html: t.raw("proposal.description") }}
+              dangerouslySetInnerHTML={{
+                __html: t.raw("proposal.description"),
+              }}
               className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-[1.9] tracking-wide"
             />
           </motion.div>
@@ -109,37 +115,53 @@ export default function EmpresasPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            {t.raw("proposal.dimensions").map((dimension: any, index: number) => {
-              const borderColors = ["border-primary", "border-brand", "border-primary"];
-              const bulletColors = ["text-primary", "text-brand", "text-primary"];
-              
-              return (
-                <motion.div key={index} variants={fadeIn}>
-                  <Card
-                    className={`h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 ${borderColors[index]}`}
-                    shadow="lg"
-                  >
-                    <CardBody className="p-8">
-                      <div className="text-5xl mb-4">{dimension.icon}</div>
-                      <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
-                        {dimension.number}. {dimension.title}
-                      </h3>
-                      <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
-                        {dimension.description}
-                      </p>
-                      <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
-                        {dimension.items.map((item: string, itemIndex: number) => (
-                          <li key={itemIndex} className="flex items-start">
-                            <span className={`${bulletColors[index]} mr-2 font-bold`}>•</span>
-                            <span className="leading-relaxed">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardBody>
-                  </Card>
-                </motion.div>
-              );
-            })}
+            {t
+              .raw("proposal.dimensions")
+              .map((dimension: any, index: number) => {
+                const borderColors = [
+                  "border-primary",
+                  "border-brand",
+                  "border-primary",
+                ];
+                const bulletColors = [
+                  "text-primary",
+                  "text-brand",
+                  "text-primary",
+                ];
+
+                return (
+                  <motion.div key={index} variants={fadeIn}>
+                    <Card
+                      className={`h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 ${borderColors[index]}`}
+                      shadow="lg"
+                    >
+                      <CardBody className="p-8">
+                        <div className="text-5xl mb-4">{dimension.icon}</div>
+                        <h3 className="text-xl md:text-2xl font-bold font-heading text-customgray mb-4">
+                          {dimension.number}. {dimension.title}
+                        </h3>
+                        <p className="text-gray-700 mb-6 leading-[1.9] tracking-wide text-[15px] md:text-base">
+                          {dimension.description}
+                        </p>
+                        <ul className="space-y-3 text-gray-700 text-[14px] md:text-[15px]">
+                          {dimension.items.map(
+                            (item: string, itemIndex: number) => (
+                              <li key={itemIndex} className="flex items-start">
+                                <span
+                                  className={`${bulletColors[index]} mr-2 font-bold`}
+                                >
+                                  •
+                                </span>
+                                <span className="leading-relaxed">{item}</span>
+                              </li>
+                            ),
+                          )}
+                        </ul>
+                      </CardBody>
+                    </Card>
+                  </motion.div>
+                );
+              })}
           </motion.div>
         </div>
       </section>
@@ -170,11 +192,19 @@ export default function EmpresasPage() {
                 </div>
                 <div className="max-w-4xl mx-auto space-y-6">
                   <p
-                    dangerouslySetInnerHTML={{ __html: t.raw("transformation.personal_learning.paragraph1") }}
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw(
+                        "transformation.personal_learning.paragraph1",
+                      ),
+                    }}
                     className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide"
                   />
                   <p
-                    dangerouslySetInnerHTML={{ __html: t.raw("transformation.personal_learning.paragraph2") }}
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw(
+                        "transformation.personal_learning.paragraph2",
+                      ),
+                    }}
                     className="text-base md:text-lg text-gray-700 leading-[2] tracking-wide"
                   />
                 </div>
@@ -207,24 +237,30 @@ export default function EmpresasPage() {
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
-                    {t.raw("transformation.cases.challenges.list").slice(0, 3).map((challenge: string, index: number) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                          ❌
-                        </span>
-                        <span className="leading-relaxed">{challenge}</span>
-                      </li>
-                    ))}
+                    {t
+                      .raw("transformation.cases.challenges.list")
+                      .slice(0, 3)
+                      .map((challenge: string, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-red-500 mr-3 text-xl flex-shrink-0">
+                            ❌
+                          </span>
+                          <span className="leading-relaxed">{challenge}</span>
+                        </li>
+                      ))}
                   </ul>
                   <ul className="space-y-3 text-gray-700 text-[15px] md:text-base">
-                    {t.raw("transformation.cases.challenges.list").slice(3).map((challenge: string, index: number) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-red-500 mr-3 text-xl flex-shrink-0">
-                          ❌
-                        </span>
-                        <span className="leading-relaxed">{challenge}</span>
-                      </li>
-                    ))}
+                    {t
+                      .raw("transformation.cases.challenges.list")
+                      .slice(3)
+                      .map((challenge: string, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-red-500 mr-3 text-xl flex-shrink-0">
+                            ❌
+                          </span>
+                          <span className="leading-relaxed">{challenge}</span>
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </CardBody>
@@ -238,16 +274,18 @@ export default function EmpresasPage() {
                     {t("transformation.cases.intervention.title")}
                   </h3>
                   <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
-                    {t.raw("transformation.cases.intervention.items").map((item: any, index: number) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-primary mr-3 text-lg flex-shrink-0">
-                          ✓
-                        </span>
-                        <span className="leading-relaxed">
-                          <strong>{item.title}</strong> {item.description}
-                        </span>
-                      </li>
-                    ))}
+                    {t
+                      .raw("transformation.cases.intervention.items")
+                      .map((item: any, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-primary mr-3 text-lg flex-shrink-0">
+                            ✓
+                          </span>
+                          <span className="leading-relaxed">
+                            <strong>{item.title}</strong> {item.description}
+                          </span>
+                        </li>
+                      ))}
                   </ul>
                 </CardBody>
               </Card>
@@ -262,16 +300,18 @@ export default function EmpresasPage() {
                     {t("transformation.cases.results.title")}
                   </h3>
                   <ul className="space-y-4 text-gray-700 text-[15px] md:text-base">
-                    {t.raw("transformation.cases.results.items").map((item: string, index: number) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-brand mr-3 text-xl flex-shrink-0">
-                          →
-                        </span>
-                        <span className="font-semibold leading-relaxed">
-                          {item}
-                        </span>
-                      </li>
-                    ))}
+                    {t
+                      .raw("transformation.cases.results.items")
+                      .map((item: string, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-brand mr-3 text-xl flex-shrink-0">
+                            →
+                          </span>
+                          <span className="font-semibold leading-relaxed">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
                   </ul>
                 </CardBody>
               </Card>
@@ -298,7 +338,9 @@ export default function EmpresasPage() {
                 {t("philosophy.quote")}
               </p>
               <p
-                dangerouslySetInnerHTML={{ __html: t.raw("philosophy.description") }}
+                dangerouslySetInnerHTML={{
+                  __html: t.raw("philosophy.description"),
+                }}
                 className="text-base md:text-lg text-white/90 leading-[2] tracking-wide"
               />
             </div>
@@ -422,32 +464,40 @@ export default function EmpresasPage() {
             <table className="w-full max-w-6xl mx-auto">
               <thead>
                 <tr className="bg-primary text-white">
-                  <th className="p-4 text-left text-lg font-bold">{t("services.table.headers.category")}</th>
+                  <th className="p-4 text-left text-lg font-bold">
+                    {t("services.table.headers.category")}
+                  </th>
                   <th className="p-4 text-left text-lg font-bold">
                     {t("services.table.headers.description")}
                   </th>
-                  <th className="p-4 text-left text-lg font-bold">{t("services.table.headers.modality")}</th>
+                  <th className="p-4 text-left text-lg font-bold">
+                    {t("services.table.headers.modality")}
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {t.raw("services.table.items").map((service: any, idx: number) => (
-                  <motion.tr
-                    key={idx}
-                    className={`border-b ${idx % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-brand/5 transition-colors`}
-                    initial={{ opacity: 0, x: -20 }}
-                    transition={{ delay: idx * 0.1 }}
-                    viewport={{ once: true }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                  >
-                    <td className="p-4 font-bold text-customgray">
-                      {service.category}
-                    </td>
-                    <td className="p-4 text-gray-700">{service.description}</td>
-                    <td className="p-4 text-gray-700 font-semibold">
-                      {service.modality}
-                    </td>
-                  </motion.tr>
-                ))}
+                {t
+                  .raw("services.table.items")
+                  .map((service: any, idx: number) => (
+                    <motion.tr
+                      key={idx}
+                      className={`border-b ${idx % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-brand/5 transition-colors`}
+                      initial={{ opacity: 0, x: -20 }}
+                      transition={{ delay: idx * 0.1 }}
+                      viewport={{ once: true }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                    >
+                      <td className="p-4 font-bold text-customgray">
+                        {service.category}
+                      </td>
+                      <td className="p-4 text-gray-700">
+                        {service.description}
+                      </td>
+                      <td className="p-4 text-gray-700 font-semibold">
+                        {service.modality}
+                      </td>
+                    </motion.tr>
+                  ))}
               </tbody>
             </table>
           </div>
@@ -468,7 +518,8 @@ export default function EmpresasPage() {
                     {service.description}
                   </p>
                   <p className="text-sm text-gray-600">
-                    <strong>{t("services.table.headers.modality")}:</strong> {service.modality}
+                    <strong>{t("services.table.headers.modality")}:</strong>{" "}
+                    {service.modality}
                   </p>
                 </CardBody>
               </Card>
@@ -497,7 +548,9 @@ export default function EmpresasPage() {
               {t("cta.title")}
             </h2>
             <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto leading-[2] tracking-wide">
-              <span dangerouslySetInnerHTML={{ __html: t.raw("cta.subtitle") }} />
+              <span
+                dangerouslySetInnerHTML={{ __html: t.raw("cta.subtitle") }}
+              />
             </p>
             <p className="text-base md:text-lg mb-10 text-white/90 max-w-2xl mx-auto leading-[1.9] tracking-wide">
               {t("cta.description")}

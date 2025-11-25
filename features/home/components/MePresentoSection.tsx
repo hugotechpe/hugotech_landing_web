@@ -13,11 +13,11 @@ import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 // Variantes de animación para scroll
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
 };
 
 const staggerContainer = {
@@ -25,18 +25,18 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2
-    }
-  }
+      staggerChildren: 0.2,
+    },
+  },
 };
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, ease: "easeOut" }
-  }
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
 };
 
 export function MePresentoSection() {
@@ -46,8 +46,15 @@ export function MePresentoSection() {
 
   const title = section.title ?? "Me Presento";
   const subtitle = section.subtitle ?? "";
-  const chips = (section.chips ?? ["18+ años de experiencia", "Mentoring • Coaching • Agilidad"]) as string[];
-  const items = (section.items ?? []) as Array<{ title: string; description: string; iconKey?: string }>;
+  const chips = (section.chips ?? [
+    "18+ años de experiencia",
+    "Mentoring • Coaching • Agilidad",
+  ]) as string[];
+  const items = (section.items ?? []) as Array<{
+    title: string;
+    description: string;
+    iconKey?: string;
+  }>;
 
   const paragraphNodes = [
     t.rich("paragraphs.p1", {
@@ -85,45 +92,65 @@ export function MePresentoSection() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
-                <Card className="bg-gradient-to-br from-primary/10 to-brand/10 border-2 border-primary/20 hover:border-primary/40 transition-all" shadow="lg">
+                <Card
+                  className="bg-gradient-to-br from-primary/10 to-brand/10 border-2 border-primary/20 hover:border-primary/40 transition-all"
+                  shadow="lg"
+                >
                   <CardBody className="text-center p-6">
                     <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                       <AnimatedCounter end={18} suffix="+" />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.experience")}</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                      {t("stats.experience")}
+                    </p>
                   </CardBody>
                 </Card>
               </motion.div>
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
-                <Card className="bg-gradient-to-br from-brand/10 to-yellow-100 border-2 border-brand/20 hover:border-brand/40 transition-all" shadow="lg">
+                <Card
+                  className="bg-gradient-to-br from-brand/10 to-yellow-100 border-2 border-brand/20 hover:border-brand/40 transition-all"
+                  shadow="lg"
+                >
                   <CardBody className="text-center p-6">
                     <div className="text-4xl md:text-5xl font-bold text-customgray mb-2">
                       <AnimatedCounter end={200} prefix="+" />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.empowered")}</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                      {t("stats.empowered")}
+                    </p>
                   </CardBody>
                 </Card>
               </motion.div>
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
-                <Card className="bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-orange-200 hover:border-orange-300 transition-all" shadow="lg">
+                <Card
+                  className="bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-orange-200 hover:border-orange-300 transition-all"
+                  shadow="lg"
+                >
                   <CardBody className="text-center p-6">
                     <div className="text-4xl md:text-5xl font-bold text-orange-600 mb-2">
                       <AnimatedCounter end={40} />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.learning")}</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                      {t("stats.learning")}
+                    </p>
                   </CardBody>
                 </Card>
               </motion.div>
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
-                <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover:border-purple-300 transition-all" shadow="lg">
+                <Card
+                  className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover:border-purple-300 transition-all"
+                  shadow="lg"
+                >
                   <CardBody className="text-center p-6">
                     <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
                       <AnimatedCounter end={1} />
                     </div>
-                    <p className="text-sm md:text-base text-gray-600 font-medium">{t("stats.community")}</p>
+                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                      {t("stats.community")}
+                    </p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -142,7 +169,7 @@ export function MePresentoSection() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
                 {title}
               </h2>
-              
+
               {subtitle && (
                 <p className="mt-4 text-lg md:text-xl text-gray-600 italic font-light font-quote leading-relaxed">
                   {subtitle}
@@ -158,9 +185,9 @@ export function MePresentoSection() {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
                   >
-                    <Chip 
-                      color="primary" 
-                      variant="flat" 
+                    <Chip
+                      color="primary"
+                      variant="flat"
                       className="bg-gradient-to-r from-primary to-[#0d4746] text-white font-semibold px-4 py-5 text-base"
                       size="lg"
                     >
@@ -178,19 +205,38 @@ export function MePresentoSection() {
                 transition={{ delay: 0.3 }}
                 className="mt-8"
               >
-                <Card className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl" shadow="lg">
+                <Card
+                  className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl"
+                  shadow="lg"
+                >
                   <CardBody className="p-6 md:p-8">
-                    <div className="space-y-6 text-gray-700 text-base md:text-lg" itemProp="description">
+                    <div
+                      className="space-y-6 text-gray-700 text-base md:text-lg"
+                      itemProp="description"
+                    >
                       {paragraphNodes.map((node, idx) => (
-                        <p key={`p-${idx}`} className="text-[15px] md:text-[17px] leading-[2] tracking-wide">{node}</p>
+                        <p
+                          key={`p-${idx}`}
+                          className="text-[15px] md:text-[17px] leading-[2] tracking-wide"
+                        >
+                          {node}
+                        </p>
                       ))}
-                      
+
                       {/* Párrafo de vulnerabilidad agregado */}
                       <div className="mt-8 pt-8 border-t-2 border-primary/10">
                         <p className="text-gray-600 italic font-quote text-lg md:text-xl lg:text-2xl leading-[2] tracking-wide">
                           {t.rich("vulnerability.text", {
-                            highlight1: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
-                            highlight2: (chunks) => <strong className="text-primary not-italic font-sans font-semibold">{chunks}</strong>,
+                            highlight1: (chunks) => (
+                              <strong className="text-primary not-italic font-sans font-semibold">
+                                {chunks}
+                              </strong>
+                            ),
+                            highlight2: (chunks) => (
+                              <strong className="text-primary not-italic font-sans font-semibold">
+                                {chunks}
+                              </strong>
+                            ),
                           })}
                         </p>
                       </div>
@@ -217,7 +263,11 @@ export function MePresentoSection() {
                     <IconBoxCard
                       title={item.title}
                       description={item.description}
-                      Icon={item.iconKey ? IconComponentMap[item.iconKey as IconKey] : undefined}
+                      Icon={
+                        item.iconKey
+                          ? IconComponentMap[item.iconKey as IconKey]
+                          : undefined
+                      }
                       headingAs="h3"
                     />
                   </motion.div>
@@ -240,7 +290,7 @@ export function MePresentoSection() {
               >
                 {/* Efecto glow detrás de la imagen */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-brand/20 blur-3xl rounded-full transform scale-90" />
-                
+
                 <div className="relative">
                   <Image
                     src="/images/image2.png"
@@ -253,7 +303,7 @@ export function MePresentoSection() {
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nAE0AMv/ANLS0tPT09TU1NXV1QDW1tbX19fY2NjZ2dkA2tra29vb3Nzc3d3dAN7e3t/f3+Dg4OHh4SEvGxe4G8ycAAAAAElFTkSuQmCC"
                     className="object-cover w-full h-auto rounded-2xl shadow-2xl relative z-10"
                   />
-                  
+
                   {/* Badge flotante */}
                   <motion.div
                     initial={{ opacity: 0, scale: 0 }}
@@ -262,10 +312,15 @@ export function MePresentoSection() {
                     transition={{ delay: 0.5, type: "spring" }}
                     className="absolute -bottom-6 -right-6 z-20"
                   >
-                    <Card className="bg-gradient-to-br from-brand to-yellow-400 shadow-2xl" shadow="lg">
+                    <Card
+                      className="bg-gradient-to-br from-brand to-yellow-400 shadow-2xl"
+                      shadow="lg"
+                    >
                       <CardBody className="p-4 text-center">
                         <p className="text-3xl font-bold text-customgray">🎯</p>
-                        <p className="text-sm font-bold text-customgray mt-1">Coach ICF</p>
+                        <p className="text-sm font-bold text-customgray mt-1">
+                          Coach ICF
+                        </p>
                       </CardBody>
                     </Card>
                   </motion.div>

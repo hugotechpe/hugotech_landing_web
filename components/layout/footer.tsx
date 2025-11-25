@@ -69,7 +69,9 @@ const Footer: React.FC = () => {
                   <WhatsAppIcon className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-white">{t("contact.whatsappLabel")}</p>
+                  <p className="font-semibold text-white">
+                    {t("contact.whatsappLabel")}
+                  </p>
                   <p className="text-sm">+51 946 483 010</p>
                 </div>
               </Link>
@@ -96,7 +98,9 @@ const Footer: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-white">{t("contact.emailLabel")}</p>
+                  <p className="font-semibold text-white">
+                    {t("contact.emailLabel")}
+                  </p>
                   <p className="text-sm">hola@hugotech.pe</p>
                 </div>
               </Link>
@@ -178,7 +182,7 @@ const Footer: React.FC = () => {
                 required
                 className="flex-1"
                 classNames={{
-                  input: "placeholder:!text-gray-900"
+                  input: "placeholder:!text-gray-900",
                 }}
               />
               <Button

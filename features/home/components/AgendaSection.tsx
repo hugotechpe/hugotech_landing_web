@@ -10,7 +10,7 @@ import { useSectionTracking } from "@/hooks/useGTMTracking";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 export function AgendaSection() {
@@ -46,14 +46,22 @@ export function AgendaSection() {
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed mb-8">
             <p>{t("paragraphs.p1")}</p>
             <p>
-              {t.rich("paragraphs.p2", { b: (chunks) => <strong className="text-primary">{chunks}</strong> })}
+              {t.rich("paragraphs.p2", {
+                b: (chunks) => (
+                  <strong className="text-primary">{chunks}</strong>
+                ),
+              })}
             </p>
           </div>
 
-          <Card className="bg-primary/10 border-l-4 border-primary mb-8" shadow="none">
+          <Card
+            className="bg-primary/10 border-l-4 border-primary mb-8"
+            shadow="none"
+          >
             <CardBody className="p-6">
               <p className="text-base text-gray-700">
-                {t("reminder.emoji")} <strong>{t("reminder.title")}</strong> {t("reminder.text")}
+                {t("reminder.emoji")} <strong>{t("reminder.title")}</strong>{" "}
+                {t("reminder.text")}
               </p>
             </CardBody>
           </Card>
@@ -69,20 +77,20 @@ export function AgendaSection() {
         >
           {/* Desktop: Embed inline */}
           <div className="hidden md:block">
-            <CalendlyEmbed 
+            <CalendlyEmbed
               url="https://calendly.com/hugotech/mentoria1a1"
               height="700px"
               utm={{
                 utmSource: "hugotech.pe",
                 utmMedium: "website",
-                utmCampaign: "homepage_cita_section"
+                utmCampaign: "homepage_cita_section",
               }}
             />
           </div>
 
           {/* Mobile: Botón modal popup (mejor UX en pantallas pequeñas) */}
           <div className="block md:hidden text-center">
-            <CalendlyButton 
+            <CalendlyButton
               text={t("ctaLabel")}
               variant="solid"
               color="primary"
@@ -91,12 +99,10 @@ export function AgendaSection() {
               utm={{
                 utmSource: "hugotech.pe",
                 utmMedium: "website_mobile",
-                utmCampaign: "homepage_cita_section_mobile"
+                utmCampaign: "homepage_cita_section_mobile",
               }}
             />
-            <p className="mt-4 text-sm text-gray-600">
-              💚 {t("note")}
-            </p>
+            <p className="mt-4 text-sm text-gray-600">💚 {t("note")}</p>
           </div>
         </motion.div>
       </div>

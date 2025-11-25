@@ -10,12 +10,12 @@ import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
 };
 
 export function EmpresasSection() {
@@ -42,12 +42,14 @@ export function EmpresasSection() {
             {t("header.title")}
           </h2>
           <p className="mt-4 text-black">
-            {t.rich("header.intro.p1", { 
-              b: (chunks) => <strong>{chunks}</strong> 
+            {t.rich("header.intro.p1", {
+              b: (chunks) => <strong>{chunks}</strong>,
             })}
           </p>
           <p className="mt-2 text-black">
-            {t.rich("header.intro.p2", { b: (chunks) => <strong>{chunks}</strong> })}
+            {t.rich("header.intro.p2", {
+              b: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
         </motion.header>
 
@@ -61,113 +63,159 @@ export function EmpresasSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
-            <motion.div 
+            <motion.div
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <Card as="article" shadow="none" className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300">
+              <Card
+                as="article"
+                shadow="none"
+                className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300"
+              >
                 <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-2xl sm:text-3xl font-bold">{t("mentoriaCard.title")}</h3>
-                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
-                  {t("mentoriaCard.subtitle")}
-                </p>
-                <p className="mr-0 sm:mr-5">
-                  {t.rich("mentoriaCard.p1", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
-                </p>
-                <p className="mr-0 sm:mr-5">
-                  {t.rich("mentoriaCard.p2", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
-                </p>
-                <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">{t("mentoriaCard.resultsTitle")}</h4>
-                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
-                  {(emp?.mentoriaCard?.resultsItems ?? []).map((item: string, idx: number) => (
-                    <li key={`res-${idx}`}>{item}</li>
-                  ))}
-                </ul>
-                <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
-                  <Button as={Link} href="#cita" size="md" color="primary" variant="solid" className="bg-customgray w-full sm:w-fit">
-                    {t("mentoriaCard.ctaLabel")}
-                  </Button>
-                  <p className="mt-4 text-sm sm:text-base text-customgray">
-                    {t("mentoriaCard.note")}
+                  <h3 className="text-2xl sm:text-3xl font-bold">
+                    {t("mentoriaCard.title")}
+                  </h3>
+                  <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
+                    {t("mentoriaCard.subtitle")}
                   </p>
-                </div>
+                  <p className="mr-0 sm:mr-5">
+                    {t.rich("mentoriaCard.p1", {
+                      b: (chunks) => (
+                        <span className="font-bold">{chunks}</span>
+                      ),
+                    })}
+                  </p>
+                  <p className="mr-0 sm:mr-5">
+                    {t.rich("mentoriaCard.p2", {
+                      b: (chunks) => (
+                        <span className="font-bold">{chunks}</span>
+                      ),
+                    })}
+                  </p>
+                  <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">
+                    {t("mentoriaCard.resultsTitle")}
+                  </h4>
+                  <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
+                    {(emp?.mentoriaCard?.resultsItems ?? []).map(
+                      (item: string, idx: number) => (
+                        <li key={`res-${idx}`}>{item}</li>
+                      ),
+                    )}
+                  </ul>
+                  <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
+                    <Button
+                      as={Link}
+                      href="#cita"
+                      size="md"
+                      color="primary"
+                      variant="solid"
+                      className="bg-customgray w-full sm:w-fit"
+                    >
+                      {t("mentoriaCard.ctaLabel")}
+                    </Button>
+                    <p className="mt-4 text-sm sm:text-base text-customgray">
+                      {t("mentoriaCard.note")}
+                    </p>
+                  </div>
 
-                <div className="absolute bottom-0 right-0">
-                  <Image
-                    src="/images/image3.png"
-                    alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
-                    width={220}
-                    height={293}
-                    priority
-                    quality={85}
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nGPY2fXqv0AAw87uV/8ZGBgYdna9BPL+MzAwMOzqfsXAwABm7Ox6xcDAwABmAwCMNwptBHo5GAAAAABJRU5ErkJggg=="
-                    sizes="(max-width: 768px) 0px, 220px"
-                    className="rounded-lg shadow-sm hidden md:block object-cover"
-                  />
-                </div>
-              </CardBody>
+                  <div className="absolute bottom-0 right-0">
+                    <Image
+                      src="/images/image3.png"
+                      alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
+                      width={220}
+                      height={293}
+                      priority
+                      quality={85}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nGPY2fXqv0AAw87uV/8ZGBgYdna9BPL+MzAwMOzqfsXAwABm7Ox6xcDAwABmAwCMNwptBHo5GAAAAABJRU5ErkJggg=="
+                      sizes="(max-width: 768px) 0px, 220px"
+                      className="rounded-lg shadow-sm hidden md:block object-cover"
+                    />
+                  </div>
+                </CardBody>
               </Card>
             </motion.div>
 
             {/* Columna derecha: Servicio Business */}
-            <motion.div 
+            <motion.div
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <Card as="article" shadow="none" className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300">
+              <Card
+                as="article"
+                shadow="none"
+                className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300"
+              >
                 <CardBody className="flex flex-col gap-3 text-customgray">
-                <h3 className="text-2xl sm:text-3xl font-bold">{t("empresasCard.title")}</h3>
-                <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
-                  {t("empresasCard.subtitle")}
-                </p>
-                <p className="mr-0 sm:mr-5">
-                  {t.rich("empresasCard.p1", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
-                </p>
-                <p className="mr-0 sm:mr-5">
-                  {t.rich("empresasCard.p2", { b: (chunks) => <span className="font-bold">{chunks}</span> })}
-                </p>
-                <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">{t("empresasCard.resultsTitle")}</h4>
-                <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
-                  {(emp?.empresasCard?.resultsItems ?? []).map((item: string, idx: number) => (
-                    <li key={`eres-${idx}`}>{item}</li>
-                  ))}
-                </ul>
-                <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
-                  <Button 
-                    as={Link} 
-                    href={emp?.empresasCard?.ctaUrl || "https://calendly.com/hugotech/reunion-exploratoria"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    size="md" 
-                    color="primary" 
-                    variant="solid" 
-                    className="bg-customgray w-full sm:w-fit"
-                  >
-                    {t("empresasCard.ctaLabel")}
-                  </Button>
-                  <p className="mt-4 text-sm sm:text-base text-customgray">
-                    {t("empresasCard.note")}
+                  <h3 className="text-2xl sm:text-3xl font-bold">
+                    {t("empresasCard.title")}
+                  </h3>
+                  <p className="text-base md:text-xl font-semibold my-4 sm:my-8">
+                    {t("empresasCard.subtitle")}
                   </p>
-                </div>
+                  <p className="mr-0 sm:mr-5">
+                    {t.rich("empresasCard.p1", {
+                      b: (chunks) => (
+                        <span className="font-bold">{chunks}</span>
+                      ),
+                    })}
+                  </p>
+                  <p className="mr-0 sm:mr-5">
+                    {t.rich("empresasCard.p2", {
+                      b: (chunks) => (
+                        <span className="font-bold">{chunks}</span>
+                      ),
+                    })}
+                  </p>
+                  <h4 className="mt-2 md:text-base font-semibold w-full sm:w-[85%]">
+                    {t("empresasCard.resultsTitle")}
+                  </h4>
+                  <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-customgray w-full sm:w-[70%]">
+                    {(emp?.empresasCard?.resultsItems ?? []).map(
+                      (item: string, idx: number) => (
+                        <li key={`eres-${idx}`}>{item}</li>
+                      ),
+                    )}
+                  </ul>
+                  <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
+                    <Button
+                      as={Link}
+                      href={
+                        emp?.empresasCard?.ctaUrl ||
+                        "https://calendly.com/hugotech/reunion-exploratoria"
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      size="md"
+                      color="primary"
+                      variant="solid"
+                      className="bg-customgray w-full sm:w-fit"
+                    >
+                      {t("empresasCard.ctaLabel")}
+                    </Button>
+                    <p className="mt-4 text-sm sm:text-base text-customgray">
+                      {t("empresasCard.note")}
+                    </p>
+                  </div>
 
-                <div className="absolute bottom-0 right-0">
-                  <Image
-                    src="/images/image4.png"
-                    alt={t("empresasCard.imageAlt")}
-                    width={227}
-                    height={215}
-                    loading="lazy"
-                    quality={85}
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAAChtdzfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgQAL/kTADAwMDw8aOl//Xd738D+VsbHv5HyjGsKHtJVwCKIYsBgBXBQ5jPw6z9QAAAABJRU5ErkJggg=="
-                    sizes="(max-width: 768px) 0px, 227px"
-                    className="rounded-lg shadow-sm hidden md:block object-cover"
-                  />
-                </div>
-              </CardBody>
+                  <div className="absolute bottom-0 right-0">
+                    <Image
+                      src="/images/image4.png"
+                      alt={t("empresasCard.imageAlt")}
+                      width={227}
+                      height={215}
+                      loading="lazy"
+                      quality={85}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAAChtdzfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgQAL/kTADAwMDw8aOl//Xd738D+VsbHv5HyjGsKHtJVwCKIYsBgBXBQ5jPw6z9QAAAABJRU5ErkJggg=="
+                      sizes="(max-width: 768px) 0px, 227px"
+                      className="rounded-lg shadow-sm hidden md:block object-cover"
+                    />
+                  </div>
+                </CardBody>
               </Card>
             </motion.div>
           </div>

@@ -47,11 +47,15 @@ const ImpactSection = dynamic(
 );
 
 // Metadata dinámica basada en locale
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   const isSpanish = locale === "es";
   const metaData = isSpanish ? pageMetadata.home.es : pageMetadata.home.en;
-  
+
   return genMetadata({
     ...metaData,
     locale,
@@ -59,7 +63,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   });
 }
 
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   // Set locale para next-intl
   setRequestLocale(locale);

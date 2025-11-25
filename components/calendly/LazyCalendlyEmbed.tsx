@@ -6,7 +6,8 @@ import { Spinner } from "@heroui/spinner";
 
 // Dynamic import con loading state
 const CalendlyEmbed = dynamic(
-  () => import("./CalendlyEmbed").then((mod) => ({ default: mod.CalendlyEmbed })),
+  () =>
+    import("./CalendlyEmbed").then((mod) => ({ default: mod.CalendlyEmbed })),
   {
     loading: () => (
       <div className="w-full h-[700px] flex items-center justify-center bg-gray-50 rounded-2xl">
@@ -17,7 +18,7 @@ const CalendlyEmbed = dynamic(
       </div>
     ),
     ssr: false,
-  }
+  },
 );
 
 interface LazyCalendlyEmbedProps {
@@ -62,7 +63,7 @@ export function LazyCalendlyEmbed(props: LazyCalendlyEmbedProps) {
       },
       {
         rootMargin: "50px", // Cargar solo cuando esté muy cerca (optimizado para PageSpeed)
-      }
+      },
     );
 
     if (containerRef.current) {

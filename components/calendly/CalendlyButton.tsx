@@ -79,7 +79,7 @@ export function CalendlyButton({
       const eventData = e.data;
 
       if (eventData.event) {
-        if (process.env.NODE_ENV === 'development') {
+        if (process.env.NODE_ENV === "development") {
           console.log("[Calendly Event - Popup]", eventData.event, eventData);
         }
 

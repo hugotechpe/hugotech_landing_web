@@ -10,11 +10,15 @@ import {
 import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
 
 // Metadata dinámica para About page
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   const isSpanish = locale === "es";
   const metaData = isSpanish ? pageMetadata.about.es : pageMetadata.about.en;
-  
+
   return genMetadata({
     ...metaData,
     locale,

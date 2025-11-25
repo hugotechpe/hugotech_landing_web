@@ -15,11 +15,11 @@ import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 // Variantes de animación para scroll
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
 };
 
 const staggerContainer = {
@@ -27,9 +27,9 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2
-    }
-  }
+      staggerChildren: 0.2,
+    },
+  },
 };
 export function MePresentoSection() {
   const messages = useMessages() as any;
@@ -40,8 +40,15 @@ export function MePresentoSection() {
 
   const title = section.title ?? "Me Presento";
   const subtitle = section.subtitle ?? "";
-  const chips = (section.chips ?? ["18+ años de experiencia", "Mentoring • Coaching • Agilidad"]) as string[];
-  const items = (section.items ?? []) as Array<{ title: string; description: string; iconKey?: string }>;
+  const chips = (section.chips ?? [
+    "18+ años de experiencia",
+    "Mentoring • Coaching • Agilidad",
+  ]) as string[];
+  const items = (section.items ?? []) as Array<{
+    title: string;
+    description: string;
+    iconKey?: string;
+  }>;
 
   const paragraphNodes = [
     t.rich("paragraphs.p1", {
@@ -76,22 +83,28 @@ export function MePresentoSection() {
               <h2 className="text-3xl md:text-4xl font-bold text-customgray">
                 {title}
               </h2>
-              
+
               {subtitle && (
-                <p className="mt-3 text-xl text-gray-600 italic">
-                  {subtitle}
-                </p>
+                <p className="mt-3 text-xl text-gray-600 italic">{subtitle}</p>
               )}
 
               <div className="mt-4 flex flex-wrap gap-3">
                 {chips.map((chip) => (
-                  <Chip key={chip} color="primary" variant="flat" className="bg-primary/90 text-white font-semibold">
+                  <Chip
+                    key={chip}
+                    color="primary"
+                    variant="flat"
+                    className="bg-primary/90 text-white font-semibold"
+                  >
                     {chip}
                   </Chip>
                 ))}
               </div>
 
-              <div className="mt-6 space-y-4 text-black leading-relaxed text-base" itemProp="description">
+              <div
+                className="mt-6 space-y-4 text-black leading-relaxed text-base"
+                itemProp="description"
+              >
                 {paragraphNodes.map((node, idx) => (
                   <p key={`p-${idx}`}>{node}</p>
                 ))}
@@ -102,7 +115,11 @@ export function MePresentoSection() {
                     key={item.title}
                     title={item.title}
                     description={item.description}
-                    Icon={item.iconKey ? IconComponentMap[item.iconKey as IconKey] : undefined}
+                    Icon={
+                      item.iconKey
+                        ? IconComponentMap[item.iconKey as IconKey]
+                        : undefined
+                    }
                     headingAs="h3"
                   />
                 ))}

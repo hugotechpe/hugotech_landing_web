@@ -55,9 +55,11 @@ export default function MentorCoachingPage() {
               </p>
               <div className="flex items-center justify-center gap-2 text-white/80 mb-8">
                 <span className="text-2xl">⏱️</span>
-                <span className="text-lg font-semibold">{t("hero.duration")}</span>
+                <span className="text-lg font-semibold">
+                  {t("hero.duration")}
+                </span>
               </div>
-              
+
               {/* CTA Button */}
               <Button
                 as={Link}
@@ -101,7 +103,9 @@ export default function MentorCoachingPage() {
               >
                 <Card className="h-full hover:shadow-lg transition-all duration-300 border-l-4 border-primary">
                   <CardBody className="p-6">
-                    <div className="text-4xl mb-4">{t(`benefits.items.${index}.icon`)}</div>
+                    <div className="text-4xl mb-4">
+                      {t(`benefits.items.${index}.icon`)}
+                    </div>
                     <h3 className="text-xl font-bold font-heading text-customgray mb-3">
                       {t(`benefits.items.${index}.title`)}
                     </h3>

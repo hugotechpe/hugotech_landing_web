@@ -77,7 +77,9 @@ export default function CoachingConCausaPage() {
                 <Card className="h-full border-2 border-success-200 dark:border-success-800">
                   <CardBody className="p-6">
                     <div className="flex items-start gap-4">
-                      <span className="text-4xl">{t(`freeCommitment.items.${key}.icon`)}</span>
+                      <span className="text-4xl">
+                        {t(`freeCommitment.items.${key}.icon`)}
+                      </span>
                       <p className="text-default-700 dark:text-default-300 leading-relaxed">
                         {t(`freeCommitment.items.${key}.text`)}
                       </p>
@@ -282,7 +284,9 @@ export default function CoachingConCausaPage() {
                 <ul className="space-y-4">
                   {transparencyItems.map((key) => (
                     <li key={key} className="flex items-start gap-3">
-                      <span className="text-success-500 text-2xl flex-shrink-0">✓</span>
+                      <span className="text-success-500 text-2xl flex-shrink-0">
+                        ✓
+                      </span>
                       <span className="text-lg text-default-700 dark:text-default-300">
                         {t(`transparency.items.${key}`)}
                       </span>
@@ -329,7 +333,9 @@ export default function CoachingConCausaPage() {
             </div>
 
             <div className="pt-8 border-t-2 border-default-200 dark:border-default-800">
-              <h3 className="text-3xl font-bold mb-4">{t("cta.withCause.title")}</h3>
+              <h3 className="text-3xl font-bold mb-4">
+                {t("cta.withCause.title")}
+              </h3>
               <p className="text-lg text-default-600 dark:text-default-400 mb-6">
                 {t("cta.withCause.subtitle")}
               </p>
@@ -348,7 +354,10 @@ export default function CoachingConCausaPage() {
             </div>
           </motion.div>
 
-          <motion.div className="mt-16 pt-12 border-t-2 border-default-200 dark:border-default-800" variants={fadeIn}>
+          <motion.div
+            className="mt-16 pt-12 border-t-2 border-default-200 dark:border-default-800"
+            variants={fadeIn}
+          >
             <p className="text-2xl italic text-default-700 dark:text-default-300 mb-3">
               &ldquo;{t("finalMessage.text")}&rdquo;
             </p>

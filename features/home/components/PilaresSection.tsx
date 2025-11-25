@@ -10,20 +10,26 @@ import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.12 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
 };
 
 export function PilaresSection() {
   const t = useTranslations("Sections.Pilares");
   const messages = useMessages() as any;
 
-  const sectionTitle = messages?.Sections?.Pilares?.title ?? "Los 6 pilares de la experiencia HugoTech";
-  const items = (messages?.Sections?.Pilares?.items ?? []) as Array<{ title: string; description: string; iconKey?: string }>;
+  const sectionTitle =
+    messages?.Sections?.Pilares?.title ??
+    "Los 6 pilares de la experiencia HugoTech";
+  const items = (messages?.Sections?.Pilares?.items ?? []) as Array<{
+    title: string;
+    description: string;
+    iconKey?: string;
+  }>;
 
   return (
     <section
@@ -57,7 +63,7 @@ export function PilaresSection() {
               >
                 {t("badge")}
               </motion.div>
-              
+
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
                 {sectionTitle}
               </h2>
@@ -71,13 +77,13 @@ export function PilaresSection() {
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
               {items.map((item, index) => (
-                <motion.div 
-                  key={item.title} 
-                  variants={fadeInUp} 
-                  whileHover={{ 
-                    scale: 1.03, 
+                <motion.div
+                  key={item.title}
+                  variants={fadeInUp}
+                  whileHover={{
+                    scale: 1.03,
                     rotateY: 3,
-                    z: 50
+                    z: 50,
                   }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className="relative"
@@ -91,26 +97,35 @@ export function PilaresSection() {
                       transition={{ delay: index * 0.1, type: "spring" }}
                       className="w-12 h-12 bg-gradient-to-br from-primary to-brand rounded-full flex items-center justify-center shadow-xl border-4 border-white"
                     >
-                      <span className="text-white font-bold text-lg">{index + 1}</span>
+                      <span className="text-white font-bold text-lg">
+                        {index + 1}
+                      </span>
                     </motion.div>
                   </div>
 
-                  <Card className="bg-white/80 backdrop-blur-sm border-2 border-gray-100 hover:border-primary/30 transition-all shadow-lg hover:shadow-2xl h-full" shadow="lg">
+                  <Card
+                    className="bg-white/80 backdrop-blur-sm border-2 border-gray-100 hover:border-primary/30 transition-all shadow-lg hover:shadow-2xl h-full"
+                    shadow="lg"
+                  >
                     <CardBody className="p-6">
                       <div className="flex items-start gap-4">
                         {/* Icono con efecto */}
-                        {item.iconKey && IconComponentMap[item.iconKey as IconKey] && (
-                          <motion.div
-                            whileHover={{ rotate: 360, scale: 1.1 }}
-                            transition={{ duration: 0.5 }}
-                            className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary/10 to-brand/10 rounded-xl flex items-center justify-center"
-                          >
-                            {React.createElement(IconComponentMap[item.iconKey as IconKey], {
-                              className: "w-8 h-8 text-primary"
-                            })}
-                          </motion.div>
-                        )}
-                        
+                        {item.iconKey &&
+                          IconComponentMap[item.iconKey as IconKey] && (
+                            <motion.div
+                              whileHover={{ rotate: 360, scale: 1.1 }}
+                              transition={{ duration: 0.5 }}
+                              className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary/10 to-brand/10 rounded-xl flex items-center justify-center"
+                            >
+                              {React.createElement(
+                                IconComponentMap[item.iconKey as IconKey],
+                                {
+                                  className: "w-8 h-8 text-primary",
+                                },
+                              )}
+                            </motion.div>
+                          )}
+
                         <div className="flex-1">
                           <h3 className="text-xl font-bold text-customgray mb-2">
                             {item.title}
@@ -138,7 +153,7 @@ export function PilaresSection() {
             <div className="relative w-full max-w-sm md:max-w-md">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-brand/20 to-purple-500/20 blur-3xl rounded-full transform scale-90" />
-              
+
               {/* Frame decorativo */}
               <motion.div
                 whileHover={{ scale: 1.05, rotate: 2 }}
@@ -146,7 +161,7 @@ export function PilaresSection() {
                 className="relative"
               >
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary via-brand to-primary rounded-3xl opacity-20" />
-                
+
                 <Image
                   src="/images/image5.png"
                   alt="Foto de Hugo Casanova, mentor y coach en tecnología"
@@ -163,7 +178,10 @@ export function PilaresSection() {
                   transition={{ delay: 0.5 }}
                   className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
                 >
-                  <Card className="bg-gradient-to-r from-primary to-brand text-white shadow-2xl" shadow="lg">
+                  <Card
+                    className="bg-gradient-to-r from-primary to-brand text-white shadow-2xl"
+                    shadow="lg"
+                  >
                     <CardBody className="px-6 py-3 text-center">
                       <p className="text-sm font-bold">{t("badge")}</p>
                     </CardBody>

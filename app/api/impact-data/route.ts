@@ -29,7 +29,7 @@ export async function GET() {
 
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i];
-      
+
       // Simple CSV parsing - split por coma y limpiar comillas
       const values = line.split(",").map((v) => v.trim().replace(/^"|"$/g, ""));
 
@@ -40,7 +40,7 @@ export async function GET() {
 
         // Parsear monto
         const monto = parseFloat(montoStr);
-        
+
         if (!isNaN(monto) && monto > 0) {
           totalRecaudado += monto;
           totalSesiones += 1;

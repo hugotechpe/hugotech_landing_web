@@ -35,10 +35,7 @@ export const personSchema = {
     "Team Building",
   ],
   knowsLanguage: ["es-PE", "en-US"],
-  award: [
-    "Certified Scrum Master",
-    "Professional Scrum Product Owner",
-  ],
+  award: ["Certified Scrum Master", "Professional Scrum Product Owner"],
   alumniOf: {
     "@type": "EducationalOrganization",
     name: "Formación en Coaching y Liderazgo",

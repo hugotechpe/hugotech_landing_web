@@ -55,9 +55,11 @@ export default function CoachingPage() {
               </p>
               <div className="flex items-center justify-center gap-2 text-white/80 mb-8">
                 <span className="text-2xl">⏱️</span>
-                <span className="text-lg font-semibold">{t("hero.duration")}</span>
+                <span className="text-lg font-semibold">
+                  {t("hero.duration")}
+                </span>
               </div>
-              
+
               {/* CTA Button */}
               <Button
                 as={Link}
@@ -96,7 +98,9 @@ export default function CoachingPage() {
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   {[1, 2, 3].map((index) => (
                     <div key={index} className="text-center">
-                      <div className="text-4xl mb-3">{t(`whatIs.principles.${index}.icon`)}</div>
+                      <div className="text-4xl mb-3">
+                        {t(`whatIs.principles.${index}.icon`)}
+                      </div>
                       <h3 className="text-lg font-bold text-customgray mb-2">
                         {t(`whatIs.principles.${index}.title`)}
                       </h3>
@@ -141,7 +145,9 @@ export default function CoachingPage() {
               >
                 <Card className="h-full hover:shadow-lg transition-all duration-300 border-l-4 border-brand">
                   <CardBody className="p-6">
-                    <div className="text-4xl mb-4">{t(`benefits.items.${index}.icon`)}</div>
+                    <div className="text-4xl mb-4">
+                      {t(`benefits.items.${index}.icon`)}
+                    </div>
                     <h3 className="text-xl font-bold font-heading text-customgray mb-3">
                       {t(`benefits.items.${index}.title`)}
                     </h3>
@@ -216,7 +222,9 @@ export default function CoachingPage() {
                     </p>
                     <ul className="text-sm text-gray-600 space-y-1 pl-4">
                       {[1, 2, 3].map((index) => (
-                        <li key={index}>• {t(`difference.coaching.topics.${index}`)}</li>
+                        <li key={index}>
+                          • {t(`difference.coaching.topics.${index}`)}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -238,7 +246,9 @@ export default function CoachingPage() {
                     </p>
                     <ul className="text-sm text-gray-600 space-y-1 pl-4">
                       {[1, 2, 3].map((index) => (
-                        <li key={index}>• {t(`difference.mentoring.topics.${index}`)}</li>
+                        <li key={index}>
+                          • {t(`difference.mentoring.topics.${index}`)}
+                        </li>
                       ))}
                     </ul>
                   </div>

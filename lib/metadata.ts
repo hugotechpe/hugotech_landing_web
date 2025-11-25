@@ -22,13 +22,13 @@ export function generateMetadata({
   const isDefaultLocale = locale === "es";
   const localePath = isDefaultLocale ? path : `/${locale}${path}`;
   const canonicalUrl = `${BASE_URL}${localePath}`;
-  
+
   // URLs alternativas para hreflang con x-default
   const alternateUrls = {
     "es-PE": `${BASE_URL}${path}`,
-    "es": `${BASE_URL}${path}`,
+    es: `${BASE_URL}${path}`,
     "en-US": `${BASE_URL}/en${path}`,
-    "en": `${BASE_URL}/en${path}`,
+    en: `${BASE_URL}/en${path}`,
     "x-default": `${BASE_URL}${path}`, // Español como predeterminado
   };
 
@@ -39,13 +39,13 @@ export function generateMetadata({
     authors: [{ name: "Hugo Casanova", url: BASE_URL }],
     creator: "Hugo Casanova",
     publisher: "HugoTech",
-    
+
     // Canonical URLs dinámicas
     alternates: {
       canonical: canonicalUrl,
       languages: alternateUrls,
     },
-    
+
     // Open Graph dinámico
     openGraph: {
       type: "website",
@@ -64,7 +64,7 @@ export function generateMetadata({
         },
       ],
     },
-    
+
     // Twitter Cards
     twitter: {
       card: "summary_large_image",
@@ -72,7 +72,7 @@ export function generateMetadata({
       description,
       images: [`${BASE_URL}${ogImage}`],
     },
-    
+
     // Robots
     robots: {
       index: true,
@@ -93,10 +93,11 @@ export const pageMetadata = {
   home: {
     es: {
       title: "HugoTech - Mentoring Tech con Propósito en la Era de la IA",
-      description: "Acompaño a jóvenes talentos tech a encontrar su propósito profesional. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Evita el burnout, construye una carrera sostenible.",
+      description:
+        "Acompaño a jóvenes talentos tech a encontrar su propósito profesional. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Evita el burnout, construye una carrera sostenible.",
       keywords: [
         "mentoring tech",
-        "coaching tecnológico", 
+        "coaching tecnológico",
         "desarrollo profesional",
         "mentalidad tech",
         "burnout tech",
@@ -107,11 +108,12 @@ export const pageMetadata = {
     },
     en: {
       title: "HugoTech - Tech Mentoring with Purpose in the AI Era",
-      description: "I accompany young tech talents to find their professional purpose. Free 1-on-1 coaching and tech mentoring sessions. Avoid burnout, build a sustainable career.",
+      description:
+        "I accompany young tech talents to find their professional purpose. Free 1-on-1 coaching and tech mentoring sessions. Avoid burnout, build a sustainable career.",
       keywords: [
         "tech mentoring",
         "technology coaching",
-        "professional development", 
+        "professional development",
         "tech mindset",
         "tech burnout",
         "sustainable career",
@@ -120,11 +122,12 @@ export const pageMetadata = {
       ],
     },
   },
-  
+
   about: {
     es: {
       title: "Sobre Hugo Casanova - Mi Historia y Experiencia | HugoTech",
-      description: "Conoce mi historia: 18+ años en tech, mi transformación personal y cómo llegué al coaching y mentoring tecnológico. De ingeniero a mentor con propósito.",
+      description:
+        "Conoce mi historia: 18+ años en tech, mi transformación personal y cómo llegué al coaching y mentoring tecnológico. De ingeniero a mentor con propósito.",
       keywords: [
         "Hugo Casanova",
         "historia personal tech",
@@ -134,12 +137,13 @@ export const pageMetadata = {
       ],
     },
     en: {
-      title: "About Hugo Casanova - My Story and Experience | HugoTech", 
-      description: "Know my story: 18+ years in tech, my personal transformation and how I got to tech coaching and mentoring. From engineer to mentor with purpose.",
+      title: "About Hugo Casanova - My Story and Experience | HugoTech",
+      description:
+        "Know my story: 18+ years in tech, my personal transformation and how I got to tech coaching and mentoring. From engineer to mentor with purpose.",
       keywords: [
         "Hugo Casanova",
         "personal tech story",
-        "mentoring experience", 
+        "mentoring experience",
         "professional transformation",
         "tech coach Peru",
       ],
@@ -149,7 +153,8 @@ export const pageMetadata = {
   testimonials: {
     es: {
       title: "Testimonios Reales - Historias de Transformación | HugoTech",
-      description: "Lee testimonios reales de talentos tech que encontraron su propósito profesional. Historias de crecimiento, superación del síndrome del impostor y desarrollo de carrera.",
+      description:
+        "Lee testimonios reales de talentos tech que encontraron su propósito profesional. Historias de crecimiento, superación del síndrome del impostor y desarrollo de carrera.",
       keywords: [
         "testimonios tech",
         "historias transformación",
@@ -159,10 +164,11 @@ export const pageMetadata = {
     },
     en: {
       title: "Real Testimonials - Transformation Stories | HugoTech",
-      description: "Read real testimonials from tech talents who found their professional purpose. Stories of growth, overcoming impostor syndrome and career development.",
+      description:
+        "Read real testimonials from tech talents who found their professional purpose. Stories of growth, overcoming impostor syndrome and career development.",
       keywords: [
         "tech testimonials",
-        "transformation stories", 
+        "transformation stories",
         "mentoring success cases",
         "professional tech development",
       ],
@@ -171,8 +177,10 @@ export const pageMetadata = {
 
   empresas: {
     es: {
-      title: "Programas para Empresas Tech - Transformación de Equipos | HugoTech",
-      description: "Diseño programas de mentoring y coaching grupal para equipos tech. Liderazgo consciente, cultura ágil y desarrollo de talento. Transforma tu organización desde el SER.",
+      title:
+        "Programas para Empresas Tech - Transformación de Equipos | HugoTech",
+      description:
+        "Diseño programas de mentoring y coaching grupal para equipos tech. Liderazgo consciente, cultura ágil y desarrollo de talento. Transforma tu organización desde el SER.",
       keywords: [
         "mentoring grupal tech",
         "coaching equipos tecnológicos",
@@ -184,7 +192,8 @@ export const pageMetadata = {
     },
     en: {
       title: "Programs for Tech Companies - Team Transformation | HugoTech",
-      description: "I design group mentoring and coaching programs for tech teams. Conscious leadership, agile culture and talent development. Transform your organization from BEING.",
+      description:
+        "I design group mentoring and coaching programs for tech teams. Conscious leadership, agile culture and talent development. Transform your organization from BEING.",
       keywords: [
         "group tech mentoring",
         "technology team coaching",
@@ -198,8 +207,10 @@ export const pageMetadata = {
 
   mentorCoaching: {
     es: {
-      title: "Mentor Coaching 1 a 1 - Sesiones Personalizadas de 45min | HugoTech",
-      description: "Agenda tu sesión individual de mentor coaching. 45 minutos de transformación para dar tu siguiente salto profesional con claridad, propósito y confianza renovada.",
+      title:
+        "Mentor Coaching 1 a 1 - Sesiones Personalizadas de 45min | HugoTech",
+      description:
+        "Agenda tu sesión individual de mentor coaching. 45 minutos de transformación para dar tu siguiente salto profesional con claridad, propósito y confianza renovada.",
       keywords: [
         "mentor coaching individual",
         "sesiones coaching 1 a 1",
@@ -211,7 +222,8 @@ export const pageMetadata = {
     },
     en: {
       title: "1-on-1 Mentor Coaching - Personalized 45min Sessions | HugoTech",
-      description: "Schedule your individual mentor coaching session. 45 minutes of transformation to take your next professional leap with clarity, purpose and renewed confidence.",
+      description:
+        "Schedule your individual mentor coaching session. 45 minutes of transformation to take your next professional leap with clarity, purpose and renewed confidence.",
       keywords: [
         "individual mentor coaching",
         "1-on-1 coaching sessions",
@@ -226,7 +238,8 @@ export const pageMetadata = {
   coaching: {
     es: {
       title: "Coaching Personal 1 a 1 - Transformación desde el Ser | HugoTech",
-      description: "Sesiones de coaching individual para autoconocimiento, claridad mental y propósito de vida. 45 minutos de exploración profunda y transformación personal auténtica.",
+      description:
+        "Sesiones de coaching individual para autoconocimiento, claridad mental y propósito de vida. 45 minutos de exploración profunda y transformación personal auténtica.",
       keywords: [
         "coaching personal",
         "coaching individual",
@@ -239,7 +252,8 @@ export const pageMetadata = {
     },
     en: {
       title: "Personal 1-on-1 Coaching - Transformation from Being | HugoTech",
-      description: "Individual coaching sessions for self-awareness, mental clarity and life purpose. 45 minutes of deep exploration and authentic personal transformation.",
+      description:
+        "Individual coaching sessions for self-awareness, mental clarity and life purpose. 45 minutes of deep exploration and authentic personal transformation.",
       keywords: [
         "personal coaching",
         "individual coaching",

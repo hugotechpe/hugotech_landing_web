@@ -12,12 +12,12 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
 };
 
 export function TestimoniosSection() {
@@ -40,11 +40,11 @@ export function TestimoniosSection() {
   const getMetricValue = (value: string) => {
     const match = value.match(/[\d,]+/);
     if (!match) return { number: 0, prefix: "", suffix: value };
-    
+
     const numStr = match[0].replace(",", ".");
     const number = parseFloat(numStr);
     const parts = value.split(match[0]);
-    
+
     return {
       number,
       prefix: parts[0] || "",
@@ -70,9 +70,12 @@ export function TestimoniosSection() {
               {title}
             </h2>
             <div className="mt-6 text-customgray text-base sm:text-lg leading-relaxed space-y-3">
-              {Array.isArray(intro) && intro.map((paragraph: string, idx: number) => (
-                <p key={idx} className="font-body">{paragraph}</p>
-              ))}
+              {Array.isArray(intro) &&
+                intro.map((paragraph: string, idx: number) => (
+                  <p key={idx} className="font-body">
+                    {paragraph}
+                  </p>
+                ))}
             </div>
 
             <motion.div
@@ -83,45 +86,51 @@ export function TestimoniosSection() {
               className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 md:gap-20"
               aria-label="Métricas de impacto"
             >
-              {Array.isArray(metrics) && metrics.map((m: {id: string; value: string; text: string}) => {
-                const { number, prefix, suffix } = getMetricValue(m.value);
-                const decimals = m.id === "rating" ? 1 : 0;
-                
-                return (
-                  <motion.article key={m.id} variants={fadeInUp} className="text-center sm:text-left">
-                    <h3 className="text-2xl sm:text-3xl font-heading font-bold text-customgray">
-                      <AnimatedCounter
-                        end={number}
-                        duration={2.5}
-                        decimals={decimals}
-                        prefix={prefix}
-                        suffix={suffix}
-                      />
-                    </h3>
-                    <p className="mt-3 text-customgray/80 text-sm sm:text-base leading-relaxed font-body">
-                      {m.text}
-                    </p>
-                  </motion.article>
-                );
-              })}
+              {Array.isArray(metrics) &&
+                metrics.map(
+                  (m: { id: string; value: string; text: string }) => {
+                    const { number, prefix, suffix } = getMetricValue(m.value);
+                    const decimals = m.id === "rating" ? 1 : 0;
+
+                    return (
+                      <motion.article
+                        key={m.id}
+                        variants={fadeInUp}
+                        className="text-center sm:text-left"
+                      >
+                        <h3 className="text-2xl sm:text-3xl font-heading font-bold text-customgray">
+                          <AnimatedCounter
+                            end={number}
+                            duration={2.5}
+                            decimals={decimals}
+                            prefix={prefix}
+                            suffix={suffix}
+                          />
+                        </h3>
+                        <p className="mt-3 text-customgray/80 text-sm sm:text-base leading-relaxed font-body">
+                          {m.text}
+                        </p>
+                      </motion.article>
+                    );
+                  },
+                )}
             </motion.div>
 
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div>
-                <Button 
-                  as={Link} 
-                  href="/testimonios" 
-                  size="lg" 
-                  color="primary" 
-                  variant="solid" 
+                <Button
+                  as={Link}
+                  href="/testimonios"
+                  size="lg"
+                  color="primary"
+                  variant="solid"
                   className="mt-2 text-white bg-customgray w-full sm:w-auto font-body"
                 >
                   {cta}
                 </Button>
               </div>
-              <div>
-              </div>
-            </div>     
+              <div></div>
+            </div>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -141,7 +150,7 @@ export function TestimoniosSection() {
               highlight={tMiguel("highlight")}
             />
           </motion.div>
-          </div>
+        </div>
       </div>
     </section>
   );

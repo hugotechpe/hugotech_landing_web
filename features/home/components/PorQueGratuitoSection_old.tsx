@@ -63,7 +63,7 @@ export function PorQueGratuitoSection() {
                   {(pgr?.mentoriaCard?.resultsItems ?? []).map(
                     (item: string, idx: number) => (
                       <li key={`res-${idx}`}>{item}</li>
-                    )
+                    ),
                   )}
                 </ul>
                 <div className="mt-4 sm:mt-6">
@@ -114,7 +114,7 @@ export function PorQueGratuitoSection() {
                   {(pgr?.filosofiaCard?.resultsItems ?? []).map(
                     (item: string, idx: number) => (
                       <li key={`filo-${idx}`}>{item}</li>
-                    )
+                    ),
                   )}
                 </ul>
                 <div className="mt-4 sm:mt-6">

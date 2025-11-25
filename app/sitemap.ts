@@ -31,7 +31,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
-  const lastModified = new Date('2024-10-31'); // Fecha de la última actualización del sitio
+  const lastModified = new Date("2024-10-31"); // Fecha de la última actualización del sitio
 
   // Generar entradas para cada ruta en cada idioma
   routes.forEach((route) => {

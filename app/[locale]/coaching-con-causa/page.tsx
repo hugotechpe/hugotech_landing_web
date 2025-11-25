@@ -390,7 +390,9 @@ export default function CoachingConCausaPage() {
                     target="_blank"
                   >
                     <span className="text-2xl">💚</span>
-                    <span className="text-white">{t("cta.withCause.button")}</span>
+                    <span className="text-white">
+                      {t("cta.withCause.button")}
+                    </span>
                   </a>
                 </CardBody>
               </Card>

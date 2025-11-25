@@ -125,7 +125,7 @@ export default function HeroNavbar() {
               </Link>
             </NavbarMenuItem>
           ))}
-          
+
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
             <Button

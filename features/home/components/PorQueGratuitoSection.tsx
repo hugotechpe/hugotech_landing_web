@@ -10,12 +10,12 @@ import { useTranslations, useMessages } from "next-intl";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
 export function PorQueGratuitoSection() {
@@ -62,37 +62,52 @@ export function PorQueGratuitoSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.div variants={scaleIn} whileHover={{ y: -5 }}>
-              <Card className="bg-gradient-to-br from-primary to-[#0d4746] text-white" shadow="lg">
+              <Card
+                className="bg-gradient-to-br from-primary to-[#0d4746] text-white"
+                shadow="lg"
+              >
                 <CardBody className="text-center p-8">
                   <div className="text-5xl mb-3">💚</div>
                   <div className="text-4xl font-bold mb-2">
                     <AnimatedCounter end={200} prefix="+" />
                   </div>
-                  <p className="text-white/90 font-medium">{t("stats.mentored")}</p>
+                  <p className="text-white/90 font-medium">
+                    {t("stats.mentored")}
+                  </p>
                 </CardBody>
               </Card>
             </motion.div>
 
             <motion.div variants={scaleIn} whileHover={{ y: -5 }}>
-              <Card className="bg-gradient-to-br from-brand to-yellow-400" shadow="lg">
+              <Card
+                className="bg-gradient-to-br from-brand to-yellow-400"
+                shadow="lg"
+              >
                 <CardBody className="text-center p-8">
                   <div className="text-5xl mb-3">🎯</div>
                   <div className="text-4xl font-bold text-customgray mb-2">
                     <AnimatedCounter end={100} suffix="%" />
                   </div>
-                  <p className="text-customgray/90 font-medium">{t("stats.freeSessions")}</p>
+                  <p className="text-customgray/90 font-medium">
+                    {t("stats.freeSessions")}
+                  </p>
                 </CardBody>
               </Card>
             </motion.div>
 
             <motion.div variants={scaleIn} whileHover={{ y: -5 }}>
-              <Card className="bg-gradient-to-br from-green-400 to-primary/80 text-white" shadow="lg">
+              <Card
+                className="bg-gradient-to-br from-green-400 to-primary/80 text-white"
+                shadow="lg"
+              >
                 <CardBody className="text-center p-8">
                   <div className="text-5xl mb-3">🌱</div>
                   <div className="text-4xl font-bold mb-2">
                     <AnimatedCounter end={18} suffix="+" />
                   </div>
-                  <p className="text-white/90 font-medium">{t("stats.experience")}</p>
+                  <p className="text-white/90 font-medium">
+                    {t("stats.experience")}
+                  </p>
                 </CardBody>
               </Card>
             </motion.div>
@@ -109,7 +124,10 @@ export function PorQueGratuitoSection() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <motion.div whileHover={{ scale: 1.02, rotateY: 2 }} transition={{ duration: 0.3 }}>
+              <motion.div
+                whileHover={{ scale: 1.02, rotateY: 2 }}
+                transition={{ duration: 0.3 }}
+              >
                 <Card
                   as="article"
                   shadow="lg"
@@ -127,16 +145,20 @@ export function PorQueGratuitoSection() {
                     <p className="text-base md:text-lg font-semibold text-primary">
                       {t("mentoriaCard.subtitle")}
                     </p>
-                    
+
                     <div className="space-y-4">
                       <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
                         {t.rich("mentoriaCard.p1", {
-                          b: (chunks) => <span className="font-bold">{chunks}</span>,
+                          b: (chunks) => (
+                            <span className="font-bold">{chunks}</span>
+                          ),
                         })}
                       </p>
                       <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
                         {t.rich("mentoriaCard.p2", {
-                          b: (chunks) => <span className="font-bold">{chunks}</span>,
+                          b: (chunks) => (
+                            <span className="font-bold">{chunks}</span>
+                          ),
                         })}
                       </p>
                     </div>
@@ -148,11 +170,16 @@ export function PorQueGratuitoSection() {
                       <ul className="space-y-3 text-customgray text-[14px] md:text-[15px]">
                         {(pgr?.mentoriaCard?.resultsItems ?? []).map(
                           (item: string, idx: number) => (
-                            <li key={`res-${idx}`} className="flex items-start gap-3">
-                              <span className="text-primary text-xl flex-shrink-0">✓</span>
+                            <li
+                              key={`res-${idx}`}
+                              className="flex items-start gap-3"
+                            >
+                              <span className="text-primary text-xl flex-shrink-0">
+                                ✓
+                              </span>
                               <span className="leading-relaxed">{item}</span>
                             </li>
-                          )
+                          ),
                         )}
                       </ul>
                     </div>
@@ -183,7 +210,10 @@ export function PorQueGratuitoSection() {
               variants={fadeInUp}
               transition={{ delay: 0.2 }}
             >
-              <motion.div whileHover={{ scale: 1.02, rotateY: -2 }} transition={{ duration: 0.3 }}>
+              <motion.div
+                whileHover={{ scale: 1.02, rotateY: -2 }}
+                transition={{ duration: 0.3 }}
+              >
                 <Card
                   as="article"
                   shadow="lg"
@@ -201,16 +231,20 @@ export function PorQueGratuitoSection() {
                     <p className="text-lg md:text-xl font-semibold text-primary">
                       {t("filosofiaCard.subtitle")}
                     </p>
-                    
+
                     <div className="space-y-3">
                       <p className="text-base">
                         {t.rich("filosofiaCard.p1", {
-                          b: (chunks) => <span className="font-bold">{chunks}</span>,
+                          b: (chunks) => (
+                            <span className="font-bold">{chunks}</span>
+                          ),
                         })}
                       </p>
                       <p className="text-base">
                         {t.rich("filosofiaCard.p2", {
-                          b: (chunks) => <span className="font-bold">{chunks}</span>,
+                          b: (chunks) => (
+                            <span className="font-bold">{chunks}</span>
+                          ),
                         })}
                       </p>
                     </div>
@@ -222,11 +256,16 @@ export function PorQueGratuitoSection() {
                       <ul className="space-y-3 text-customgray text-sm md:text-base">
                         {(pgr?.filosofiaCard?.resultsItems ?? []).map(
                           (item: string, idx: number) => (
-                            <li key={`filo-${idx}`} className="flex items-start gap-3">
-                              <span className="text-primary text-xl flex-shrink-0">✓</span>
+                            <li
+                              key={`filo-${idx}`}
+                              className="flex items-start gap-3"
+                            >
+                              <span className="text-primary text-xl flex-shrink-0">
+                                ✓
+                              </span>
                               <span>{item}</span>
                             </li>
-                          )
+                          ),
                         )}
                       </ul>
                     </div>
@@ -258,37 +297,42 @@ export function PorQueGratuitoSection() {
             whileHover={{ scale: 1.01 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="bg-gradient-to-br from-white via-primary/5 to-brand/10 border-2 border-primary/20 overflow-hidden relative" shadow="lg">
+            <Card
+              className="bg-gradient-to-br from-white via-primary/5 to-brand/10 border-2 border-primary/20 overflow-hidden relative"
+              shadow="lg"
+            >
               {/* Decorative corner accent */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand/20 to-transparent rounded-bl-[100px]" />
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-primary/20 to-transparent rounded-tr-[80px]" />
-              
+
               <CardBody className="p-8 md:p-16 text-center relative z-10">
                 {/* Quote icon con animación */}
-                <motion.div 
+                <motion.div
                   className="text-6xl md:text-7xl mb-8"
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.1, 1],
-                    rotate: [0, 5, -5, 0]
+                    rotate: [0, 5, -5, 0],
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 3,
                     repeat: Infinity,
-                    repeatType: "reverse"
+                    repeatType: "reverse",
                   }}
                 >
                   💬
                 </motion.div>
-                
+
                 {/* Quote text con mejor tipografía */}
                 <blockquote className="relative">
                   {/* Comillas decorativas */}
-                  <span className="absolute -top-8 -left-4 md:-left-8 text-8xl text-primary/10 font-serif leading-none">"</span>
-                  
+                  <span className="absolute -top-8 -left-4 md:-left-8 text-8xl text-primary/10 font-serif leading-none">
+                    "
+                  </span>
+
                   <p className="text-xl md:text-2xl lg:text-3xl font-light italic text-gray-800 mb-10 leading-[1.8] tracking-wide max-w-5xl mx-auto relative">
                     {t.rich("quote.text", {
                       highlight1: (chunks: React.ReactNode) => (
-                        <motion.span 
+                        <motion.span
                           key="h1"
                           className="text-primary not-italic font-semibold relative inline-block"
                           whileHover={{ scale: 1.05 }}
@@ -298,7 +342,7 @@ export function PorQueGratuitoSection() {
                         </motion.span>
                       ),
                       highlight2: (chunks: React.ReactNode) => (
-                        <motion.span 
+                        <motion.span
                           key="h2"
                           className="text-primary not-italic font-semibold relative inline-block"
                           whileHover={{ scale: 1.05 }}
@@ -308,7 +352,7 @@ export function PorQueGratuitoSection() {
                         </motion.span>
                       ),
                       highlight3: (chunks: React.ReactNode) => (
-                        <motion.span 
+                        <motion.span
                           key="h3"
                           className="text-brand not-italic font-bold relative inline-block"
                           whileHover={{ scale: 1.05 }}
@@ -318,7 +362,7 @@ export function PorQueGratuitoSection() {
                         </motion.span>
                       ),
                       highlight4: (chunks: React.ReactNode) => (
-                        <motion.span 
+                        <motion.span
                           key="h4"
                           className="text-success-600 not-italic font-bold relative inline-block"
                           whileHover={{ scale: 1.05 }}
@@ -329,10 +373,12 @@ export function PorQueGratuitoSection() {
                       ),
                     })}
                   </p>
-                  
-                  <span className="absolute -bottom-8 -right-4 md:-right-8 text-8xl text-brand/10 font-serif leading-none">"</span>
+
+                  <span className="absolute -bottom-8 -right-4 md:-right-8 text-8xl text-brand/10 font-serif leading-none">
+                    "
+                  </span>
                 </blockquote>
-                
+
                 {/* Author con diseño elegante */}
                 <div className="flex items-center justify-center gap-4 mt-8">
                   <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/30" />

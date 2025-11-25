@@ -11,23 +11,23 @@ export default async function TestimonialPage({
 }) {
   const { locale } = await params;
   const testimonios = getTestimoniosList(locale);
-  
+
   // Crear JSON-LD para la organización con aggregate rating
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://hugotech.pe/#organization",
-    "name": "HugoTech",
-    "url": "https://hugotech.pe",
-    "logo": "https://hugotech.pe/images/logo.png",
-    "description": "Coaching y Mentoring Tecnológico para profesionales tech",
-    "aggregateRating": {
+    name: "HugoTech",
+    url: "https://hugotech.pe",
+    logo: "https://hugotech.pe/images/logo.png",
+    description: "Coaching y Mentoring Tecnológico para profesionales tech",
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "bestRating": "5",
-      "ratingCount": testimonios.length.toString(),
-      "reviewCount": testimonios.length.toString()
-    }
+      ratingValue: "5",
+      bestRating: "5",
+      ratingCount: testimonios.length.toString(),
+      reviewCount: testimonios.length.toString(),
+    },
   };
 
   return (

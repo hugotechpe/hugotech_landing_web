@@ -115,7 +115,10 @@ export function HabilidadesBlandasSection() {
             &ldquo;{t("quote")}&rdquo;
           </motion.blockquote>
 
-          <motion.div variants={fadeIn} transition={{ duration: 0.6, delay: 0.2 }}>
+          <motion.div
+            variants={fadeIn}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <CalendlyButton
               className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl"
               size="lg"

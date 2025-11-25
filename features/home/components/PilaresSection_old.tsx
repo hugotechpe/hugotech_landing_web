@@ -14,20 +14,26 @@ import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
 };
 
 export function PilaresSection() {
   const messages = useMessages() as any;
 
   // Eliminado iconMap local, usamos el enum y mapa compartido
-  const sectionTitle = messages?.Sections?.Pilares?.title ?? "Los 6 pilares de la experiencia HugoTech";
-  const items = (messages?.Sections?.Pilares?.items ?? []) as Array<{ title: string; description: string; iconKey?: string }>;
+  const sectionTitle =
+    messages?.Sections?.Pilares?.title ??
+    "Los 6 pilares de la experiencia HugoTech";
+  const items = (messages?.Sections?.Pilares?.items ?? []) as Array<{
+    title: string;
+    description: string;
+    iconKey?: string;
+  }>;
 
   return (
     <section
@@ -59,11 +65,19 @@ export function PilaresSection() {
               role="list"
             >
               {items.map((item) => (
-                <motion.div key={item.title} variants={fadeInUp} role="listitem">
+                <motion.div
+                  key={item.title}
+                  variants={fadeInUp}
+                  role="listitem"
+                >
                   <IconBoxCard
                     title={item.title}
                     description={item.description}
-                    Icon={item.iconKey ? IconComponentMap[item.iconKey as IconKey] : undefined}
+                    Icon={
+                      item.iconKey
+                        ? IconComponentMap[item.iconKey as IconKey]
+                        : undefined
+                    }
                     headingAs="h3"
                     classNameCardBody="flex-col"
                   />

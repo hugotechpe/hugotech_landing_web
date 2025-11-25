@@ -38,7 +38,7 @@ export default function AboutPage() {
     <main className="bg-white overflow-hidden">
       {/* Breadcrumb Schema para SEO */}
       <Breadcrumb />
-      
+
       {/* Hero Section con Parallax */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <motion.div
@@ -180,38 +180,40 @@ export default function AboutPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {(messages.Sections?.About?.stats?.items || []).map((stat: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, scale: 1 }}
-              >
-                <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                  <CardBody className="p-8 text-center">
-                    <div className="text-5xl mb-4">{stat.icon}</div>
-                    <div className="text-5xl md:text-6xl font-bold text-brand mb-2">
-                      {stat.suffix === "∞" ? (
-                        <span>∞</span>
-                      ) : (
-                        <AnimatedCounter
-                          end={stat.end}
-                          prefix={stat.prefix}
-                          suffix={stat.suffix}
-                        />
-                      )}
-                    </div>
-                    <p className="text-white/90 font-semibold text-lg mb-2">
-                      {stat.label}
-                    </p>
-                    <p className="text-white/70 text-sm leading-relaxed">
-                      {stat.description}
-                    </p>
-                  </CardBody>
-                </Card>
-              </motion.div>
-            ))}
+            {(messages.Sections?.About?.stats?.items || []).map(
+              (stat: any, index: number) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                >
+                  <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                    <CardBody className="p-8 text-center">
+                      <div className="text-5xl mb-4">{stat.icon}</div>
+                      <div className="text-5xl md:text-6xl font-bold text-brand mb-2">
+                        {stat.suffix === "∞" ? (
+                          <span>∞</span>
+                        ) : (
+                          <AnimatedCounter
+                            end={stat.end}
+                            prefix={stat.prefix}
+                            suffix={stat.suffix}
+                          />
+                        )}
+                      </div>
+                      <p className="text-white/90 font-semibold text-lg mb-2">
+                        {stat.label}
+                      </p>
+                      <p className="text-white/70 text-sm leading-relaxed">
+                        {stat.description}
+                      </p>
+                    </CardBody>
+                  </Card>
+                </motion.div>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -240,7 +242,9 @@ export default function AboutPage() {
                       &ldquo;{t("philosophy.quote")}&rdquo;
                     </blockquote>
                     <p
-                      dangerouslySetInnerHTML={{ __html: t.raw("philosophy.description") }}
+                      dangerouslySetInnerHTML={{
+                        __html: t.raw("philosophy.description"),
+                      }}
                       className="text-lg md:text-xl text-gray-700 leading-[2] tracking-wide"
                     />
                     <p className="text-base md:text-lg text-gray-600 leading-[1.9] tracking-wide mt-6 italic">
@@ -292,24 +296,46 @@ export default function AboutPage() {
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {(messages.Sections?.About?.certifications?.coaching_items || []).map((cert: any, index: number) => {
+                      {(
+                        messages.Sections?.About?.certifications
+                          ?.coaching_items || []
+                      ).map((cert: any, index: number) => {
                         const colors: Record<string, string> = {
-                          orange: "from-orange-500 to-orange-600 text-orange-600",
+                          orange:
+                            "from-orange-500 to-orange-600 text-orange-600",
                           blue: "from-blue-600 to-blue-700 text-blue-600",
                           red: "from-red-600 to-red-700 text-red-600",
-                          "blue-dark": "from-blue-800 to-blue-900 text-blue-800"
+                          "blue-dark":
+                            "from-blue-800 to-blue-900 text-blue-800",
                         };
-                        const colorClass = colors[cert.color] || "from-primary to-brand text-primary";
-                        const isLast = index === (messages.Sections?.About?.certifications?.coaching_items?.length || 0) - 1;
+                        const colorClass =
+                          colors[cert.color] ||
+                          "from-primary to-brand text-primary";
+                        const isLast =
+                          index ===
+                          (messages.Sections?.About?.certifications
+                            ?.coaching_items?.length || 0) -
+                            1;
 
                         return (
-                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b" : ""} ${index === 0 ? "border-b-2 border-brand/30" : "border-gray-200"}`}>
-                            <div className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}>
+                          <div
+                            key={index}
+                            className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b" : ""} ${index === 0 ? "border-b-2 border-brand/30" : "border-gray-200"}`}
+                          >
+                            <div
+                              className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}
+                            >
                               <span className="text-white font-bold text-sm text-center leading-tight">
-                                {cert.organization.includes("Newfield") ? "NEWFIELD\nNETWORK" :
-                                 cert.organization.includes("Ruwalab") ? "RUWALAB\nICF" :
-                                 cert.organization.includes("UPC") || cert.organization.includes("Ciencias Aplicadas") ? "UPC" :
-                                 "ISIL"}
+                                {cert.organization.includes("Newfield")
+                                  ? "NEWFIELD\nNETWORK"
+                                  : cert.organization.includes("Ruwalab")
+                                    ? "RUWALAB\nICF"
+                                    : cert.organization.includes("UPC") ||
+                                        cert.organization.includes(
+                                          "Ciencias Aplicadas",
+                                        )
+                                      ? "UPC"
+                                      : "ISIL"}
                               </span>
                             </div>
                             <div className="flex-1">
@@ -320,7 +346,12 @@ export default function AboutPage() {
                                 {cert.status && (
                                   <Chip
                                     className="font-semibold"
-                                    color={cert.status === "Activo" || cert.status === "Active" ? "success" : "warning"}
+                                    color={
+                                      cert.status === "Activo" ||
+                                      cert.status === "Active"
+                                        ? "success"
+                                        : "warning"
+                                    }
                                     size="sm"
                                     variant="flat"
                                   >
@@ -328,13 +359,17 @@ export default function AboutPage() {
                                   </Chip>
                                 )}
                               </div>
-                              <p className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}>
+                              <p
+                                className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}
+                              >
                                 {cert.organization}
                               </p>
                               <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                                 {cert.description}
                               </p>
-                              <p className="text-xs text-gray-500">{cert.period}</p>
+                              <p className="text-xs text-gray-500">
+                                {cert.period}
+                              </p>
                             </div>
                           </div>
                         );
@@ -356,35 +391,68 @@ export default function AboutPage() {
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {(messages.Sections?.About?.certifications?.agility_items || []).map((cert: any, index: number) => {
+                      {(
+                        messages.Sections?.About?.certifications
+                          ?.agility_items || []
+                      ).map((cert: any, index: number) => {
                         const colors: Record<string, string> = {
                           blue: "from-blue-500 to-blue-600 text-blue-600",
                           green: "from-green-500 to-green-600 text-green-600",
-                          purple: "from-purple-600 to-purple-700 text-purple-600",
-                          orange: "from-orange-500 to-orange-600 text-orange-600",
-                          yellow: "from-yellow-600 to-yellow-700 text-yellow-700",
+                          purple:
+                            "from-purple-600 to-purple-700 text-purple-600",
+                          orange:
+                            "from-orange-500 to-orange-600 text-orange-600",
+                          yellow:
+                            "from-yellow-600 to-yellow-700 text-yellow-700",
                           teal: "from-teal-500 to-teal-600 text-teal-600",
-                          indigo: "from-indigo-600 to-indigo-700 text-indigo-600",
+                          indigo:
+                            "from-indigo-600 to-indigo-700 text-indigo-600",
                           amber: "from-yellow-500 to-amber-600 text-amber-600",
-                          pink: "from-pink-500 to-pink-600 text-pink-600"
+                          pink: "from-pink-500 to-pink-600 text-pink-600",
                         };
-                        const colorClass = colors[cert.color] || "from-primary to-brand text-primary";
-                        const isLast = index === (messages.Sections?.About?.certifications?.agility_items?.length || 0) - 1;
-                        
+                        const colorClass =
+                          colors[cert.color] ||
+                          "from-primary to-brand text-primary";
+                        const isLast =
+                          index ===
+                          (messages.Sections?.About?.certifications
+                            ?.agility_items?.length || 0) -
+                            1;
+
                         const getOrgLabel = () => {
-                          if (cert.organization.includes("ICAgile")) return cert.title.includes("HR") ? "IC\nAGILE\nHR" : "IC\nAGILE";
-                          if (cert.organization.includes("Management 3.0")) return "MGMT\n3.0";
-                          if (cert.organization.includes("Vabro") || cert.title.includes("SAMC")) return "SCRUM\nSTUDY";
-                          if (cert.organization.includes("PMI") || cert.organization.includes("Project Management")) return "PMI";
-                          if (cert.title.includes("Scrum Master")) return "SCRUM\nTRIPLE";
-                          if (cert.organization.includes("Kanban")) return "KANBAN\nKMP";
-                          if (cert.organization.includes("CertJoin")) return "LEAN\nSTARTUP";
+                          if (cert.organization.includes("ICAgile"))
+                            return cert.title.includes("HR")
+                              ? "IC\nAGILE\nHR"
+                              : "IC\nAGILE";
+                          if (cert.organization.includes("Management 3.0"))
+                            return "MGMT\n3.0";
+                          if (
+                            cert.organization.includes("Vabro") ||
+                            cert.title.includes("SAMC")
+                          )
+                            return "SCRUM\nSTUDY";
+                          if (
+                            cert.organization.includes("PMI") ||
+                            cert.organization.includes("Project Management")
+                          )
+                            return "PMI";
+                          if (cert.title.includes("Scrum Master"))
+                            return "SCRUM\nTRIPLE";
+                          if (cert.organization.includes("Kanban"))
+                            return "KANBAN\nKMP";
+                          if (cert.organization.includes("CertJoin"))
+                            return "LEAN\nSTARTUP";
                           return "LEAN\nUX";
                         };
 
                         return (
-                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
-                            <div className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}>
+                          <div
+                            key={index}
+                            className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}
+                          >
+                            <div
+                              className={`w-20 h-20 bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md`}
+                            >
                               <span className="text-white font-bold text-sm text-center leading-tight whitespace-pre-line">
                                 {getOrgLabel()}
                               </span>
@@ -393,14 +461,17 @@ export default function AboutPage() {
                               <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
                                 {cert.title}
                               </h3>
-                              <p className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}>
+                              <p
+                                className={`text-base font-semibold mb-2 ${colorClass.split(" ")[2]}`}
+                              >
                                 {cert.organization}
                               </p>
                               <p className="text-sm md:text-[15px] text-gray-600 leading-relaxed mb-2">
                                 {cert.description}
                               </p>
                               <p className="text-xs text-gray-500">
-                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                                {cert.period}
+                                {cert.credential ? ` | ${cert.credential}` : ""}
                               </p>
                             </div>
                           </div>
@@ -423,15 +494,23 @@ export default function AboutPage() {
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {(messages.Sections?.About?.certifications?.technology_items || []).map((cert: any, index: number) => {
-                        const isLast = index === (messages.Sections?.About?.certifications?.technology_items?.length || 0) - 1;
+                      {(
+                        messages.Sections?.About?.certifications
+                          ?.technology_items || []
+                      ).map((cert: any, index: number) => {
+                        const isLast =
+                          index ===
+                          (messages.Sections?.About?.certifications
+                            ?.technology_items?.length || 0) -
+                            1;
 
                         return (
-                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
+                          <div
+                            key={index}
+                            className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}
+                          >
                             <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                              <span className="text-3xl">
-                                {cert.icon}
-                              </span>
+                              <span className="text-3xl">{cert.icon}</span>
                             </div>
                             <div className="flex-1">
                               <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
@@ -444,7 +523,8 @@ export default function AboutPage() {
                                 {cert.description}
                               </p>
                               <p className="text-xs text-gray-500">
-                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                                {cert.period}
+                                {cert.credential ? ` | ${cert.credential}` : ""}
                               </p>
                             </div>
                           </div>
@@ -467,15 +547,23 @@ export default function AboutPage() {
                 <Card className="mt-8" shadow="lg">
                   <CardBody className="p-8">
                     <div className="space-y-6">
-                      {(messages.Sections?.About?.certifications?.education_items || []).map((cert: any, index: number) => {
-                        const isLast = index === (messages.Sections?.About?.certifications?.education_items?.length || 0) - 1;
+                      {(
+                        messages.Sections?.About?.certifications
+                          ?.education_items || []
+                      ).map((cert: any, index: number) => {
+                        const isLast =
+                          index ===
+                          (messages.Sections?.About?.certifications
+                            ?.education_items?.length || 0) -
+                            1;
 
                         return (
-                          <div key={index} className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}>
+                          <div
+                            key={index}
+                            className={`flex items-start gap-4 ${!isLast ? "pb-6 border-b border-gray-200" : ""}`}
+                          >
                             <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                              <span className="text-3xl">
-                                {cert.icon}
-                              </span>
+                              <span className="text-3xl">{cert.icon}</span>
                             </div>
                             <div className="flex-1">
                               <h3 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
@@ -488,7 +576,8 @@ export default function AboutPage() {
                                 {cert.description}
                               </p>
                               <p className="text-xs text-gray-500">
-                                {cert.period}{cert.credential ? ` | ${cert.credential}` : ""}
+                                {cert.period}
+                                {cert.credential ? ` | ${cert.credential}` : ""}
                               </p>
                             </div>
                           </div>
@@ -527,59 +616,97 @@ export default function AboutPage() {
             </motion.p>
 
             <div className="space-y-8">
-              {(messages.Sections?.About?.evolution?.phases || []).map((phase: any, index: number) => {
-                const colors = [
-                  { border: "border-blue-500", gradient: "from-blue-500 to-blue-600", bg: "bg-blue-100", text: "text-blue-700 text-blue-600" },
-                  { border: "border-purple-500", gradient: "from-purple-500 to-purple-600", bg: "bg-purple-100", text: "text-purple-700 text-purple-600" },
-                  { border: "border-orange-500", gradient: "from-orange-500 to-orange-600", bg: "bg-orange-100", text: "text-orange-700 text-orange-600" },
-                  { border: "border-green-500", gradient: "from-green-500 to-green-600", bg: "bg-green-100", text: "text-green-700 text-green-600" },
-                  { border: "border-indigo-500", gradient: "from-indigo-500 to-indigo-600", bg: "bg-indigo-100", text: "text-indigo-700 text-indigo-600" },
-                  { border: "border-primary", gradient: "from-primary to-brand", bg: "bg-primary/20", text: "text-primary" }
-                ];
-                const color = colors[index] || colors[0];
-                const icons = ["💻", "🎨", "🔧", "🚀", "📊", "✨"];
-                const isLast = index === 5; // Último elemento (Estratega & Coach)
+              {(messages.Sections?.About?.evolution?.phases || []).map(
+                (phase: any, index: number) => {
+                  const colors = [
+                    {
+                      border: "border-blue-500",
+                      gradient: "from-blue-500 to-blue-600",
+                      bg: "bg-blue-100",
+                      text: "text-blue-700 text-blue-600",
+                    },
+                    {
+                      border: "border-purple-500",
+                      gradient: "from-purple-500 to-purple-600",
+                      bg: "bg-purple-100",
+                      text: "text-purple-700 text-purple-600",
+                    },
+                    {
+                      border: "border-orange-500",
+                      gradient: "from-orange-500 to-orange-600",
+                      bg: "bg-orange-100",
+                      text: "text-orange-700 text-orange-600",
+                    },
+                    {
+                      border: "border-green-500",
+                      gradient: "from-green-500 to-green-600",
+                      bg: "bg-green-100",
+                      text: "text-green-700 text-green-600",
+                    },
+                    {
+                      border: "border-indigo-500",
+                      gradient: "from-indigo-500 to-indigo-600",
+                      bg: "bg-indigo-100",
+                      text: "text-indigo-700 text-indigo-600",
+                    },
+                    {
+                      border: "border-primary",
+                      gradient: "from-primary to-brand",
+                      bg: "bg-primary/20",
+                      text: "text-primary",
+                    },
+                  ];
+                  const color = colors[index] || colors[0];
+                  const icons = ["💻", "🎨", "🔧", "🚀", "📊", "✨"];
+                  const isLast = index === 5; // Último elemento (Estratega & Coach)
 
-                return (
-                  <motion.div key={index} variants={fadeIn}>
-                    <Card
-                      className={`border-l-4 ${color.border} hover:shadow-xl transition-all duration-300 ${isLast ? "bg-gradient-to-br from-primary/5 to-brand/5" : ""}`}
-                      shadow={isLast ? "lg" : "md"}
-                    >
-                      <CardBody className="p-8">
-                        <div className="flex items-start gap-6">
-                          <div className="flex-shrink-0">
-                            <div className={`w-16 h-16 bg-gradient-to-br ${color.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
-                              <span className="text-3xl">{icons[index]}</span>
+                  return (
+                    <motion.div key={index} variants={fadeIn}>
+                      <Card
+                        className={`border-l-4 ${color.border} hover:shadow-xl transition-all duration-300 ${isLast ? "bg-gradient-to-br from-primary/5 to-brand/5" : ""}`}
+                        shadow={isLast ? "lg" : "md"}
+                      >
+                        <CardBody className="p-8">
+                          <div className="flex items-start gap-6">
+                            <div className="flex-shrink-0">
+                              <div
+                                className={`w-16 h-16 bg-gradient-to-br ${color.gradient} rounded-2xl flex items-center justify-center shadow-lg`}
+                              >
+                                <span className="text-3xl">{icons[index]}</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
+                                {phase.title}
+                              </h3>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: phase.description,
+                                }}
+                                className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4"
+                              />
+                              <div className="flex flex-wrap gap-2">
+                                {phase.chips.map(
+                                  (chip: string, chipIndex: number) => (
+                                    <Chip
+                                      key={chipIndex}
+                                      className={`${color.bg} ${color.text.split(" ")[0]}`}
+                                      size="sm"
+                                      variant="flat"
+                                    >
+                                      {chip}
+                                    </Chip>
+                                  ),
+                                )}
+                              </div>
                             </div>
                           </div>
-                          <div className="flex-1">
-                            <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-3">
-                              {phase.title}
-                            </h3>
-                            <p
-                              dangerouslySetInnerHTML={{ __html: phase.description }}
-                              className="text-base md:text-lg text-gray-700 leading-[1.9] mb-4"
-                            />
-                            <div className="flex flex-wrap gap-2">
-                              {phase.chips.map((chip: string, chipIndex: number) => (
-                                <Chip
-                                  key={chipIndex}
-                                  className={`${color.bg} ${color.text.split(" ")[0]}`}
-                                  size="sm"
-                                  variant="flat"
-                                >
-                                  {chip}
-                                </Chip>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </CardBody>
-                    </Card>
-                  </motion.div>
-                );
-              })}
+                        </CardBody>
+                      </Card>
+                    </motion.div>
+                  );
+                },
+              )}
             </div>
 
             {/* Quote de cierre */}
@@ -590,7 +717,9 @@ export default function AboutPage() {
               >
                 <CardBody className="p-12">
                   <p
-                    dangerouslySetInnerHTML={{ __html: t.raw("evolution.quote") }}
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw("evolution.quote"),
+                    }}
                     className="text-xl md:text-2xl lg:text-3xl font-heading text-white/95 leading-[1.7] italic"
                   />
                   <p className="text-base md:text-lg text-white/70 mt-6 font-body">
@@ -631,7 +760,9 @@ export default function AboutPage() {
                     {t("mission.title")}
                   </h3>
                   <p
-                    dangerouslySetInnerHTML={{ __html: t.raw("mission.content") }}
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw("mission.content"),
+                    }}
                     className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide"
                   />
                 </CardBody>
@@ -653,7 +784,9 @@ export default function AboutPage() {
                     {t("vision.title")}
                   </h3>
                   <p
-                    dangerouslySetInnerHTML={{ __html: t.raw("vision.content") }}
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw("vision.content"),
+                    }}
                     className="text-[15px] md:text-base text-gray-700 leading-[1.9] tracking-wide"
                   />
                 </CardBody>
@@ -675,22 +808,26 @@ export default function AboutPage() {
                   {t("values.title")}
                 </h3>
                 <div className="grid md:grid-cols-4 gap-6">
-                  {(messages.Sections?.About?.values?.items || []).map((value: any, index: number) => (
-                    <motion.div
-                      key={index}
-                      className="text-center"
-                      transition={{ duration: 0.2 }}
-                      whileHover={{ scale: 1.1, y: -5 }}
-                    >
-                      <div className="text-5xl mb-3">{["🤝", "✨", "🌱", "💪"][index]}</div>
-                      <h4 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
-                        {value.title}
-                      </h4>
-                      <p className="text-sm md:text-[15px] text-gray-600">
-                        {value.description}
-                      </p>
-                    </motion.div>
-                  ))}
+                  {(messages.Sections?.About?.values?.items || []).map(
+                    (value: any, index: number) => (
+                      <motion.div
+                        key={index}
+                        className="text-center"
+                        transition={{ duration: 0.2 }}
+                        whileHover={{ scale: 1.1, y: -5 }}
+                      >
+                        <div className="text-5xl mb-3">
+                          {["🤝", "✨", "🌱", "💪"][index]}
+                        </div>
+                        <h4 className="text-lg md:text-xl font-bold font-heading text-customgray mb-2">
+                          {value.title}
+                        </h4>
+                        <p className="text-sm md:text-[15px] text-gray-600">
+                          {value.description}
+                        </p>
+                      </motion.div>
+                    ),
+                  )}
                 </div>
               </CardBody>
             </Card>
@@ -723,23 +860,25 @@ export default function AboutPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            {(messages.Sections?.About?.manifiesto?.items || []).map((item: any, index: number) => (
-              <motion.div key={index} variants={fadeIn}>
-                <Card
-                  className="h-full hover:shadow-2xl transition-all duration-300 border-t-4 border-primary"
-                  shadow="lg"
-                >
-                  <CardBody className="p-6">
-                    <h3 className="text-xl md:text-2xl font-bold font-heading text-primary mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </CardBody>
-                </Card>
-              </motion.div>
-            ))}
+            {(messages.Sections?.About?.manifiesto?.items || []).map(
+              (item: any, index: number) => (
+                <motion.div key={index} variants={fadeIn}>
+                  <Card
+                    className="h-full hover:shadow-2xl transition-all duration-300 border-t-4 border-primary"
+                    shadow="lg"
+                  >
+                    <CardBody className="p-6">
+                      <h3 className="text-xl md:text-2xl font-bold font-heading text-primary mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </CardBody>
+                  </Card>
+                </motion.div>
+              ),
+            )}
           </motion.div>
 
           <motion.div

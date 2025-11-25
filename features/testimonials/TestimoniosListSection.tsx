@@ -17,12 +17,14 @@ export function TestimoniosListSection() {
   const locale = useLocale();
   const TESTIMONIOS_LIST = getTestimoniosList(locale);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-  
+
   const hasMore = visibleCount < TESTIMONIOS_LIST.length;
   const visibleTestimonios = TESTIMONIOS_LIST.slice(0, visibleCount);
 
   const loadMore = () => {
-    setVisibleCount(prev => Math.min(prev + ITEMS_PER_PAGE, TESTIMONIOS_LIST.length));
+    setVisibleCount((prev) =>
+      Math.min(prev + ITEMS_PER_PAGE, TESTIMONIOS_LIST.length),
+    );
   };
 
   return (
@@ -42,7 +44,7 @@ export function TestimoniosListSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight">
             {t("title")}
           </h2>
-          <p 
+          <p
             dangerouslySetInnerHTML={{ __html: t.raw("description") }}
             className="text-lg md:text-xl text-gray-600 leading-[1.9] tracking-wide max-w-3xl mx-auto"
           />
@@ -52,11 +54,9 @@ export function TestimoniosListSection() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-auto">
           {visibleTestimonios.map((t, idx) => {
             const isFeatured = FEATURED_INDICES.includes(idx);
-            
+
             // Cards destacadas ocupan más espacio en el grid
-            const gridSpan = isFeatured 
-              ? "md:col-span-8" 
-              : "md:col-span-6";
+            const gridSpan = isFeatured ? "md:col-span-8" : "md:col-span-6";
 
             return (
               <motion.div
@@ -64,15 +64,15 @@ export function TestimoniosListSection() {
                 className={gridSpan}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
+                transition={{
                   duration: 0.5,
                   delay: idx * 0.05,
-                  ease: "easeOut" 
+                  ease: "easeOut",
                 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <TestimonioCard 
-                  {...t} 
+                <TestimonioCard
+                  {...t}
                   className="h-full shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
                 />
               </motion.div>
@@ -82,7 +82,7 @@ export function TestimoniosListSection() {
 
         {/* Botón "Cargar más" con animación */}
         {hasMore && (
-          <motion.div 
+          <motion.div
             className="flex justify-center mt-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -111,14 +111,17 @@ export function TestimoniosListSection() {
           >
             <Card className="bg-gradient-to-r from-primary/10 via-brand/10 to-primary/10 border-2 border-primary/20">
               <CardBody className="p-8 md:p-10 text-center">
-                <div className="text-5xl md:text-6xl mb-4">{t("end.emoji")}</div>
+                <div className="text-5xl md:text-6xl mb-4">
+                  {t("end.emoji")}
+                </div>
                 <h3 className="text-2xl md:text-3xl font-bold font-heading text-customgray mb-4">
                   {t("end.title")}
                 </h3>
                 <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
-                  {t("end.description", { count: TESTIMONIOS_LIST.length })}
-                  {" "}
-                  <strong className="text-primary block mt-3">{t("end.cta_text")}</strong>
+                  {t("end.description", { count: TESTIMONIOS_LIST.length })}{" "}
+                  <strong className="text-primary block mt-3">
+                    {t("end.cta_text")}
+                  </strong>
                 </p>
                 <Button
                   as="a"
