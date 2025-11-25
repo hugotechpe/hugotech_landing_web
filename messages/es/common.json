@@ -49,8 +49,8 @@
         },
         {
           "id": "satisfaction",
-          "value": "90 % de satisfacción",
-          "text": "El 90 % de quienes han trabajado conmigo sienten una evolución tangible en su mentalidad y desempeño profesional."
+          "value": "90% satisfacción",
+          "text": "90% reportan evolución tangible en mentalidad y desempeño profesional."
         },
         {
           "id": "guided",
@@ -114,22 +114,22 @@
       "items": [
         {
           "title": "Autoconocimiento y desarrollo personal",
-          "description": "El verdadero cambio empieza dentro. Trabajamos tu confianza, comunicación efectiva, inteligencia emocional y empatía para que lideres desde tu autenticidad. Exploramos tus valores, fortalezas y áreas de crecimiento porque cuando te conoces profundamente, tomas decisiones más acertadas en tu carrera tech.",
+          "description": "El cambio empieza dentro. Trabajamos confianza, comunicación, inteligencia emocional y empatía para que lideres desde tu autenticidad. Exploramos tus valores y fortalezas porque cuando te conoces, decides mejor.",
           "iconKey": "mentoring"
         },
         {
           "title": "Mentalidad de crecimiento (vs. burnout)",
-          "description": "Dejamos de glorificar el agotamiento. Construimos juntos una carrera tech sostenible donde el éxito no te vacíe. Con herramientas anti-burnout, gestión consciente de energía, propósito claro y mentalidad growth aplicadas al día a día. Porque tu bienestar es la base de tu mejor rendimiento.",
+          "description": "Construimos una carrera tech sostenible donde el éxito no te vacíe. Con herramientas anti-burnout, gestión consciente de energía y mentalidad growth aplicadas al día a día. Tu bienestar es la base de tu mejor rendimiento.",
           "iconKey": "equipos"
         },
         {
           "title": "Liderazgo ágil y equipos de alto rendimiento",
-          "description": "Desarrolla tu capacidad de influir positivamente, crear seguridad psicológica y construir equipos extraordinarios que entregan con excelencia. Con Management 3.0, facilitación ágil, coaching aplicado y cultura colaborativa. Lideramos desde la confianza y la vulnerabilidad auténtica, no desde el miedo ni el ego técnico.",
+          "description": "Desarrolla tu capacidad de influir, crear seguridad psicológica y construir equipos extraordinarios. Con Management 3.0, facilitación ágil y coaching aplicado. Lideramos desde la confianza, no desde el miedo ni ego técnico.",
           "iconKey": "equipos"
         },
         {
           "title": "Propósito + Estrategia Tech",
-          "description": "Creamos tu hoja de ruta personalizada que conecta tu esencia con acción concreta. Backend, frontend, fullstack, mobile, QA, UX/UI, database, DevOps, IA, RPA, Product Owner, Scrum Master, marketing tech, líder técnico... decidimos juntos tu siguiente paso según tus valores y objetivos profesionales. La mejor tecnología la construyen personas que se conocen a sí mismas y actúan desde su propósito.",
+          "description": "Creamos tu hoja de ruta personalizada que conecta tu esencia con acción concreta. Decidimos tu siguiente paso según tus valores y objetivos. La mejor tecnología la construyen personas que se conocen y actúan desde su propósito.",
           "iconKey": "liderazgo"
         }
       ]
@@ -145,8 +145,8 @@
         "community": "Comunidad que nos Une"
       },
       "paragraphs": {
-        "p1": "Soy <name>Hugo Casanova</name>. Coach Profesional ICF, Mentor Tech y Líder Ágil con 18+ años acompañando talentos en el momento donde <b>la confusión se transforma en claridad, el miedo en acción y el talento en propósito</b>.",
-        "p2": "Los desafíos reales no son solo técnicos. He visto brillantes desarrolladores luchando con <b>baja confianza, comunicación, introversión, o simplemente desconectados de su propósito</b>. La transformación no empieza en el código, <b>empieza en el ser</b>."
+        "p1": "Soy <name>Hugo Casanova</name>, ingeniero con 18+ años acompañando talentos tech en LATAM y EE.UU. Lo que transforma no es el código, sino las personas.",
+        "p2": "Por eso convierto habilidades humanas en resultados reales. La transformación no empieza en el código, <b>empieza en el ser</b>."
       },
       "vulnerability": {
         "text": "A los 35 años decidí pausar y preguntarme: ¿Para qué hago todo esto? Ese deseo de ser mejor persona, de sanar y crecer me llevó al coaching para <highlight2>liderar desde lo humano, no solo desde lo técnico</highlight2>."
@@ -170,10 +170,10 @@
       ]
     },
     "Agenda": {
-      "title": "¿Listo para diseñar tu futuro tech con propósito?",
+      "title": "¿Listo para tu próximo paso con propósito?",
       "paragraphs": {
-        "p1": "El mejor momento para tomar control de tu carrera fue ayer. El segundo mejor es ahora.",
-        "p2": "En nuestra sesión 1 a 1, te acompaño a <b>clarificar tus objetivos, entender tus fortalezas y crear tu próximo paso con propósito</b>. Sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
+        "p1": "El mejor momento fue ayer. El segundo mejor es ahora.",
+        "p2": "Te acompaño a clarificar objetivos, entender fortalezas y crear tu próximo paso con propósito. Construiremos juntos un plan claro y real."
       },
       "reminder": {
         "emoji": "💚",
@@ -185,14 +185,9 @@
     },
     "PorQueGratuito": {
       "title": "¿Por qué hago esto? 💚",
-      "intro": "Porque creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento, oportunidades y fe. Sin que el dinero sea una barrera.",
-      "stats": {
-        "mentored": "Jóvenes Acompañados",
-        "freeSessions": "Primera sesión gratis, siempre",
-        "experience": "Años de Experiencia"
-      },
+      "intro": "Creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento y oportunidades.",
       "quote": {
-        "text": "Si hoy puedo guiar a alguien, es porque <highlight1>otros me levantaron cuando más lo necesitaba</highlight1>. He estado en el fondo del burnout, he cuestionado todo. Esos momentos me enseñaron que <highlight2>la vulnerabilidad es fortaleza</highlight2>. Por eso la primera sesión es gratis: <highlight3>que nos conozcamos sin presión</highlight3>. Si decides continuar, las siguientes cuestan S/35 que van 100% a causas sociales. <highlight4>Tu crecimiento también ayuda a otros</highlight4>.",
+        "text": "Tu crecimiento ayuda a otros. Tu inversión en ti mismo también genera impacto.",
         "author": "Hugo Casanova"
       },
       "mentoriaCard": {
@@ -227,12 +222,12 @@
     },
     "Inicio": {
       "chipLabel": "Innovación con Alma • Tech con Propósito",
-      "title": "Tu carrera tech es más que código. Descubre quién eres más allá del teclado",
-      "subtitle": "No se trata solo de aprender el próximo framework. Se trata de conocerte a ti mismo, conectar con tu propósito y construir con autenticidad.",
+      "title": "Transforma tu talento tech en impacto real",
+      "subtitle": "Acompaño a profesionales y equipos tech hacia crecimiento con propósito y resultados sostenibles.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "paragraphs": {
-        "p1": "En <brand>HugoTech</brand>, acompaño a talentos tech como tú. Combino <b>mentoring tecnológico con coaching de autoconocimiento y desarrollo humano</b>. Trabajamos tu confianza, comunicación, inteligencia emocional, propósito y mentalidad de crecimiento. Gratis. 1 a 1. Sin filtros.",
-        "p2": "La IA potencia tu eficiencia, pero tu <b>empatía, creatividad y liderazgo son irremplazables</b>. Te preparo para liderar la transformación digital consciente, evitando el burnout y construyendo una carrera sostenible que te energice cada mañana."
+        "p1": "Integro mentoring, coaching y agilidad para convertir tus habilidades humanas en ventaja técnica y liderazgo con propósito.",
+        "p2": "La IA potencia tu eficiencia, pero tu <b>empatía, creatividad y liderazgo son irremplazables</b>. Te preparo para liderar con impacto, evitando el burnout."
       },
       "ctas": {
         "mentoria": "Agenda tu sesión 1 a 1 (Sin costo)",
@@ -851,7 +846,7 @@
       },
       "list": {
         "title": "Historias de quienes caminaron conmigo",
-        "description": "Desde los 22 años tuve la oportunidad de liderar equipos. Me equivoqué muchas veces, pero aprendí algo fundamental: <strong>el verdadero liderazgo es sacar el potencial de cada persona</strong>. Estos son los talentos que se atrevieron a pensar diferente, a arriesgarse, a desarrollar sus habilidades blandas y a empoderarse para construir su propia versión extraordinaria.",
+        "description": "El talento florece cuando se combina con propósito y mentalidad de crecimiento. Conoce cómo he acompañado a profesionales y equipos tech a generar impacto real.",
         "loadMore": "Ver más historias reales ({count} restantes) →",
         "end": {
           "emoji": "✨",

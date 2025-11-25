@@ -114,22 +114,22 @@
       "items": [
         {
           "title": "Self-awareness and personal development",
-          "description": "Real change starts within. We work on your confidence, effective communication, emotional intelligence and empathy so you lead from authenticity. We explore your values, strengths and growth areas because when you know yourself deeply, you make better decisions in your tech career.",
+          "description": "Change starts within. We work on confidence, communication, emotional intelligence and empathy so you lead from authenticity. We explore your values and strengths because when you know yourself, you decide better.",
           "iconKey": "mentoring"
         },
         {
           "title": "Growth mindset (vs. burnout)",
-          "description": "We stop glorifying exhaustion. Together we build a sustainable tech career where success doesn't drain you. With anti-burnout tools, conscious energy management, clear purpose and growth mindset applied daily. Because your well-being is the foundation of your best performance.",
+          "description": "We build a sustainable tech career where success doesn't drain you. With anti-burnout tools, conscious energy management and growth mindset applied daily. Your well-being is the foundation of your best performance.",
           "iconKey": "equipos"
         },
         {
           "title": "Agile leadership and high-performance teams",
-          "description": "Develop your ability to influence positively, create psychological safety and build extraordinary teams that deliver with excellence. With Management 3.0, agile facilitation, applied coaching and collaborative culture. We lead from trust and authentic vulnerability, not from fear or technical ego.",
+          "description": "Develop your ability to influence, create psychological safety and build extraordinary teams. With Management 3.0, agile facilitation and applied coaching. We lead from trust, not from fear or technical ego.",
           "iconKey": "equipos"
         },
         {
           "title": "Purpose + Tech Strategy",
-          "description": "We create your personalized roadmap that connects your essence with concrete action. Backend, frontend, fullstack, mobile, QA, UX/UI, database, DevOps, AI, RPA, Product Owner, Scrum Master, marketing tech, tech lead... we decide together your next step based on your values and professional goals. The best technology is built by people who know themselves and act from their purpose.",
+          "description": "We create your personalized roadmap that connects your essence with concrete action. We decide your next step based on your values and goals. The best technology is built by people who know themselves and act from their purpose.",
           "iconKey": "liderazgo"
         }
       ]
@@ -144,8 +144,8 @@
         "community": "Community that Unites Us"
       },
       "paragraphs": {
-        "p1": "I'm <name>Hugo Casanova</name>. ICF Professional Coach, Tech Mentor & Agile Leader with 18+ years supporting talents at the moment where <b>confusion transforms into clarity, fear into action, and talent into purpose</b>.",
-        "p2": "Real challenges aren't just technical. I've seen brilliant developers struggling with <b>low confidence, communication, introversion, or simply disconnected from their purpose</b>. Transformation doesn't start in code, <b>it starts in the being</b>."
+        "p1": "I'm <name>Hugo Casanova</name>, engineer with 18+ years supporting tech talents in LATAM and US. What transforms isn't the code, but the people.",
+        "p2": "That's why I turn human skills into real results. Transformation doesn't start in code, <b>it starts in the being</b>."
       },
       "vulnerability": {
         "text": "At 35 I decided to pause and ask myself: What's all this for? That desire to be a better person, to heal and grow led me to coaching to <highlight2>lead from the human side, not just the technical</highlight2>."
@@ -169,10 +169,10 @@
       ]
     },
     "Agenda": {
-      "title": "Book your session",
+      "title": "Ready for your next step with purpose?",
       "paragraphs": {
-        "p1": "Don't worry, I'm here to guide you. This is your moment to pause, look at where you're heading and decide how you want to grow.",
-        "p2": "In our session, I'll help you <b>clarify your goals, understand your strengths and create your next step with purpose</b>. Whether you're starting in tech or want to redesign your path, we'll co-create a clear and realistic plan."
+        "p1": "The best time was yesterday. The second best is now.",
+        "p2": "I'll help you clarify goals, understand strengths and create your next step with purpose. We'll co-create a clear and realistic plan."
       },
       "reminder": {
         "emoji": "💚",
@@ -225,12 +225,12 @@
     },
     "Inicio": {
       "chipLabel": "Innovation with Soul • Tech with Purpose",
-      "title": "Your tech career is more than code. Discover who you are beyond the keyboard",
-      "subtitle": "It's not just about learning the next framework. It's about knowing yourself, connecting with your purpose and building with authenticity.",
+      "title": "Transform your tech talent into real impact",
+      "subtitle": "I accompany professionals and tech teams toward growth with purpose and sustainable results.",
       "mantra": "Be authentic, inspire young tech talents and build with faith a legacy with soul.",
       "paragraphs": {
-        "p1": "At <brand>HugoTech</brand>, I accompany tech talents like you. I combine <b>tech mentoring with self-awareness coaching and human development</b>. We work on your confidence, communication, emotional intelligence, purpose and growth mindset. Free. 1-on-1. No filters.",
-        "p2": "AI boosts your efficiency, but your <b>empathy, creativity and leadership are irreplaceable</b>. I prepare you to lead conscious digital transformation, avoiding burnout and building a sustainable career that energizes you every morning."
+        "p1": "I integrate mentoring, coaching and agility to turn your human skills into technical advantage and leadership with purpose.",
+        "p2": "AI boosts your efficiency, but your <b>empathy, creativity and leadership are irreplaceable</b>. I prepare you to lead with impact, avoiding burnout."
       },
       "ctas": {
         "mentoria": "Schedule your 1-on-1 session (Free)",
