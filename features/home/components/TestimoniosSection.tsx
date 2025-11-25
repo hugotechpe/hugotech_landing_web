@@ -143,8 +143,8 @@ export function TestimoniosSection() {
               authorName="Miguel Bustillos"
               authorAge={24}
               role="Software Engineer"
-              linkedInUrl="https://www.linkedin.com/"
-              avatarSrc="/images/image5.png"
+              linkedInUrl="https://www.linkedin.com/in/miguel-angel-bustillos-alayo/"
+              avatarSrc="/images/testimonials/miguel-bustillos.jpg"
               avatarAlt="Foto de perfil de Miguel Bustillos"
               tags={["Familia", "Confianza", "Crecimiento"]}
               highlight={tMiguel("highlight")}
