@@ -49,34 +49,31 @@ export function CalendlyButton({
   size = "lg",
   fullWidth = false,
 }: CalendlyButtonProps) {
-  
   const handleClick = () => {
-    console.log('[CalendlyButton] Click detectado, abriendo en nueva pestaña');
-    
     // Construir URL con parámetros
     let calendlyUrl = url;
     const params = new URLSearchParams();
-    
+
     // Agregar prefill si existe
-    if (prefill?.email) params.append('email', prefill.email);
-    if (prefill?.firstName) params.append('first_name', prefill.firstName);
-    if (prefill?.lastName) params.append('last_name', prefill.lastName);
-    if (prefill?.name) params.append('name', prefill.name);
-    
+    if (prefill?.email) params.append("email", prefill.email);
+    if (prefill?.firstName) params.append("first_name", prefill.firstName);
+    if (prefill?.lastName) params.append("last_name", prefill.lastName);
+    if (prefill?.name) params.append("name", prefill.name);
+
     // Agregar UTM si existe
-    if (utm?.utmCampaign) params.append('utm_campaign', utm.utmCampaign);
-    if (utm?.utmSource) params.append('utm_source', utm.utmSource);
-    if (utm?.utmMedium) params.append('utm_medium', utm.utmMedium);
-    if (utm?.utmContent) params.append('utm_content', utm.utmContent);
-    if (utm?.utmTerm) params.append('utm_term', utm.utmTerm);
-    
+    if (utm?.utmCampaign) params.append("utm_campaign", utm.utmCampaign);
+    if (utm?.utmSource) params.append("utm_source", utm.utmSource);
+    if (utm?.utmMedium) params.append("utm_medium", utm.utmMedium);
+    if (utm?.utmContent) params.append("utm_content", utm.utmContent);
+    if (utm?.utmTerm) params.append("utm_term", utm.utmTerm);
+
     const queryString = params.toString();
     if (queryString) {
-      calendlyUrl += (calendlyUrl.includes('?') ? '&' : '?') + queryString;
+      calendlyUrl += (calendlyUrl.includes("?") ? "&" : "?") + queryString;
     }
-    
+
     // Abrir en nueva pestaña
-    window.open(calendlyUrl, '_blank', 'noopener,noreferrer');
+    window.open(calendlyUrl, "_blank", "noopener,noreferrer");
   };
 
   // Determinar clases de Tailwind basadas en props
@@ -113,15 +110,13 @@ export function CalendlyButton({
   };
 
   return (
-    <>
-      <button
-        onClick={handleClick}
-        className={getButtonClasses()}
-        type="button"
-        aria-label={text}
-      >
-        {text}
-      </button>
-    </>
+    <button
+      aria-label={text}
+      className={getButtonClasses()}
+      onClick={handleClick}
+      type="button"
+    >
+      {text}
+    </button>
   );
 }
