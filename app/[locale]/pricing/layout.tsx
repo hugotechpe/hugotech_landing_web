@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 import HeroNavbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -10,8 +9,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Sections.Pricing" });
-
+  
+  // No usamos traducciones aquí, solo texto hardcodeado
   const isSpanish = locale === "es";
 
   return {

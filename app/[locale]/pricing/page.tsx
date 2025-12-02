@@ -169,7 +169,7 @@ export default function PricingPage() {
                         <span className="text-success-500 text-lg flex-shrink-0">
                           ✓
                         </span>
-                        <span>{t(`b2c.includes.item${i + 1}`)}</span>
+                        <span>{t(`Pricing.b2c.includes.item${i + 1}`)}</span>
                       </li>
                     ))}
                   </ul>
@@ -242,7 +242,7 @@ export default function PricingPage() {
                         <span className="text-primary-500 text-lg flex-shrink-0">
                           ✓
                         </span>
-                        <span>{t(`b2b.benefits.item${i + 1}`)}</span>
+                        <span>{t(`Pricing.b2b.benefits.item${i + 1}`)}</span>
                       </li>
                     ))}
                   </ul>
@@ -297,10 +297,10 @@ export default function PricingPage() {
                   {i === 0 ? "💡" : i === 1 ? "🤝" : "🚀"}
                 </div>
                 <h3 className="font-bold text-customgray dark:text-white mb-2">
-                  {t(`impact.circle${i + 1}.title`)}
+                  {t(`Pricing.impact.circle${i + 1}.title`)}
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  {t(`impact.circle${i + 1}.description`)}
+                  {t(`Pricing.impact.circle${i + 1}.description`)}
                 </p>
               </motion.div>
             ))}
@@ -371,11 +371,11 @@ export default function PricingPage() {
               {Array.from({ length: 8 }).map((_, i) => (
                 <AccordionItem
                   key={i}
-                  title={t(`faq.items.q${i + 1}.question`)}
+                  title={t(`Pricing.faq.items.q${i + 1}.question`)}
                   className="bg-white dark:bg-gray-800"
                 >
                   <p className="text-gray-600 dark:text-gray-300 pb-4">
-                    {t(`faq.items.q${i + 1}.answer`)}
+                    {t(`Pricing.faq.items.q${i + 1}.answer`)}
                   </p>
                 </AccordionItem>
               ))}
