@@ -26,7 +26,7 @@ const stagger = {
 };
 
 export default function PricingPage() {
-  const t = useTranslations("Sections.Pricing");
+  const t = useTranslations("Sections");
   const params = useParams();
   const locale = (params?.locale as string) || "es";
 
@@ -45,7 +45,7 @@ export default function PricingPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: t("hero.title"),
+    name: t("Pricing.hero.title"),
     provider: {
       "@type": "Person",
       name: "Hugo Casanova",
@@ -55,7 +55,7 @@ export default function PricingPage() {
       "@type": "Offer",
       price: "35",
       priceCurrency: "PEN",
-      description: t("b2c.pricing.followUp"),
+      description: t("Pricing.b2c.pricing.followUp"),
     },
     areaServed: "PE",
     availableLanguage: ["es", "en"],
@@ -81,7 +81,7 @@ export default function PricingPage() {
               size="lg"
               className="mb-6 font-semibold"
             >
-              {t("hero.badge")}
+              {t("Pricing.hero.badge")}
             </Chip>
           </motion.div>
 
@@ -89,14 +89,14 @@ export default function PricingPage() {
             variants={fadeIn}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-customgray dark:text-white mb-6"
           >
-            {t("hero.title")}
+            {t("Pricing.hero.title")}
           </motion.h1>
 
           <motion.p
             variants={fadeIn}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
           >
-            {t("hero.subtitle")}
+            {t("Pricing.hero.subtitle")}
           </motion.p>
         </motion.div>
       </section>
@@ -114,10 +114,10 @@ export default function PricingPage() {
             <Card className="h-full border-4 border-pink-200 dark:border-pink-800 bg-gradient-to-br from-pink-50 to-rose-50 dark:from-pink-900/20 dark:to-rose-900/20">
               <CardHeader className="flex flex-col items-start gap-3 pb-6">
                 <h2 className="text-3xl font-bold text-customgray dark:text-white">
-                  {t("b2c.title")} 💚
+                  {t("Pricing.b2c.title")} 💚
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 text-base">
-                  {t("b2c.subtitle")}
+                  {t("Pricing.b2c.subtitle")}
                 </p>
               </CardHeader>
 
@@ -126,14 +126,14 @@ export default function PricingPage() {
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     <Chip color="success" variant="solid" size="lg">
-                      {t("b2c.free.badge")}
+                      {t("Pricing.b2c.free.badge")}
                     </Chip>
                     <span className="text-lg font-semibold text-customgray dark:text-white">
-                      {t("b2c.free.title")}
+                      {t("Pricing.b2c.free.title")}
                     </span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {t("b2c.free.description")}
+                    {t("Pricing.b2c.free.description")}
                   </p>
                 </div>
 
@@ -144,21 +144,21 @@ export default function PricingPage() {
                       S/35
                     </span>
                     <span className="text-base text-gray-600 dark:text-gray-300">
-                      {t("b2c.pricing.perSession")}
+                      {t("Pricing.b2c.pricing.perSession")}
                     </span>
                   </div>
                   <p className="text-sm font-semibold text-success-600 dark:text-success-400 mb-3">
-                    {t("b2c.pricing.charity")}
+                    {t("Pricing.b2c.pricing.charity")}
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {t("b2c.pricing.description")}
+                    {t("Pricing.b2c.pricing.description")}
                   </p>
                 </div>
 
                 {/* Lo que incluye */}
                 <div className="space-y-3">
                   <h3 className="font-semibold text-customgray dark:text-white">
-                    {t("b2c.includes.title")}
+                    {t("Pricing.b2c.includes.title")}
                   </h3>
                   <ul className="space-y-2">
                     {Array.from({ length: 6 }).map((_, i) => (
@@ -178,7 +178,7 @@ export default function PricingPage() {
                 {/* CTA */}
                 <CalendlyButton
                   url="https://calendly.com/hugotech/mentoria1a1"
-                  text={t("b2c.cta")}
+                  text={t("Pricing.b2c.cta")}
                   color="success"
                   size="lg"
                   className="w-full font-semibold"
@@ -192,10 +192,10 @@ export default function PricingPage() {
             <Card className="h-full border-4 border-cyan-200 dark:border-cyan-800 bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20">
               <CardHeader className="flex flex-col items-start gap-3 pb-6">
                 <h2 className="text-3xl font-bold text-customgray dark:text-white">
-                  {t("b2b.title")} 🏢
+                  {t("Pricing.b2b.title")} 🏢
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 text-base">
-                  {t("b2b.subtitle")}
+                  {t("Pricing.b2b.subtitle")}
                 </p>
               </CardHeader>
 
@@ -204,34 +204,34 @@ export default function PricingPage() {
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     <Chip color="primary" variant="solid" size="lg">
-                      {t("b2b.free.badge")}
+                      {t("Pricing.b2b.free.badge")}
                     </Chip>
                     <span className="text-lg font-semibold text-customgray dark:text-white">
-                      {t("b2b.free.title")}
+                      {t("Pricing.b2b.free.title")}
                     </span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {t("b2b.free.description")}
+                    {t("Pricing.b2b.free.description")}
                   </p>
                 </div>
 
                 {/* Inversión personalizada */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                   <h3 className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-3">
-                    {t("b2b.pricing.title")}
+                    {t("Pricing.b2b.pricing.title")}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                    {t("b2b.pricing.description")}
+                    {t("Pricing.b2b.pricing.description")}
                   </p>
                   <p className="text-xs italic text-gray-500 dark:text-gray-400 bg-primary-50 dark:bg-primary-900/20 p-3 rounded-lg">
-                    {t("b2b.pricing.note")}
+                    {t("Pricing.b2b.pricing.note")}
                   </p>
                 </div>
 
                 {/* Beneficios */}
                 <div className="space-y-3">
                   <h3 className="font-semibold text-customgray dark:text-white">
-                    {t("b2b.benefits.title")}
+                    {t("Pricing.b2b.benefits.title")}
                   </h3>
                   <ul className="space-y-2">
                     {Array.from({ length: 4 }).map((_, i) => (
@@ -251,7 +251,7 @@ export default function PricingPage() {
                 {/* CTA */}
                 <CalendlyButton
                   url="https://calendly.com/hugotech/reunion-exploratoria"
-                  text={t("b2b.cta")}
+                  text={t("Pricing.b2b.cta")}
                   color="primary"
                   size="lg"
                   className="w-full font-semibold"
@@ -275,14 +275,14 @@ export default function PricingPage() {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-customgray dark:text-white mb-6"
           >
-            {t("impact.title")} 🌱
+            {t("Pricing.impact.title")} 🌱
           </motion.h2>
 
         <motion.p
           variants={fadeIn}
           className="text-xl italic text-gray-700 dark:text-gray-300 mb-8"
         >
-          &ldquo;{t("impact.quote")}&rdquo;
+          &ldquo;{t("Pricing.impact.quote")}&rdquo;
         </motion.p>          <motion.div
             variants={stagger}
             className="grid md:grid-cols-3 gap-6 mt-12"
@@ -320,14 +320,14 @@ export default function PricingPage() {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-customgray dark:text-white mb-4"
           >
-            {t("testimonials.title")} 💬
+            {t("Pricing.testimonials.title")} 💬
           </motion.h2>
 
           <motion.p
             variants={fadeIn}
             className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
           >
-            {t("testimonials.subtitle")}
+            {t("Pricing.testimonials.subtitle")}
           </motion.p>
 
           <motion.div
@@ -356,14 +356,14 @@ export default function PricingPage() {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-customgray dark:text-white mb-4"
           >
-            {t("faq.title")} ❓
+            {t("Pricing.faq.title")} ❓
           </motion.h2>
 
           <motion.p
             variants={fadeIn}
             className="text-center text-gray-600 dark:text-gray-300 mb-12"
           >
-            {t("faq.subtitle")}
+            {t("Pricing.faq.subtitle")}
           </motion.p>
 
           <motion.div variants={fadeIn}>
@@ -397,11 +397,11 @@ export default function PricingPage() {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
-            {t("cta.title")} 🎯
+            {t("Pricing.cta.title")} 🎯
           </motion.h2>
 
           <motion.p variants={fadeIn} className="text-xl mb-8">
-            {t("cta.subtitle")}
+            {t("Pricing.cta.subtitle")}
           </motion.p>
 
           <motion.div
@@ -410,7 +410,7 @@ export default function PricingPage() {
           >
             <CalendlyButton
               url="https://calendly.com/hugotech/mentoria1a1"
-              text={t("cta.buttonB2C")}
+              text={t("Pricing.cta.buttonB2C")}
               color="default"
               variant="solid"
               size="lg"
@@ -418,7 +418,7 @@ export default function PricingPage() {
             />
             <CalendlyButton
               url="https://calendly.com/hugotech/reunion-exploratoria"
-              text={t("cta.buttonB2B")}
+              text={t("Pricing.cta.buttonB2B")}
               color="default"
               variant="bordered"
               size="lg"
