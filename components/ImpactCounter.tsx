@@ -41,7 +41,8 @@ export default function ImpactCounter({
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch("/api/impact-data")
+    // Cache busting: agregar timestamp para evitar cache del navegador
+    fetch(`/api/impact-data?t=${Date.now()}`, { cache: "no-store" })
       .then((res) => res.json())
       .then((json) => {
         setData(json);

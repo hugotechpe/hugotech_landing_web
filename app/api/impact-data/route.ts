@@ -9,6 +9,7 @@ export async function GET() {
 
     const response = await fetch(url, {
       next: { revalidate: 3600 }, // Cache por 1 hora
+      cache: "no-store", // Permitir bypass del cache
       redirect: "follow", // Seguir redirects
     });
 
