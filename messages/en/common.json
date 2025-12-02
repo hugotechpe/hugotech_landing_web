@@ -63,23 +63,59 @@
       "legal": {
         "title": "Legal Information",
         "links": [
-          { "label": "Terms & Conditions", "href": "https://hugotech.pe/terminos-y-condiciones/" },
-          { "label": "Privacy Policy", "href": "https://hugotech.pe/privacy-policy/" },
-          { "label": "Claims Book", "href": "https://hugotech.pe/libro-de-reclamaciones/" }
+          {
+            "label": "Terms & Conditions",
+            "href": "https://hugotech.pe/terminos-y-condiciones/"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://hugotech.pe/privacy-policy/"
+          },
+          {
+            "label": "Claims Book",
+            "href": "https://hugotech.pe/libro-de-reclamaciones/"
+          }
         ]
       },
       "menu": {
         "title": "Menu",
         "items": [
-          { "label": "Home", "href": "/en/" },
-          { "label": "About me", "href": "/en/#mepresento" },
-          { "label": "Companies", "href": "/en/#empresas" },
-          { "label": "Testimonials", "href": "/en/#testimonios" },
-          { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
-          { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
-          { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },
-          { "label": "Book a session", "href": "/en/#cita" },
-          { "label": "Blog", "href": "/en/blog" }
+          {
+            "label": "Home",
+            "href": "/en/"
+          },
+          {
+            "label": "About me",
+            "href": "/en/#mepresento"
+          },
+          {
+            "label": "Companies",
+            "href": "/en/#empresas"
+          },
+          {
+            "label": "Testimonials",
+            "href": "/en/#testimonios"
+          },
+          {
+            "label": "Personal Coaching 1-on-1",
+            "href": "/en/coaching"
+          },
+          {
+            "label": "Mentor Coaching 1-on-1",
+            "href": "/en/mentor-coaching"
+          },
+          {
+            "label": "Coaching with a Cause 🌍💚",
+            "href": "/en/coaching-con-causa"
+          },
+          {
+            "label": "Book a session",
+            "href": "/en/#cita"
+          },
+          {
+            "label": "Blog",
+            "href": "/en/blog"
+          }
         ]
       },
       "newsletter": {
@@ -136,7 +172,10 @@
     },
     "MePresento": {
       "title": "About me",
-      "chips": ["18+ years of experience", "Mentoring • Coaching • Agility"],
+      "chips": [
+        "18+ years of experience",
+        "Mentoring • Coaching • Agility"
+      ],
       "stats": {
         "experience": "Years of Experience",
         "empowered": "Empowered Lives",
@@ -697,32 +736,70 @@
           {
             "title": "Backend Developer → Love for architecture",
             "description": "I started with <strong>PHP, MySQL, MVC architectures</strong>. I built systems from scratch: e-commerce platforms, ERPs, ticketing systems for transportation. <strong>I learned that clean code isn't just syntax, it's empathy with whoever comes after</strong>.",
-            "chips": ["PHP", "MySQL", "REST APIs", "Software Architecture"]
+            "chips": [
+              "PHP",
+              "MySQL",
+              "REST APIs",
+              "Software Architecture"
+            ]
           },
           {
             "title": "Frontend Developer → Experience matters (and I'm passionate about it)",
             "description": "I discovered that <strong>the interface is where users feel the product</strong>. JavaScript, React, animations, performance, accessibility. <strong>It wasn't enough for it to work, it had to feel good, flow, excite</strong>. UX became my obsession: understanding every click, every microinteraction, every loading second. <strong>I fell in love with creating experiences people love to use</strong>.",
-            "chips": ["JavaScript", "React", "UX/UI Design", "Performance", "User Experience", "Design Thinking"]
+            "chips": [
+              "JavaScript",
+              "React",
+              "UX/UI Design",
+              "Performance",
+              "User Experience",
+              "Design Thinking"
+            ]
           },
           {
             "title": "Full Stack Developer → See the complete picture + Growth",
             "description": "I brought both worlds together: <strong>backend architecture + frontend experience</strong>. Now I could see the complete product, understand trade-offs, make technical decisions thinking about the business. But it wasn't enough to build well: <strong>I discovered my passion for digital marketing and growth</strong>. Analytics, conversion, funnels, A/B testing. <strong>Every line of code was an opportunity to grow the business</strong>.",
-            "chips": ["Full Stack", "Cloud (AWS, Azure)", "DevOps", "Digital Marketing", "Growth Hacking", "Analytics"]
+            "chips": [
+              "Full Stack",
+              "Cloud (AWS, Azure)",
+              "DevOps",
+              "Digital Marketing",
+              "Growth Hacking",
+              "Analytics"
+            ]
           },
           {
             "title": "Tech Lead & Product Owner → Code isn't enough",
             "description": "I led teams, defined roadmaps, negotiated with stakeholders. But here I discovered the truth: <strong>the best products are born from aligned and motivated teams</strong>. Perfect code wasn't enough if <strong>people didn't have clarity, purpose or spaces to grow</strong>.",
-            "chips": ["Product Management", "Scrum", "Technical Leadership", "Agile"]
+            "chips": [
+              "Product Management",
+              "Scrum",
+              "Technical Leadership",
+              "Agile"
+            ]
           },
           {
             "title": "Country Manager → Data-Driven culture and strategic vision",
             "description": "I managed operations in Peru coordinating <strong>development, marketing, call center, sales and talent management teams</strong>. I learned that success isn't just in the product, but in <strong>aligning multiple areas toward a common goal, measuring impact with KPIs and OKRs</strong>. I became obsessed with <strong>building a data-driven culture: every decision backed by data, every strategy validated with metrics</strong>. I understood that people are the most powerful strategy, and data is their best ally.",
-            "chips": ["Commercial Management", "KPIs & OKRs", "Data-Driven Culture", "Talent Management", "Business Strategy", "ROI & Analytics", "Multifunctional Leadership"]
+            "chips": [
+              "Commercial Management",
+              "KPIs & OKRs",
+              "Data-Driven Culture",
+              "Talent Management",
+              "Business Strategy",
+              "ROI & Analytics",
+              "Multifunctional Leadership"
+            ]
           },
           {
             "title": "Digital Strategist & Agile Coach → Transform people and cultures",
             "description": "Today my code is <strong>conversations that transform teams</strong>. My deployment is <strong>helping leaders find their voice</strong>. My best architecture is <strong>building cultures where people flourish and talent becomes real impact</strong>. I no longer code in JavaScript, but I keep innovating: now in human development.",
-            "chips": ["Professional Coaching", "Digital Transformation", "Organizational Culture", "Conscious Leadership", "Innovation"]
+            "chips": [
+              "Professional Coaching",
+              "Digital Transformation",
+              "Organizational Culture",
+              "Conscious Leadership",
+              "Innovation"
+            ]
           }
         ],
         "quote": "From backend code to leading countries. From managing KPIs to transforming cultures. <strong>I'm still an innovator, only now my language is people</strong>.",
@@ -1408,6 +1485,123 @@
         "loadingText": "Loading impact data...",
         "errorText": "Could not load data. Please try again later."
       }
+    },
+    "Pricing": {
+      "hero": {
+        "badge": "Investment with Purpose",
+        "title": "Investment in Your Tech Growth with Purpose",
+        "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
+      },
+      "b2c": {
+        "title": "Your 1 on 1 Tech Mentoring",
+        "subtitle": "Purpose coaching + Tech mentoring for young tech talents",
+        "free": {
+          "badge": "FREE",
+          "title": "First Exploratory Session",
+          "description": "Because I believe the first step toward your professional transformation should be barrier-free. We'll understand your current situation, goals and validate if my mentoring is what you need."
+        },
+        "pricing": {
+          "perSession": "per follow-up session",
+          "charity": "100% goes to charitable causes",
+          "description": "Every sol you invest returns to life. 100% of what you pay funds scholarships, educational resources and free mentoring for tech talents without resources."
+        },
+        "includes": {
+          "title": "What you'll achieve:",
+          "item1": "Clarity about your professional purpose and next steps in tech",
+          "item2": "Personalized roadmap according to your profile (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, AI, Product Owner, Scrum Master, tech leader)",
+          "item3": "Tools to overcome impostor syndrome and effective communication",
+          "item4": "Growth mindset and anti-burnout strategies applicable day to day",
+          "item5": "Technical and human preparation for interviews",
+          "item6": "Weekly email follow-up (zero spam)"
+        },
+        "cta": "Schedule your Free Session"
+      },
+      "b2b": {
+        "title": "HugoTech B2B",
+        "subtitle": "Talent Retention + Psychological Safety + Agile Innovation",
+        "free": {
+          "badge": "FREE",
+          "title": "Exploratory Session",
+          "description": "Initial diagnosis of your tech team. We identify pain points, improvement opportunities and design a tailored proposal."
+        },
+        "pricing": {
+          "title": "Personalized Investment",
+          "description": "Enterprise programs include agile leadership workshops, executive coaching, sustainable tech culture programs. Quote according to scope and expected results.",
+          "note": "B2B services have investment because they require deep diagnosis, structured workshops, follow-up and impact metrics. But the purpose is the same: teams that trust, innovate and deliver with soul. No more turnover due to toxic culture. No more silent burnout."
+        },
+        "benefits": {
+          "title": "Measurable benefits:",
+          "item1": "+ Talent Retention: Happy teams don't quit",
+          "item2": "+ Psychological Safety: Innovation without fear of failure",
+          "item3": "+ Innovation and Agility: Efficient sprints, less technical debt",
+          "item4": "- Burnout and Turnover: Sustainable high-performance culture"
+        },
+        "cta": "Schedule Exploratory Session"
+      },
+      "impact": {
+        "title": "The Virtuous Circle",
+        "quote": "I give to life what life has given me",
+        "circle1": {
+          "title": "Impact on You",
+          "description": "Clarity, direction and tools for your tech career. Connection with your professional purpose."
+        },
+        "circle2": {
+          "title": "Impact on Community",
+          "description": "Scholarships and support for talents without resources. Access to equipment, courses and free mentoring."
+        },
+        "circle3": {
+          "title": "Impact on Ecosystem",
+          "description": "More authentic tech professionals with purpose. Community that supports each other and grows together."
+        }
+      },
+      "testimonials": {
+        "title": "What those who trusted say",
+        "subtitle": "Real stories of professional and personal transformation"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Resolve your doubts before scheduling",
+        "items": {
+          "q1": {
+            "question": "How do sessions work?",
+            "answer": "100% remote via Google Meet, Zoom or your preferred platform. Flexible schedules adapted to your time zone. 60-minute sessions focused on results."
+          },
+          "q2": {
+            "question": "Do I need previous tech experience?",
+            "answer": "No. I work with people from students to professionals with years in tech seeking redirection. What matters is that you want to grow and are willing to work on yourself."
+          },
+          "q3": {
+            "question": "What happens after the free session?",
+            "answer": "You decide. If you feel my mentoring adds value, we continue with follow-up sessions. If not, we remain friends and I can refer you to other mentors in my network."
+          },
+          "q4": {
+            "question": "How do I pay S/35?",
+            "answer": "Bank transfer, Yape or Plin. I'll send you the details after confirming the session. Simple and transparent."
+          },
+          "q5": {
+            "question": "Does everything really go to charitable causes?",
+            "answer": "Yes. I share total transparency about where every sol goes: scholarships for bootcamps, computers for youth, access to educational resources. You can follow the impact on my social media."
+          },
+          "q6": {
+            "question": "Can I take just one session?",
+            "answer": "Of course. No forced packages, no contracts. Session by session, according to what you need. The idea is to be flexible and accessible."
+          },
+          "q7": {
+            "question": "What do B2B programs for companies include?",
+            "answer": "Tech culture diagnosis, agile leadership workshops, executive coaching for leaders, talent retention programs, psychological safety and change management. Everything designed to measure according to your needs."
+          },
+          "q8": {
+            "question": "How long does a B2B program last?",
+            "answer": "Depends on scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready for your tech transformation?",
+        "subtitle": "No commitment. No pressure. Just an honest conversation about your tech future.",
+        "buttonB2C": "1 on 1 Mentoring",
+        "buttonB2B": "B2B Programs"
+      }
     }
   },
   "FAQ": {
@@ -1463,123 +1657,6 @@
       "subtitle": "Contact me directly and I'll resolve all your doubts",
       "buttonPrimary": "Schedule your Free Session",
       "buttonSecondary": "Text me on WhatsApp"
-    },
-    "Pricing": {
-      "hero": {
-        "badge": "Investment with Purpose",
-        "title": "Investment in Your Tech Growth with Purpose",
-        "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
-      },
-    "b2c": {
-      "title": "Your 1 on 1 Tech Mentoring",
-      "subtitle": "Purpose coaching + Tech mentoring for young tech talents",
-      "free": {
-        "badge": "FREE",
-        "title": "First Exploratory Session",
-        "description": "Because I believe the first step toward your professional transformation should be barrier-free. We'll understand your current situation, goals and validate if my mentoring is what you need."
-      },
-      "pricing": {
-        "perSession": "per follow-up session",
-        "charity": "100% goes to charitable causes",
-        "description": "Every sol you invest returns to life. 100% of what you pay funds scholarships, educational resources and free mentoring for tech talents without resources."
-      },
-      "includes": {
-        "title": "What you'll achieve:",
-        "item1": "Clarity about your professional purpose and next steps in tech",
-        "item2": "Personalized roadmap according to your profile (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, AI, Product Owner, Scrum Master, tech leader)",
-        "item3": "Tools to overcome impostor syndrome and effective communication",
-        "item4": "Growth mindset and anti-burnout strategies applicable day to day",
-        "item5": "Technical and human preparation for interviews",
-        "item6": "Weekly email follow-up (zero spam)"
-      },
-      "cta": "Schedule your Free Session"
-    },
-    "b2b": {
-      "title": "HugoTech B2B",
-      "subtitle": "Talent Retention + Psychological Safety + Agile Innovation",
-      "free": {
-        "badge": "FREE",
-        "title": "Exploratory Session",
-        "description": "Initial diagnosis of your tech team. We identify pain points, improvement opportunities and design a tailored proposal."
-      },
-      "pricing": {
-        "title": "Personalized Investment",
-        "description": "Enterprise programs include agile leadership workshops, executive coaching, sustainable tech culture programs. Quote according to scope and expected results.",
-        "note": "B2B services have investment because they require deep diagnosis, structured workshops, follow-up and impact metrics. But the purpose is the same: teams that trust, innovate and deliver with soul. No more turnover due to toxic culture. No more silent burnout."
-      },
-      "benefits": {
-        "title": "Measurable benefits:",
-        "item1": "+ Talent Retention: Happy teams don't quit",
-        "item2": "+ Psychological Safety: Innovation without fear of failure",
-        "item3": "+ Innovation and Agility: Efficient sprints, less technical debt",
-        "item4": "- Burnout and Turnover: Sustainable high-performance culture"
-      },
-      "cta": "Schedule Exploratory Session"
-    },
-    "impact": {
-      "title": "The Virtuous Circle",
-      "quote": "I give to life what life has given me",
-      "circle1": {
-        "title": "Impact on You",
-        "description": "Clarity, direction and tools for your tech career. Connection with your professional purpose."
-      },
-      "circle2": {
-        "title": "Impact on Community",
-        "description": "Scholarships and support for talents without resources. Access to equipment, courses and free mentoring."
-      },
-      "circle3": {
-        "title": "Impact on Ecosystem",
-        "description": "More authentic tech professionals with purpose. Community that supports each other and grows together."
-      }
-    },
-    "testimonials": {
-      "title": "What those who trusted say",
-      "subtitle": "Real stories of professional and personal transformation"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Resolve your doubts before scheduling",
-      "items": {
-        "q1": {
-          "question": "How do sessions work?",
-          "answer": "100% remote via Google Meet, Zoom or your preferred platform. Flexible schedules adapted to your time zone. 60-minute sessions focused on results."
-        },
-        "q2": {
-          "question": "Do I need previous tech experience?",
-          "answer": "No. I work with people from students to professionals with years in tech seeking redirection. What matters is that you want to grow and are willing to work on yourself."
-        },
-        "q3": {
-          "question": "What happens after the free session?",
-          "answer": "You decide. If you feel my mentoring adds value, we continue with follow-up sessions. If not, we remain friends and I can refer you to other mentors in my network."
-        },
-        "q4": {
-          "question": "How do I pay S/35?",
-          "answer": "Bank transfer, Yape or Plin. I'll send you the details after confirming the session. Simple and transparent."
-        },
-        "q5": {
-          "question": "Does everything really go to charitable causes?",
-          "answer": "Yes. I share total transparency about where every sol goes: scholarships for bootcamps, computers for youth, access to educational resources. You can follow the impact on my social media."
-        },
-        "q6": {
-          "question": "Can I take just one session?",
-          "answer": "Of course. No forced packages, no contracts. Session by session, according to what you need. The idea is to be flexible and accessible."
-        },
-        "q7": {
-          "question": "What do B2B programs for companies include?",
-          "answer": "Tech culture diagnosis, agile leadership workshops, executive coaching for leaders, talent retention programs, psychological safety and change management. Everything designed to measure according to your needs."
-        },
-        "q8": {
-          "question": "How long does a B2B program last?",
-          "answer": "Depends on scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
-        }
-      }
-      }
-    },
-    "cta": {
-      "title": "Ready for your tech transformation?",
-      "subtitle": "No commitment. No pressure. Just an honest conversation about your tech future.",
-      "buttonB2C": "1 on 1 Mentoring",
-      "buttonB2B": "B2B Programs"
     }
   },
   "WhatsAppButton": {
