@@ -1465,6 +1465,123 @@
       "buttonSecondary": "Text me on WhatsApp"
     }
   },
+  "Pricing": {
+    "hero": {
+      "badge": "Investment with Purpose",
+      "title": "Investment in Your Tech Growth with Purpose",
+      "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
+    },
+    "b2c": {
+      "title": "Your 1 on 1 Tech Mentoring",
+      "subtitle": "Purpose coaching + Tech mentoring for young tech talents",
+      "free": {
+        "badge": "FREE",
+        "title": "First Exploratory Session",
+        "description": "Because I believe the first step toward your professional transformation should be barrier-free. We'll understand your current situation, goals and validate if my mentoring is what you need."
+      },
+      "pricing": {
+        "perSession": "per follow-up session",
+        "charity": "100% goes to charitable causes",
+        "description": "Every sol you invest returns to life. 100% of what you pay funds scholarships, educational resources and free mentoring for tech talents without resources."
+      },
+      "includes": {
+        "title": "What you'll achieve:",
+        "item1": "Clarity about your professional purpose and next steps in tech",
+        "item2": "Personalized roadmap according to your profile (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, AI, Product Owner, Scrum Master, tech leader)",
+        "item3": "Tools to overcome impostor syndrome and effective communication",
+        "item4": "Growth mindset and anti-burnout strategies applicable day to day",
+        "item5": "Technical and human preparation for interviews",
+        "item6": "Weekly email follow-up (zero spam)"
+      },
+      "cta": "Schedule your Free Session"
+    },
+    "b2b": {
+      "title": "HugoTech B2B",
+      "subtitle": "Talent Retention + Psychological Safety + Agile Innovation",
+      "free": {
+        "badge": "FREE",
+        "title": "Exploratory Session",
+        "description": "Initial diagnosis of your tech team. We identify pain points, improvement opportunities and design a tailored proposal."
+      },
+      "pricing": {
+        "title": "Personalized Investment",
+        "description": "Enterprise programs include agile leadership workshops, executive coaching, sustainable tech culture programs. Quote according to scope and expected results.",
+        "note": "B2B services have investment because they require deep diagnosis, structured workshops, follow-up and impact metrics. But the purpose is the same: teams that trust, innovate and deliver with soul. No more turnover due to toxic culture. No more silent burnout."
+      },
+      "benefits": {
+        "title": "Measurable benefits:",
+        "item1": "+ Talent Retention: Happy teams don't quit",
+        "item2": "+ Psychological Safety: Innovation without fear of failure",
+        "item3": "+ Innovation and Agility: Efficient sprints, less technical debt",
+        "item4": "- Burnout and Turnover: Sustainable high-performance culture"
+      },
+      "cta": "Schedule Exploratory Session"
+    },
+    "impact": {
+      "title": "The Virtuous Circle",
+      "quote": "I give to life what life has given me",
+      "circle1": {
+        "title": "Impact on You",
+        "description": "Clarity, direction and tools for your tech career. Connection with your professional purpose."
+      },
+      "circle2": {
+        "title": "Impact on Community",
+        "description": "Scholarships and support for talents without resources. Access to equipment, courses and free mentoring."
+      },
+      "circle3": {
+        "title": "Impact on Ecosystem",
+        "description": "More authentic tech professionals with purpose. Community that supports each other and grows together."
+      }
+    },
+    "testimonials": {
+      "title": "What those who trusted say",
+      "subtitle": "Real stories of professional and personal transformation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Resolve your doubts before scheduling",
+      "items": {
+        "q1": {
+          "question": "How do sessions work?",
+          "answer": "100% remote via Google Meet, Zoom or your preferred platform. Flexible schedules adapted to your time zone. 60-minute sessions focused on results."
+        },
+        "q2": {
+          "question": "Do I need previous tech experience?",
+          "answer": "No. I work with people from students to professionals with years in tech seeking redirection. What matters is that you want to grow and are willing to work on yourself."
+        },
+        "q3": {
+          "question": "What happens after the free session?",
+          "answer": "You decide. If you feel my mentoring adds value, we continue with follow-up sessions. If not, we remain friends and I can refer you to other mentors in my network."
+        },
+        "q4": {
+          "question": "How do I pay S/35?",
+          "answer": "Bank transfer, Yape or Plin. I'll send you the details after confirming the session. Simple and transparent."
+        },
+        "q5": {
+          "question": "Does everything really go to charitable causes?",
+          "answer": "Yes. I share total transparency about where every sol goes: scholarships for bootcamps, computers for youth, access to educational resources. You can follow the impact on my social media."
+        },
+        "q6": {
+          "question": "Can I take just one session?",
+          "answer": "Of course. No forced packages, no contracts. Session by session, according to what you need. The idea is to be flexible and accessible."
+        },
+        "q7": {
+          "question": "What do B2B programs for companies include?",
+          "answer": "Tech culture diagnosis, agile leadership workshops, executive coaching for leaders, talent retention programs, psychological safety and change management. Everything designed to measure according to your needs."
+        },
+        "q8": {
+          "question": "How long does a B2B program last?",
+          "answer": "Depends on scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for your tech transformation?",
+      "subtitle": "No commitment. No pressure. Just an honest conversation about your tech future.",
+      "buttonB2C": "1 on 1 Mentoring",
+      "buttonB2B": "B2B Programs"
+    }
+  },
   "WhatsAppButton": {
     "message": "Need help? Write me"
   }

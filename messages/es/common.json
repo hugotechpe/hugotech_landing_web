@@ -1464,6 +1464,123 @@
       "buttonSecondary": "Escríbeme por WhatsApp"
     }
   },
+  "Pricing": {
+    "hero": {
+      "badge": "Inversión con Propósito",
+      "title": "Inversión en tu Crecimiento Tech con Propósito",
+      "subtitle": "Mentoría que transforma vidas. Tu inversión se convierte en impacto social."
+    },
+    "b2c": {
+      "title": "Tu Mentoría Tech 1 a 1",
+      "subtitle": "Coaching de propósito + Mentoría tecnológica para jóvenes talentos tech",
+      "free": {
+        "badge": "GRATIS",
+        "title": "Primera Sesión Exploratoria",
+        "description": "Porque creo que el primer paso hacia tu transformación profesional debe ser sin barreras. Conoceremos tu situación actual, tus metas y validaremos si mi mentoría es lo que necesitas."
+      },
+      "pricing": {
+        "perSession": "por sesión de seguimiento",
+        "charity": "100% va a causas benéficas",
+        "description": "Cada sol que inviertes regresa a la vida. El 100% de lo que pagas financia becas, recursos educativos y mentoría gratuita para talentos tech sin recursos."
+      },
+      "includes": {
+        "title": "Lo que lograrás:",
+        "item1": "Claridad sobre tu propósito profesional y próximos pasos en tech",
+        "item2": "Hoja de ruta personalizada según tu perfil (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, IA, Product Owner, Scrum Master, líder técnico)",
+        "item3": "Herramientas para vencer el síndrome del impostor y comunicación efectiva",
+        "item4": "Mentalidad de crecimiento y estrategias anti-burnout aplicables al día a día",
+        "item5": "Preparación técnica y humana para entrevistas",
+        "item6": "Seguimiento semanal por correo (cero spam)"
+      },
+      "cta": "Agenda tu Sesión Gratuita"
+    },
+    "b2b": {
+      "title": "HugoTech B2B",
+      "subtitle": "Retención de Talento + Seguridad Psicológica + Innovación Ágil",
+      "free": {
+        "badge": "GRATIS",
+        "title": "Sesión Exploratoria",
+        "description": "Diagnóstico inicial de tu equipo tech. Identificamos puntos de dolor, oportunidades de mejora y diseñamos una propuesta a medida."
+      },
+      "pricing": {
+        "title": "Inversión Personalizada",
+        "description": "Los programas empresariales incluyen workshops de liderazgo ágil, coaching ejecutivo, programas de cultura tech sostenible. Cotización según alcance y resultados esperados.",
+        "note": "Los servicios B2B tienen inversión porque requieren diagnóstico profundo, talleres estructurados, seguimiento y métricas de impacto. Pero el propósito es el mismo: equipos que confían, innovan y entregan con alma. No más rotación por cultura tóxica. No más burnout silencioso."
+      },
+      "benefits": {
+        "title": "Beneficios medibles:",
+        "item1": "+ Retención de Talento: Equipos felices no renuncian",
+        "item2": "+ Seguridad Psicológica: Innovación sin miedo a fallar",
+        "item3": "+ Innovación y Agilidad: Sprints eficientes, menos deuda técnica",
+        "item4": "- Burnout y Rotación: Cultura sostenible de alto rendimiento"
+      },
+      "cta": "Agenda Sesión Exploratoria"
+    },
+    "impact": {
+      "title": "El Círculo Virtuoso",
+      "quote": "Doy a la vida lo que la vida me ha dado",
+      "circle1": {
+        "title": "Impacto en Ti",
+        "description": "Claridad, dirección y herramientas para tu carrera tech. Conexión con tu propósito profesional."
+      },
+      "circle2": {
+        "title": "Impacto en la Comunidad",
+        "description": "Becas y apoyo para talentos sin recursos. Acceso a equipos, cursos y mentoría gratuita."
+      },
+      "circle3": {
+        "title": "Impacto en el Ecosistema",
+        "description": "Más profesionales tech auténticos y con propósito. Comunidad que se apoya y crece junta."
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen quienes confiaron",
+      "subtitle": "Historias reales de transformación profesional y personal"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Resuelve tus dudas antes de agendar",
+      "items": {
+        "q1": {
+          "question": "¿Cómo funcionan las sesiones?",
+          "answer": "100% remotas por Google Meet, Zoom o la plataforma que prefieras. Flexibilidad de horarios adaptada a tu zona horaria. Sesiones de 60 minutos enfocadas en resultados."
+        },
+        "q2": {
+          "question": "¿Necesito experiencia previa en tech?",
+          "answer": "No. Trabajo con personas desde estudiantes hasta profesionales con años en tech que buscan redirección. Lo importante es que quieras crecer y estés dispuesto a trabajar en ti mismo."
+        },
+        "q3": {
+          "question": "¿Qué pasa después de la sesión gratuita?",
+          "answer": "Decides tú. Si sientes que mi mentoría te suma, continuamos con sesiones de seguimiento. Si no, quedamos como amigos y te puedo referir con otros mentores de mi red."
+        },
+        "q4": {
+          "question": "¿Cómo hago el pago de S/35?",
+          "answer": "Transferencia bancaria, Yape o Plin. Te envío los datos después de confirmar la sesión. Simple y transparente."
+        },
+        "q5": {
+          "question": "¿Realmente todo va a causas benéficas?",
+          "answer": "Sí. Comparto transparencia total sobre dónde va cada sol: becas para bootcamps, equipos de cómputo para jóvenes, acceso a recursos educativos. Puedes seguir el impacto en mis redes sociales."
+        },
+        "q6": {
+          "question": "¿Puedo tomar solo una sesión?",
+          "answer": "Por supuesto. Sin paquetes forzados, sin contratos. Sesión por sesión, según lo que necesites. La idea es que sea flexible y accesible."
+        },
+        "q7": {
+          "question": "¿Qué incluyen los programas B2B para empresas?",
+          "answer": "Diagnóstico de cultura tech, workshops de liderazgo ágil, coaching ejecutivo para líderes, programas de retención de talento, seguridad psicológica y gestión del cambio. Todo diseñado a medida según tus necesidades."
+        },
+        "q8": {
+          "question": "¿Cuánto tiempo dura un programa B2B?",
+          "answer": "Depende del alcance. Desde talleres de 1 día hasta programas de transformación de 3-6 meses con seguimiento continuo. Lo diseñamos juntos en la sesión exploratoria."
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para tu transformación tech?",
+      "subtitle": "Sin compromiso. Sin presión. Solo una conversación honesta sobre tu futuro tech.",
+      "buttonB2C": "Mentoría 1 a 1",
+      "buttonB2B": "Programas B2B"
+    }
+  },
   "WhatsAppButton": {
     "message": "¿Necesitas ayuda? Escríbeme"
   }
