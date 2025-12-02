@@ -1398,6 +1398,36 @@
       "causes": {
         "title": "Mi primer anhelo: ayudar a los que no tienen voz",
         "subtitle": "Hoy, cada sesión apoya principalmente a perritos rescatados. Pero hay sueños más grandes esperando...",
+        "items": {
+          "1": {
+            "icon": "🐕",
+            "emoji": "🐾",
+            "title": "Albergues de animales rescatados",
+            "description": "Refugios que acogen perritos y gatitos abandonados: alimento, vacunas y atención veterinaria.",
+            "impact": "Alimentación, vacunas y esterilizaciones"
+          },
+          "2": {
+            "icon": "💻",
+            "emoji": "👨‍💻",
+            "title": "Educación tech para comunidades vulnerables",
+            "description": "Talleres de programación, diseño y habilidades digitales que abren puertas laborales.",
+            "impact": "Becas, laptops y acceso a internet"
+          },
+          "3": {
+            "icon": "🍲",
+            "emoji": "❤️",
+            "title": "Comedores y cocinas comunitarias",
+            "description": "Apoyo a familias y madres que alimentan diariamente a sus comunidades.",
+            "impact": "Alimentos, utensilios y logística"
+          },
+          "4": {
+            "icon": "🌳",
+            "emoji": "🌿",
+            "title": "Reforestación en la Amazonía",
+            "description": "Proyectos de conservación y educación ambiental para proteger nuestros bosques.",
+            "impact": "Plantación de árboles y educación ambiental"
+          }
+        },
         "realCause": {
           "title": "🐾 Albergues de animales (Mi prioridad hoy)",
           "description": "Refugios como 'Huellitas de Amor' y 'ASPPA' que dan hogar, salud y amor a perritos y gatitos abandonados. Hacen milagros con muy poco.",
@@ -1445,6 +1475,16 @@
           "perSession": "por sesión (desde la segunda)",
           "distribution": "100% va a la bolsa solidaria",
           "breakdown": "Hoy va principalmente a albergues de perritos. Mañana, a más causas."
+        },
+        "cards": {
+          "1": {
+            "title": "Promovemos la adopción responsable",
+            "description": "Albergues de animales rescatados que hacen mucho con poco. Tu aporte ayuda con comida, vacunas y esterilizaciones."
+          },
+          "2": {
+            "title": "Educación tech para jóvenes",
+            "description": "Talleres de programación en zonas vulnerables: becas, equipos y acceso para quienes sueñan con una carrera en tech."
+          }
         }
       },
       "transparency": {

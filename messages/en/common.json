@@ -63,59 +63,23 @@
       "legal": {
         "title": "Legal Information",
         "links": [
-          {
-            "label": "Terms & Conditions",
-            "href": "https://hugotech.pe/terminos-y-condiciones/"
-          },
-          {
-            "label": "Privacy Policy",
-            "href": "https://hugotech.pe/privacy-policy/"
-          },
-          {
-            "label": "Claims Book",
-            "href": "https://hugotech.pe/libro-de-reclamaciones/"
-          }
+          { "label": "Terms & Conditions", "href": "https://hugotech.pe/terminos-y-condiciones/" },
+          { "label": "Privacy Policy", "href": "https://hugotech.pe/privacy-policy/" },
+          { "label": "Claims Book", "href": "https://hugotech.pe/libro-de-reclamaciones/" }
         ]
       },
       "menu": {
         "title": "Menu",
         "items": [
-          {
-            "label": "Home",
-            "href": "/en/"
-          },
-          {
-            "label": "About me",
-            "href": "/en/#mepresento"
-          },
-          {
-            "label": "Companies",
-            "href": "/en/#empresas"
-          },
-          {
-            "label": "Testimonials",
-            "href": "/en/#testimonios"
-          },
-          {
-            "label": "Personal Coaching 1-on-1",
-            "href": "/en/coaching"
-          },
-          {
-            "label": "Mentor Coaching 1-on-1",
-            "href": "/en/mentor-coaching"
-          },
-          {
-            "label": "Coaching with a Cause 🌍💚",
-            "href": "/en/coaching-con-causa"
-          },
-          {
-            "label": "Book a session",
-            "href": "/en/#cita"
-          },
-          {
-            "label": "Blog",
-            "href": "/en/blog"
-          }
+          { "label": "Home", "href": "/en/" },
+          { "label": "About me", "href": "/en/#mepresento" },
+          { "label": "Companies", "href": "/en/#empresas" },
+          { "label": "Testimonials", "href": "/en/#testimonios" },
+          { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
+          { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
+          { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },
+          { "label": "Book a session", "href": "/en/#cita" },
+          { "label": "Blog", "href": "/en/blog" }
         ]
       },
       "newsletter": {
@@ -172,10 +136,8 @@
     },
     "MePresento": {
       "title": "About me",
-      "chips": [
-        "18+ years of experience",
-        "Mentoring • Coaching • Agility"
-      ],
+      "subtitle": "We're not here to 'hack' the system. We're here to build a better one.",
+      "chips": ["18+ years of experience", "Mentoring • Coaching • Agility"],
       "stats": {
         "experience": "Years of Experience",
         "empowered": "Empowered Lives",
@@ -736,70 +698,32 @@
           {
             "title": "Backend Developer → Love for architecture",
             "description": "I started with <strong>PHP, MySQL, MVC architectures</strong>. I built systems from scratch: e-commerce platforms, ERPs, ticketing systems for transportation. <strong>I learned that clean code isn't just syntax, it's empathy with whoever comes after</strong>.",
-            "chips": [
-              "PHP",
-              "MySQL",
-              "REST APIs",
-              "Software Architecture"
-            ]
+            "chips": ["PHP", "MySQL", "REST APIs", "Software Architecture"]
           },
           {
             "title": "Frontend Developer → Experience matters (and I'm passionate about it)",
             "description": "I discovered that <strong>the interface is where users feel the product</strong>. JavaScript, React, animations, performance, accessibility. <strong>It wasn't enough for it to work, it had to feel good, flow, excite</strong>. UX became my obsession: understanding every click, every microinteraction, every loading second. <strong>I fell in love with creating experiences people love to use</strong>.",
-            "chips": [
-              "JavaScript",
-              "React",
-              "UX/UI Design",
-              "Performance",
-              "User Experience",
-              "Design Thinking"
-            ]
+            "chips": ["JavaScript", "React", "UX/UI Design", "Performance", "User Experience", "Design Thinking"]
           },
           {
             "title": "Full Stack Developer → See the complete picture + Growth",
             "description": "I brought both worlds together: <strong>backend architecture + frontend experience</strong>. Now I could see the complete product, understand trade-offs, make technical decisions thinking about the business. But it wasn't enough to build well: <strong>I discovered my passion for digital marketing and growth</strong>. Analytics, conversion, funnels, A/B testing. <strong>Every line of code was an opportunity to grow the business</strong>.",
-            "chips": [
-              "Full Stack",
-              "Cloud (AWS, Azure)",
-              "DevOps",
-              "Digital Marketing",
-              "Growth Hacking",
-              "Analytics"
-            ]
+            "chips": ["Full Stack", "Cloud (AWS, Azure)", "DevOps", "Digital Marketing", "Growth Hacking", "Analytics"]
           },
           {
             "title": "Tech Lead & Product Owner → Code isn't enough",
             "description": "I led teams, defined roadmaps, negotiated with stakeholders. But here I discovered the truth: <strong>the best products are born from aligned and motivated teams</strong>. Perfect code wasn't enough if <strong>people didn't have clarity, purpose or spaces to grow</strong>.",
-            "chips": [
-              "Product Management",
-              "Scrum",
-              "Technical Leadership",
-              "Agile"
-            ]
+            "chips": ["Product Management", "Scrum", "Technical Leadership", "Agile"]
           },
           {
             "title": "Country Manager → Data-Driven culture and strategic vision",
             "description": "I managed operations in Peru coordinating <strong>development, marketing, call center, sales and talent management teams</strong>. I learned that success isn't just in the product, but in <strong>aligning multiple areas toward a common goal, measuring impact with KPIs and OKRs</strong>. I became obsessed with <strong>building a data-driven culture: every decision backed by data, every strategy validated with metrics</strong>. I understood that people are the most powerful strategy, and data is their best ally.",
-            "chips": [
-              "Commercial Management",
-              "KPIs & OKRs",
-              "Data-Driven Culture",
-              "Talent Management",
-              "Business Strategy",
-              "ROI & Analytics",
-              "Multifunctional Leadership"
-            ]
+            "chips": ["Commercial Management", "KPIs & OKRs", "Data-Driven Culture", "Talent Management", "Business Strategy", "ROI & Analytics", "Multifunctional Leadership"]
           },
           {
             "title": "Digital Strategist & Agile Coach → Transform people and cultures",
             "description": "Today my code is <strong>conversations that transform teams</strong>. My deployment is <strong>helping leaders find their voice</strong>. My best architecture is <strong>building cultures where people flourish and talent becomes real impact</strong>. I no longer code in JavaScript, but I keep innovating: now in human development.",
-            "chips": [
-              "Professional Coaching",
-              "Digital Transformation",
-              "Organizational Culture",
-              "Conscious Leadership",
-              "Innovation"
-            ]
+            "chips": ["Professional Coaching", "Digital Transformation", "Organizational Culture", "Conscious Leadership", "Innovation"]
           }
         ],
         "quote": "From backend code to leading countries. From managing KPIs to transforming cultures. <strong>I'm still an innovator, only now my language is people</strong>.",
@@ -1426,6 +1350,44 @@
             "impact": "Tree planting and environmental education"
           }
         }
+        ,
+        "realCause": {
+          "title": "🐾 Animal shelters (my priority today)",
+          "description": "Shelters like 'Huellitas de Amor' and 'ASPPA' that provide home, health and love to abandoned dogs and cats. They do miracles with very little.",
+          "impact": "✅ Food, vaccines, sterilizations, veterinary care"
+        },
+        "dreams": {
+          "title": "Aspirations for the future",
+          "subtitle": "Dreams I want to make real as the solidarity fund grows:",
+          "items": {
+            "1": {
+              "icon": "🌎",
+              "title": "Tech internships at US companies",
+              "description": "Help young Peruvian talents secure remote pre-professional internships at international companies. Open doors I didn't have early in my career."
+            },
+            "2": {
+              "icon": "📚",
+              "title": "Scholarships for tech education",
+              "description": "Fund bootcamps, courses and certifications for talented kids without resources so money doesn't stop their potential."
+            },
+            "3": {
+              "icon": "💻",
+              "title": "Laptops for young programmers",
+              "description": "A decent computer can change a life. Provide equipment to those who have the talent but not the tools."
+            },
+            "4": {
+              "icon": "🤝",
+              "title": "Free group mentoring",
+              "description": "No-cost group sessions where young techs share challenges, learn together and support each other."
+            },
+            "5": {
+              "icon": "💼",
+              "title": "First freelance projects",
+              "description": "Help them get their first clients, build a portfolio and charge fairly so they can take the leap without burning out."
+            }
+          }
+        },
+        "honestNote": "For now the focus is rescued dogs. The other projects are sincere aspirations I will fulfill as the fund grows. No rush, but no pause."
       },
       "investment": {
         "title": "S/35 soles that transform two lives",
@@ -1493,26 +1455,26 @@
         "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
       },
       "b2c": {
-        "title": "Your 1 on 1 Tech Mentoring",
+        "title": "Your 1-on-1 Tech Mentoring",
         "subtitle": "Purpose coaching + Tech mentoring for young tech talents",
         "free": {
           "badge": "FREE",
           "title": "First Exploratory Session",
-          "description": "Because I believe the first step toward your professional transformation should be barrier-free. We'll understand your current situation, goals and validate if my mentoring is what you need."
+          "description": "Because I believe the first step toward your professional transformation should be barrier-free. We'll learn about your current situation, your goals, and validate if my mentoring is what you need."
         },
         "pricing": {
           "perSession": "per follow-up session",
           "charity": "100% goes to charitable causes",
-          "description": "Every sol you invest returns to life. 100% of what you pay funds scholarships, educational resources and free mentoring for tech talents without resources."
+          "description": "Every sol you invest returns to life. 100% of what you pay funds scholarships, educational resources, and free mentoring for tech talents without resources."
         },
         "includes": {
           "title": "What you'll achieve:",
           "item1": "Clarity about your professional purpose and next steps in tech",
-          "item2": "Personalized roadmap according to your profile (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, AI, Product Owner, Scrum Master, tech leader)",
+          "item2": "Personalized roadmap according to your profile (backend, frontend, fullstack, mobile, QA, UX/UI, DevOps, AI, Product Owner, Scrum Master, tech lead)",
           "item3": "Tools to overcome impostor syndrome and effective communication",
-          "item4": "Growth mindset and anti-burnout strategies applicable day to day",
+          "item4": "Growth mindset and anti-burnout strategies applicable daily",
           "item5": "Technical and human preparation for interviews",
-          "item6": "Weekly email follow-up (zero spam)"
+          "item6": "Weekly follow-up by email (zero spam)"
         },
         "cta": "Schedule your Free Session"
       },
@@ -1522,12 +1484,12 @@
         "free": {
           "badge": "FREE",
           "title": "Exploratory Session",
-          "description": "Initial diagnosis of your tech team. We identify pain points, improvement opportunities and design a tailored proposal."
+          "description": "Initial diagnosis of your tech team. We identify pain points, improvement opportunities, and design a customized proposal."
         },
         "pricing": {
           "title": "Personalized Investment",
-          "description": "Enterprise programs include agile leadership workshops, executive coaching, sustainable tech culture programs. Quote according to scope and expected results.",
-          "note": "B2B services have investment because they require deep diagnosis, structured workshops, follow-up and impact metrics. But the purpose is the same: teams that trust, innovate and deliver with soul. No more turnover due to toxic culture. No more silent burnout."
+          "description": "Business programs include agile leadership workshops, executive coaching, sustainable tech culture programs. Quotation according to scope and expected results.",
+          "note": "B2B services require investment because they involve deep diagnosis, structured workshops, follow-up, and impact metrics. But the purpose is the same: teams that trust, innovate, and deliver with soul. No more turnover due to toxic culture. No more silent burnout."
         },
         "benefits": {
           "title": "Measurable benefits:",
@@ -1543,15 +1505,15 @@
         "quote": "I give to life what life has given me",
         "circle1": {
           "title": "Impact on You",
-          "description": "Clarity, direction and tools for your tech career. Connection with your professional purpose."
+          "description": "Clarity, direction, and tools for your tech career. Connection with your professional purpose."
         },
         "circle2": {
-          "title": "Impact on Community",
-          "description": "Scholarships and support for talents without resources. Access to equipment, courses and free mentoring."
+          "title": "Impact on the Community",
+          "description": "Scholarships and support for talents without resources. Access to equipment, courses, and free mentoring."
         },
         "circle3": {
-          "title": "Impact on Ecosystem",
-          "description": "More authentic tech professionals with purpose. Community that supports each other and grows together."
+          "title": "Impact on the Ecosystem",
+          "description": "More authentic tech professionals with purpose. Community that supports and grows together."
         }
       },
       "testimonials": {
@@ -1563,43 +1525,43 @@
         "subtitle": "Resolve your doubts before scheduling",
         "items": {
           "q1": {
-            "question": "How do sessions work?",
-            "answer": "100% remote via Google Meet, Zoom or your preferred platform. Flexible schedules adapted to your time zone. 60-minute sessions focused on results."
+            "question": "How do the sessions work?",
+            "answer": "100% remote via Google Meet, Zoom, or your preferred platform. Schedule flexibility adapted to your time zone. 60-minute sessions focused on results."
           },
           "q2": {
             "question": "Do I need previous tech experience?",
-            "answer": "No. I work with people from students to professionals with years in tech seeking redirection. What matters is that you want to grow and are willing to work on yourself."
+            "answer": "No. I work with people from students to professionals with years in tech looking for redirection. What matters is that you want to grow and are willing to work on yourself."
           },
           "q3": {
             "question": "What happens after the free session?",
             "answer": "You decide. If you feel my mentoring adds value, we continue with follow-up sessions. If not, we remain friends and I can refer you to other mentors in my network."
           },
           "q4": {
-            "question": "How do I pay S/35?",
-            "answer": "Bank transfer, Yape or Plin. I'll send you the details after confirming the session. Simple and transparent."
+            "question": "How do I pay the S/35?",
+            "answer": "Bank transfer, Yape, or Plin. I'll send you the details after confirming the session. Simple and transparent."
           },
           "q5": {
             "question": "Does everything really go to charitable causes?",
-            "answer": "Yes. I share total transparency about where every sol goes: scholarships for bootcamps, computers for youth, access to educational resources. You can follow the impact on my social media."
+            "answer": "Yes. I share total transparency about where each sol goes: bootcamp scholarships, computer equipment for youth, access to educational resources. You can follow the impact on my social media."
           },
           "q6": {
             "question": "Can I take just one session?",
-            "answer": "Of course. No forced packages, no contracts. Session by session, according to what you need. The idea is to be flexible and accessible."
+            "answer": "Of course. No forced packages, no contracts. Session by session, according to what you need. The idea is for it to be flexible and accessible."
           },
           "q7": {
             "question": "What do B2B programs for companies include?",
-            "answer": "Tech culture diagnosis, agile leadership workshops, executive coaching for leaders, talent retention programs, psychological safety and change management. Everything designed to measure according to your needs."
+            "answer": "Tech culture diagnosis, agile leadership workshops, executive coaching for leaders, talent retention programs, psychological safety, and change management. All custom-designed according to your needs."
           },
           "q8": {
             "question": "How long does a B2B program last?",
-            "answer": "Depends on scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
+            "answer": "Depends on the scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
           }
         }
       },
       "cta": {
         "title": "Ready for your tech transformation?",
         "subtitle": "No commitment. No pressure. Just an honest conversation about your tech future.",
-        "buttonB2C": "1 on 1 Mentoring",
+        "buttonB2C": "1-on-1 Mentoring",
         "buttonB2B": "B2B Programs"
       }
     }

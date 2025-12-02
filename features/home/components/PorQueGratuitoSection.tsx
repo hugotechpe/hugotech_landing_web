@@ -116,7 +116,7 @@ export function PorQueGratuitoSection() {
 
         {/* Contenedor de dos columnas: Mentoría 1 a 1 y Filosofía */}
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
             <motion.div
               initial="hidden"
@@ -133,28 +133,28 @@ export function PorQueGratuitoSection() {
                   shadow="lg"
                   className="bg-gradient-to-br from-[#FFE8DB] to-[#FFD4B8] border-2 border-orange-200 h-full"
                 >
-                  <CardBody className="flex flex-col gap-4 text-customgray p-6 md:p-8">
+                  <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
                       <span className="text-4xl">🎓</span>
                     </div>
 
-                    <h3 className="text-2xl md:text-3xl font-bold font-heading">
+                    <h3 className="text-xl md:text-2xl font-bold font-heading">
                       {t("mentoriaCard.title")}
                     </h3>
-                    <p className="text-base md:text-lg font-semibold text-primary">
+                    <p className="text-sm md:text-base font-semibold text-primary">
                       {t("mentoriaCard.subtitle")}
                     </p>
 
                     <div className="space-y-4">
-                      <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
+                      <p className="text-sm md:text-[15px] leading-[1.8] tracking-wide">
                         {t.rich("mentoriaCard.p1", {
                           b: (chunks) => (
                             <span className="font-bold">{chunks}</span>
                           ),
                         })}
                       </p>
-                      <p className="text-[15px] md:text-base leading-[1.9] tracking-wide">
+                      <p className="text-sm md:text-[15px] leading-[1.8] tracking-wide">
                         {t.rich("mentoriaCard.p2", {
                           b: (chunks) => (
                             <span className="font-bold">{chunks}</span>
@@ -164,10 +164,10 @@ export function PorQueGratuitoSection() {
                     </div>
 
                     <div className="mt-4">
-                      <h4 className="text-sm md:text-base font-bold mb-3 text-primary uppercase tracking-wide">
+                      <h4 className="text-sm md:text-sm font-bold mb-2 text-primary uppercase tracking-wide">
                         {t("mentoriaCard.resultsTitle")}
                       </h4>
-                      <ul className="space-y-3 text-customgray text-[14px] md:text-[15px]">
+                      <ul className="space-y-2 text-customgray text-sm md:text-[14px]">
                         {(pgr?.mentoriaCard?.resultsItems ?? []).map(
                           (item: string, idx: number) => (
                             <li
@@ -184,7 +184,7 @@ export function PorQueGratuitoSection() {
                       </ul>
                     </div>
 
-                    <div className="mt-auto pt-6">
+                    <div className="mt-auto pt-4">
                       <Button
                         as={Link}
                         href="#cita"
@@ -219,16 +219,16 @@ export function PorQueGratuitoSection() {
                   shadow="lg"
                   className="bg-gradient-to-br from-[#E0F6F5] to-[#C4F1EF] border-2 border-primary/30 h-full"
                 >
-                  <CardBody className="flex flex-col gap-4 text-customgray p-6 md:p-8">
+                  <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
                       <span className="text-4xl">💡</span>
                     </div>
 
-                    <h3 className="text-2xl md:text-3xl font-bold">
+                    <h3 className="text-xl md:text-2xl font-bold">
                       {t("filosofiaCard.title")}
                     </h3>
-                    <p className="text-lg md:text-xl font-semibold text-primary">
+                    <p className="text-sm md:text-base font-semibold text-primary">
                       {t("filosofiaCard.subtitle")}
                     </p>
 
@@ -250,10 +250,10 @@ export function PorQueGratuitoSection() {
                     </div>
 
                     <div className="mt-4">
-                      <h4 className="text-base font-bold mb-3 text-primary">
+                      <h4 className="text-sm font-bold mb-2 text-primary">
                         {t("filosofiaCard.resultsTitle")}
                       </h4>
-                      <ul className="space-y-3 text-customgray text-sm md:text-base">
+                      <ul className="space-y-2 text-customgray text-sm md:text-sm">
                         {(pgr?.filosofiaCard?.resultsItems ?? []).map(
                           (item: string, idx: number) => (
                             <li
@@ -270,7 +270,7 @@ export function PorQueGratuitoSection() {
                       </ul>
                     </div>
 
-                    <div className="mt-auto pt-6">
+                    <div className="mt-auto pt-4">
                       {/* Glassmorphism quote */}
                       <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 border border-primary/20">
                         <p className="text-customgray italic text-sm text-center">
