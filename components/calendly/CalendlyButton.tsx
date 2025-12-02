@@ -1,25 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { useCalendlyScript } from "@/hooks/useCalendlyScript";
-import {
-  trackCTAClick,
-  trackCalendlyEventScheduled,
-  trackCalendlyDateSelected,
-} from "@/lib/gtm";
-
-// Declaración de tipos para la API de Calendly
-declare global {
-  interface Window {
-    Calendly?: {
-      initPopupWidget: (options: {
-        url: string;
-        prefill?: Record<string, any>;
-        utm?: Record<string, any>;
-      }) => void;
-    };
-  }
-}
+import React from "react";
 
 interface CalendlyButtonProps {
   url?: string;
@@ -68,67 +49,35 @@ export function CalendlyButton({
   size = "lg",
   fullWidth = false,
 }: CalendlyButtonProps) {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const { isLoaded, loadCalendlyScript } = useCalendlyScript();
-
-  // Listen to Calendly PostMessage events
-  useEffect(() => {
-    const handleCalendlyEvent = (e: MessageEvent) => {
-      if (e.origin !== "https://calendly.com") return;
-
-      const eventData = e.data;
-
-      if (eventData.event) {
-        if (process.env.NODE_ENV === "development") {
-          console.log("[Calendly Event - Popup]", eventData.event, eventData);
-        }
-
-        switch (eventData.event) {
-          case "calendly.date_and_time_selected":
-            trackCalendlyDateSelected();
-            break;
-          case "calendly.event_scheduled":
-            trackCalendlyEventScheduled(
-              eventData.payload?.event?.uri,
-              eventData.payload?.invitee?.uri,
-              eventData.payload?.event?.start_time,
-            );
-            // Cerrar modal después de agendar
-            setTimeout(() => setIsOpen(false), 2000);
-            break;
-        }
-      }
-    };
-
-    if (isOpen) {
-      window.addEventListener("message", handleCalendlyEvent);
-    }
-
-    return () => {
-      window.removeEventListener("message", handleCalendlyEvent);
-    };
-  }, [isOpen]);
-
+  
   const handleClick = () => {
-    // Cargar script de Calendly si no está cargado
-    if (!isLoaded) {
-      loadCalendlyScript();
+    console.log('[CalendlyButton] Click detectado, abriendo en nueva pestaña');
+    
+    // Construir URL con parámetros
+    let calendlyUrl = url;
+    const params = new URLSearchParams();
+    
+    // Agregar prefill si existe
+    if (prefill?.email) params.append('email', prefill.email);
+    if (prefill?.firstName) params.append('first_name', prefill.firstName);
+    if (prefill?.lastName) params.append('last_name', prefill.lastName);
+    if (prefill?.name) params.append('name', prefill.name);
+    
+    // Agregar UTM si existe
+    if (utm?.utmCampaign) params.append('utm_campaign', utm.utmCampaign);
+    if (utm?.utmSource) params.append('utm_source', utm.utmSource);
+    if (utm?.utmMedium) params.append('utm_medium', utm.utmMedium);
+    if (utm?.utmContent) params.append('utm_content', utm.utmContent);
+    if (utm?.utmTerm) params.append('utm_term', utm.utmTerm);
+    
+    const queryString = params.toString();
+    if (queryString) {
+      calendlyUrl += (calendlyUrl.includes('?') ? '&' : '?') + queryString;
     }
-    setIsOpen(true);
-    trackCTAClick("calendly_button", text, url);
+    
+    // Abrir en nueva pestaña
+    window.open(calendlyUrl, '_blank', 'noopener,noreferrer');
   };
-
-  // Abrir popup de Calendly cuando el script esté cargado
-  useEffect(() => {
-    if (isOpen && isLoaded && window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url,
-        prefill,
-        utm,
-      });
-      setIsOpen(false); // Reset para próximas aperturas
-    }
-  }, [isOpen, isLoaded, url, prefill, utm]);
 
   // Determinar clases de Tailwind basadas en props
   const getButtonClasses = () => {
