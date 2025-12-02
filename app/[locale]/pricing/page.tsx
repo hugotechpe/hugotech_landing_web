@@ -278,14 +278,12 @@ export default function PricingPage() {
             {t("impact.title")} 🌱
           </motion.h2>
 
-          <motion.p
-            variants={fadeIn}
-            className="text-xl italic text-gray-700 dark:text-gray-300 mb-8"
-          >
-            "{t("impact.quote")}"
-          </motion.p>
-
-          <motion.div
+        <motion.p
+          variants={fadeIn}
+          className="text-xl italic text-gray-700 dark:text-gray-300 mb-8"
+        >
+          &ldquo;{t("impact.quote")}&rdquo;
+        </motion.p>          <motion.div
             variants={stagger}
             className="grid md:grid-cols-3 gap-6 mt-12"
           >

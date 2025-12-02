@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { HeroNavbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import HeroNavbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 type Props = {
@@ -59,11 +59,10 @@ export default function PricingLayout({
   return (
     <>
       <HeroNavbar />
-      <main className="relative">
+      <main className="flex-grow">
         {children}
         <WhatsAppButton
           message="Hola! Quiero más información sobre la mentoría tech 🚀"
-          position="bottom-right"
         />
       </main>
       <Footer />
