@@ -1463,14 +1463,13 @@
       "subtitle": "Contact me directly and I'll resolve all your doubts",
       "buttonPrimary": "Schedule your Free Session",
       "buttonSecondary": "Text me on WhatsApp"
-    }
-  },
-  "Pricing": {
-    "hero": {
-      "badge": "Investment with Purpose",
-      "title": "Investment in Your Tech Growth with Purpose",
-      "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
     },
+    "Pricing": {
+      "hero": {
+        "badge": "Investment with Purpose",
+        "title": "Investment in Your Tech Growth with Purpose",
+        "subtitle": "Mentoring that transforms lives. Your investment becomes social impact."
+      },
     "b2c": {
       "title": "Your 1 on 1 Tech Mentoring",
       "subtitle": "Purpose coaching + Tech mentoring for young tech talents",
@@ -1573,6 +1572,7 @@
           "question": "How long does a B2B program last?",
           "answer": "Depends on scope. From 1-day workshops to 3-6 month transformation programs with continuous follow-up. We design it together in the exploratory session."
         }
+      }
       }
     },
     "cta": {

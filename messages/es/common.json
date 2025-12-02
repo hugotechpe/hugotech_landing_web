@@ -1462,14 +1462,13 @@
       "subtitle": "Contáctame directamente y resolveré todas tus dudas",
       "buttonPrimary": "Agenda tu Sesión Gratuita",
       "buttonSecondary": "Escríbeme por WhatsApp"
-    }
-  },
-  "Pricing": {
-    "hero": {
-      "badge": "Inversión con Propósito",
-      "title": "Inversión en tu Crecimiento Tech con Propósito",
-      "subtitle": "Mentoría que transforma vidas. Tu inversión se convierte en impacto social."
     },
+    "Pricing": {
+      "hero": {
+        "badge": "Inversión con Propósito",
+        "title": "Inversión en tu Crecimiento Tech con Propósito",
+        "subtitle": "Mentoría que transforma vidas. Tu inversión se convierte en impacto social."
+      },
     "b2c": {
       "title": "Tu Mentoría Tech 1 a 1",
       "subtitle": "Coaching de propósito + Mentoría tecnológica para jóvenes talentos tech",
@@ -1579,6 +1578,7 @@
       "subtitle": "Sin compromiso. Sin presión. Solo una conversación honesta sobre tu futuro tech.",
       "buttonB2C": "Mentoría 1 a 1",
       "buttonB2B": "Programas B2B"
+      }
     }
   },
   "WhatsAppButton": {
