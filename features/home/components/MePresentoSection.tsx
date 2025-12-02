@@ -2,12 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import { Card, CardHeader, CardBody } from "@heroui/card";
+import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
+import { useMessages, useTranslations } from "next-intl";
+
 import IconBoxCard from "@/components/cards/IconBoxCard";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import { useMessages, useTranslations } from "next-intl";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
 // Variantes de animación para scroll
@@ -69,11 +70,11 @@ export function MePresentoSection() {
 
   return (
     <section
-      id="mepresento"
-      aria-label={title}
       itemScope
-      itemType="https://schema.org/Person"
+      aria-label={title}
       className="scroll-mt-0 bg-gradient-to-b from-primary via-primary to-white relative overflow-hidden"
+      id="mepresento"
+      itemType="https://schema.org/Person"
     >
       {/* Patrón de fondo sutil */}
       <div className="absolute inset-0 opacity-5">
@@ -84,11 +85,11 @@ export function MePresentoSection() {
         <div className="container mx-auto max-w-1400 px-6 py-16 md:py-24">
           {/* Stats Bar Premium con AnimatedCounter */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
             className="mb-12 md:mb-16"
+            initial="hidden"
+            variants={fadeInUp}
+            viewport={{ once: true }}
+            whileInView="visible"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
@@ -162,9 +163,9 @@ export function MePresentoSection() {
             {/* Columna izquierda con animación */}
             <motion.div
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
+              viewport={{ once: true, margin: "-100px" }}
+              whileInView="visible"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray leading-tight">
                 {title}
@@ -181,15 +182,15 @@ export function MePresentoSection() {
                   <motion.div
                     key={chip}
                     initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     <Chip
-                      color="primary"
-                      variant="flat"
                       className="bg-gradient-to-r from-primary to-[#0d4746] text-white font-semibold px-4 py-5 text-base"
+                      color="primary"
                       size="lg"
+                      variant="flat"
                     >
                       {chip}
                     </Chip>
@@ -199,11 +200,11 @@ export function MePresentoSection() {
 
               {/* Glassmorphism Quote Card */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
                 className="mt-8"
+                initial={{ opacity: 0, y: 20 }}
+                transition={{ delay: 0.3 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1, y: 0 }}
               >
                 <Card
                   className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl"
@@ -247,28 +248,28 @@ export function MePresentoSection() {
 
               {/* Items con hover mejorado */}
               <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={staggerContainer}
                 className="mt-8 space-y-4"
+                initial="hidden"
+                variants={staggerContainer}
+                viewport={{ once: true }}
+                whileInView="visible"
               >
-                {items.map((item, idx) => (
+                {items.map((item, _idx) => (
                   <motion.div
                     key={item.title}
+                    transition={{ type: "spring", stiffness: 300 }}
                     variants={fadeInUp}
                     whileHover={{ x: 10, scale: 1.02 }}
-                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     <IconBoxCard
-                      title={item.title}
-                      description={item.description}
                       Icon={
                         item.iconKey
                           ? IconComponentMap[item.iconKey as IconKey]
                           : undefined
                       }
+                      description={item.description}
                       headingAs="h3"
+                      title={item.title}
                     />
                   </motion.div>
                 ))}
@@ -277,40 +278,40 @@ export function MePresentoSection() {
 
             {/* Imagen de perfil con efecto parallax sutil */}
             <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
               className="relative"
+              initial="hidden"
+              variants={fadeInUp}
+              viewport={{ once: true, margin: "-100px" }}
+              whileInView="visible"
             >
               <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
                 className="relative w-full max-w-md md:max-w-lg mx-auto"
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.02 }}
               >
                 {/* Efecto glow detrás de la imagen */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-brand/20 blur-3xl rounded-full transform scale-90" />
 
                 <div className="relative">
                   <Image
-                    src="/images/image2.png"
                     alt="Foto de Hugo Casanova, mentor y coach en tecnología"
-                    width={623}
-                    height={563}
-                    quality={75}
-                    loading="lazy"
-                    placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nAE0AMv/ANLS0tPT09TU1NXV1QDW1tbX19fY2NjZ2dkA2tra29vb3Nzc3d3dAN7e3t/f3+Dg4OHh4SEvGxe4G8ycAAAAAElFTkSuQmCC"
                     className="object-cover w-full h-auto rounded-2xl shadow-2xl relative z-10"
+                    height={563}
+                    loading="lazy"
+                    placeholder="blur"
+                    quality={75}
+                    src="/images/image2.png"
+                    width={623}
                   />
 
                   {/* Badge flotante */}
                   <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5, type: "spring" }}
                     className="absolute -bottom-6 -right-6 z-20"
+                    initial={{ opacity: 0, scale: 0 }}
+                    transition={{ delay: 0.5, type: "spring" }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     <Card
                       className="bg-gradient-to-br from-brand to-yellow-400 shadow-2xl"

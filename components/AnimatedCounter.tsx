@@ -30,18 +30,18 @@ export function AnimatedCounter({
     <span ref={ref} className={className}>
       {inView ? (
         <CountUp
-          start={0}
-          end={end}
-          duration={duration}
-          decimals={decimals}
-          decimal=","
-          suffix={suffix}
-          prefix={prefix}
           useEasing
+          decimal=","
+          decimals={decimals}
+          duration={duration}
           easingFn={(t, b, c, d) => {
             // easeOutExpo
             return c * (-Math.pow(2, (-10 * t) / d) + 1) + b;
           }}
+          end={end}
+          prefix={prefix}
+          start={0}
+          suffix={suffix}
         />
       ) : (
         <span>

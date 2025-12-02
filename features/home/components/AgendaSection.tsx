@@ -3,9 +3,10 @@
 import React from "react";
 import { Card, CardBody } from "@heroui/card";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+
 import { CalendlyEmbed } from "@/components/calendly/CalendlyEmbed";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
-import { motion } from "framer-motion";
 import { useSectionTracking } from "@/hooks/useGTMTracking";
 
 const fadeInUp = {
@@ -25,20 +26,20 @@ export function AgendaSection() {
 
   return (
     <section
-      id="cita"
-      aria-label={t("title")}
       itemScope
-      itemType="https://schema.org/Person"
+      aria-label={t("title")}
       className="scroll-mt-0 bg-gradient-to-b from-white to-primary/5"
+      id="cita"
+      itemType="https://schema.org/Person"
     >
       <div className="container mx-auto max-w-1400 px-6 py-16 md:py-24">
         {/* Encabezado */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
           className="max-w-3xl mx-auto text-center mb-12"
+          initial="hidden"
+          variants={fadeInUp}
+          viewport={{ once: true, margin: "-100px" }}
+          whileInView="visible"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
             {t("title")}
@@ -69,17 +70,17 @@ export function AgendaSection() {
 
         {/* Calendly Embed Inline */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
           className="max-w-5xl mx-auto"
+          initial="hidden"
+          variants={fadeInUp}
+          viewport={{ once: true, margin: "-100px" }}
+          whileInView="visible"
         >
           {/* Desktop: Embed inline */}
           <div className="hidden md:block">
             <CalendlyEmbed
-              url="https://calendly.com/hugotech/mentoria1a1"
               height="700px"
+              url="https://calendly.com/hugotech/mentoria1a1"
               utm={{
                 utmSource: "hugotech.pe",
                 utmMedium: "website",
@@ -91,16 +92,16 @@ export function AgendaSection() {
           {/* Mobile: Botón modal popup (mejor UX en pantallas pequeñas) */}
           <div className="block md:hidden text-center">
             <CalendlyButton
-              text={t("ctaLabel")}
-              variant="solid"
+              className="w-full sm:w-auto"
               color="primary"
               size="lg"
-              className="w-full sm:w-auto"
+              text={t("ctaLabel")}
               utm={{
                 utmSource: "hugotech.pe",
                 utmMedium: "website_mobile",
                 utmCampaign: "homepage_cita_section_mobile",
               }}
+              variant="solid"
             />
             <p className="mt-4 text-sm text-gray-600">💚 {t("note")}</p>
           </div>

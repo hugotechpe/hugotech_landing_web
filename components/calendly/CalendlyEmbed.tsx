@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { InlineWidget } from "react-calendly";
+
 import {
   trackCalendlyWidgetLoaded,
   trackCalendlyDateSelected,
@@ -45,10 +46,6 @@ export function CalendlyEmbed({
 
       // Calendly envía eventos con esta estructura
       if (eventData.event) {
-        if (process.env.NODE_ENV === "development") {
-          console.log("[Calendly Event]", eventData.event, eventData);
-        }
-
         switch (eventData.event) {
           case "calendly.date_and_time_selected":
             trackCalendlyDateSelected();
@@ -74,13 +71,13 @@ export function CalendlyEmbed({
   return (
     <div className="w-full rounded-2xl overflow-hidden shadow-lg">
       <InlineWidget
-        url={url}
         prefill={prefill}
-        utm={utm}
         styles={{
           height: height,
           width: "100%",
         }}
+        url={url}
+        utm={utm}
       />
     </div>
   );

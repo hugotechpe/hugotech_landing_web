@@ -3,8 +3,9 @@
 import * as React from "react";
 import { Card, CardBody } from "@heroui/card";
 import clsx from "clsx";
-import { IconSvgProps } from "@/types";
 import { motion } from "framer-motion";
+
+import { IconSvgProps } from "@/types";
 
 export type IconComponent = React.FC<IconSvgProps>;
 
@@ -37,28 +38,28 @@ export const IconBoxCard: React.FC<IconBoxCardProps> = ({
 
   return (
     <article aria-labelledby={titleId} className={clsx("", className)}>
-      <Card shadow="none" className="bg-transparent">
+      <Card className="bg-transparent" shadow="none">
         <CardBody>
           <div className={clsx("flex items-start gap-4", classNameCardBody)}>
             <motion.div
-              whileHover={{
-                scale: 1.1,
-                rotate: [0, -5, 5, -5, 0],
-              }}
+              aria-hidden={iconAriaLabel ? undefined : true}
+              aria-label={iconAriaLabel}
+              className="flex h-18 w-18 items-center justify-center rounded-full bg-[#E0F1DF] text-primary shrink-0"
               transition={{
                 duration: 0.5,
                 ease: "easeInOut",
               }}
-              className="flex h-18 w-18 items-center justify-center rounded-full bg-[#E0F1DF] text-primary shrink-0"
-              aria-hidden={iconAriaLabel ? undefined : true}
-              aria-label={iconAriaLabel}
+              whileHover={{
+                scale: 1.1,
+                rotate: [0, -5, 5, -5, 0],
+              }}
             >
-              {Icon ? <Icon size={35} aria-label={iconAriaLabel} /> : null}
+              {Icon ? <Icon aria-label={iconAriaLabel} size={35} /> : null}
             </motion.div>
             <div>
               <HeadingTag
-                id={titleId}
                 className="text-lg font-semibold text-customgray"
+                id={titleId}
               >
                 {title}
               </HeadingTag>

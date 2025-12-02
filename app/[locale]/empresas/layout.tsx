@@ -1,7 +1,6 @@
 import Footer from "@/components/layout/footer";
 import HeroNavbar from "@/components/layout/navbar";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import type { Metadata } from "next";
 import {
   JsonLd,
   serviceSchema,
@@ -52,8 +51,8 @@ export default function EmpresasLayout({
 
         {/* WhatsApp Floating Button */}
         <WhatsAppButton
-          phoneNumber="51946483010"
           message="Hola Hugo, quiero agendar una consultoría empresarial"
+          phoneNumber="51946483010"
         />
       </div>
     </>

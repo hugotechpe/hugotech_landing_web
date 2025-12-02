@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
+
 import { Link } from "@/i18n/navigation";
 
 const fadeInUp = {
@@ -20,9 +21,9 @@ export function CoachingSection() {
 
   return (
     <section
-      id="cccausa"
       aria-label={t("title")}
       className="scroll-mt-0 bg-gradient-to-b from-primary via-[#0a3d3c] to-primary relative overflow-hidden"
+      id="cccausa"
     >
       {/* Patrón de fondo */}
       <div className="absolute inset-0 opacity-5">
@@ -33,39 +34,39 @@ export function CoachingSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
           {/* Columna izquierda: imagen de referencia */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
             className="relative w-full mx-auto order-2 lg:order-1"
+            initial="hidden"
+            variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <div className="relative">
               {/* Glow effect detrás */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand/30 to-yellow-400/30 blur-3xl rounded-full" />
 
               <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
                 className="relative z-10"
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.02 }}
               >
                 <Image
-                  src="/images/image6.png"
-                  alt={t("images.mainAlt")}
-                  width={538}
-                  height={660}
                   priority
+                  alt={t("images.mainAlt")}
                   className="block object-cover rounded-2xl shadow-2xl"
+                  height={660}
+                  src="/images/image6.png"
                   style={{ width: "100%", height: "auto" }}
+                  width={538}
                 />
 
                 {/* Badges mejorados con texto traducible */}
                 <motion.div
-                  initial={{ opacity: 0, scale: 0, rotate: -20 }}
-                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3, type: "spring" }}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
                   className="absolute -right-10 lg:-right-20 bottom-5 md:bottom-20 z-20 hidden sm:block"
+                  initial={{ opacity: 0, scale: 0, rotate: -20 }}
+                  transition={{ delay: 0.3, type: "spring" }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                 >
                   <div className="bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border-4 border-green-500">
                     <div className="flex items-start gap-3">
@@ -86,12 +87,12 @@ export function CoachingSection() {
                 </motion.div>
 
                 <motion.div
-                  initial={{ opacity: 0, scale: 0, rotate: 20 }}
-                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5, type: "spring" }}
-                  whileHover={{ scale: 1.1, rotate: -5 }}
                   className="absolute left-0 top-0 md:-left-5 md:-top-0 z-20 hidden sm:block"
+                  initial={{ opacity: 0, scale: 0, rotate: 20 }}
+                  transition={{ delay: 0.5, type: "spring" }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                 >
                   <div className="bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border-4 border-green-500">
                     <div className="flex items-start gap-3">
@@ -102,9 +103,9 @@ export function CoachingSection() {
                           viewBox="0 0 20 20"
                         >
                           <path
-                            fillRule="evenodd"
-                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                             clipRule="evenodd"
+                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            fillRule="evenodd"
                           />
                         </svg>
                       </div>
@@ -120,24 +121,24 @@ export function CoachingSection() {
 
           {/* Columna derecha: contenido SEO semántico */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
             className="order-1 lg:order-2"
+            initial="hidden"
+            variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               className="inline-block bg-brand text-customgray px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
+              initial={{ opacity: 0, x: -20 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1, x: 0 }}
             >
               {t("badge")}
             </motion.div>
 
             <h2
-              itemProp="headline"
               className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white mb-6 leading-tight"
+              itemProp="headline"
             >
               {t("title")}
             </h2>
@@ -147,8 +148,8 @@ export function CoachingSection() {
 
             <div className="space-y-6">
               <p
-                itemProp="description"
                 className="text-white/90 text-base md:text-lg leading-[1.9] tracking-wide"
+                itemProp="description"
               >
                 {t.rich("content.p1", {
                   b: (chunk) => (
@@ -167,11 +168,11 @@ export function CoachingSection() {
                   {bullets.map((item, idx) => (
                     <motion.li
                       key={idx}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: idx * 0.1 }}
                       className="flex items-start gap-4 group"
+                      initial={{ opacity: 0, x: -20 }}
+                      transition={{ delay: idx * 0.1 }}
+                      viewport={{ once: true }}
+                      whileInView={{ opacity: 1, x: 0 }}
                     >
                       <div className="flex-shrink-0 w-10 h-10 bg-brand rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                         <span className="text-xl">

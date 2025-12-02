@@ -49,7 +49,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     A warm hug from afar. Meli.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -70,7 +70,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Thank you for everything, Hugo.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -85,10 +85,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Working with you was a beautiful experience. Like all work, it has its ups and downs, challenging moments that make us grow. But what I truly value is the genuine way you supported and guided us, always believing in our potential to become better professionals. Your way of leading from closeness and respect made a real difference in my development.`,
     authorName: "Leonardo Manuel",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/leonardo-manuel.jpg",
     avatarAlt: "Profile photo of Leonardo Manuel",
-    linkedInUrl: "https://www.linkedin.com/in/leonardo-manuel-alvarez-27bb43123/",
+    linkedInUrl:
+      "https://www.linkedin.com/in/leonardo-manuel-alvarez-27bb43123/",
     tags: [
       "Genuine guidance",
       "Close leadership",
@@ -100,7 +101,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `You helped me profoundly in my professional career, but above all in something more valuable: feeling part of a true family in the work team. Your close and genuine accompaniment helped me have more confidence in my abilities and become better every day, both professionally and as a person. That sense of belonging and authentic trust transformed my way of working.`,
     authorName: "Miguel Bustillos",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/miguel-bustillos.jpg",
     avatarAlt: "Profile photo of Miguel Bustillos",
     linkedInUrl: "https://www.linkedin.com/in/miguel-angel-bustillos-alayo/",
@@ -114,7 +115,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Because I firmly feel that with you as a leader, something better will always come. Your way of guiding from genuine empathy and clear vision has given me that deep security to face the new with confidence 😌💪🏽`,
     authorName: "Katherine Cruz",
-    role: "I interviewed you in a selection process.",
+    jobTitle: "I interviewed you in a selection process.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Katherine Cruz",
     linkedInUrl: "https://www.linkedin.com",
@@ -129,7 +130,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ADELI_ZAMORA]: {
     quote: `Working at On Road has taught me to listen better, to connect authentically with each client. Throughout my experience at On Road, I've learned that it's not just about selling, but about genuinely helping people. This experience has helped me immensely in both my personal and professional growth. And I thank Hugo for giving me the opportunity to belong to this great team, for all his teachings, and for trusting me and the entire Peru team from the very beginning. That genuine trust made all the difference.`,
     authorName: "Adeli Zamora",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/adeli-zamora.jpg",
     avatarAlt: "Profile photo of Adeli Zamora",
     linkedInUrl:
@@ -145,7 +146,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.JONATHAN_ORA]: {
     quote: `Never stop sharing that spirit of encouragement that characterizes you. There will always be someone who needs to see that genuine light and feel motivated to be part of the change. Your authentic energy inspires others to dare, to believe that growth and transformation are possible. That ability to spread hope and action is a gift the world needs.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -164,10 +165,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     I believe that when one feels truly valued—as I felt with you—one supports wholeheartedly in what they may ask, because you feel that your work, commitment, dedication, and all your effort is recognized and reciprocated with humanity.`,
     authorName: "Estefani Ayquipa",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/estefani-ayquipa.jpg",
     avatarAlt: "Profile photo of Estefani Ayquipa",
-    linkedInUrl: "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
+    linkedInUrl:
+      "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
     tags: [
       "Authentic psychological safety",
       "Genuine recognition",
@@ -179,7 +181,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.FRANCIS_MATEO]: {
     quote: `Thank you for your genuine guidance, always practical and oriented to real results. You helped me profoundly to focus on what truly matters and keep moving forward with purpose. Your way of accompanying from clarity and concrete action made every step have meaning and direction.`,
     authorName: "Francis Mateo",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/francis-mateo.jpg",
     avatarAlt: "Profile photo of Francis Mateo",
     linkedInUrl: "https://www.linkedin.com/in/francis-mateo-ayala/",
@@ -194,7 +196,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.JOSE_URETA]: {
     quote: `From the very beginning, I felt profoundly supported in every way, in a genuine manner that made a difference. You encouraged me to face new challenges with confidence, and I also had the authentic security to propose and debate in an environment where I felt truly safe and heard. That mutual trust transformed my way of working and growing.`,
     authorName: "Jose Ureta",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/jose-ureta.jpg",
     avatarAlt: "Profile photo of Jose Ureta",
     linkedInUrl: "https://www.linkedin.com/in/josé-antonio-ureta-chipana/",
@@ -211,7 +213,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     That first sincere support and your constant human motivation will always be a source of deep gratitude from me. You made a real difference in my trajectory, and for that I will always be grateful.`,
     authorName: "Paul Cam",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/paul-cam.jpg",
     avatarAlt: "Profile photo of Paul Cam",
     linkedInUrl: "https://www.linkedin.com/in/paul-cam/",
@@ -228,7 +230,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     I really liked how you organized everything with such care, so the team had all the necessary tools when working. It truly was a great experience that I haven't repeated to this day. That sense of purpose and belonging you built will always remain in my memory.`,
     authorName: "Andrea de las casas",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/andrea-de-las-casas.jpg",
     avatarAlt: "Profile photo of Andrea de las casas",
     linkedInUrl:
@@ -244,7 +246,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.CARLA_TAFUR]: {
     quote: `You do a great job genuinely involving yourself with the team, not as a boss but as an authentic leader. That profoundly helps us feel real trust and sincere desire to keep giving more at work. Your way of leading from closeness and humanity creates an environment where each person feels valued and motivated to grow.`,
     authorName: "Carla Tafur",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/carla-tafur.jpg",
     avatarAlt: "Profile photo of Carla Tafur",
     linkedInUrl: "https://www.linkedin.com/in/carla-cotrina-tafur-7178b11a9/",
@@ -259,7 +261,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ANGELO_MORENO]: {
     quote: `Working with Hugo was one of the best experiences of my career. Obviously not everything is perfect, but that's what's genuine: he always authentically strived to improve and grow with us. That humility to recognize that growth is a shared path, where we all learn together, made all the difference in my professional development.`,
     authorName: "Angelo Moreno",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/angelo-moreno.jpeg",
     avatarAlt: "Profile photo of Angelo Moreno",
     linkedInUrl: "https://www.linkedin.com/in/angelo-moreno-a9934a205",
@@ -278,7 +280,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Thanks to his transformative guidance and the opportunity he gave me to develop in the area, I was able to identify the direction I want to take my professional future. He showed me the path I should continue, and for that I will always be grateful.`,
     authorName: "Vera Lucia Tovar",
-    role: "I was part of your team · You guided me as a mentor or coach · You interviewed me in a selection process · My area leader",
+    jobTitle:
+      "I was part of your team · You guided me as a mentor or coach · You interviewed me in a selection process · My area leader",
     avatarSrc: "/images/testimonials/vera-lucia-tovar.jpg",
     avatarAlt: "Profile photo of Vera Lucia Tovar",
     linkedInUrl: "https://www.linkedin.com/in/veratovar/",
@@ -294,7 +297,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ERICK_PALOMINO]: {
     quote: `He inspired me profoundly to face new challenges, many of which I only postponed again and again out of fear. He made me see with clarity and empathy that genuine confidence in oneself is vital—not just useful, but essential—to develop these challenges and transform them into real opportunities for growth. That perspective changed my way of facing challenges.`,
     authorName: "Anonymous",
-    role: "I was part of your team · You guided me as a mentor or coach · You interviewed me in a selection process",
+    jobTitle:
+      "I was part of your team · You guided me as a mentor or coach · You interviewed me in a selection process",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -309,7 +313,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ANONIMO]: {
     quote: `Thank you for the opportunity you gave me, you were a great leader, you always guided and encouraged me in every aspect 🤗`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/default-avatar.png",
     avatarAlt: "Anonymous profile",
     linkedInUrl: "",
@@ -319,7 +323,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.YAZMIN_OCAMPO]: {
     quote: `Well, I was part of your team, and it was definitely a profoundly pleasant experience to share with a professional like you. Your words were always of genuine motivation towards me, and that created an environment where I felt valued and eager to give my best. Your way of accompanying from sincere encouragement made a real difference in my development.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -334,7 +338,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.LEENKIN]: {
     quote: `It has been great working with you, Hugo. You always have everything clear and explain it in a super simple and genuine way, which makes it super easy for everyone to understand. Especially because it profoundly shows that you have tremendous experience in the tech world, but you share it with humility and authentic closeness. That combination of knowledge and humanity is inspiring.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -349,7 +353,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.MAJO_ZAMBRANO]: {
     quote: `You were always genuinely there to listen to the talents, with that authentic presence that makes you feel you truly matter. I felt profoundly valued in my work, and arriving each day was feeling I was entering a truly human environment, full of sincere positivity and real support. That atmosphere of trust and humanity transforms the work experience into something meaningful.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -366,7 +370,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     I feel quite good about the human environment that was created and, above all, about the sincere opportunity to allow me to learn by doing. That trust to experiment and grow has been transformative in my professional development.`,
     authorName: "Sandra Seminario",
-    role: "I interviewed you in a selection process, part of your team",
+    jobTitle: "I interviewed you in a selection process, part of your team",
     avatarSrc: "/images/testimonials/sandra-seminario.jpg",
     avatarAlt: "Profile photo of Sandra Seminario",
     linkedInUrl: "https://www.linkedin.com/in/sangaselu/",
@@ -383,7 +387,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     His leadership is a living example of inspiration and constant support, where each person feels seen, valued, and accompanied on their development path. That way of leading from humanity transforms teams and lives.`,
     authorName: "Dan Rodriguez",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/dan-rodriguez.jpg",
     avatarAlt: "Profile photo of Dan Rodriguez",
     linkedInUrl:
@@ -405,7 +409,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     I testify that the project you led, Hugo, gave my brother a new direction in life, and for that I am profoundly grateful. Your way of creating spaces where people can grow and belong transcends work—it transforms lives and entire families.`,
     authorName: "Andrews Postillos",
-    role: "I'm your brother and close witness to your work.",
+    jobTitle: "I'm your brother and close witness to your work.",
     avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Profile photo of Andrews Postillos",
     linkedInUrl:
@@ -424,7 +428,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Communication was always—always—positive and sincere, and that is something difficult to find that makes one able to work happy and with confidence. That combination of high standards and humanity creates an environment where you feel safe to grow.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -439,7 +443,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.HANS_ALFARO]: {
     quote: `I profoundly like that you are methodical and fast in solving what comes up. That combination of clear methodology and genuine speed of response makes working with you efficient and reliable. Your way of addressing problems with structure and agility creates an environment where things flow and are resolved effectively.`,
     authorName: "Hans Alfaro",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/testimonials/hans-alfaro.jpg",
     avatarAlt: "Profile photo of Hans Alfaro",
     linkedInUrl: "https://www.linkedin.com/in/hans-alfaro-23a2b7135/",
@@ -456,7 +460,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Personally, I had my doubts at first, but as time went by they dissipated and a deep trust was generated. That ability to build genuine trust, both as a professional and as a person, is something I immensely value.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Anonymous",
     linkedInUrl: "https://www.linkedin.com",
@@ -471,17 +475,18 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.MANUEL_BAZAES]: {
     quote: `We worked a lot these last months, we had multiple sessions and you were supporting me in each one of them. Also when there were setbacks, I felt the motivation and commitment. It was pleasant to work together honestly, and although there were stressful moments, I saw how you relied on me. I hope to continue improving aspects that I feel are normal details when we are just starting with our new Leader.`,
     authorName: "Manuel Bazaes",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Profile photo of Manuel Bazaes",
-    linkedInUrl: "https://www.linkedin.com/in/manuel-alejandro-bazaes-loarte-51b685175/",
+    linkedInUrl:
+      "https://www.linkedin.com/in/manuel-alejandro-bazaes-loarte-51b685175/",
     tags: ["Collaboration", "Mutual support", "Growth together"],
     highlight: "I felt the motivation and commitment",
   },
   [TestimonioId.ALESSANDRA_PEREZ]: {
     quote: `At first it was neutral since I didn't see you much, but little by little we got to know each other better and good communication emerged. The work has been calm, especially knowing that there is someone who supports us with the biggest challenges.`,
     authorName: "Anonymous",
-    role: "I am part of your team at OnRoad.",
+    jobTitle: "I am part of your team at OnRoad.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Anonymous profile photo",
     linkedInUrl: "https://www.linkedin.com",
@@ -491,7 +496,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.GABRIEL_GRANADOS]: {
     quote: `At 23 years old I have had various mentors, and I feel that I have not been able to connect with many or work hand in hand in harmony. The opposite case working with Hugo as a mentor. Trust, motivation and teamwork is something that can always be rescued, not to mention the support and incentives to better employ our work. Without a doubt, the trust and closeness with the team makes me see work differently, and see my professional future in a positive way.`,
     authorName: "Anonymous",
-    role: "I am part of your team.",
+    jobTitle: "I am part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Anonymous profile photo",
     linkedInUrl: "https://www.linkedin.com",
@@ -501,7 +506,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.JOSE_LOSTAUNAU]: {
     quote: `As a boss you manage to motivate everyone who works around you and show your support so that others feel comfortable. That ability to create an environment where we all feel supported makes the difference.`,
     authorName: "Anonymous",
-    role: "I was part of your team.",
+    jobTitle: "I was part of your team.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Anonymous profile photo",
     linkedInUrl: "https://www.linkedin.com",

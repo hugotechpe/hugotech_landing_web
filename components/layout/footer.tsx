@@ -6,7 +6,6 @@ import { Input } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { useMessages, useTranslations } from "next-intl";
 
-import FacebookIcon from "@/common/icons/social/FacebookIcon";
 import InstagramIcon from "@/common/icons/social/InstagramIcon";
 import LinkedInIcon from "@/common/icons/social/LinkedInIcon";
 import TikTokIcon from "@/common/icons/social/TikTokIcon";
@@ -29,7 +28,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer role="contentinfo" className="bg-primary text-white mt-16 md:mt-20">
+    <footer className="bg-primary text-white mt-16 md:mt-20" role="contentinfo">
       <div className="container mx-auto max-w-screen-xl px-6 py-12 md:py-16">
         {/* Misión y Visión */}
         <div className="mb-12 md:mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -54,15 +53,15 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Información de Contacto Directo */}
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="text-lg font-bold mb-4">
+            <h2 className="text-lg font-bold mb-4" id="footer-contact">
               {t("contact.title")}
             </h2>
             <div className="space-y-4">
               {/* WhatsApp */}
               <Link
-                href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión"
                 isExternal
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+                href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión"
                 title={t("contact.whatsappTitle")}
               >
                 <div className="bg-green-500 p-2 rounded-full group-hover:scale-110 transition-transform">
@@ -78,8 +77,8 @@ const Footer: React.FC = () => {
 
               {/* Email */}
               <Link
-                href="mailto:hola@hugotech.pe"
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+                href="mailto:hola@hugotech.pe"
                 title={t("contact.emailTitle")}
               >
                 <div className="bg-brand p-2 rounded-full group-hover:scale-110 transition-transform">
@@ -90,10 +89,10 @@ const Footer: React.FC = () => {
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
                 </div>
@@ -109,7 +108,7 @@ const Footer: React.FC = () => {
 
           {/* Información Legal */}
           <section aria-labelledby="footer-legal">
-            <h2 id="footer-legal" className="text-lg font-bold">
+            <h2 className="text-lg font-bold" id="footer-legal">
               {t("legal.title")}
             </h2>
             <nav aria-label={t("legal.title")}>
@@ -118,8 +117,8 @@ const Footer: React.FC = () => {
                   (link: { label: string; href: string }, idx: number) => (
                     <li key={`legal-${idx}`}>
                       <Link
-                        href={link.href}
                         className="text-white/90 hover:text-white"
+                        href={link.href}
                         title={link.label}
                       >
                         {link.label}
@@ -133,7 +132,7 @@ const Footer: React.FC = () => {
 
           {/* Menú */}
           <section aria-labelledby="footer-menu">
-            <h2 id="footer-menu" className="text-lg font-bold">
+            <h2 className="text-lg font-bold" id="footer-menu">
               {t("menu.title")}
             </h2>
             <nav aria-label={t("menu.title")}>
@@ -142,8 +141,8 @@ const Footer: React.FC = () => {
                   (item: { label: string; href: string }, idx: number) => (
                     <li key={`menu-${idx}`}>
                       <Link
-                        href={item.href}
                         className="text-white/90 hover:text-white"
+                        href={item.href}
                       >
                         {item.label}
                       </Link>
@@ -156,40 +155,40 @@ const Footer: React.FC = () => {
 
           {/* Newsletter */}
           <section aria-labelledby="footer-newsletter">
-            <h2 id="footer-newsletter" className="text-lg font-bold">
+            <h2 className="text-lg font-bold" id="footer-newsletter">
               {newsletter.title}
             </h2>
             <p className="mt-3 text-sm sm:text-base text-white/90">
               {newsletter.description}
             </p>
             <form
-              onSubmit={handleSubmit}
-              className="mt-4 flex flex-col sm:flex-row gap-3"
               aria-label={newsletter.title}
+              className="mt-4 flex flex-col sm:flex-row gap-3"
+              onSubmit={handleSubmit}
             >
-              <label htmlFor="newsletter-email" className="sr-only">
+              <label className="sr-only" htmlFor="newsletter-email">
                 {newsletter.placeholder}
               </label>
               <Input
-                id="newsletter-email"
-                aria-label={newsletter.placeholder}
-                name="email"
-                type="email"
-                size="lg"
-                variant="flat"
-                placeholder={newsletter.placeholder}
-                autoComplete="email"
                 required
+                aria-label={newsletter.placeholder}
+                autoComplete="email"
                 className="flex-1"
                 classNames={{
                   input: "placeholder:!text-gray-900",
                 }}
+                id="newsletter-email"
+                name="email"
+                placeholder={newsletter.placeholder}
+                size="lg"
+                type="email"
+                variant="flat"
               />
               <Button
-                type="submit"
-                size="lg"
-                color="default"
                 className="bg-[#115C5B] text-white hover:bg-[#183F33] w-full sm:w-auto"
+                color="default"
+                size="lg"
+                type="submit"
               >
                 {newsletter.cta}
               </Button>
@@ -208,38 +207,38 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex items-center gap-5">
             <Link
-              href="https://www.instagram.com/hugotech.pe"
               isExternal
               aria-label="Instagram de HugoTech"
-              title="Sígueme en Instagram @hugotech.pe"
               className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
+              href="https://www.instagram.com/hugotech.pe"
+              title="Sígueme en Instagram @hugotech.pe"
             >
               <InstagramIcon className="h-5 w-5" />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/hcasanovam/"
               isExternal
               aria-label="LinkedIn de Hugo Casanova"
-              title="Conéctate en LinkedIn"
               className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
+              href="https://www.linkedin.com/in/hcasanovam/"
+              title="Conéctate en LinkedIn"
             >
               <LinkedInIcon className="h-5 w-5" />
             </Link>
             <Link
-              href="https://www.tiktok.com/@hugotech.pe"
               isExternal
               aria-label="TikTok de HugoTech"
-              title="Sígueme en TikTok @hugotech.pe"
               className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
+              href="https://www.tiktok.com/@hugotech.pe"
+              title="Sígueme en TikTok @hugotech.pe"
             >
               <TikTokIcon className="h-5 w-5" />
             </Link>
             <Link
-              href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión"
               isExternal
               aria-label="WhatsApp de Hugo"
-              title="Escríbeme por WhatsApp"
               className="text-white/90 hover:text-white transition-colors hover:scale-110 transform"
+              href="https://wa.me/51946483010?text=Hola%20Hugo,%20me%20gustaría%20agendar%20una%20sesión"
+              title="Escríbeme por WhatsApp"
             >
               <WhatsAppIcon className="h-5 w-5" />
             </Link>

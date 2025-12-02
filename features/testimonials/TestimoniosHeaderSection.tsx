@@ -31,15 +31,15 @@ export function TestimoniosHeaderSection() {
       >
         <div className="max-w-5xl mx-auto text-center text-white">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.8 }}
           >
             <Chip
-              color="warning"
-              variant="shadow"
-              size="lg"
               className="mb-8 text-base md:text-lg px-6 py-2"
+              color="warning"
+              size="lg"
+              variant="shadow"
             >
               {t("chip")}
             </Chip>
@@ -62,25 +62,25 @@ export function TestimoniosHeaderSection() {
             </p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20 md:mb-24"
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ delay: 0.3 }}
             >
               <Button
                 as={Link}
+                className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
                 href="#historias"
                 size="lg"
-                className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
               >
                 {t("cta.primary")}
               </Button>
               <Button
                 as={Link}
+                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
                 href="/#cita"
                 size="lg"
                 variant="bordered"
-                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
               >
                 {t("cta.secondary")}
               </Button>
@@ -91,8 +91,8 @@ export function TestimoniosHeaderSection() {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         animate={{ y: [0, 10, 0] }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
         <div className="text-white/70 text-sm font-medium mb-2">
@@ -100,8 +100,8 @@ export function TestimoniosHeaderSection() {
         </div>
         <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
           <motion.div
-            className="w-1.5 h-2.5 bg-white/60 rounded-full"
             animate={{ y: [0, 12, 0] }}
+            className="w-1.5 h-2.5 bg-white/60 rounded-full"
             transition={{ repeat: Infinity, duration: 1.5 }}
           />
         </div>

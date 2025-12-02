@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
+
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 
 export function HabilidadesBlandasSection() {
@@ -40,7 +41,7 @@ export function HabilidadesBlandasSection() {
           viewport={{ once: true }}
           whileInView="visible"
         >
-          <motion.div variants={fadeIn} transition={{ duration: 0.6 }}>
+          <motion.div transition={{ duration: 0.6 }} variants={fadeIn}>
             <Chip
               className="mb-6 bg-primary/10 text-primary font-semibold"
               size="lg"
@@ -52,24 +53,24 @@ export function HabilidadesBlandasSection() {
 
           <motion.h2
             className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-customgray mb-6 leading-tight"
-            variants={fadeIn}
             transition={{ duration: 0.6, delay: 0.1 }}
+            variants={fadeIn}
           >
             {t("title")}
           </motion.h2>
 
           <motion.p
             className="text-xl md:text-2xl text-gray-600 font-medium max-w-3xl mx-auto mb-4"
-            variants={fadeIn}
             transition={{ duration: 0.6, delay: 0.2 }}
+            variants={fadeIn}
           >
             {t("subtitle")}
           </motion.p>
 
           <motion.p
             className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto"
-            variants={fadeIn}
             transition={{ duration: 0.6, delay: 0.3 }}
+            variants={fadeIn}
           >
             {t("intro")}
           </motion.p>
@@ -109,15 +110,15 @@ export function HabilidadesBlandasSection() {
         >
           <motion.blockquote
             className="text-xl md:text-2xl font-quote italic text-gray-700 mb-8 leading-relaxed"
-            variants={fadeIn}
             transition={{ duration: 0.6 }}
+            variants={fadeIn}
           >
             &ldquo;{t("quote")}&rdquo;
           </motion.blockquote>
 
           <motion.div
-            variants={fadeIn}
             transition={{ duration: 0.6, delay: 0.2 }}
+            variants={fadeIn}
           >
             <CalendlyButton
               className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl"

@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
+
 import Footer from "@/components/layout/footer";
 import HeroNavbar from "@/components/layout/navbar";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import type { Metadata } from "next";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
@@ -55,8 +56,8 @@ export default function FAQLayout({ children }: { children: React.ReactNode }) {
         <Footer />
 
         <WhatsAppButton
-          phoneNumber="51946483010"
           message="Hola Hugo, tengo algunas preguntas sobre el mentoring"
+          phoneNumber="51946483010"
         />
       </div>
     </>

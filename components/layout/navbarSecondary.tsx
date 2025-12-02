@@ -9,17 +9,16 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/navbar";
-import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { LocaleSwitch } from "@/components/locale-switch";
 import { useMessages, useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
+
+import { LocaleSwitch } from "@/components/locale-switch";
 
 export default function NavbarSecondary() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const messages = useMessages() as any;
   const tNavbar = useTranslations("Navbar");
-  const tAgenda = useTranslations("Sections.Agenda");
   const locale = useLocale();
 
   // Tomamos las etiquetas del footer y mostramos TODAS las opciones, ajustando hrefs al home
@@ -33,6 +32,7 @@ export default function NavbarSecondary() {
     const anchor = isAnchor ? href.substring(i) : "";
 
     let finalHref = `/${locale}/`;
+
     if (labelLower === "blog" || href.includes("/blog")) {
       finalHref = `/${locale}/#blog`;
     } else if (anchor === "#empresas") {
@@ -47,12 +47,12 @@ export default function NavbarSecondary() {
   return (
     <header className="bg-white shadow-sm">
       <Navbar
-        onMenuOpenChange={setIsMenuOpen}
-        isMenuOpen={isMenuOpen}
-        maxWidth="full"
         className="bg-white mx-auto max-w-1400"
         height="5rem"
+        isMenuOpen={isMenuOpen}
+        maxWidth="full"
         shouldHideOnScroll={false}
+        onMenuOpenChange={setIsMenuOpen}
       >
         {/* Mobile Menu Toggle + Logo */}
         <NavbarContent>
@@ -63,12 +63,12 @@ export default function NavbarSecondary() {
           <NavbarBrand>
             <Link href={`/${locale}/`}>
               <Image
-                src="/images/logo-hugotech.png"
-                alt="HugoTech - Innovación con Alma, Tech con Propósito"
-                width={160}
-                height={48}
-                className="h-7 sm:h-9 md:h-11 w-auto"
                 priority
+                alt="HugoTech - Innovación con Alma, Tech con Propósito"
+                className="h-7 sm:h-9 md:h-11 w-auto"
+                height={48}
+                src="/images/logo-hugotech.png"
+                width={160}
               />
             </Link>
           </NavbarBrand>
@@ -82,9 +82,9 @@ export default function NavbarSecondary() {
               className="hidden lg:block"
             >
               <Link
+                className="text-sm font-medium text-customgray hover:text-primary transition-colors"
                 color="foreground"
                 href={item.href}
-                className="text-sm font-medium text-customgray hover:text-primary transition-colors"
               >
                 {item.label}
               </Link>
@@ -100,8 +100,8 @@ export default function NavbarSecondary() {
           {menuItems.map((item: any, index: number) => (
             <NavbarMenuItem key={`mobile-${item.label}-${index}`}>
               <Link
-                color="foreground"
                 className="w-full text-sm text-black py-2 block hover:text-primary transition-colors"
+                color="foreground"
                 href={item.href}
                 size="lg"
                 onPress={() => setIsMenuOpen(false)}

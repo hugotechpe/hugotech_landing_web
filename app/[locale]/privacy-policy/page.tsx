@@ -336,15 +336,15 @@ export default function PrivacyPolicyPage() {
         {/* Footer Navigation */}
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
           <Link
-            href="/es/terminos-y-condiciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
+            href="/es/terminos-y-condiciones"
           >
             ← Ver Términos y Condiciones
           </Link>
           <span className="hidden md:inline text-gray-400">|</span>
           <Link
-            href="/es/libro-de-reclamaciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
+            href="/es/libro-de-reclamaciones"
           >
             Libro de Reclamaciones →
           </Link>

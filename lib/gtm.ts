@@ -53,11 +53,6 @@ declare global {
 export const pushToDataLayer = (event: GTMEvent): void => {
   if (typeof window !== "undefined" && window.dataLayer) {
     window.dataLayer.push(event);
-
-    // Debug mode in development
-    if (process.env.NODE_ENV === "development") {
-      console.log("[GTM Event]", event);
-    }
   }
 };
 

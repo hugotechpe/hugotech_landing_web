@@ -12,15 +12,14 @@ import {
 } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
+import { useTranslations } from "next-intl";
+
 import { LocaleSwitch } from "@/components/locale-switch";
-import { useMessages, useTranslations, useLocale } from "next-intl";
 
 export default function HeroNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const messages = useMessages() as any;
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
-  const locale = useLocale();
 
   // Menu items con rutas completas (evita hydration mismatch)
   const menuItems = [
@@ -49,12 +48,12 @@ export default function HeroNavbar() {
   return (
     <header className="bg-primary shadow-sm border-b border-[#115C5B]">
       <Navbar
-        onMenuOpenChange={setIsMenuOpen}
-        isMenuOpen={isMenuOpen}
-        maxWidth="full"
         className="bg-primary mx-auto max-w-1400"
         height="5rem"
+        isMenuOpen={isMenuOpen}
+        maxWidth="full"
         shouldHideOnScroll={false}
+        onMenuOpenChange={setIsMenuOpen}
       >
         {/* Mobile Menu Toggle + Logo */}
         <NavbarContent>
@@ -65,12 +64,12 @@ export default function HeroNavbar() {
           <NavbarBrand>
             <Link href="/">
               <Image
-                src="/images/logo-hugotech.png"
-                alt="HugoTech - Innovación con Alma, Tech con Propósito"
-                width={180}
-                height={54}
                 priority
+                alt="HugoTech - Innovación con Alma, Tech con Propósito"
                 className="h-7 sm:h-10 md:h-14 w-auto"
+                height={54}
+                src="/images/logo-hugotech.png"
+                width={180}
               />
             </Link>
           </NavbarBrand>
@@ -84,9 +83,9 @@ export default function HeroNavbar() {
               className="hidden lg:block"
             >
               <Link
+                className="text-sm font-medium text-white hover:text-brand transition-colors"
                 color="foreground"
                 href={item.href}
-                className="text-sm font-medium text-white hover:text-brand transition-colors"
               >
                 {item.label}
               </Link>
@@ -99,11 +98,11 @@ export default function HeroNavbar() {
           <NavbarItem className="hidden md:flex">
             <Button
               as={Link}
+              className="bg-white text-primary font-bold"
               color="primary"
               href="/#cita"
-              variant="solid"
               size="md"
-              className="bg-white text-primary font-bold"
+              variant="solid"
             >
               {tAgenda("title")}
             </Button>
@@ -115,8 +114,8 @@ export default function HeroNavbar() {
           {menuItems.map((item: any, index: number) => (
             <NavbarMenuItem key={`mobile-${item.label}-${index}`}>
               <Link
-                color="foreground"
                 className="w-full text-sm text-black py-2 block hover:text-primary transition-colors"
+                color="foreground"
                 href={item.href}
                 size="lg"
                 onPress={() => setIsMenuOpen(false)}
@@ -130,11 +129,11 @@ export default function HeroNavbar() {
           <NavbarMenuItem className="md:hidden mt-4">
             <Button
               as={Link}
+              className="bg-primary text-white font-bold w-full"
               color="primary"
               href="/#cita"
-              variant="solid"
               size="lg"
-              className="bg-primary text-white font-bold w-full"
+              variant="solid"
               onPress={() => setIsMenuOpen(false)}
             >
               {tAgenda("title")}

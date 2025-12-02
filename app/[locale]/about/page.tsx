@@ -442,6 +442,7 @@ export default function AboutPage() {
                             return "KANBAN\nKMP";
                           if (cert.organization.includes("CertJoin"))
                             return "LEAN\nSTARTUP";
+
                           return "LEAN\nUX";
                         };
 

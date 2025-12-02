@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export default function EmpresasPage() {

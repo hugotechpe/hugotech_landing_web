@@ -9,8 +9,6 @@ export function GoogleTagManager() {
     <>
       {/* Google Consent Mode v2 - Configuración por defecto */}
       <Script
-        id="gtm-consent"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -25,12 +23,12 @@ export function GoogleTagManager() {
             });
           `,
         }}
+        id="gtm-consent"
+        strategy="afterInteractive"
       />
 
       {/* Google Tag Manager Script - Lazy loaded después del contenido principal */}
       <Script
-        id="gtm-script"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -40,6 +38,8 @@ export function GoogleTagManager() {
             })(window,document,'script','dataLayer','${GTM_ID}');
           `,
         }}
+        id="gtm-script"
+        strategy="afterInteractive"
       />
     </>
   );
@@ -49,11 +49,11 @@ export function GoogleTagManagerNoScript() {
   return (
     <noscript>
       <iframe
-        title="Google Tag Manager"
-        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
         height="0"
-        width="0"
+        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
         style={{ display: "none", visibility: "hidden" }}
+        title="Google Tag Manager"
+        width="0"
       />
     </noscript>
   );

@@ -6,6 +6,7 @@ import { Link } from "@heroui/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
+
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { useReducedMotion, useIsMobile } from "@/hooks/useReducedMotion";
 
@@ -20,9 +21,9 @@ export function InicioSection() {
 
   return (
     <section
-      id="inicio"
       aria-label={t("title")}
       className="scroll-mt-0 bg-primary"
+      id="inicio"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
@@ -45,10 +46,10 @@ export function InicioSection() {
             {/* Mantra/Propósito Profundo */}
             {enableAnimations ? (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
                 className="mt-6 relative"
+                initial={{ opacity: 0, y: 10 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
                   <p className="text-lg md:text-xl font-medium text-center bg-gradient-to-r from-brand via-white to-brand bg-clip-text text-transparent leading-relaxed">
@@ -87,36 +88,36 @@ export function InicioSection() {
 
             <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
               <CalendlyButton
-                text={t("ctas.mentoria")}
-                variant="solid"
+                className="w-full sm:w-auto"
                 color="default"
                 size="lg"
-                className="w-full sm:w-auto"
+                text={t("ctas.mentoria")}
                 utm={{
                   utmSource: "hugotech.pe",
                   utmMedium: "website",
                   utmCampaign: "hero_section_cta",
                 }}
+                variant="solid"
               />
 
               <Button
                 as={Link}
+                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
+                color="primary"
                 href={`/${locale}/about`}
                 size="lg"
-                color="primary"
                 variant="bordered"
-                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
               >
                 {t("ctas.historia")}
               </Button>
 
               <Button
                 as={Link}
+                className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
+                color="primary"
                 href={`/${locale}/empresas`}
                 size="lg"
-                color="primary"
                 variant="solid"
-                className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
               >
                 {t("ctas.empresas")}
               </Button>
@@ -128,15 +129,15 @@ export function InicioSection() {
             <div className="relative w-full max-w-md md:max-w-lg mx-auto">
               {/* Imagen principal */}
               <Image
-                src="/images/image1.png"
-                alt={t("imageAlt")}
-                width={538}
-                height={660}
                 priority
+                alt={t("imageAlt")}
+                className="rounded-xl object-cover w-full h-auto"
                 fetchPriority="high"
+                height={660}
                 quality={90}
                 sizes="(max-width: 768px) 100vw, 538px"
-                className="rounded-xl object-cover w-full h-auto"
+                src="/images/image1.png"
+                width={538}
               />
 
               {/* Tags Flotantes Animados - Solo en desktop y si animations habilitadas */}
@@ -144,21 +145,21 @@ export function InicioSection() {
               {/* Tag 1: Fortalece tu líder interno - Top Left */}
               {enableAnimations ? (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
                   className="hidden md:block absolute left-4 top-32 z-10"
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
                 >
                   <motion.div
                     animate={{
                       y: [0, -10, 0],
                     }}
+                    className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
                     transition={{
                       duration: 3,
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
                   >
                     <div className="flex items-start gap-3">
                       <div className="bg-brand rounded-full p-3 flex-shrink-0">
@@ -169,10 +170,10 @@ export function InicioSection() {
                           viewBox="0 0 24 24"
                         >
                           <path
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                           />
                         </svg>
                       </div>
@@ -192,22 +193,22 @@ export function InicioSection() {
               {/* Tag 2: Pule/libera tu talento - Bottom Right */}
               {enableAnimations ? (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8, duration: 0.6 }}
                   className="hidden md:block absolute right-4 bottom-24 z-10"
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ delay: 0.8, duration: 0.6 }}
                 >
                   <motion.div
                     animate={{
                       y: [0, -10, 0],
                     }}
+                    className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
                     transition={{
                       duration: 3,
                       repeat: Infinity,
                       ease: "easeInOut",
                       delay: 1,
                     }}
-                    className="bg-white rounded-2xl shadow-xl p-4 max-w-xs"
                   >
                     <div className="flex items-start gap-3">
                       <div className="bg-primary/10 rounded-full p-3 flex-shrink-0">
@@ -218,10 +219,10 @@ export function InicioSection() {
                           viewBox="0 0 24 24"
                         >
                           <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                           />
                         </svg>
                       </div>
@@ -241,22 +242,22 @@ export function InicioSection() {
               {/* Tag 3: Coaching Anti-Burnout - Top Right */}
               {enableAnimations ? (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.1, duration: 0.6 }}
                   className="hidden lg:block absolute right-4 top-5 z-10"
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ delay: 1.1, duration: 0.6 }}
                 >
                   <motion.div
                     animate={{
                       y: [0, -10, 0],
                     }}
+                    className="bg-white rounded-2xl shadow-xl p-4 max-w-[240px]"
                     transition={{
                       duration: 3,
                       repeat: Infinity,
                       ease: "easeInOut",
                       delay: 2,
                     }}
-                    className="bg-white rounded-2xl shadow-xl p-4 max-w-[240px]"
                   >
                     <div className="flex items-start gap-3">
                       <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
@@ -267,10 +268,10 @@ export function InicioSection() {
                           viewBox="0 0 24 24"
                         >
                           <path
+                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                           />
                         </svg>
                       </div>

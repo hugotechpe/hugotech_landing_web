@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
+
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 

@@ -49,7 +49,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Un abrazo gatuno a la distancia. Meli.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -67,7 +67,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     Eres ese "adulto tiburón" que admiro profundamente, alguien que con el tiempo—queriendo y sin querer—me ha ido dejando enseñanzas de vida y profesionales que hoy llevo conmigo y pongo en práctica cada día.
     Gracias por todo, Hugo.`,
     authorName: "Magaly Ayerbe",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Magaly Ayerbe",
     linkedInUrl: "https://www.linkedin.com/in/magaly-ayerbe-malaver/",
@@ -77,7 +77,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Trabajar contigo fue una experiencia hermosa, como todo trabajo tiene sus altos y bajos, momentos retadores que nos hacen crecer. Pero lo que realmente valoro es la manera genuina en que nos apoyaste y guiaste, siempre creyendo en nuestro potencial para ser mejores profesionales. Tu forma de liderar desde la cercanía y el respeto marcó una diferencia real en mi desarrollo.`,
     authorName: "Leonardo Manuel",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/leonardo-manuel.jpg",
     avatarAlt: "Foto de perfil de Leonardo Manuel",
     linkedInUrl:
@@ -88,7 +88,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `Me ayudaste profundamente en mi carrera profesional, pero sobre todo en algo más valioso: sentirme parte de una verdadera familia en el equipo de trabajo. Generaste un espacio donde pude desarrollar más confianza en mis habilidades, donde sentí que mi voz importaba. Gracias a tu acompañamiento cercano y genuino, cada día me esfuerzo por ser mejor profesional, llevando conmigo esa sensación de pertenencia y apoyo mutuo que cultivaste en el equipo.`,
     authorName: "Miguel Bustillos",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/miguel-bustillos.jpg",
     avatarAlt: "Foto de perfil de Miguel Bustillos",
     linkedInUrl: "https://www.linkedin.com/in/miguel-angel-bustillos-alayo/",
@@ -102,7 +102,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Porque siento firmemente que contigo como líder, siempre vendrá algo mejor. Tu forma de guiar desde la empatía genuina y la visión clara me ha dado esa seguridad profunda para enfrentar lo nuevo con confianza 😌💪🏽`,
     authorName: "Katherine Cruz",
-    role: "Te entrevisté en un proceso de selección.",
+    jobTitle: "Te entrevisté en un proceso de selección.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Katherine Cruz",
     linkedInUrl: "https://www.linkedin.com",
@@ -117,7 +117,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ADELI_ZAMORA]: {
     quote: `Trabajar en On Road me ha enseñado a escuchar mejor y a conectar de manera auténtica con cada cliente. A lo largo de mi experiencia trabajando en On Road he aprendido que no solo se trata de vender, sino de ayudar a las personas. Esta experiencia me ha ayudado mucho tanto en mi crecimiento personal como profesional. Y agradezco a Hugo por haberme brindado la oportunidad de pertenecer a este gran equipo, por todas sus enseñanzas y por haber confiado en mí y en todo el equipo de Perú desde el principio.`,
     authorName: "Adeli Zamora",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/adeli-zamora.jpg",
     avatarAlt: "Foto de perfil de Adeli Zamora",
     linkedInUrl:
@@ -128,7 +128,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.JONATHAN_ORA]: {
     quote: `Nunca dejes de compartir esa actitud de ánimo que te caracteriza. Siempre habrá alguien que necesite ver esa luz genuina y sentirse motivado a ser parte del cambio. Tu energía auténtica inspira a otros a atreverse, a creer que es posible crecer y transformarse. Esa capacidad de contagiar esperanza y acción es un regalo que el mundo necesita.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -146,10 +146,11 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Considero que cuando uno se siente verdaderamente valorado—como yo me sentí contigo—uno apoya con todo el corazón en lo que puedan pedir, porque sientes que tu trabajo, compromiso, empeño y todo tu esfuerzo es reconocido y retribuido con humanidad.`,
     authorName: "Estefani Ayquipa",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/estefani-ayquipa.jpg",
     avatarAlt: "Foto de perfil de Estefani Ayquipa",
-    linkedInUrl: "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
+    linkedInUrl:
+      "https://www.linkedin.com/in/mary-estefani-ayquipa-maceda-8697ab1b7/",
     tags: [
       "Seguridad psicológica auténtica",
       "Reconocimiento genuino",
@@ -161,7 +162,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.FRANCIS_MATEO]: {
     quote: `Gracias por tu guía genuina, siempre práctica y orientada a resultados reales. Me ayudaste profundamente a enfocarme en lo verdaderamente importante y a seguir avanzando con propósito. Tu forma de acompañar desde la claridad y la acción concreta hizo que cada paso tuviera sentido y dirección.`,
     authorName: "Francis Mateo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/francis-mateo.jpg",
     avatarAlt: "Foto de perfil de Francis Mateo",
     linkedInUrl: "https://www.linkedin.com/in/francis-mateo-ayala/",
@@ -175,7 +176,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.JOSE_URETA]: {
     quote: `Desde un inicio me sentí profundamente apoyado en todo sentido, de una manera genuina que marcó la diferencia. Me incentivabas a afrontar nuevos retos con confianza, y además tuve la seguridad auténtica de proponer y debatir en un ambiente donde me sentía verdaderamente seguro y escuchado. Esa confianza mutua transformó mi forma de trabajar y crecer.`,
     authorName: "Jose Ureta",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/jose-ureta.jpg",
     avatarAlt: "Foto de perfil de Jose Ureta",
     linkedInUrl: "https://www.linkedin.com/in/josé-antonio-ureta-chipana/",
@@ -192,7 +193,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Ese primer apoyo sincero y tu constante motivación humana serán siempre motivo de profundo agradecimiento de mi parte. Marcaste una diferencia real en mi trayectoria, y por eso estaré siempre agradecido.`,
     authorName: "Paul Cam",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/paul-cam.jpg",
     avatarAlt: "Foto de perfil de Paul Cam",
     linkedInUrl: "https://www.linkedin.com/in/paul-cam/",
@@ -209,7 +210,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Me gustó mucho cómo organizaste todo con tanto cuidado, para que el equipo tuviera todas las herramientas necesarias al momento de trabajar. Realmente fue una gran experiencia que hasta el momento no he vuelto a repetir. Ese sentido de propósito y pertenencia que construiste quedará siempre en mi memoria.`,
     authorName: "Andrea de las casas",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/andrea-de-las-casas.jpg",
     avatarAlt: "Foto de perfil de Andrea de las casas",
     linkedInUrl:
@@ -225,7 +226,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.CARLA_TAFUR]: {
     quote: `Haces un gran trabajo al involucrarte genuinamente con el equipo, no como un jefe sino como un líder auténtico. Eso ayuda profundamente a que nos podamos sentir en confianza real y con ganas sinceras de seguir dando más en el trabajo. Tu forma de liderar desde la cercanía y la humanidad crea un ambiente donde cada persona se siente valorada y motivada a crecer.`,
     authorName: "Carla Tafur",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/carla-tafur.jpg",
     avatarAlt: "Foto de perfil de Carla Tafur",
     linkedInUrl: "https://www.linkedin.com/in/carla-cotrina-tafur-7178b11a9/",
@@ -240,7 +241,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.ANGELO_MORENO]: {
     quote: `Trabajar con Hugo fue una de las mejores experiencias de mi carrera. Obviamente no todo es perfecto, pero eso es lo genuino: siempre se esforzaba auténticamente por mejorar y crecer con nosotros. Esa humildad para reconocer que el crecimiento es un camino compartido, donde todos aprendemos juntos, hizo toda la diferencia en mi desarrollo profesional.`,
     authorName: "Angelo Moreno",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/angelo-moreno.jpeg",
     avatarAlt: "Foto de perfil de Angelo Moreno",
     linkedInUrl: "https://www.linkedin.com/in/angelo-moreno-a9934a205",
@@ -256,7 +257,8 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     quote: `Trabajar con Hugo fue aprender a confiar en mí y en mis capacidades por medio de su guía constante para aprender todo lo relacionado al proyecto con mucha paciencia, constancia, ánimos y empoderamiento, haciendo el proceso de ingresar a un área completamente nueva para mí, mucho más fácil. 
 Aprendí de su compromiso para terminar todo lo que se comienza, la constancia para aprender desde cero, la humildad con la que se debe liderar y que la experiencia te da seguridad. Gracias a su guía y a la oportunidad que me dio para desenvolverme en el área, pude identificar el rumbo al que deseo dirigir mi futuro laboral y me señaló el camino que debo continuar.`,
     authorName: "Vera Lucia Tovar",
-    role: "Fui parte de tu equipo · Te guié como mentor o coach · Te entrevisté en un proceso de selección · Mi líder de área",
+    jobTitle:
+      "Fui parte de tu equipo · Te guié como mentor o coach · Te entrevisté en un proceso de selección · Mi líder de área",
     avatarSrc: "/images/testimonials/vera-lucia-tovar.jpg",
     avatarAlt: "Foto de perfil de Vera Lucia Tovar",
     linkedInUrl: "https://www.linkedin.com/in/veratovar/",
@@ -266,7 +268,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.ERICK_PALOMINO]: {
     quote: `Me inspiró profundamente a afrontar nuevos retos, muchos de los cuales solo los postergaba una y otra vez por miedo. Me hizo ver con claridad y empatía que la confianza genuina en uno mismo es vital—no solo útil, sino esencial—para desarrollar estos retos y transformarlos en oportunidades reales de crecimiento. Esa perspectiva cambió mi forma de enfrentar desafíos.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo · Me guiaste como mentor o coach · Me entrevistaste en un proceso de selección",
+    jobTitle:
+      "Fui parte de tu equipo · Me guiaste como mentor o coach · Me entrevistaste en un proceso de selección",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -281,7 +284,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.ANONIMO]: {
     quote: `Eres un buen lider, guiando al equipo en un buen camino, empatico, agradable, pero tambien aveces exigente jeje, pero se que fue para que sea una mejora`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil",
     linkedInUrl: "https://www.linkedin.com",
@@ -291,7 +294,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.YAZMIN_OCAMPO]: {
     quote: `Bueno, yo formé parte de tu equipo, y definitivamente fue una experiencia profundamente agradable compartir con un profesional como tú. Siempre tus palabras fueron de motivación genuina hacia mi persona, y eso creó un ambiente donde me sentí valorada y con ganas de dar lo mejor de mí. Tu forma de acompañar desde el ánimo sincero hizo una diferencia real en mi desarrollo.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -306,7 +309,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.LEENKIN]: {
     quote: `Ha sido genial trabajar contigo, Hugo. Siempre tienes todo bien claro y lo explicas de una forma súper sencilla y genuina, lo que hace que sea súper fácil de entender para todos. Sobre todo porque se nota profundamente que tienes muchísima experiencia en el mundo tech, pero la compartes con humildad y cercanía auténtica. Esa combinación de conocimiento y humanidad es inspiradora.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -321,7 +324,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.MAJO_ZAMBRANO]: {
     quote: `Siempre estuviste ahí genuinamente para escuchar a los talentos, con esa presencia auténtica que hace sentir que realmente importas. Me sentí profundamente valorada en mi trabajo, y llegar cada día era sentir que llegaba a un ambiente verdaderamente humano, lleno de positivismo sincero y apoyo real. Esa atmósfera de confianza y humanidad transforma la experiencia laboral en algo significativo.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -338,7 +341,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Me siento bastante bien por el ambiente humano que se creó y, sobre todo, por la oportunidad sincera de permitirme aprender haciendo. Esa confianza para experimentar y crecer ha sido transformadora en mi desarrollo profesional.`,
     authorName: "Sandra Seminario",
-    role: "Te entrevisté en un proceso de selección, parte del equipo de ti",
+    jobTitle:
+      "Te entrevisté en un proceso de selección, parte del equipo de ti",
     avatarSrc: "/images/testimonials/sandra-seminario.jpg",
     avatarAlt: "Foto de perfil de Sandra Seminario",
     linkedInUrl: "https://www.linkedin.com/in/sangaselu/",
@@ -355,7 +359,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Su liderazgo es un ejemplo vivo de inspiración y apoyo constante, donde cada persona se siente vista, valorada y acompañada en su camino de desarrollo. Esa forma de liderar desde la humanidad transforma equipos y vidas.`,
     authorName: "Dan Rodriguez",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/dan-rodriguez.jpg",
     avatarAlt: "Foto de perfil de Dan Rodriguez",
     linkedInUrl:
@@ -377,7 +381,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Doy testimonio de que el proyecto que lideraste, Hugo, le dio un nuevo rumbo a la vida de mi hermano, y por eso estoy profundamente agradecido. Tu forma de crear espacios donde las personas pueden crecer y pertenecer trasciende lo laboral—transforma vidas y familias enteras.`,
     authorName: "Andrews Postillos",
-    role: "Soy tu hermano y cercano testigo de tu labor.",
+    jobTitle: "Soy tu hermano y cercano testigo de tu labor.",
     avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl:
@@ -396,7 +400,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     La comunicación siempre—siempre—fue positiva y sincera, y eso es algo difícil de encontrar que hace que uno pueda trabajar feliz y con confianza. Esa combinación de exigencia y humanidad crea un ambiente donde te sientes seguro para crecer.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -411,7 +415,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.HANS_ALFARO]: {
     quote: `Me gusta profundamente que seas metódico y rápido en resolver lo que se presenta. Esa combinación de metodología clara y velocidad de respuesta genuina hace que trabajar contigo sea eficiente y confiable. Tu forma de abordar los problemas con estructura y agilidad crea un ambiente donde las cosas fluyen y se resuelven de manera efectiva.`,
     authorName: "Hans Alfaro",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/testimonials/hans-alfaro.jpg",
     avatarAlt: "Foto de perfil de Hans Alfaro",
     linkedInUrl: "https://www.linkedin.com/in/hans-alfaro-23a2b7135/",
@@ -428,7 +432,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     En lo personal, tenía mis dudas al principio, pero conforme fue transcurriendo el tiempo se fueron disipando y se fue generando una confianza profunda. Esa capacidad de construir confianza de manera genuina, tanto como profesional como persona, es algo que valoro inmensamente.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -443,17 +447,18 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.MANUEL_BAZAES]: {
     quote: `Trabajamos mucho estos últimos meses, tuvimos múltiples sesiones y estuviste apoyándome en cada una de ellas. También cuando hubo inconvenientes, sentí la motivación y el compromiso. Me fue grato trabajar juntos sinceramente, y aunque hubo momentos de estrés, vi cómo te apoyaste en mí. Espero seguir mejorando aspectos que siento son detalles normales cuando recién estamos empezando con nuestro nuevo Líder.`,
     authorName: "Manuel Bazaes",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil de Manuel Bazaes",
-    linkedInUrl: "https://www.linkedin.com/in/manuel-alejandro-bazaes-loarte-51b685175/",
+    linkedInUrl:
+      "https://www.linkedin.com/in/manuel-alejandro-bazaes-loarte-51b685175/",
     tags: ["Colaboración", "Apoyo mutuo", "Crecimiento conjunto"],
     highlight: "sentí la motivación y el compromiso",
   },
   [TestimonioId.ALESSANDRA_PEREZ]: {
     quote: `Al principio fue neutral ya que no te veía mucho, pero poco a poco nos conocimos mejor y surgió la buena comunicación. Ha sido tranquilo el trabajo, sobre todo sabiendo que hay alguien que nos apoya con los desafíos más grandes.`,
     authorName: "Anónimo",
-    role: "Soy parte de tu equipo en OnRoad.",
+    jobTitle: "Soy parte de tu equipo en OnRoad.",
     avatarSrc: "/images/avatar-female.svg",
     avatarAlt: "Foto de perfil anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -463,7 +468,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.GABRIEL_GRANADOS]: {
     quote: `A mis 23 años he tenido diversos mentores, y siento que no he podido conectar con muchos ni trabajar de la mano en armonía. Caso contrario trabajando con Hugo como mentor. La confianza, la motivación y el trabajo en equipo es algo que siempre se puede rescatar, sin contar el apoyo y los incentivos para emplear mejor nuestro trabajo. Sin duda alguna, la confianza y la cercanía con el equipo hace que vea de otra manera el trabajar, y ver de manera positiva mi futuro profesional.`,
     authorName: "Anónimo",
-    role: "Soy parte de tu equipo.",
+    jobTitle: "Soy parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil anónimo",
     linkedInUrl: "https://www.linkedin.com",
@@ -473,7 +478,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
   [TestimonioId.JOSE_LOSTAUNAU]: {
     quote: `Como jefe llegas a motivar a todos los que trabajan a tu alrededor y a mostrar tu apoyo para que los demás se sientan cómodos. Esa capacidad de crear un ambiente donde todos nos sentimos respaldados marca la diferencia.`,
     authorName: "Anónimo",
-    role: "Fui parte de tu equipo.",
+    jobTitle: "Fui parte de tu equipo.",
     avatarSrc: "/images/avatar-male.svg",
     avatarAlt: "Foto de perfil anónimo",
     linkedInUrl: "https://www.linkedin.com",

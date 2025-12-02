@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import HeroNavbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -9,7 +10,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  
+
   // No usamos traducciones aquí, solo texto hardcodeado
   const isSpanish = locale === "es";
 
@@ -60,9 +61,7 @@ export default function PricingLayout({
       <HeroNavbar />
       <main className="flex-grow">
         {children}
-        <WhatsAppButton
-          message="Hola! Quiero más información sobre la mentoría tech 🚀"
-        />
+        <WhatsAppButton message="Hola! Quiero más información sobre la mentoría tech 🚀" />
       </main>
       <Footer />
     </>

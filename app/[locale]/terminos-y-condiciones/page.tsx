@@ -202,15 +202,15 @@ export default function TerminosYCondicionesPage() {
         {/* Footer Navigation */}
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
           <Link
-            href="/es/privacy-policy"
             className="text-primary hover:text-primary/80 font-medium text-center"
+            href="/es/privacy-policy"
           >
             Ver Políticas de Privacidad →
           </Link>
           <span className="hidden md:inline text-gray-400">|</span>
           <Link
-            href="/es/libro-de-reclamaciones"
             className="text-primary hover:text-primary/80 font-medium text-center"
+            href="/es/libro-de-reclamaciones"
           >
             Libro de Reclamaciones →
           </Link>

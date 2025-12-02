@@ -34,8 +34,8 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
 
   return (
     <script
-      type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      type="application/ld+json"
     />
   );
 }
@@ -58,6 +58,7 @@ function generateBreadcrumbs(
   };
 
   let currentPath = "";
+
   paths.forEach((path, index) => {
     // Skip locale segment
     if (index === 0 && (path === "es" || path === "en")) {
@@ -67,6 +68,7 @@ function generateBreadcrumbs(
     currentPath += `/${path}`;
     const name =
       pathNames[path] || path.charAt(0).toUpperCase() + path.slice(1);
+
     breadcrumbs.push({
       name,
       url: `/${locale}${currentPath}`,

@@ -68,6 +68,7 @@ export function CalendlyButton({
     if (utm?.utmTerm) params.append("utm_term", utm.utmTerm);
 
     const queryString = params.toString();
+
     if (queryString) {
       calendlyUrl += (calendlyUrl.includes("?") ? "&" : "?") + queryString;
     }

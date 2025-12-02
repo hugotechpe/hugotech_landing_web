@@ -1,4 +1,5 @@
 import type { TestimonioCardProps } from "@/components/cards/TestimonioCard";
+
 import { TESTIMONIOS_LIST as TESTIMONIOS_LIST_ES } from "./testimonios-es";
 import { TESTIMONIOS_LIST as TESTIMONIOS_LIST_EN } from "./testimonios-en";
 
@@ -9,6 +10,7 @@ export function getTestimoniosList(
   if (locale === "en") {
     return TESTIMONIOS_LIST_EN;
   }
+
   return TESTIMONIOS_LIST_ES;
 }
 

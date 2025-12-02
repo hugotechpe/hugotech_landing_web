@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+
 import ImpactCounter from "@/components/ImpactCounter";
 
 export default function ImpactSection() {

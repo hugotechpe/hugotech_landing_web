@@ -5,16 +5,17 @@ import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
-import LinkedInSquareIcon from "@/common/icons/social/LinkedInSquareIcon";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 import { motion } from "framer-motion";
+
+import LinkedInSquareIcon from "@/common/icons/social/LinkedInSquareIcon";
 
 export interface TestimonioCardProps {
   quote: string;
   authorName: string;
   authorAge?: number | string;
-  role: string;
+  jobTitle: string;
   linkedInUrl?: string;
   avatarSrc?: string;
   avatarAlt?: string;
@@ -32,7 +33,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
   quote,
   authorName,
   authorAge,
-  role,
+  jobTitle,
   linkedInUrl,
   avatarSrc = "/images/image5.png",
   avatarAlt = authorName,
@@ -52,6 +53,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
     if (!highlight) return text;
 
     const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+
     return parts.map((part, i) =>
       part.toLowerCase() === highlight.toLowerCase() ? (
         <strong
@@ -68,24 +70,24 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
 
   return (
     <motion.div
-      whileHover={{
-        scale: 1.02,
-        y: -8,
-      }}
       transition={{
         type: "spring",
         stiffness: 300,
         damping: 20,
       }}
+      whileHover={{
+        scale: 1.02,
+        y: -8,
+      }}
     >
       <Card
-        shadow="none"
         className={clsx(
           "bg-white rounded-2xl p-4 border-2 border-default-200",
           "hover:border-primary/40 hover:shadow-2xl transition-all duration-300 cursor-default",
           "backdrop-blur-sm bg-white/90",
           className,
         )}
+        shadow="none"
       >
         <CardBody className="gap-4">
           {/* Tags de impacto */}
@@ -94,10 +96,10 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
               {tags.map((tag, idx) => (
                 <Chip
                   key={idx}
+                  className="text-xs font-medium"
+                  color="primary"
                   size="sm"
                   variant="flat"
-                  color="primary"
-                  className="text-xs font-medium"
                 >
                   {tag}
                 </Chip>
@@ -106,30 +108,30 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
           )}
 
           <figure
-            aria-label={`Testimonio de ${authorName}`}
             itemScope
+            aria-label={`Testimonio de ${authorName}`}
             itemType="https://schema.org/Review"
           >
             {/* Schema.org microdata for Google Rich Results */}
             <span
-              itemProp="author"
               itemScope
+              itemProp="author"
               itemType="https://schema.org/Person"
               style={{ display: "none" }}
             >
               <span itemProp="name">{authorName}</span>
             </span>
             <span
-              itemProp="itemReviewed"
               itemScope
+              itemProp="itemReviewed"
               itemType="https://schema.org/Organization"
               style={{ display: "none" }}
             >
               <span itemProp="name">HugoTech</span>
             </span>
             <span
-              itemProp="reviewRating"
               itemScope
+              itemProp="reviewRating"
               itemType="https://schema.org/Rating"
               style={{ display: "none" }}
             >
@@ -138,8 +140,8 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             </span>
 
             <blockquote
-              itemProp="reviewBody"
               className="text-customgray/90 text-base md:text-lg leading-[1.8] font-body"
+              itemProp="reviewBody"
             >
               <span className="text-3xl text-primary/20 font-heading leading-none mr-1">
                 &ldquo;
@@ -153,11 +155,11 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
             {/* Botón expandir/colapsar para testimonios largos */}
             {isLongQuote && (
               <Button
+                className="mt-3 text-sm font-medium"
+                color="primary"
                 size="sm"
                 variant="light"
-                color="primary"
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="mt-3 text-sm font-medium"
               >
                 {isExpanded ? "Ver menos ↑" : "Leer historia completa ↓"}
               </Button>
@@ -167,15 +169,15 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
 
             <figcaption className="mt-4 flex items-center gap-4">
               <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileHover={{ scale: 1.1, rotate: 5 }}
               >
                 <Image
-                  src={avatarSrc}
                   alt={avatarAlt}
-                  width={64}
-                  height={64}
                   className="rounded-full object-cover w-16 h-16 ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300 shadow-md"
+                  height={64}
+                  src={avatarSrc}
+                  width={64}
                 />
               </motion.div>
               <div className="flex-1">
@@ -184,14 +186,14 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
                   {authorAge ? ` – ${authorAge}` : ""}
                 </p>
                 <p className="text-default-500 text-sm leading-relaxed mt-1">
-                  {role}
+                  {jobTitle}
                 </p>
                 {linkedInUrl && (
                   <Link
                     isExternal
+                    className="text-customgray text-sm hover:text-primary transition-colors inline-flex items-center gap-1 mt-2"
                     href={linkedInUrl}
                     title={`Perfil de ${authorName} en LinkedIn`}
-                    className="text-customgray text-sm hover:text-primary transition-colors inline-flex items-center gap-1 mt-2"
                   >
                     <LinkedInSquareIcon className="h-4 w-4 text-[#0e76a8]" />
                     <span className="font-medium">Ver perfil</span>

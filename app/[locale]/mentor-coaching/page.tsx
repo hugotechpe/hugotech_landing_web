@@ -63,9 +63,9 @@ export default function MentorCoachingPage() {
               {/* CTA Button */}
               <Button
                 as={Link}
+                className="bg-brand text-white font-bold text-lg px-10 py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300"
                 href="#agendar"
                 size="lg"
-                className="bg-brand text-white font-bold text-lg px-10 py-7 hover:scale-110 hover:shadow-2xl transition-all duration-300"
               >
                 Agenda tu sesión ahora
               </Button>
@@ -213,8 +213,8 @@ export default function MentorCoachingPage() {
             </div>
 
             <LazyCalendlyEmbed
-              url="https://calendly.com/hugotech/mentor-coaching-1-a-1"
               height="800px"
+              url="https://calendly.com/hugotech/mentor-coaching-1-a-1"
             />
           </motion.div>
         </div>

@@ -5,8 +5,9 @@ import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { useTranslations, useMessages } from "next-intl";
+
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -25,9 +26,9 @@ export function PorQueGratuitoSection() {
 
   return (
     <section
-      id="porquegratuito"
       aria-label={t("title")}
       className="scroll-mt-0 bg-gradient-to-b from-white via-[#F0FAF9] to-white relative overflow-hidden"
+      id="porquegratuito"
     >
       {/* Decorative blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -36,11 +37,11 @@ export function PorQueGratuitoSection() {
       <div className="container mx-auto max-w-1400 px-6 py-16 md:py-24 relative z-10">
         {/* Encabezado principal de la sección */}
         <motion.header
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
           className="mb-12 text-center"
+          initial="hidden"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-customgray mb-6">
             {t("title")}
@@ -54,11 +55,11 @@ export function PorQueGratuitoSection() {
 
         {/* Stats Bar */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
           className="mb-12"
+          initial="hidden"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.div variants={scaleIn} whileHover={{ y: -5 }}>
@@ -120,18 +121,18 @@ export function PorQueGratuitoSection() {
             {/* Columna izquierda: Mentoría 1 a 1 */}
             <motion.div
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
               variants={fadeInUp}
+              viewport={{ once: true }}
+              whileInView="visible"
             >
               <motion.div
-                whileHover={{ scale: 1.02, rotateY: 2 }}
                 transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.02, rotateY: 2 }}
               >
                 <Card
                   as="article"
-                  shadow="lg"
                   className="bg-gradient-to-br from-[#FFE8DB] to-[#FFD4B8] border-2 border-orange-200 h-full"
+                  shadow="lg"
                 >
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
@@ -187,9 +188,9 @@ export function PorQueGratuitoSection() {
                     <div className="mt-auto pt-4">
                       <Button
                         as={Link}
+                        className="bg-customgray text-white hover:bg-primary w-full font-semibold"
                         href="#cita"
                         size="lg"
-                        className="bg-customgray text-white hover:bg-primary w-full font-semibold"
                       >
                         {t("mentoriaCard.ctaLabel")}
                       </Button>
@@ -205,19 +206,19 @@ export function PorQueGratuitoSection() {
             {/* Columna derecha: Filosofía */}
             <motion.div
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
               transition={{ delay: 0.2 }}
+              variants={fadeInUp}
+              viewport={{ once: true }}
+              whileInView="visible"
             >
               <motion.div
-                whileHover={{ scale: 1.02, rotateY: -2 }}
                 transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.02, rotateY: -2 }}
               >
                 <Card
                   as="article"
-                  shadow="lg"
                   className="bg-gradient-to-br from-[#E0F6F5] to-[#C4F1EF] border-2 border-primary/30 h-full"
+                  shadow="lg"
                 >
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
@@ -284,7 +285,6 @@ export function PorQueGratuitoSection() {
             </motion.div>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import createMiddleware from "next-intl/middleware";
-import { routing } from "./i18n/routing";
 import { NextRequest, NextResponse } from "next/server";
+
+import { routing } from "./i18n/routing";
 
 // Middleware personalizado para forzar español como idioma predeterminado
 const intlMiddleware = createMiddleware({
@@ -18,7 +19,7 @@ export default function middleware(request: NextRequest) {
 
   // Si no tiene prefijo de idioma y no es un archivo estático, redirigir a /es
   const hasLocale = routing.locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
   if (!hasLocale && !pathname.match(/\.[^\/]+$/)) {

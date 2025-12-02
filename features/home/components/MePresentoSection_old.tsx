@@ -2,14 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
-import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
-import IconBoxCard from "@/components/cards/IconBoxCard";
-import MentoringCoachingIcon from "@/common/icons/custom/MentoringCoachingIcon";
-import EquiposAltoRendimientoIcon from "@/common/icons/custom/EquiposAltoRendimientoIcon";
-import LiderazgoAgilTransformaIcon from "@/common/icons/custom/LiderazgoAgilTransformaIcon";
 import { useMessages, useTranslations } from "next-intl";
+
+import IconBoxCard from "@/components/cards/IconBoxCard";
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
 // Variantes de animación para scroll
@@ -22,16 +19,7 @@ const fadeInUp = {
   },
 };
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-export function MePresentoSection() {
+export default function MePresentoSection() {
   const messages = useMessages() as any;
   const t = useTranslations("Sections.MePresento");
   const section = messages?.Sections?.MePresento ?? {};
@@ -63,11 +51,11 @@ export function MePresentoSection() {
 
   return (
     <section
-      id="mepresento"
-      aria-label={title}
       itemScope
-      itemType="https://schema.org/Person"
+      aria-label={title}
       className="scroll-mt-0 bg-primary"
+      id="mepresento"
+      itemType="https://schema.org/Person"
     >
       <div className="bg-white rounded-t-[60px]">
         <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
@@ -76,9 +64,9 @@ export function MePresentoSection() {
             {/* Columna izquierda con animación */}
             <motion.div
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
+              viewport={{ once: true, margin: "-100px" }}
+              whileInView="visible"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-customgray">
                 {title}
@@ -92,9 +80,9 @@ export function MePresentoSection() {
                 {chips.map((chip) => (
                   <Chip
                     key={chip}
+                    className="bg-primary/90 text-white font-semibold"
                     color="primary"
                     variant="flat"
-                    className="bg-primary/90 text-white font-semibold"
                   >
                     {chip}
                   </Chip>
@@ -113,14 +101,14 @@ export function MePresentoSection() {
                 {items.map((item) => (
                   <IconBoxCard
                     key={item.title}
-                    title={item.title}
-                    description={item.description}
                     Icon={
                       item.iconKey
                         ? IconComponentMap[item.iconKey as IconKey]
                         : undefined
                     }
+                    description={item.description}
                     headingAs="h3"
+                    title={item.title}
                   />
                 ))}
               </div>
@@ -128,19 +116,19 @@ export function MePresentoSection() {
 
             {/* Imagen de perfil */}
             <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
               className="relative"
+              initial="hidden"
+              variants={fadeInUp}
+              viewport={{ once: true, margin: "-100px" }}
+              whileInView="visible"
             >
               <div className="relative w-full max-w-md md:max-w-lg mx-auto">
                 <Image
-                  src="/images/image2.png"
                   alt="Foto de Hugo Casanova, mentor y coach en tecnología"
-                  width={623}
-                  height={563}
                   className="object-cover w-full h-auto"
+                  height={563}
+                  src="/images/image2.png"
+                  width={623}
                 />
               </div>
             </motion.div>

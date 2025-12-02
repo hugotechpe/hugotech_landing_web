@@ -13,9 +13,9 @@ export function PorQueGratuitoSection() {
 
   return (
     <section
-      id="porquegratuito"
       aria-label={t("title")}
       className="scroll-mt-0 bg-gradient-to-b from-white to-[#F0FAF9]"
+      id="porquegratuito"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         {/* Encabezado principal de la sección */}
@@ -36,8 +36,8 @@ export function PorQueGratuitoSection() {
             {/* Columna izquierda: Mentoría 1 a 1 */}
             <Card
               as="article"
-              shadow="none"
               className="bg-[#FFE8DB] p-4 sm:p-5 pb-6"
+              shadow="none"
             >
               <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-2xl sm:text-3xl font-bold">
@@ -69,11 +69,11 @@ export function PorQueGratuitoSection() {
                 <div className="mt-4 sm:mt-6">
                   <Button
                     as={Link}
+                    className="bg-customgray w-full sm:w-fit"
+                    color="primary"
                     href="#cita"
                     size="md"
-                    color="primary"
                     variant="solid"
-                    className="bg-customgray w-full sm:w-fit"
                   >
                     {t("mentoriaCard.ctaLabel")}
                   </Button>
@@ -87,8 +87,8 @@ export function PorQueGratuitoSection() {
             {/* Columna derecha: Filosofía */}
             <Card
               as="article"
-              shadow="none"
               className="bg-[#E0F6F5] p-4 sm:p-5 pb-6"
+              shadow="none"
             >
               <CardBody className="flex flex-col gap-3 text-customgray">
                 <h3 className="text-2xl sm:text-3xl font-bold">

@@ -5,7 +5,7 @@ import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { Link } from "@/i18n/navigation";
 
 const fadeIn = {

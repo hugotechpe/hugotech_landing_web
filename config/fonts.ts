@@ -1,8 +1,8 @@
-import { 
-  Fira_Code as FontMono, 
-  Inter as FontSans, 
+import {
+  Fira_Code as FontMono,
+  Inter as FontSans,
   Playfair_Display as FontHeading,
-  Crimson_Text as FontQuote
+  Crimson_Text as FontQuote,
 } from "next/font/google";
 
 // Inter como fuente principal (más cálida y legible que DM Sans)

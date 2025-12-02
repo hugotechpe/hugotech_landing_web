@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+
 import { trackScrollToSection } from "@/lib/gtm";
 
 interface UseSectionTrackingOptions {
@@ -23,7 +24,7 @@ export function useSectionTracking({
 
   useEffect(() => {
     const section = document.getElementById(sectionId);
-    
+
     if (!section || hasTrackedRef.current) return;
 
     const observer = new IntersectionObserver(
@@ -35,7 +36,7 @@ export function useSectionTracking({
           }
         });
       },
-      { threshold }
+      { threshold },
     );
 
     observer.observe(section);
@@ -57,7 +58,7 @@ export function usePageTracking(locale?: string) {
     if (typeof window !== "undefined") {
       // Initialize dataLayer if it doesn't exist
       window.dataLayer = window.dataLayer || [];
-      
+
       // Track page view
       window.dataLayer.push({
         event: "page_view",

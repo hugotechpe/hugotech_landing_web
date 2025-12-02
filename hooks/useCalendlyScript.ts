@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 /**
  * Hook para cargar dinámicamente el script de Calendly solo cuando se necesita
@@ -17,6 +17,7 @@ export function useCalendlyScript() {
     // Verificar si el script ya existe
     if (document.querySelector('script[src*="calendly"]')) {
       setIsLoaded(true);
+
       return;
     }
 
@@ -24,6 +25,7 @@ export function useCalendlyScript() {
 
     // Crear y agregar el script de Calendly
     const script = document.createElement("script");
+
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
     script.onload = () => {
@@ -32,13 +34,13 @@ export function useCalendlyScript() {
     };
     script.onerror = () => {
       setIsLoading(false);
-      console.error("Failed to load Calendly script");
     };
 
     document.body.appendChild(script);
 
     // Agregar también el CSS de Calendly
     const link = document.createElement("link");
+
     link.href = "https://assets.calendly.com/assets/external/widget.css";
     link.rel = "stylesheet";
     document.head.appendChild(link);

@@ -11,7 +11,7 @@ interface AlternateLinksProps {
  * Mejora SEO multiidioma indicando a Google las versiones alternativas de cada página
  * Incluye códigos de idioma específicos y x-default
  */
-export function AlternateLinks({ locale }: AlternateLinksProps) {
+export function AlternateLinks({ locale: _locale }: AlternateLinksProps) {
   const pathname = usePathname();
 
   // Remover el prefijo de locale de la ruta
@@ -36,7 +36,7 @@ export function AlternateLinks({ locale }: AlternateLinksProps) {
   return (
     <>
       {alternateUrls.map(({ hreflang, href }) => (
-        <link key={hreflang} rel="alternate" hrefLang={hreflang} href={href} />
+        <link key={hreflang} href={href} hrefLang={hreflang} rel="alternate" />
       ))}
     </>
   );

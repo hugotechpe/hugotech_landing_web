@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
-import { Link } from "@heroui/link";
 import { useTranslations, useMessages } from "next-intl";
 import { motion } from "framer-motion";
 
@@ -20,62 +19,62 @@ export function CoachingSection() {
 
   return (
     <section
-      id="cccausa"
       aria-label={t("title")}
       className="scroll-mt-0 bg-primary"
+      id="cccausa"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-40">
           {/* Columna izquierda: imagen de referencia */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
             className="relative w-full mx-auto"
+            initial="hidden"
+            variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <Image
-              src="/images/image6.png"
-              alt={t("images.mainAlt")}
-              width={538}
-              height={660}
               priority
+              alt={t("images.mainAlt")}
               className="block object-cover"
+              height={660}
+              src="/images/image6.png"
               style={{ width: "100%", height: "auto" }}
+              width={538}
             />
             <Image
-              src="/images/image8.png"
               alt={t("images.badgeRightAlt")}
-              width={300}
-              height={171}
               className="hidden sm:block absolute -right-10 lg:-right-30 bottom-5 md:bottom-30"
+              height={171}
+              src="/images/image8.png"
+              width={300}
             />
             <Image
-              src="/images/image7.png"
               alt={t("images.badgeLeftAlt")}
-              width={300}
-              height={171}
               className="hidden sm:block absolute left-0 top-0 md:-left-5 md:-top-0"
+              height={171}
+              src="/images/image7.png"
+              width={300}
             />
           </motion.div>
 
           {/* Columna derecha: contenido SEO semántico */}
           <motion.div
             initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <h2
-              itemProp="headline"
               className="text-3xl md:text-4xl font-bold text-white"
+              itemProp="headline"
             >
               {t("title")}
             </h2>
             <p className="mt-2 text-white/90">{t("subtitle")}</p>
 
             <div className="mt-6">
-              <p itemProp="description" className="text-white/90">
+              <p className="text-white/90" itemProp="description">
                 {t("content.p1")}
               </p>
 
@@ -101,24 +100,24 @@ export function CoachingSection() {
               </div>
 
               <form
-                className="mt-6 flex flex-col sm:flex-row gap-20"
                 aria-label={t("form.ariaLabel")}
+                className="mt-6 flex flex-col sm:flex-row gap-20"
               >
                 <Input
-                  name={t("form.input.name")}
                   aria-label={t("form.input.ariaLabel")}
-                  placeholder={t("form.input.placeholder")}
-                  type="url"
-                  size="lg"
-                  variant="flat"
                   className="flex-1"
+                  name={t("form.input.name")}
+                  placeholder={t("form.input.placeholder")}
+                  size="lg"
+                  type="url"
+                  variant="flat"
                 />
                 <Button
-                  type="submit"
-                  size="lg"
-                  color="primary"
-                  variant="solid"
                   className="bg-[#115C5B] text-white hover:bg-[#183F33] w-auto sm:w-[140px]"
+                  color="primary"
+                  size="lg"
+                  type="submit"
+                  variant="solid"
                 >
                   {t("form.submitLabel")}
                 </Button>

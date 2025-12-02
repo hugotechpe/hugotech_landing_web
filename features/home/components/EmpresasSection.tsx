@@ -25,18 +25,18 @@ export function EmpresasSection() {
 
   return (
     <section
-      id="empresas"
       aria-label={t("header.title")}
       className="scroll-mt-0 bg-[#FBF7EC]"
+      id="empresas"
     >
       <div className="container mx-auto max-w-1400 px-6 py-10 md:py-20">
         {/* Encabezado principal de la sección */}
         <motion.header
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
           className="mb-12"
+          initial="hidden"
+          variants={fadeInUp}
+          viewport={{ once: true, margin: "-100px" }}
+          whileInView="visible"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-customgray">
             {t("header.title")}
@@ -55,23 +55,23 @@ export function EmpresasSection() {
 
         {/* Contenedor de dos columnas con los servicios: Mentoring 1 a 1 y Servicio Business */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
           className="w-full"
+          initial="hidden"
+          variants={staggerContainer}
+          viewport={{ once: true, margin: "-100px" }}
+          whileInView="visible"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Columna izquierda: Mentoría 1 a 1 */}
             <motion.div
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <Card
                 as="article"
-                shadow="none"
                 className="bg-[#FFE8DB] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300"
+                shadow="none"
               >
                 <CardBody className="flex flex-col gap-3 text-customgray">
                   <h3 className="text-2xl sm:text-3xl font-bold">
@@ -107,11 +107,11 @@ export function EmpresasSection() {
                   <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
                     <Button
                       as={Link}
+                      className="bg-customgray w-full sm:w-fit"
+                      color="primary"
                       href="#cita"
                       size="md"
-                      color="primary"
                       variant="solid"
-                      className="bg-customgray w-full sm:w-fit"
                     >
                       {t("mentoriaCard.ctaLabel")}
                     </Button>
@@ -122,16 +122,16 @@ export function EmpresasSection() {
 
                   <div className="absolute bottom-0 right-0">
                     <Image
-                      src="/images/image3.png"
-                      alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
-                      width={220}
-                      height={293}
                       priority
-                      quality={85}
-                      placeholder="blur"
+                      alt="Mentoría personalizada para potenciar tu mentalidad tech y tu crecimiento"
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nGPY2fXqv0AAw87uV/8ZGBgYdna9BPL+MzAwMOzqfsXAwABm7Ox6xcDAwABmAwCMNwptBHo5GAAAAABJRU5ErkJggg=="
-                      sizes="(max-width: 768px) 0px, 220px"
                       className="rounded-lg shadow-sm hidden md:block object-cover"
+                      height={293}
+                      placeholder="blur"
+                      quality={85}
+                      sizes="(max-width: 768px) 0px, 220px"
+                      src="/images/image3.png"
+                      width={220}
                     />
                   </div>
                 </CardBody>
@@ -140,14 +140,14 @@ export function EmpresasSection() {
 
             {/* Columna derecha: Servicio Business */}
             <motion.div
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <Card
                 as="article"
-                shadow="none"
                 className="bg-[#E0F6F5] p-4 sm:p-5 pb-4 sm:pb-0 pr-4 sm:pr-0 relative h-full hover:shadow-xl transition-shadow duration-300"
+                shadow="none"
               >
                 <CardBody className="flex flex-col gap-3 text-customgray">
                   <h3 className="text-2xl sm:text-3xl font-bold">
@@ -183,16 +183,16 @@ export function EmpresasSection() {
                   <div className="h-full flex flex-col justify-between w-full sm:w-[70%] mt-4 sm:mt-6 mb-4 sm:mb-0">
                     <Button
                       as={Link}
+                      className="bg-customgray w-full sm:w-fit"
+                      color="primary"
                       href={
                         emp?.empresasCard?.ctaUrl ||
                         "https://calendly.com/hugotech/reunion-exploratoria"
                       }
-                      target="_blank"
                       rel="noopener noreferrer"
                       size="md"
-                      color="primary"
+                      target="_blank"
                       variant="solid"
-                      className="bg-customgray w-full sm:w-fit"
                     >
                       {t("empresasCard.ctaLabel")}
                     </Button>
@@ -203,16 +203,16 @@ export function EmpresasSection() {
 
                   <div className="absolute bottom-0 right-0">
                     <Image
-                      src="/images/image4.png"
                       alt={t("empresasCard.imageAlt")}
-                      width={227}
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAAChtdzfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgQAL/kTADAwMDw8aOl//Xd738D+VsbHv5HyjGsKHtJVwCKIYsBgBXBQ5jPw6z9QAAAABJRU5ErkJggg=="
+                      className="rounded-lg shadow-sm hidden md:block object-cover"
                       height={215}
                       loading="lazy"
-                      quality={85}
                       placeholder="blur"
-                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAAChtdzfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgQAL/kTADAwMDw8aOl//Xd738D+VsbHv5HyjGsKHtJVwCKIYsBgBXBQ5jPw6z9QAAAABJRU5ErkJggg=="
+                      quality={85}
                       sizes="(max-width: 768px) 0px, 227px"
-                      className="rounded-lg shadow-sm hidden md:block object-cover"
+                      src="/images/image4.png"
+                      width={227}
                     />
                   </div>
                 </CardBody>

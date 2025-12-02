@@ -4,11 +4,12 @@ import { useTranslations } from "next-intl";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { Accordion, AccordionItem } from "@heroui/accordion";
-import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { motion } from "framer-motion";
+import { useParams } from "next/navigation";
+
+import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { TestimonioCard } from "@/components/cards/TestimonioCard";
 import { getTestimoniosList } from "@/features/testimonials/enums";
-import { useParams } from "next/navigation";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { JsonLd } from "@/components/seo/JsonLd";
 
@@ -38,7 +39,7 @@ export default function PricingPage() {
       "Estefani Ayquipa",
       "Dan Rodriguez",
       "Miguel Bustillos",
-    ].includes(test.authorName)
+    ].includes(test.authorName),
   );
 
   // Schema.org Service + Offer
@@ -69,32 +70,32 @@ export default function PricingPage() {
       {/* Hero Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-primary-50 to-success-50 dark:from-primary-900/20 dark:to-success-900/20">
         <motion.div
-          initial="hidden"
           animate="visible"
-          variants={stagger}
           className="max-w-7xl mx-auto text-center"
+          initial="hidden"
+          variants={stagger}
         >
           <motion.div variants={fadeIn}>
             <Chip
-              color="success"
-              variant="flat"
-              size="lg"
               className="mb-6 font-semibold"
+              color="success"
+              size="lg"
+              variant="flat"
             >
               {t("hero.badge")}
             </Chip>
           </motion.div>
 
           <motion.h1
-            variants={fadeIn}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-customgray dark:text-white mb-6"
+            variants={fadeIn}
           >
             {t("hero.title")}
           </motion.h1>
 
           <motion.p
-            variants={fadeIn}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            variants={fadeIn}
           >
             {t("hero.subtitle")}
           </motion.p>
@@ -104,10 +105,10 @@ export default function PricingPage() {
       {/* Cards B2C y B2B */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <motion.div
-          initial="hidden"
           animate="visible"
-          variants={stagger}
           className="grid md:grid-cols-2 gap-8"
+          initial="hidden"
+          variants={stagger}
         >
           {/* Card B2C - Mentoría 1 a 1 */}
           <motion.div variants={fadeIn}>
@@ -125,7 +126,7 @@ export default function PricingPage() {
                 {/* Primera sesión gratis */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                   <div className="flex items-center gap-3 mb-3">
-                    <Chip color="success" variant="solid" size="lg">
+                    <Chip color="success" size="lg" variant="solid">
                       {t("b2c.free.badge")}
                     </Chip>
                     <span className="text-lg font-semibold text-customgray dark:text-white">
@@ -177,11 +178,11 @@ export default function PricingPage() {
 
                 {/* CTA */}
                 <CalendlyButton
-                  url="https://calendly.com/hugotech/mentoria1a1"
-                  text={t("b2c.cta")}
+                  className="w-full font-semibold"
                   color="success"
                   size="lg"
-                  className="w-full font-semibold"
+                  text={t("b2c.cta")}
+                  url="https://calendly.com/hugotech/mentoria1a1"
                 />
               </CardBody>
             </Card>
@@ -203,7 +204,7 @@ export default function PricingPage() {
                 {/* Sesión exploratoria gratis */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                   <div className="flex items-center gap-3 mb-3">
-                    <Chip color="primary" variant="solid" size="lg">
+                    <Chip color="primary" size="lg" variant="solid">
                       {t("b2b.free.badge")}
                     </Chip>
                     <span className="text-lg font-semibold text-customgray dark:text-white">
@@ -250,11 +251,11 @@ export default function PricingPage() {
 
                 {/* CTA */}
                 <CalendlyButton
-                  url="https://calendly.com/hugotech/reunion-exploratoria"
-                  text={t("b2b.cta")}
+                  className="w-full font-semibold"
                   color="primary"
                   size="lg"
-                  className="w-full font-semibold"
+                  text={t("b2b.cta")}
+                  url="https://calendly.com/hugotech/reunion-exploratoria"
                 />
               </CardBody>
             </Card>
@@ -265,33 +266,33 @@ export default function PricingPage() {
       {/* Círculo Virtuoso */}
       <section className="py-16 px-4 bg-gradient-to-br from-success-50 to-primary-50 dark:from-success-900/20 dark:to-primary-900/20">
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={stagger}
           className="max-w-4xl mx-auto text-center"
+          initial="hidden"
+          variants={stagger}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <motion.h2
-            variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-customgray dark:text-white mb-6"
+            variants={fadeIn}
           >
             {t("impact.title")} 🌱
           </motion.h2>
-
-        <motion.p
-          variants={fadeIn}
-          className="text-xl italic text-gray-700 dark:text-gray-300 mb-8"
-        >
-          &ldquo;{t("impact.quote")}&rdquo;
-        </motion.p>          <motion.div
-            variants={stagger}
+          <motion.p
+            className="text-xl italic text-gray-700 dark:text-gray-300 mb-8"
+            variants={fadeIn}
+          >
+            &ldquo;{t("impact.quote")}&rdquo;
+          </motion.p>{" "}
+          <motion.div
             className="grid md:grid-cols-3 gap-6 mt-12"
+            variants={stagger}
           >
             {Array.from({ length: 3 }).map((_, i) => (
               <motion.div
                 key={i}
-                variants={fadeIn}
                 className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
+                variants={fadeIn}
               >
                 <div className="text-4xl mb-4">
                   {i === 0 ? "💡" : i === 1 ? "🤝" : "🚀"}
@@ -312,28 +313,25 @@ export default function PricingPage() {
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
           variants={stagger}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <motion.h2
-            variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-customgray dark:text-white mb-4"
+            variants={fadeIn}
           >
             {t("testimonials.title")} 💬
           </motion.h2>
 
           <motion.p
-            variants={fadeIn}
             className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
+            variants={fadeIn}
           >
             {t("testimonials.subtitle")}
           </motion.p>
 
-          <motion.div
-            variants={stagger}
-            className="grid md:grid-cols-2 gap-6"
-          >
+          <motion.div className="grid md:grid-cols-2 gap-6" variants={stagger}>
             {selectedTestimonios.map((testimonio, idx) => (
               <motion.div key={idx} variants={fadeIn}>
                 <TestimonioCard {...testimonio} />
@@ -346,22 +344,22 @@ export default function PricingPage() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-gray-50 dark:bg-gray-900">
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={stagger}
           className="max-w-4xl mx-auto"
+          initial="hidden"
+          variants={stagger}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <motion.h2
-            variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-customgray dark:text-white mb-4"
+            variants={fadeIn}
           >
             {t("faq.title")} ❓
           </motion.h2>
 
           <motion.p
-            variants={fadeIn}
             className="text-center text-gray-600 dark:text-gray-300 mb-12"
+            variants={fadeIn}
           >
             {t("faq.subtitle")}
           </motion.p>
@@ -371,8 +369,8 @@ export default function PricingPage() {
               {Array.from({ length: 8 }).map((_, i) => (
                 <AccordionItem
                   key={i}
-                  title={t(`faq.items.q${i + 1}.question`)}
                   className="bg-white dark:bg-gray-800"
+                  title={t(`faq.items.q${i + 1}.question`)}
                 >
                   <p className="text-gray-600 dark:text-gray-300 pb-4">
                     {t(`faq.items.q${i + 1}.answer`)}
@@ -387,42 +385,42 @@ export default function PricingPage() {
       {/* CTA Final */}
       <section className="py-16 px-4 bg-gradient-to-r from-primary-600 to-success-600 dark:from-primary-800 dark:to-success-800">
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={stagger}
           className="max-w-4xl mx-auto text-center text-white"
+          initial="hidden"
+          variants={stagger}
+          viewport={{ once: true }}
+          whileInView="visible"
         >
           <motion.h2
-            variants={fadeIn}
             className="text-3xl md:text-4xl font-bold mb-6"
+            variants={fadeIn}
           >
             {t("cta.title")} 🎯
           </motion.h2>
 
-          <motion.p variants={fadeIn} className="text-xl mb-8">
+          <motion.p className="text-xl mb-8" variants={fadeIn}>
             {t("cta.subtitle")}
           </motion.p>
 
           <motion.div
-            variants={fadeIn}
             className="flex flex-col sm:flex-row gap-4 justify-center"
+            variants={fadeIn}
           >
             <CalendlyButton
-              url="https://calendly.com/hugotech/mentoria1a1"
-              text={t("cta.buttonB2C")}
-              color="default"
-              variant="solid"
-              size="lg"
               className="bg-white text-primary-600 hover:bg-gray-100 font-semibold"
+              color="default"
+              size="lg"
+              text={t("cta.buttonB2C")}
+              url="https://calendly.com/hugotech/mentoria1a1"
+              variant="solid"
             />
             <CalendlyButton
-              url="https://calendly.com/hugotech/reunion-exploratoria"
-              text={t("cta.buttonB2B")}
-              color="default"
-              variant="bordered"
-              size="lg"
               className="border-2 border-white text-white hover:bg-white/10 font-semibold"
+              color="default"
+              size="lg"
+              text={t("cta.buttonB2B")}
+              url="https://calendly.com/hugotech/reunion-exploratoria"
+              variant="bordered"
             />
           </motion.div>
         </motion.div>

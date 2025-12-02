@@ -12,6 +12,7 @@ export function useReducedMotion() {
   useEffect(() => {
     // Check prefers-reduced-motion
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
     setShouldReduceMotion(mediaQuery.matches);
 
     const handleChange = () => {
@@ -19,6 +20,7 @@ export function useReducedMotion() {
     };
 
     mediaQuery.addEventListener("change", handleChange);
+
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
@@ -38,6 +40,7 @@ export function useIsMobile() {
 
     checkMobile();
     window.addEventListener("resize", checkMobile);
+
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 

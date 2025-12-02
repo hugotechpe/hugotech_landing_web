@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { motion } from "framer-motion";
-import IconBoxCard from "@/components/cards/IconBoxCard";
 import { useMessages, useTranslations } from "next-intl";
+
 import { IconComponentMap, IconKey } from "@/features/home/enums/icons";
 
 const fadeInUp = {
@@ -33,11 +33,11 @@ export function PilaresSection() {
 
   return (
     <section
-      id="pilares"
-      aria-label={sectionTitle}
       itemScope
-      itemType="https://schema.org/Person"
+      aria-label={sectionTitle}
       className="scroll-mt-0 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden"
+      id="pilares"
+      itemType="https://schema.org/Person"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-30">
@@ -50,16 +50,16 @@ export function PilaresSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[63%_37%] items-start gap-12 lg:gap-16">
           <motion.div
             initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <div className="mb-12 text-center lg:text-left">
               <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
                 className="inline-block bg-gradient-to-r from-primary to-brand text-white px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 uppercase tracking-wider"
+                initial={{ opacity: 0, scale: 0.9 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1, scale: 1 }}
               >
                 {t("badge")}
               </motion.div>
@@ -70,32 +70,32 @@ export function PilaresSection() {
             </div>
 
             <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerContainer}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              initial="hidden"
+              variants={staggerContainer}
+              viewport={{ once: true, margin: "-100px" }}
+              whileInView="visible"
             >
               {items.map((item, index) => (
                 <motion.div
                   key={item.title}
+                  className="relative"
+                  transition={{ type: "spring", stiffness: 300 }}
                   variants={fadeInUp}
                   whileHover={{
                     scale: 1.03,
                     rotateY: 3,
                     z: 50,
                   }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="relative"
                 >
                   {/* Badge numérico premium */}
                   <div className="absolute -top-3 -left-3 z-20">
                     <motion.div
-                      initial={{ scale: 0, rotate: -180 }}
-                      whileInView={{ scale: 1, rotate: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1, type: "spring" }}
                       className="w-12 h-12 bg-gradient-to-br from-primary to-brand rounded-full flex items-center justify-center shadow-xl border-4 border-white"
+                      initial={{ scale: 0, rotate: -180 }}
+                      transition={{ delay: index * 0.1, type: "spring" }}
+                      viewport={{ once: true }}
+                      whileInView={{ scale: 1, rotate: 0 }}
                     >
                       <span className="text-white font-bold text-lg">
                         {index + 1}
@@ -113,9 +113,9 @@ export function PilaresSection() {
                         {item.iconKey &&
                           IconComponentMap[item.iconKey as IconKey] && (
                             <motion.div
-                              whileHover={{ rotate: 360, scale: 1.1 }}
-                              transition={{ duration: 0.5 }}
                               className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary/10 to-brand/10 rounded-xl flex items-center justify-center"
+                              transition={{ duration: 0.5 }}
+                              whileHover={{ rotate: 360, scale: 1.1 }}
                             >
                               {React.createElement(
                                 IconComponentMap[item.iconKey as IconKey],
@@ -144,11 +144,11 @@ export function PilaresSection() {
 
           {/* Imagen de perfil con efectos premium */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
             className="relative h-full flex items-center justify-center lg:justify-end"
+            initial="hidden"
+            variants={fadeInUp}
+            viewport={{ once: true, margin: "-100px" }}
+            whileInView="visible"
           >
             <div className="relative w-full max-w-sm md:max-w-md">
               {/* Glow effect */}
@@ -156,27 +156,27 @@ export function PilaresSection() {
 
               {/* Frame decorativo */}
               <motion.div
-                whileHover={{ scale: 1.05, rotate: 2 }}
-                transition={{ duration: 0.3 }}
                 className="relative"
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.05, rotate: 2 }}
               >
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary via-brand to-primary rounded-3xl opacity-20" />
 
                 <Image
-                  src="/images/image5.png"
                   alt="Foto de Hugo Casanova, mentor y coach en tecnología"
-                  width={520}
-                  height={375}
                   className="relative object-cover w-full h-auto rounded-2xl shadow-2xl border-4 border-white"
+                  height={375}
+                  src="/images/image5.png"
+                  width={520}
                 />
 
                 {/* Badge flotante */}
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5 }}
                   className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ delay: 0.5 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
                 >
                   <Card
                     className="bg-gradient-to-r from-primary to-brand text-white shadow-2xl"

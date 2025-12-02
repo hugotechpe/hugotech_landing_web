@@ -1,3 +1,8 @@
+import dynamic from "next/dynamic";
+import { setRequestLocale } from "next-intl/server";
+
+import HomeLayout from "./homeLayout";
+
 import { InicioSection } from "@/features/home/components/InicioSection";
 import { MePresentoSection } from "@/features/home/components/MePresentoSection";
 import { PorQueGratuitoSection } from "@/features/home/components/PorQueGratuitoSection";
@@ -5,9 +10,6 @@ import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
 import { PilaresSection } from "@/features/home/components/PilaresSection";
-import dynamic from "next/dynamic";
-import HomeLayout from "./homeLayout";
-import { Metadata } from "next";
 import {
   JsonLd,
   personSchema,
@@ -16,7 +18,6 @@ import {
   aggregateRatingSchema,
 } from "@/components/seo/JsonLd";
 import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
-import { setRequestLocale } from "next-intl/server";
 
 // Lazy load AgendaSection (contiene Calendly que es pesado)
 const AgendaSection = dynamic(
@@ -69,8 +70,10 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+
   // Set locale para next-intl
   setRequestLocale(locale);
+
   return (
     <>
       {/* Schemas JSON-LD para SEO */}

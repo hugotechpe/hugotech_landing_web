@@ -9,6 +9,7 @@ import {
 } from "@heroui/dropdown";
 import Image from "next/image";
 import { useLocale } from "next-intl";
+
 import { usePathname, useRouter } from "@/i18n/navigation";
 
 export type LocaleSwitchVariant = "onPrimary" | "onWhite" | "onDark";
@@ -73,16 +74,16 @@ export function LocaleSwitch({
     <Dropdown>
       <DropdownTrigger>
         <Button
+          className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
           size="sm"
           variant="bordered"
-          className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
         >
           <Image
-            src={current.iconSrc}
             alt={`${current.name} flag`}
-            width={20}
-            height={14}
             className="rounded-sm"
+            height={14}
+            src={current.iconSrc}
+            width={20}
           />
           <span className="font-semibold">{current.label}</span>
         </Button>
@@ -101,11 +102,11 @@ export function LocaleSwitch({
           >
             <div className="flex items-center gap-2 bg-red">
               <Image
-                src={o.iconSrc}
                 alt={`${o.name} flag`}
-                width={20}
-                height={14}
                 className="rounded-sm"
+                height={14}
+                src={o.iconSrc}
+                width={20}
               />
               <span className="font-semibold">{o.label}</span>
             </div>

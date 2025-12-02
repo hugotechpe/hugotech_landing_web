@@ -3,7 +3,8 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "HugoTech",
   title: "HugoTech - Mentoring Tech con Propósito | Coach Profesional ICF",
-  description: "Acompaño a jóvenes talentos tech a encontrar su propósito en la era de la IA. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Equipos de alto rendimiento con cultura consciente.",
+  description:
+    "Acompaño a jóvenes talentos tech a encontrar su propósito en la era de la IA. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Equipos de alto rendimiento con cultura consciente.",
   keywords: [
     "mentoring tech",
     "coaching para jóvenes profesionales",
@@ -19,7 +20,7 @@ export const siteConfig = {
     "mentalidad de crecimiento",
     "coach profesional ICF",
     "seguridad psicológica",
-    "retención de talento tech"
+    "retención de talento tech",
   ],
   author: {
     name: "Hugo Casanova",

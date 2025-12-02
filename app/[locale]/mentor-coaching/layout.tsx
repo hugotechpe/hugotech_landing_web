@@ -1,7 +1,6 @@
 import Footer from "@/components/layout/footer";
 import CoachingNavbar from "@/components/layout/navbarCoaching";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import type { Metadata } from "next";
 import { JsonLd, getBreadcrumbSchema } from "@/components/seo/JsonLd";
 import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
 
@@ -47,8 +46,8 @@ export default function MentorCoachingLayout({
 
         {/* WhatsApp Floating Button */}
         <WhatsAppButton
-          phoneNumber="51946483010"
           message="Hola Hugo, me gustaría agendar una sesión de Mentor Coaching 1 a 1"
+          phoneNumber="51946483010"
         />
       </div>
     </>

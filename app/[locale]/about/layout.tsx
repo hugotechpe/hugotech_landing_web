@@ -1,7 +1,6 @@
 import Footer from "@/components/layout/footer";
 import HeroNavbar from "@/components/layout/navbar";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import type { Metadata } from "next";
 import {
   JsonLd,
   personSchema,
@@ -50,8 +49,8 @@ export default function AboutLayout({
 
         {/* WhatsApp Floating Button */}
         <WhatsAppButton
-          phoneNumber="51946483010"
           message="Hola Hugo, me gustaría conocer más sobre tu historia y propósito"
+          phoneNumber="51946483010"
         />
       </div>
     </>

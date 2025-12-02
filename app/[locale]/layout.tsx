@@ -1,13 +1,12 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-
 import clsx from "clsx";
+import { getMessages } from "next-intl/server";
 
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans, fontHeading, fontQuote } from "@/config/fonts";
-import { getMessages } from "next-intl/server";
 import {
   GoogleTagManager,
   GoogleTagManagerNoScript,
@@ -100,21 +99,21 @@ export default async function RootLayout({
   return (
     <html
       suppressHydrationWarning
-      lang={locale}
       className="motion-safe:scroll-smooth motion-reduce:scroll-auto"
+      lang={locale}
     >
       <head>
         {/* Preconnect para dominios externos - mejora performance */}
         {/* Preconnect to external services */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://calendly.com" />
-        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link href="https://www.googletagmanager.com" rel="preconnect" />
+        <link href="https://www.google-analytics.com" rel="preconnect" />
+        <link href="https://calendly.com" rel="preconnect" />
+        <link href="https://assets.calendly.com" rel="preconnect" />
         {/* DNS Prefetch */}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://calendly.com" />
-        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+        <link href="https://www.google-analytics.com" rel="dns-prefetch" />
+        <link href="https://calendly.com" rel="dns-prefetch" />
+        <link href="https://assets.calendly.com" rel="dns-prefetch" />
         {/* SEO: hreflang para soporte multiidioma */}
         <AlternateLinks locale={locale} />
         <GoogleTagManager />
@@ -129,9 +128,9 @@ export default async function RootLayout({
       >
         <GoogleTagManagerNoScript />
         <Providers
-          themeProps={{ attribute: "class", defaultTheme: "light" }}
           locale={locale}
           messages={messages}
+          themeProps={{ attribute: "class", defaultTheme: "light" }}
         >
           {children}
         </Providers>

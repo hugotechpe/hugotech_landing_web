@@ -35,10 +35,10 @@ export function AnimatedButton({
 
   return (
     <motion.div
+      className="relative inline-block"
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-      className="relative inline-block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -59,11 +59,10 @@ export function AnimatedButton({
           {ripples.map((ripple) => (
             <motion.span
               key={ripple.id}
-              initial={{ scale: 0, opacity: 0.5 }}
               animate={{ scale: 4, opacity: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
               className="absolute rounded-full bg-white pointer-events-none"
+              exit={{ opacity: 0 }}
+              initial={{ scale: 0, opacity: 0.5 }}
               style={{
                 left: ripple.x,
                 top: ripple.y,
@@ -71,15 +70,16 @@ export function AnimatedButton({
                 height: 20,
                 transform: "translate(-50%, -50%)",
               }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           ))}
         </AnimatePresence>
 
         {/* Hover glow effect */}
         <motion.div
+          animate={{ x: isHovered ? "100%" : "-100%" }}
           className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 pointer-events-none"
           initial={{ x: "-100%" }}
-          animate={{ x: isHovered ? "100%" : "-100%" }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         />
       </Button>
