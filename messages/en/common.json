@@ -83,10 +83,10 @@
         ]
       },
       "newsletter": {
-        "title": "Subscribe",
-        "description": "Subscribe to our newsletter for tips, inspiration and more.",
-        "placeholder": "Email address",
-        "cta": "Subscribe"
+        "title": "Join the Conversation 💬",
+        "description": "Receive tech reflections with purpose: mindset, humanized AI, conscious leadership and tools to grow without burning out. One weekly email, zero spam.",
+        "placeholder": "your@email.com",
+        "cta": "I want to grow with purpose"
       },
       "mission": {
         "title": "Mission",
@@ -97,7 +97,7 @@
         "text": "That every person who walks with me not only grows professionally, but becomes someone who inspires genuine change in their environment. Build a more human, conscious and purposeful tech community."
       },
       "bottom": {
-        "copyright": "© 2025 All rights reserved by HugoTech",
+        "copyright": "© 2025 HugoTech - Transforming from being, building from purpose",
         "mantra": "Be authentic, inspire young tech talents and build with faith a legacy with soul."
       },
       "contact": {
@@ -135,9 +135,9 @@
       ]
     },
     "MePresento": {
-      "title": "About me",
+      "title": "Our Manifesto: Innovation with Soul 🧠💚",
       "subtitle": "We're not here to 'hack' the system. We're here to build a better one.",
-      "chips": ["18+ years of experience", "Mentoring • Coaching • Agility"],
+      "chips": ["18+ years of experience", "ICF Coach • Tech Mentor • Agile Leader"],
       "stats": {
         "experience": "Years of Experience",
         "empowered": "Empowered Lives",
@@ -178,23 +178,23 @@
       "reminder": {
         "emoji": "💚",
         "title": "Remember:",
-        "text": "1-on-1 sessions are completely free. This is a pressure-free space, with no hidden agenda. Just you, your questions and honest support."
+        "text": "The first session is free, no commitment. This is a pressure-free space, with no hidden agenda. Just you, your questions and honest support."
       },
-      "ctaLabel": "Calendar",
+      "ctaLabel": "Start my transformation (No cost)",
       "note": "Limited spots per month. 100% confidential."
     },
     "PorQueGratuito": {
-      "title": "Why are 1:1 sessions free? 💚",
-      "intro": "Because I believe in <b>giving back to the world what life gave me</b>: knowledge, opportunities and faith.",
+      "title": "Why do I do this? 💚",
+      "intro": "I believe in <b>giving back to the world what life gave me</b>: knowledge and opportunities.",
       "stats": {
-        "mentored": "Young Mentees",
+        "mentored": "Young People Guided",
         "freeSessions": "Free Sessions",
         "experience": "Years of Experience"
       },
       "mentoriaCard": {
-        "title": "Your 1:1 Tech Mentoring 💚",
-        "subtitle": "Purpose coaching + Tech mentoring. Free.",
-        "p1": "Imposter syndrome? Introversion holding you back? Stuck without knowing which path to take? <b>You're not alone</b>. Our 1:1 sessions (no cost) combine <b>human development with tech strategy</b> to transform your confidence and professional clarity.",
+        "title": "Your First Session: Free 💚",
+        "subtitle": "Self-discovery coaching + Tech mentoring. No commitment.",
+        "p1": "Imposter syndrome? Introversion holding you back? Stuck without knowing which path to take? <b>You're not alone</b>. The first session is <b>completely free</b> so we can get to know each other without pressure. If you decide to continue, follow-up sessions cost S/35 (~$10 USD) that go <b>100% to social causes</b>.",
         "p2": "",
         "resultsTitle": "What you'll achieve:",
         "resultsItems": [
@@ -203,21 +203,22 @@
           "Personalized roadmap based on your profile",
           "Growth mindset and anti-burnout tools"
         ],
-        "ctaLabel": "Book your free session",
-        "note": "100% free. No fine print. Just honest conversation."
+        "ctaLabel": "Book your first free session",
+        "note": "First session: free, no commitment. Follow-ups: S/35 that help social causes."
       },
       "filosofiaCard": {
-        "title": "My Philosophy 🌱",
-        "subtitle": "First the being, then the doing. Real transformation starts within.",
-        "p1": "HugoTech was born to be a space where <b>talent meets purpose, the technical with the human</b>, without economic barriers. Just honest conversations that transform from within.",
+        "title": "Why S/35? 🌱",
+        "subtitle": "Growing and giving back can go hand in hand.",
+        "p1": "I don't want money to be a barrier, but I also don't believe everything should be free. <b>When we invest something (even if it's small), we value the process more</b>. And if that money can help rescued dogs, tech scholarships, or community kitchens while you grow, why not?",
         "p2": "",
-        "resultsTitle": "How this works:",
+        "resultsTitle": "How it works:",
         "resultsItems": [
-          "Innovation begins within people, not in code",
-          "First the being transforms, then the doing makes sense",
-          "Results come as a natural consequence"
+          "First session: Free. To get to know each other without pressure",
+          "Follow-up sessions: S/35 soles (~$10 USD)",
+          "100% goes to social causes (shelters, scholarships, education)",
+          "Total transparency: quarterly reports with receipts"
         ],
-        "note": "B2B sessions for companies do have a cost, because they require structure, follow-up and measurable results. But the heart of HugoTech will always be free."
+        "note": "Your investment in yourself also helps others. Simple, honest, with purpose."
       }
     },
     "Inicio": {
@@ -381,13 +382,13 @@
         "learnMore": "📖 Learn More"
       },
       "content": {
-        "p1": "All 1-on-1 sessions are <b>100% free</b>. They always will be. No fine print, no hidden agenda. Just honest conversations that transform.",
-        "pBold1": "My commitment to social impact:",
+        "p1": "The <b>first session is free</b>: it's to get to know each other and discover your purpose. If you decide to continue, each session costs <b>S/35 soles (~USD $10)</b> that goes 100% to social causes. Your growth gives back to the world.",
+        "pBold1": "Why do I do this?",
         "bullets": [
-          "Individual mentoring will always be free as my way of giving back what life gave me.",
-          "If I offer additional paid programs in the future, a significant portion will be dedicated to social causes focused on tech education and community well-being."
+          "Life gave me a lot. This is my way of giving back while accompanying young tech talents.",
+          "When we invest something (even if it's small), we give more value to the process. That money goes to a solidarity fund for NGOs: animal shelters, tech education, community kitchens and reforestation."
         ],
-        "p2": "Because I believe true success is measured in transformed lives, not just generated revenue.",
+        "p2": "Total transparency: you can see exactly where each sol donated goes.",
         "invite": {
           "pBold": "The real investment is always in people",
           "p": "Your personal growth creates a multiplier effect: when you find your purpose, your impact reaches many others."
