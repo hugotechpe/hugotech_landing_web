@@ -240,10 +240,15 @@
         "p1": "El mejor momento fue ayer. El segundo mejor es ahora.",
         "p2": "Te acompaño a clarificar objetivos, entender fortalezas y crear tu próximo paso con propósito. Construiremos juntos un plan claro y real."
       },
-      "reminder": {
+      "pricing": {
         "emoji": "💚",
-        "title": "Recuerda:",
-        "text": "La primera sesión es gratis, sin compromiso. Este es un espacio sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
+        "title": "Inversión:",
+        "text": "S/35 (Donación directa a causas sociales) | Valor real: Incalculable"
+      },
+      "reminder": {
+        "emoji": "🎁",
+        "title": "Tu primera sesión:",
+        "text": "Completamente SIN COSTO. 45 minutos para conocernos sin compromiso. Cero presiones, cero agenda oculta."
       },
       "ctaLabel": "Hablar con Hugo (Sesión Gratuita - Cupos Limitados)",
       "note": "Plazas limitadas por mes. 100% confidencial."

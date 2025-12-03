@@ -56,7 +56,19 @@ export function AgendaSection() {
           </div>
 
           <Card
-            className="bg-primary/10 border-l-4 border-primary mb-8"
+            className="bg-primary/10 border-l-4 border-primary mb-4"
+            shadow="none"
+          >
+            <CardBody className="p-6">
+              <p className="text-base text-gray-700">
+                {t("pricing.emoji")} <strong>{t("pricing.title")}</strong>{" "}
+                {t("pricing.text")}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card
+            className="bg-green-50 border-l-4 border-green-500 mb-8"
             shadow="none"
           >
             <CardBody className="p-6">

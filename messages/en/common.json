@@ -184,10 +184,15 @@
         "p1": "The best time was yesterday. The second best is now.",
         "p2": "I'll help you clarify goals, understand strengths and create your next step with purpose. We'll co-create a clear and realistic plan."
       },
-      "reminder": {
+      "pricing": {
         "emoji": "💚",
-        "title": "Remember:",
-        "text": "The first session is free, no commitment. This is a pressure-free space, with no hidden agenda. Just you, your questions and honest support."
+        "title": "Investment:",
+        "text": "S/35 (~$10 USD - Direct donation to social causes) | Real value: Priceless"
+      },
+      "reminder": {
+        "emoji": "🎁",
+        "title": "Your first session:",
+        "text": "Completely FREE. 45 minutes to get to know each other with no commitment. Zero pressure, zero hidden agenda."
       },
       "ctaLabel": "Start my transformation (No cost)",
       "note": "Limited spots per month. 100% confidential."
