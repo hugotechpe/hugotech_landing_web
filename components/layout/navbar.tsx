@@ -33,20 +33,16 @@ export default function HeroNavbar() {
   // Menu items con rutas completas (evita hydration mismatch)
   const menuItems = [
     {
-      label: tNavbar("menuItems.myStory"),
-      href: "/about",
-    },
-    {
       label: tNavbar("menuItems.home"),
-      href: "/#inicio",
+      href: "/",
     },
     {
       label: tNavbar("menuItems.aboutMe"),
-      href: "/#mepresento",
+      href: "/about",
     },
     {
       label: tNavbar("menuItems.testimonials"),
-      href: "/#testimonios",
+      href: "/testimonials",
     },
     {
       label: tNavbar("menuItems.companies"),
