@@ -187,7 +187,7 @@ const Footer: React.FC = () => {
             </p>
             <form
               aria-label={newsletter.title}
-              className="mt-4 flex flex-col sm:flex-row gap-3"
+              className="mt-4 flex flex-col sm:flex-row gap-3 w-full max-w-2xl"
               onSubmit={handleSubmit}
             >
               <label className="sr-only" htmlFor="newsletter-email">
@@ -197,7 +197,7 @@ const Footer: React.FC = () => {
                 required
                 aria-label={newsletter.placeholder}
                 autoComplete="email"
-                className="flex-1"
+                className="flex-1 min-w-[280px] sm:min-w-[320px]"
                 classNames={{
                   input: "bg-white text-gray-900 placeholder:text-gray-500",
                   inputWrapper: "bg-white border-2 border-white/30 hover:border-white",
