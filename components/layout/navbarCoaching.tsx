@@ -23,20 +23,16 @@ export default function CoachingNavbar() {
   // Menu items con rutas completas
   const menuItems = [
     {
-      label: tNavbar("menuItems.myStory"),
-      href: "/about",
-    },
-    {
       label: tNavbar("menuItems.home"),
-      href: "/#inicio",
+      href: "/",
     },
     {
       label: tNavbar("menuItems.aboutMe"),
-      href: "/#mepresento",
+      href: "/about",
     },
     {
       label: tNavbar("menuItems.testimonials"),
-      href: "/#testimonios",
+      href: "/testimonials",
     },
     {
       label: tNavbar("menuItems.companies"),
