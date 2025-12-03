@@ -77,7 +77,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.LEONARDO_MANUEL]: {
     quote: `Trabajar contigo fue una experiencia hermosa, como todo trabajo tiene sus altos y bajos, momentos retadores que nos hacen crecer. Pero lo que realmente valoro es la manera genuina en que nos apoyaste y guiaste, siempre creyendo en nuestro potencial para ser mejores profesionales. Tu forma de liderar desde la cercanía y el respeto marcó una diferencia real en mi desarrollo.`,
     authorName: "Leonardo Manuel",
-    jobTitle: "Fui parte de tu equipo.",
+    jobTitle: "Software Engineer | Crecimiento en Startup Tech",
     avatarSrc: "/images/testimonials/leonardo-manuel.jpg",
     avatarAlt: "Foto de perfil de Leonardo Manuel",
     linkedInUrl:
@@ -88,7 +88,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
   [TestimonioId.MIGUEL_BUSTILLOS]: {
     quote: `Me ayudaste profundamente en mi carrera profesional, pero sobre todo en algo más valioso: sentirme parte de una verdadera familia en el equipo de trabajo. Generaste un espacio donde pude desarrollar más confianza en mis habilidades, donde sentí que mi voz importaba. Gracias a tu acompañamiento cercano y genuino, cada día me esfuerzo por ser mejor profesional, llevando conmigo esa sensación de pertenencia y apoyo mutuo que cultivaste en el equipo.`,
     authorName: "Miguel Bustillos",
-    jobTitle: "Fui parte de tu equipo.",
+    jobTitle: "Backend Developer | Transición de Junior a Mid-Level",
     avatarSrc: "/images/testimonials/miguel-bustillos.jpg",
     avatarAlt: "Foto de perfil de Miguel Bustillos",
     linkedInUrl: "https://www.linkedin.com/in/miguel-angel-bustillos-alayo/",
@@ -146,7 +146,7 @@ export const TESTIMONIOS: Record<TestimonioId, TestimonioCardProps> = {
     
     Considero que cuando uno se siente verdaderamente valorado—como yo me sentí contigo—uno apoya con todo el corazón en lo que puedan pedir, porque sientes que tu trabajo, compromiso, empeño y todo tu esfuerzo es reconocido y retribuido con humanidad.`,
     authorName: "Estefani Ayquipa",
-    jobTitle: "Fui parte de tu equipo.",
+    jobTitle: "QA Lead | Desarrollando Seguridad Psicológica en Equipos",
     avatarSrc: "/images/testimonials/estefani-ayquipa.jpg",
     avatarAlt: "Foto de perfil de Estefani Ayquipa",
     linkedInUrl:
@@ -359,7 +359,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Su liderazgo es un ejemplo vivo de inspiración y apoyo constante, donde cada persona se siente vista, valorada y acompañada en su camino de desarrollo. Esa forma de liderar desde la humanidad transforma equipos y vidas.`,
     authorName: "Dan Rodriguez",
-    jobTitle: "Fui parte de tu equipo.",
+    jobTitle: "Full Stack Developer | Superando Síndrome del Impostor",
     avatarSrc: "/images/testimonials/dan-rodriguez.jpg",
     avatarAlt: "Foto de perfil de Dan Rodriguez",
     linkedInUrl:
@@ -381,7 +381,7 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Doy testimonio de que el proyecto que lideraste, Hugo, le dio un nuevo rumbo a la vida de mi hermano, y por eso estoy profundamente agradecido. Tu forma de crear espacios donde las personas pueden crecer y pertenecer trasciende lo laboral—transforma vidas y familias enteras.`,
     authorName: "Andrews Postillos",
-    jobTitle: "Soy tu hermano y cercano testigo de tu labor.",
+    jobTitle: "Hermano y Testigo | Profesional en Transformación Organizacional",
     avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl:

@@ -263,11 +263,11 @@
     "Inicio": {
       "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
       "title": "Mentoría de Carrera para Programadores y Liderazgo Técnico",
-      "subtitle": "Acompaño a desarrolladores junior y tech leads a construir carreras con propósito. Evita el burnout, encuentra tu camino en tech con claridad y confianza.",
+      "subtitle": "Supera el estancamiento profesional, lidera con propósito en la era de la IA y evita el burnout. Te acompaño a construir una carrera tech sostenible con impacto real.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "paragraphs": {
-        "p1": "Soy <b>Hugo Casanova</b>, mentor con 18+ años en tecnología. Te ayudo a crear tu <b>plan de carrera en software</b>, superar el síndrome del impostor y tomar decisiones profesionales con claridad.",
-        "p2": "Ya sea tu <b>primer empleo tech</b>, transición a liderazgo o prevención del burnout, te acompaño con sesión 1 a 1. <b>100% de lo recaudado se dona a causas sociales</b> — mentoring con propósito real."
+        "p1": "Soy <b>Hugo Casanova</b>, mentor con 18+ años en tecnología. Te ayudo a desarrollar las <b>habilidades que la IA no puede reemplazar</b>: liderazgo, comunicación, resolución de problemas complejos y <b>gestión del burnout</b>. Supera el síndrome del impostor y crea tu <b>plan de carrera sostenible</b>.",
+        "p2": "Ya sea tu <b>primer empleo tech</b>, <b>transición de Senior Developer a Manager</b>, o convertirte en <b>Tech Lead sin dejar de ser tú mismo</b> (sí, puedes liderar siendo introvertido). Sesiones 1-a-1 por donación voluntaria. <b>100% se dona a causas sociales</b> — tu crecimiento ayuda a otros."
       },
       "ctas": {
         "mentoria": "Agenda tu Sesión 1-a-1 (Donación Voluntaria)",
@@ -276,73 +276,73 @@
       },
       "badges": {
         "leader": {
-          "title": "Reprograma tu forma de pensar",
-          "description": "Cuestiona lo aprendido. Crea espacio para nuevas formas de avanzar."
+          "title": "Desarrolla tu Seguridad Psicológica",
+          "description": "Lidera equipos tech con confianza, incluso si eres introvertido."
         },
         "talent": {
-          "title": "Recupera tu voz y tu liderazgo",
-          "description": "Tu autenticidad es tu guía, no un obstáculo."
+          "title": "Habilidades que la IA no Reemplaza",
+          "description": "Creatividad, empatía y pensamiento crítico: tu ventaja competitiva."
         },
         "antiBurnout": {
-          "title": "Aporta con intención",
-          "description": "Que tu trabajo tenga sentido para ti."
+          "title": "Equilibrio Vida-Trabajo Sostenible",
+          "description": "Aprende a poner límites sin culpa. Crece sin quemarte."
         }
       },
       "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
     },
     "HabilidadesBlandas": {
-      "badge": "🧠 Habilidades que trabajamos",
-      "title": "¿Te identificas con alguno de estos desafíos?",
-      "subtitle": "No son errores. Son oportunidades para crecer juntos.",
-      "intro": "Muchos talentos tech brillantes enfrentan estos retos. En nuestras sesiones 1 a 1, trabajamos desde la raíz:",
+      "badge": "🧠 Desafíos reales que trabajamos juntos",
+      "title": "¿Te identificas con alguno de estos retos?",
+      "subtitle": "No estás solo. Son oportunidades para crecer con acompañamiento experto.",
+      "intro": "Muchos talentos tech brillantes enfrentan estos desafíos en 2025. En nuestras sesiones 1 a 1, trabajamos desde la raíz con herramientas probadas:",
       "skills": [
         {
-          "icon": "🤐",
-          "text": "Baja confianza en ti mismo (aunque seas brillante)"
+          "icon": "🤖",
+          "text": "Ansiedad sobre tu relevancia con IA/ChatGPT (¿Me reemplazará?)"
         },
         {
-          "icon": "💬",
-          "text": "Dificultad para comunicarte emocionalmente"
+          "icon": "🤐",
+          "text": "Síndrome del impostor paralizante (aunque seas brillante)"
         },
         {
           "icon": "😰",
-          "text": "Miedo a fallar o romper algo en producción"
-        },
-        {
-          "icon": "👻",
-          "text": "Sientes que nadie ve tu trabajo"
+          "text": "Miedo a liderar equipos si eres introvertido"
         },
         {
           "icon": "⚡",
-          "text": "Autoexigencia extrema y burnout"
+          "text": "Burnout silencioso: trabajas pero te sientes vacío"
+        },
+        {
+          "icon": "💬",
+          "text": "Dificultad para comunicar ideas técnicas a no-técnicos"
+        },
+        {
+          "icon": "👻",
+          "text": "Sientes que tu trabajo no tiene impacto real"
         },
         {
           "icon": "🏝️",
-          "text": "Tendencia a aislarte sin querer"
+          "text": "Aislamiento crónico en trabajo remoto"
         },
         {
           "icon": "😶",
-          "text": "Miedo a hablar en reuniones"
+          "text": "Miedo a dar feedback negativo o manejar conflictos"
         },
         {
           "icon": "🎯",
-          "text": "Falta de gestión de prioridades"
+          "text": "No sabes decir 'no' a proyectos extra (límites débiles)"
         },
         {
           "icon": "🧭",
-          "text": "No ves claro tu propósito ni camino de carrera"
-        },
-        {
-          "icon": "🚫",
-          "text": "Evitas el conflicto a toda costa"
+          "text": "Estancado en Senior sin saber si ir a Manager o Staff Engineer"
         },
         {
           "icon": "💭",
-          "text": "No sabes dar ni recibir feedback de forma sana"
+          "text": "Dificultad para recibir críticas sin tomarlo personal"
         },
         {
           "icon": "❓",
-          "text": "No sabes qué sigue después del rol técnico"
+          "text": "Crisis de propósito: ¿Para qué hago todo esto?"
         }
       ],
       "quote": "Cuando una persona se encuentra a sí misma, todo lo que construye cobra sentido.",
