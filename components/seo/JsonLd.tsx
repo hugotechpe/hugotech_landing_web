@@ -5,10 +5,10 @@ export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Hugo Casanova",
-  alternateName: "HugoTech",
-  jobTitle: "Mentor de Transformación Tech y Coach Anti-Burnout",
+  alternateName: ["HugoTech", "Hugo Casanova M."],
+  jobTitle: "Mentor de Carrera para Programadores | Coach Tech Perú",
   description:
-    "Mentor tech con 18+ años de experiencia especializado en desarrollo humano, liderazgo consciente y transformación ágil. Acompaño a profesionales tech a encontrar propósito más allá del código.",
+    "Mentor tech especializado en desarrollo de carrera para programadores y liderazgo técnico. 18+ años de experiencia acompañando a desarrolladores junior y tech leads a evitar el burnout y construir carreras con propósito en tecnología.",
   url: "https://hugotech.pe",
   image: "https://hugotech.pe/images/hugo-casanova.jpg",
   email: "hola@hugotech.pe",
@@ -23,16 +23,18 @@ export const personSchema = {
     "https://www.facebook.com/hugotechpe",
   ],
   knowsAbout: [
-    "Mentoring Tech",
-    "Liderazgo Consciente",
-    "Desarrollo Humano",
-    "Anti-Burnout",
-    "Transformación Digital",
-    "Agilidad",
+    "Mentoring para Programadores",
     "Coaching de Carrera Tech",
-    "Scrum",
+    "Liderazgo Técnico",
+    "Desarrollo de Carrera para Desarrolladores",
+    "Prevención Burnout Programadores",
+    "Transición de Carrera Tech",
+    "Primer Empleo Tech",
+    "Tech Lead Mentoring",
+    "Scrum Master",
     "Product Ownership",
-    "Team Building",
+    "Transformación Ágil",
+    "Equipos Alto Rendimiento Tech",
   ],
   knowsLanguage: ["es-PE", "en-US"],
   award: ["Certified Scrum Master", "Professional Scrum Product Owner"],
@@ -46,11 +48,11 @@ export const personSchema = {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "HugoTech",
-  alternateName: "Hugo Tech",
-  legalName: "HugoTech - Mentoring Tech con Propósito",
+  name: "HugoTech - Mentoring para Programadores por Hugo Casanova",
+  alternateName: ["Hugo Tech", "HugoTech Perú"],
+  legalName: "HugoTech - Mentoría de Carrera para Desarrolladores",
   description:
-    "Mentoring tech con alma. Sesiones 1-a-1 gratuitas y programas empresariales para transformación humana en tecnología.",
+    "Mentoría de carrera para programadores y liderazgo técnico. Sesiones 1-a-1 por donación voluntaria (100% va a causas sociales). Ayudamos a desarrolladores junior y tech leads a evitar el burnout y construir carreras con propósito.",
   url: "https://hugotech.pe",
   logo: {
     "@type": "ImageObject",
@@ -93,9 +95,9 @@ export const organizationSchema = {
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Mentoring Tech con Propósito",
+  name: "Mentoría de Carrera para Programadores y Coaching Tech",
   description:
-    "Sesiones gratuitas 1-a-1 de mentoring tech, coaching anti-burnout y programas empresariales de liderazgo ágil.",
+    "Sesiones 1-a-1 de mentoría para desarrolladores por donación voluntaria. Plan de carrera para ingenieros de software, liderazgo técnico, prevención del burnout y programas empresariales para equipos tech.",
   provider: {
     "@type": "Person",
     name: "Hugo Casanova",
@@ -103,7 +105,7 @@ export const serviceSchema = {
   },
   brand: {
     "@type": "Organization",
-    name: "HugoTech",
+    name: "HugoTech - Mentoring para Programadores",
   },
   areaServed: {
     "@type": "Place",
@@ -115,12 +117,14 @@ export const serviceSchema = {
     availableLanguage: ["Spanish", "English"],
   },
   serviceType: [
-    "Mentoring Tech Gratuito",
-    "Coaching Anti-Burnout",
-    "Liderazgo Ágil para Equipos",
-    "Transformación Cultural Tech",
+    "Mentoring para Desarrolladores Junior",
     "Coaching de Carrera Tech",
-    "Formación de Product Owners",
+    "Plan de Carrera Ingeniero Software",
+    "Liderazgo para Tech Leads",
+    "Prevención Burnout Programadores",
+    "Mentoría Primer Empleo Tech",
+    "Coaching Equipos Tecnológicos",
+    "Transformación Ágil Empresarial",
   ],
   category: "Professional Services",
   url: "https://hugotech.pe",
@@ -128,17 +132,19 @@ export const serviceSchema = {
   offers: [
     {
       "@type": "Offer",
-      name: "Mentoría 1-a-1 Gratuita",
-      description: "Sesiones individuales de mentoring tech sin costo",
+      name: "Mentoría 1-a-1 para Programadores (Donación Voluntaria)",
+      description:
+        "Sesiones individuales de mentoría de carrera para desarrolladores. Plan de carrera, transición laboral, primer empleo tech, liderazgo técnico. 100% de lo recaudado se dona a causas sociales.",
       price: "0",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      url: "https://hugotech.pe",
+      url: "https://hugotech.pe/mentor-coaching",
     },
     {
       "@type": "Offer",
-      name: "Programas Empresariales",
-      description: "Transformación de equipos tech y liderazgo ágil",
+      name: "Programas para Equipos Tech y Empresas",
+      description:
+        "Transformación de equipos tecnológicos, liderazgo ágil y retención de talento tech. Cultura consciente y equipos de alto rendimiento.",
       priceSpecification: {
         "@type": "PriceSpecification",
         price: "0",

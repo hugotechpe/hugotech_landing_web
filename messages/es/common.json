@@ -261,18 +261,18 @@
       }
     },
     "Inicio": {
-      "chipLabel": "Innovación con Alma • Tech con Propósito",
-      "title": "Transforma tu talento tech en impacto real",
-      "subtitle": "Acompaño a profesionales y equipos tech hacia crecimiento con propósito y resultados sostenibles.",
+      "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
+      "title": "Mentoría de Carrera para Programadores y Liderazgo Técnico",
+      "subtitle": "Acompaño a desarrolladores junior y tech leads a construir carreras con propósito. Evita el burnout, encuentra tu camino en tech con claridad y confianza.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "paragraphs": {
-        "p1": "Integro mentoring, coaching y agilidad para convertir tus habilidades humanas en ventaja técnica y liderazgo con propósito.",
-        "p2": "La IA potencia tu eficiencia, pero tu <b>empatía, creatividad y liderazgo son irremplazables</b>. Te preparo para liderar con impacto, evitando el burnout."
+        "p1": "Soy <b>Hugo Casanova</b>, mentor con 18+ años en tecnología. Te ayudo a crear tu <b>plan de carrera en software</b>, superar el síndrome del impostor y tomar decisiones profesionales con claridad.",
+        "p2": "Ya sea tu <b>primer empleo tech</b>, transición a liderazgo o prevención del burnout, te acompaño con sesión 1 a 1. <b>100% de lo recaudado se dona a causas sociales</b> — mentoring con propósito real."
       },
       "ctas": {
-        "mentoria": "Agenda tu sesión 1 a 1 (Sin costo)",
+        "mentoria": "Agenda tu Sesión 1-a-1 (Donación Voluntaria)",
         "historia": "Conoce mi historia",
-        "empresas": "¿Transformar a tu equipo?"
+        "empresas": "Programas para Equipos Tech"
       },
       "badges": {
         "leader": {
