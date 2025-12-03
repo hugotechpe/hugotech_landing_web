@@ -9,9 +9,26 @@ const routes = [
   { path: "/about", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/empresas", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/coaching", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/testimonials", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
+  {
+    path: "/blog/burnout-silencioso-tech-2026",
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/blog/liderazgo-tech-leads-introvertidos-2026",
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/blog/estancamiento-senior-developer-2026",
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  },
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
+  { path: "/faq", priority: 0.7, changeFrequency: "monthly" as const },
   {
     path: "/privacy-policy",
     priority: 0.3,
@@ -31,7 +48,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
-  const lastModified = new Date("2024-10-31"); // Fecha de la última actualización del sitio
+  const lastModified = new Date(); // Fecha actualizada automáticamente
 
   // Generar entradas para cada ruta en cada idioma
   routes.forEach((route) => {

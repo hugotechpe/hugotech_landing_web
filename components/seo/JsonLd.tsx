@@ -162,6 +162,7 @@ export const serviceSchema = {
     "Coaching Equipos Tecnológicos",
     "Transformación Ágil Empresarial",
   ],
+  priceRange: "Gratis - S/35",
   category: "Professional Services",
   url: "https://hugotech.pe",
   termsOfService: "https://hugotech.pe/terminos-y-condiciones",

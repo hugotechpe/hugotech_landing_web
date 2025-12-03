@@ -74,6 +74,7 @@ export function LocaleSwitch({
     <Dropdown>
       <DropdownTrigger>
         <Button
+          aria-label="Cambiar idioma"
           className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
           size="sm"
           variant="bordered"

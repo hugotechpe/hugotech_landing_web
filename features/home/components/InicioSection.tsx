@@ -114,7 +114,7 @@ export function InicioSection() {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
+            <div className="mt-8 flex flex-col gap-3">
               <CalendlyButton
                 className="w-full sm:w-auto"
                 color="default"
@@ -127,28 +127,35 @@ export function InicioSection() {
                 }}
                 variant="solid"
               />
+              
+              {/* Microcopy debajo del CTA principal */}
+              <p className="text-sm text-white/80 text-center sm:text-left -mt-1">
+                {t("ctas.mentoriaMicrocopy")}
+              </p>
 
-              <Button
-                as={Link}
-                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
-                color="primary"
-                href={`/${locale}/about`}
-                size="lg"
-                variant="bordered"
-              >
-                {t("ctas.historia")}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2">
+                <Button
+                  as={Link}
+                  className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
+                  color="primary"
+                  href={`/${locale}/about`}
+                  size="lg"
+                  variant="bordered"
+                >
+                  {t("ctas.historia")}
+                </Button>
 
-              <Button
-                as={Link}
-                className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
-                color="primary"
-                href={`/${locale}/empresas`}
-                size="lg"
-                variant="solid"
-              >
-                {t("ctas.empresas")}
-              </Button>
+                <Button
+                  as={Link}
+                  className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
+                  color="primary"
+                  href={`/${locale}/empresas`}
+                  size="lg"
+                  variant="solid"
+                >
+                  {t("ctas.empresas")}
+                </Button>
+              </div>
             </div>
           </div>
 

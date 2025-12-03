@@ -20,7 +20,7 @@
     "home": "Inicio",
     "docs": "Docs",
     "pricing": "Precios",
-    "blog": "Blog",
+    "blog": "Recursos",
     "about": "Acerca de",
     "search": "Buscar...",
     "openMenu": "Abrir menú",
@@ -113,7 +113,7 @@
             "href": "/es/#cita"
           },
           {
-            "label": "Blog",
+            "label": "Recursos",
             "href": "/es/blog"
           }
         ]
@@ -293,7 +293,7 @@
     },
     "Inicio": {
       "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
-      "title": "Mentoría de Carrera para Programadores y Liderazgo Técnico",
+      "title": "Mentoring para Líderes Tech y Programadores en Perú | Hugo Casanova",
       "subtitle": "¿Te sientes estancado como developer? ¿Miedo a que la IA te reemplace? ¿Quieres liderar pero eres introvertido?\nTe acompaño a construir una <b>carrera tech sostenible</b> sin burnout.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "experience": {
@@ -323,7 +323,8 @@
         "p2": "<b>Tu crecimiento ayuda a otros:</b> Sesiones 1-a-1 por <b>donación voluntaria</b>. El 100% se destina a causas sociales en Perú (albergues, becas tech, comedores populares).\n\nDesde tu <b>primer empleo tech</b> hasta tu <b>transición de Senior → Manager</b> o <b>Tech Lead introvertido</b>. Tú decides el valor."
       },
       "ctas": {
-        "mentoria": "Diseña tu Plan de Carrera 2026 (Primera Sesión Gratis)",
+        "mentoria": "Diseña tu Plan de Carrera 2026",
+        "mentoriaMicrocopy": "Primera sesión gratis • 100% de lo recaudado va a donación social",
         "historia": "Conoce mi historia",
         "empresas": "Programas para Equipos Tech"
       },
