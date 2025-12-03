@@ -96,19 +96,17 @@ export function InicioSection() {
             )}
 
             <div className="mt-6 space-y-4 text-white leading-relaxed text-xl">
-              <p>
+              <p className="whitespace-pre-line">
                 {t.rich("paragraphs.p1", {
                   b: (chunks) => <strong>{chunks}</strong>,
-                  br: () => <br />,
                   brand: (chunks) => (
                     <span className="font-semibold text-white">{chunks}</span>
                   ),
                 })}
               </p>
-              <p>
+              <p className="whitespace-pre-line">
                 {t.rich("paragraphs.p2", {
                   b: (chunks) => <strong>{chunks}</strong>,
-                  br: () => <br />,
                   brand: (chunks) => (
                     <span className="font-semibold text-white">{chunks}</span>
                   ),

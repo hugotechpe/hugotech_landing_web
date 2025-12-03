@@ -294,7 +294,7 @@
     "Inicio": {
       "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
       "title": "Mentoría de Carrera para Programadores y Liderazgo Técnico",
-      "subtitle": "¿Te sientes estancado como developer? ¿Miedo a que la IA te reemplace? ¿Quieres liderar pero eres introvertido?<br/>Te acompaño a construir una <b>carrera tech sostenible</b> sin burnout.",
+      "subtitle": "¿Te sientes estancado como developer? ¿Miedo a que la IA te reemplace? ¿Quieres liderar pero eres introvertido?\nTe acompaño a construir una <b>carrera tech sostenible</b> sin burnout.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "experience": {
         "years": "18+",
@@ -319,8 +319,8 @@
         ]
       },
       "paragraphs": {
-        "p1": "Soy <b>Hugo Casanova</b>, mentor con <b>18+ años</b> en tecnología. Te ayudo a desarrollar las <b>habilidades que la IA no puede reemplazar</b>: liderazgo, comunicación estratégica y <b>gestión del burnout</b>.<br/><br/>Supera el síndrome del impostor y construye tu <b>plan de carrera sostenible</b> sin perder tu esencia.",
-        "p2": "<b>Tu crecimiento ayuda a otros:</b> Sesiones 1-a-1 por <b>donación voluntaria</b>. El 100% se destina a causas sociales en Perú (albergues, becas tech, comedores populares).<br/><br/>Desde tu <b>primer empleo tech</b> hasta tu <b>transición de Senior → Manager</b> o <b>Tech Lead introvertido</b>. Tú decides el valor."
+        "p1": "Soy <b>Hugo Casanova</b>, mentor con <b>18+ años</b> en tecnología. Te ayudo a desarrollar las <b>habilidades que la IA no puede reemplazar</b>: liderazgo, comunicación estratégica y <b>gestión del burnout</b>.\n\nSupera el síndrome del impostor y construye tu <b>plan de carrera sostenible</b> sin perder tu esencia.",
+        "p2": "<b>Tu crecimiento ayuda a otros:</b> Sesiones 1-a-1 por <b>donación voluntaria</b>. El 100% se destina a causas sociales en Perú (albergues, becas tech, comedores populares).\n\nDesde tu <b>primer empleo tech</b> hasta tu <b>transición de Senior → Manager</b> o <b>Tech Lead introvertido</b>. Tú decides el valor."
       },
       "ctas": {
         "mentoria": "Diseña tu Plan de Carrera 2026 (Primera Sesión Gratis)",
@@ -1093,7 +1093,7 @@
         "title": "🧠 Nuestra filosofía",
         "quote": "\"No vendo fórmulas mágicas. Vendo 18 años de caídas, levantadas y aprendizajes dolorosos.\"",
         "description": "La transformación real <strong>duele, incomoda, cuestiona</strong>. Pero es la única que dura.",
-        "belief": "Creemos que el alto rendimiento no se impone, se despierta.<br />Cada empresa tiene su propio ritmo, energía y esencia.<br />Nosotros solo acompañamos el proceso: desafiamos, guiamos y sostenemos el cambio desde la empatía y la experiencia.",
+        "belief": "Creemos que el alto rendimiento no se impone, se despierta.\nCada empresa tiene su propio ritmo, energía y esencia.\nNosotros solo acompañamos el proceso: desafiamos, guiamos y sostenemos el cambio desde la empatía y la experiencia.",
         "quote2": "\"El verdadero cambio ocurre cuando las personas dejan de trabajar solo por metas y comienzan a trabajar desde propósito.\""
       },
       "how_we_work": {

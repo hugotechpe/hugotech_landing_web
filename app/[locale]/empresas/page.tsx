@@ -345,10 +345,9 @@ export default function EmpresasPage() {
                 className="text-base md:text-lg text-white/90 leading-[2] tracking-wide"
               />
             </div>
-            <p
-              dangerouslySetInnerHTML={{ __html: t.raw("philosophy.belief") }}
-              className="text-lg md:text-xl leading-[2] tracking-wide mb-8"
-            />
+            <p className="text-lg md:text-xl leading-[2] tracking-wide mb-8 whitespace-pre-line">
+              {t("philosophy.belief")}
+            </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border-2 border-brand">
               <p className="text-xl md:text-2xl lg:text-3xl font-bold font-quote text-brand leading-[1.9] italic">
                 {t("philosophy.quote2")}
