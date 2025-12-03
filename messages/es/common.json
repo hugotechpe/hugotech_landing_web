@@ -133,8 +133,13 @@
         "text": "Que cada persona que camina conmigo no solo crezca profesionalmente, sino que se convierta en alguien que inspira cambio genuino en su entorno. Construir una comunidad tech más humana, consciente y con propósito."
       },
       "bottom": {
-        "copyright": "© 2025 HugoTech - Transformando desde el ser, construyendo desde el propósito",
-        "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma."
+        "copyright": "© 2025 HugoTech - Tu crecimiento ayuda a otros: 100% donación a causas sociales en Perú",
+        "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
+        "donation": {
+          "emoji": "💚",
+          "title": "Modelo Non-Profit:",
+          "text": "Todas las sesiones funcionan por donación voluntaria. El 100% va a albergues de animales, becas tech y comedores populares. <b>Tu inversión en ti mismo también ayuda a otros.</b>"
+        }
       },
       "contact": {
         "title": "📞 Contáctame",
@@ -219,7 +224,7 @@
         "title": "Recuerda:",
         "text": "La primera sesión es gratis, sin compromiso. Este es un espacio sin presiones, sin agenda oculta. Solo tú, tus dudas y un acompañamiento honesto."
       },
-      "ctaLabel": "Empezar mi transformación (Sin costo)",
+      "ctaLabel": "Hablar con Hugo (Sesión Gratuita - Cupos Limitados)",
       "note": "Plazas limitadas por mes. 100% confidencial."
     },
     "PorQueGratuito": {
@@ -242,7 +247,7 @@
           "Hoja de ruta personalizada según tu perfil",
           "Mentalidad de crecimiento y herramientas anti-burnout"
         ],
-        "ctaLabel": "Agenda tu primera sesión gratis",
+        "ctaLabel": "Reservar mi Sesión Gratuita Ahora",
         "note": "Primera sesión: gratis, sin compromiso. Siguientes: S/35 que ayudan a causas sociales."
       },
       "filosofiaCard": {
@@ -263,14 +268,36 @@
     "Inicio": {
       "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
       "title": "Mentoría de Carrera para Programadores y Liderazgo Técnico",
-      "subtitle": "Supera el estancamiento profesional, lidera con propósito en la era de la IA y evita el burnout. Te acompaño a construir una carrera tech sostenible con impacto real.",
+      "subtitle": "¿Te sientes estancado como developer? ¿Miedo a que la IA te reemplace? ¿Quieres liderar pero eres introvertido?<br/>Te acompaño a construir una <b>carrera tech sostenible</b> sin burnout.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
+      "experience": {
+        "years": "18+",
+        "badge": "años en tecnología",
+        "certifications": [
+          {
+            "name": "Coach ICF Certificado",
+            "icon": "🎓"
+          },
+          {
+            "name": "Management 3.0",
+            "icon": "🚀"
+          },
+          {
+            "name": "Tech Lead LATAM + EE.UU.",
+            "icon": "🌎"
+          },
+          {
+            "name": "AWS · Azure · React · Node.js",
+            "icon": "⚡"
+          }
+        ]
+      },
       "paragraphs": {
-        "p1": "Soy <b>Hugo Casanova</b>, mentor con 18+ años en tecnología. Te ayudo a desarrollar las <b>habilidades que la IA no puede reemplazar</b>: liderazgo, comunicación, resolución de problemas complejos y <b>gestión del burnout</b>. Supera el síndrome del impostor y crea tu <b>plan de carrera sostenible</b>.",
-        "p2": "Ya sea tu <b>primer empleo tech</b>, <b>transición de Senior Developer a Manager</b>, o convertirte en <b>Tech Lead sin dejar de ser tú mismo</b> (sí, puedes liderar siendo introvertido). Sesiones 1-a-1 por donación voluntaria. <b>100% se dona a causas sociales</b> — tu crecimiento ayuda a otros."
+        "p1": "Soy <b>Hugo Casanova</b>, mentor con <b>18+ años</b> en tecnología. Te ayudo a desarrollar las <b>habilidades que la IA no puede reemplazar</b>: liderazgo, comunicación estratégica y <b>gestión del burnout</b>.<br/><br/>Supera el síndrome del impostor y construye tu <b>plan de carrera sostenible</b> sin perder tu esencia.",
+        "p2": "<b>Tu crecimiento ayuda a otros:</b> Sesiones 1-a-1 por <b>donación voluntaria</b>. El 100% se destina a causas sociales en Perú (albergues, becas tech, comedores populares).<br/><br/>Desde tu <b>primer empleo tech</b> hasta tu <b>transición de Senior → Manager</b> o <b>Tech Lead introvertido</b>. Tú decides el valor."
       },
       "ctas": {
-        "mentoria": "Agenda tu Sesión 1-a-1 (Donación Voluntaria)",
+        "mentoria": "Diseña tu Plan de Carrera 2026 (Primera Sesión Gratis)",
         "historia": "Conoce mi historia",
         "empresas": "Programas para Equipos Tech"
       },

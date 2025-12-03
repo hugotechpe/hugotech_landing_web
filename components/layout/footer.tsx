@@ -200,6 +200,23 @@ const Footer: React.FC = () => {
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-white/20 pt-6">
           <div className="flex-1 text-center md:text-left">
             <p className="text-white/80 text-xs sm:text-sm">{copyright}</p>
+            
+            {/* Modelo Non-Profit */}
+            {messages?.Sections?.Footer?.bottom?.donation && (
+              <div className="mt-4 p-4 bg-white/10 rounded-lg border border-white/20">
+                <p className="text-sm font-semibold mb-2 flex items-center gap-2">
+                  <span>{messages.Sections.Footer.bottom.donation.emoji}</span>
+                  {messages.Sections.Footer.bottom.donation.title}
+                </p>
+                <p
+                  className="text-xs text-white/90"
+                  dangerouslySetInnerHTML={{
+                    __html: messages.Sections.Footer.bottom.donation.text,
+                  }}
+                />
+              </div>
+            )}
+
             {/* Mantra/Propósito */}
             <p className="mt-3 text-sm md:text-base font-medium text-white/90 italic max-w-2xl">
               &ldquo;{t("bottom.mantra")}&rdquo;
