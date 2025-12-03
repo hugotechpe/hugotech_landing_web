@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                   (link: { label: string; href: string }, idx: number) => (
                     <li key={`legal-${idx}`}>
                       <Link
-                        className="text-white/90 hover:text-white"
+                        className="text-white hover:text-brand transition-colors"
                         href={link.href}
                         title={link.label}
                       >
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
                   (item: { label: string; href: string }, idx: number) => (
                     <li key={`menu-${idx}`}>
                       <Link
-                        className="text-white/90 hover:text-white"
+                        className="text-white hover:text-brand transition-colors"
                         href={item.href}
                       >
                         {item.label}
@@ -165,7 +165,7 @@ const Footer: React.FC = () => {
                   (item: { label: string; href: string }, idx: number) => (
                     <li key={`track-${idx}`}>
                       <Link
-                        className="text-white/90 hover:text-white"
+                        className="text-white hover:text-brand transition-colors"
                         href={item.href}
                       >
                         {item.label}
@@ -199,14 +199,14 @@ const Footer: React.FC = () => {
                 autoComplete="email"
                 className="flex-1"
                 classNames={{
-                  input: "placeholder:!text-gray-900",
+                  input: "bg-white text-gray-900 placeholder:text-gray-500",
+                  inputWrapper: "bg-white border-2 border-white/30 hover:border-white",
                 }}
                 id="newsletter-email"
                 name="email"
                 placeholder={newsletter.placeholder}
                 size="lg"
                 type="email"
-                variant="flat"
               />
               <Button
                 className="bg-[#115C5B] text-white hover:bg-[#183F33] w-full sm:w-auto"
