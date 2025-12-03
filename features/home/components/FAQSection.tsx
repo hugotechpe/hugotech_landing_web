@@ -4,10 +4,19 @@ import React from "react";
 import { Link } from "@heroui/link";
 import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
+import { Button } from "@heroui/button";
 
 export function FAQSection() {
   const t = useTranslations("Sections.FAQ");
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+
+  const scrollToAgenda = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const agendaSection = document.getElementById("cita");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   // Leer las preguntas desde las traducciones
   const questions = Array.from({ length: 5 }, (_, i) => ({
@@ -84,12 +93,12 @@ export function FAQSection() {
           <p className="text-default-600 text-lg mb-4">
             ¿Tienes más preguntas? Hablemos en tu sesión gratuita.
           </p>
-          <Link
+          <Button
             className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-transform hover:scale-105"
-            href="/#cita"
+            onClick={scrollToAgenda}
           >
             Reservar mi Sesión Gratuita
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

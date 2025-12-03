@@ -22,6 +22,14 @@ const scaleIn = {
 export function PorQueGratuitoSection() {
   const t = useTranslations("Sections.PorQueGratuito");
   const messages = useMessages() as any;
+
+  const scrollToAgenda = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const agendaSection = document.getElementById("cita");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   const pgr = messages?.Sections?.PorQueGratuito ?? {};
 
   return (
@@ -187,10 +195,9 @@ export function PorQueGratuitoSection() {
 
                     <div className="mt-auto pt-4">
                       <Button
-                        as={Link}
                         className="bg-customgray text-white hover:bg-primary w-full font-semibold"
-                        href="#cita"
                         size="lg"
+                        onClick={scrollToAgenda}
                       >
                         {t("mentoriaCard.ctaLabel")}
                       </Button>
