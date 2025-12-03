@@ -21,6 +21,15 @@ export default function HeroNavbar() {
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
 
+  const scrollToAgenda = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    const agendaSection = document.getElementById("cita");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   // Menu items con rutas completas (evita hydration mismatch)
   const menuItems = [
     {
@@ -97,12 +106,11 @@ export default function HeroNavbar() {
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
             <Button
-              as={Link}
               className="bg-white text-primary font-bold"
               color="primary"
-              href="/#cita"
               size="md"
               variant="solid"
+              onClick={scrollToAgenda}
             >
               {tAgenda("title")}
             </Button>
@@ -128,13 +136,11 @@ export default function HeroNavbar() {
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
             <Button
-              as={Link}
               className="bg-primary text-white font-bold w-full"
               color="primary"
-              href="/#cita"
               size="lg"
               variant="solid"
-              onPress={() => setIsMenuOpen(false)}
+              onClick={scrollToAgenda}
             >
               {tAgenda("title")}
             </Button>
