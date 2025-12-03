@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Burnout Silencioso en Tech: 7 Señales y Plan Anti-Burnout 2026 | HugoTech",
+    title:
+      "Burnout Silencioso en Tech: 7 Señales y Plan Anti-Burnout 2026 | HugoTech",
     description:
       "¿Trabajas pero te sientes vacío? El burnout silencioso es la epidemia invisible de 2025. Aprende a detectar las 7 señales antes de renunciar y reconstruye tu relación con el trabajo tech.",
     keywords: [
@@ -18,7 +19,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "recuperación burnout tech 2026",
     ],
     openGraph: {
-      title: "Burnout Silencioso en Tech: Lo que nadie te dice sobre el agotamiento invisible",
+      title:
+        "Burnout Silencioso en Tech: Lo que nadie te dice sobre el agotamiento invisible",
       description:
         "7 señales de burnout silencioso + Plan de 30 días para recuperar tu energía sin renunciar.",
       type: "article",
@@ -64,7 +66,9 @@ export default async function BurnoutSilenciosoPage() {
 
       {/* Intro: El Problema */}
       <section className="prose prose-lg dark:prose-invert mb-12">
-        <h2 className="text-3xl font-bold">No es que seas flojo. Es burnout.</h2>
+        <h2 className="text-3xl font-bold">
+          No es que seas flojo. Es burnout.
+        </h2>
 
         <p>
           Llegas el lunes. Abres tu laptop. Tienes energía física. No estás
@@ -98,8 +102,7 @@ export default async function BurnoutSilenciosoPage() {
 
         <p>
           Y lo peor: nadie lo nota. Ni tu manager, ni tu equipo, ni siquiera tú
-          mismo hasta que un día piensas:{" "}
-          <em>"¿Para qué hago todo esto?"</em>
+          mismo hasta que un día piensas: <em>"¿Para qué hago todo esto?"</em>
         </p>
       </section>
 
@@ -328,8 +331,8 @@ export default async function BurnoutSilenciosoPage() {
             </h3>
             <p className="text-default-600">
               Antes: Oficina cerrada = fin del día. Ahora: Tu laptop está en tu
-              cuarto. "Un email rápido" a las 10pm. Domingo revisando Slack
-              "por si acaso". No hay OFF.
+              cuarto. "Un email rápido" a las 10pm. Domingo revisando Slack "por
+              si acaso". No hay OFF.
             </p>
           </div>
 
@@ -376,7 +379,9 @@ export default async function BurnoutSilenciosoPage() {
 
           <div className="space-y-4">
             <div>
-              <p className="font-semibold mb-2">🔍 Día 1-3: Rastrear drenajes</p>
+              <p className="font-semibold mb-2">
+                🔍 Día 1-3: Rastrear drenajes
+              </p>
               <p className="text-default-600 mb-2">
                 Cada día, anota qué te agotó:
               </p>
@@ -388,7 +393,9 @@ export default async function BurnoutSilenciosoPage() {
             </div>
 
             <div>
-              <p className="font-semibold mb-2">✂️ Día 4-7: Cortar lo innecesario</p>
+              <p className="font-semibold mb-2">
+                ✂️ Día 4-7: Cortar lo innecesario
+              </p>
               <p className="text-default-600 mb-2">Elimina 3 cosas:</p>
               <ul className="list-disc pl-6 space-y-1 text-default-600">
                 <li>1 reunión semanal que no aporta (delega o rechaza).</li>
@@ -435,7 +442,9 @@ export default async function BurnoutSilenciosoPage() {
                 Cada día, antes de "terminar", haz esto:
               </p>
               <ol className="list-decimal pl-6 space-y-1 text-default-600">
-                <li>Escribe 3 cosas que lograste hoy (por pequeñas que sean).</li>
+                <li>
+                  Escribe 3 cosas que lograste hoy (por pequeñas que sean).
+                </li>
                 <li>Anota 1 prioridad para mañana.</li>
                 <li>
                   Cierra todas las tabs. Apaga la laptop. Di en voz alta:
@@ -527,10 +536,10 @@ export default async function BurnoutSilenciosoPage() {
               </p>
               <ul className="list-disc pl-6 space-y-1 text-default-600">
                 <li>Un side project que TE emocione (no por dinero).</li>
-                <li>Mentorar a alguien junior (enseñar reabre tu curiosidad).</li>
                 <li>
-                  Contribuir a open source de algo que uses y valores.
+                  Mentorar a alguien junior (enseñar reabre tu curiosidad).
                 </li>
+                <li>Contribuir a open source de algo que uses y valores.</li>
               </ul>
               <p className="text-sm text-default-500 mt-3 italic">
                 Objetivo: Recordar por qué elegiste tech en primer lugar.
@@ -547,8 +556,8 @@ export default async function BurnoutSilenciosoPage() {
         </h2>
 
         <p className="mb-4">
-          A veces el burnout no es "temporal". Es sistémico. Considera
-          renunciar si:
+          A veces el burnout no es "temporal". Es sistémico. Considera renunciar
+          si:
         </p>
 
         <ul className="space-y-3">
@@ -662,9 +671,9 @@ export default async function BurnoutSilenciosoPage() {
         </div>
 
         <p className="text-sm text-default-500">
-          💚 <strong>Modelo Non-Profit:</strong> Si decides continuar después
-          de la primera sesión, trabajamos por donación voluntaria. El 100% va
-          a causas sociales en Perú.
+          💚 <strong>Modelo Non-Profit:</strong> Si decides continuar después de
+          la primera sesión, trabajamos por donación voluntaria. El 100% va a
+          causas sociales en Perú.
         </p>
       </section>
 

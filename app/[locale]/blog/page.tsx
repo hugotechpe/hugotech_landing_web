@@ -1,10 +1,12 @@
-import { title } from "@/components/primitives";
 import Link from "next/link";
+
+import { title } from "@/components/primitives";
 
 const articles = [
   {
     slug: "burnout-silencioso-tech-2026",
-    title: "Burnout Silencioso en Tech: Lo que nadie te dice sobre el agotamiento invisible",
+    title:
+      "Burnout Silencioso en Tech: Lo que nadie te dice sobre el agotamiento invisible",
     excerpt:
       "¿Trabajas pero te sientes vacío? 7 señales de burnout silencioso + Plan de 30 días para recuperar tu energía sin renunciar.",
     date: "2025-12-03",
@@ -13,7 +15,8 @@ const articles = [
   },
   {
     slug: "liderazgo-tech-leads-introvertidos-2026",
-    title: "Liderazgo para Tech Leads Introvertidos: No necesitas fingir ser extrovertido",
+    title:
+      "Liderazgo para Tech Leads Introvertidos: No necesitas fingir ser extrovertido",
     excerpt:
       "5 mitos que te limitan + 7 herramientas prácticas para liderar equipos tech sin perder tu esencia.",
     date: "2025-12-03",
@@ -43,8 +46,8 @@ export default function BlogPage() {
         {articles.map((article) => (
           <Link
             key={article.slug}
-            href={`/es/blog/${article.slug}`}
             className="block rounded-lg border border-default-200 p-6 transition-all hover:border-primary hover:shadow-lg"
+            href={`/es/blog/${article.slug}`}
           >
             <div className="mb-2 flex items-center gap-3 text-sm text-default-500">
               <time dateTime={article.date}>

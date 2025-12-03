@@ -10,7 +10,7 @@ const routes = [
   { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/empresas", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/coaching", priority: 0.9, changeFrequency: "monthly" as const },
-  
+
   // Landing Pages Específicas (High Priority)
   {
     path: "/mentoring-burnout",
@@ -27,7 +27,7 @@ const routes = [
     priority: 0.95,
     changeFrequency: "weekly" as const,
   },
-  
+
   { path: "/testimonials", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
   {

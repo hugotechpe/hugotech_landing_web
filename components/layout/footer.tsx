@@ -17,6 +17,7 @@ const Footer: React.FC = () => {
 
   const legalLinks = messages?.Sections?.Footer?.legal?.links ?? [];
   const menuItems = messages?.Sections?.Footer?.menu?.items ?? [];
+  const trackItems = messages?.Sections?.Footer?.tracks?.items ?? [];
   const newsletter = messages?.Sections?.Footer?.newsletter ?? {};
   const mission = messages?.Sections?.Footer?.mission ?? {};
   const vision = messages?.Sections?.Footer?.vision ?? {};
@@ -50,7 +51,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Información de Contacto Directo */}
           <section aria-labelledby="footer-contact">
             <h2 className="text-lg font-bold mb-4" id="footer-contact">
@@ -153,6 +154,29 @@ const Footer: React.FC = () => {
             </nav>
           </section>
 
+          {/* Explora por Rol - SEO Gold Mine */}
+          <section aria-labelledby="footer-tracks">
+            <h2 className="text-lg font-bold" id="footer-tracks">
+              {t("tracks.title")}
+            </h2>
+            <nav aria-label={t("tracks.title")}>
+              <ul className="mt-4 space-y-6">
+                {trackItems.map(
+                  (item: { label: string; href: string }, idx: number) => (
+                    <li key={`track-${idx}`}>
+                      <Link
+                        className="text-white/90 hover:text-white"
+                        href={item.href}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ),
+                )}
+              </ul>
+            </nav>
+          </section>
+
           {/* Newsletter */}
           <section aria-labelledby="footer-newsletter">
             <h2 className="text-lg font-bold" id="footer-newsletter">
@@ -200,7 +224,7 @@ const Footer: React.FC = () => {
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-white/20 pt-6">
           <div className="flex-1 text-center md:text-left">
             <p className="text-white/80 text-xs sm:text-sm">{copyright}</p>
-            
+
             {/* Modelo Non-Profit */}
             {messages?.Sections?.Footer?.bottom?.donation && (
               <div className="mt-4 p-4 bg-white/10 rounded-lg border border-white/20">
@@ -209,10 +233,10 @@ const Footer: React.FC = () => {
                   {messages.Sections.Footer.bottom.donation.title}
                 </p>
                 <p
-                  className="text-xs text-white/90"
                   dangerouslySetInnerHTML={{
                     __html: messages.Sections.Footer.bottom.donation.text,
                   }}
+                  className="text-xs text-white/90"
                 />
               </div>
             )}

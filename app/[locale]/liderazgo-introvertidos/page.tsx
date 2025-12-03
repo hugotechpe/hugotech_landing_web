@@ -12,7 +12,8 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return genMetadata({
-    title: "Liderazgo Tech para Introvertidos | Lidera sin Fingir Ser Extrovertido",
+    title:
+      "Liderazgo Tech para Introvertidos | Lidera sin Fingir Ser Extrovertido",
     description:
       "No necesitas fingir extroversión para ser Tech Lead. Aprende a liderar equipos desde tu estilo natural: escucha activa, 1-on-1s profundos y decisiones estratégicas sin ser el más ruidoso.",
     keywords: [

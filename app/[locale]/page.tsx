@@ -100,8 +100,7 @@ export default async function Home({
         "Trabajo con todo el espectro: desde developers junior buscando su primer trabajo remoto, hasta tech leads y engineering managers que necesitan escalar equipos sin morir en el intento. También acompaño a seniors estancados que quieren un career reset, y a introvertidos tech que lideran desde su estilo sin forzar extroversión. Si trabajas en tech y quieres crecer, este espacio es para ti.",
     },
     {
-      question:
-        "¿Las sesiones de mentoring son online o presenciales en Perú?",
+      question: "¿Las sesiones de mentoring son online o presenciales en Perú?",
       answer:
         "100% online por Zoom o Google Meet, para que puedas conectar desde cualquier lugar de América Latina (o el mundo). Trabajo con clientes en Perú, México, Colombia, Argentina, y también en español desde Estados Unidos. Las sesiones duran 60 minutos y puedes agendar en horarios flexibles según tu zona horaria.",
     },

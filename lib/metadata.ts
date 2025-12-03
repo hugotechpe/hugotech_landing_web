@@ -177,8 +177,7 @@ export const pageMetadata = {
 
   empresas: {
     es: {
-      title:
-        "Programas de Mentoring Grupal para Equipos Tech | HugoTech Perú",
+      title: "Programas de Mentoring Grupal para Equipos Tech | HugoTech Perú",
       description:
         "Diseño programas de mentoring y coaching para equipos de tecnología. Liderazgo consciente, cultura ágil, retención de talento tech y equipos de alto rendimiento. Transforma tu organización.",
       keywords: [
@@ -208,8 +207,7 @@ export const pageMetadata = {
 
   mentorCoaching: {
     es: {
-      title:
-        "Mentoring de Carrera TI y Liderazgo Técnico (1 a 1) | HugoTech",
+      title: "Mentoring de Carrera TI y Liderazgo Técnico (1 a 1) | HugoTech",
       description:
         "Sesiones 1 a 1 de mentoring para desarrolladores y líderes tech. Plan de carrera, transición laboral, liderazgo técnico. Evita el burnout y crece con claridad y propósito en tecnología.",
       keywords: [

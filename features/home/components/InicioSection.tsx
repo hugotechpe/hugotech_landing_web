@@ -127,7 +127,7 @@ export function InicioSection() {
                 }}
                 variant="solid"
               />
-              
+
               {/* Microcopy debajo del CTA principal */}
               <p className="text-sm text-white/80 text-center sm:text-left -mt-1">
                 {t("ctas.mentoriaMicrocopy")}

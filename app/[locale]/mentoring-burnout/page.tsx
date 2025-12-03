@@ -234,7 +234,13 @@ export default async function MentoringBurnoutPage({
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">
-                    {idx === 0 ? "🔍" : idx === 1 ? "🛡️" : idx === 2 ? "🌱" : "⚡"}
+                    {idx === 0
+                      ? "🔍"
+                      : idx === 1
+                        ? "🛡️"
+                        : idx === 2
+                          ? "🌱"
+                          : "⚡"}
                   </span>
                   <div>
                     <p className="text-sm text-red-600 font-semibold">

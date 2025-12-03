@@ -28,7 +28,7 @@
     "menuItems": {
       "myStory": "My Story",
       "home": "Home",
-      "aboutMe": "About Me",
+      "aboutMe": "About the Mentor",
       "testimonials": "Testimonials",
       "companies": "Companies"
     }
@@ -72,7 +72,7 @@
         "title": "Menu",
         "items": [
           { "label": "Home", "href": "/en/" },
-          { "label": "About me", "href": "/en/#mepresento" },
+          { "label": "About the Mentor", "href": "/en/#mepresento" },
           { "label": "Companies", "href": "/en/#empresas" },
           { "label": "Testimonials", "href": "/en/#testimonios" },
           { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
@@ -80,6 +80,15 @@
           { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },
           { "label": "Book a session", "href": "/en/#cita" },
           { "label": "Blog", "href": "/en/blog" }
+        ]
+      },
+      "tracks": {
+        "title": "Explore by Role",
+        "items": [
+          { "label": "Mentoring for Juniors", "href": "/en/#pilares" },
+          { "label": "Tech Lead for Seniors", "href": "/en/#pilares" },
+          { "label": "IT Burnout Prevention", "href": "/en/#pilares" },
+          { "label": "Tech Career Reset", "href": "/en/#pilares" }
         ]
       },
       "newsletter": {
@@ -109,27 +118,27 @@
       }
     },
     "Pilares": {
-      "title": "The 4 pillars of the HugoTech experience",
-      "badge": "✨ 4 Fundamental Pillars",
+      "title": "Choose Your Tech Career Track",
+      "badge": "🚀 4 Transformation Paths",
       "items": [
         {
-          "title": "Self-awareness and personal development",
-          "description": "Change starts within. We work on confidence, communication, emotional intelligence and empathy so you lead from authenticity. We explore your values and strengths because when you know yourself, you decide better.",
+          "title": "Professional Launch (Juniors & Early Career)",
+          "description": "Your first tech job or first 3 years. We work on confidence, effective communication, impostor syndrome and how to stand out without being the most senior. Build solid foundations: self-awareness, emotional intelligence and growth mindset from the start.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Growth mindset (vs. burnout)",
-          "description": "We build a sustainable tech career where success doesn't drain you. With anti-burnout tools, conscious energy management and growth mindset applied daily. Your well-being is the foundation of your best performance.",
+          "title": "Anti-Burnout Track (Career Sustainability)",
+          "description": "For those feeling exhaustion, anxiety or emptiness despite success. We build a sustainable tech career where growth doesn't mean depleting yourself. Energy management tools, healthy boundaries and growth mindset applied daily. Your well-being is the foundation of your best performance.",
           "iconKey": "equipos"
         },
         {
-          "title": "Agile leadership and high-performance teams",
-          "description": "Develop your ability to influence, create psychological safety and build extraordinary teams. With Management 3.0, agile facilitation and applied coaching. We lead from trust, not from fear or technical ego.",
+          "title": "Tech Lead Survival (Seniors & Emerging Leaders)",
+          "description": "Transition from Senior Developer to Tech Lead or Manager. Develop influence without formal authority, create psychological safety in teams and lead from trust (not technical ego). With Management 3.0, agile facilitation and applied coaching. Ideal if you're introverted.",
           "iconKey": "equipos"
         },
         {
-          "title": "Purpose + Tech Strategy",
-          "description": "We create your personalized roadmap that connects your essence with concrete action. We decide your next step based on your values and goals. The best technology is built by people who know themselves and act from their purpose.",
+          "title": "Career Reset (Professional Pivot)",
+          "description": "For those seeking role change, industry shift or reconnecting with their purpose. We create your personalized roadmap connecting your essence with concrete action. Clarify your next step based on values, strengths and real goals. The best technology is built by people who know themselves and act from their purpose.",
           "iconKey": "liderazgo"
         }
       ]
@@ -223,7 +232,7 @@
     },
     "Inicio": {
       "chipLabel": "Innovation with Soul • Tech with Purpose",
-      "title": "Transform your tech talent into real impact",
+      "title": "AI replaces code. <highlight>Not leaders with purpose.</highlight>",
       "subtitle": "I accompany professionals and tech teams toward growth with purpose and sustainable results.",
       "mantra": "Be authentic, inspire young tech talents and build with faith a legacy with soul.",
       "paragraphs": {
@@ -231,7 +240,7 @@
         "p2": "AI boosts your efficiency, but your <b>empathy, creativity and leadership are irreplaceable</b>. I prepare you to lead with impact, avoiding burnout."
       },
       "ctas": {
-        "mentoria": "Schedule your 1-on-1 session (Free)",
+        "mentoria": "Build my Tech Career Plan",
         "historia": "Learn my story",
         "empresas": "Transform your team?"
       },

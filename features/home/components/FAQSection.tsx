@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Link } from "@heroui/link";
 import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 
@@ -41,15 +42,17 @@ export function FAQSection() {
               <CardBody className="p-6">
                 <div
                   className="flex items-start justify-between gap-4 cursor-pointer"
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       setOpenIndex(openIndex === index ? null : index);
                     }
                   }}
-                  role="button"
-                  tabIndex={0}
                 >
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-3">
@@ -81,12 +84,12 @@ export function FAQSection() {
           <p className="text-default-600 text-lg mb-4">
             ¿Tienes más preguntas? Hablemos en tu sesión gratuita.
           </p>
-          <a
+          <Link
             className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-transform hover:scale-105"
-            href="/es/#cita"
+            href="/#cita"
           >
             Reservar mi Sesión Gratuita
-          </a>
+          </Link>
         </div>
       </div>
     </section>

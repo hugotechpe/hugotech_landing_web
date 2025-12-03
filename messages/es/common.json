@@ -28,7 +28,7 @@
     "menuItems": {
       "myStory": "Mi Historia",
       "home": "Inicio",
-      "aboutMe": "Me Presento",
+      "aboutMe": "Sobre el Mentor",
       "testimonials": "Testimonios",
       "companies": "Empresas"
     }
@@ -85,7 +85,7 @@
             "href": "/es/"
           },
           {
-            "label": "Me presento",
+            "label": "Sobre el Mentor",
             "href": "/es/#mepresento"
           },
           {
@@ -115,6 +115,27 @@
           {
             "label": "Recursos",
             "href": "/es/blog"
+          }
+        ]
+      },
+      "tracks": {
+        "title": "Explora por Rol",
+        "items": [
+          {
+            "label": "Mentoring para Juniors",
+            "href": "/es/#pilares"
+          },
+          {
+            "label": "Tech Lead para Seniors",
+            "href": "/es/#pilares"
+          },
+          {
+            "label": "Prevención de Burnout TI",
+            "href": "/es/#pilares"
+          },
+          {
+            "label": "Reset de Carrera Tech",
+            "href": "/es/#pilares"
           }
         ]
       },
@@ -150,27 +171,27 @@
       }
     },
     "Pilares": {
-      "title": "Los 4 pilares de la experiencia HugoTech",
-      "badge": "✨ 4 Pilares Fundamentales",
+      "title": "Elige tu Track de Carrera Tech",
+      "badge": "🚀 4 Caminos de Transformación",
       "items": [
         {
-          "title": "Autoconocimiento y desarrollo personal",
-          "description": "El cambio empieza dentro. Trabajamos confianza, comunicación, inteligencia emocional y empatía para que lideres desde tu autenticidad. Exploramos tus valores y fortalezas porque cuando te conoces, decides mejor.",
+          "title": "Despegue Profesional (Juniors & Early Career)",
+          "description": "Tu primer empleo tech o primeros 3 años. Trabajamos confianza, comunicación efectiva, síndrome del impostor y cómo destacar sin ser el más senior. Construyes bases sólidas: autoconocimiento, inteligencia emocional y mentalidad growth desde el inicio.",
           "iconKey": "mentoring"
         },
         {
-          "title": "Mentalidad de crecimiento (vs. burnout)",
-          "description": "Construimos una carrera tech sostenible donde el éxito no te vacíe. Con herramientas anti-burnout, gestión consciente de energía y mentalidad growth aplicadas al día a día. Tu bienestar es la base de tu mejor rendimiento.",
+          "title": "Anti-Burnout Track (Sostenibilidad de Carrera)",
+          "description": "Para quienes sienten agotamiento, ansiedad o vacío pese al éxito. Construimos una carrera tech sostenible donde crecer no significa vaciarte. Herramientas de gestión de energía, límites saludables y mentalidad growth aplicada al día a día. Tu bienestar es la base de tu mejor rendimiento.",
           "iconKey": "equipos"
         },
         {
-          "title": "Liderazgo ágil y equipos de alto rendimiento",
-          "description": "Desarrolla tu capacidad de influir, crear seguridad psicológica y construir equipos extraordinarios. Con Management 3.0, facilitación ágil y coaching aplicado. Lideramos desde la confianza, no desde el miedo ni ego técnico.",
+          "title": "Tech Lead Survival (Seniors & Líderes Emergentes)",
+          "description": "Transición de Senior Developer a Tech Lead o Manager. Desarrollas influencia sin autoridad formal, creas seguridad psicológica en equipos y lideras desde la confianza (no desde el ego técnico). Con Management 3.0, facilitación ágil y coaching aplicado. Ideal si eres introvertido.",
           "iconKey": "equipos"
         },
         {
-          "title": "Propósito + Estrategia Tech",
-          "description": "Creamos tu hoja de ruta personalizada que conecta tu esencia con acción concreta. Decidimos tu siguiente paso según tus valores y objetivos. La mejor tecnología la construyen personas que se conocen y actúan desde su propósito.",
+          "title": "Reset de Carrera (Pivote Profesional)",
+          "description": "Para quienes buscan cambio de rol, industria o reconectar con su propósito. Creamos tu hoja de ruta personalizada que conecta tu esencia con acción concreta. Clarificamos tu siguiente paso según valores, fortalezas y objetivos reales. La mejor tecnología la construyen personas que se conocen y actúan desde su propósito.",
           "iconKey": "liderazgo"
         }
       ]
@@ -293,7 +314,7 @@
     },
     "Inicio": {
       "chipLabel": "🎓 Mentoring para Programadores por Hugo Casanova | 100% Donación Voluntaria",
-      "title": "Mentoring para Líderes Tech y Programadores en Perú | Hugo Casanova",
+      "title": "La IA reemplaza código. <highlight>No reemplaza líderes con propósito.</highlight>",
       "subtitle": "¿Te sientes estancado como developer? ¿Miedo a que la IA te reemplace? ¿Quieres liderar pero eres introvertido?\nTe acompaño a construir una <b>carrera tech sostenible</b> sin burnout.",
       "mantra": "Ser auténtico, inspirar a jóvenes talentos tech y construir con fe un legado con alma.",
       "experience": {
@@ -323,8 +344,8 @@
         "p2": "<b>Tu crecimiento ayuda a otros:</b> Sesiones 1-a-1 por <b>donación voluntaria</b>. El 100% se destina a causas sociales en Perú (albergues, becas tech, comedores populares).\n\nDesde tu <b>primer empleo tech</b> hasta tu <b>transición de Senior → Manager</b> o <b>Tech Lead introvertido</b>. Tú decides el valor."
       },
       "ctas": {
-        "mentoria": "Diseña tu Plan de Carrera 2026",
-        "mentoriaMicrocopy": "Primera sesión gratis • 100% de lo recaudado va a donación social",
+        "mentoria": "Construir mi Plan de Carrera Tech",
+        "mentoriaMicrocopy": "1ra sesión SIN COSTO • Tú decides el valor",
         "historia": "Conoce mi historia",
         "empresas": "Programas para Equipos Tech"
       },

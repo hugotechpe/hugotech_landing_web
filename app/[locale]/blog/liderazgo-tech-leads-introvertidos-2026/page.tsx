@@ -18,7 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "comunicación para introvertidos tech",
     ],
     openGraph: {
-      title: "Liderazgo para Tech Leads Introvertidos: No Necesitas Fingir Extroversión",
+      title:
+        "Liderazgo para Tech Leads Introvertidos: No Necesitas Fingir Extroversión",
       description:
         "5 mitos sobre liderazgo + 7 herramientas prácticas para liderar equipos tech sin dejar de ser tú mismo.",
       type: "article",
@@ -57,8 +58,8 @@ export default async function LiderazgoIntrovertidosPage() {
         </h1>
 
         <p className="text-xl text-default-600">
-          5 mitos que te limitan + 7 herramientas prácticas para liderar
-          equipos tech sin perder tu esencia.
+          5 mitos que te limitan + 7 herramientas prácticas para liderar equipos
+          tech sin perder tu esencia.
         </p>
       </header>
 
@@ -73,9 +74,7 @@ export default async function LiderazgoIntrovertidosPage() {
 
         <ul>
           <li>Pánico cuando te toca hablar en reuniones con 10+ personas.</li>
-          <li>
-            Agotamiento después de 3 horas seguidas de 1-on-1s y dailies.
-          </li>
+          <li>Agotamiento después de 3 horas seguidas de 1-on-1s y dailies.</li>
           <li>
             Culpa porque prefieres escribir código que "socializar" con el
             equipo.
@@ -133,13 +132,13 @@ export default async function LiderazgoIntrovertidosPage() {
 
           <p className="mb-4 text-default-600">
             <strong>La verdad:</strong> Los mejores líderes ponen límites.
-            Enseñan a su equipo a pensar por sí mismos, no a depender del
-            "gurú" que siempre resuelve.
+            Enseñan a su equipo a pensar por sí mismos, no a depender del "gurú"
+            que siempre resuelve.
           </p>
 
           <p className="text-default-600">
-            <strong>Estrategia introvertida:</strong> Office Hours. 2 bloques
-            de 1 hora al día donde estás 100% disponible. El resto:{" "}
+            <strong>Estrategia introvertida:</strong> Office Hours. 2 bloques de
+            1 hora al día donde estás 100% disponible. El resto:{" "}
             <em>Deep Work</em>.
           </p>
         </div>
@@ -437,8 +436,8 @@ export default async function LiderazgoIntrovertidosPage() {
                   Vamos a investigar juntos".
                 </li>
                 <li>
-                  <strong>Pide feedback</strong>: "¿Cómo me ves como líder?
-                  ¿Qué podría mejorar?"
+                  <strong>Pide feedback</strong>: "¿Cómo me ves como líder? ¿Qué
+                  podría mejorar?"
                 </li>
               </ul>
               <p className="mt-3 text-sm text-default-500 italic">
@@ -457,9 +456,9 @@ export default async function LiderazgoIntrovertidosPage() {
         </h2>
 
         <p className="mb-4">
-          Durante años pensé que <strong>estaba roto</strong>. Veía a otros
-          Tech Leads que parecían "naturales": hablaban en standups con
-          carisma, organizaban after-office, conocían a todos por su nombre.
+          Durante años pensé que <strong>estaba roto</strong>. Veía a otros Tech
+          Leads que parecían "naturales": hablaban en standups con carisma,
+          organizaban after-office, conocían a todos por su nombre.
         </p>
 
         <p className="mb-4">
@@ -533,9 +532,9 @@ export default async function LiderazgoIntrovertidosPage() {
         </div>
 
         <p className="text-sm text-default-500">
-          💚 <strong>Modelo Non-Profit:</strong> Si decides continuar después
-          de la primera sesión, trabajamos por donación voluntaria. El 100% va
-          a causas sociales en Perú.
+          💚 <strong>Modelo Non-Profit:</strong> Si decides continuar después de
+          la primera sesión, trabajamos por donación voluntaria. El 100% va a
+          causas sociales en Perú.
         </p>
       </section>
 

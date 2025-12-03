@@ -260,8 +260,8 @@ export default async function PrimerEmpleoTechPage({
               Resultados Reales de Juniors
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estos developers pasaron de &ldquo;no consigo ni entrevistas&rdquo; a &ldquo;tengo
-              que elegir entre ofertas&rdquo;.
+              Estos developers pasaron de &ldquo;no consigo ni
+              entrevistas&rdquo; a &ldquo;tengo que elegir entre ofertas&rdquo;.
             </p>
           </div>
 
@@ -302,7 +302,9 @@ export default async function PrimerEmpleoTechPage({
                     <p className="text-sm text-green-600">{story.result}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 italic mb-3">&ldquo;{story.quote}&rdquo;</p>
+                <p className="text-gray-700 italic mb-3">
+                  &ldquo;{story.quote}&rdquo;
+                </p>
                 <p className="text-sm text-gray-500">
                   ⏱️ Consiguió empleo en {story.time}
                 </p>

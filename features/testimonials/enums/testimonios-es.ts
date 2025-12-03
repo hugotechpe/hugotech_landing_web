@@ -381,7 +381,8 @@ Aprendí de su compromiso para terminar todo lo que se comienza, la constancia p
     
     Doy testimonio de que el proyecto que lideraste, Hugo, le dio un nuevo rumbo a la vida de mi hermano, y por eso estoy profundamente agradecido. Tu forma de crear espacios donde las personas pueden crecer y pertenecer trasciende lo laboral—transforma vidas y familias enteras.`,
     authorName: "Andrews Postillos",
-    jobTitle: "Hermano y Testigo | Profesional en Transformación Organizacional",
+    jobTitle:
+      "Hermano y Testigo | Profesional en Transformación Organizacional",
     avatarSrc: "/images/testimonials/andrews-postillos.jpg",
     avatarAlt: "Foto de perfil de Andrews Postillos",
     linkedInUrl:
