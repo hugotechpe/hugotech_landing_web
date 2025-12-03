@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="newfieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="35" fill="url(#newfieldGrad)"/>
+  <rect x="25" y="25" width="250" height="250" rx="25" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
+  <circle cx="150" cy="100" r="35" fill="none" stroke="white" stroke-width="3"/>
+  <path d="M 150 135 L 150 180 M 120 155 L 150 155 M 150 155 L 180 155 M 130 180 L 130 210 M 170 180 L 170 210" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <text x="150" y="245" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="white" text-anchor="middle">NEWFIELD</text>
+  <text x="150" y="275" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="white" text-anchor="middle">COACH</text>
+</svg>

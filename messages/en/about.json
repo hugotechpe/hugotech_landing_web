@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "badge": "✨ My Story",
+    "title": {
+      "line1": "I stopped optimizing",
+      "servers": "servers",
+      "line2": "to optimize",
+      "people": "people."
+    },
+    "subtitle": {
+      "line1": "18 years in technology. From Backend to Boardroom.",
+      "line2": "Now I dedicate my life to ensuring tech leaders don't burn out along the way."
+    },
+    "cta": "See My Impact 📊",
+    "scrollText": "Discover my story"
+  },
+  "breaking": {
+    "title": "The Breaking Point:",
+    "subtitle": "When success started to hurt",
+    "description": "I reached the highest position in my tech career in Latin America. And I realized something: the higher I climbed, the more leaders I saw breaking in silence. Burnout disguised as ambition. Anxiety disguised as perfectionism. Loneliness disguised as leadership.",
+    "pillars": {
+      "humanity": {
+        "title": "Humanity First",
+        "description": "Metrics matter. But people are not KPIs."
+      },
+      "purpose": {
+        "title": "Purpose as Compass",
+        "description": "Success without purpose is just well-paid noise."
+      },
+      "growth": {
+        "title": "Sustainable Growth",
+        "description": "Grow without breaking. Scale without losing your essence."
+      },
+      "excellence": {
+        "title": "Excellence without Burnout",
+        "description": "High performance doesn't have to mean high destruction."
+      }
+    }
+  },
+  "evolution": {
+    "title": "My Evolution:",
+    "subtitle": "8 different roles, 1 profound lesson",
+    "description": "It wasn't a linear path. It was 18 years of pivoting, learning, falling, and getting back up. Each role taught me something different about leadership, teams, and, above all, about myself.",
+    "roles": {
+      "backend": {
+        "role": "Backend Developer",
+        "lesson": "Perfect code doesn't exist. But useful and maintainable code does.",
+        "learning": "Solid technical foundations"
+      },
+      "frontend": {
+        "role": "Frontend Developer",
+        "lesson": "The best UX is invisible. If the user notices it, you failed.",
+        "learning": "User-centered design"
+      },
+      "fullstack": {
+        "role": "Fullstack Developer",
+        "lesson": "Being a generalist means connecting dots that others don't see.",
+        "learning": "End-to-end vision"
+      },
+      "techlead": {
+        "role": "Tech Lead",
+        "lesson": "Leading isn't about being the most technical. It's about making your team shine.",
+        "learning": "Technical leadership"
+      },
+      "pm": {
+        "role": "Project Manager",
+        "lesson": "Time and scope are illusions. Priority is real.",
+        "learning": "Project management"
+      },
+      "headproduct": {
+        "role": "Head of Product",
+        "lesson": "Strategy without execution is fantasy. Execution without strategy is chaos.",
+        "learning": "Product strategy"
+      },
+      "po": {
+        "role": "Product Owner",
+        "lesson": "The best code is useless if it solves the wrong problem.",
+        "learning": "Product management"
+      },
+      "country": {
+        "role": "Country Manager",
+        "lesson": "Scaling isn't growing. It's multiplying impact without losing essence.",
+        "learning": "Business management"
+      }
+    }
+  },
+  "impact": {
+    "title": {
+      "line1": "Not just words.",
+      "line2": "Measurable and human impact."
+    },
+    "subtitle": "Each number here represents a person who trusted, a path I accompanied, a life that changed.",
+    "stats": {
+      "leaders": {
+        "number": "200+",
+        "label": "Leaders Coached",
+        "description": "In 15+ Latin American countries"
+      },
+      "rating": {
+        "number": "4.9/5",
+        "label": "Satisfaction",
+        "description": "Average in 1:1 mentoring"
+      },
+      "retention": {
+        "number": "90%",
+        "label": "Talent Retention",
+        "description": "In advised teams"
+      },
+      "transformations": {
+        "number": "100%",
+        "label": "Real Transformations",
+        "description": "Documented stories"
+      }
+    },
+    "social": {
+      "title": "100% of your sessions go to social causes",
+      "description": "I don't work for money. I work for purpose. Every S/35 you invest in your growth goes directly to rescue puppies, support community kitchens, and causes that truly matter.",
+      "cta": "Your transformation transforms the world."
+    }
+  },
+  "toolkit": {
+    "title": "My Transformation Toolkit",
+    "subtitle": "12 international certifications. They're not diplomas on the wall. They're tools I use every day to guide you."
+  },
+  "cta": {
+    "title": "Ready to write your own",
+    "titleHighlight": "life code?",
+    "subtitle": "I won't let you be number 201.",
+    "description": "I've already guided 200 talents. If you made it here, it's because something in my story resonated with yours. Let's talk.",
+    "calendar": "📅 Schedule Your Free Session",
+    "linkedin": "Connect on LinkedIn",
+    "values": {
+      "value1": "✅ First session at no cost",
+      "value2": "✅ 100% online - From wherever you are",
+      "value3": "✅ Flexible - You set the pace"
+    }
+  }
+}

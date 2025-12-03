@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "badge": "✨ Mi Historia",
+    "title": {
+      "line1": "Dejé de optimizar",
+      "servers": "servidores",
+      "line2": "para optimizar",
+      "people": "personas."
+    },
+    "subtitle": {
+      "line1": "18 años en tecnología. Del Backend al Boardroom.",
+      "line2": "Ahora dedico mi vida a que los líderes tech no se quemen en el camino."
+    },
+    "cta": "Ver mi Impacto 📊",
+    "scrollText": "Descubre mi historia"
+  },
+  "breaking": {
+    "title": "El Quiebre:",
+    "subtitle": "Cuando el éxito empezó a doler",
+    "description": "Llegué al puesto más alto de mi carrera tech en Latinoamérica. Y me di cuenta de algo: mientras más subía, más líderes veía quebrándose en silencio. Burnout disfrazado de ambición. Ansiedad disfrazada de perfeccionismo. Soledad disfrazada de liderazgo.",
+    "pillars": {
+      "humanity": {
+        "title": "Humanidad Primero",
+        "description": "Las métricas importan. Pero las personas no son KPIs."
+      },
+      "purpose": {
+        "title": "Propósito como Brújula",
+        "description": "El éxito sin propósito es solo ruido bien remunerado."
+      },
+      "growth": {
+        "title": "Crecimiento Sostenible",
+        "description": "Crecer sin quebrarse. Escalar sin perder tu esencia."
+      },
+      "excellence": {
+        "title": "Excellence sin Burnout",
+        "description": "Alta performance no tiene que significar alta destrucción."
+      }
+    }
+  },
+  "evolution": {
+    "title": "Mi Evolución:",
+    "subtitle": "8 roles distintos, 1 lección profunda",
+    "description": "No fue un camino lineal. Fueron 18 años de pivotar, aprender, caer y volver a levantarme. Cada rol me enseñó algo diferente sobre liderazgo, equipos y, sobre todo, sobre mí mismo.",
+    "roles": {
+      "backend": {
+        "role": "Backend Developer",
+        "lesson": "El código perfecto no existe. Pero el código útil y mantenible, sí.",
+        "learning": "Fundamentos técnicos sólidos"
+      },
+      "frontend": {
+        "role": "Frontend Developer",
+        "lesson": "La mejor UX es invisible. Si el usuario lo nota, fallaste.",
+        "learning": "Diseño centrado en el usuario"
+      },
+      "fullstack": {
+        "role": "Fullstack Developer",
+        "lesson": "Ser generalista es poder conectar puntos que otros no ven.",
+        "learning": "Visión end-to-end"
+      },
+      "techlead": {
+        "role": "Tech Lead",
+        "lesson": "Liderar no es ser el más técnico. Es hacer brillar a tu equipo.",
+        "learning": "Liderazgo técnico"
+      },
+      "pm": {
+        "role": "Project Manager",
+        "lesson": "El tiempo y el alcance son ilusiones. La prioridad es real.",
+        "learning": "Gestión de proyectos"
+      },
+      "headproduct": {
+        "role": "Head of Product",
+        "lesson": "La estrategia sin ejecución es fantasía. La ejecución sin estrategia es caos.",
+        "learning": "Estrategia de producto"
+      },
+      "po": {
+        "role": "Product Owner",
+        "lesson": "El mejor código no sirve si resuelve el problema equivocado.",
+        "learning": "Gestión de producto"
+      },
+      "country": {
+        "role": "Country Manager",
+        "lesson": "Escalar no es crecer. Es multiplicar impacto sin perder esencia.",
+        "learning": "Gestión de negocio"
+      }
+    }
+  },
+  "impact": {
+    "title": {
+      "line1": "No solo palabras.",
+      "line2": "Impacto medible y humano."
+    },
+    "subtitle": "Cada número aquí representa una persona que confió, un camino que acompañé, una vida que cambió.",
+    "stats": {
+      "leaders": {
+        "number": "200+",
+        "label": "Líderes Acompañados",
+        "description": "En 15+ países de Latinoamérica"
+      },
+      "rating": {
+        "number": "4.9/5",
+        "label": "Satisfacción",
+        "description": "Promedio en mentoría 1:1"
+      },
+      "retention": {
+        "number": "90%",
+        "label": "Retención de Talento",
+        "description": "En equipos asesorados"
+      },
+      "transformations": {
+        "number": "100%",
+        "label": "Transformaciones Reales",
+        "description": "Historias documentadas"
+      }
+    },
+    "social": {
+      "title": "El 100% de tus sesiones va a causas sociales",
+      "description": "No trabajo por dinero. Trabajo por propósito. Cada S/35 que inviertes en tu crecimiento va directo a rescatar perritos, apoyar comedores comunitarios y causas que realmente importan.",
+      "cta": "Tu transformación transforma el mundo."
+    }
+  },
+  "toolkit": {
+    "title": "Mi Toolkit de Transformación",
+    "subtitle": "12 certificaciones internacionales. No son diplomas en la pared. Son herramientas que uso cada día para acompañarte."
+  },
+  "cta": {
+    "title": "¿Listo para escribir tu propio",
+    "titleHighlight": "código de vida?",
+    "subtitle": "No dejaré que tú seas el 201.",
+    "description": "Ya guié a 200 talentos. Si llegaste hasta acá, es porque algo en mi historia resonó con la tuya. Hablemos.",
+    "calendar": "📅 Agenda tu Sesión Gratis",
+    "linkedin": "Conéctame en LinkedIn",
+    "values": {
+      "value1": "✅ Primera sesión sin costo",
+      "value2": "✅ 100% online - Desde donde estés",
+      "value3": "✅ Flexible - Tú marcas el ritmo"
+    }
+  }
+}

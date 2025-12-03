@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><head>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NLVSMW2');</script>
+<title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL "https://www.scrum.org/sites/default/files/inline-images/Professional%20Scrum%20Master%20I%20%28PSM%20I%29%20Badge.png" was not found on this server.</p></body></html>

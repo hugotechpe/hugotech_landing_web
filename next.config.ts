@@ -10,6 +10,36 @@ const nextConfig: NextConfig = {
         hostname: "hugotech.pe",
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.credly.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "static.wixstatic.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "management30.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "kanban.university",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.newfield.cl",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "professional.mit.edu",
+        pathname: "/**",
+      },
     ],
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
