@@ -1,5 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 
+import HomeLayout from "../homeLayout";
+
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 
@@ -38,7 +40,8 @@ export default async function LiderazgoIntrovertidosPage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen">
+    <HomeLayout>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white py-20 md:py-32">
         <div className="container mx-auto max-w-screen-xl px-6">
@@ -347,6 +350,7 @@ export default async function LiderazgoIntrovertidosPage({
           </p>
         </div>
       </section>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }

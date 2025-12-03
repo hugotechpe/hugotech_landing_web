@@ -1,5 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 
+import HomeLayout from "../homeLayout";
+
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 
@@ -38,7 +40,8 @@ export default async function PrimerEmpleoTechPage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen">
+    <HomeLayout>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 md:py-32">
         <div className="container mx-auto max-w-screen-xl px-6">
@@ -341,6 +344,7 @@ export default async function PrimerEmpleoTechPage({
           </p>
         </div>
       </section>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }

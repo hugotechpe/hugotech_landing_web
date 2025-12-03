@@ -8,6 +8,8 @@ import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
+import HomeLayout from "../homeLayout";
+
 import { LazyCalendlyEmbed } from "@/components/calendly/LazyCalendlyEmbed";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
@@ -20,7 +22,8 @@ export default function MentorCoachingPage() {
   };
 
   return (
-    <main className="bg-white overflow-hidden">
+    <HomeLayout>
+      <main className="bg-white overflow-hidden">
       {/* Breadcrumb Schema para SEO */}
       <Breadcrumb />
 
@@ -238,6 +241,7 @@ export default function MentorCoachingPage() {
           </motion.div>
         </div>
       </section>
-    </main>
+      </main>
+    </HomeLayout>
   );
 }
