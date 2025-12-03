@@ -1,14 +1,22 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
 
 export function HabilidadesBlandasSection() {
   const t = useTranslations("Sections.HabilidadesBlandas");
+
+  const scrollToAgenda = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const agendaSection = document.getElementById("cita");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
@@ -121,10 +129,9 @@ export function HabilidadesBlandasSection() {
             variants={fadeIn}
           >
             <Button
-              as={Link}
               className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl"
-              href="/#cita"
               size="lg"
+              onClick={scrollToAgenda}
             >
               {t("cta")}
             </Button>

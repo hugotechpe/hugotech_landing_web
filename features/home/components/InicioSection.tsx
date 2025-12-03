@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
@@ -15,12 +14,20 @@ export function InicioSection() {
   const shouldReduceMotion = useReducedMotion();
   const isMobile = useIsMobile();
 
+  const scrollToAgenda = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const agendaSection = document.getElementById("cita");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   // Disable complex animations on mobile or when user prefers reduced motion
   const enableAnimations = !shouldReduceMotion && !isMobile;
 
   return (
     <section
-      aria-label={t("title")}
+      aria-label="La IA reemplaza código. No reemplaza líderes con propósito."
       className="scroll-mt-0 bg-primary"
       id="inicio"
     >
@@ -115,12 +122,11 @@ export function InicioSection() {
 
             <div className="mt-8 flex flex-col gap-3">
               <Button
-                as={Link}
                 className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4"
                 color="default"
-                href="/#cita"
                 size="lg"
                 variant="solid"
+                onClick={scrollToAgenda}
               >
                 {t("ctas.mentoria")}
               </Button>
@@ -132,7 +138,7 @@ export function InicioSection() {
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2">
                 <Button
-                  as={Link}
+                  as="a"
                   className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
                   color="primary"
                   href={`/${locale}/about`}
@@ -143,7 +149,7 @@ export function InicioSection() {
                 </Button>
 
                 <Button
-                  as={Link}
+                  as="a"
                   className="w-full sm:w-auto bg-[#115C5B] text-white hover:bg-[#183F33]"
                   color="primary"
                   href={`/${locale}/empresas`}
