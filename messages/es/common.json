@@ -277,7 +277,11 @@
           "question": "¿Las sesiones son online o presenciales?",
           "answer": "Todas las sesiones son online (Zoom, Google Meet o la plataforma que prefieras). Esto permite flexibilidad de horarios y elimina barreras geográficas. Atiendo a developers desde Perú, México, Colombia, Chile, Argentina, Estados Unidos y otros países de América Latina. Las sesiones pueden ser en español o inglés según tu preferencia."
         }
-      ]
+      ],
+      "cta": {
+        "text": "¿Tienes más preguntas? Hablemos en tu sesión gratuita.",
+        "button": "Reservar mi Sesión Gratuita"
+      }
     },
     "PorQueGratuito": {
       "title": "¿Por qué hago esto? 💚",

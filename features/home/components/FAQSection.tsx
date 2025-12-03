@@ -112,13 +112,13 @@ export function FAQSection() {
         {/* CTA al final */}
         <div className="text-center mt-12">
           <p className="text-default-600 text-lg mb-4">
-            ¿Tienes más preguntas? Hablemos en tu sesión gratuita.
+            {t("cta.text")}
           </p>
           <Button
             className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-transform hover:scale-105"
             onClick={scrollToAgenda}
           >
-            Reservar mi Sesión Gratuita
+            {t("cta.button")}
           </Button>
         </div>
       </div>

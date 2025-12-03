@@ -221,7 +221,11 @@
           "question": "Are sessions online or in-person?",
           "answer": "All sessions are online (Zoom, Google Meet or the platform you prefer). This allows schedule flexibility and eliminates geographical barriers. I serve developers from Peru, Mexico, Colombia, Chile, Argentina, United States and other Latin American countries. Sessions can be in Spanish or English according to your preference."
         }
-      ]
+      ],
+      "cta": {
+        "text": "Have more questions? Let's talk in your free session.",
+        "button": "Book My Free Session"
+      }
     },
     "PorQueGratuito": {
       "title": "Why do I do this? 💚",
