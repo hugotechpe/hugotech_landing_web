@@ -42,6 +42,20 @@ export const personSchema = {
     "@type": "EducationalOrganization",
     name: "Formación en Coaching y Liderazgo",
   },
+  areaServed: [
+    {
+      "@type": "Country",
+      name: "Perú",
+    },
+    {
+      "@type": "Place",
+      name: "América Latina",
+    },
+    {
+      "@type": "Country",
+      name: "Estados Unidos",
+    },
+  ],
 };
 
 // Schema.org para HugoTech (Organization)
@@ -76,6 +90,28 @@ export const organizationSchema = {
   areaServed: {
     "@type": "Place",
     name: "América Latina",
+    geo: [
+      {
+        "@type": "Country",
+        name: "Perú",
+      },
+      {
+        "@type": "Country",
+        name: "México",
+      },
+      {
+        "@type": "Country",
+        name: "Colombia",
+      },
+      {
+        "@type": "Country",
+        name: "Chile",
+      },
+      {
+        "@type": "Country",
+        name: "Argentina",
+      },
+    ],
   },
   sameAs: [
     "https://www.linkedin.com/in/hugocasanovam",

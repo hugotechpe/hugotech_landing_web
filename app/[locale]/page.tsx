@@ -5,6 +5,7 @@ import HomeLayout from "./homeLayout";
 
 import { InicioSection } from "@/features/home/components/InicioSection";
 import { MePresentoSection } from "@/features/home/components/MePresentoSection";
+import { FAQSection } from "@/features/home/components/FAQSection";
 import { PorQueGratuitoSection } from "@/features/home/components/PorQueGratuitoSection";
 import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
@@ -16,6 +17,7 @@ import {
   organizationSchema,
   serviceSchema,
   aggregateRatingSchema,
+  faqSchema,
 } from "@/components/seo/JsonLd";
 import { generateMetadata as genMetadata, pageMetadata } from "@/lib/metadata";
 
@@ -74,6 +76,37 @@ export default async function Home({
   // Set locale para next-intl
   setRequestLocale(locale);
 
+  // FAQ data para Schema.org
+  const faqData = [
+    {
+      question: "¿Qué hace un mentor de carrera tech?",
+      answer:
+        "Un mentor de carrera tech te acompaña a diseñar tu plan de carrera en tecnología, potenciar tus habilidades técnicas y de liderazgo, y navegar desafíos como la ansiedad por IA, burnout o síndrome del impostor. En HugoTech trabajamos 1-a-1 con desarrolladores, tech leads y managers para que crezcan sin sacrificar su salud mental. No es coaching genérico: es mentoría especializada para quienes lideran equipos o aspiran a hacerlo.",
+    },
+    {
+      question: "¿Cómo ayuda HugoTech a evitar el burnout en tech?",
+      answer:
+        "El burnout tech no se resuelve con un fin de semana libre. Te ayudo a identificar las 7 señales tempranas (agotamiento crónico, cinismo, baja productividad), construir un plan anti-burnout de 30 días con límites digitales reales, y rediseñar tu semana laboral para rendir sin sacrificar tu bienestar. Si ya estás quemado, trabajamos juntos para recuperarte sin renunciar a tu carrera.",
+    },
+    {
+      question: "¿Cuánto cuesta una sesión de coaching tech en Perú?",
+      answer:
+        "La primera sesión es 100% gratuita para que evalúes si mi método te sirve. Si decides continuar, cada sesión es S/35 soles (o USD $9) como donación voluntaria – 100% va a causas sociales (educación tech para comunidades vulnerables). No es caridad: es un modelo sostenible donde tú decides cuánto vale tu crecimiento. Si no puedes pagar, igual podemos conversar opciones.",
+    },
+    {
+      question:
+        "¿El mentoring tech es solo para juniors o también para seniors?",
+      answer:
+        "Trabajo con todo el espectro: desde developers junior buscando su primer trabajo remoto, hasta tech leads y engineering managers que necesitan escalar equipos sin morir en el intento. También acompaño a seniors estancados que quieren un career reset, y a introvertidos tech que lideran desde su estilo sin forzar extroversión. Si trabajas en tech y quieres crecer, este espacio es para ti.",
+    },
+    {
+      question:
+        "¿Las sesiones de mentoring son online o presenciales en Perú?",
+      answer:
+        "100% online por Zoom o Google Meet, para que puedas conectar desde cualquier lugar de América Latina (o el mundo). Trabajo con clientes en Perú, México, Colombia, Argentina, y también en español desde Estados Unidos. Las sesiones duran 60 minutos y puedes agendar en horarios flexibles según tu zona horaria.",
+    },
+  ];
+
   return (
     <>
       {/* Schemas JSON-LD para SEO */}
@@ -81,10 +114,12 @@ export default async function Home({
       <JsonLd data={organizationSchema} />
       <JsonLd data={serviceSchema} />
       <JsonLd data={aggregateRatingSchema} />
+      <JsonLd data={faqSchema(faqData)} />
 
       <HomeLayout>
         <InicioSection />
         <MePresentoSection />
+        <FAQSection />
         <PorQueGratuitoSection />
         <PilaresSection />
         <EmpresasSection />

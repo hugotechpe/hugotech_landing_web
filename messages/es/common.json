@@ -227,6 +227,32 @@
       "ctaLabel": "Hablar con Hugo (Sesión Gratuita - Cupos Limitados)",
       "note": "Plazas limitadas por mes. 100% confidencial."
     },
+    "FAQ": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre el mentoring tech",
+      "questions": [
+        {
+          "question": "¿Qué hace un mentor de carrera tech?",
+          "answer": "Un mentor de carrera tech te acompaña a diseñar tu plan de carrera en tecnología. Trabajamos juntos en: clarificar tu siguiente paso (primer empleo, promoción, transición), desarrollar habilidades que la IA no puede reemplazar (liderazgo, comunicación estratégica), superar el síndrome del impostor, evitar el burnout y construir una carrera sostenible con propósito. No solo doy consejos, te ayudo a descubrir tus fortalezas y tomar decisiones alineadas con tus valores."
+        },
+        {
+          "question": "¿Cómo ayuda HugoTech a evitar el burnout en programadores?",
+          "answer": "El burnout en tech es real y silencioso. Trabajamos en: identificar las 7 señales de burnout antes de que sea tarde, crear límites digitales saludables (Slack, email, reuniones), diseñar tu plan anti-burnout de 30 días, proteger tu tiempo de recarga sin culpa, y decidir si tu agotamiento es recuperable o si necesitas cambiar de entorno. Mi enfoque es preventivo: construir una carrera tech donde el éxito no te vacíe por dentro."
+        },
+        {
+          "question": "¿Cuánto cuesta una sesión de coaching tech en Perú?",
+          "answer": "La primera sesión es completamente gratis, sin compromiso. Es una sesión de 45 minutos para conocernos y evaluar si mi acompañamiento te sirve. Si decides continuar, las siguientes sesiones funcionan por donación voluntaria (sugerida: S/35 soles, ~$10 USD). El 100% de lo recaudado se dona a causas sociales en Perú: albergues de animales, becas tech para jóvenes y comedores populares. Tu inversión en ti mismo también ayuda a otros."
+        },
+        {
+          "question": "¿El mentoring es solo para developers junior o también para seniors?",
+          "answer": "Trabajo con todo el espectro de carrera tech: Juniors y Career Switchers (primer empleo, fundamentos, síndrome del impostor), Mid-Level Developers (siguiente paso, especialización vs generalización), Seniors y Tech Leads (transición a Manager, Staff Engineer o Emprender, liderazgo sin burnout), e Introvertidos tech (liderar sin fingir extroversión). Cada perfil tiene desafíos únicos y diseñamos un plan personalizado según tu momento de carrera."
+        },
+        {
+          "question": "¿Las sesiones son online o presenciales?",
+          "answer": "Todas las sesiones son online (Zoom, Google Meet o la plataforma que prefieras). Esto permite flexibilidad de horarios y elimina barreras geográficas. Atiendo a developers desde Perú, México, Colombia, Chile, Argentina, Estados Unidos y otros países de América Latina. Las sesiones pueden ser en español o inglés según tu preferencia."
+        }
+      ]
+    },
     "PorQueGratuito": {
       "title": "¿Por qué hago esto? 💚",
       "intro": "Creo en <b>devolver al mundo lo que la vida me dio</b>: conocimiento y oportunidades.",
@@ -315,7 +341,7 @@
           "description": "Aprende a poner límites sin culpa. Crece sin quemarte."
         }
       },
-      "imageAlt": "Retrato de Hugo Casanova, mentor y coach tech"
+      "imageAlt": "Hugo Casanova mentor de liderazgo técnico para ingenieros de software en Perú, sesión 1-a-1 de coaching tech y desarrollo de carrera"
     },
     "HabilidadesBlandas": {
       "badge": "🧠 Desafíos reales que trabajamos juntos",
