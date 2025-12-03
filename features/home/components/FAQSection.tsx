@@ -36,12 +36,21 @@ export function FAQSection() {
           {questions.map((faq, index) => (
             <Card
               key={index}
-              className="border border-default-200 hover:border-primary transition-colors cursor-pointer"
-              isPressable
-              onPress={() => setOpenIndex(openIndex === index ? null : index)}
+              className="border border-default-200 hover:border-primary transition-colors"
             >
               <CardBody className="p-6">
-                <div className="flex items-start justify-between gap-4">
+                <div
+                  className="flex items-start justify-between gap-4 cursor-pointer"
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      setOpenIndex(openIndex === index ? null : index);
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                >
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-3">
                       <span className="text-primary text-2xl">❓</span>
@@ -53,14 +62,14 @@ export function FAQSection() {
                       </p>
                     )}
                   </div>
-                  <button
+                  <span
                     aria-label={
                       openIndex === index ? "Cerrar respuesta" : "Ver respuesta"
                     }
                     className="text-primary text-2xl font-bold flex-shrink-0"
                   >
                     {openIndex === index ? "−" : "+"}
-                  </button>
+                  </span>
                 </div>
               </CardBody>
             </Card>

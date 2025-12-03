@@ -80,7 +80,7 @@ export function CalendlyButton({
   // Determinar clases de Tailwind basadas en props
   const getButtonClasses = () => {
     const baseClasses =
-      "font-bold transition-all rounded-lg inline-flex items-center justify-center";
+      "font-bold transition-all rounded-lg inline-flex items-center justify-center cursor-pointer";
 
     const sizeClasses = {
       sm: "px-4 py-2 text-sm",
