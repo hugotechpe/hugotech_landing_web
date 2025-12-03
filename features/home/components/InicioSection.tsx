@@ -86,7 +86,7 @@ export function InicioSection() {
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
-                  <p className="text-lg md:text-xl font-medium text-center bg-gradient-to-r from-brand via-white to-brand bg-clip-text text-transparent leading-relaxed">
+                  <p className="text-lg md:text-xl font-medium text-center text-white leading-relaxed">
                     {t("mantra")}
                   </p>
                 </div>
@@ -94,7 +94,7 @@ export function InicioSection() {
             ) : (
               <div className="mt-6 relative">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
-                  <p className="text-lg md:text-xl font-medium text-center bg-gradient-to-r from-brand via-white to-brand bg-clip-text text-transparent leading-relaxed">
+                  <p className="text-lg md:text-xl font-medium text-center text-white leading-relaxed">
                     {t("mantra")}
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export function InicioSection() {
 
             <div className="mt-8 flex flex-col gap-3">
               <Button
-                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4"
+                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:brightness-110"
                 color="default"
                 size="lg"
                 variant="solid"

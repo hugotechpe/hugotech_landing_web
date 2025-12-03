@@ -18,6 +18,14 @@ export function FAQSection() {
     }
   };
 
+  const scrollToDonacion = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const donacionSection = document.getElementById("porquegratuito");
+    if (donacionSection) {
+      donacionSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   // Leer las preguntas desde las traducciones
   const questions = Array.from({ length: 5 }, (_, i) => ({
     question: t(`questions.${i}.question`),
@@ -69,9 +77,22 @@ export function FAQSection() {
                       {faq.question}
                     </h3>
                     {openIndex === index && (
-                      <p className="text-default-600 leading-relaxed mt-4 pl-11">
-                        {faq.answer}
-                      </p>
+                      <div className="text-default-600 leading-relaxed mt-4 pl-11">
+                        {faq.answer.includes("<link>") ? (
+                          <p>
+                            {faq.answer.split("<link>")[0]}
+                            <Link
+                              className="text-primary font-semibold hover:underline cursor-pointer"
+                              onClick={scrollToDonacion}
+                            >
+                              {faq.answer.split("<link>")[1].split("</link>")[0]}
+                            </Link>
+                            {faq.answer.split("</link>")[1]}
+                          </p>
+                        ) : (
+                          <p>{faq.answer}</p>
+                        )}
+                      </div>
                     )}
                   </div>
                   <span
