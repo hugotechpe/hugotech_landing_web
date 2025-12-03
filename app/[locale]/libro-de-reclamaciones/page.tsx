@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
+import HomeLayout from "../homeLayout";
 import { Button } from "@heroui/button";
 import { Input, Textarea } from "@heroui/input";
 import { Select, SelectItem } from "@heroui/select";
@@ -70,11 +72,12 @@ export default function LibroReclamacionesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <HomeLayout>
+      <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto max-w-5xl px-6 py-16">
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-gray-900 mb-6 leading-tight">
             Libro de Reclamaciones
           </h1>
           <p className="text-lg text-gray-600 mb-6">
@@ -456,6 +459,7 @@ export default function LibroReclamacionesPage() {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }

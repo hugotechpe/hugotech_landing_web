@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import HomeLayout from "../homeLayout";
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Legal.TermsAndConditions");
 
@@ -13,14 +15,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function TerminosYCondicionesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <HomeLayout>
+      <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto max-w-4xl px-6 py-16">
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-4 leading-tight">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-gray-900 mb-6 leading-tight">
             Términos y Condiciones
           </h1>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Última actualización: 25 de octubre de 2025
           </p>
         </div>
@@ -216,6 +219,7 @@ export default function TerminosYCondicionesPage() {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }

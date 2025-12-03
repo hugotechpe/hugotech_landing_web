@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
+import HomeLayout from "../homeLayout";
+
 export const metadata: Metadata = {
   title: "Políticas de Privacidad | HugoTech",
   description:
@@ -9,14 +11,15 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <HomeLayout>
+      <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto max-w-4xl px-6 py-16">
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-4 leading-tight">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-gray-900 mb-6 leading-tight">
             Políticas de Privacidad
           </h1>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Última actualización: 25 de octubre de 2025
           </p>
         </div>
@@ -350,6 +353,7 @@ export default function PrivacyPolicyPage() {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }
