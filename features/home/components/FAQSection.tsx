@@ -29,7 +29,7 @@ export function FAQSection() {
   // Leer las preguntas desde las traducciones
   const questions = Array.from({ length: 5 }, (_, i) => ({
     question: t(`questions.${i}.question`),
-    answer: t(`questions.${i}.answer`),
+    answer: t.raw(`questions.${i}.answer`), // Usar .raw para obtener el string sin procesar
   }));
 
   return (
