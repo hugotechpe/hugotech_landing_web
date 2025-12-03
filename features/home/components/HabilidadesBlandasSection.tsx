@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
-
-import { CalendlyButton } from "@/components/calendly/CalendlyButton";
+import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 
 export function HabilidadesBlandasSection() {
   const t = useTranslations("Sections.HabilidadesBlandas");
@@ -120,16 +120,14 @@ export function HabilidadesBlandasSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             variants={fadeIn}
           >
-            <CalendlyButton
+            <Button
+              as={Link}
               className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl"
+              href="/#cita"
               size="lg"
-              text={t("cta")}
-              utm={{
-                utmCampaign: "habilidades_blandas_section",
-                utmMedium: "website",
-                utmSource: "hugotech.pe",
-              }}
-            />
+            >
+              {t("cta")}
+            </Button>
           </motion.div>
         </motion.div>
       </div>

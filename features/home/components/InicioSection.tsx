@@ -7,7 +7,6 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 
-import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { useReducedMotion, useIsMobile } from "@/hooks/useReducedMotion";
 
 export function InicioSection() {
@@ -115,18 +114,16 @@ export function InicioSection() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3">
-              <CalendlyButton
-                className="w-full sm:w-auto"
+              <Button
+                as={Link}
+                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4"
                 color="default"
+                href="/#cita"
                 size="lg"
-                text={t("ctas.mentoria")}
-                utm={{
-                  utmSource: "hugotech.pe",
-                  utmMedium: "website",
-                  utmCampaign: "hero_section_cta",
-                }}
                 variant="solid"
-              />
+              >
+                {t("ctas.mentoria")}
+              </Button>
 
               {/* Microcopy debajo del CTA principal */}
               <p className="text-sm text-white/80 text-center sm:text-left -mt-1">
