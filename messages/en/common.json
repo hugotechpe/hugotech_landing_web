@@ -197,6 +197,32 @@
       "ctaLabel": "Start my transformation (No cost)",
       "note": "Limited spots per month. 100% confidential."
     },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about tech mentoring",
+      "questions": [
+        {
+          "question": "What does a tech career mentor do?",
+          "answer": "A tech career mentor accompanies you to design your career plan in technology. We work together on: clarifying your next step (first job, promotion, transition), developing skills that AI can't replace (leadership, strategic communication), overcoming impostor syndrome, avoiding burnout and building a sustainable career with purpose. I don't just give advice, I help you discover your strengths and make decisions aligned with your values."
+        },
+        {
+          "question": "How does HugoTech help prevent programmer burnout?",
+          "answer": "Burnout in tech is real and silent. We work on: identifying the 7 signs of burnout before it's too late, creating healthy digital boundaries (Slack, email, meetings), designing your 30-day anti-burnout plan, protecting your recharge time without guilt, and deciding if your exhaustion is recoverable or if you need to change environments. My approach is preventive: building a tech career where success doesn't drain you from the inside."
+        },
+        {
+          "question": "How much does a tech coaching session cost in Peru?",
+          "answer": "The first session is completely free, no strings attached. It's a 45-minute session to get to know each other and evaluate if my guidance serves you. If you decide to continue, follow-up sessions work by voluntary donation (suggested: S/35 soles, ~$10 USD). 100% of what's collected is donated to social causes in Peru: animal shelters, tech scholarships for young people and community kitchens. <link>See social causes</link>. Your investment in yourself also helps others."
+        },
+        {
+          "question": "Is mentoring only for junior developers or also for seniors?",
+          "answer": "I work with the entire tech career spectrum: Juniors and Career Switchers (first job, fundamentals, impostor syndrome), Mid-Level Developers (next step, specialization vs generalization), Seniors and Tech Leads (transition to Manager, Staff Engineer or Entrepreneur, leadership without burnout), and Introverted tech professionals (leading without faking extroversion). Each profile has unique challenges and we design a personalized plan according to your career moment."
+        },
+        {
+          "question": "Are sessions online or in-person?",
+          "answer": "All sessions are online (Zoom, Google Meet or the platform you prefer). This allows schedule flexibility and eliminates geographical barriers. I serve developers from Peru, Mexico, Colombia, Chile, Argentina, United States and other Latin American countries. Sessions can be in Spanish or English according to your preference."
+        }
+      ]
+    },
     "PorQueGratuito": {
       "title": "Why do I do this? 💚",
       "intro": "I believe in <b>giving back to the world what life gave me</b>: knowledge and opportunities.",
@@ -246,6 +272,7 @@
       },
       "ctas": {
         "mentoria": "Build my Tech Career Plan",
+        "mentoriaMicrocopy": "1st session FREE • You decide the value",
         "historia": "Learn my story",
         "empresas": "Transform your team?"
       },
