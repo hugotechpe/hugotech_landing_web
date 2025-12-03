@@ -63,18 +63,18 @@
       "legal": {
         "title": "Legal Information",
         "links": [
-          { "label": "Terms & Conditions", "href": "https://hugotech.pe/terminos-y-condiciones/" },
-          { "label": "Privacy Policy", "href": "https://hugotech.pe/privacy-policy/" },
-          { "label": "Claims Book", "href": "https://hugotech.pe/libro-de-reclamaciones/" }
+          { "label": "Terms & Conditions", "href": "/en/terminos-y-condiciones" },
+          { "label": "Privacy Policy", "href": "/en/privacy-policy" },
+          { "label": "Claims Book", "href": "/en/libro-de-reclamaciones" }
         ]
       },
       "menu": {
         "title": "Menu",
         "items": [
           { "label": "Home", "href": "/en/" },
-          { "label": "About the Mentor", "href": "/en/#mepresento" },
-          { "label": "Companies", "href": "/en/#empresas" },
-          { "label": "Testimonials", "href": "/en/#testimonios" },
+          { "label": "About the Mentor", "href": "/en/about" },
+          { "label": "Companies", "href": "/en/empresas" },
+          { "label": "Testimonials", "href": "/en/testimonials" },
           { "label": "Personal Coaching 1-on-1", "href": "/en/coaching" },
           { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
           { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },

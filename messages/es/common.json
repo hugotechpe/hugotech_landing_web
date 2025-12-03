@@ -65,15 +65,15 @@
         "links": [
           {
             "label": "Términos y Condiciones",
-            "href": "https://hugotech.pe/terminos-y-condiciones/"
+            "href": "/es/terminos-y-condiciones"
           },
           {
             "label": "Políticas de Privacidad",
-            "href": "https://hugotech.pe/privacy-policy/"
+            "href": "/es/privacy-policy"
           },
           {
             "label": "Libro de reclamaciones",
-            "href": "https://hugotech.pe/libro-de-reclamaciones/"
+            "href": "/es/libro-de-reclamaciones"
           }
         ]
       },
@@ -86,15 +86,15 @@
           },
           {
             "label": "Sobre el Mentor",
-            "href": "/es/#mepresento"
+            "href": "/es/about"
           },
           {
             "label": "Empresas",
-            "href": "/es/#empresas"
+            "href": "/es/empresas"
           },
           {
             "label": "Testimonios",
-            "href": "/es/#testimonios"
+            "href": "/es/testimonials"
           },
           {
             "label": "Coaching Personal 1 a 1",
