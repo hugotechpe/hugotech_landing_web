@@ -143,7 +143,10 @@ export function CoachingSection() {
               {t("title")}
             </h2>
             <p className="text-lg md:text-xl text-brand font-semibold mb-6">
-              {t("subtitle")}
+              {t.rich("subtitle", {
+                br: () => <br />,
+                b: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
 
             <div className="space-y-6">

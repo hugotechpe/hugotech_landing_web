@@ -99,6 +99,7 @@ export function InicioSection() {
               <p>
                 {t.rich("paragraphs.p1", {
                   b: (chunks) => <strong>{chunks}</strong>,
+                  br: () => <br />,
                   brand: (chunks) => (
                     <span className="font-semibold text-white">{chunks}</span>
                   ),
@@ -107,6 +108,7 @@ export function InicioSection() {
               <p>
                 {t.rich("paragraphs.p2", {
                   b: (chunks) => <strong>{chunks}</strong>,
+                  br: () => <br />,
                   brand: (chunks) => (
                     <span className="font-semibold text-white">{chunks}</span>
                   ),
