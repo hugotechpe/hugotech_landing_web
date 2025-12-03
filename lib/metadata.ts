@@ -92,18 +92,18 @@ export function generateMetadata({
 export const pageMetadata = {
   home: {
     es: {
-      title: "HugoTech - Mentoring Tech con Propósito en la Era de la IA",
+      title: "Mentoría para Programadores y Coaching Tech | Hugotech Perú",
       description:
-        "Acompaño a jóvenes talentos tech a encontrar su propósito profesional. Sesiones 1 a 1 gratuitas de coaching y mentoring tecnológico. Evita el burnout, construye una carrera sostenible.",
+        "Acompañamos a jóvenes talentos tech en su desarrollo humano y profesional. Mentoring de carrera TI, liderazgo técnico y coaching por donación voluntaria. Evita el burnout y crece con propósito.",
       keywords: [
-        "mentoring tech",
-        "coaching tecnológico",
-        "desarrollo profesional",
-        "mentalidad tech",
-        "burnout tech",
-        "carrera sostenible",
-        "liderazgo ágil",
-        "transformación digital",
+        "mentoring para programadores",
+        "mentor para desarrolladores junior",
+        "coach de carrera tecnología Perú",
+        "cómo evitar burnout en programación",
+        "plan de carrera ingeniero de software",
+        "primer empleo tech Perú",
+        "liderazgo técnico",
+        "coaching tech accesible",
       ],
     },
     en: {
@@ -178,16 +178,17 @@ export const pageMetadata = {
   empresas: {
     es: {
       title:
-        "Programas para Empresas Tech - Transformación de Equipos | HugoTech",
+        "Programas de Mentoring Grupal para Equipos Tech | HugoTech Perú",
       description:
-        "Diseño programas de mentoring y coaching grupal para equipos tech. Liderazgo consciente, cultura ágil y desarrollo de talento. Transforma tu organización desde el SER.",
+        "Diseño programas de mentoring y coaching para equipos de tecnología. Liderazgo consciente, cultura ágil, retención de talento tech y equipos de alto rendimiento. Transforma tu organización.",
       keywords: [
         "mentoring grupal tech",
         "coaching equipos tecnológicos",
-        "transformación digital empresas",
+        "retención talento tech",
         "liderazgo ágil corporativo",
         "cultura tech empresarial",
-        "desarrollo talento tecnológico",
+        "equipos alto rendimiento tecnología",
+        "desarrollo talento programadores",
       ],
     },
     en: {
@@ -208,16 +209,17 @@ export const pageMetadata = {
   mentorCoaching: {
     es: {
       title:
-        "Mentor Coaching 1 a 1 - Sesiones Personalizadas de 45min | HugoTech",
+        "Mentoring de Carrera TI y Liderazgo Técnico (1 a 1) | HugoTech",
       description:
-        "Agenda tu sesión individual de mentor coaching. 45 minutos de transformación para dar tu siguiente salto profesional con claridad, propósito y confianza renovada.",
+        "Sesiones 1 a 1 de mentoring para desarrolladores y líderes tech. Plan de carrera, transición laboral, liderazgo técnico. Evita el burnout y crece con claridad y propósito en tecnología.",
       keywords: [
-        "mentor coaching individual",
-        "sesiones coaching 1 a 1",
-        "coaching personalizado tech",
-        "mentoring profesional",
-        "desarrollo carrera tech",
-        "sesión coaching 45 minutos",
+        "mentoring de carrera TI",
+        "mentor para desarrolladores",
+        "plan de carrera ingeniero software",
+        "coaching liderazgo técnico",
+        "transición de carrera tech",
+        "mentoring para tech leads",
+        "desarrollo profesional programadores",
       ],
     },
     en: {
