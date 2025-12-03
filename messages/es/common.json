@@ -123,19 +123,19 @@
         "items": [
           {
             "label": "Mentoring para Juniors",
-            "href": "/es/#pilares"
+            "href": "/es/primer-empleo-tech"
           },
           {
             "label": "Tech Lead para Seniors",
-            "href": "/es/#pilares"
+            "href": "/es/liderazgo-introvertidos"
           },
           {
             "label": "Prevención de Burnout TI",
-            "href": "/es/#pilares"
+            "href": "/es/mentoring-burnout"
           },
           {
             "label": "Reset de Carrera Tech",
-            "href": "/es/#pilares"
+            "href": "/es/mentor-coaching"
           }
         ]
       },

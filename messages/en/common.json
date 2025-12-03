@@ -85,10 +85,10 @@
       "tracks": {
         "title": "Explore by Role",
         "items": [
-          { "label": "Mentoring for Juniors", "href": "/en/#pilares" },
-          { "label": "Tech Lead for Seniors", "href": "/en/#pilares" },
-          { "label": "IT Burnout Prevention", "href": "/en/#pilares" },
-          { "label": "Tech Career Reset", "href": "/en/#pilares" }
+          { "label": "Mentoring for Juniors", "href": "/en/primer-empleo-tech" },
+          { "label": "Tech Lead for Seniors", "href": "/en/liderazgo-introvertidos" },
+          { "label": "IT Burnout Prevention", "href": "/en/mentoring-burnout" },
+          { "label": "Tech Career Reset", "href": "/en/mentor-coaching" }
         ]
       },
       "newsletter": {
