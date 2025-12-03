@@ -3,6 +3,24 @@ import Link from "next/link";
 
 const articles = [
   {
+    slug: "burnout-silencioso-tech-2026",
+    title: "Burnout Silencioso en Tech: Lo que nadie te dice sobre el agotamiento invisible",
+    excerpt:
+      "¿Trabajas pero te sientes vacío? 7 señales de burnout silencioso + Plan de 30 días para recuperar tu energía sin renunciar.",
+    date: "2025-12-03",
+    readTime: "14 min",
+    tags: ["Mental Health", "Burnout", "Work-Life Balance"],
+  },
+  {
+    slug: "liderazgo-tech-leads-introvertidos-2026",
+    title: "Liderazgo para Tech Leads Introvertidos: No necesitas fingir ser extrovertido",
+    excerpt:
+      "5 mitos que te limitan + 7 herramientas prácticas para liderar equipos tech sin perder tu esencia.",
+    date: "2025-12-03",
+    readTime: "15 min",
+    tags: ["Tech Leadership", "Introvert Leaders", "Soft Skills"],
+  },
+  {
     slug: "estancamiento-senior-developer-2026",
     title: "¿Estancado como Senior Developer? Guía 2026 para tu Siguiente Paso",
     excerpt:
