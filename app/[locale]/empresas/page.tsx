@@ -293,22 +293,20 @@ export default function EmpresasNewPage() {
                 size="lg"
                 variant="flat"
               >
-                ✅ El HugoTech System
+                ✅ Protocolos de Intervención
               </Chip>
             </motion.div>
             <motion.h2
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              El Sistema HugoTech:{" "}
               <span className="text-primary">No vendemos cursos. Intervenimos.</span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-4xl mx-auto"
               variants={fadeIn}
             >
-              Un modelo probado que combina intervención técnica, cultural y emocional.
-              Resultados medibles, no teoría.
+              Una metodología probada que combina ingeniería técnica, liderazgo y psicología de equipos. Resultados medibles, no teoría.
             </motion.p>
           </motion.div>
 
@@ -616,7 +614,7 @@ export default function EmpresasNewPage() {
               className="text-xl md:text-2xl text-default-600 max-w-3xl mx-auto"
               variants={fadeIn}
             >
-              Empresas tech que ya implementaron el HugoTech System
+              Empresas tech que transformaron su cultura y rendimiento
             </motion.p>
           </motion.div>
 
