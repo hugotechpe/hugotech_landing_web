@@ -13,7 +13,6 @@ import {
 import { Link } from "@heroui/link";
 import { useTranslations } from "next-intl";
 
-import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { LocaleSwitch } from "@/components/locale-switch";
 
 export default function HeroNavbar() {
@@ -92,12 +91,19 @@ export default function HeroNavbar() {
             <LocaleSwitch />
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
-            <CalendlyButton
-              className="bg-white text-primary hover:bg-gray-100"
-              size="md"
-              text={tAgenda("title")}
-              variant="solid"
-            />
+            <button
+              className="bg-white text-primary font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              type="button"
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/hugotech/mentoria1a1",
+                  "_blank",
+                  "noopener,noreferrer",
+                )
+              }
+            >
+              {tAgenda("title")}
+            </button>
           </NavbarItem>
         </NavbarContent>
 
@@ -119,13 +125,19 @@ export default function HeroNavbar() {
 
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
-            <CalendlyButton
-              fullWidth
-              className="bg-primary text-white w-full"
-              size="lg"
-              text={tAgenda("title")}
-              variant="solid"
-            />
+            <button
+              className="bg-primary text-white font-bold w-full px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors"
+              type="button"
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/hugotech/mentoria1a1",
+                  "_blank",
+                  "noopener,noreferrer",
+                )
+              }
+            >
+              {tAgenda("title")}
+            </button>
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
