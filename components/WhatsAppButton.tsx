@@ -15,7 +15,7 @@ interface WhatsAppButtonProps {
 
 export function WhatsAppButton({
   phoneNumber = "51946483010",
-  message = "Hola Hugo, me gustaría agendar una sesión de mentoring",
+  message = "Hola Hugo, vengo de la web. Me gustaría agendar mi sesión de claridad gratuita.",
 }: WhatsAppButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
   const t = useTranslations("WhatsAppButton");

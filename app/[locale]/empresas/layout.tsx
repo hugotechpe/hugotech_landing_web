@@ -51,6 +51,7 @@ export default function EmpresasLayout({
 
         {/* WhatsApp Floating Button */}
         <WhatsAppButton
+          message="Hola Hugo, vengo de la web. Me interesa evaluar un diagnóstico para mi equipo."
           message="Hola Hugo, quiero agendar una consultoría empresarial"
           phoneNumber="51946483010"
         />
