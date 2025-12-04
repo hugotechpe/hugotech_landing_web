@@ -882,8 +882,8 @@ export default function EmpresasNewPage() {
             </Card>
           </motion.div>
 
-          {/* Logos de empresas (placeholder) */}
-          <motion.div
+          {/* Logos de empresas (placeholder) - OCULTO TEMPORALMENTE */}
+          {/* <motion.div
             className="text-center mt-16"
             initial="hidden"
             viewport={{ once: true }}
@@ -894,14 +894,13 @@ export default function EmpresasNewPage() {
               para su transformación cultural:
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40">
-              {/* Aquí irían los logos reales */}
               <div className="w-32 h-16 bg-default-200 rounded-lg" />
               <div className="w-32 h-16 bg-default-200 rounded-lg" />
               <div className="w-32 h-16 bg-default-200 rounded-lg" />
               <div className="w-32 h-16 bg-default-200 rounded-lg" />
               <div className="w-32 h-16 bg-default-200 rounded-lg" />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
