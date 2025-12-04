@@ -1,12 +1,12 @@
 {
   "about": {
     "hero": {
-    "badge": "✨ My Story",
+    "badge": "About Hugo Casanova",
     "title": {
-      "line1": "I stopped optimizing",
-      "servers": "servers",
-      "line2": "to optimize",
-      "people": "people."
+      "line1": "From Writing Code to",
+      "servers": "Rewriting",
+      "line2": "Leadership",
+      "people": "Stories."
     },
     "subtitle": {
       "line1": "18 years in technology. From Backend to Boardroom.",
@@ -14,6 +14,12 @@
     },
     "cta": "See My Impact 📊",
     "scrollText": "Discover my story"
+  },
+  "bridge": {
+    "title": "Why am I telling you all this?",
+    "line1": "Because I've already gone through the 'burnout' of Friday deploys. I've felt the impostor syndrome when promoted to Tech Lead.",
+    "line2": "I'm not speaking from theory in a book. I'm speaking from the trenches.",
+    "highlight": "I've made the mistakes so you don't have to repeat them."
   },
   "breaking": {
     "title": "The Breaking Point:",
@@ -128,7 +134,7 @@
     "titleHighlight": "life code?",
     "subtitle": "I won't let you be number 201.",
     "description": "I've already guided 200 talents. If you made it here, it's because something in my story resonated with yours. Let's talk.",
-    "calendar": "📅 Schedule Your Free Session",
+    "calendar": "Let's Talk (Engineer to Engineer)",
     "linkedin": "Connect on LinkedIn",
     "values": {
       "value1": "✅ First session at no cost",

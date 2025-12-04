@@ -302,6 +302,33 @@ export default function AboutNewPage() {
         </div>
       </section>
 
+      {/* PUENTE PSICOLÓGICO - "Te hablo desde la trinchera" */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto max-w-4xl px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
+            <blockquote className="relative border-l-4 border-primary bg-white p-8 md:p-12 rounded-r-2xl shadow-xl">
+              <div className="text-4xl text-primary mb-4 opacity-20">"</div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {t("bridge.title")}
+              </h3>
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                {t("bridge.line1")}
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                {t("bridge.line2")}
+              </p>
+              <p className="text-xl font-bold text-primary border-t-2 border-primary/20 pt-6">
+                {t("bridge.highlight")}
+              </p>
+            </blockquote>
+          </motion.div>
+        </div>
+      </section>
+
       {/* IMPACTO REAL */}
       <section
         className="py-16 md:py-24 bg-gradient-to-br from-primary via-[#0d4746] to-[#083635] text-white"

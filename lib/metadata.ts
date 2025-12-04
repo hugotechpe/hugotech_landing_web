@@ -125,27 +125,31 @@ export const pageMetadata = {
 
   about: {
     es: {
-      title: "Sobre Hugo Casanova - Mi Historia y Experiencia | HugoTech",
+      title: "Hugo Casanova: De Ingeniero a Agile Coach & Mentor | Sobre Mí",
       description:
-        "Conoce mi historia: 18+ años en tech, mi transformación personal y cómo llegué al coaching y mentoring tecnológico. De ingeniero a mentor con propósito.",
+        "Ingeniero de Software con 18+ años de experiencia (PHP, React, AWS) transformado en Mentor de Liderazgo y Agile Coach. Conoce mi trayectoria desde Backend Developer hasta Country Manager.",
       keywords: [
         "Hugo Casanova",
-        "historia personal tech",
-        "experiencia mentoring",
-        "transformación profesional",
+        "Agile Coach Peru",
+        "mentor de liderazgo tech",
+        "ingeniero de software senior",
+        "transformación profesional tech",
         "coach tech Peru",
+        "Backend a Country Manager",
       ],
     },
     en: {
-      title: "About Hugo Casanova - My Story and Experience | HugoTech",
+      title: "Hugo Casanova: From Engineer to Agile Coach & Mentor | About Me",
       description:
-        "Know my story: 18+ years in tech, my personal transformation and how I got to tech coaching and mentoring. From engineer to mentor with purpose.",
+        "Software Engineer with 18+ years of experience (PHP, React, AWS) transformed into Leadership Mentor and Agile Coach. Discover my journey from Backend Developer to Country Manager.",
       keywords: [
         "Hugo Casanova",
-        "personal tech story",
-        "mentoring experience",
-        "professional transformation",
+        "Agile Coach Peru",
+        "tech leadership mentor",
+        "senior software engineer",
+        "professional transformation tech",
         "tech coach Peru",
+        "Backend to Country Manager",
       ],
     },
   },
