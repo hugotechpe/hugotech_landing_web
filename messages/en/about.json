@@ -1,5 +1,6 @@
 {
-  "hero": {
+  "about": {
+    "hero": {
     "badge": "✨ My Story",
     "title": {
       "line1": "I stopped optimizing",
@@ -134,5 +135,6 @@
       "value2": "✅ 100% online - From wherever you are",
       "value3": "✅ Flexible - You set the pace"
     }
+  }
   }
 }
