@@ -623,8 +623,53 @@ export default function EmpresasNewPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* COLUMNA IZQUIERDA: Casos Rápidos (Volumen) */}
             <div className="lg:col-span-1 space-y-6">
-              {/* Caso 1: Fintech */}
+              {/* Caso 1: Transporte USA */}
               <Card className="border-l-4 border-blue-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    Transporte Terrestre (USA)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Scale-Up • Conflictos de Liderazgo
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "Equipo tech alineado. Reducción de fricción entre producto e ingeniería."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 2: Transporte México */}
+              <Card className="border-l-4 border-green-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    Transporte Terrestre (México)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Startup • Crecimiento Caótico
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "De sprints reactivos a planificación estratégica. Equipo respira."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 3: Transporte Perú */}
+              <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    Transporte Terrestre (Perú)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Tech Lead Desbordado • Silos
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "Liderazgo distribuido. Comunicación fluida entre equipos."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 4: Fintech */}
+              <Card className="border-l-4 border-orange-500 hover:shadow-lg transition-all">
                 <CardBody className="p-6">
                   <h3 className="font-bold text-foreground text-xl mb-2">
                     Fintech (Perú)
@@ -633,53 +678,7 @@ export default function EmpresasNewPage() {
                     45 Desarrolladores • Deuda Técnica
                   </p>
                   <p className="text-default-600 leading-relaxed">
-                    "Reducción del 30% en bugs críticos y retención recuperada
-                    en 4 meses."
-                  </p>
-                </CardBody>
-              </Card>
-
-              {/* Caso 2: HealthTech */}
-              <Card className="border-l-4 border-green-500 hover:shadow-lg transition-all">
-                <CardBody className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-2">
-                    HealthTech (México)
-                  </h3>
-                  <p className="text-sm text-default-500 mb-3">
-                    Scale-Up • Falta de Estándares
-                  </p>
-                  <p className="text-default-600 leading-relaxed">
-                    "De la informalidad a estándares de ingeniería world-class."
-                  </p>
-                </CardBody>
-              </Card>
-
-              {/* Caso 3: SaaS */}
-              <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-all">
-                <CardBody className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-2">
-                    SaaS (Colombia)
-                  </h3>
-                  <p className="text-sm text-default-500 mb-3">
-                    Burnout Generalizado
-                  </p>
-                  <p className="text-default-600 leading-relaxed">
-                    "Equipo emocionalmente recuperado y velocidad estable."
-                  </p>
-                </CardBody>
-              </Card>
-
-              {/* Caso 4: E-Commerce */}
-              <Card className="border-l-4 border-orange-500 hover:shadow-lg transition-all">
-                <CardBody className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-2">
-                    E-Commerce (Argentina)
-                  </h3>
-                  <p className="text-sm text-default-500 mb-3">
-                    Líder Saturado • Equipo Desmotivado
-                  </p>
-                  <p className="text-default-600 leading-relaxed">
-                    "Liderazgo más presente. Equipo autónomo y enfocado."
+                    "Reducción del 30% en bugs críticos y retención recuperada en 4 meses."
                   </p>
                 </CardBody>
               </Card>
