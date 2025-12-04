@@ -1,0 +1,28 @@
+
+> hugotech_landing_web@0.0.1 dev
+> next dev --turbopack
+
+   ▲ Next.js 16.0.7 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://192.168.0.239:3000
+   - Experiments (use with caution):
+     ✓ optimizeCss
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 465ms
+Error: ENVIRONMENT_FALLBACK: There is no `timeZone` configured, this can lead to markup mismatches caused by environment differences. Consider adding a global default: https://next-intl.dev/docs/configuration#time-zone
+    at HeroNavbar (components/layout/navbar.tsx:20:34)
+  18 | export default function HeroNavbar() {
+  19 |   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+> 20 |   const tNavbar = useTranslations("Navbar");
+     |                                  ^
+  21 |   const tAgenda = useTranslations("Sections.Agenda");
+  22 |
+  23 |   // Menu items con rutas completas (evita hydration mismatch) {
+  code: 'ENVIRONMENT_FALLBACK',
+  originalMessage: 'There is no `timeZone` configured, this can lead to markup mismatches caused by environment differences. Consider adding a global default: https://next-intl.dev/docs/configuration#time-zone'
+}
+ GET /es/empresas_new?id=518be575-04cf-47ae-bea1-f759f6dd60b7&vscodeBrowserReqId=1764815912484 200 in 2.0s (compile: 1712ms, proxy.ts: 58ms, render: 232ms)
+ GET /es/empresas_new 200 in 67ms (compile: 7ms, proxy.ts: 4ms, render: 55ms)
+[?25h
