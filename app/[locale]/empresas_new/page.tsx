@@ -393,6 +393,7 @@ export default function EmpresasNewPage() {
                   <div className="relative h-64 md:h-auto">
                     <Image
                       fill
+                      unoptimized
                       alt="Hugo Casanova facilitando sesión de Tech Lead Accelerator con equipo de desarrollo"
                       className="object-cover"
                       src="/images/placeholder-tech-lead.jpg"
@@ -416,6 +417,7 @@ export default function EmpresasNewPage() {
                   <div className="relative h-64 md:h-auto order-2 md:order-1">
                     <Image
                       fill
+                      unoptimized
                       alt="Hugo Casanova en daily standup y retrospectiva con equipo tech bloqueado"
                       className="object-cover"
                       src="/images/placeholder-intervention.jpg"
@@ -578,6 +580,7 @@ export default function EmpresasNewPage() {
                   <div className="relative h-64 md:h-auto">
                     <Image
                       fill
+                      unoptimized
                       alt="Hugo Casanova en sesión de executive coaching con CTO sobre estrategia de liderazgo tech"
                       className="object-cover"
                       src="/images/placeholder-executive.jpg"
