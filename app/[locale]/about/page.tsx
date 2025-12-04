@@ -12,7 +12,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 
 export default function AboutNewPage() {
-  const t = useTranslations("About");
+  const t = useTranslations("about");
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
