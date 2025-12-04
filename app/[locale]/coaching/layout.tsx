@@ -47,7 +47,6 @@ export default function CoachingLayout({
         {/* WhatsApp Floating Button */}
         <WhatsAppButton
           message="Hola Hugo, quiero aplicar a mi primera sesión de mentoring tech 1 a 1."
-          message="Hola Hugo, me gustaría agendar una sesión de Coaching 1 a 1"
           phoneNumber="51946483010"
         />
       </div>
