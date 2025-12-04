@@ -71,12 +71,12 @@ export default function AboutNewPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-0">
                 <CalendlyButton
-                  className="bg-brand hover:bg-brand/90 text-white font-bold text-lg shadow-2xl hover:shadow-brand/50 transition-all duration-300"
+                  className="bg-brand hover:bg-brand/90 text-white font-bold text-base sm:text-lg px-8 py-3 rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
                   size="lg"
                   text={t("cta.calendar")}
                 />
                 <Button
-                  className="bg-white/20 text-white font-bold text-lg hover:bg-white/30 border-2 border-white/40 backdrop-blur-sm transition-all"
+                  className="bg-white/20 text-white font-bold text-base sm:text-lg hover:bg-white/30 border-2 border-white/40 backdrop-blur-sm transition-all rounded-full"
                   size="lg"
                   onClick={scrollToImpacto}
                 >
@@ -347,7 +347,7 @@ export default function AboutNewPage() {
             {/* CTA MEDIO - Después del puente emocional */}
             <div className="mt-12 text-center">
               <CalendlyButton
-                className="bg-brand hover:bg-brand/90 text-white px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-brand/50 transition-all duration-300"
+                className="bg-brand hover:bg-brand/90 text-white px-8 py-3 text-base sm:text-lg font-bold rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
                 size="lg"
                 text={t("cta.calendar")}
               />
@@ -617,12 +617,12 @@ export default function AboutNewPage() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <CalendlyButton
-                className="bg-brand hover:bg-brand/90 text-white px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-brand/50 transition-all duration-300"
+                className="bg-brand hover:bg-brand/90 text-white px-8 py-3 text-base sm:text-lg font-bold rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
                 size="lg"
                 text={t("cta.calendar")}
               />
               <motion.a
-                className="px-10 py-5 text-lg font-bold border-2 border-white/30 hover:bg-white/10 rounded-full transition-all duration-300 inline-flex items-center gap-2"
+                className="px-8 py-3 text-base sm:text-lg font-bold border-2 border-white/30 hover:bg-white/10 rounded-full transition-all duration-300 inline-flex items-center gap-2"
                 href="https://www.linkedin.com/in/hcasanovam/"
                 rel="noopener noreferrer"
                 target="_blank"
