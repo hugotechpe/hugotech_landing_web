@@ -10,26 +10,16 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/navbar";
-import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { useTranslations } from "next-intl";
 
+import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { LocaleSwitch } from "@/components/locale-switch";
 
 export default function HeroNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const tNavbar = useTranslations("Navbar");
   const tAgenda = useTranslations("Sections.Agenda");
-
-  const scrollToAgenda = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsMenuOpen(false);
-    const agendaSection = document.getElementById("cita");
-
-    if (agendaSection) {
-      agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
 
   // Menu items con rutas completas (evita hydration mismatch)
   const menuItems = [
@@ -102,15 +92,12 @@ export default function HeroNavbar() {
             <LocaleSwitch />
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
-            <Button
-              className="bg-white text-primary font-bold"
-              color="primary"
+            <CalendlyButton
+              className="bg-white text-primary hover:bg-gray-100"
               size="md"
+              text={tAgenda("title")}
               variant="solid"
-              onClick={scrollToAgenda}
-            >
-              {tAgenda("title")}
-            </Button>
+            />
           </NavbarItem>
         </NavbarContent>
 
@@ -132,15 +119,13 @@ export default function HeroNavbar() {
 
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
-            <Button
-              className="bg-primary text-white font-bold w-full"
-              color="primary"
+            <CalendlyButton
+              fullWidth
+              className="bg-primary text-white w-full"
               size="lg"
+              text={tAgenda("title")}
               variant="solid"
-              onClick={scrollToAgenda}
-            >
-              {tAgenda("title")}
-            </Button>
+            />
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
