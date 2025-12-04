@@ -37,9 +37,10 @@ export default function AboutNewPage() {
         </div>
 
         <div className="container mx-auto max-w-1400 px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
             {/* Texto */}
             <motion.div
+              className="lg:pr-8"
               initial={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.8 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +69,7 @@ export default function AboutNewPage() {
                 </span>
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-0">
                 <CalendlyButton
                   className="bg-brand hover:bg-brand/90 text-white font-bold text-lg shadow-2xl hover:shadow-brand/50 transition-all duration-300"
                   size="lg"
@@ -86,7 +87,7 @@ export default function AboutNewPage() {
 
             {/* Imagen */}
             <motion.div
-              className="relative"
+              className="relative mt-8 md:mt-0"
               initial={{ opacity: 0, scale: 0.9 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}

@@ -92,7 +92,7 @@ export default function HeroNavbar() {
           </NavbarItem>
           <NavbarItem className="hidden md:flex">
             <button
-              className="bg-white text-primary font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              className="bg-white text-primary font-bold px-6 py-3 rounded-lg hover:bg-brand hover:text-white hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out"
               type="button"
               onClick={() =>
                 window.open(
@@ -126,7 +126,7 @@ export default function HeroNavbar() {
           {/* CTA Button en mobile */}
           <NavbarMenuItem className="md:hidden mt-4">
             <button
-              className="bg-primary text-white font-bold w-full px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors"
+              className="bg-primary text-white font-bold w-full px-8 py-4 rounded-lg hover:bg-brand hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out"
               type="button"
               onClick={() =>
                 window.open(
