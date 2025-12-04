@@ -90,10 +90,10 @@ export default function AboutNewPage() {
                 <div className="absolute inset-0 bg-brand/30 blur-3xl rounded-full" />
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <Image
-                    alt="Hugo Casanova - Tech Leader & Coach"
-                    className="object-cover"
                     fill
                     priority
+                    alt="Hugo Casanova - Tech Leader & Coach"
+                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     src="/images/about-hugocasanova.jpg"
                   />
@@ -109,7 +109,9 @@ export default function AboutNewPage() {
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
-          <div className="text-white/60 text-sm mb-2">{t("hero.scrollText")}</div>
+          <div className="text-white/60 text-sm mb-2">
+            {t("hero.scrollText")}
+          </div>
           <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
             <motion.div
               animate={{ y: [0, 12, 0] }}
@@ -275,21 +277,29 @@ export default function AboutNewPage() {
                 whileHover={{ y: -5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
               >
-                <Card className={`h-full border-l-4 ${step.color} hover:shadow-2xl transition-all duration-300`}>
+                <Card
+                  className={`h-full border-l-4 ${step.color} hover:shadow-2xl transition-all duration-300`}
+                >
                   <CardBody className="p-6">
                     <div className="text-4xl mb-4">{step.icon}</div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3">
                       {t(`evolution.roles.${step.roleKey}.role`)}
                     </h3>
                     <p className="text-sm text-gray-700 italic mb-3 leading-relaxed">
-                      &ldquo;{t(`evolution.roles.${step.roleKey}.lesson`)}&rdquo;
+                      &ldquo;{t(`evolution.roles.${step.roleKey}.lesson`)}
+                      &rdquo;
                     </p>
                     <p className="text-xs font-semibold text-primary mb-3">
                       {t(`evolution.roles.${step.roleKey}.learning`)}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {step.tech.map((tech, i) => (
-                        <Chip key={i} className="text-xs" size="sm" variant="flat">
+                        <Chip
+                          key={i}
+                          className="text-xs"
+                          size="sm"
+                          variant="flat"
+                        >
                           {tech}
                         </Chip>
                       ))}
@@ -311,7 +321,9 @@ export default function AboutNewPage() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <blockquote className="relative border-l-4 border-primary bg-white p-8 md:p-12 rounded-r-2xl shadow-xl">
-              <div className="text-4xl text-primary mb-4 opacity-20">"</div>
+              <div className="text-4xl text-primary mb-4 opacity-20">
+                &ldquo;
+              </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 {t("bridge.title")}
               </h3>
@@ -395,7 +407,9 @@ export default function AboutNewPage() {
                     <p className="text-white/90 font-semibold text-lg mb-2">
                       {t(`impact.stats.${stat.statKey}.label`)}
                     </p>
-                    <p className="text-white/70 text-sm">{t(`impact.stats.${stat.statKey}.description`)}</p>
+                    <p className="text-white/70 text-sm">
+                      {t(`impact.stats.${stat.statKey}.description`)}
+                    </p>
                   </CardBody>
                 </Card>
               </motion.div>
@@ -455,18 +469,66 @@ export default function AboutNewPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 max-w-6xl mx-auto">
             {[
-              { name: "ICF Coach", logo: "/images/certifications/icf-coach.svg", color: "bg-blue-50" },
-              { name: "Scrum Master", logo: "/images/certifications/scrum-master.svg", color: "bg-orange-50" },
-              { name: "AWS Cloud", logo: "/images/certifications/aws-cloud.svg", color: "bg-yellow-50" },
-              { name: "Management 3.0", logo: "/images/certifications/management30.svg", color: "bg-purple-50" },
-              { name: "Product Owner", logo: "/images/certifications/product-owner.svg", color: "bg-green-50" },
-              { name: "Kanban KMP", logo: "/images/certifications/kanban-kmp.svg", color: "bg-indigo-50" },
-              { name: "Lean Startup", logo: "/images/certifications/lean-startup.svg", color: "bg-pink-50" },
-              { name: "Agile Coach", logo: "/images/certifications/agile-coach.svg", color: "bg-teal-50" },
-              { name: "PMI-ACP", logo: "/images/certifications/pmi-acp.svg", color: "bg-red-50" },
-              { name: "Google Cloud", logo: "/images/certifications/google-cloud.svg", color: "bg-blue-50" },
-              { name: "Newfield Coach", logo: "/images/certifications/newfield-coach.svg", color: "bg-amber-50" },
-              { name: "MIT Digital", logo: "/images/certifications/mit-digital.svg", color: "bg-gray-50" },
+              {
+                name: "ICF Coach",
+                logo: "/images/certifications/icf-coach.svg",
+                color: "bg-blue-50",
+              },
+              {
+                name: "Scrum Master",
+                logo: "/images/certifications/scrum-master.svg",
+                color: "bg-orange-50",
+              },
+              {
+                name: "AWS Cloud",
+                logo: "/images/certifications/aws-cloud.svg",
+                color: "bg-yellow-50",
+              },
+              {
+                name: "Management 3.0",
+                logo: "/images/certifications/management30.svg",
+                color: "bg-purple-50",
+              },
+              {
+                name: "Product Owner",
+                logo: "/images/certifications/product-owner.svg",
+                color: "bg-green-50",
+              },
+              {
+                name: "Kanban KMP",
+                logo: "/images/certifications/kanban-kmp.svg",
+                color: "bg-indigo-50",
+              },
+              {
+                name: "Lean Startup",
+                logo: "/images/certifications/lean-startup.svg",
+                color: "bg-pink-50",
+              },
+              {
+                name: "Agile Coach",
+                logo: "/images/certifications/agile-coach.svg",
+                color: "bg-teal-50",
+              },
+              {
+                name: "PMI-ACP",
+                logo: "/images/certifications/pmi-acp.svg",
+                color: "bg-red-50",
+              },
+              {
+                name: "Google Cloud",
+                logo: "/images/certifications/google-cloud.svg",
+                color: "bg-blue-50",
+              },
+              {
+                name: "Newfield Coach",
+                logo: "/images/certifications/newfield-coach.svg",
+                color: "bg-amber-50",
+              },
+              {
+                name: "MIT Digital",
+                logo: "/images/certifications/mit-digital.svg",
+                color: "bg-gray-50",
+              },
             ].map((cert, idx) => (
               <motion.div
                 key={idx}
@@ -483,9 +545,9 @@ export default function AboutNewPage() {
                       className={`relative w-16 h-16 ${cert.color} rounded-xl flex items-center justify-center mx-auto mb-3 shadow-md group-hover:shadow-xl transition-all overflow-hidden`}
                     >
                       <Image
+                        fill
                         alt={`${cert.name} certification logo`}
                         className="object-contain p-1"
-                        fill
                         sizes="64px"
                         src={cert.logo}
                       />

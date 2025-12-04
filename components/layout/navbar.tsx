@@ -25,6 +25,7 @@ export default function HeroNavbar() {
     e.preventDefault();
     setIsMenuOpen(false);
     const agendaSection = document.getElementById("cita");
+
     if (agendaSection) {
       agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
