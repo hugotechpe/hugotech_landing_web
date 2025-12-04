@@ -347,7 +347,7 @@ export default function AboutNewPage() {
             {/* CTA MEDIO - Después del puente emocional */}
             <div className="mt-12 text-center">
               <CalendlyButton
-                className="px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-primary/50 transition-all duration-300"
+                className="bg-brand hover:bg-brand/90 text-white px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-brand/50 transition-all duration-300"
                 size="lg"
                 text={t("cta.calendar")}
               />
@@ -617,7 +617,7 @@ export default function AboutNewPage() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <CalendlyButton
-                className="px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-brand/50 transition-all duration-300"
+                className="bg-brand hover:bg-brand/90 text-white px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-brand/50 transition-all duration-300"
                 size="lg"
                 text={t("cta.calendar")}
               />
