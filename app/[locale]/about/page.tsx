@@ -69,8 +69,13 @@ export default function AboutNewPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
+                <CalendlyButton
+                  className="bg-brand hover:bg-brand/90 text-white font-bold text-lg shadow-2xl hover:shadow-brand/50 transition-all duration-300"
+                  size="lg"
+                  text={t("cta.calendar")}
+                />
                 <Button
-                  className="bg-brand text-white font-bold text-lg hover:scale-105 transition-transform"
+                  className="bg-white/20 text-white font-bold text-lg hover:bg-white/30 border-2 border-white/40 backdrop-blur-sm transition-all"
                   size="lg"
                   onClick={scrollToImpacto}
                 >
@@ -337,6 +342,19 @@ export default function AboutNewPage() {
                 {t("bridge.highlight")}
               </p>
             </blockquote>
+
+            {/* CTA MEDIO - Después del puente emocional */}
+            <div className="mt-12 text-center">
+              <CalendlyButton
+                className="px-10 py-5 text-lg font-bold shadow-2xl hover:shadow-primary/50 transition-all duration-300"
+                size="lg"
+                text={t("cta.calendar")}
+              />
+              <p className="mt-4 text-sm text-gray-600">
+                ✅ Primera sesión sin costo • 🎯 100% online • 🚀 Resultados
+                reales
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
