@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
-import { Button } from "@heroui/button";
+
 import { motion } from "framer-motion";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 
@@ -392,12 +392,12 @@ export default function EmpresasNewPage() {
                   </div>
                   <div className="relative h-64 md:h-auto bg-primary/10 flex items-center justify-center">
                     <Image
-                      width={800}
-                      height={600}
                       unoptimized
                       alt="Hugo Casanova facilitando sesión de Tech Lead Accelerator con equipo de desarrollo"
                       className="object-cover w-full h-full"
+                      height={600}
                       src="/images/placeholder-tech-lead.svg"
+                      width={800}
                     />
                   </div>
                 </div>
@@ -417,12 +417,12 @@ export default function EmpresasNewPage() {
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-64 md:h-auto order-2 md:order-1 bg-warning/10 flex items-center justify-center">
                     <Image
-                      width={800}
-                      height={600}
                       unoptimized
                       alt="Hugo Casanova en daily standup y retrospectiva con equipo tech bloqueado"
                       className="object-cover w-full h-full"
+                      height={600}
                       src="/images/placeholder-intervention.svg"
+                      width={800}
                     />
                   </div>
                   <div className="p-8 md:p-12 bg-warning/5 order-1 md:order-2">
@@ -581,12 +581,12 @@ export default function EmpresasNewPage() {
                   </div>
                   <div className="relative h-64 md:h-auto bg-success/10 flex items-center justify-center">
                     <Image
-                      width={800}
-                      height={600}
                       unoptimized
                       alt="Hugo Casanova en sesión de executive coaching con CTO sobre estrategia de liderazgo tech"
                       className="object-cover w-full h-full"
+                      height={600}
                       src="/images/placeholder-executive.svg"
+                      width={800}
                     />
                   </div>
                 </div>
