@@ -79,10 +79,9 @@ export default function AboutNewPage() {
                   className="group inline-flex items-center gap-2 text-white font-semibold text-sm sm:text-base hover:text-brand transition-all duration-300"
                   onClick={scrollToImpacto}
                 >
-                  <span className="border-b-2 border-white/40 group-hover:border-brand pb-1">
+                  <span className="border-b-2 border-white/40 group-hover:border-brand pb-1 group-hover:translate-x-1 transition-all">
                     {t("hero.cta")}
                   </span>
-                  <span className="text-xl group-hover:translate-x-1 transition-transform">📊</span>
                 </button>
               </div>
             </motion.div>
