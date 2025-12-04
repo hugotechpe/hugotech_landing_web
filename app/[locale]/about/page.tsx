@@ -75,13 +75,15 @@ export default function AboutNewPage() {
                   size="lg"
                   text={t("cta.calendar")}
                 />
-                <Button
-                  className="bg-white/20 text-white font-bold text-base sm:text-lg hover:bg-white/30 border-2 border-white/40 backdrop-blur-sm transition-all rounded-full"
-                  size="lg"
+                <button
+                  className="group inline-flex items-center gap-2 text-white font-semibold text-sm sm:text-base hover:text-brand transition-all duration-300"
                   onClick={scrollToImpacto}
                 >
-                  {t("hero.cta")}
-                </Button>
+                  <span className="border-b-2 border-white/40 group-hover:border-brand pb-1">
+                    {t("hero.cta")}
+                  </span>
+                  <span className="text-xl group-hover:translate-x-1 transition-transform">📊</span>
+                </button>
               </div>
             </motion.div>
 
