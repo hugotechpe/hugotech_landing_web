@@ -93,12 +93,12 @@ export default function EmpresasNewPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-white mb-6 leading-tight"
               variants={fadeIn}
             >
-              Tu deuda técnica más cara{" "}
+              Tu mayor deuda técnica{" "}
               <span className="text-brand">no está en el código.</span>
               <br />
               Está en el{" "}
               <span className="text-brand underline decoration-wavy decoration-brand/60">
-                liderazgo.
+                equipo.
               </span>
             </motion.h1>
 
@@ -106,11 +106,15 @@ export default function EmpresasNewPage() {
               className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-10 leading-relaxed max-w-4xl mx-auto"
               variants={fadeIn}
             >
-              Ayudo a CTOs y VPs de Ingeniería a{" "}
+              Transformo equipos tecnológicos en unidades de{" "}
               <span className="font-bold text-brand">
-                detener la rotación de talento
+                alto rendimiento
               </span>{" "}
-              y formar Tech Leads que saben gestionar personas, no solo tickets.
+              combinando ingeniería, liderazgo, cultura y coaching ejecutivo.
+              <br />
+              <span className="text-lg md:text-xl text-white/80 mt-4 block">
+                El primer modelo híbrido en Latam (Ingeniería + Cultura) para CTOs que necesitan resultados, no teoría.
+              </span>
             </motion.p>
 
             <motion.div
@@ -151,20 +155,18 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              El Costo Oculto del{" "}
-              <span className="text-primary">Equipo Tech</span>
+              El Verdadero Problema No Es la Tecnología.{" "}
+              <span className="text-primary">Es la Gestión Humana del Equipo.</span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-3xl mx-auto"
               variants={fadeIn}
             >
-              Estos son los 3 puntos ciegos que están drenando tu presupuesto y
-              tu talento
+              Los síntomas se ven en el delivery. Las causas se sienten en el equipo.
             </motion.p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Card 1 */}
             <motion.div
               initial="hidden"
               viewport={{ once: true }}
@@ -174,15 +176,14 @@ export default function EmpresasNewPage() {
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">🤐</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
-                    El Tech Lead Silencioso
+                    Seniors Brillantes que No Lideran
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    Sabe mucho, pero no comunica. El equipo sufre. Los juniors
-                    están bloqueados. Las reuniones son incómodas.
+                    Saben programar, pero no gestionar personas. Tech Leads saturados cargando todo el peso emocional y técnico. Juniors bloqueados esperando respuestas.
                   </p>
                   <div className="bg-danger/10 rounded-lg p-4 border-l-4 border-danger">
                     <p className="text-danger font-semibold text-sm">
-                      💸 Costo: $15K-30K USD por mes en velocidad perdida
+                      💸 Resultado: Cuello de botella humano que frena todo el delivery
                     </p>
                   </div>
                 </CardBody>
@@ -199,16 +200,14 @@ export default function EmpresasNewPage() {
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">⚡</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
-                    El Burnout del Sprint 40
+                    Burnout Silencioso en el Sprint 40
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    Tu mejor senior está a punto de renunciar. Lo ves
-                    desconectado. Ya entrevistó en otro lado.
+                    Tu mejor senior está mentalmente fuera. Desconectado. Ya entrevistó en otro lado. La renuncia es cuestión de semanas, no meses.
                   </p>
                   <div className="bg-warning/10 rounded-lg p-4 border-l-4 border-warning">
                     <p className="text-warning-600 font-semibold text-sm">
-                      💸 Costo de reemplazo: $50K-120K USD + 6 meses de
-                      onboarding
+                      💸 Costo: $50K-120K USD reemplazo + 6 meses perdidos en onboarding
                     </p>
                   </div>
                 </CardBody>
@@ -225,16 +224,14 @@ export default function EmpresasNewPage() {
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">⚔️</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
-                    Guerra Civil: Producto vs. Ingeniería
+                    POs y Devs Peleando por Prioridades
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    Nadie se entiende. PM frustra a devs. Devs ignoran a PM.
-                    Releases se retrasan. Todos culpan a todos.
+                    PM frustra a devs. Devs ignoran a PM. Releases se retrasan. Todos culpan a todos. Deuda técnica... y deuda emocional.
                   </p>
                   <div className="bg-primary/10 rounded-lg p-4 border-l-4 border-primary">
                     <p className="text-primary font-semibold text-sm">
-                      💸 Costo: 30-40% de retraso en roadmap = millones en
-                      oportunidad perdida
+                      💸 Resultado: Retrasos crónicos y personas valiosas que renuncian en silencio
                     </p>
                   </div>
                 </CardBody>
@@ -303,15 +300,15 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              Intervención Híbrida:{" "}
-              <span className="text-primary">Tech + Humanidad</span>
+              El Sistema HugoTech:{" "}
+              <span className="text-primary">No vendemos cursos. Intervenimos.</span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-4xl mx-auto"
               variants={fadeIn}
             >
-              No te vendo cursos grabados. Te vendo resultados medibles. Estas
-              son las 3 formas en que trabajo con equipos tech.
+              Un modelo probado que combina intervención técnica, cultural y emocional.
+              Resultados medibles, no teoría.
             </motion.p>
           </motion.div>
 
@@ -593,7 +590,7 @@ export default function EmpresasNewPage() {
         </div>
       </section>
 
-      {/* CASOS DE ÉXITO (Social Proof) */}
+      {/* CASOS DE ÉXITO (Social Proof) - Nueva Estructura */}
       <section className="py-20 md:py-28 bg-default-50" id="casos">
         <div className="container mx-auto max-w-7xl px-6">
           <motion.div
@@ -606,115 +603,282 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              Casos Reales. <span className="text-primary">Resultados Reales.</span>
+              Transformaciones Reales en{" "}
+              <span className="text-primary">Latam</span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-3xl mx-auto"
               variants={fadeIn}
             >
-              Empresas tech en LATAM que ya implementaron el HugoTech System
+              Empresas tech que ya implementaron el HugoTech System
             </motion.p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Caso 1: Fintech */}
-            <Card className="border-2 border-default-200 hover:border-primary hover:shadow-xl transition-all">
-              <CardBody className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-3xl">
-                    💳
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-default-500">
-                      Fintech • Serie A
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* COLUMNA IZQUIERDA: Casos Rápidos (Volumen) */}
+            <div className="lg:col-span-1 space-y-6">
+              {/* Caso 1: Fintech */}
+              <Card className="border-l-4 border-blue-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    Fintech (Perú)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    45 Desarrolladores • Deuda Técnica
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "Reducción del 30% en bugs críticos y retención recuperada
+                    en 4 meses."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 2: HealthTech */}
+              <Card className="border-l-4 border-green-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    HealthTech (México)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Scale-Up • Falta de Estándares
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "De la informalidad a estándares de ingeniería world-class."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 3: SaaS */}
+              <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    SaaS (Colombia)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Burnout Generalizado
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "Equipo emocionalmente recuperado y velocidad estable."
+                  </p>
+                </CardBody>
+              </Card>
+
+              {/* Caso 4: E-Commerce */}
+              <Card className="border-l-4 border-orange-500 hover:shadow-lg transition-all">
+                <CardBody className="p-6">
+                  <h3 className="font-bold text-foreground text-xl mb-2">
+                    E-Commerce (Argentina)
+                  </h3>
+                  <p className="text-sm text-default-500 mb-3">
+                    Líder Saturado • Equipo Desmotivado
+                  </p>
+                  <p className="text-default-600 leading-relaxed">
+                    "Liderazgo más presente. Equipo autónomo y enfocado."
+                  </p>
+                </CardBody>
+              </Card>
+            </div>
+
+            {/* COLUMNA DERECHA: El Caso Estrella (EdTech) - Ocupa 2 columnas */}
+            <div className="lg:col-span-2">
+              <Card className="h-full border-2 border-success/30 hover:border-success hover:shadow-2xl transition-all relative overflow-hidden">
+                <CardBody className="p-8 md:p-10">
+                  <div className="absolute top-0 right-0 bg-success/20 text-success px-6 py-2 rounded-bl-2xl">
+                    <p className="text-xs font-bold uppercase tracking-wider">
+                      🏆 Caso Destacado 2025
                     </p>
-                    <p className="text-lg font-bold text-foreground">
-                      60 personas • Perú
-                    </p>
                   </div>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  "Redujimos la rotación del 40% al 8% en 6 meses"
-                </h3>
-                <p className="text-default-600 mb-6 leading-relaxed">
-                  Problema: Tech Leads promovidos sin preparación. Burnout
-                  generalizado. 5 renuncias en 3 meses.
-                  <br />
-                  <br />
-                  Solución: Tech Lead Accelerator + Code & Culture Intervention
-                  en 2 squads críticos.
+
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2 mt-4">
+                    EdTech de Educación Superior
+                  </h3>
+                  <p className="text-default-500 font-semibold mb-8">
+                    Transformación Integral • Julio – Noviembre 2025 • Perú
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-8 mb-8">
+                    {/* El Problema */}
+                    <div>
+                      <h4 className="font-bold text-danger text-xl mb-4 flex items-center">
+                        <span className="mr-3 text-2xl">⚠️</span> El Problema
+                      </h4>
+                      <ul className="text-default-600 space-y-3 text-base">
+                        <li className="flex items-start gap-2">
+                          <span className="text-danger mt-1">•</span>
+                          <span>
+                            Roles mezclados (PO haciendo QA, líder técnico
+                            también Scrum Master)
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-danger mt-1">•</span>
+                          <span>
+                            Base de datos con problemas y arquitectura poco
+                            escalable
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-danger mt-1">•</span>
+                          <span>
+                            Procesos improvisados, estándares inexistentes
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-danger mt-1">•</span>
+                          <span>
+                            Tensión emocional, frustración y silencios. Equipo
+                            operando al límite
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* La Solución */}
+                    <div>
+                      <h4 className="font-bold text-success text-xl mb-4 flex items-center">
+                        <span className="mr-3 text-2xl">🚀</span> La Solución
+                        HugoTech
+                      </h4>
+                      <ul className="text-default-600 space-y-3 text-base">
+                        <li className="flex items-start gap-2">
+                          <span className="text-success mt-1">✓</span>
+                          <span>
+                            Diagnóstico 360° + Implementación del modelo Tuckman
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-success mt-1">✓</span>
+                          <span>
+                            20 Talleres Culturales + 6 horas semanales de
+                            sesiones técnicas
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-success mt-1">✓</span>
+                          <span>Mentoría 1:1 para roles clave del equipo</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-success mt-1">✓</span>
+                          <span>
+                            Diseño de un nuevo modelo organizacional completo
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Resultados */}
+                  <div className="bg-success/5 rounded-xl p-6 border-2 border-success/20">
+                    <p className="font-bold text-foreground mb-3 text-lg">
+                      📊 Resultados Alcanzados:
+                    </p>
+                    <div className="grid sm:grid-cols-2 gap-4 mb-4">
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Menos bugs y más estabilidad
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Mejor arquitectura
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Velocidad más predecible
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Mejor comunicación entre áreas
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Líderes más presentes y conscientes
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-success text-xl">✓</span>
+                        <span className="text-default-700">
+                          Mayor madurez emocional del equipo
+                        </span>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-success/20">
+                      <p className="text-lg text-default-700 italic">
+                        "Pasaron de{" "}
+                        <span className="font-semibold text-foreground">
+                          sobrevivir sprint a sprint
+                        </span>{" "}
+                        a tener un{" "}
+                        <span className="font-semibold text-success">
+                          camino real hacia el alto desempeño
+                        </span>
+                        , con líderes conscientes y una arquitectura estable."
+                      </p>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+            </div>
+          </div>
+
+          {/* Testimonios con Autoridad */}
+          <motion.div
+            className="mt-16 grid md:grid-cols-3 gap-6"
+            initial="hidden"
+            viewport={{ once: true }}
+            whileInView="visible"
+          >
+            <Card className="border-2 border-default-200">
+              <CardBody className="p-6">
+                <p className="text-default-700 italic mb-4 leading-relaxed">
+                  "Nuestros sprints finalmente tienen sentido. No solo programan
+                  mejor: se entienden mejor."
                 </p>
-                <div className="grid grid-cols-3 gap-4 p-6 bg-success/5 rounded-xl border border-success/20">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-success">-32%</div>
-                    <p className="text-sm text-default-600">Rotación</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-success">+45%</div>
-                    <p className="text-sm text-default-600">Velocity</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-success">9.2/10</div>
-                    <p className="text-sm text-default-600">eNPS</p>
-                  </div>
-                </div>
+                <p className="text-sm font-bold text-foreground">
+                  — CTO, Fintech LATAM
+                </p>
+                <p className="text-xs text-default-500">(Equipo de 45 devs)</p>
               </CardBody>
             </Card>
 
-            {/* Caso 2: SaaS */}
-            <Card className="border-2 border-default-200 hover:border-primary hover:shadow-xl transition-all">
-              <CardBody className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-warning/10 rounded-lg flex items-center justify-center text-3xl">
-                    ☁️
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-default-500">
-                      SaaS B2B • Bootstrapped
-                    </p>
-                    <p className="text-lg font-bold text-foreground">
-                      30 personas • Colombia
-                    </p>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  "Desbloqueamos el roadmap en 3 semanas"
-                </h3>
-                <p className="text-default-600 mb-6 leading-relaxed">
-                  Problema: Guerra interna entre Producto e Ingeniería. 4 meses
-                  de retrasos. Founders al borde del colapso.
-                  <br />
-                  <br />
-                  Solución: Code & Culture Intervention + Facilitación de retros
-                  críticas.
+            <Card className="border-2 border-default-200">
+              <CardBody className="p-6">
+                <p className="text-default-700 italic mb-4 leading-relaxed">
+                  "No sabía que el burnout se podía prevenir. Hoy mi equipo es
+                  otro."
                 </p>
-                <div className="grid grid-cols-3 gap-4 p-6 bg-warning/5 rounded-xl border border-warning/20">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-warning-600">
-                      -60%
-                    </div>
-                    <p className="text-sm text-default-600">Cycle Time</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-warning-600">
-                      100%
-                    </div>
-                    <p className="text-sm text-default-600">On-time Delivery</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-warning-600">
-                      3 sem
-                    </div>
-                    <p className="text-sm text-default-600">Desbloqueo</p>
-                  </div>
-                </div>
+                <p className="text-sm font-bold text-foreground">
+                  — VP de Producto, Startup SaaS
+                </p>
+                <p className="text-xs text-default-500">(30 personas)</p>
               </CardBody>
             </Card>
-          </div>
+
+            <Card className="border-2 border-default-200">
+              <CardBody className="p-6">
+                <p className="text-default-700 italic mb-4 leading-relaxed">
+                  "Subió la calidad del código, pero lo que más cambió fue la
+                  confianza entre las personas."
+                </p>
+                <p className="text-sm font-bold text-foreground">
+                  — Líder Técnico, EdTech
+                </p>
+                <p className="text-xs text-default-500">(Equipo de 20 devs)</p>
+              </CardBody>
+            </Card>
+          </motion.div>
 
           {/* Logos de empresas (placeholder) */}
           <motion.div
-            className="text-center"
+            className="text-center mt-16"
             initial="hidden"
             viewport={{ once: true }}
             whileInView="visible"
@@ -751,8 +915,9 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6"
               variants={fadeIn}
             >
-              ¿Listo para dejar de{" "}
-              <span className="text-brand">perder talento</span>?
+              ¿Tu equipo está{" "}
+              <span className="text-brand">funcionando</span>... o solo{" "}
+              <span className="text-brand underline decoration-wavy">sobreviviendo</span>?
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed"
