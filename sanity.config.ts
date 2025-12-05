@@ -10,7 +10,7 @@ export default defineConfig({
   projectId: "lsmfmy6a",
   dataset: "production",
 
-  basePath: "/studio",
+  basePath: "/es/studio",
 
   plugins: [structureTool(), visionTool()],
 

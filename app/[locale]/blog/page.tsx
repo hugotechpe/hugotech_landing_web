@@ -32,7 +32,7 @@ async function BlogContent() {
           <div className="col-span-full text-center py-12">
             <p className="text-lg text-default-500">
               No hay posts publicados aún. Visita{" "}
-              <a href="/studio" className="text-primary hover:underline">
+              <a href="/es/studio" className="text-primary hover:underline">
                 el panel de administración
               </a>{" "}
               para crear tu primer post.

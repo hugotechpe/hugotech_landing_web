@@ -12,8 +12,8 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Excluir rutas de Sanity Studio
-  if (pathname.startsWith("/studio")) {
+  // Excluir rutas de Sanity Studio (ahora en /es/studio o /en/studio)
+  if (pathname.includes("/studio")) {
     return NextResponse.next();
   }
 

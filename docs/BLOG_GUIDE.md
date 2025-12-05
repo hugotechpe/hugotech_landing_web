@@ -7,15 +7,15 @@ Tu blog ya está completamente configurado con **Sanity CMS**, un sistema modern
 ## 🚀 URLs Importantes
 
 - **Blog Público**: `http://localhost:3000/es/blog` (o `/en/blog` para inglés)
-- **Panel Admin (Studio)**: `http://localhost:3000/studio`
+- **Panel Admin (Studio)**: `http://localhost:3000/es/studio`
 - **Sitio en Producción**: `https://hugotech.pe/es/blog`
-- **Admin en Producción**: `https://hugotech.pe/studio`
+- **Admin en Producción**: `https://hugotech.pe/es/studio`
 
 ## 📋 Cómo Crear Tu Primer Post
 
 ### 1. Accede al Panel de Administración
 
-Abre en tu navegador: `http://localhost:3000/studio`
+Abre en tu navegador: `http://localhost:3000/es/studio`
 
 La primera vez te pedirá que inicies sesión con tu cuenta de Sanity.
 
@@ -158,7 +158,7 @@ La primera vez te pedirá que inicies sesión con tu cuenta de Sanity.
 ## 🔧 Gestión de Contenido
 
 ### Editar un Post
-1. Ve a `/studio`
+1. Ve a `/es/studio`
 2. Click en "Post" en el menú
 3. Selecciona el post que quieres editar
 4. Haz los cambios
@@ -209,7 +209,7 @@ Si tienes preguntas o necesitas ayuda:
 
 ## 🎉 ¡Empieza a Crear Contenido!
 
-Tu blog está listo para recibir contenido increíble. Ve a `/studio` y crea tu primer post sobre:
+Tu blog está listo para recibir contenido increíble. Ve a `/es/studio` y crea tu primer post sobre:
 - Primer empleo tech
 - Coaching para developers
 - Liderazgo para introvertidos
