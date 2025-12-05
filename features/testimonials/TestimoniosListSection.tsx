@@ -91,7 +91,7 @@ export function TestimoniosListSection() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <Button
-              className="font-semibold text-lg px-10 py-7 border-2 hover:bg-primary hover:text-white hover:scale-105 transition-all duration-300"
+              className="font-semibold text-lg px-10 py-7 border hover:bg-primary hover:text-white hover:-translate-y-1 transition-all duration-500"
               color="primary"
               size="lg"
               variant="bordered"
@@ -110,7 +110,7 @@ export function TestimoniosListSection() {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
-            <Card className="bg-gradient-to-r from-primary/10 via-brand/10 to-primary/10 border-2 border-primary/20">
+            <Card className="bg-gradient-to-r from-primary/10 via-brand/10 to-primary/10 border border-primary/20">
               <CardBody className="p-8 md:p-10 text-center">
                 <div className="text-5xl md:text-6xl mb-4">
                   {t("end.emoji")}
@@ -126,7 +126,7 @@ export function TestimoniosListSection() {
                 </p>
                 <Button
                   as="a"
-                  className="bg-primary text-white font-bold text-base md:text-lg px-8 md:px-10 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                  className="bg-primary text-white font-bold text-base md:text-lg px-8 md:px-10 py-6 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500"
                   href="/#cita"
                   size="lg"
                 >

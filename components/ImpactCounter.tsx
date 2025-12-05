@@ -150,7 +150,7 @@ export default function ImpactCounter({
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <Card className="bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
+            <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
               <CardBody className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">
                   {causesLabel}

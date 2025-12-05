@@ -115,7 +115,7 @@ export function FAQSection() {
             {t("cta.text")}
           </p>
           <Button
-            className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-transform hover:scale-105"
+            className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-all duration-500 hover:-translate-y-1"
             onClick={scrollToAgenda}
           >
             {t("cta.button")}

@@ -94,7 +94,7 @@ export function MePresentoSection() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
                 <Card
-                  className="bg-gradient-to-br from-primary/10 to-brand/10 border-2 border-primary/20 hover:border-primary/40 transition-all"
+                  className="bg-gradient-to-br from-primary/10 to-brand/10 border border-primary/20 hover:border-primary/40 transition-all"
                   shadow="lg"
                 >
                   <CardBody className="text-center p-6">
@@ -110,7 +110,7 @@ export function MePresentoSection() {
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
                 <Card
-                  className="bg-gradient-to-br from-brand/10 to-yellow-100 border-2 border-brand/20 hover:border-brand/40 transition-all"
+                  className="bg-gradient-to-br from-brand/10 to-yellow-100 border border-brand/20 hover:border-brand/40 transition-all"
                   shadow="lg"
                 >
                   <CardBody className="text-center p-6">
@@ -126,7 +126,7 @@ export function MePresentoSection() {
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
                 <Card
-                  className="bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-orange-200 hover:border-orange-300 transition-all"
+                  className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 hover:border-orange-300 transition-all"
                   shadow="lg"
                 >
                   <CardBody className="text-center p-6">
@@ -142,7 +142,7 @@ export function MePresentoSection() {
 
               <motion.div variants={scaleIn} whileHover={{ scale: 1.05 }}>
                 <Card
-                  className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover:border-purple-300 transition-all"
+                  className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 hover:border-purple-300 transition-all"
                   shadow="lg"
                 >
                   <CardBody className="text-center p-6">
@@ -207,7 +207,7 @@ export function MePresentoSection() {
                 whileInView={{ opacity: 1, y: 0 }}
               >
                 <Card
-                  className="bg-white/60 backdrop-blur-xl border-2 border-primary/20 shadow-2xl"
+                  className="bg-white/60 backdrop-blur-xl border border-primary/20 shadow-2xl"
                   shadow="lg"
                 >
                   <CardBody className="p-6 md:p-8">

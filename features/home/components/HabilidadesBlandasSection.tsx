@@ -95,7 +95,7 @@ export function HabilidadesBlandasSection() {
           {t.raw("skills").map((skill: any, idx: number) => (
             <motion.div key={idx} variants={fadeIn}>
               <Card
-                className="h-full hover:shadow-xl hover:scale-105 transition-all duration-300 border-l-4 border-primary/20 hover:border-primary"
+                className="h-full hover:shadow-xl hover:-translate-y-1 transition-all duration-500 border-l-4 border-primary/20 hover:border-primary"
                 shadow="md"
               >
                 <CardBody className="p-5 flex flex-row items-start gap-4">
@@ -129,7 +129,7 @@ export function HabilidadesBlandasSection() {
             variants={fadeIn}
           >
             <Button
-              className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl"
+              className="bg-primary text-white font-bold text-base md:text-lg px-8 py-6 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500"
               size="lg"
               onClick={scrollToAgenda}
             >

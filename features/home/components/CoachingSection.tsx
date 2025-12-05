@@ -194,7 +194,7 @@ export function CoachingSection() {
               </p>
 
               {/* Invite mejorado */}
-              <div className="bg-gradient-to-r from-brand/20 to-yellow-400/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-brand/30">
+              <div className="bg-gradient-to-r from-brand/20 to-yellow-400/20 backdrop-blur-sm rounded-2xl p-6 border border-brand/30">
                 <p className="font-bold text-white text-base md:text-lg mb-2">
                   {t.rich("content.invite.pBold", {
                     b: (chunk) => <span className="text-brand">{chunk}</span>,
@@ -208,7 +208,7 @@ export function CoachingSection() {
               {/* CTA prominente */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
-                  className="inline-flex items-center justify-center px-6 py-3 text-lg font-bold bg-brand hover:bg-yellow-400 text-customgray rounded-xl shadow-2xl hover:shadow-brand/50 transition-all hover:scale-105"
+                  className="inline-flex items-center justify-center px-6 py-3 text-lg font-bold bg-brand hover:bg-yellow-400 text-customgray rounded-xl shadow-2xl hover:shadow-brand/50 transition-all duration-500 hover:-translate-y-1"
                   href="https://calendly.com/hugotech/mentoria1a1"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -216,7 +216,7 @@ export function CoachingSection() {
                   {t("ctas.schedule")}
                 </a>
                 <Link
-                  className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-white text-white hover:bg-white/10 rounded-xl transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold border border-white text-white hover:bg-white/10 rounded-xl transition-all"
                   href="/coaching-con-causa"
                 >
                   {t("ctas.learnMore")}

@@ -139,7 +139,7 @@ export function PorQueGratuitoSection() {
               >
                 <Card
                   as="article"
-                  className="bg-gradient-to-br from-[#FFE8DB] to-[#FFD4B8] border-2 border-orange-200 h-full"
+                  className="bg-gradient-to-br from-[#FFE8DB] to-[#FFD4B8] border border-orange-200 h-full"
                   shadow="lg"
                 >
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
@@ -224,7 +224,7 @@ export function PorQueGratuitoSection() {
               >
                 <Card
                   as="article"
-                  className="bg-gradient-to-br from-[#E0F6F5] to-[#C4F1EF] border-2 border-primary/30 h-full"
+                  className="bg-gradient-to-br from-[#E0F6F5] to-[#C4F1EF] border border-primary/30 h-full"
                   shadow="lg"
                 >
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">

@@ -201,7 +201,7 @@ const Footer: React.FC = () => {
                 classNames={{
                   input: "bg-white text-gray-900 placeholder:text-gray-500",
                   inputWrapper:
-                    "bg-white border-2 border-white/30 hover:border-white",
+                    "bg-white border border-white/30 hover:border-white",
                 }}
                 id="newsletter-email"
                 name="email"

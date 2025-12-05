@@ -104,7 +104,7 @@ export function PilaresSection() {
                   </div>
 
                   <Card
-                    className="bg-white/80 backdrop-blur-sm border-2 border-gray-100 hover:border-primary/30 transition-all shadow-lg hover:shadow-2xl h-full"
+                    className="bg-white/80 backdrop-blur-sm border border-gray-100 hover:border-primary/30 transition-all shadow-lg hover:shadow-2xl h-full"
                     shadow="lg"
                   >
                     <CardBody className="p-6">

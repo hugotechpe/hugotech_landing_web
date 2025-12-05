@@ -69,7 +69,7 @@ export function TestimoniosHeaderSection() {
             >
               <Button
                 as={Link}
-                className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
+                className="bg-brand text-white font-bold text-base sm:text-lg px-8 py-6 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 w-full sm:w-auto"
                 href="#historias"
                 size="lg"
               >
@@ -77,7 +77,7 @@ export function TestimoniosHeaderSection() {
               </Button>
               <Button
                 as={Link}
-                className="border-2 border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
+                className="border border-white text-white font-bold text-base sm:text-lg px-8 py-6 hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto"
                 href="/#cita"
                 size="lg"
                 variant="bordered"
@@ -98,7 +98,7 @@ export function TestimoniosHeaderSection() {
         <div className="text-white/70 text-sm font-medium mb-2">
           {t("scroll.text")}
         </div>
-        <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
+        <div className="w-6 h-10 border border-white/40 rounded-full mx-auto flex items-start justify-center p-2">
           <motion.div
             animate={{ y: [0, 12, 0] }}
             className="w-1.5 h-2.5 bg-white/60 rounded-full"

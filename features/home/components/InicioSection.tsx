@@ -122,7 +122,7 @@ export function InicioSection() {
 
             <div className="mt-8 flex flex-col gap-3">
               <Button
-                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:brightness-110"
+                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold text-lg px-8 py-4 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:brightness-110"
                 color="default"
                 size="lg"
                 variant="solid"
@@ -139,7 +139,7 @@ export function InicioSection() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2">
                 <Button
                   as="a"
-                  className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold"
+                  className="w-full sm:w-auto border border-white text-white hover:bg-white hover:text-primary font-semibold"
                   color="primary"
                   href={`/${locale}/about`}
                   size="lg"
