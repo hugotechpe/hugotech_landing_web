@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
+import { NucleoIcon } from "@/components/icons/nucleo/NucleoIcon";
 
 export default function AboutNewPage() {
   const t = useTranslations("about");
@@ -229,49 +230,49 @@ export default function AboutNewPage() {
             {[
               {
                 roleKey: "backend",
-                icon: "🔧",
+                icon: "design-development/18px_database.svg",
                 tech: ["PHP", "MySQL", "Laravel", "APIs"],
                 color: "border-blue-500",
               },
               {
                 roleKey: "frontend",
-                icon: "🎨",
+                icon: "design-development/18px_window-code.svg",
                 tech: ["React", "Vue", "TypeScript", "Tailwind"],
                 color: "border-purple-500",
               },
               {
                 roleKey: "fullstack",
-                icon: "⚙️",
+                icon: "design-development/18px_layers-stacked.svg",
                 tech: ["Node.js", "Next.js", "MongoDB", "Docker"],
                 color: "border-green-500",
               },
               {
                 roleKey: "techlead",
-                icon: "👥",
+                icon: "users/18px_users-star.svg",
                 tech: ["Scrum", "Kanban", "Git", "CI/CD"],
                 color: "border-orange-500",
               },
               {
                 roleKey: "pm",
-                icon: "📋",
+                icon: "business-finance/18px_presentation-screen-chart-line.svg",
                 tech: ["PMI", "Gantt", "Risk Management", "Stakeholders"],
                 color: "border-teal-500",
               },
               {
                 roleKey: "headproduct",
-                icon: "🎯",
+                icon: "business-finance/18px_marketing-target.svg",
                 tech: ["Roadmap", "OKRs", "A/B Testing", "Product Market Fit"],
                 color: "border-pink-500",
               },
               {
                 roleKey: "po",
-                icon: "📊",
+                icon: "design-development/18px_square-code.svg",
                 tech: ["Jira", "Miro", "Analytics", "Product Strategy"],
                 color: "border-indigo-500",
               },
               {
                 roleKey: "country",
-                icon: "🚀",
+                icon: "business-finance/18px_globe-2.svg",
                 tech: ["P&L", "OKRs", "Hiring", "Culture"],
                 color: "border-red-500",
               },
@@ -288,7 +289,13 @@ export default function AboutNewPage() {
                   className={`h-full border-l-4 ${step.color} hover:shadow-2xl transition-all duration-300`}
                 >
                   <CardBody className="p-6">
-                    <div className="text-4xl mb-4">{step.icon}</div>
+                    <div className="mb-4">
+                      <NucleoIcon 
+                        name={step.icon} 
+                        size={40} 
+                        className="text-gray-700"
+                      />
+                    </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3">
                       {t(`evolution.roles.${step.roleKey}.role`)}
                     </h3>
