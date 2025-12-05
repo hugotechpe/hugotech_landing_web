@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Button } from "@heroui/button";
 import { Facebook, Linkedin, Twitter, Share2 } from "lucide-react";
 
@@ -10,6 +11,12 @@ interface ShareButtonsProps {
 }
 
 export default function ShareButtons({ url, title, description }: ShareButtonsProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
   const encodedDescription = encodeURIComponent(description || "");
@@ -22,6 +29,8 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
   };
 
   const handleShare = async (platform?: string) => {
+    if (!isMounted) return;
+    
     if (platform && shareLinks[platform as keyof typeof shareLinks]) {
       window.open(shareLinks[platform as keyof typeof shareLinks], "_blank", "width=600,height=400");
     } else if (typeof window !== "undefined" && "share" in navigator) {
@@ -36,6 +45,10 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
       }
     }
   };
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div className="flex flex-wrap items-center justify-center gap-3">

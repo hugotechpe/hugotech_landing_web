@@ -11,6 +11,7 @@ import AuthorCard from "@/components/blog/AuthorCard";
 import BlogCard from "@/components/blog/BlogCard";
 import { components } from "@/components/blog/PortableTextComponents";
 import { Category, Post } from "@/types/sanity";
+import HomeLayout from "../../homeLayout";
 
 import { Chip } from "@heroui/chip";
 
@@ -83,7 +84,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   );
 
   return (
-    <article className="container mx-auto max-w-4xl px-4 py-12">
+    <HomeLayout>
+      <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Header */}
       <header className="mb-8">
         <div className="mb-4 flex flex-wrap gap-2">
@@ -187,5 +189,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       )}
     </article>
+    </HomeLayout>
   );
 }
