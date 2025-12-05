@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="leanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="40" fill="url(#leanGrad)"/>
+  <circle cx="150" cy="110" r="50" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
+  <path d="M 150 60 L 150 160 M 100 110 L 200 110" stroke="white" stroke-width="4" opacity="0.6"/>
+  <circle cx="150" cy="110" r="8" fill="white"/>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="36" font-weight="600" fill="white" text-anchor="middle">LEAN</text>
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="36" font-weight="600" fill="white" text-anchor="middle">STARTUP</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.9">METHODOLOGY</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="agileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="145" fill="url(#agileGrad)"/>
+  <circle cx="150" cy="150" r="130" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  <path d="M 80 150 L 110 120 L 140 140 L 170 110 L 200 130 L 220 120" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="110" cy="120" r="6" fill="white"/>
+  <circle cx="140" cy="140" r="6" fill="white"/>
+  <circle cx="170" cy="110" r="6" fill="white"/>
+  <circle cx="200" cy="130" r="6" fill="white"/>
+  <text x="150" y="195" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="white" text-anchor="middle">AGILE</text>
+  <text x="150" y="230" font-family="Arial, sans-serif" font-size="32" font-weight="300" fill="white" text-anchor="middle">COACH</text>
+  <text x="150" y="255" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.9">CERTIFIED PROFESSIONAL</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="white"/>
+  <rect x="15" y="15" width="270" height="270" rx="20" fill="#4285F4"/>
+  <path d="M 150 60 L 180 90 L 180 120 L 150 90 Z" fill="#34A853"/>
+  <path d="M 150 60 L 120 90 L 120 120 L 150 90 Z" fill="#FBBC04"/>
+  <path d="M 150 90 L 180 120 L 150 150 L 120 120 Z" fill="#EA4335"/>
+  <text x="150" y="190" font-family="Product Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="white" text-anchor="middle">Google Cloud</text>
+  <text x="150" y="225" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.95">CERTIFIED</text>
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.85">Associate Cloud Engineer</text>
+</svg>

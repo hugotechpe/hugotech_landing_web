@@ -1,0 +1,693 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 100
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Título"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 160
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Breve descripción del post (150-160 caracteres para SEO)",
+        "name": "excerpt",
+        "type": "text",
+        "title": "Extracto"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "fields": [
+          {
+            "description": "Importante para SEO y accesibilidad",
+            "name": "alt",
+            "type": "string",
+            "title": "Texto alternativo"
+          }
+        ],
+        "name": "mainImage",
+        "type": "image",
+        "title": "Imagen Principal"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 1
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "to": [
+              {
+                "type": "category"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to categoría"
+          }
+        ],
+        "name": "categories",
+        "type": "array",
+        "title": "Categorías"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "author",
+        "type": "reference",
+        "title": "Autor"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Fecha de Publicación"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^mailto$/",
+                                    "/^tel$/"
+                                  ],
+                                  "allowRelative": false,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "name": "href",
+                      "type": "url",
+                      "title": "URL"
+                    },
+                    {
+                      "initialValue": true,
+                      "name": "blank",
+                      "type": "boolean",
+                      "title": "Abrir en nueva pestaña"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Emphasis"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              },
+              {
+                "value": "number",
+                "title": "Numbered"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h2",
+                "title": "H2"
+              },
+              {
+                "value": "h3",
+                "title": "H3"
+              },
+              {
+                "value": "h4",
+                "title": "H4"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          },
+          {
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "alt",
+                "type": "string",
+                "title": "Texto alternativo"
+              },
+              {
+                "name": "caption",
+                "type": "string",
+                "title": "Pie de foto"
+              }
+            ],
+            "type": "image"
+          },
+          {
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "uri",
+                        "constraint": {
+                          "options": {
+                            "scheme": [
+                              "/^http$/",
+                              "/^https$/"
+                            ],
+                            "allowRelative": false,
+                            "relativeOnly": false,
+                            "allowCredentials": false
+                          }
+                        }
+                      },
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "url",
+                "type": "url",
+                "title": "YouTube URL"
+              }
+            ],
+            "type": "object",
+            "name": "youtube",
+            "title": "YouTube Video"
+          }
+        ],
+        "name": "body",
+        "type": "array",
+        "title": "Contenido"
+      },
+      {
+        "initialValue": false,
+        "description": "Marcar como post destacado en la página principal",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Post Destacado"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              },
+              {
+                "flag": "max",
+                "constraint": 60
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Estimado de tiempo de lectura",
+        "name": "readTime",
+        "type": "number",
+        "title": "Tiempo de Lectura (minutos)"
+      },
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Título para motores de búsqueda (50-60 caracteres)",
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta Título"
+          },
+          {
+            "rows": 3,
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Descripción para motores de búsqueda (150-160 caracteres)",
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta Descripción"
+          },
+          {
+            "options": {
+              "layout": "tags"
+            },
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "keywords",
+            "type": "array",
+            "title": "Palabras Clave"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "post",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string",
+        "title": "Nombre"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "image",
+        "type": "image",
+        "title": "Foto"
+      },
+      {
+        "rows": 4,
+        "name": "bio",
+        "type": "text",
+        "title": "Biografía"
+      },
+      {
+        "placeholder": "Coach Tech Senior, Mentor...",
+        "name": "role",
+        "type": "string",
+        "title": "Rol"
+      },
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "linkedin",
+            "type": "url",
+            "title": "LinkedIn"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "twitter",
+            "type": "url",
+            "title": "Twitter/X"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "instagram",
+            "type": "url"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "website",
+            "type": "url"
+          }
+        ],
+        "name": "social",
+        "type": "object",
+        "title": "Redes Sociales"
+      }
+    ],
+    "name": "author",
+    "type": "document",
+    "title": "Autor"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Título"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "name": "description",
+        "type": "text",
+        "title": "Descripción"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Azul",
+              "value": "blue"
+            },
+            {
+              "title": "Verde",
+              "value": "green"
+            },
+            {
+              "title": "Morado",
+              "value": "purple"
+            },
+            {
+              "title": "Naranja",
+              "value": "orange"
+            },
+            {
+              "title": "Rojo",
+              "value": "red"
+            },
+            {
+              "title": "Rosa",
+              "value": "pink"
+            }
+          ]
+        },
+        "name": "color",
+        "type": "string"
+      }
+    ],
+    "name": "category",
+    "type": "document",
+    "title": "Categoría"
+  }
+]
