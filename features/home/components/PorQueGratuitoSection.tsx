@@ -6,6 +6,7 @@ import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
+import { GraduationCap, Lightbulb } from "lucide-react";
 
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -145,7 +146,7 @@ export function PorQueGratuitoSection() {
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
-                      <span className="text-4xl">🎓</span>
+                      <GraduationCap className="w-9 h-9 text-gray-800" strokeWidth={1.5} />
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-bold font-heading">
@@ -230,7 +231,7 @@ export function PorQueGratuitoSection() {
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
-                      <span className="text-4xl">💡</span>
+                      <Lightbulb className="w-9 h-9 text-gray-800" strokeWidth={1.5} />
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-bold">

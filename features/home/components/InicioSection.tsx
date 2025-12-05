@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
+import { GraduationCap, Rocket, Globe2 } from "lucide-react";
 
 import { useReducedMotion, useIsMobile } from "@/hooks/useReducedMotion";
 
@@ -52,19 +53,19 @@ export function InicioSection() {
             {/* Badges de Autoridad */}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-                <span className="text-2xl">🎓</span>
+                <GraduationCap className="w-5 h-5 text-white" strokeWidth={1.5} />
                 <span className="text-sm font-semibold text-white">
                   Coach ICF Certificado
                 </span>
               </div>
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-                <span className="text-2xl">🚀</span>
+                <Rocket className="w-5 h-5 text-white" strokeWidth={1.5} />
                 <span className="text-sm font-semibold text-white">
                   Management 3.0
                 </span>
               </div>
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-                <span className="text-2xl">🌎</span>
+                <Globe2 className="w-5 h-5 text-white" strokeWidth={1.5} />
                 <span className="text-sm font-semibold text-white">
                   Tech Lead LATAM + EE.UU.
                 </span>
