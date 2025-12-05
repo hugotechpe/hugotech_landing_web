@@ -1,0 +1,49 @@
+"use client";
+
+import { useState } from "react";
+import { Chip } from "@heroui/chip";
+import { Category } from "@/types/sanity";
+
+interface CategoryFilterProps {
+  categories: Category[];
+}
+
+export default function CategoryFilter({ categories }: CategoryFilterProps) {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const handleCategoryClick = (categoryId: string) => {
+    setSelectedCategory(selectedCategory === categoryId ? null : categoryId);
+  };
+
+  return (
+    <div className="mb-8 flex flex-wrap justify-center gap-3">
+      <Chip
+        variant={selectedCategory === null ? "solid" : "flat"}
+        color="primary"
+        className="cursor-pointer"
+        onClick={() => setSelectedCategory(null)}
+      >
+        Todos
+      </Chip>
+      {categories.map((category) => (
+        <Chip
+          key={category._id}
+          variant={selectedCategory === category._id ? "solid" : "flat"}
+          color={
+            category.color === "blue"
+              ? "primary"
+              : category.color === "green"
+                ? "success"
+                : category.color === "purple"
+                  ? "secondary"
+                  : "warning"
+          }
+          className="cursor-pointer"
+          onClick={() => handleCategoryClick(category._id)}
+        >
+          {category.title} {category.postCount && `(${category.postCount})`}
+        </Chip>
+      ))}
+    </div>
+  );
+}

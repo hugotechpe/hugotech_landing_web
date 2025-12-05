@@ -12,6 +12,11 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Excluir rutas de Sanity Studio
+  if (pathname.startsWith("/studio")) {
+    return NextResponse.next();
+  }
+
   // Si es la raíz sin idioma, redirigir explícitamente a /es
   if (pathname === "/") {
     return NextResponse.redirect(new URL("/es", request.url));

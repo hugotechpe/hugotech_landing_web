@@ -1,0 +1,14 @@
+{
+  "title": "Blog",
+  "subtitle": "Reflexiones sobre carrera tech, liderazgo y desarrollo personal",
+  "allCategories": "Todos",
+  "readMore": "Leer artículo",
+  "readTime": "{minutes} min de lectura",
+  "publishedOn": "Publicado el",
+  "share": "Compartir",
+  "shareArticle": "¿Te gustó este artículo? Compártelo",
+  "relatedPosts": "Artículos relacionados",
+  "author": "Autor",
+  "noPosts": "No hay posts publicados aún.",
+  "goToStudio": "Visita el panel de administración para crear tu primer post."
+}

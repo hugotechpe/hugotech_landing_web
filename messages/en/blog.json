@@ -1,0 +1,14 @@
+{
+  "title": "Blog",
+  "subtitle": "Reflections on tech career, leadership and personal development",
+  "allCategories": "All",
+  "readMore": "Read article",
+  "readTime": "{minutes} min read",
+  "publishedOn": "Published on",
+  "share": "Share",
+  "shareArticle": "Did you like this article? Share it",
+  "relatedPosts": "Related articles",
+  "author": "Author",
+  "noPosts": "No posts published yet.",
+  "goToStudio": "Visit the admin panel to create your first post."
+}
