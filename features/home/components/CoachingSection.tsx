@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
+import { Target, Lightbulb, Rocket, Sparkles, Zap } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 
@@ -12,7 +13,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
-const bulletIcons = ["🎯", "💡", "🚀", "🌟", "💪"];
+const bulletIconComponents = [Target, Lightbulb, Rocket, Sparkles, Zap];
 
 export function CoachingSection() {
   const t = useTranslations("Sections.CCCausa");
@@ -177,9 +178,10 @@ export function CoachingSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                     >
                       <div className="flex-shrink-0 w-10 h-10 bg-brand rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                        <span className="text-xl">
-                          {bulletIcons[idx % bulletIcons.length]}
-                        </span>
+                        {React.createElement(
+                          bulletIconComponents[idx % bulletIconComponents.length],
+                          { className: "w-5 h-5 text-white", strokeWidth: 1.5 }
+                        )}
                       </div>
                       <span className="text-white/90 text-[15px] leading-[1.9] flex-1">
                         {item}
