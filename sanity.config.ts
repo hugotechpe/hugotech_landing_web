@@ -19,7 +19,7 @@ export default defineConfig({
   },
 
   deployment: {
-    appId: "jbfdlu800tv7tryzp34optbw",
+    appId: "w7ucbnff8gsb099k8pg2rnv7",
     autoUpdates: true,
   },
 });
