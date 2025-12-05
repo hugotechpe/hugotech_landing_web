@@ -300,13 +300,13 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              <span className="text-primary">No vendemos cursos. Intervenimos.</span>
+              <span className="text-primary">No vendo cursos. Te acompaño.</span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-4xl mx-auto"
               variants={fadeIn}
             >
-              Una metodología probada que combina ingeniería técnica, liderazgo y psicología de equipos. Resultados medibles, no teoría.
+              Una forma de trabajo que combina ingeniería técnica, liderazgo y psicología de equipos. Resultados medibles, no teoría.
             </motion.p>
           </motion.div>
 
