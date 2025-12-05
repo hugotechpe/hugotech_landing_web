@@ -26,13 +26,16 @@ const config = {
           DEFAULT: "#F5F9F7", // Verde menta muy suave - calma y claridad
         },
         brand: {
-          DEFAULT: "#C9A167", // Bronce envejecido - madurez y calidez
+          DEFAULT: "#B8935C", // Caramelo tostado - mejor contraste y accesibilidad (antes #C9A167)
         },
         accent: {
           DEFAULT: "#7FADA9", // Verde agua sereno - calma y guía
         },
         sage: {
           DEFAULT: "#A8C5B8", // Salvia - quotes y highlights sutiles
+        },
+        surface: {
+          DEFAULT: "#F8FAFC", // Slate-50 - fondos de cards y secciones sutiles
         },
         dark: {
           DEFAULT: "#1E1E1E",

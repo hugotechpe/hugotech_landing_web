@@ -122,7 +122,7 @@ export default function EmpresasNewPage() {
               variants={fadeIn}
             >
               <CalendlyButton
-                className="bg-brand hover:bg-brand/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
+                className="bg-brand hover:bg-brand/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-2xl hover:shadow-brand/50 hover:-translate-y-1 transition-all duration-500 border border-brand/20"
                 size="lg"
                 text="📊 Solicitar Diagnóstico de Equipo"
               />
@@ -172,7 +172,7 @@ export default function EmpresasNewPage() {
               viewport={{ once: true }}
               whileInView="visible"
             >
-              <Card className="h-full border-2 border-danger/20 hover:border-danger hover:shadow-xl transition-all duration-300">
+              <Card className="h-full border border-danger/20 hover:border-danger hover:shadow-xl transition-all duration-300">
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">🤐</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -196,7 +196,7 @@ export default function EmpresasNewPage() {
               viewport={{ once: true }}
               whileInView="visible"
             >
-              <Card className="h-full border-2 border-warning/20 hover:border-warning hover:shadow-xl transition-all duration-300">
+              <Card className="h-full border border-warning/20 hover:border-warning hover:shadow-xl transition-all duration-300">
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">⚡</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -220,7 +220,7 @@ export default function EmpresasNewPage() {
               viewport={{ once: true }}
               whileInView="visible"
             >
-              <Card className="h-full border-2 border-primary/20 hover:border-primary hover:shadow-xl transition-all duration-300">
+              <Card className="h-full border border-primary/20 hover:border-primary hover:shadow-xl transition-all duration-300">
                 <CardBody className="p-8">
                   <div className="text-6xl mb-6">⚔️</div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -241,7 +241,7 @@ export default function EmpresasNewPage() {
 
           {/* Estadística de impacto */}
           <motion.div
-            className="mt-16 bg-gradient-to-r from-danger/10 via-warning/10 to-primary/10 rounded-2xl p-8 md:p-12 border-2 border-default-200"
+            className="mt-16 bg-gradient-to-r from-danger/10 via-warning/10 to-primary/10 rounded-2xl p-8 md:p-12 border border-default-200"
             initial="hidden"
             viewport={{ once: true }}
             whileInView="visible"
@@ -317,7 +317,7 @@ export default function EmpresasNewPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            <Card className="overflow-hidden border-2 border-primary/30 hover:border-primary hover:shadow-2xl transition-all duration-300">
+            <Card className="overflow-hidden border border-primary/30 hover:border-primary hover:shadow-2xl transition-all duration-300">
               <CardBody className="p-0">
                 <div className="grid md:grid-cols-2">
                   <div className="p-8 md:p-12 bg-primary/5">
@@ -410,7 +410,7 @@ export default function EmpresasNewPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            <Card className="overflow-hidden border-2 border-warning/30 hover:border-warning hover:shadow-2xl transition-all duration-300">
+            <Card className="overflow-hidden border border-warning/30 hover:border-warning hover:shadow-2xl transition-all duration-300">
               <CardBody className="p-0">
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-64 md:h-auto order-2 md:order-1 bg-warning/10 flex items-center justify-center">
@@ -504,7 +504,7 @@ export default function EmpresasNewPage() {
             viewport={{ once: true }}
             whileInView="visible"
           >
-            <Card className="overflow-hidden border-2 border-success/30 hover:border-success hover:shadow-2xl transition-all duration-300">
+            <Card className="overflow-hidden border border-success/30 hover:border-success hover:shadow-2xl transition-all duration-300">
               <CardBody className="p-0">
                 <div className="grid md:grid-cols-2">
                   <div className="p-8 md:p-12 bg-success/5">
@@ -930,7 +930,7 @@ export default function EmpresasNewPage() {
             </motion.p>
             <motion.div variants={fadeIn}>
               <CalendlyButton
-                className="bg-brand hover:bg-brand/90 text-white font-bold text-xl px-12 py-5 rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
+                className="bg-brand hover:bg-brand/90 text-white font-bold text-xl px-12 py-5 rounded-full shadow-2xl hover:shadow-brand/50 hover:-translate-y-1 transition-all duration-500 border border-brand/20"
                 size="lg"
                 text="📊 Agendar Diagnóstico Gratuito"
               />

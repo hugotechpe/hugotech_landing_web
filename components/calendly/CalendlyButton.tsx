@@ -95,9 +95,9 @@ export function CalendlyButton({
       },
       bordered: {
         primary:
-          "border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent",
+          "border border-primary text-primary hover:bg-primary hover:text-white bg-transparent",
         default:
-          "border-2 border-customgray text-customgray hover:bg-customgray hover:text-white bg-transparent",
+          "border border-customgray text-customgray hover:bg-customgray hover:text-white bg-transparent",
       },
     };
 

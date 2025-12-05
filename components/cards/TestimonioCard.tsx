@@ -82,7 +82,7 @@ export const TestimonioCard: React.FC<TestimonioCardProps> = ({
     >
       <Card
         className={clsx(
-          "bg-white rounded-2xl p-4 border-2 border-default-200",
+          "bg-white rounded-2xl p-4 border border-default-200",
           "hover:border-primary/40 hover:shadow-2xl transition-all duration-300 cursor-default",
           "backdrop-blur-sm bg-white/90",
           className,

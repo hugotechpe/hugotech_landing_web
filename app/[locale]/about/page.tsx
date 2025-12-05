@@ -71,7 +71,7 @@ export default function AboutNewPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-0">
                 <CalendlyButton
-                  className="bg-brand hover:bg-brand/90 text-white font-bold text-base sm:text-lg px-8 py-3 rounded-full shadow-2xl hover:shadow-brand/50 hover:scale-105 transition-all duration-300 border-2 border-brand/20"
+                  className="bg-brand hover:bg-brand/90 text-white font-bold text-base sm:text-lg px-8 py-3 rounded-full shadow-2xl hover:shadow-brand/50 hover:-translate-y-1 transition-all duration-500 border border-brand/20"
                   size="lg"
                   text={t("cta.calendar")}
                 />
