@@ -1,9 +1,10 @@
 import { Suspense } from "react";
-import { useTranslations } from "next-intl";
 import { getAllPosts, getAllCategories } from "@/lib/sanity.queries";
 import BlogCard from "@/components/blog/BlogCard";
 import CategoryFilter from "@/components/blog/CategoryFilter";
 import { title } from "@/components/primitives";
+import { Post } from "@/types/sanity";
+
 import { Spinner } from "@heroui/spinner";
 
 export const metadata = {
@@ -26,7 +27,7 @@ async function BlogContent() {
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts && posts.length > 0 ? (
-          posts.map((post) => <BlogCard key={post._id} post={post} />)
+          posts.map((post: Post) => <BlogCard key={post._id} post={post} />)
         ) : (
           <div className="col-span-full text-center py-12">
             <p className="text-lg text-default-500">
