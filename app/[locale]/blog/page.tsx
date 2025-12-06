@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { getAllPosts, getAllCategories } from "@/lib/sanity.queries";
 import BlogList from "@/components/blog/BlogList";
 import { title } from "@/components/primitives";
-import HomeLayout from "../homeLayout";
+import HomeLayout from "../HomeLayout";
 import { Spinner } from "@heroui/spinner";
 import { Chip } from "@heroui/chip";
 

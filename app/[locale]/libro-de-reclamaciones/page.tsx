@@ -7,7 +7,7 @@ import { Card, CardBody, CardHeader } from "@heroui/card";
 import { Input, Textarea } from "@heroui/input";
 import { Select, SelectItem } from "@heroui/select";
 
-import HomeLayout from "../homeLayout";
+import HomeLayout from "../HomeLayout";
 
 export default function LibroReclamacionesPage() {
   const [formData, setFormData] = useState({

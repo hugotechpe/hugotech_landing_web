@@ -11,7 +11,7 @@ import AuthorCard from "@/components/blog/AuthorCard";
 import BlogCard from "@/components/blog/BlogCard";
 import { components } from "@/components/blog/PortableTextComponents";
 import { Category, Post } from "@/types/sanity";
-import HomeLayout from "../../homeLayout";
+import HomeLayout from "../../HomeLayout";
 
 import { Chip } from "@heroui/chip";
 

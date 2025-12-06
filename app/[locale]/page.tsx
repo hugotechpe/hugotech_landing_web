@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { setRequestLocale } from "next-intl/server";
 
-import HomeLayout from "./homeLayout";
+import HomeLayout from "./HomeLayout";
 
 import { InicioSection } from "@/features/home/components/InicioSection";
 import { MePresentoSection } from "@/features/home/components/MePresentoSection";

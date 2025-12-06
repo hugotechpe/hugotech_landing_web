@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 
-import HomeLayout from "../homeLayout";
+import HomeLayout from "../HomeLayout";
 
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { generateMetadata as genMetadata } from "@/lib/metadata";

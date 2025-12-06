@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-import HomeLayout from "../homeLayout";
+import HomeLayout from "../HomeLayout";
 
 export const metadata: Metadata = {
   title: "Políticas de Privacidad | HugoTech",

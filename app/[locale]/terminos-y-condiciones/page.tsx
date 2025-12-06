@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-import HomeLayout from "../homeLayout";
+import HomeLayout from "../HomeLayout";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Legal.TermsAndConditions");
