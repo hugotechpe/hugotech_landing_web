@@ -177,6 +177,36 @@ export default async function BlogPostPage({ params }: PageProps) {
         />
       </div>
 
+      {/* CTA Section */}
+      <div className="mt-16 rounded-2xl bg-gradient-to-br from-primary to-primary-600 p-8 text-center text-white shadow-xl md:p-12">
+        <div className="mx-auto max-w-2xl">
+          <h3 className="mb-4 text-3xl font-bold md:text-4xl">
+            ¿Listo para tu transformación tech?
+          </h3>
+          <p className="mb-8 text-lg text-white/90">
+            Primera sesión <strong>100% gratuita</strong>. Sin compromiso, sin presión. 
+            Solo una conversación honesta sobre tu carrera y cómo dar tu siguiente paso con propósito.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <a
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 font-bold text-primary transition-all hover:scale-105 hover:shadow-2xl"
+              href={`/${locale}/#cita`}
+            >
+              Agenda tu Sesión Gratuita →
+            </a>
+            <a
+              className="inline-flex items-center justify-center rounded-lg border-2 border-white px-8 py-4 font-bold text-white transition-all hover:bg-white hover:text-primary"
+              href={`/${locale}/about`}
+            >
+              Conoce mi Historia
+            </a>
+          </div>
+          <p className="mt-6 text-sm text-white/80">
+            ✅ Sin costo • ✅ 45 minutos • ✅ 100% online
+          </p>
+        </div>
+      </div>
+
       {/* Related Posts */}
       {relatedPosts && relatedPosts.length > 0 && (
         <div className="mt-16">
