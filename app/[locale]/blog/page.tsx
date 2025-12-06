@@ -53,6 +53,7 @@ export default function BlogPage() {
   return (
     <HomeLayout>
       <div className="w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12">
+        <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="mb-12 text-center max-w-4xl mx-auto">
           <Chip
@@ -80,6 +81,7 @@ export default function BlogPage() {
         >
           <BlogContent />
         </Suspense>
+        </div>
       </div>
     </HomeLayout>
   );

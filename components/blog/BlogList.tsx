@@ -23,6 +23,14 @@ export default function BlogList({ initialPosts, categories }: BlogListProps) {
     );
   }, [initialPosts, selectedCategory]);
 
+  // Determinar el número de columnas según la cantidad de posts
+  const getGridCols = () => {
+    const postCount = filteredPosts.length;
+    if (postCount === 1) return "grid-cols-1 max-w-2xl mx-auto";
+    if (postCount === 2) return "grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto";
+    return "grid-cols-1 md:grid-cols-2 xl:grid-cols-3";
+  };
+
   // Agregar contador de posts por categoría
   const categoriesWithCount = useMemo(() => {
     return categories.map((category) => {
@@ -88,7 +96,7 @@ export default function BlogList({ initialPosts, categories }: BlogListProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid gap-8 w-full mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+            className={`grid gap-8 w-full ${getGridCols()}`}
           >
             {filteredPosts.map((post, index) => (
               <BlogCard key={post._id} post={post} index={index} />
