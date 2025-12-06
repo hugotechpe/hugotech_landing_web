@@ -78,6 +78,7 @@ export function LocaleSwitch({
           className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
           size="sm"
           variant="bordered"
+          suppressHydrationWarning
         >
           <Image
             alt={`${current.name} flag`}
@@ -85,8 +86,9 @@ export function LocaleSwitch({
             height={14}
             src={current.iconSrc}
             width={20}
+            suppressHydrationWarning
           />
-          <span className="font-semibold">{current.label}</span>
+          <span className="font-semibold" suppressHydrationWarning>{current.label}</span>
         </Button>
       </DropdownTrigger>
       <DropdownMenu

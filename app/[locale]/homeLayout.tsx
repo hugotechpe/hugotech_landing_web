@@ -20,9 +20,9 @@ export default function HomeLayout({
       <JsonLd data={organizationSchema} />
       <JsonLd data={serviceSchema} />
 
-      <div className="relative flex flex-col h-screen">
+      <div className="relative flex flex-col min-h-screen">
         <HeroNavbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow w-full">{children}</main>
         <Footer />
 
         {/* WhatsApp Floating Button */}

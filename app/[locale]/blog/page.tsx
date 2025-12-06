@@ -1,17 +1,24 @@
 import { Suspense } from "react";
 import { getAllPosts, getAllCategories } from "@/lib/sanity.queries";
-import BlogCard from "@/components/blog/BlogCard";
-import CategoryFilter from "@/components/blog/CategoryFilter";
+import BlogList from "@/components/blog/BlogList";
 import { title } from "@/components/primitives";
-import { Post } from "@/types/sanity";
 import HomeLayout from "../homeLayout";
-
 import { Spinner } from "@heroui/spinner";
+import { Chip } from "@heroui/chip";
 
 export const metadata = {
-  title: "Blog - HugoTech",
+  title: "Blog - Mentoring Tech y Desarrollo Personal | HugoTech",
   description:
-    "Reflexiones sobre carrera tech, liderazgo y desarrollo personal. Aprende sobre coaching tech, primer empleo, burnout y más.",
+    "Reflexiones sobre carrera tech, liderazgo y desarrollo personal. Aprende sobre coaching tech, primer empleo, burnout, síndrome del impostor y crecimiento profesional.",
+  keywords: [
+    "blog tech",
+    "carrera programación",
+    "burnout desarrolladores",
+    "liderazgo técnico",
+    "primer empleo tech",
+    "síndrome impostor",
+    "crecimiento profesional",
+  ],
 };
 
 async function BlogContent() {
@@ -22,25 +29,22 @@ async function BlogContent() {
 
   return (
     <>
-      {categories && categories.length > 0 && (
-        <CategoryFilter categories={categories} />
-      )}
-
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        {posts && posts.length > 0 ? (
-          posts.map((post: Post) => <BlogCard key={post._id} post={post} />)
-        ) : (
-          <div className="col-span-full text-center py-12">
-            <p className="text-lg text-default-500">
-              No hay posts publicados aún. Visita{" "}
-              <a href="/es/studio" className="text-primary hover:underline">
-                el panel de administración
-              </a>{" "}
-              para crear tu primer post.
+      {posts && posts.length > 0 ? (
+        <BlogList initialPosts={posts} categories={categories} />
+      ) : (
+        <div className="col-span-full text-center py-20">
+          <div className="max-w-md mx-auto">
+            <div className="text-6xl mb-4">📝</div>
+            <h3 className="text-2xl font-bold mb-2">Próximamente</h3>
+            <p className="text-lg text-default-500 mb-6">
+              Estamos preparando contenido valioso sobre carrera tech, liderazgo y desarrollo personal.
             </p>
+            <Chip color="primary" variant="flat">
+              Primer artículo disponible pronto
+            </Chip>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 }
@@ -48,18 +52,29 @@ async function BlogContent() {
 export default function BlogPage() {
   return (
     <HomeLayout>
-      <div className="w-full px-4 py-12 sm:px-6 lg:px-12 xl:px-24">
-        <div className="mb-12 text-center">
-          <h1 className={title()}>Blog</h1>
-          <p className="mt-4 text-lg text-default-600">
-            Reflexiones sobre carrera tech, liderazgo y desarrollo personal
+      <div className="w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12">
+        {/* Hero Section */}
+        <div className="mb-12 text-center max-w-4xl mx-auto">
+          <Chip
+            className="mb-4"
+            color="success"
+            variant="flat"
+            size="sm"
+          >
+            ✨ Contenido de Valor
+          </Chip>
+          <h1 className={title({ class: "mb-4" })}>Blog</h1>
+          <p className="text-lg md:text-xl text-default-600 leading-relaxed">
+            Reflexiones sobre <strong className="text-primary">carrera tech</strong>, 
+            <strong className="text-success"> liderazgo</strong> y 
+            <strong className="text-secondary"> desarrollo personal</strong>
           </p>
         </div>
 
         <Suspense
           fallback={
             <div className="flex justify-center py-20">
-              <Spinner size="lg" />
+              <Spinner size="lg" color="primary" />
             </div>
           }
         >

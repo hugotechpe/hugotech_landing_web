@@ -41,9 +41,13 @@ export default function HeroNavbar() {
   ];
 
   return (
-    <header className="bg-primary shadow-sm border-b border-[#115C5B]">
+    <header className="bg-primary shadow-sm border-b border-[#115C5B] w-full">
       <Navbar
-        className="bg-primary mx-auto max-w-1400"
+        className="bg-primary"
+        classNames={{
+          wrapper: "!max-w-none w-full px-6 md:px-12 lg:px-16 xl:px-24",
+          base: "w-full !max-w-none",
+        }}
         height="5rem"
         isMenuOpen={isMenuOpen}
         maxWidth="full"

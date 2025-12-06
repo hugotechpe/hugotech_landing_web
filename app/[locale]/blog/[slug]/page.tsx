@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <HomeLayout>
-      <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <article className="w-full min-h-screen mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Header */}
       <header className="mb-8">
         <div className="mb-4 flex flex-wrap gap-2">
