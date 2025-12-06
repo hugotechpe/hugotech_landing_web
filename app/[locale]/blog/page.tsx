@@ -52,35 +52,36 @@ async function BlogContent() {
 export default function BlogPage() {
   return (
     <HomeLayout>
-      <div className="w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12">
-        <div className="max-w-7xl mx-auto">
-        {/* Hero Section */}
-        <div className="mb-12 text-center max-w-4xl mx-auto">
-          <Chip
-            className="mb-4"
-            color="success"
-            variant="flat"
-            size="sm"
-          >
-            ✨ Contenido de Valor
-          </Chip>
-          <h1 className={title({ class: "mb-4" })}>Blog</h1>
-          <p className="text-lg md:text-xl text-default-600 leading-relaxed">
-            Reflexiones sobre <strong className="text-primary">carrera tech</strong>, 
-            <strong className="text-success"> liderazgo</strong> y 
-            <strong className="text-secondary"> desarrollo personal</strong>
-          </p>
-        </div>
+      <div className="w-full min-h-screen px-6 md:px-12 lg:px-16 xl:px-24 py-12">
+        {/* Container for centered content with max-width */}
+        <div className="max-w-screen-2xl mx-auto">
+          {/* Hero Section */}
+          <div className="mb-12 text-center max-w-4xl mx-auto">
+            <Chip
+              className="mb-4"
+              color="success"
+              variant="flat"
+              size="sm"
+            >
+              ✨ Contenido de Valor
+            </Chip>
+            <h1 className={title({ class: "mb-4" })}>Blog</h1>
+            <p className="text-lg md:text-xl text-default-600 leading-relaxed">
+              Reflexiones sobre <strong className="text-primary">carrera tech</strong>, 
+              <strong className="text-success"> liderazgo</strong> y 
+              <strong className="text-secondary"> desarrollo personal</strong>
+            </p>
+          </div>
 
-        <Suspense
-          fallback={
-            <div className="flex justify-center py-20">
-              <Spinner size="lg" color="primary" />
-            </div>
-          }
-        >
-          <BlogContent />
-        </Suspense>
+          <Suspense
+            fallback={
+              <div className="flex justify-center py-20">
+                <Spinner size="lg" color="primary" />
+              </div>
+            }
+          >
+            <BlogContent />
+          </Suspense>
         </div>
       </div>
     </HomeLayout>

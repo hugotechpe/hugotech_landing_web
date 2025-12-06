@@ -4,31 +4,31 @@
 
 /* Estilos para el contenido del blog (Portable Text) */
 .prose {
-  @apply max-w-none;
+  @apply max-w-none text-default-900;
 }
 
 .prose h1 {
-  @apply text-4xl font-bold mb-6 mt-8;
+  @apply text-4xl md:text-5xl font-bold mb-8 mt-12 text-default-900;
 }
 
 .prose h2 {
-  @apply text-3xl font-bold mb-4 mt-8;
+  @apply text-3xl md:text-4xl font-bold mb-6 mt-10 text-default-900;
 }
 
 .prose h3 {
-  @apply text-2xl font-bold mb-3 mt-6;
+  @apply text-2xl md:text-3xl font-bold mb-4 mt-8 text-default-900;
 }
 
 .prose h4 {
-  @apply text-xl font-bold mb-2 mt-4;
+  @apply text-xl md:text-2xl font-bold mb-3 mt-6 text-default-900;
 }
 
 .prose p {
-  @apply mb-6 leading-relaxed text-base md:text-lg;
+  @apply mb-6 leading-relaxed text-lg text-default-700;
 }
 
 .prose a {
-  @apply text-primary underline hover:text-primary-600 transition-colors;
+  @apply text-primary font-semibold underline decoration-2 underline-offset-4 hover:text-primary-600 hover:decoration-primary-600 transition-all duration-200;
 }
 
 .prose strong {
@@ -36,41 +36,66 @@
 }
 
 .prose em {
-  @apply italic;
+  @apply italic text-default-800;
 }
 
 .prose ul {
-  @apply mb-6 ml-6 list-disc space-y-2;
+  @apply mb-8 ml-6 space-y-3;
+}
+
+.prose ul li {
+  @apply relative pl-2 leading-relaxed text-lg text-default-700;
+}
+
+.prose ul li::before {
+  content: "•";
+  @apply absolute left-[-1rem] text-primary font-bold text-xl;
 }
 
 .prose ol {
-  @apply mb-6 ml-6 list-decimal space-y-2;
+  @apply mb-8 ml-6 space-y-3 list-decimal;
 }
 
-.prose li {
-  @apply leading-relaxed;
+.prose ol li {
+  @apply leading-relaxed text-lg text-default-700 pl-2;
 }
 
 .prose blockquote {
-  @apply my-8 border-l-4 border-primary bg-primary/5 pl-6 py-4 italic text-default-700;
+  @apply my-10 border-l-4 border-primary bg-primary/5 pl-8 py-6 rounded-r-xl italic text-default-800 text-lg;
+}
+
+.prose blockquote p {
+  @apply mb-0 text-default-800;
 }
 
 .prose code {
-  @apply rounded bg-default-200 px-2 py-1 font-mono text-sm;
+  @apply rounded-lg bg-default-200 px-2 py-1 font-mono text-sm text-default-900;
 }
 
 .prose pre {
-  @apply my-6 overflow-x-auto rounded-xl bg-default-900 p-6 text-default-50;
+  @apply my-8 overflow-x-auto rounded-2xl bg-default-900 p-8 text-default-50 shadow-xl;
 }
 
 .prose pre code {
-  @apply bg-transparent p-0;
+  @apply bg-transparent p-0 text-sm;
 }
 
 .prose img {
-  @apply my-8 rounded-xl;
+  @apply my-10 rounded-2xl shadow-lg;
 }
 
 .prose hr {
-  @apply my-8 border-default-200;
+  @apply my-12 border-default-300;
+}
+
+.prose table {
+  @apply w-full my-8 border-collapse;
+}
+
+.prose th {
+  @apply bg-primary/10 border border-default-300 px-4 py-3 text-left font-bold text-default-900;
+}
+
+.prose td {
+  @apply border border-default-300 px-4 py-3 text-default-700;
 }

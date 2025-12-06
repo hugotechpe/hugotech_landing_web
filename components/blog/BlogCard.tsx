@@ -79,7 +79,7 @@ export default function BlogCard({ post, compact = false, index = 0 }: BlogCardP
           </div>
 
           {/* Title */}
-          <h3 className="font-bold leading-tight transition-colors duration-300 group-hover:text-primary text-xl lg:text-2xl">
+          <h3 className="font-bold leading-normal transition-colors duration-300 group-hover:text-primary text-xl lg:text-2xl min-h-[4rem]">
             {post.title}
           </h3>
 
