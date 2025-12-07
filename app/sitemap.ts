@@ -1,17 +1,23 @@
 import { MetadataRoute } from "next";
+import { client } from "@/lib/sanity.client";
 
 const baseUrl = "https://hugotech.pe";
 const locales = ["es", "en"] as const;
 
 // Rutas estáticas del sitio (sin el prefijo de locale)
 const routes = [
+  // Páginas principales
   { path: "", priority: 1.0, changeFrequency: "daily" as const },
   { path: "/about", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/empresas", priority: 0.9, changeFrequency: "monthly" as const },
+  
+  // Servicios de coaching
   { path: "/coaching", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/mentor-coaching", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/coaching-con-causa", priority: 0.9, changeFrequency: "monthly" as const },
 
-  // Landing Pages Específicas (High Priority)
+  // Landing Pages Específicas (High Priority SEO)
   {
     path: "/mentoring-burnout",
     priority: 0.95,
@@ -28,25 +34,13 @@ const routes = [
     changeFrequency: "weekly" as const,
   },
 
+  // Contenido y recursos
   { path: "/testimonials", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
-  {
-    path: "/blog/burnout-silencioso-tech-2026",
-    priority: 0.8,
-    changeFrequency: "monthly" as const,
-  },
-  {
-    path: "/blog/liderazgo-tech-leads-introvertidos-2026",
-    priority: 0.8,
-    changeFrequency: "monthly" as const,
-  },
-  {
-    path: "/blog/estancamiento-senior-developer-2026",
-    priority: 0.8,
-    changeFrequency: "monthly" as const,
-  },
+  { path: "/blog", priority: 0.8, changeFrequency: "daily" as const },
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
-  { path: "/faq", priority: 0.7, changeFrequency: "monthly" as const },
+  { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },
+  
+  // Páginas legales
   {
     path: "/privacy-policy",
     priority: 0.3,
@@ -64,11 +58,11 @@ const routes = [
   },
 ] as const;
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapEntries: MetadataRoute.Sitemap = [];
-  const lastModified = new Date(); // Fecha actualizada automáticamente
+  const lastModified = new Date();
 
-  // Generar entradas para cada ruta en cada idioma
+  // Generar entradas para rutas estáticas en cada idioma
   routes.forEach((route) => {
     locales.forEach((locale) => {
       const url = `${baseUrl}/${locale}${route.path}`;
@@ -87,6 +81,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     });
   });
+
+  // Obtener posts dinámicos del blog desde Sanity
+  try {
+    const posts = await client.fetch<Array<{ slug: string; _updatedAt: string }>>(
+      `*[_type == "post" && defined(slug.current)] | order(_updatedAt desc) {
+        "slug": slug.current,
+        _updatedAt
+      }`
+    );
+
+    // Agregar cada post del blog en ambos idiomas
+    posts.forEach((post) => {
+      locales.forEach((locale) => {
+        sitemapEntries.push({
+          url: `${baseUrl}/${locale}/blog/${post.slug}`,
+          lastModified: new Date(post._updatedAt),
+          changeFrequency: "monthly",
+          priority: 0.7,
+          alternates: {
+            languages: {
+              es: `${baseUrl}/es/blog/${post.slug}`,
+              en: `${baseUrl}/en/blog/${post.slug}`,
+            },
+          },
+        });
+      });
+    });
+  } catch (error) {
+    console.error("Error fetching blog posts for sitemap:", error);
+  }
 
   return sitemapEntries;
 }
