@@ -4,9 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
-
 import { motion } from "framer-motion";
+
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
+import { TestimoniosOdiseoSection } from "@/features/testimonials/TestimoniosOdiseoSection";
 
 export default function EmpresasNewPage() {
   const fadeIn = {
@@ -16,6 +17,7 @@ export default function EmpresasNewPage() {
 
   const scrollToCasos = () => {
     const element = document.getElementById("casos");
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -107,13 +109,12 @@ export default function EmpresasNewPage() {
               variants={fadeIn}
             >
               Transformo equipos tecnológicos en unidades de{" "}
-              <span className="font-bold text-brand">
-                alto rendimiento
-              </span>{" "}
+              <span className="font-bold text-brand">alto rendimiento</span>{" "}
               combinando ingeniería, liderazgo, cultura y coaching ejecutivo.
               <br />
               <span className="text-lg md:text-xl text-white/80 mt-4 block">
-                El primer modelo híbrido en Latam (Ingeniería + Cultura) para CTOs que necesitan resultados, no teoría.
+                El primer modelo híbrido en Latam (Ingeniería + Cultura) para
+                CTOs que necesitan resultados, no teoría.
               </span>
             </motion.p>
 
@@ -156,13 +157,16 @@ export default function EmpresasNewPage() {
               variants={fadeIn}
             >
               El Verdadero Problema No Es la Tecnología.{" "}
-              <span className="text-primary">Es la Gestión Humana del Equipo.</span>
+              <span className="text-primary">
+                Es la Gestión Humana del Equipo.
+              </span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-3xl mx-auto"
               variants={fadeIn}
             >
-              Los síntomas se ven en el delivery. Las causas se sienten en el equipo.
+              Los síntomas se ven en el delivery. Las causas se sienten en el
+              equipo.
             </motion.p>
           </motion.div>
 
@@ -179,11 +183,14 @@ export default function EmpresasNewPage() {
                     Seniors Brillantes que No Lideran
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    Saben programar, pero no gestionar personas. Tech Leads saturados cargando todo el peso emocional y técnico. Juniors bloqueados esperando respuestas.
+                    Saben programar, pero no gestionar personas. Tech Leads
+                    saturados cargando todo el peso emocional y técnico. Juniors
+                    bloqueados esperando respuestas.
                   </p>
                   <div className="bg-danger/10 rounded-lg p-4 border-l-4 border-danger">
                     <p className="text-danger font-semibold text-sm">
-                      💸 Resultado: Cuello de botella humano que frena todo el delivery
+                      💸 Resultado: Cuello de botella humano que frena todo el
+                      delivery
                     </p>
                   </div>
                 </CardBody>
@@ -203,11 +210,14 @@ export default function EmpresasNewPage() {
                     Burnout Silencioso en el Sprint 40
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    Tu mejor senior está mentalmente fuera. Desconectado. Ya entrevistó en otro lado. La renuncia es cuestión de semanas, no meses.
+                    Tu mejor senior está mentalmente fuera. Desconectado. Ya
+                    entrevistó en otro lado. La renuncia es cuestión de semanas,
+                    no meses.
                   </p>
                   <div className="bg-warning/10 rounded-lg p-4 border-l-4 border-warning">
                     <p className="text-warning-600 font-semibold text-sm">
-                      💸 Costo: $50K-120K USD reemplazo + 6 meses perdidos en onboarding
+                      💸 Costo: $50K-120K USD reemplazo + 6 meses perdidos en
+                      onboarding
                     </p>
                   </div>
                 </CardBody>
@@ -227,11 +237,13 @@ export default function EmpresasNewPage() {
                     POs y Devs Peleando por Prioridades
                   </h3>
                   <p className="text-default-600 text-lg leading-relaxed mb-4">
-                    PM frustra a devs. Devs ignoran a PM. Releases se retrasan. Todos culpan a todos. Deuda técnica... y deuda emocional.
+                    PM frustra a devs. Devs ignoran a PM. Releases se retrasan.
+                    Todos culpan a todos. Deuda técnica... y deuda emocional.
                   </p>
                   <div className="bg-primary/10 rounded-lg p-4 border-l-4 border-primary">
                     <p className="text-primary font-semibold text-sm">
-                      💸 Resultado: Retrasos crónicos y personas valiosas que renuncian en silencio
+                      💸 Resultado: Retrasos crónicos y personas valiosas que
+                      renuncian en silencio
                     </p>
                   </div>
                 </CardBody>
@@ -252,8 +264,8 @@ export default function EmpresasNewPage() {
                   40%
                 </div>
                 <p className="text-default-600 font-semibold">
-                  De los Tech Leads nunca recibieron entrenamiento en gestión
-                  de personas
+                  De los Tech Leads nunca recibieron entrenamiento en gestión de
+                  personas
                 </p>
               </div>
               <div>
@@ -300,13 +312,16 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
               variants={fadeIn}
             >
-              <span className="text-primary">No vendo cursos. Te acompaño.</span>
+              <span className="text-primary">
+                No vendo cursos. Te acompaño.
+              </span>
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-default-600 max-w-4xl mx-auto"
               variants={fadeIn}
             >
-              Una forma de trabajo que combina ingeniería técnica, liderazgo y psicología de equipos. Resultados medibles, no teoría.
+              Una forma de trabajo que combina ingeniería técnica, liderazgo y
+              psicología de equipos. Resultados medibles, no teoría.
             </motion.p>
           </motion.div>
 
@@ -436,8 +451,8 @@ export default function EmpresasNewPage() {
                       Code & Culture Intervention
                     </h3>
                     <p className="text-xl text-default-600 mb-6">
-                      Me meto en tu Jira y en tu Slack. Arreglo el flujo
-                      técnico y desbloqueo la comunicación humana.
+                      Me meto en tu Jira y en tu Slack. Arreglo el flujo técnico
+                      y desbloqueo la comunicación humana.
                     </p>
                     <div className="space-y-4 mb-8">
                       <div className="flex items-start gap-3">
@@ -531,9 +546,9 @@ export default function EmpresasNewPage() {
                             Para quién:
                           </p>
                           <p className="text-default-600">
-                            CTOs que gestionan 20-100+ personas. Sienten
-                            soledad en las decisiones. Quieren escalar sin
-                            perder humanidad.
+                            CTOs que gestionan 20-100+ personas. Sienten soledad
+                            en las decisiones. Quieren escalar sin perder
+                            humanidad.
                           </p>
                         </div>
                       </div>
@@ -631,7 +646,8 @@ export default function EmpresasNewPage() {
                     Scale-Up • Conflictos de Liderazgo
                   </p>
                   <p className="text-default-600 leading-relaxed">
-                    "Equipo tech alineado. Reducción de fricción entre producto e ingeniería."
+                    &ldquo;Equipo tech alineado. Reducción de fricción entre
+                    producto e ingeniería.&rdquo;
                   </p>
                 </CardBody>
               </Card>
@@ -646,7 +662,8 @@ export default function EmpresasNewPage() {
                     Startup • Crecimiento Caótico
                   </p>
                   <p className="text-default-600 leading-relaxed">
-                    "De sprints reactivos a planificación estratégica. Equipo respira."
+                    &ldquo;De sprints reactivos a planificación estratégica.
+                    Equipo respira.&rdquo;
                   </p>
                 </CardBody>
               </Card>
@@ -661,7 +678,8 @@ export default function EmpresasNewPage() {
                     Tech Lead Desbordado • Silos
                   </p>
                   <p className="text-default-600 leading-relaxed">
-                    "Liderazgo distribuido. Comunicación fluida entre equipos."
+                    &ldquo;Liderazgo distribuido. Comunicación fluida entre
+                    equipos.&rdquo;
                   </p>
                 </CardBody>
               </Card>
@@ -676,7 +694,8 @@ export default function EmpresasNewPage() {
                     45 Desarrolladores • Deuda Técnica
                   </p>
                   <p className="text-default-600 leading-relaxed">
-                    "Reducción del 30% en bugs críticos y retención recuperada en 4 meses."
+                    &ldquo;Reducción del 30% en bugs críticos y retención
+                    recuperada en 4 meses.&rdquo;
                   </p>
                 </CardBody>
               </Card>
@@ -815,7 +834,7 @@ export default function EmpresasNewPage() {
                     </div>
                     <div className="pt-4 border-t border-success/20">
                       <p className="text-lg text-default-700 italic">
-                        "Pasaron de{" "}
+                        &ldquo;Pasaron de{" "}
                         <span className="font-semibold text-foreground">
                           sobrevivir sprint a sprint
                         </span>{" "}
@@ -823,7 +842,8 @@ export default function EmpresasNewPage() {
                         <span className="font-semibold text-success">
                           camino real hacia el alto desempeño
                         </span>
-                        , con líderes conscientes y una arquitectura estable."
+                        , con líderes conscientes y una arquitectura
+                        estable.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -842,8 +862,8 @@ export default function EmpresasNewPage() {
             <Card className="border-2 border-default-200">
               <CardBody className="p-6">
                 <p className="text-default-700 italic mb-4 leading-relaxed">
-                  "Nuestros sprints finalmente tienen sentido. No solo programan
-                  mejor: se entienden mejor."
+                  &ldquo;Nuestros sprints finalmente tienen sentido. No solo
+                  programan mejor: se entienden mejor.&rdquo;
                 </p>
                 <p className="text-sm font-bold text-foreground">
                   — CTO, Fintech LATAM
@@ -855,8 +875,8 @@ export default function EmpresasNewPage() {
             <Card className="border-2 border-default-200">
               <CardBody className="p-6">
                 <p className="text-default-700 italic mb-4 leading-relaxed">
-                  "No sabía que el burnout se podía prevenir. Hoy mi equipo es
-                  otro."
+                  &ldquo;No sabía que el burnout se podía prevenir. Hoy mi
+                  equipo es otro.&rdquo;
                 </p>
                 <p className="text-sm font-bold text-foreground">
                   — VP de Producto, Startup SaaS
@@ -868,8 +888,8 @@ export default function EmpresasNewPage() {
             <Card className="border-2 border-default-200">
               <CardBody className="p-6">
                 <p className="text-default-700 italic mb-4 leading-relaxed">
-                  "Subió la calidad del código, pero lo que más cambió fue la
-                  confianza entre las personas."
+                  &ldquo;Subió la calidad del código, pero lo que más cambió fue
+                  la confianza entre las personas.&rdquo;
                 </p>
                 <p className="text-sm font-bold text-foreground">
                   — Líder Técnico, EdTech
@@ -901,6 +921,9 @@ export default function EmpresasNewPage() {
         </div>
       </section>
 
+      {/* TESTIMONIOS REALES DE ODISEO */}
+      <TestimoniosOdiseoSection />
+
       {/* CTA FINAL - Potente */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary via-[#0d4746] to-[#083635] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -917,9 +940,12 @@ export default function EmpresasNewPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6"
               variants={fadeIn}
             >
-              ¿Tu equipo está{" "}
-              <span className="text-brand">funcionando</span>... o solo{" "}
-              <span className="text-brand underline decoration-wavy">sobreviviendo</span>?
+              ¿Tu equipo está <span className="text-brand">funcionando</span>...
+              o solo{" "}
+              <span className="text-brand underline decoration-wavy">
+                sobreviviendo
+              </span>
+              ?
             </motion.h2>
             <motion.p
               className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed"

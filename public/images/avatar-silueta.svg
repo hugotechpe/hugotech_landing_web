@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular gris claro -->
+  <circle cx="100" cy="100" r="100" fill="#E5E7EB"/>
+  
+  <!-- Silueta de persona -->
+  <g transform="translate(100, 100)">
+    <!-- Cabeza -->
+    <circle cx="0" cy="-20" r="30" fill="#9CA3AF"/>
+    
+    <!-- Cuerpo -->
+    <path d="M -45 80 Q -45 20, -30 20 L 30 20 Q 45 20, 45 80 L 45 100 L -45 100 Z" fill="#9CA3AF"/>
+  </g>
+</svg>

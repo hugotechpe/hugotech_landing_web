@@ -14,9 +14,9 @@ export const components: PortableTextComponents = {
         <figure className="my-8">
           <div className="relative aspect-video w-full overflow-hidden rounded-xl">
             <Image
+              fill
               alt={value.alt || "Imagen del post"}
               className="object-cover"
-              fill
               src={urlFor(value).width(1200).url()}
             />
           </div>
@@ -38,10 +38,11 @@ export const components: PortableTextComponents = {
         <div className="my-8">
           <div className="relative aspect-video w-full overflow-hidden rounded-xl">
             <iframe
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               className="absolute inset-0 h-full w-full"
               src={`https://www.youtube.com/embed/${videoId}`}
+              title="Video de YouTube"
             />
           </div>
         </div>
@@ -63,7 +64,9 @@ export const components: PortableTextComponents = {
         {children}
       </blockquote>
     ),
-    normal: ({ children }) => <p className="mb-4 leading-relaxed">{children}</p>,
+    normal: ({ children }) => (
+      <p className="mb-4 leading-relaxed">{children}</p>
+    ),
   },
   list: {
     bullet: ({ children }) => (
@@ -80,10 +83,10 @@ export const components: PortableTextComponents = {
 
       return (
         <a
+          className="text-primary underline hover:text-primary-600"
           href={value.href}
           rel={rel}
           target={target}
-          className="text-primary underline hover:text-primary-600"
         >
           {children}
         </a>

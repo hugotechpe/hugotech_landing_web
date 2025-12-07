@@ -10,7 +10,11 @@ interface ShareButtonsProps {
   description?: string;
 }
 
-export default function ShareButtons({ url, title, description }: ShareButtonsProps) {
+export default function ShareButtons({
+  url,
+  title,
+  description,
+}: ShareButtonsProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -19,7 +23,6 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
 
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
-  const encodedDescription = encodeURIComponent(description || "");
 
   const shareLinks = {
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
@@ -30,9 +33,13 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
 
   const handleShare = async (platform?: string) => {
     if (!isMounted) return;
-    
+
     if (platform && shareLinks[platform as keyof typeof shareLinks]) {
-      window.open(shareLinks[platform as keyof typeof shareLinks], "_blank", "width=600,height=400");
+      window.open(
+        shareLinks[platform as keyof typeof shareLinks],
+        "_blank",
+        "width=600,height=400",
+      );
     } else if (typeof window !== "undefined" && "share" in navigator) {
       try {
         await navigator.share({
@@ -40,8 +47,8 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
           text: description,
           url,
         });
-      } catch (err) {
-        console.log("Error sharing:", err);
+      } catch {
+        // Error sharing - usuario canceló o no soportado
       }
     }
   };
@@ -53,39 +60,39 @@ export default function ShareButtons({ url, title, description }: ShareButtonsPr
   return (
     <div className="flex flex-wrap items-center justify-center gap-3">
       <Button
-        size="sm"
-        variant="flat"
         color="primary"
+        size="sm"
         startContent={<Linkedin size={18} />}
+        variant="flat"
         onPress={() => handleShare("linkedin")}
       >
         LinkedIn
       </Button>
 
       <Button
-        size="sm"
-        variant="flat"
         color="primary"
+        size="sm"
         startContent={<Facebook size={18} />}
+        variant="flat"
         onPress={() => handleShare("facebook")}
       >
         Facebook
       </Button>
 
       <Button
-        size="sm"
-        variant="flat"
         color="primary"
+        size="sm"
         startContent={<Twitter size={18} />}
+        variant="flat"
         onPress={() => handleShare("twitter")}
       >
         Twitter
       </Button>
 
       <Button
+        color="success"
         size="sm"
         variant="flat"
-        color="success"
         onPress={() => handleShare("whatsapp")}
       >
         WhatsApp
