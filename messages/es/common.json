@@ -139,6 +139,23 @@
           }
         ]
       },
+      "blog": {
+        "title": "📝 Blog Destacado",
+        "items": [
+          {
+            "label": "¿Estancado siendo Senior Developer?",
+            "href": "/es/blog/estancamiento-senior-developer-2026"
+          },
+          {
+            "label": "Burnout Silencioso en Tech",
+            "href": "/es/blog/burnout-silencioso-tech-2026"
+          },
+          {
+            "label": "Liderazgo para Tech Leads Introvertidos",
+            "href": "/es/blog/liderazgo-tech-leads-introvertidos-2026"
+          }
+        ]
+      },
       "newsletter": {
         "title": "Únete a la Conversación 💬",
         "description": "Recibe reflexiones tech con propósito: mentalidad, IA humanizada, liderazgo consciente y herramientas para crecer sin quemarte. Un correo semanal, cero spam.",

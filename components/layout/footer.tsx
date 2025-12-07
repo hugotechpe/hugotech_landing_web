@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
   const legalLinks = messages?.Sections?.Footer?.legal?.links ?? [];
   const menuItems = messages?.Sections?.Footer?.menu?.items ?? [];
   const trackItems = messages?.Sections?.Footer?.tracks?.items ?? [];
+  const blogItems = messages?.Sections?.Footer?.blog?.items ?? [];
   const newsletter = messages?.Sections?.Footer?.newsletter ?? {};
   const mission = messages?.Sections?.Footer?.mission ?? {};
   const vision = messages?.Sections?.Footer?.vision ?? {};
@@ -51,7 +52,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Información de Contacto Directo */}
           <section aria-labelledby="footer-contact">
             <h2 className="text-lg font-bold mb-4" id="footer-contact">
@@ -176,6 +177,31 @@ const Footer: React.FC = () => {
               </ul>
             </nav>
           </section>
+
+          {/* Blog Destacado */}
+          {blogItems.length > 0 && (
+            <section aria-labelledby="footer-blog">
+              <h2 className="text-lg font-bold" id="footer-blog">
+                {t("blog.title")}
+              </h2>
+              <nav aria-label={t("blog.title")}>
+                <ul className="mt-4 space-y-6">
+                  {blogItems.map(
+                    (item: { label: string; href: string }, idx: number) => (
+                      <li key={`blog-${idx}`}>
+                        <Link
+                          className="text-white hover:text-brand transition-colors text-sm"
+                          href={item.href}
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ),
+                  )}
+                </ul>
+              </nav>
+            </section>
+          )}
 
           {/* Newsletter */}
           <section aria-labelledby="footer-newsletter">
