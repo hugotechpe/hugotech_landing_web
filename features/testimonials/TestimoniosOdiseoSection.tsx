@@ -3,9 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Chip } from "@heroui/chip";
+import { useLocale } from "next-intl";
 
 import TestimonioCard from "@/components/cards/TestimonioCard";
 import { getTestimoniosOdiseo } from "@/features/testimonials/enums/testimonios-odiseo";
+import { getTestimoniosOdiseoEn } from "@/features/testimonials/enums/testimonios-odiseo-en";
 
 /**
  * Sección de testimonios del programa Odiseo (Vonex)
@@ -16,10 +18,12 @@ import { getTestimoniosOdiseo } from "@/features/testimonials/enums/testimonios-
  * - Soporte para testimonios anónimos
  * - Tags de impacto
  * - Animaciones sutiles
+ * - Soporte multiidioma (ES/EN)
  */
 
 export function TestimoniosOdiseoSection() {
-  const testimonios = getTestimoniosOdiseo();
+  const locale = useLocale();
+  const testimonios = locale === "en" ? getTestimoniosOdiseoEn() : getTestimoniosOdiseo();
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
