@@ -208,19 +208,67 @@ export const faqSchema = (faqs: { question: string; answer: string }[]) => ({
   })),
 });
 
-// Schema.org para AggregateRating (de testimonios)
-export const aggregateRatingSchema = {
+// Schema.org para LocalBusiness + AggregateRating (SEO Local Lima/Perú)
+export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "HugoTech",
-  image: "https://hugotech.pe/logo.png",
+  "@type": "ProfessionalService",
+  "@id": "https://hugotech.pe/#business",
+  name: "HugoTech - Coaching Tech y Mentoría para Programadores",
+  alternateName: "HugoTech Perú",
+  description:
+    "Especialistas en Coaching Tech y mentoría para programadores en Lima, Perú. Ayudamos a desarrolladores, tech leads y engineering managers a crecer profesionalmente sin sacrificar su bienestar. Coaching anti-burnout, liderazgo técnico y desarrollo de carrera tech.",
   url: "https://hugotech.pe",
-  telephone: "+51-XXX-XXX-XXX",
+  logo: "https://hugotech.pe/logo.png",
+  image: "https://hugotech.pe/images/hugo-casanova.jpg",
+  telephone: "+51-999-999-999", // Actualizar con número real si aplica
+  email: "hola@hugotech.pe",
   address: {
     "@type": "PostalAddress",
     addressCountry: "PE",
-    addressLocality: "Lima",
+    addressRegion: "Lima",
+    addressLocality: "Lima", // Actualizar a Miraflores si aplica
+    postalCode: "15074", // Ejemplo, actualizar si necesario
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -12.0464, // Coordenadas genéricas de Lima, actualizar si aplica
+    longitude: -77.0428,
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Lima",
+    },
+    {
+      "@type": "Country",
+      name: "Perú",
+    },
+    {
+      "@type": "Place",
+      name: "América Latina",
+    },
+  ],
+  serviceType: [
+    "Coaching Tech",
+    "Mentoría para Programadores",
+    "Coaching de Carrera Tecnológica",
+    "Liderazgo Técnico",
+    "Coaching Anti-Burnout Tech",
+    "Technical Leadership Coaching",
+    "Career Coaching para Developers",
+  ],
+  knowsAbout: [
+    "Coaching Tecnológico",
+    "Mentoría Tech",
+    "Desarrollo de Carrera para Programadores",
+    "Liderazgo Técnico",
+    "Prevención de Burnout en Tech",
+    "Coaching para Tech Leads",
+    "Transición de Carrera Tech",
+  ],
+  priceRange: "Gratuito - S/35",
+  currenciesAccepted: "PEN, USD",
+  paymentAccepted: "Donación voluntaria",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -229,8 +277,20 @@ export const aggregateRatingSchema = {
     ratingCount: "200",
     reviewCount: "200",
   },
-  priceRange: "Gratis - Consultar",
+  founder: {
+    "@type": "Person",
+    name: "Hugo Casanova",
+    jobTitle: "Technical Coach y Mentor para Programadores",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/hugocasanovam",
+    "https://www.instagram.com/hugotechpe",
+    "https://www.facebook.com/hugotechpe",
+  ],
 };
+
+// Backward compatibility: aggregateRatingSchema apunta a localBusinessSchema
+export const aggregateRatingSchema = localBusinessSchema;
 
 // Schema.org para Breadcrumb
 export const getBreadcrumbSchema = (

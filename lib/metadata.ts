@@ -94,8 +94,18 @@ export const pageMetadata = {
     es: {
       title: "Mentoría para Programadores y Coaching Tech | Hugotech Perú",
       description:
-        "Acompañamos a jóvenes talentos tech en su desarrollo humano y profesional. Mentoring de carrera TI, liderazgo técnico y coaching por donación voluntaria. Evita el burnout y crece con propósito.",
+        "Coaching Tech y mentoría para programadores en Lima, Perú. Acompañamos a desarrolladores, tech leads y managers en su crecimiento profesional. Anti-burnout, liderazgo técnico y carrera tech. Primera sesión gratuita.",
       keywords: [
+        "coaching tech Lima",
+        "coaching tech Perú",
+        "mentoría para programadores Lima",
+        "technical coach Perú",
+        "coaching para desarrolladores",
+        "mentor programadores Lima",
+        "liderazgo técnico Lima",
+        "burnout tech Perú",
+        "coaching tecnológico Lima",
+        "mentor tech leads Perú",
         "mentoring para programadores",
         "habilidades que la IA no puede reemplazar",
         "cómo superar síndrome del impostor en tecnología",
@@ -107,10 +117,14 @@ export const pageMetadata = {
       ],
     },
     en: {
-      title: "HugoTech - Tech Mentoring with Purpose in the AI Era",
+      title: "Tech Coaching & Mentoring for Developers | HugoTech Peru",
       description:
-        "I accompany young tech talents to find their professional purpose. Free 1-on-1 coaching and tech mentoring sessions. Avoid burnout, build a sustainable career.",
+        "Tech coaching and mentoring for programmers in Lima, Peru. We help developers, tech leads and managers grow professionally. Anti-burnout, technical leadership and tech career. First session free.",
       keywords: [
+        "tech coaching Lima",
+        "tech coaching Peru",
+        "mentoring for developers Lima",
+        "technical coach Peru",
         "tech mentoring",
         "technology coaching",
         "professional development",
@@ -213,10 +227,12 @@ export const pageMetadata = {
     es: {
       title: "Mentoring de Carrera TI y Liderazgo Técnico (1 a 1) | HugoTech",
       description:
-        "Sesiones 1 a 1 de mentoring para desarrolladores y líderes tech. Plan de carrera, transición laboral, liderazgo técnico. Evita el burnout y crece con claridad y propósito en tecnología.",
+        "Sesiones 1-1 de mentoring para desarrolladores y líderes tech en Lima, Perú. Plan de carrera, transición laboral, liderazgo técnico. Evita el burnout y crece con claridad y propósito.",
       keywords: [
         "mentoring de carrera TI",
-        "mentor para desarrolladores",
+        "mentor para desarrolladores Lima",
+        "mentor programadores Perú",
+        "coaching tech Lima",
         "plan de carrera ingeniero software",
         "coaching liderazgo técnico",
         "transición de carrera tech",
@@ -241,12 +257,13 @@ export const pageMetadata = {
 
   coaching: {
     es: {
-      title: "Coaching Personal 1 a 1 - Transformación desde el Ser | HugoTech",
+      title: "Coaching Personal 1-1 - Transformación desde el Ser | HugoTech",
       description:
-        "Sesiones de coaching individual para autoconocimiento, claridad mental y propósito de vida. 45 minutos de exploración profunda y transformación personal auténtica.",
+        "Sesiones de coaching individual en Lima, Perú para autoconocimiento, claridad mental y propósito de vida. 45 minutos de exploración profunda y transformación personal auténtica.",
       keywords: [
-        "coaching personal",
-        "coaching individual",
+        "coaching personal Lima",
+        "coaching individual Perú",
+        "coaching tech Lima",
         "autoconocimiento",
         "transformación personal",
         "propósito de vida",
