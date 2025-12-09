@@ -1,8 +1,6 @@
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { use } from "react";
 import NextLink from "next/link";
 
 type Props = {
@@ -20,10 +18,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function GlosarioIndexPage({ params }: Props) {
-  const resolvedParams = use(params);
-  const { locale } = resolvedParams;
-  const t = useTranslations("GlosarioIndex");
+export default async function GlosarioIndexPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "GlosarioIndex" });
   const isSpanish = locale === "es";
 
   const glosarioPages = [

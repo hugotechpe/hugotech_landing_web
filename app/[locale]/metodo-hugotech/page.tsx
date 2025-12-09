@@ -1,9 +1,7 @@
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { use } from "react";
 
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { Link } from "@/i18n/navigation";
@@ -28,10 +26,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function MetodoHugotechPage({ params }: Props) {
-  const resolvedParams = use(params);
-  const { locale } = resolvedParams;
-  const t = useTranslations("MetodoHugotech");
+export default async function MetodoHugotechPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "MetodoHugotech" });
   const isSpanish = locale === "es";
 
   const breadcrumbItems = [

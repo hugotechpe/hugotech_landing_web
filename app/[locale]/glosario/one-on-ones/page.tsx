@@ -1,8 +1,6 @@
 import { Card, CardBody } from "@heroui/card";
-import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations} from "next-intl/server";
 import { Button } from "@heroui/button";
-import { use } from "react";
 
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { Link } from "@/i18n/navigation";
@@ -55,10 +53,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function OneOnOnesPage({ params }: Props) {
-  const resolvedParams = use(params);
-  const { locale } = resolvedParams;
-  const t = useTranslations("OneOnOnes");
+export default async function OneOnOnesPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "OneOnOnes" });
   const isSpanish = locale === "es";
 
   const breadcrumbItems = [

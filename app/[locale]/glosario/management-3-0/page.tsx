@@ -1,8 +1,6 @@
 import { Card, CardBody } from "@heroui/card";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@heroui/button";
-import { use } from "react";
 
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { Link } from "@/i18n/navigation";
@@ -55,10 +53,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function Management30Page({ params }: Props) {
-  const resolvedParams = use(params);
-  const { locale } = resolvedParams;
-  const t = useTranslations("Management30");
+export default async function Management30Page({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Management30" });
   const isSpanish = locale === "es";
 
   const breadcrumbItems = [
