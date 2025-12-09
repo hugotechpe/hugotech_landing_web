@@ -2,15 +2,17 @@ import { Card, CardBody } from "@heroui/card";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@heroui/button";
+import { use } from "react";
 
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { Link } from "@/i18n/navigation";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
   const t = await getTranslations({
     locale,
     namespace: "LiderazgoIntrovertidos",
@@ -56,9 +58,9 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-export default function LiderazgoIntrovertidosPage({
-  params: { locale },
-}: Props) {
+export default function LiderazgoIntrovertidosPage({ params }: Props) {
+  const resolvedParams = use(params);
+  const { locale } = resolvedParams;
   const t = useTranslations("LiderazgoIntrovertidos");
   const isSpanish = locale === "es";
 

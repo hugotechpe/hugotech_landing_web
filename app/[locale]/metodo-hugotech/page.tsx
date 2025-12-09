@@ -3,15 +3,17 @@ import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { use } from "react";
 
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { Link } from "@/i18n/navigation";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "MetodoHugotech" });
 
   return {
@@ -26,7 +28,9 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-export default function MetodoHugotechPage({ params: { locale } }: Props) {
+export default function MetodoHugotechPage({ params }: Props) {
+  const resolvedParams = use(params);
+  const { locale } = resolvedParams;
   const t = useTranslations("MetodoHugotech");
   const isSpanish = locale === "es";
 
