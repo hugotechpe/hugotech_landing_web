@@ -14,6 +14,7 @@ import {
   GoogleTagManagerNoScript,
 } from "@/components/analytics/GoogleTagManager";
 import { AlternateLinks } from "@/components/seo/AlternateLinks";
+import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hugotech.pe"),
@@ -128,6 +129,8 @@ export default async function RootLayout({
           fontQuote.variable,
         )}
       >
+        {/* Schema.org Person markup for Hugo Casanova - GEO optimization */}
+        <PersonSchema />
         <GoogleTagManagerNoScript />
         <Providers
           locale={locale}
