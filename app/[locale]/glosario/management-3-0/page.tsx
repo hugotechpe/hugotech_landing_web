@@ -1,424 +1,179 @@
+import { setRequestLocale } from "next-intl/server";
 import { Card, CardBody } from "@heroui/card";
-import { getTranslations } from "next-intl/server";
-import { Button } from "@heroui/button";
+import { Chip } from "@heroui/chip";
+import { generateMetadata as genMetadata } from "@/lib/metadata";
 
-import { Breadcrumb } from "@/components/seo/Breadcrumb";
-import { Link } from "@/i18n/navigation";
-
-type Props = {
+export async function generateMetadata({
+  params,
+}: {
   params: Promise<{ locale: string }>;
-};
-
-export async function generateMetadata({ params }: Props) {
+}) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Management30" });
 
-  const title = t("metaTitle");
-  const description = t("metaDescription");
-  const canonicalUrl = `https://www.hugotech.pe/${locale}/glosario/management-3-0`;
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        es: "https://www.hugotech.pe/es/glosario/management-3-0",
-        en: "https://www.hugotech.pe/en/glosario/management-3-0",
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      siteName: "HugoTech",
-      images: [
-        {
-          url: "https://www.hugotech.pe/images/og-image.jpg",
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
-      locale: locale === "es" ? "es_PE" : "en_US",
-      type: "article",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: ["https://www.hugotech.pe/images/og-image.jpg"],
-      creator: "@hugotechpe",
-    },
-  };
+  return genMetadata({
+    title:
+      locale === "es"
+        ? "Management 3.0: Liderazgo Ágil para Equipos Tech | HugoTech"
+        : "Management 3.0: Agile Leadership for Tech Teams | HugoTech",
+    description:
+      locale === "es"
+        ? "Descubre Management 3.0: el framework de liderazgo moderno para equipos tech. Energizar personas, empowerment, alinear restricciones. En 2025, es más relevante que nunca."
+        : "Discover Management 3.0: the modern leadership framework for tech teams. Energize people, empowerment, align constraints. In 2025, it's more relevant than ever.",
+    keywords:
+      locale === "es"
+        ? ["management 3.0", "liderazgo ágil", "equipos tech", "empowerment", "jurgen appelo"]
+        : ["management 3.0", "agile leadership", "tech teams", "empowerment", "jurgen appelo"],
+    locale,
+    path: "glosario/management-3-0",
+  });
 }
 
-export default async function Management30Page({ params }: Props) {
+export default async function Management30Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Management30" });
-  const isSpanish = locale === "es";
 
-  const breadcrumbItems = [
-    { name: isSpanish ? "Inicio" : "Home", url: `/${locale}` },
-    { name: isSpanish ? "Glosario" : "Glossary", url: `/${locale}/glosario` },
-    { name: t("title"), url: `/${locale}/glosario/management-3-0` },
-  ];
+  setRequestLocale(locale);
 
   return (
-    <>
-      <Breadcrumb items={breadcrumbItems} />
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-customgray mb-6">
-          {t("title")}
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="text-center mb-16">
+        <Chip className="mb-6" color="primary" size="lg" variant="flat">
+          {locale === "es" ? "Framework de Liderazgo" : "Leadership Framework"}
+        </Chip>
+        <h1 className="text-5xl md:text-6xl font-bold text-customgray mb-6">
+          Management 3.0
         </h1>
-
-        <p className="text-xl text-default-700 leading-relaxed mb-8">
-          {t("subtitle")}
+        <p className="text-2xl text-default-700 max-w-3xl mx-auto">
+          {locale === "es"
+            ? "El framework de liderazgo moderno que transforma equipos jerárquicos en sistemas adaptativos, creativos y autogestionados."
+            : "The modern leadership framework that transforms hierarchical teams into adaptive, creative and self-managed systems."}
         </p>
-
-        {/* Definición */}
-        <section className="mb-12">
-          <Card>
-            <CardBody className="p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-customgray mb-4">
-                {t("definition.title")}
-              </h2>
-              <p className="text-lg text-default-700 leading-relaxed mb-4">
-                {t("definition.content")}
-              </p>
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <p className="text-default-700 leading-relaxed">
-                  <strong>{t("definition.creator")}</strong>{" "}
-                  {t("definition.creatorText")}
-                </p>
-              </div>
-            </CardBody>
-          </Card>
-        </section>
-
-        {/* Los 6 Principios de Management 3.0 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {t("principles.title")}
-          </h2>
-
-          <div className="space-y-6">
-            <Card className="border-l-4 border-green-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  1. 🌱 {t("principles.energize.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.energize.content")}
-                </p>
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.energize.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-blue-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  2. 💪 {t("principles.empower.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.empower.content")}
-                </p>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.empower.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-purple-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  3. 🎯 {t("principles.align.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.align.content")}
-                </p>
-                <div className="bg-purple-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.align.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-orange-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  4. 📚 {t("principles.develop.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.develop.content")}
-                </p>
-                <div className="bg-orange-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.develop.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-pink-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  5. 🌟 {t("principles.grow.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.grow.content")}
-                </p>
-                <div className="bg-pink-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.grow.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-indigo-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  6. 🔄 {t("principles.improve.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("principles.improve.content")}
-                </p>
-                <div className="bg-indigo-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "En la práctica:" : "In practice:"}
-                    </strong>{" "}
-                    {t("principles.improve.practice")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-          </div>
-        </section>
-
-        {/* Herramientas Prácticas */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {t("tools.title")}
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-gradient-to-br from-blue-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">🎲</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("tools.delegation.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("tools.delegation.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-green-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">🎉</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("tools.kudos.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("tools.kudos.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-purple-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("tools.okr.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("tools.okr.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-orange-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">🗺️</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("tools.competency.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("tools.competency.content")}
-                </p>
-              </CardBody>
-            </Card>
-          </div>
-        </section>
-
-        {/* Management 3.0 en la Era de la IA (2025) */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {isSpanish
-              ? "Management 3.0 en la Era de la IA (2025)"
-              : "Management 3.0 in the AI Era (2025)"}
-          </h2>
-
-          <Card className="bg-gradient-to-br from-teal-50 to-white border-l-4 border-teal-500">
-            <CardBody className="p-6 md:p-8">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-5xl">🤖</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-customgray mb-4">
-                    {isSpanish
-                      ? "¿Cómo Management 3.0 se vuelve más relevante con la IA?"
-                      : "How Management 3.0 becomes more relevant with AI?"}
-                  </h3>
-                  <p className="text-lg text-default-700 leading-relaxed mb-4">
-                    {isSpanish
-                      ? "En 2025, la IA automatiza tareas, pero Management 3.0 es más necesario que nunca porque:"
-                      : "In 2025, AI automates tasks, but Management 3.0 is more necessary than ever because:"}
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border border-teal-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🧠</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "La IA no puede energizar personas"
-                          : "AI cannot energize people"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Copilot genera código, pero no puede motivar a un developer que perdió la pasión. Management 3.0 enseña a reconectar a tu equipo con su propósito, algo que ninguna IA puede hacer."
-                          : "Copilot generates code, but can't motivate a developer who lost passion. Management 3.0 teaches how to reconnect your team with their purpose, something no AI can do."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-teal-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🎯</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Empoderamiento es crítico cuando la IA hace todo"
-                          : "Empowerment is critical when AI does everything"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Si la IA genera código, ¿qué rol le queda al developer? Management 3.0 enseña a empoderar equipos para tomar decisiones arquitectónicas, de producto, y de impacto, no solo escribir código."
-                          : "If AI generates code, what role does the developer have? Management 3.0 teaches how to empower teams to make architectural, product, and impact decisions, not just write code."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-teal-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🌱</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Competencias humanas se vuelven el diferenciador"
-                          : "Human competencies become the differentiator"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "La IA escribe código técnico perfecto. Pero las competencias de Management 3.0 (comunicación, empatía, liderazgo, creatividad) son imposibles de automatizar y determinan quién avanza en su carrera."
-                          : "AI writes perfect technical code. But Management 3.0 competencies (communication, empathy, leadership, creativity) are impossible to automate and determine who advances in their career."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-teal-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🔄</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Mejora continua incluye ahora 'usar IA correctamente'"
-                          : "Continuous improvement now includes 'using AI correctly'"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Management 3.0 siempre promovió experimentación. En 2025, incluye experimentar con IA: ¿Cuándo usamos Copilot? ¿Cuándo escribimos código manualmente? ¿Cómo validamos código generado por IA?"
-                          : "Management 3.0 always promoted experimentation. In 2025, it includes experimenting with AI: When do we use Copilot? When do we write code manually? How do we validate AI-generated code?"}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 bg-teal-100 p-4 rounded-lg">
-                <p className="text-default-700 leading-relaxed">
-                  <strong>
-                    {isSpanish
-                      ? "En 2025, Management 3.0 no compite con la IA: la complementa."
-                      : "In 2025, Management 3.0 doesn't compete with AI: it complements it."}
-                  </strong>{" "}
-                  {isSpanish
-                    ? "Los mejores líderes tech usan IA para acelerar ejecución, pero aplican Management 3.0 para mantener equipos motivados, empoderados, alineados y en constante evolución. La tecnología cambia, pero las personas siguen siendo el corazón de todo."
-                    : "The best tech leaders use AI to accelerate execution, but apply Management 3.0 to keep teams motivated, empowered, aligned and constantly evolving. Technology changes, but people remain at the heart of everything."}
-                </p>
-              </div>
-            </CardBody>
-          </Card>
-        </section>
-
-        {/* CTA Section */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-br from-primary to-primary-600 text-white">
-            <CardBody className="p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4">
-                {isSpanish
-                  ? "¿Quieres liderar con Management 3.0?"
-                  : "Want to lead with Management 3.0?"}
-              </h2>
-              <p className="text-xl mb-6 text-white/90">
-                {isSpanish
-                  ? "Te ayudo a implementar Management 3.0 en tu equipo tech."
-                  : "I help you implement Management 3.0 in your tech team."}
-              </p>
-              <Button
-                as={Link}
-                className="font-semibold"
-                color="default"
-                href={`/${locale}`}
-                size="lg"
-              >
-                {isSpanish ? "Agenda tu sesión" : "Schedule your session"}
-              </Button>
-            </CardBody>
-          </Card>
-        </section>
       </div>
-    </>
+
+      <section className="mb-16">
+        <Card>
+          <CardBody className="p-8 md:p-12">
+            <h2 className="text-3xl font-bold text-customgray mb-6">
+              {locale === "es" ? "¿Qué es Management 3.0?" : "What is Management 3.0?"}
+            </h2>
+            <p className="text-xl text-default-700 leading-relaxed mb-4">
+              {locale === "es"
+                ? "Management 3.0 es un conjunto de juegos, herramientas y prácticas que ayuda a líderes y equipos a trabajar con una mentalidad ágil y centrada en las personas. No es una metodología rígida, sino una filosofía de liderazgo que reconoce que las organizaciones son sistemas complejos donde las personas importan más que los procesos."
+                : "Management 3.0 is a set of games, tools and practices that helps leaders and teams work with an agile and people-centered mindset. It's not a rigid methodology, but a leadership philosophy that recognizes that organizations are complex systems where people matter more than processes."}
+            </p>
+            <p className="text-lg text-default-600">
+              {locale === "es"
+                ? "Creado por Jurgen Appelo, Management 3.0 surge como respuesta a los modelos tradicionales de management (comando-control) y propone que los mejores resultados vienen de equipos empoderados, motivados y alineados con el propósito."
+                : "Created by Jurgen Appelo, Management 3.0 emerges as a response to traditional management models (command-control) and proposes that the best results come from empowered, motivated and purpose-aligned teams."}
+            </p>
+          </CardBody>
+        </Card>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold text-customgray mb-8">
+          {locale === "es"
+            ? "Los 6 Principios de Management 3.0"
+            : "The 6 Principles of Management 3.0"}
+        </h2>
+
+        <div className="space-y-6">
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es" ? "1. Energizar a las personas" : "1. Energize people"}
+              </h3>
+              <p className="text-default-700 mb-3">
+                {locale === "es"
+                  ? "Las personas felices, motivadas y conectadas con su propósito trabajan mejor. El rol del líder es crear un ambiente donde las personas se sientan valoradas, escuchadas y con autonomía."
+                  : "Happy, motivated people connected to their purpose work better. The leader's role is to create an environment where people feel valued, heard and autonomous."}
+              </p>
+              <p className="text-sm text-default-600 italic">
+                {locale === "es"
+                  ? "Práctica: Celebrar logros del equipo, hacer retrospectivas enfocadas en aprendizajes (no culpas), y dar espacio para experimentación."
+                  : "Practice: Celebrate team achievements, hold retrospectives focused on learnings (not blame), and give space for experimentation."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es" ? "2. Empoderar equipos" : "2. Empower teams"}
+              </h3>
+              <p className="text-default-700 mb-3">
+                {locale === "es"
+                  ? "Los equipos deben tener autoridad para tomar decisiones sin pedir permiso constantemente. El líder no controla, facilita. La autonomía genera compromiso."
+                  : "Teams must have authority to make decisions without constantly asking permission. The leader doesn't control, they facilitate. Autonomy generates commitment."}
+              </p>
+              <p className="text-sm text-default-600 italic">
+                {locale === "es"
+                  ? "Práctica: Usar Delegation Poker para definir qué decisiones toma el equipo sin consultar, cuáles requieren consenso, y cuáles son del líder."
+                  : "Practice: Use Delegation Poker to define which decisions the team makes without consulting, which require consensus, and which are the leader's."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es" ? "3. Alinear restricciones" : "3. Align constraints"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "La libertad absoluta no funciona. Los equipos necesitan claridad sobre objetivos, valores, y límites. El líder define el 'marco' dentro del cual el equipo tiene autonomía."
+                  : "Absolute freedom doesn't work. Teams need clarity on objectives, values, and limits. The leader defines the 'framework' within which the team has autonomy."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "4. Desarrollar competencias"
+                  : "4. Develop competencies"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Las personas deben crecer constantemente en habilidades técnicas y blandas. El líder invierte en el desarrollo del equipo porque eso multiplica el impacto."
+                  : "People must constantly grow in technical and soft skills. The leader invests in team development because that multiplies impact."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "5. Hacer crecer la estructura"
+                  : "5. Grow the structure"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "La estructura organizacional debe evolucionar con el equipo. No aferrarse a jerarquías rígidas. Permitir que roles y responsabilidades cambien orgánicamente."
+                  : "Organizational structure must evolve with the team. Don't cling to rigid hierarchies. Allow roles and responsibilities to change organically."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es" ? "6. Mejorar continuamente" : "6. Improve continuously"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Nada es perfecto. La organización debe tener mecanismos para detectar qué no funciona, experimentar con cambios, y aprender rápido de los errores."
+                  : "Nothing is perfect. The organization must have mechanisms to detect what doesn't work, experiment with changes, and learn quickly from mistakes."}
+              </p>
+            </CardBody>
+          </Card>
+        </div>
+      </section>
+    </div>
   );
 }
