@@ -79,7 +79,8 @@
           { "label": "Mentor Coaching 1-on-1", "href": "/en/mentor-coaching" },
           { "label": "Coaching with a Cause 🌍💚", "href": "/en/coaching-con-causa" },
           { "label": "Book a session", "href": "/en/#cita" },
-          { "label": "Blog", "href": "/en/blog" }
+          { "label": "Blog", "href": "/en/blog" },
+          { "label": "Tech Glossary", "href": "/en/glosario" }
         ]
       },
       "tracks": {
@@ -2290,6 +2291,27 @@
       "title": "Ready to Transform Your Tech Career?",
       "subtitle": "Schedule a free exploratory session. We talk for 30 minutes about your situation, your goals, and whether the Hugotech Method is for you. No commitment. No aggressive sales. Just clarity.",
       "button": "Schedule Free Session"
+    }
+  },
+  "GlosarioIndex": {
+    "metaTitle": "Tech Glossary: Guides for Developers and Tech Leads | Hugo Casanova",
+    "metaDescription": "10 complete guides on tech leadership, soft skills, burnout, impostor syndrome, feedback, one-on-ones and more. Practical content for developers who want to grow.",
+    "keywords": "tech glossary, developer guides, tech lead, soft skills developers, tech burnout, impostor syndrome, technical feedback, management 3.0",
+    "hero": {
+      "badge": "Free Resources",
+      "title": "Tech Glossary",
+      "subtitle": "Practical guides on leadership, human skills, and wellbeing for developers who want to grow without burning out"
+    },
+    "categories": {
+      "roles": "Roles & Leadership",
+      "skills": "Human Skills",
+      "wellbeing": "Wellbeing",
+      "frameworks": "Frameworks & Methodologies"
+    },
+    "cta": {
+      "title": "Want to go further?",
+      "subtitle": "The Glossary gives you concepts. The Hugotech Method gives you real transformation with 1-on-1 mentoring.",
+      "button": "Learn About the Hugotech Method"
     }
   }
 }

@@ -56,6 +56,13 @@ const routes = [
     changeFrequency: "weekly" as const,
   },
 
+  // Glosario Index (High Priority - Hub Page)
+  {
+    path: "/glosario",
+    priority: 0.9,
+    changeFrequency: "weekly" as const,
+  },
+
   // Glosario Tech (High Priority SEO - Featured Snippets)
   {
     path: "/glosario/coaching-tech",

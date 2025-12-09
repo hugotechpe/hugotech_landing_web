@@ -115,6 +115,10 @@
           {
             "label": "Recursos",
             "href": "/es/blog"
+          },
+          {
+            "label": "Glosario Tech",
+            "href": "/es/glosario"
           }
         ]
       },
@@ -2422,6 +2426,27 @@
       "title": "¿Listo para Transformar Tu Carrera Tech?",
       "subtitle": "Agenda una sesión exploratoria gratuita. Conversamos 30 minutos sobre tu situación, tus metas, y si el Método Hugotech es para ti. Sin compromiso. Sin venta agresiva. Solo claridad.",
       "button": "Agendar Sesión Gratuita"
+    }
+  },
+  "GlosarioIndex": {
+    "metaTitle": "Glosario Tech: Guías para Desarrolladores y Tech Leads | Hugo Casanova",
+    "metaDescription": "10 guías completas sobre liderazgo tech, soft skills, burnout, síndrome del impostor, feedback, one-on-ones y más. Contenido práctico para developers que quieren crecer.",
+    "keywords": "glosario tech, guías para desarrolladores, tech lead, soft skills developers, burnout tech, síndrome impostor, feedback técnico, management 3.0",
+    "hero": {
+      "badge": "Recursos Gratuitos",
+      "title": "Glosario Tech",
+      "subtitle": "Guías prácticas sobre liderazgo, habilidades humanas, y bienestar para developers que quieren crecer sin quemarse"
+    },
+    "categories": {
+      "roles": "Roles & Liderazgo",
+      "skills": "Habilidades Humanas",
+      "wellbeing": "Bienestar",
+      "frameworks": "Frameworks & Metodologías"
+    },
+    "cta": {
+      "title": "¿Quieres ir más allá?",
+      "subtitle": "El Glosario te da conceptos. El Método Hugotech te da transformación real con mentoría 1-a-1.",
+      "button": "Conocer el Método Hugotech"
     }
   }
 }
