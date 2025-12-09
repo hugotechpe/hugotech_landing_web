@@ -188,7 +188,7 @@ export default async function MetodoHugotechPage({
                 ? "La primera sesión es 100% gratuita. Sin compromiso. Solo tú, yo, y un plan claro para tu siguiente nivel profesional."
                 : "The first session is 100% free. No commitment. Just you, me, and a clear plan for your next professional level."}
             </p>
-            <Link href={`/${locale}/pricing`}>
+            <Link href="/pricing">
               <Button color="primary" size="lg" className="font-semibold">
                 {locale === "es" ? "Agenda tu Sesión Gratuita" : "Schedule Your Free Session"}
               </Button>

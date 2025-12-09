@@ -14,6 +14,7 @@ export const routing = defineRouting({
       es: "/coaching-con-causa",
       en: "/coaching-with-purpose",
     },
+    "/pricing": { es: "/pricing", en: "/pricing" },
     "/faq": { es: "/faq", en: "/faq" },
     "/terms": { es: "/terms", en: "/terms" },
     "/privacy": { es: "/privacy", en: "/privacy" },
