@@ -22,6 +22,16 @@ export default function FAQPage() {
 
   // Preguntas frecuentes para JSON-LD
   const faqItems = [
+    "por-que-senior-necesita-mentor",
+    "como-ayuda-mentor-burnout",
+    "diferencia-mentor-coach-tech",
+    "habilidades-ia-no-reemplaza",
+    "sintomas-estancamiento-senior",
+    "cuando-buscar-mentor-tech",
+    "que-esperar-primera-sesion-mentor",
+    "como-prepararse-para-tech-lead",
+    "mentor-para-primer-empleo-tech",
+    "mentor-remoto-vs-presencial",
     "mentoring-gratis",
     "coaching-con-causa",
     "diferencia-coaching-mentoring",
@@ -74,6 +84,16 @@ export default function FAQPage() {
           >
             <div className="space-y-6">
               {[
+                "por-que-senior-necesita-mentor",
+                "como-ayuda-mentor-burnout",
+                "diferencia-mentor-coach-tech",
+                "habilidades-ia-no-reemplaza",
+                "sintomas-estancamiento-senior",
+                "cuando-buscar-mentor-tech",
+                "que-esperar-primera-sesion-mentor",
+                "como-prepararse-para-tech-lead",
+                "mentor-para-primer-empleo-tech",
+                "mentor-remoto-vs-presencial",
                 "mentoring-gratis",
                 "coaching-con-causa",
                 "diferencia-coaching-mentoring",

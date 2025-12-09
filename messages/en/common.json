@@ -1619,6 +1619,46 @@
       "subtitle": "Everything you need to know about tech mentoring with purpose, free sessions, and how to start your transformation"
     },
     "items": {
+      "por-que-senior-necesita-mentor": {
+        "question": "Why does a Senior Developer need a technical mentor?",
+        "answer": "A Senior Developer needs a technical mentor because professional growth doesn't end when you reach Senior level. The challenges change: it's no longer just about writing code, but leading architectures, mentoring juniors, communicating technical decisions to stakeholders, and navigating organizational politics. A technical mentor helps you see your blind spots, make strategic career decisions (Staff Engineer or Engineering Manager?), develop leadership skills without losing technical essence, and avoid the stagnation that affects 67% of seniors after 3 years in the same role."
+      },
+      "como-ayuda-mentor-burnout": {
+        "question": "How does a tech mentor help prevent developer burnout?",
+        "answer": "A tech mentor helps prevent burnout by identifying early signs like chronic fatigue, cynicism towards work, and loss of productivity. They teach you to establish healthy boundaries between work and personal life, communicate your workload assertively, recognize when a project or culture is toxic, and develop sustainable self-care strategies. Additionally, they help you reconnect with your professional purpose when you feel your work has no impact. Tech burnout isn't solved just with vacation: it's prevented with mindset, boundaries, and a mentor who understands industry pressure because they lived it."
+      },
+      "diferencia-mentor-coach-tech": {
+        "question": "What's the difference between a technical mentor and an executive coach?",
+        "answer": "A technical mentor has direct experience in technology (development, architecture, leading tech teams) and shares industry-specific knowledge. They guide you with real examples from their career, connect you with their professional network, and give you validated shortcuts to grow in tech. An executive coach focuses on general soft skills (leadership, communication, time management) without necessarily understanding the specific technical challenges of a developer: impostor syndrome in code reviews, anxiety about being technologically outdated, or how to lead distributed remote teams. A technical mentor combines both worlds: technical expertise + human development."
+      },
+      "habilidades-ia-no-reemplaza": {
+        "question": "What human skills can AI not replace in developers?",
+        "answer": "AI can generate code, but it cannot replace critical human skills in developers: empathetic communication with stakeholders to understand real needs beyond what they say, technical leadership that inspires and motivates distributed teams, architectural decision-making considering political and business factors, conflict management in code reviews without damaging relationships, creativity to solve ambiguous problems without clear specifications, mentorship that transforms juniors into seniors sustainably, and trust-building in teams that enables innovation without fear of failure. In 2025, the most valuable developers are those who combine technical expertise with emotional intelligence, systems thinking, and the ability to influence without formal authority."
+      },
+      "sintomas-estancamiento-senior": {
+        "question": "What are the symptoms of stagnation in a Senior Developer?",
+        "answer": "Symptoms of stagnation in a Senior Developer include: doing the same type of tasks repetitively without learning anything new, feeling your work is 'more of the same' without technical challenges, not receiving constructive feedback or promotions for more than 2 years, avoiding learning new technologies due to lack of motivation, intensified impostor syndrome ('I never know enough'), loss of passion for technology that used to excite you, and constantly questioning whether you should change companies, tech stack, or even careers. Stagnation isn't lack of talent: it's lack of clear direction and challenges that stretch you professionally."
+      },
+      "cuando-buscar-mentor-tech": {
+        "question": "When is the right time to seek a technical mentor?",
+        "answer": "The right time to seek a technical mentor is when you feel your growth has stalled, when you're in a career transition (from developer to tech lead, from backend to fullstack, from IC to management), when suffering from burnout or paralyzing impostor syndrome, when you rejected or accepted a job offer and now have doubts, when your company lacks seniors to learn from, or when you want to jump to Senior/Staff but don't know how. It's also critical to seek mentorship before making important decisions: changing companies, negotiating salary, choosing between two offers, or deciding whether to specialize or remain a generalist. A mentor saves you years of costly mistakes."
+      },
+      "que-esperar-primera-sesion-mentor": {
+        "question": "What can I expect from my first session with a technical mentor?",
+        "answer": "In your first session with a technical mentor you can expect an honest 45-60 minute conversation where we explore your current situation (career, challenges, goals), identify your strengths and blind spots you don't see alone, define your immediate objective (next 3-6 months), and design an initial action plan with concrete steps. It's not empty motivational talk: it's real diagnosis + applicable strategy. A good mentor asks uncomfortable questions that force you to reflect, gives you perspectives you hadn't considered, and challenges you to leave your comfort zone. If by the end you don't feel clarity or connection, that mentor isn't for you. The first session should leave you with renewed energy and clear direction."
+      },
+      "como-prepararse-para-tech-lead": {
+        "question": "How can a mentor help me prepare to be a Tech Lead?",
+        "answer": "A mentor helps you prepare to be a Tech Lead by developing skills you don't learn from programming: delegating without micromanaging, giving technical feedback without destroying team trust, negotiating realistic deadlines with product managers, communicating architectural decisions to non-technical stakeholders, effectively mentoring junior developers, handling difficult conversations (underperformance, conflicts), and balancing time between code and leadership. They share real experiences from their transition to Tech Lead, help you identify if leadership is your path or if you prefer the Staff/Principal Engineer route, and prepare you for the first 90 days in the role where 40% of new Tech Leads fail due to lack of clarity in their new professional identity."
+      },
+      "mentor-para-primer-empleo-tech": {
+        "question": "Can a mentor help me get my first tech job?",
+        "answer": "Yes, a tech mentor can accelerate your process to get your first job by teaching you to build a portfolio that demonstrates real skills (not just copied tutorials), prepare for technical interviews with algorithm and system design problems, develop communication skills to explain your code clearly, understand what recruiters look for in a junior (learning attitude, collaboration, autonomy), and connect you with their professional network for referrals (70% of tech jobs come from networking, not cold applications). They also help you manage emotional rejection from failed interviews, identify red flags in job offers, and negotiate your first salary without selling yourself cheap out of desperation."
+      },
+      "mentor-remoto-vs-presencial": {
+        "question": "Is 100% remote technical mentoring effective?",
+        "answer": "Yes, 100% remote technical mentoring is equally effective (sometimes more) than in-person because current tools (Zoom, Google Meet, VS Code Live Share, Miro, Notion) enable high-quality sessions with screen sharing, virtual pair programming, and collaborative documentation. Remote advantages include: schedule flexibility (ideal for different time zones), session recording for later review, access to international mentors with experience in USA/Europe companies you wouldn't have locally, elimination of commute time, and greater comfort discussing vulnerable topics (impostor syndrome, burnout, insecurities) from your safe space. 85% of tech mentoring post-2020 is remote and shows satisfaction rates similar to or higher than in-person."
+      },
       "mentoring-gratis": {
         "question": "Are the mentoring sessions really free?",
         "answer": "Yes, 1-on-1 sessions are 100% free. No fine print, no hidden agenda. It's my way of giving back to the world what life gave me. I want money not to be a barrier to your professional growth."
