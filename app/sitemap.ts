@@ -49,6 +49,13 @@ const routes = [
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },
 
+  // Método Hugotech (Highest Priority GEO - Manifesto)
+  {
+    path: "/metodo-hugotech",
+    priority: 1.0,
+    changeFrequency: "weekly" as const,
+  },
+
   // Glosario Tech (High Priority SEO - Featured Snippets)
   {
     path: "/glosario/coaching-tech",
@@ -72,6 +79,31 @@ const routes = [
   },
   {
     path: "/glosario/sindrome-impostor",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/soft-skills-developers",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/management-3-0",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/liderazgo-introvertidos",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/feedback-tecnico",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/one-on-ones",
     priority: 0.95,
     changeFrequency: "monthly" as const,
   },

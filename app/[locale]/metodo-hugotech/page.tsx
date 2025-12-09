@@ -734,7 +734,7 @@ export default function MetodoHugotechPage({ params: { locale } }: Props) {
               <div className="space-y-6">
                 <div className="border-l-4 border-primary pl-6">
                   <p className="text-lg italic text-default-700 mb-3">
-                    "{t("results.testimonial1.quote")}"
+                    &ldquo;{t("results.testimonial1.quote")}&rdquo;
                   </p>
                   <p className="text-default-600 font-semibold">
                     {t("results.testimonial1.author")}
@@ -743,7 +743,7 @@ export default function MetodoHugotechPage({ params: { locale } }: Props) {
 
                 <div className="border-l-4 border-primary pl-6">
                   <p className="text-lg italic text-default-700 mb-3">
-                    "{t("results.testimonial2.quote")}"
+                    &ldquo;{t("results.testimonial2.quote")}&rdquo;
                   </p>
                   <p className="text-default-600 font-semibold">
                     {t("results.testimonial2.author")}
@@ -752,7 +752,7 @@ export default function MetodoHugotechPage({ params: { locale } }: Props) {
 
                 <div className="border-l-4 border-primary pl-6">
                   <p className="text-lg italic text-default-700 mb-3">
-                    "{t("results.testimonial3.quote")}"
+                    &ldquo;{t("results.testimonial3.quote")}&rdquo;
                   </p>
                   <p className="text-default-600 font-semibold">
                     {t("results.testimonial3.author")}
