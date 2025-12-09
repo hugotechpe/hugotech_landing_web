@@ -1,462 +1,299 @@
+import { setRequestLocale } from "next-intl/server";
 import { Card, CardBody } from "@heroui/card";
-import { getTranslations } from "next-intl/server";
-import { Button } from "@heroui/button";
+import { Chip } from "@heroui/chip";
 
-import { Breadcrumb } from "@/components/seo/Breadcrumb";
-import { Link } from "@/i18n/navigation";
+import { generateMetadata as genMetadata } from "@/lib/metadata";
 
-type Props = {
+export async function generateMetadata({
+  params,
+}: {
   params: Promise<{ locale: string }>;
-};
-
-export async function generateMetadata({ params }: Props) {
+}) {
   const { locale } = await params;
-  const t = await getTranslations({
+
+  return genMetadata({
+    title:
+      locale === "es"
+        ? "Soft Skills para Developers: Comunicación, Liderazgo y Empatía | HugoTech"
+        : "Soft Skills for Developers: Communication, Leadership and Empathy | HugoTech",
+    description:
+      locale === "es"
+        ? "Descubre las 8 Soft Skills críticas que todo developer necesita para crecer: comunicación, colaboración, empatía, adaptabilidad. En 2025, las Soft Skills son tu ventaja competitiva frente a la IA."
+        : "Discover the 8 critical Soft Skills every developer needs to grow: communication, collaboration, empathy, adaptability. In 2025, Soft Skills are your competitive advantage against AI.",
+    keywords:
+      locale === "es"
+        ? [
+            "soft skills developers",
+            "habilidades blandas programadores",
+            "comunicación técnica",
+            "liderazgo developers",
+            "empatía tech",
+            "trabajo en equipo desarrollo",
+            "feedback técnico",
+            "adaptabilidad tech",
+          ]
+        : [
+            "soft skills developers",
+            "soft skills programmers",
+            "technical communication",
+            "developer leadership",
+            "tech empathy",
+            "teamwork development",
+            "technical feedback",
+            "tech adaptability",
+          ],
     locale,
-    namespace: "SoftSkillsDevelopers",
+    path: "glosario/soft-skills-developers",
   });
-
-  const title = t("metaTitle");
-  const description = t("metaDescription");
-  const canonicalUrl = `https://www.hugotech.pe/${locale}/glosario/soft-skills-developers`;
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        es: "https://www.hugotech.pe/es/glosario/soft-skills-developers",
-        en: "https://www.hugotech.pe/en/glosario/soft-skills-developers",
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      siteName: "HugoTech",
-      images: [
-        {
-          url: "https://www.hugotech.pe/images/og-image.jpg",
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
-      locale: locale === "es" ? "es_PE" : "en_US",
-      type: "article",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: ["https://www.hugotech.pe/images/og-image.jpg"],
-      creator: "@hugotechpe",
-    },
-  };
 }
 
-export default async function SoftSkillsDevelopersPage({ params }: Props) {
+export default async function SoftSkillsDevelopersPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "SoftSkillsDevelopers" });
-  const isSpanish = locale === "es";
 
-  const breadcrumbItems = [
-    { name: isSpanish ? "Inicio" : "Home", url: `/${locale}` },
-    { name: isSpanish ? "Glosario" : "Glossary", url: `/${locale}/glosario` },
-    { name: t("title"), url: `/${locale}/glosario/soft-skills-developers` },
-  ];
+  setRequestLocale(locale);
 
   return (
-    <>
-      <Breadcrumb items={breadcrumbItems} />
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-customgray mb-6">
-          {t("title")}
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      {/* Hero */}
+      <div className="text-center mb-16">
+        <Chip className="mb-6" color="primary" size="lg" variant="flat">
+          {locale === "es" ? "Habilidades Humanas" : "Human Skills"}
+        </Chip>
+        <h1 className="text-5xl md:text-6xl font-bold text-customgray mb-6">
+          {locale === "es"
+            ? "Soft Skills para Developers"
+            : "Soft Skills for Developers"}
         </h1>
-
-        <p className="text-xl text-default-700 leading-relaxed mb-8">
-          {t("subtitle")}
+        <p className="text-2xl text-default-700 max-w-3xl mx-auto">
+          {locale === "es"
+            ? "Las habilidades humanas que la IA no puede reemplazar y que determinan quién avanza en su carrera tech."
+            : "The human skills that AI cannot replace and that determine who advances in their tech career."}
         </p>
-
-        {/* Definición */}
-        <section className="mb-12">
-          <Card>
-            <CardBody className="p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-customgray mb-4">
-                {t("definition.title")}
-              </h2>
-              <p className="text-lg text-default-700 leading-relaxed mb-4">
-                {t("definition.content")}
-              </p>
-              <p className="text-lg text-default-700 leading-relaxed">
-                {t("definition.content2")}
-              </p>
-            </CardBody>
-          </Card>
-        </section>
-
-        {/* Por qué importan las Soft Skills */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {t("whyMatter.title")}
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-gradient-to-br from-blue-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">💼</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("whyMatter.hiring.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("whyMatter.hiring.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-green-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("whyMatter.senior.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("whyMatter.senior.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-purple-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">👥</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("whyMatter.teamwork.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("whyMatter.teamwork.content")}
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-orange-50 to-white">
-              <CardBody className="p-6">
-                <div className="text-4xl mb-4">📈</div>
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  {t("whyMatter.impact.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed">
-                  {t("whyMatter.impact.content")}
-                </p>
-              </CardBody>
-            </Card>
-          </div>
-        </section>
-
-        {/* Las 8 Soft Skills Críticas */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {t("skills.title")}
-          </h2>
-
-          <div className="space-y-6">
-            <Card className="border-l-4 border-blue-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  1. 🗣️ {t("skills.communication.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.communication.content")}
-                </p>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.communication.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-green-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  2. 🤝 {t("skills.collaboration.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.collaboration.content")}
-                </p>
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.collaboration.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-purple-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  3. 🧠 {t("skills.problemSolving.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.problemSolving.content")}
-                </p>
-                <div className="bg-purple-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.problemSolving.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-orange-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  4. 🎯 {t("skills.adaptability.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.adaptability.content")}
-                </p>
-                <div className="bg-orange-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.adaptability.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-pink-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  5. ❤️ {t("skills.empathy.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.empathy.content")}
-                </p>
-                <div className="bg-pink-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.empathy.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-indigo-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  6. ⏰ {t("skills.timeManagement.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.timeManagement.content")}
-                </p>
-                <div className="bg-indigo-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.timeManagement.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-yellow-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  7. 💬 {t("skills.feedback.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.feedback.content")}
-                </p>
-                <div className="bg-yellow-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.feedback.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-
-            <Card className="border-l-4 border-teal-500">
-              <CardBody className="p-6">
-                <h3 className="text-xl font-bold text-customgray mb-3">
-                  8. 🎓 {t("skills.learning.title")}
-                </h3>
-                <p className="text-default-700 leading-relaxed mb-3">
-                  {t("skills.learning.content")}
-                </p>
-                <div className="bg-teal-50 p-3 rounded-lg">
-                  <p className="text-sm text-default-700">
-                    <strong>
-                      {isSpanish ? "Ejemplo práctico:" : "Practical example:"}
-                    </strong>{" "}
-                    {t("skills.learning.example")}
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-          </div>
-        </section>
-
-        {/* Soft Skills en la Era de la IA (2025) */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-customgray mb-6">
-            {isSpanish
-              ? "Soft Skills en la Era de la IA (2025)"
-              : "Soft Skills in the AI Era (2025)"}
-          </h2>
-
-          <Card className="bg-gradient-to-br from-cyan-50 to-white border-l-4 border-cyan-500">
-            <CardBody className="p-6 md:p-8">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-5xl">🤖</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-customgray mb-4">
-                    {isSpanish
-                      ? "¿Por qué las Soft Skills son tu mayor ventaja competitiva en 2025?"
-                      : "Why are Soft Skills your biggest competitive advantage in 2025?"}
-                  </h3>
-                  <p className="text-lg text-default-700 leading-relaxed mb-4">
-                    {isSpanish
-                      ? "ChatGPT puede escribir código perfecto. Copilot puede completar funciones. Claude puede debuggear errores. Pero ninguna IA puede:"
-                      : "ChatGPT can write perfect code. Copilot can complete functions. Claude can debug errors. But no AI can:"}
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-lg border border-cyan-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🎭</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Negociar plazos imposibles"
-                          : "Negotiate impossible deadlines"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Cuando tu manager pide una feature 'para mañana', necesitas argumentar técnicamente por qué tomará 2 semanas. La IA no negocia."
-                          : "When your manager asks for a feature 'by tomorrow', you need to technically argue why it will take 2 weeks. AI doesn't negotiate."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-cyan-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🔥</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Gestionar conflictos humanos"
-                          : "Manage human conflicts"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Dos developers seniors discuten sobre arquitectura. Necesitas mediar, encontrar consenso, y mantener al equipo unido. La IA no maneja ego."
-                          : "Two senior developers argue about architecture. You need to mediate, find consensus, and keep the team united. AI doesn't handle ego."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-cyan-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">🧭</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Decidir qué NO hacer"
-                          : "Decide what NOT to do"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "La IA siempre sugiere soluciones. Pero en el mundo real, 80% de las ideas deben descartarse. Priorizar requiere criterio humano."
-                          : "AI always suggests solutions. But in the real world, 80% of ideas must be discarded. Prioritizing requires human judgment."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg border border-cyan-200">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">💡</span>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-customgray mb-2">
-                        {isSpanish
-                          ? "Inspirar y motivar a otros"
-                          : "Inspire and motivate others"}
-                      </h4>
-                      <p className="text-sm text-default-700">
-                        {isSpanish
-                          ? "Un junior está perdiendo la confianza. Necesitas mentorearlo, mostrarle su progreso, y devolverle la motivación. La IA no inspira."
-                          : "A junior is losing confidence. You need to mentor them, show their progress, and restore motivation. AI doesn't inspire."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 bg-cyan-100 p-4 rounded-lg">
-                <p className="text-default-700 leading-relaxed">
-                  <strong>
-                    {isSpanish
-                      ? "En 2025, las Soft Skills no son un 'nice to have': son tu principal diferenciador."
-                      : "In 2025, Soft Skills are not a 'nice to have': they are your main differentiator."}
-                  </strong>{" "}
-                  {isSpanish
-                    ? "Los developers que dominan IA + Soft Skills ganan 40% más que quienes solo saben programar. La IA escribe código, pero el éxito requiere comunicación, empatía, liderazgo y criterio."
-                    : "Developers who master AI + Soft Skills earn 40% more than those who only know how to code. AI writes code, but success requires communication, empathy, leadership and judgment."}
-                </p>
-              </div>
-            </CardBody>
-          </Card>
-        </section>
-
-        {/* CTA Section */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-br from-primary to-primary-600 text-white">
-            <CardBody className="p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4">
-                {isSpanish
-                  ? "¿Quieres desarrollar tus Soft Skills?"
-                  : "Want to develop your Soft Skills?"}
-              </h2>
-              <p className="text-xl mb-6 text-white/90">
-                {isSpanish
-                  ? "Te ayudo a comunicar mejor, liderar equipos, y avanzar en tu carrera tech."
-                  : "I help you communicate better, lead teams, and advance your tech career."}
-              </p>
-              <Button
-                as={Link}
-                className="font-semibold"
-                color="default"
-                href={`/${locale}`}
-                size="lg"
-              >
-                {isSpanish ? "Agenda tu sesión" : "Schedule your session"}
-              </Button>
-            </CardBody>
-          </Card>
-        </section>
       </div>
-    </>
+
+      {/* Definición */}
+      <section className="mb-16">
+        <Card>
+          <CardBody className="p-8 md:p-12">
+            <h2 className="text-3xl font-bold text-customgray mb-6">
+              {locale === "es"
+                ? "¿Qué son las Soft Skills?"
+                : "What are Soft Skills?"}
+            </h2>
+            <p className="text-xl text-default-700 leading-relaxed mb-4">
+              {locale === "es"
+                ? "Las Soft Skills son las habilidades interpersonales, emocionales y de comunicación que determinan cómo trabajas con otros, cómo te adaptas al cambio, y cómo resuelves problemas complejos en contextos humanos."
+                : "Soft Skills are the interpersonal, emotional and communication skills that determine how you work with others, how you adapt to change, and how you solve complex problems in human contexts."}
+            </p>
+            <p className="text-xl text-default-700 leading-relaxed">
+              {locale === "es"
+                ? "A diferencia de las Hard Skills (programar en Python, usar React, conocer AWS), las Soft Skills se centran en el CÓMO trabajas, no en el QUÉ sabes hacer técnicamente."
+                : "Unlike Hard Skills (programming in Python, using React, knowing AWS), Soft Skills focus on HOW you work, not WHAT you know how to do technically."}
+            </p>
+          </CardBody>
+        </Card>
+      </section>
+
+      {/* Por qué importan */}
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold text-customgray mb-8">
+          {locale === "es"
+            ? "¿Por qué las Soft Skills son críticas?"
+            : "Why are Soft Skills critical?"}
+        </h2>
+
+        <div className="space-y-8">
+          <Card>
+            <CardBody className="p-8">
+              <h3 className="text-2xl font-bold text-customgray mb-4">
+                {locale === "es"
+                  ? "85% de contrataciones se basan en Soft Skills"
+                  : "85% of hires are based on Soft Skills"}
+              </h3>
+              <p className="text-lg text-default-700 leading-relaxed">
+                {locale === "es"
+                  ? "Según LinkedIn, el 85% de las decisiones de contratación y promoción se basan en Soft Skills, no en habilidades técnicas. Puedes ser un genio en algoritmos, pero si no sabes comunicar tus ideas, nunca llegarás a Senior."
+                  : "According to LinkedIn, 85% of hiring and promotion decisions are based on Soft Skills, not technical skills. You can be a genius in algorithms, but if you don't know how to communicate your ideas, you'll never reach Senior."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-8">
+              <h3 className="text-2xl font-bold text-customgray mb-4">
+                {locale === "es"
+                  ? "Diferenciador para llegar a Senior/Lead"
+                  : "Differentiator to reach Senior/Lead"}
+              </h3>
+              <p className="text-lg text-default-700 leading-relaxed">
+                {locale === "es"
+                  ? "La diferencia entre un Mid y un Senior no es código más complejo: es mentoría, influencia, comunicación, liderazgo técnico. Las Soft Skills determinan si escalas en tu carrera."
+                  : "The difference between a Mid and a Senior is not more complex code: it's mentoring, influence, communication, technical leadership. Soft Skills determine if you scale in your career."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-8">
+              <h3 className="text-2xl font-bold text-customgray mb-4">
+                {locale === "es"
+                  ? "Equipos tech funcionan por personas, no por código"
+                  : "Tech teams work because of people, not code"}
+              </h3>
+              <p className="text-lg text-default-700 leading-relaxed">
+                {locale === "es"
+                  ? "Los mejores equipos no son los que tienen los mejores developers técnicamente, sino los que se comunican bien, confían entre sí, y resuelven conflictos constructivamente."
+                  : "The best teams are not those with the best developers technically, but those that communicate well, trust each other, and resolve conflicts constructively."}
+              </p>
+            </CardBody>
+          </Card>
+        </div>
+      </section>
+
+      {/* Las 8 Skills */}
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold text-customgray mb-8">
+          {locale === "es"
+            ? "Las 8 Soft Skills críticas para Developers"
+            : "The 8 critical Soft Skills for Developers"}
+        </h2>
+
+        <div className="space-y-6">
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "1. Comunicación técnica clara"
+                  : "1. Clear technical communication"}
+              </h3>
+              <p className="text-default-700 mb-3">
+                {locale === "es"
+                  ? "Ser capaz de explicar conceptos técnicos complejos a personas no técnicas (Product Managers, stakeholders, usuarios). Documentar código de forma clara. Escribir PRs descriptivos."
+                  : "Being able to explain complex technical concepts to non-technical people (Product Managers, stakeholders, users). Document code clearly. Write descriptive PRs."}
+              </p>
+              <p className="text-sm text-default-600 italic">
+                {locale === "es"
+                  ? "Ejemplo: En lugar de decir 'refactoricé el módulo de autenticación', explicas: 'Separé la lógica de validación de tokens para que sea más fácil agregar OAuth en el futuro.'"
+                  : "Example: Instead of saying 'I refactored the authentication module', you explain: 'I separated the token validation logic to make it easier to add OAuth in the future.'"}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "2. Colaboración y trabajo en equipo"
+                  : "2. Collaboration and teamwork"}
+              </h3>
+              <p className="text-default-700 mb-3">
+                {locale === "es"
+                  ? "Trabajar bien en pair programming, participar constructivamente en code reviews, aceptar feedback sin defensividad, y ayudar a otros developers a crecer."
+                  : "Work well in pair programming, participate constructively in code reviews, accept feedback without defensiveness, and help other developers grow."}
+              </p>
+              <p className="text-sm text-default-600 italic">
+                {locale === "es"
+                  ? "Ejemplo: En un code review, en lugar de decir 'Este código está mal', preguntas: '¿Consideraste usar X patrón para evitar Y problema?'"
+                  : "Example: In a code review, instead of saying 'This code is wrong', you ask: 'Did you consider using X pattern to avoid Y problem?'"}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "3. Resolución creativa de problemas"
+                  : "3. Creative problem solving"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Pensar más allá de la solución técnica obvia. Considerar contexto de negocio, impacto en usuarios, trade-offs de arquitectura."
+                  : "Think beyond the obvious technical solution. Consider business context, user impact, architecture trade-offs."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "4. Adaptabilidad y aprendizaje continuo"
+                  : "4. Adaptability and continuous learning"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Capacidad de aprender nuevas tecnologías rápidamente, adaptarte a cambios en prioridades, y no aferrarte a 'tu forma' de hacer las cosas."
+                  : "Ability to learn new technologies quickly, adapt to changes in priorities, and not cling to 'your way' of doing things."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "5. Empatía con usuarios y equipo"
+                  : "5. Empathy with users and team"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Ponerte en los zapatos del usuario final para diseñar mejores soluciones. Entender las presiones y contextos de tus compañeros de equipo."
+                  : "Put yourself in the shoes of the end user to design better solutions. Understand the pressures and contexts of your teammates."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "6. Gestión del tiempo y priorización"
+                  : "6. Time management and prioritization"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Saber qué hacer primero, cuándo decir 'no' a tareas que no agregan valor, estimar realista, y evitar el perfeccionismo que bloquea entregas."
+                  : "Know what to do first, when to say 'no' to tasks that don't add value, estimate realistically, and avoid perfectionism that blocks deliveries."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "7. Dar y recibir feedback constructivo"
+                  : "7. Give and receive constructive feedback"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Dar feedback técnico sin atacar a la persona. Recibir críticas sin ponerte defensivo. Ver el feedback como oportunidad de crecimiento."
+                  : "Give technical feedback without attacking the person. Receive criticism without becoming defensive. See feedback as an opportunity for growth."}
+              </p>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="p-6">
+              <h3 className="text-xl font-bold text-customgray mb-3">
+                {locale === "es"
+                  ? "8. Curiosidad y mentalidad de crecimiento"
+                  : "8. Curiosity and growth mindset"}
+              </h3>
+              <p className="text-default-700">
+                {locale === "es"
+                  ? "Estar siempre aprendiendo no solo tecnología, sino sobre el negocio, los usuarios, el dominio del problema."
+                  : "Always be learning not only technology, but about the business, users, and problem domain."}
+              </p>
+            </CardBody>
+          </Card>
+        </div>
+      </section>
+    </div>
   );
 }
