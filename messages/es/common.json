@@ -1841,5 +1841,380 @@
   },
   "WhatsAppButton": {
     "message": "¿Necesitas ayuda? Escríbeme"
+  },
+  "SoftSkillsDevelopers": {
+    "metaTitle": "Soft Skills para Developers: Comunicación, Liderazgo y Empatía | HugoTech",
+    "metaDescription": "Descubre las 8 Soft Skills críticas que todo developer necesita para crecer: comunicación, colaboración, empatía, adaptabilidad. En 2025, las Soft Skills son tu ventaja competitiva frente a la IA.",
+    "title": "Soft Skills para Developers",
+    "subtitle": "Las habilidades humanas que la IA no puede reemplazar y que determinan quién avanza en su carrera tech.",
+    "definition": {
+      "title": "¿Qué son las Soft Skills?",
+      "content": "Las Soft Skills son las habilidades interpersonales, emocionales y de comunicación que determinan cómo trabajas con otros, cómo te adaptas al cambio, y cómo resuelves problemas complejos en contextos humanos.",
+      "content2": "A diferencia de las Hard Skills (programar en Python, usar React, conocer AWS), las Soft Skills se centran en el CÓMO trabajas, no en el QUÉ sabes hacer técnicamente. Son habilidades transferibles a cualquier lenguaje, framework o industria."
+    },
+    "whyMatter": {
+      "title": "¿Por qué las Soft Skills son críticas?",
+      "hiring": {
+        "title": "85% de contrataciones se basan en Soft Skills",
+        "content": "Según LinkedIn, el 85% de las decisiones de contratación y promoción se basan en Soft Skills, no en habilidades técnicas. Puedes ser un genio en algoritmos, pero si no sabes comunicar tus ideas, nunca llegarás a Senior."
+      },
+      "senior": {
+        "title": "Diferenciador para llegar a Senior/Lead",
+        "content": "La diferencia entre un Mid y un Senior no es código más complejo: es mentoría, influencia, comunicación, liderazgo técnico. Las Soft Skills determinan si escalas en tu carrera."
+      },
+      "teamwork": {
+        "title": "Equipos tech funcionan por personas, no por código",
+        "content": "Los mejores equipos no son los que tienen los mejores developers técnicamente, sino los que se comunican bien, confían entre sí, y resuelven conflictos constructivamente."
+      },
+      "impact": {
+        "title": "Más impacto = Mejor compensación",
+        "content": "Los developers con Soft Skills sólidas impactan más allá de su código: influyen en decisiones de producto, lideran iniciativas, y son referentes en sus equipos. Eso se traduce en salarios 30-40% más altos."
+      }
+    },
+    "skills": {
+      "title": "Las 8 Soft Skills críticas para Developers",
+      "communication": {
+        "title": "Comunicación técnica clara",
+        "content": "Ser capaz de explicar conceptos técnicos complejos a personas no técnicas (Product Managers, stakeholders, usuarios). Documentar código de forma clara. Escribir PRs descriptivos.",
+        "example": "En lugar de decir 'refactoricé el módulo de autenticación', explicas: 'Separé la lógica de validación de tokens para que sea más fácil agregar OAuth en el futuro.'"
+      },
+      "collaboration": {
+        "title": "Colaboración y trabajo en equipo",
+        "content": "Trabajar bien en pair programming, participar constructivamente en code reviews, aceptar feedback sin defensividad, y ayudar a otros developers a crecer.",
+        "example": "En un code review, en lugar de decir 'Este código está mal', preguntas: '¿Consideraste usar X patrón para evitar Y problema? Vi que funciona bien en estos casos.'"
+      },
+      "problemSolving": {
+        "title": "Resolución creativa de problemas",
+        "content": "Pensar más allá de la solución técnica obvia. Considerar contexto de negocio, impacto en usuarios, trade-offs de arquitectura. Ver el problema completo, no solo el código.",
+        "example": "Propones usar una API de terceros en lugar de construir una feature desde cero porque reduces tiempo de desarrollo de 3 meses a 2 semanas, aunque sea menos 'interesante' técnicamente."
+      },
+      "adaptability": {
+        "title": "Adaptabilidad y aprendizaje continuo",
+        "content": "Capacidad de aprender nuevas tecnologías rápidamente, adaptarte a cambios en prioridades, y no aferrarte a 'tu forma' de hacer las cosas. Ser flexible sin perder criterio técnico.",
+        "example": "Tu equipo decide migrar de REST a GraphQL. En lugar de resistirte, te enfocas en entender por qué GraphQL resuelve problemas específicos de tu producto y aprendes rápido."
+      },
+      "empathy": {
+        "title": "Empatía con usuarios y equipo",
+        "content": "Ponerte en los zapatos del usuario final para diseñar mejores soluciones. Entender las presiones y contextos de tus compañeros de equipo (Product, QA, otros developers).",
+        "example": "Un QA reporta un bug que 'no puedes reproducir'. En lugar de cerrarlo, programas una sesión con él para ver cómo usa la app y descubres un edge case real que afecta al 5% de usuarios."
+      },
+      "timeManagement": {
+        "title": "Gestión del tiempo y priorización",
+        "content": "Saber qué hacer primero, cuándo decir 'no' a tareas que no agregan valor, estimar realista, y evitar el perfeccionismo que bloquea entregas.",
+        "example": "Tienes 3 tareas: un bug crítico, una feature nueva, y refactorizar código legacy. Priorizas el bug porque bloquea a usuarios reales, luego la feature, y dejas el refactor para un sprint futuro."
+      },
+      "feedback": {
+        "title": "Dar y recibir feedback constructivo",
+        "content": "Dar feedback técnico sin atacar a la persona. Recibir críticas sin ponerte defensivo. Ver el feedback como oportunidad de crecimiento, no como ataque personal.",
+        "example": "Recibes un comentario en tu PR: 'Este código es difícil de leer'. En lugar de justificarte, preguntas: '¿Qué parte específica te generó confusión? ¿Cómo lo estructurarías tú?'"
+      },
+      "learning": {
+        "title": "Curiosidad y mentalidad de crecimiento",
+        "content": "Estar siempre aprendiendo no solo tecnología, sino sobre el negocio, los usuarios, el dominio del problema. No quedarte en tu zona de confort técnica.",
+        "example": "Trabajas en una fintech. En lugar de solo programar, aprendes sobre regulación bancaria, cómo funcionan las transacciones, y por qué ciertas decisiones técnicas están limitadas por compliance."
+      }
+    }
+  },
+  "Management30": {
+    "metaTitle": "Management 3.0: Liderazgo Ágil para Equipos Tech | HugoTech",
+    "metaDescription": "Descubre Management 3.0: el framework de liderazgo moderno para equipos tech. Energizar personas, empowerment, alinear restricciones, desarrollar competencias. En 2025, es más relevante que nunca.",
+    "title": "Management 3.0",
+    "subtitle": "El framework de liderazgo moderno que transforma equipos jerárquicos en sistemas adaptativos, creativos y autogestionados.",
+    "definition": {
+      "title": "¿Qué es Management 3.0?",
+      "content": "Management 3.0 es un conjunto de juegos, herramientas y prácticas que ayuda a líderes y equipos a trabajar con una mentalidad ágil y centrada en las personas. No es una metodología rígida, sino una filosofía de liderazgo que reconoce que las organizaciones son sistemas complejos donde las personas importan más que los procesos.",
+      "creator": "Creado por Jurgen Appelo.",
+      "creatorText": "Management 3.0 surge como respuesta a los modelos tradicionales de management (comando-control) y propone que los mejores resultados vienen de equipos empoderados, motivados y alineados con el propósito."
+    },
+    "principles": {
+      "title": "Los 6 Principios de Management 3.0",
+      "energize": {
+        "title": "Energizar a las personas",
+        "content": "Las personas felices, motivadas y conectadas con su propósito trabajan mejor. El rol del líder es crear un ambiente donde las personas se sientan valoradas, escuchadas y con autonomía.",
+        "practice": "Celebrar logros del equipo, hacer retrospectivas enfocadas en aprendizajes (no culpas), y dar espacio para experimentación y creatividad."
+      },
+      "empower": {
+        "title": "Empoderar equipos",
+        "content": "Los equipos deben tener autoridad para tomar decisiones sin pedir permiso constantemente. El líder no controla, facilita. La autonomía genera compromiso.",
+        "practice": "Usar Delegation Poker para definir qué decisiones toma el equipo sin consultar, cuáles requieren consenso, y cuáles son del líder."
+      },
+      "align": {
+        "title": "Alinear restricciones",
+        "content": "La libertad absoluta no funciona. Los equipos necesitan claridad sobre objetivos, valores, y límites. El líder define el 'marco' dentro del cual el equipo tiene autonomía.",
+        "practice": "Definir OKRs claros (Objectives & Key Results) para que el equipo sepa hacia dónde va, pero dándoles libertad en el CÓMO llegar."
+      },
+      "develop": {
+        "title": "Desarrollar competencias",
+        "content": "Las personas deben crecer constantemente en habilidades técnicas y blandas. El líder invierte en el desarrollo del equipo porque eso multiplica el impacto de la organización.",
+        "practice": "Crear mapas de competencias, asignar tiempo para aprendizaje, facilitar mentorías internas, y dar feedback continuo."
+      },
+      "grow": {
+        "title": "Hacer crecer la estructura",
+        "content": "La estructura organizacional debe evolucionar con el equipo. No aferrarse a jerarquías rígidas. Permitir que roles y responsabilidades cambien orgánicamente según necesidades.",
+        "practice": "Experimentar con roles rotativos (Scrum Master, facilitador de retrospectivas) o squads multifuncionales en lugar de departamentos estáticos."
+      },
+      "improve": {
+        "title": "Mejorar continuamente",
+        "content": "Nada es perfecto. La organización debe tener mecanismos para detectar qué no funciona, experimentar con cambios, y aprender rápido de los errores.",
+        "practice": "Hacer retrospectivas periódicas, medir métricas de bienestar del equipo (happiness metrics), y hacer experimentos pequeños con hipótesis claras."
+      }
+    },
+    "tools": {
+      "title": "Herramientas prácticas de Management 3.0",
+      "delegation": {
+        "title": "Delegation Poker",
+        "content": "Un juego para decidir el nivel de autoridad en cada decisión: desde 'el líder decide solo' hasta 'el equipo decide sin consultar'. Aclara expectativas y evita micromanagement."
+      },
+      "kudos": {
+        "title": "Kudo Cards",
+        "content": "Tarjetas físicas o digitales para reconocer logros de compañeros de equipo. Fomenta cultura de aprecio y reconocimiento público de esfuerzos."
+      },
+      "okr": {
+        "title": "OKRs (Objectives & Key Results)",
+        "content": "Framework para alinear objetivos de equipo con los de la organización. Define el QUÉ (objetivo) y el CÓMO medimos éxito (key results), dando libertad en la ejecución."
+      },
+      "competency": {
+        "title": "Competency Matrix",
+        "content": "Mapa visual de las competencias del equipo: quién sabe qué, en qué nivel, y qué quiere aprender. Permite identificar gaps y planificar desarrollo."
+      }
+    }
+  },
+  "LiderazgoIntrovertidos": {
+    "metaTitle": "Liderazgo para Introvertidos: Tu Introversión es tu Superpotencia | HugoTech",
+    "metaDescription": "Descubre por qué el 40% de líderes exitosos son introvertidos. Aprende a liderar desde tu autenticidad: escucha profunda, pensamiento estratégico, one-on-ones. En 2025, la introversión es ventaja.",
+    "title": "Liderazgo para Introvertidos",
+    "subtitle": "No necesitas ser extrovertido para ser un gran líder. Tu introversión puede ser tu mayor fortaleza.",
+    "definition": {
+      "title": "¿Qué significa Liderazgo para Introvertidos?",
+      "content": "Es un estilo de liderazgo que honra la naturaleza de las personas introvertidas: reflexión profunda, escucha activa, pensamiento estratégico, y conexiones uno-a-uno. Los líderes introvertidos no tratan de 'fingir' ser extrovertidos, sino que lideran desde su autenticidad.",
+      "stat": "El 40% de ejecutivos son introvertidos.",
+      "statText": "Según estudios de Harvard Business Review, el 40% de ejecutivos y líderes exitosos son introvertidos. Incluye nombres como Bill Gates, Larry Page, Mark Zuckerberg, y muchos CTOs de startups unicornio."
+    },
+    "myths": {
+      "title": "Mitos sobre Introversión y Liderazgo",
+      "reality": "Realidad:",
+      "myth1": {
+        "title": "Los introvertidos no saben comunicar",
+        "content": "Este es uno de los mitos más dañinos. Se asume que porque los introvertidos prefieren espacios pequeños y reflexión, no pueden comunicar ideas efectivamente.",
+        "reality": "Los introvertidos suelen ser excelentes comunicadores cuando tienen tiempo para prepararse. Prefieren comunicación escrita (emails, documentos, RFCs) donde pueden estructurar ideas claramente. Y en reuniones, hablan menos pero con más sustancia."
+      },
+      "myth2": {
+        "title": "Los líderes deben ser carismáticos y extrovertidos",
+        "content": "Se idealiza al líder que 'motiva con energía', habla en público sin miedo, y 'llena la sala' con su presencia. Pero eso es un estilo, no EL estilo.",
+        "reality": "El liderazgo no es sobre ser el más ruidoso. Los líderes introvertidos motivan con acciones, no con discursos. Empoderan a otros en lugar de ser el centro de atención. Y generan confianza con consistencia, no con carisma."
+      },
+      "myth3": {
+        "title": "Los introvertidos evitan conflictos",
+        "content": "Se asume que porque los introvertidos prefieren la armonía, evitan conversaciones difíciles o conflictos necesarios.",
+        "reality": "Los introvertidos no evitan conflictos: los abordan con más preparación. Piensan antes de hablar, eligen sus palabras cuidadosamente, y resuelven conflictos de forma reflexiva en lugar de impulsiva. Eso suele generar mejores resultados a largo plazo."
+      },
+      "myth4": {
+        "title": "Los introvertidos no pueden liderar equipos grandes",
+        "content": "Se piensa que los introvertidos solo funcionan en equipos pequeños porque las interacciones sociales constantes los agotan.",
+        "reality": "Los introvertidos lideran equipos grandes de forma diferente: delegan liderazgo a otros, crean estructuras claras de comunicación asíncrona, y usan one-on-ones en lugar de reuniones masivas. Eso suele generar equipos más autónomos y empoderados."
+      }
+    },
+    "strengths": {
+      "title": "Fortalezas de los Líderes Introvertidos",
+      "listening": {
+        "title": "Escucha profunda y activa",
+        "content": "Los líderes introvertidos escuchan más de lo que hablan. Eso les permite captar problemas que otros ignoran, entender emociones no expresadas, y tomar decisiones más informadas."
+      },
+      "thinking": {
+        "title": "Pensamiento estratégico",
+        "content": "Los introvertidos procesan información profundamente antes de actuar. Eso los hace excelentes para decisiones arquitectónicas complejas, planificación a largo plazo, y prever riesgos."
+      },
+      "oneOnOne": {
+        "title": "Conexiones uno-a-uno auténticas",
+        "content": "Los líderes introvertidos destacan en one-on-ones. Prefieren conversaciones profundas con una persona que small talk con 20. Eso genera confianza y lealtad en el equipo."
+      },
+      "calm": {
+        "title": "Calma en crisis",
+        "content": "Los introvertidos no reaccionan impulsivamente. En momentos de crisis (producción caída, conflicto en equipo), su naturaleza reflexiva les permite mantener la calma y tomar decisiones racionales."
+      },
+      "writing": {
+        "title": "Comunicación escrita clara",
+        "content": "Los introvertidos suelen ser mejores escritores que oradores. En el mundo tech remoto de 2025, la comunicación escrita (Slack, Notion, RFCs) es crítica. Los líderes introvertidos brillan aquí."
+      },
+      "empower": {
+        "title": "Empowerment natural",
+        "content": "Los líderes introvertidos no necesitan ser el centro de atención. Eso los hace excelentes en empoderar a otros, dar crédito al equipo, y crear espacios donde otros puedan brillar."
+      }
+    },
+    "strategies": {
+      "title": "Estrategias prácticas para Líderes Introvertidos",
+      "meetings": {
+        "title": "Gestiona tu energía en reuniones",
+        "tip1": "Pide la agenda con anticipación para prepararte mentalmente",
+        "tip2": "Limita reuniones a 25-30 minutos en lugar de 60 minutos",
+        "tip3": "Bloquea tiempo después de reuniones intensas para recargar energía"
+      },
+      "energy": {
+        "title": "Protege tu tiempo de recarga",
+        "tip1": "Bloquea 1-2 horas al día de 'deep work' sin interrupciones",
+        "tip2": "Trabaja en modo asíncrono cuando sea posible (Slack, Notion)",
+        "tip3": "No te sientas culpable por decir 'no' a reuniones innecesarias"
+      },
+      "communication": {
+        "title": "Aprovecha la comunicación escrita",
+        "tip1": "Documenta decisiones en RFCs o ADRs (Architecture Decision Records)",
+        "tip2": "Usa Slack threads para conversaciones estructuradas en lugar de calls",
+        "tip3": "Escribe updates semanales para tu equipo en lugar de stand-ups largos"
+      }
+    }
+  },
+  "FeedbackTecnico": {
+    "metaTitle": "Feedback Técnico: Cómo dar críticas constructivas sin romper egos | HugoTech",
+    "metaDescription": "Aprende a dar feedback técnico usando el framework SBI. En 2025, el feedback se centra en criterio estratégico, no en sintaxis. Ejemplos prácticos para Code Reviews y arquitectura.",
+    "title": "Feedback Técnico",
+    "subtitle": "El arte de dar críticas constructivas que aceleran el crecimiento sin destruir la confianza.",
+    "definition": {
+      "title": "¿Qué es Feedback Técnico?",
+      "content": "Es la habilidad de comunicar observaciones, sugerencias o críticas sobre el trabajo técnico de otra persona (código, arquitectura, decisiones de diseño) de forma que la otra persona lo reciba como oportunidad de crecimiento, no como ataque personal.",
+      "key": "La clave:",
+      "keyText": "El feedback técnico efectivo separa el comportamiento observable de la persona. No dices 'Eres malo programando', dices 'Este código tiene X problema que genera Y impacto. ¿Cómo podemos mejorarlo?'"
+    },
+    "challenges": {
+      "title": "¿Por qué es difícil dar Feedback Técnico?",
+      "fear": {
+        "title": "Miedo a romper la relación",
+        "content": "Temes que la otra persona se ofenda, se ponga defensiva, o piense que la atacas. Especialmente difícil con seniors o compañeros cercanos."
+      },
+      "ego": {
+        "title": "El ego técnico es frágil",
+        "content": "Los developers asociamos nuestra identidad con nuestro código. Decir 'Tu código tiene problemas' se siente como decir 'No eres buen developer'. Eso genera defensividad."
+      },
+      "time": {
+        "title": "Falta de tiempo para explicar",
+        "content": "Dar feedback constructivo toma tiempo. Es más rápido decir 'Este código está mal' que explicar POR QUÉ está mal, QUÉ impacto tiene, y CÓMO mejorarlo."
+      },
+      "words": {
+        "title": "No saber qué palabras usar",
+        "content": "Muchos sabemos QUÉ está mal, pero no sabemos CÓMO comunicarlo sin sonar arrogante, condescendiente o agresivo."
+      }
+    },
+    "sbi": {
+      "title": "Framework SBI para Feedback Técnico",
+      "intro": "SBI (Situation-Behavior-Impact) es un framework usado en coaching profesional que te ayuda a estructurar feedback de forma clara, específica y no atacante.",
+      "example": "Ejemplo:",
+      "situation": {
+        "title": "Situación (Contexto específico)",
+        "content": "Describe CUÁNDO y DÓNDE ocurrió el comportamiento que quieres retroalimentar. Sé específico.",
+        "exampleText": "'En la PR #245 del feature de pagos que revisé ayer...'"
+      },
+      "behavior": {
+        "title": "Comportamiento (Observable y objetivo)",
+        "content": "Describe QUÉ hizo la persona de forma observable. No interpretes intenciones. No juzgues. Solo describe hechos.",
+        "exampleText": "'...vi que el método processPayment() tiene 250 líneas, maneja 5 responsabilidades diferentes, y no tiene tests unitarios.'"
+      },
+      "impact": {
+        "title": "Impacto (Consecuencias concretas)",
+        "content": "Explica POR QUÉ eso es un problema. Conecta con impacto real: mantenibilidad, bugs, tiempo de otros, experiencia de usuario.",
+        "exampleText": "'Esto hace que sea muy difícil debuggear problemas en producción, aumenta el riesgo de introducir bugs al modificarlo, y dificulta que otros developers entiendan la lógica. ¿Te parece bien si lo refactorizamos juntos en funciones más pequeñas?'"
+      }
+    },
+    "examples": {
+      "title": "Ejemplos de Feedback Técnico",
+      "code": {
+        "titleBad": "Feedback destructivo",
+        "bad": "'Tu código es un desastre. Nadie va a entender esto.'",
+        "titleGood": "Feedback constructivo (SBI)",
+        "good": "'En la PR de ayer (S), vi que hay varias funciones sin nombres descriptivos y comentarios mínimos (B). Esto hace que cuando otro developer lea este código en 3 meses, tendrá que debuggearlo línea por línea para entender qué hace (I). ¿Qué te parece si renombramos las funciones y agregamos comentarios en las partes más complejas?'"
+      },
+      "architecture": {
+        "titleBad": "Feedback destructivo",
+        "bad": "'¿Por qué usaste microservicios? Eso es over-engineering.'",
+        "titleGood": "Feedback constructivo (SBI)",
+        "good": "'En la propuesta de arquitectura (S), vi que planteaste usar microservicios para un MVP de 2 features (B). Esto aumentará la complejidad operacional (deploy, monitoring, debugging distribuido) cuando aún no validamos product-market fit (I). ¿Consideraste empezar con un monolito modular y migrar a microservicios solo si escalamos? Podemos discutir los trade-offs.'"
+      },
+      "collaboration": {
+        "titleBad": "Feedback destructivo",
+        "bad": "'Nunca participas en las dailies. No eres team player.'",
+        "titleGood": "Feedback constructivo (SBI)",
+        "good": "'En las últimas 3 dailies (S), noté que no compartiste blockers ni updates (B). Esto hace que el equipo no sepa en qué estás trabajando ni si necesitas ayuda, lo que puede generar duplicación de esfuerzos o bloqueos evitables (I). ¿Hay algo que te impide participar? ¿Prefieres updates asíncronos en Slack?'"
+      }
+    }
+  },
+  "OneOnOnes": {
+    "metaTitle": "One-on-Ones: El superpoder del liderazgo técnico | HugoTech",
+    "metaDescription": "Aprende a tener One-on-Ones efectivos: estructura, preguntas poderosas, frecuencia. En 2025, los One-on-Ones son más críticos que nunca porque la IA no puede tener conversaciones existenciales.",
+    "title": "One-on-Ones",
+    "subtitle": "La herramienta de liderazgo más poderosa y subutilizada en equipos tech.",
+    "definition": {
+      "title": "¿Qué son los One-on-Ones?",
+      "content": "Son reuniones regulares (usualmente semanales o quincenales) entre un líder y un miembro de su equipo, enfocadas en el crecimiento profesional, bienestar emocional, desafíos del día a día, y alineación de expectativas. NO son status updates de tareas.",
+      "key": "La clave:",
+      "keyText": "El One-on-One es el espacio del colaborador, no del líder. La agenda la define el colaborador. El líder está ahí para escuchar, apoyar, remover blockers, y ayudar a crecer."
+    },
+    "why": {
+      "title": "¿Por qué los One-on-Ones son críticos?",
+      "trust": {
+        "title": "Construyen confianza profunda",
+        "content": "La confianza no se genera en reuniones de equipo o Slack. Se genera en conversaciones honestas uno-a-uno donde la persona se siente segura para compartir dudas, miedos, frustraciones."
+      },
+      "problems": {
+        "title": "Detectan problemas antes de que exploten",
+        "content": "Burnout, conflictos interpersonales, falta de claridad en el rol, desmotivación. Estos problemas NO aparecen en dailies. Aparecen en One-on-Ones cuando preguntas: '¿Cómo te sientes realmente?'"
+      },
+      "growth": {
+        "title": "Aceleran el crecimiento profesional",
+        "content": "Es el espacio para discutir próximo paso de carrera, feedback sobre desempeño, habilidades a desarrollar, y oportunidades dentro de la empresa. Sin One-on-Ones, la gente crece más lento o se va."
+      },
+      "feedback": {
+        "title": "Espacio seguro para feedback bidireccional",
+        "content": "El colaborador puede dar feedback al líder sobre qué funciona y qué no en el equipo. Y el líder puede dar feedback constructivo sin que se sienta como 'evaluación pública'."
+      }
+    },
+    "structure": {
+      "title": "Estructura de un One-on-One efectivo",
+      "duration": {
+        "title": "Duración: 30-45 minutos",
+        "content": "30 minutos es el mínimo. 45 minutos es ideal para conversaciones profundas. Menos de 30 minutos se siente superficial."
+      },
+      "frequency": {
+        "title": "Frecuencia: Semanal o quincenal",
+        "content": "Semanal es ideal para juniors o personas nuevas en el equipo. Quincenal funciona para seniors con alta autonomía. NUNCA mensual: pierde efectividad."
+      },
+      "agenda": {
+        "title": "Agenda: Definida por el colaborador",
+        "content": "El colaborador trae los temas. El líder facilita. Si el colaborador no trae temas, el líder puede preguntar:",
+        "item1": "¿Cómo te sentiste esta semana?",
+        "item2": "¿Qué te está frustrando?",
+        "item3": "¿En qué necesitas ayuda?",
+        "item4": "¿Cómo estás progresando hacia tus objetivos?",
+        "item5": "¿Hay algo que quieras aprender o mejorar?"
+      },
+      "listen": {
+        "title": "Regla de oro: Escucha 80%, habla 20%",
+        "content": "El One-on-One no es para que el líder hable. Es para que el colaborador hable y el líder escuche activamente, haga preguntas profundas, y ayude a clarificar pensamientos."
+      }
+    },
+    "questions": {
+      "title": "Preguntas poderosas para One-on-Ones",
+      "wellbeing": {
+        "title": "Bienestar emocional",
+        "q1": "¿Cómo te sientes últimamente? (en general, no solo en el trabajo)",
+        "q2": "¿Hay algo que te esté quitando el sueño?",
+        "q3": "¿Cómo está tu balance vida-trabajo?"
+      },
+      "growth": {
+        "title": "Crecimiento profesional",
+        "q1": "¿Qué quieres lograr en los próximos 6 meses?",
+        "q2": "¿Qué habilidad te gustaría desarrollar?",
+        "q3": "¿Hay algún proyecto que te gustaría liderar?"
+      },
+      "team": {
+        "title": "Equipo y colaboración",
+        "q1": "¿Cómo te sientes trabajando con el equipo?",
+        "q2": "¿Hay algún conflicto o tensión que deba conocer?",
+        "q3": "¿Qué podríamos hacer mejor como equipo?"
+      },
+      "feedback": {
+        "title": "Feedback para el líder",
+        "q1": "¿Qué puedo hacer yo para ayudarte más?",
+        "q2": "¿Hay algo que yo haga que te frene o frustre?",
+        "q3": "¿Cómo puedo mejorar como líder?"
+      }
+    }
   }
 }
