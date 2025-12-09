@@ -24,8 +24,9 @@ export async function getAllPosts() {
       },
       publishedAt,
       readTime,
-      featured
-    }`
+      featured,
+      views
+    }`,
   );
 }
 
@@ -52,8 +53,9 @@ export async function getFeaturedPosts(limit = 3) {
         role
       },
       publishedAt,
-      readTime
-    }`
+      readTime,
+      views
+    }`,
   );
 }
 
@@ -84,9 +86,10 @@ export async function getPostBySlug(slug: string) {
       publishedAt,
       body,
       readTime,
-      seo
+      seo,
+      views
     }`,
-    { slug }
+    { slug },
   );
 }
 
@@ -115,7 +118,7 @@ export async function getPostsByCategory(categorySlug: string) {
       publishedAt,
       readTime
     }`,
-    { categorySlug }
+    { categorySlug },
   );
 }
 
@@ -129,12 +132,16 @@ export async function getAllCategories() {
       description,
       color,
       "postCount": count(*[_type == "post" && references(^._id)])
-    }`
+    }`,
   );
 }
 
 // Obtener posts relacionados
-export async function getRelatedPosts(currentPostId: string, categories: string[], limit = 3) {
+export async function getRelatedPosts(
+  currentPostId: string,
+  categories: string[],
+  limit = 3,
+) {
   return client.fetch(
     `*[_type == "post" && _id != $currentPostId && count((categories[]._ref)[@ in $categories]) > 0] | order(publishedAt desc) [0...${limit}] {
       _id,
@@ -157,6 +164,6 @@ export async function getRelatedPosts(currentPostId: string, categories: string[
       publishedAt,
       readTime
     }`,
-    { currentPostId, categories }
+    { currentPostId, categories },
   );
 }

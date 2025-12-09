@@ -182,7 +182,8 @@ export default defineType({
           type: "text",
           title: "Meta Descripción",
           rows: 3,
-          description: "Descripción para motores de búsqueda (150-160 caracteres)",
+          description:
+            "Descripción para motores de búsqueda (150-160 caracteres)",
           validation: (Rule) => Rule.max(160),
         },
         {
@@ -195,6 +196,14 @@ export default defineType({
           },
         },
       ],
+    }),
+    defineField({
+      name: "views",
+      title: "Visualizaciones",
+      type: "number",
+      description: "Número de veces que se ha visto este post (actualizado automáticamente)",
+      readOnly: true,
+      initialValue: 0,
     }),
   ],
   preview: {
@@ -209,7 +218,10 @@ export default defineType({
 
       return {
         ...selection,
-        subtitle: author && date ? `${author} - ${new Date(date).toLocaleDateString()}` : "",
+        subtitle:
+          author && date
+            ? `${author} - ${new Date(date).toLocaleDateString()}`
+            : "",
       };
     },
   },
@@ -223,6 +235,11 @@ export default defineType({
       title: "Fecha de Publicación, Más antigua",
       name: "publishedAtAsc",
       by: [{ field: "publishedAt", direction: "asc" }],
+    },
+    {
+      title: "Más Visto",
+      name: "viewsDesc",
+      by: [{ field: "views", direction: "desc" }],
     },
     {
       title: "Título, A-Z",

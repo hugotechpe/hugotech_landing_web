@@ -54,6 +54,7 @@ export interface Post {
   body?: PortableTextBlock[];
   featured?: boolean;
   readTime?: number;
+  views?: number;
   seo?: {
     metaTitle?: string;
     metaDescription?: string;
