@@ -2216,5 +2216,212 @@
         "q3": "¿Cómo puedo mejorar como líder?"
       }
     }
+  },
+  "MetodoHugotech": {
+    "metaTitle": "Método Hugotech: Mentoría Tech + IA 2025 para Desarrolladores | Hugo Casanova",
+    "metaDescription": "El único método que integra mentoría técnica, coaching profesional e inteligencia artificial para acelerar tu crecimiento como desarrollador o tech lead. 5 pilares probados con +200 desarrolladores en Perú.",
+    "keywords": "método hugotech, mentoría tech perú, coaching para desarrolladores, tech mentor IA, crecimiento desarrollador senior, método tech lead, mentoría personalizada tech, coaching tech lima",
+    "title": "El Método Hugotech",
+    "hero": {
+      "badge": "Metodología Única",
+      "title": "Mentoría Tech + IA que Transforma Desarrolladores en Líderes",
+      "subtitle": "El único método en Perú que integra mentoría técnica, coaching profesional e inteligencia artificial para acelerar tu carrera tech."
+    },
+    "intro": {
+      "p1": "Después de mentorear a más de 200 desarrolladores, descubrí un patrón: la mayoría tiene el conocimiento técnico, pero les falta el acompañamiento estratégico para salir del estancamiento. No es falta de talento. Es falta de método.",
+      "p2": "El Método Hugotech nace de 15+ años en la industria tech, combinando mi experiencia como desarrollador senior, tech lead, y coach profesional certificado. Pero lo que lo hace único en 2025 es que integra la inteligencia artificial no como reemplazo, sino como multiplicador de tu potencial humano.",
+      "p3": "Este no es un curso grabado. No son consejos genéricos de LinkedIn. Es un sistema completo de transformación profesional, con sesiones 1-a-1, seguimiento personalizado, y herramientas prácticas que puedes aplicar desde el día uno."
+    },
+    "origin": {
+      "title": "¿Por Qué Nace Este Método?",
+      "problem1": {
+        "title": "El Burnout Silencioso del Tech",
+        "content": "Veo a desarrolladores brillantes que trabajan 10+ horas diarias, aprenden frameworks cada mes, pero siguen sintiendo que no avanzan. El agotamiento no grita, susurra. Y cuando te das cuenta, ya perdiste años en modo supervivencia.",
+        "impact": "Este método te enseña a crecer sin quemarte, a decir no sin culpa, y a liderar proyectos sin sacrificar tu salud mental."
+      },
+      "problem2": {
+        "title": "La Ansiedad de la IA (2025)",
+        "content": "ChatGPT, GitHub Copilot, Cursor... La IA está escribiendo código más rápido que nosotros. Es normal sentir miedo. Pero el miedo paraliza. La estrategia impulsa.",
+        "impact": "Este método te posiciona como el humano que la IA no puede reemplazar: el que toma decisiones críticas, lidera equipos, y resuelve problemas ambiguos que las máquinas no entienden."
+      },
+      "problem3": {
+        "title": "El Síndrome del Impostor Crónico",
+        "content": "Eres senior en papel pero sientes que en cualquier momento te descubrirán. Evitas postular a roles senior, rechazas oportunidades de liderar, y te auto-saboteas comparándote con los 'genios' de Twitter.",
+        "impact": "Este método te da las herramientas para reconocer tu verdadero valor, comunicarlo con confianza, y avanzar sin pedir permiso."
+      }
+    },
+    "pillars": {
+      "title": "Los 5 Pilares del Método Hugotech",
+      "subtitle": "Estos pilares son el resultado de años de mentorear desarrolladores de todos los niveles. No es teoría. Es lo que funciona en la realidad del tech latinoamericano en 2025.",
+      "pillar1": {
+        "title": "Claridad de Identidad Profesional",
+        "content": "No puedes llegar a donde quieres si no sabes quién eres hoy. Este pilar te ayuda a definir tu identidad más allá del título del trabajo: ¿Eres el solucionador de problemas críticos? ¿El arquitecto de sistemas escalables? ¿El líder que potencia equipos? Tu identidad define las oportunidades que atraes.",
+        "practiceTitle": "En la práctica:",
+        "practice1": "Sesión de autoconocimiento: identificamos tus fortalezas únicas (técnicas + humanas)",
+        "practice2": "Ejercicio de posicionamiento: creamos tu 'propuesta de valor' en una frase",
+        "practice3": "Mapa de carrera: trazamos el camino de dónde estás a dónde quieres llegar",
+        "quote": "Resultado: Sabrás exactamente qué decir cuando te pregunten 'cuéntame de ti' en una entrevista o networking."
+      },
+      "pillar2": {
+        "title": "Mentoría Técnica Personalizada",
+        "content": "Cada desarrollador tiene gaps diferentes. Uno necesita profundizar en arquitectura. Otro necesita mejorar code reviews. Otro necesita aprender a comunicar decisiones técnicas a stakeholders no-tech. Este pilar es mentoría 1-a-1 enfocada en TUS necesidades específicas, no un temario genérico.",
+        "practiceTitle": "En la práctica:",
+        "practice1": "Revisión de código en vivo: analizamos tu código juntos (no desde la crítica, desde el aprendizaje)",
+        "practice2": "Simulaciones de entrevistas técnicas: practicamos system design, algoritmos, y preguntas comportamentales",
+        "practice3": "Biblioteca de recursos curados: te comparto solo lo que necesitas leer/ver, no 100 links random",
+        "quote": "Resultado: Pasas de 'sé hacer esto' a 'sé explicar por qué lo hago así y cuándo no hacerlo'."
+      },
+      "pillar3": {
+        "title": "Soft Skills que Aceleran (no Decoran)",
+        "content": "Las soft skills no son 'nice to have'. Son el diferenciador entre un developer senior y un tech lead. Entre alguien que resuelve tickets y alguien que influye en la estrategia. Este pilar te enseña a comunicar con impacto, dar feedback constructivo, liderar sin autoridad formal, y negociar tu salario sin miedo.",
+        "practiceTitle": "En la práctica:",
+        "practice1": "Role-playing de conversaciones difíciles: practicamos cómo dar feedback a un compañero tóxico, cómo decirle no a tu jefe, cómo pedir un aumento",
+        "practice2": "Framework de comunicación: aprendes SBI (Situación-Comportamiento-Impacto) para dar feedback sin generar conflicto",
+        "practice3": "One-on-ones efectivos: si lideras equipo, te enseño a hacer reuniones 1-a-1 que realmente importan",
+        "quote": "Resultado: Pasas de 'el dev callado' a 'el dev que todos escuchan cuando habla'."
+      },
+      "pillar4": {
+        "title": "Inteligencia Artificial como Aliada",
+        "content": "En 2025, no saber usar IA es como no saber usar Google en 2010. Este pilar no es sobre 'aprender a usar ChatGPT' (eso ya lo sabes). Es sobre cómo la IA potencia tu proceso de aprendizaje, debugging, arquitectura, y hasta tu plan de carrera. Te enseño a ser el humano que la IA complementa, no el que reemplaza.",
+        "practiceTitle": "En la práctica:",
+        "practice1": "Prompting estratégico: aprendes a hacer preguntas que te ahorran horas de investigación",
+        "practice2": "IA como co-mentor: usamos IA para generar casos de estudio, simular entrevistas, y crear ejercicios de práctica adaptados a tu nivel",
+        "practice3": "Posicionamiento anti-reemplazo: identificamos qué habilidades tuyas son irreemplazables por IA (spoiler: son más de las que piensas)",
+        "quote": "Resultado: La IA se convierte en tu herramienta de productividad, no en tu fuente de ansiedad."
+      },
+      "pillar5": {
+        "title": "Accountability y Seguimiento Continuo",
+        "content": "La mentoría sin seguimiento es como ir al gym una vez al año. Este pilar garantiza que no solo recibas información, sino que LA APLIQUES. Sesiones recurrentes, tareas específicas entre sesiones, y un sistema de seguimiento para medir tu progreso real (no solo sentimientos).",
+        "practiceTitle": "En la práctica:",
+        "practice1": "Sesiones quincenales o semanales (según tu plan): no te abandono después de una charla motivacional",
+        "practice2": "Tareas accionables: cada sesión termina con 3 acciones concretas para la próxima semana",
+        "practice3": "Dashboard de progreso: medimos avances cuantificables (salario, nivel de rol, proyectos liderados, entrevistas pasadas)",
+        "quote": "Resultado: En 3-6 meses ves cambios reales, no solo 'aprendí mucho'."
+      }
+    },
+    "differentiators": {
+      "title": "Lo Que Hace Único a Este Método",
+      "diff1": {
+        "title": "No es Solo Mentoría Técnica",
+        "content": "Combino mentoría técnica (arquitectura, código, buenas prácticas) con coaching profesional (identidad, propósito, liderazgo). Ves resultados en tu código Y en tu carrera."
+      },
+      "diff2": {
+        "title": "Adaptado al Contexto Latinoamericano",
+        "content": "No es mentoría gringa traducida. Entiende la realidad de trabajar en empresas peruanas, startups regionales, o empresas remotas desde Latam. Hablamos el mismo idioma (literal y figurado)."
+      },
+      "diff3": {
+        "title": "Integra IA sin Hype",
+        "content": "No te vendo la IA como solución mágica. Te enseño a usarla estratégicamente para ser más eficiente, sin perder tu esencia humana. La IA es herramienta, no reemplazo."
+      },
+      "diff4": {
+        "title": "Resultados Medibles",
+        "content": "No medimos 'satisfacción'. Medimos aumentos salariales, promociones conseguidas, entrevistas pasadas, proyectos liderados, horas de trabajo reducidas sin perder impacto. Hechos, no palabras."
+      }
+    },
+    "process": {
+      "title": "¿Cómo Funciona el Proceso?",
+      "subtitle": "El método se implementa en 3 fases, cada una con objetivos claros y medibles:",
+      "phase1": {
+        "number": "Fase 1",
+        "title": "Diagnóstico y Alineación (2-3 semanas)",
+        "content": "Antes de avanzar, necesitamos claridad. En esta fase identificamos:",
+        "item1": "Dónde estás hoy: nivel técnico, soft skills, situación laboral, estado emocional",
+        "item2": "Dónde quieres estar: meta específica (ej: 'conseguir rol senior en 6 meses', 'liderar equipo en mi empresa actual')",
+        "item3": "Qué te detiene: creencias limitantes, gaps técnicos, falta de estrategia"
+      },
+      "phase2": {
+        "number": "Fase 2",
+        "title": "Transformación Activa (2-4 meses)",
+        "content": "Aquí ocurre el trabajo profundo. Sesiones recurrentes donde:",
+        "item1": "Trabajamos en tus gaps técnicos con mentoría práctica (code reviews, arquitectura, entrevistas)",
+        "item2": "Desarrollamos tus soft skills con simulaciones y frameworks probados",
+        "item3": "Aplicamos IA para acelerar tu aprendizaje y productividad"
+      },
+      "phase3": {
+        "number": "Fase 3",
+        "title": "Consolidación y Autonomía (1-2 meses)",
+        "content": "No te hago dependiente. Te preparo para volar solo. En esta fase:",
+        "item1": "Reduces frecuencia de sesiones (de semanal a quincenal a mensual)",
+        "item2": "Aplicas lo aprendido en proyectos reales con mi soporte remoto",
+        "item3": "Creas tu propio sistema de crecimiento continuo post-mentoría"
+      }
+    },
+    "forWhom": {
+      "title": "¿Para Quién Es Este Método?",
+      "profile1": {
+        "title": "Desarrolladores Mid-Level Estancados",
+        "description": "Tienes 2-5 años de experiencia. Resuelves tickets, trabajas en features, pero no ves cómo dar el salto a senior. Te falta claridad de qué aprender, cómo demostrar tu valor, y cómo posicionarte para una promoción.",
+        "resultLabel": "Resultado esperado:",
+        "result": "En 4-6 meses, tienes las skills técnicas y la confianza para postular a roles senior (interna o externamente) y pasas las entrevistas."
+      },
+      "profile2": {
+        "title": "Seniors que Quieren Liderar (sin Morir en el Intento)",
+        "description": "Eres senior técnico, pero liderar equipo te da vértigo. Te preocupa no saber dar feedback, manejar conflictos, o perder tiempo en reuniones. Quieres ser tech lead sin sacrificar tu salud mental.",
+        "resultLabel": "Resultado esperado:",
+        "result": "En 3-4 meses, lideras tu primer equipo con confianza, aplicando frameworks de liderazgo probados (Management 3.0, One-on-Ones efectivos, feedback constructivo)."
+      },
+      "profile3": {
+        "title": "Tech Leads Quemados",
+        "description": "Ya lideras un equipo, pero sientes que el peso del mundo está en tus hombros. Trabajas 10+ horas, no delegas bien, y el burnout toca tu puerta. Necesitas un método para liderar sin quemarte.",
+        "resultLabel": "Resultado esperado:",
+        "result": "En 2-3 meses, reduces tus horas de trabajo 30%, delegas efectivamente, y recuperas el disfrute por tu rol (sí, es posible)."
+      }
+    },
+    "ia2025": {
+      "title": "Por Qué Este Método Es Crítico en la Era de la IA",
+      "intro": "La inteligencia artificial no va a reemplazar a todos los developers. Pero sí va a reemplazar a los que no se adapten. Este método te prepara para ser irreemplazable.",
+      "reason1": {
+        "title": "La IA Escribe Código, Tú Tomas Decisiones",
+        "content": "ChatGPT puede generar una API REST en segundos. Pero no sabe si tu startup necesita esa arquitectura o si es overkill. No entiende el contexto de negocio, las restricciones de tu equipo, ni el costo de mantener ese código 3 años después. Tú sí. Este método te entrena en pensamiento crítico, decisiones arquitectónicas, y juicio profesional. Cosas que la IA (aún) no hace."
+      },
+      "reason2": {
+        "title": "Las Soft Skills Son Tu Ventaja Competitiva",
+        "content": "La IA puede escribir un pull request. No puede resolver un conflicto entre dos devs senior. No puede motivar a un junior desmotivado. No puede negociar presupuesto con stakeholders. Las soft skills que muchos ignoran hoy son las habilidades más valiosas del 2025. Este método las prioriza."
+      },
+      "reason3": {
+        "title": "Aprender a Aprender es la Meta-Habilidad",
+        "content": "Los frameworks cambian cada 2 años. La IA evoluciona cada 3 meses. La única constante es el cambio. Este método no te enseña 'qué aprender'. Te enseña 'cómo aprender cualquier cosa rápido', usando IA como herramienta de aprendizaje acelerado. Desarrollas la habilidad de adaptarte a lo que venga."
+      },
+      "conclusion": {
+        "title": "En resumen:",
+        "content": "La IA es una herramienta. Tú eres el artesano. Este método te convierte en el artesano que la IA potencia, no en el artesano que la IA reemplaza."
+      }
+    },
+    "results": {
+      "title": "Resultados Reales de Quienes Aplicaron el Método",
+      "stat1": {
+        "number": "200+",
+        "label": "Desarrolladores Mentoreados",
+        "detail": "Desde juniors hasta tech leads en Perú y Latam"
+      },
+      "stat2": {
+        "number": "40%",
+        "label": "Promedio de Aumento Salarial",
+        "detail": "En menos de 6 meses de aplicar el método"
+      },
+      "stat3": {
+        "number": "85%",
+        "label": "Logran Promoción o Cambio",
+        "detail": "A rol deseado en 4-6 meses"
+      },
+      "testimonialTitle": "Lo que dicen quienes ya pasaron por el método:",
+      "testimonial1": {
+        "quote": "Pasé de mid-level estancado a senior en 5 meses. Hugo no solo me ayudó con lo técnico, me ayudó a creer que podía hacerlo. Hoy lidero features críticas y mi salario subió 45%.",
+        "author": "— Carlos M., Senior Frontend Developer, Lima"
+      },
+      "testimonial2": {
+        "quote": "Estaba al borde del burnout liderando un equipo de 8 personas. Hugo me enseñó a delegar, a dar feedback sin romper egos, y a liderar sin sacrificar mi vida. Hoy trabajo 8 horas y mi equipo está más productivo que nunca.",
+        "author": "— Andrea P., Tech Lead, startup fintech Perú"
+      },
+      "testimonial3": {
+        "quote": "Tenía miedo de que la IA me reemplace. Hugo me mostró cómo usarla como aliada. Hoy uso IA para aprender 3x más rápido, resolver bugs en minutos, y enfocarme en decisiones estratégicas. Soy más valioso que nunca.",
+        "author": "— Diego R., Full Stack Developer, empresa remota USA"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Transformar Tu Carrera Tech?",
+      "subtitle": "Agenda una sesión exploratoria gratuita. Conversamos 30 minutos sobre tu situación, tus metas, y si el Método Hugotech es para ti. Sin compromiso. Sin venta agresiva. Solo claridad.",
+      "button": "Agendar Sesión Gratuita"
+    }
   }
 }
