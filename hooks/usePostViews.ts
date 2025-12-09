@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 /**
  * Hook para trackear views de un post del blog
  * Se ejecuta una sola vez cuando el usuario ve el post
- * 
+ *
  * @param slug - Slug único del post
  * @param enabled - Si false, no trackea (útil para preview)
  */
@@ -27,8 +27,8 @@ export function usePostViews(slug: string, enabled: boolean = true) {
           body: JSON.stringify({ slug }),
         });
         tracked.current = true;
-      } catch (error) {
-        console.error("Error tracking post view:", error);
+      } catch {
+        // Silently fail - no queremos interrumpir la UX por errores de tracking
       }
     }, 3000);
 
