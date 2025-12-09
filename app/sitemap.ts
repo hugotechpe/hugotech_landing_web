@@ -49,13 +49,12 @@ const routes = [
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },
 
-  // TODO: Re-enable after fixing 500 errors (HeroUI components in Server Components)
   // Método Hugotech (Highest Priority GEO - Manifesto)
-  // {
-  //   path: "/metodo-hugotech",
-  //   priority: 1.0,
-  //   changeFrequency: "weekly" as const,
-  // },
+  {
+    path: "/metodo-hugotech",
+    priority: 1.0,
+    changeFrequency: "weekly" as const,
+  },
 
   // Glosario Index (High Priority - Hub Page)
   {
@@ -90,32 +89,31 @@ const routes = [
     priority: 0.95,
     changeFrequency: "monthly" as const,
   },
-  // TODO: Re-enable after fixing 500 errors (HeroUI components in Server Components)
-  // {
-  //   path: "/glosario/soft-skills-developers",
-  //   priority: 0.95,
-  //   changeFrequency: "monthly" as const,
-  // },
-  // {
-  //   path: "/glosario/management-3-0",
-  //   priority: 0.95,
-  //   changeFrequency: "monthly" as const,
-  // },
-  // {
-  //   path: "/glosario/liderazgo-introvertidos",
-  //   priority: 0.95,
-  //   changeFrequency: "monthly" as const,
-  // },
-  // {
-  //   path: "/glosario/feedback-tecnico",
-  //   priority: 0.95,
-  //   changeFrequency: "monthly" as const,
-  // },
-  // {
-  //   path: "/glosario/one-on-ones",
-  //   priority: 0.95,
-  //   changeFrequency: "monthly" as const,
-  // },
+  {
+    path: "/glosario/soft-skills-developers",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/management-3-0",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/liderazgo-introvertidos",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/feedback-tecnico",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/one-on-ones",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
 
   // Páginas legales
   {
