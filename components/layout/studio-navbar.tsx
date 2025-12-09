@@ -12,7 +12,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/navbar";
-import { Button } from "@heroui/button";
 
 export default function StudioNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

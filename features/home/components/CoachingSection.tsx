@@ -179,8 +179,10 @@ export function CoachingSection() {
                     >
                       <div className="flex-shrink-0 w-10 h-10 bg-brand rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                         {React.createElement(
-                          bulletIconComponents[idx % bulletIconComponents.length],
-                          { className: "w-5 h-5 text-white", strokeWidth: 1.5 }
+                          bulletIconComponents[
+                            idx % bulletIconComponents.length
+                          ],
+                          { className: "w-5 h-5 text-white", strokeWidth: 1.5 },
                         )}
                       </div>
                       <span className="text-white/90 text-[15px] leading-[1.9] flex-1">

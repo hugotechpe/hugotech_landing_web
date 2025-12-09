@@ -3,7 +3,6 @@
 import React from "react";
 import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
 import { GraduationCap, Lightbulb } from "lucide-react";
@@ -27,6 +26,7 @@ export function PorQueGratuitoSection() {
   const scrollToAgenda = (e: React.MouseEvent) => {
     e.preventDefault();
     const agendaSection = document.getElementById("cita");
+
     if (agendaSection) {
       agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -146,7 +146,10 @@ export function PorQueGratuitoSection() {
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
-                      <GraduationCap className="w-9 h-9 text-gray-800" strokeWidth={1.5} />
+                      <GraduationCap
+                        className="w-9 h-9 text-gray-800"
+                        strokeWidth={1.5}
+                      />
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-bold font-heading">
@@ -231,7 +234,10 @@ export function PorQueGratuitoSection() {
                   <CardBody className="flex flex-col gap-3 text-customgray p-4 md:p-6">
                     {/* Icon badge */}
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-2">
-                      <Lightbulb className="w-9 h-9 text-gray-800" strokeWidth={1.5} />
+                      <Lightbulb
+                        className="w-9 h-9 text-gray-800"
+                        strokeWidth={1.5}
+                      />
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-bold">

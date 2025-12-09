@@ -16,14 +16,17 @@ export const NucleoIcon: React.FC<NucleoIconProps> = ({
   const iconPath = `/icons/nucleo/nucleo_ui_svg_v1.6.2/${style}/${name}`;
 
   return (
-    <div className={`flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
+    <div
+      className={`flex items-center justify-center ${className}`}
+      style={{ width: size, height: size }}
+    >
       <Image
-        src={iconPath}
-        alt={name.split("/").pop()?.replace(".svg", "") || "icon"}
-        width={size}
-        height={size}
-        className="w-full h-full"
         unoptimized
+        alt={name.split("/").pop()?.replace(".svg", "") || "icon"}
+        className="w-full h-full"
+        height={size}
+        src={iconPath}
+        width={size}
       />
     </div>
   );

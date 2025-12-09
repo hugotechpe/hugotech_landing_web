@@ -13,6 +13,7 @@ export function HabilidadesBlandasSection() {
   const scrollToAgenda = (e: React.MouseEvent) => {
     e.preventDefault();
     const agendaSection = document.getElementById("cita");
+
     if (agendaSection) {
       agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }

@@ -74,21 +74,23 @@ export function LocaleSwitch({
     <Dropdown>
       <DropdownTrigger>
         <Button
+          suppressHydrationWarning
           aria-label="Cambiar idioma"
           className={`rounded-lg px-3 py-2 gap-2 min-w-20 ${ui.btn}`}
           size="sm"
           variant="bordered"
-          suppressHydrationWarning
         >
           <Image
+            suppressHydrationWarning
             alt={`${current.name} flag`}
             className="rounded-sm"
             height={14}
             src={current.iconSrc}
             width={20}
-            suppressHydrationWarning
           />
-          <span className="font-semibold" suppressHydrationWarning>{current.label}</span>
+          <span suppressHydrationWarning className="font-semibold">
+            {current.label}
+          </span>
         </Button>
       </DropdownTrigger>
       <DropdownMenu

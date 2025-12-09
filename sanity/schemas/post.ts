@@ -201,7 +201,8 @@ export default defineType({
       name: "views",
       title: "Visualizaciones",
       type: "number",
-      description: "Número de veces que se ha visto este post (actualizado automáticamente)",
+      description:
+        "Número de veces que se ha visto este post (actualizado automáticamente)",
       readOnly: true,
       initialValue: 0,
     }),

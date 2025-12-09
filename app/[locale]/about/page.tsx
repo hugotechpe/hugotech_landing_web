@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
-import { Button } from "@heroui/button";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -290,10 +289,10 @@ export default function AboutNewPage() {
                 >
                   <CardBody className="p-6">
                     <div className="mb-4">
-                      <NucleoIcon 
-                        name={step.icon} 
-                        size={40} 
+                      <NucleoIcon
                         className="text-gray-700"
+                        name={step.icon}
+                        size={40}
                       />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3">

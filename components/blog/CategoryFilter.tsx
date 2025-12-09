@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Chip } from "@heroui/chip";
+
 import { Category } from "@/types/sanity";
 
 interface CategoryFilterProps {
@@ -18,9 +19,9 @@ export default function CategoryFilter({ categories }: CategoryFilterProps) {
   return (
     <div className="mb-8 flex flex-wrap justify-center gap-3">
       <Chip
-        variant={selectedCategory === null ? "solid" : "flat"}
-        color="primary"
         className="cursor-pointer"
+        color="primary"
+        variant={selectedCategory === null ? "solid" : "flat"}
         onClick={() => setSelectedCategory(null)}
       >
         Todos
@@ -28,7 +29,7 @@ export default function CategoryFilter({ categories }: CategoryFilterProps) {
       {categories.map((category) => (
         <Chip
           key={category._id}
-          variant={selectedCategory === category._id ? "solid" : "flat"}
+          className="cursor-pointer"
           color={
             category.color === "blue"
               ? "primary"
@@ -38,7 +39,7 @@ export default function CategoryFilter({ categories }: CategoryFilterProps) {
                   ? "secondary"
                   : "warning"
           }
-          className="cursor-pointer"
+          variant={selectedCategory === category._id ? "solid" : "flat"}
           onClick={() => handleCategoryClick(category._id)}
         >
           {category.title} {category.postCount && `(${category.postCount})`}

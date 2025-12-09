@@ -23,7 +23,8 @@ import { getTestimoniosOdiseoEn } from "@/features/testimonials/enums/testimonio
 
 export function TestimoniosOdiseoSection() {
   const locale = useLocale();
-  const testimonios = locale === "en" ? getTestimoniosOdiseoEn() : getTestimoniosOdiseo();
+  const testimonios =
+    locale === "en" ? getTestimoniosOdiseoEn() : getTestimoniosOdiseo();
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },

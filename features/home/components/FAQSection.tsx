@@ -13,6 +13,7 @@ export function FAQSection() {
   const scrollToAgenda = (e: React.MouseEvent) => {
     e.preventDefault();
     const agendaSection = document.getElementById("cita");
+
     if (agendaSection) {
       agendaSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -21,6 +22,7 @@ export function FAQSection() {
   const scrollToDonacion = (e: React.MouseEvent) => {
     e.preventDefault();
     const donacionSection = document.getElementById("porquegratuito");
+
     if (donacionSection) {
       donacionSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -85,7 +87,11 @@ export function FAQSection() {
                               className="text-primary font-semibold hover:underline cursor-pointer"
                               onClick={scrollToDonacion}
                             >
-                              {faq.answer.split("<link>")[1].split("</link>")[0]}
+                              {
+                                faq.answer
+                                  .split("<link>")[1]
+                                  .split("</link>")[0]
+                              }
                             </Link>
                             {faq.answer.split("</link>")[1]}
                           </p>
@@ -111,9 +117,7 @@ export function FAQSection() {
 
         {/* CTA al final */}
         <div className="text-center mt-12">
-          <p className="text-default-600 text-lg mb-4">
-            {t("cta.text")}
-          </p>
+          <p className="text-default-600 text-lg mb-4">{t("cta.text")}</p>
           <Button
             className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white transition-all duration-500 hover:-translate-y-1"
             onClick={scrollToAgenda}

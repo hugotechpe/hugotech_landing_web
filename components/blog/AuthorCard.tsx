@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Linkedin, Twitter, Globe } from "lucide-react";
+
 import { Author } from "@/types/sanity";
 import { urlFor } from "@/lib/sanity.image";
 
@@ -10,7 +11,9 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({ author }: AuthorCardProps) {
-  const imageUrl = author.image ? urlFor(author.image).width(100).height(100).url() : "";
+  const imageUrl = author.image
+    ? urlFor(author.image).width(100).height(100).url()
+    : "";
 
   return (
     <Card className="bg-default-100">
@@ -19,10 +22,10 @@ export default function AuthorCard({ author }: AuthorCardProps) {
           {imageUrl && (
             <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full">
               <Image
-                src={imageUrl}
-                alt={author.name}
                 fill
+                alt={author.name}
                 className="object-cover"
+                src={imageUrl}
               />
             </div>
           )}
@@ -40,42 +43,42 @@ export default function AuthorCard({ author }: AuthorCardProps) {
               <div className="mt-4 flex justify-center gap-2 sm:justify-start">
                 {author.social.linkedin && (
                   <Button
-                    as="a"
-                    href={author.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    size="sm"
-                    variant="flat"
                     isIconOnly
                     aria-label="LinkedIn"
+                    as="a"
+                    href={author.social.linkedin}
+                    rel="noopener noreferrer"
+                    size="sm"
+                    target="_blank"
+                    variant="flat"
                   >
                     <Linkedin size={18} />
                   </Button>
                 )}
                 {author.social.twitter && (
                   <Button
-                    as="a"
-                    href={author.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    size="sm"
-                    variant="flat"
                     isIconOnly
                     aria-label="Twitter"
+                    as="a"
+                    href={author.social.twitter}
+                    rel="noopener noreferrer"
+                    size="sm"
+                    target="_blank"
+                    variant="flat"
                   >
                     <Twitter size={18} />
                   </Button>
                 )}
                 {author.social.website && (
                   <Button
-                    as="a"
-                    href={author.social.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    size="sm"
-                    variant="flat"
                     isIconOnly
                     aria-label="Website"
+                    as="a"
+                    href={author.social.website}
+                    rel="noopener noreferrer"
+                    size="sm"
+                    target="_blank"
+                    variant="flat"
                   >
                     <Globe size={18} />
                   </Button>
