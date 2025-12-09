@@ -744,6 +744,122 @@ export default async function TechLeadGlosarioPage({
           </div>
         </section>
 
+        {/* Sección IA 2025 */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-customgray mb-6">
+            {isSpanish
+              ? "Tech Lead en la Era de la IA (2025)"
+              : "Tech Lead in the AI Era (2025)"}
+          </h2>
+
+          <Card className="bg-gradient-to-br from-indigo-50 to-white border-l-4 border-indigo-500">
+            <CardBody className="p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="text-5xl">🤖</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                    {isSpanish
+                      ? "¿Cómo cambia el rol de Tech Lead con la IA?"
+                      : "How does the Tech Lead role change with AI?"}
+                  </h3>
+                  <p className="text-lg text-default-700 leading-relaxed mb-4">
+                    {isSpanish
+                      ? "En 2025, la IA genera código, pero el Tech Lead es más crítico que nunca porque:"
+                      : "In 2025, AI generates code, but the Tech Lead is more critical than ever because:"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border border-indigo-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🎯</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Decisiones arquitectónicas estratégicas"
+                          : "Strategic architectural decisions"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "La IA no puede decidir si usar microservicios vs monolito considerando el contexto del negocio, equipo y roadmap a 2 años. Eso lo hace un Tech Lead."
+                          : "AI cannot decide whether to use microservices vs monolith considering business context, team, and 2-year roadmap. That's what a Tech Lead does."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-indigo-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">👥</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Liderazgo humano que la IA no puede hacer"
+                          : "Human leadership that AI cannot do"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Motivar a un developer junior que está perdiendo la confianza, mediar un conflicto técnico entre dos seniors, o detectar burnout en tu equipo. La IA no siente empatía."
+                          : "Motivating a junior developer losing confidence, mediating a technical conflict between two seniors, or detecting burnout in your team. AI doesn't feel empathy."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-indigo-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🧠</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Validar código generado por IA"
+                          : "Validate AI-generated code"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Copilot genera código rápido, pero ¿es mantenible? ¿Escalable? ¿Seguro? ¿Alineado con la arquitectura? Un Tech Lead debe tener criterio técnico para validar o rechazar código de IA."
+                          : "Copilot generates code fast, but is it maintainable? Scalable? Secure? Aligned with architecture? A Tech Lead must have technical judgment to validate or reject AI code."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-indigo-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🗣️</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Traducir entre técnico y no-técnico"
+                          : "Translate between technical and non-technical"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Explicar a un CEO por qué migrar a la nube tomará 6 meses, o a un Product Manager por qué no podemos hacer esa feature en 1 sprint. La IA no negocia con stakeholders."
+                          : "Explaining to a CEO why migrating to the cloud will take 6 months, or to a Product Manager why we can't do that feature in 1 sprint. AI doesn't negotiate with stakeholders."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-indigo-100 p-4 rounded-lg">
+                <p className="text-default-700 leading-relaxed">
+                  <strong>
+                    {isSpanish
+                      ? "En 2025, el Tech Lead no compite con la IA: la usa como herramienta."
+                      : "In 2025, the Tech Lead doesn't compete with AI: uses it as a tool."}
+                  </strong>{" "}
+                  {isSpanish
+                    ? "Los mejores Tech Leads usan IA para acelerar desarrollo, pero mantienen el juicio humano para decisiones críticas, liderazgo de equipo, y visión arquitectónica a largo plazo."
+                    : "The best Tech Leads use AI to accelerate development, but maintain human judgment for critical decisions, team leadership, and long-term architectural vision."}
+                </p>
+              </div>
+            </CardBody>
+          </Card>
+        </section>
+
         {/* CTA Section */}
         <section className="mb-12">
           <Card className="bg-gradient-to-br from-primary to-primary-600 text-white">

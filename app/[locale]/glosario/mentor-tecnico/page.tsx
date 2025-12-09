@@ -742,6 +742,110 @@ export default async function MentorTecnicoGlosarioPage({
           </div>
         </section>
 
+        {/* Sección IA 2025 */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-customgray mb-6">
+            {isSpanish
+              ? "Mentoría Técnica en la Era de la IA (2025)"
+              : "Technical Mentorship in the AI Era (2025)"}
+          </h2>
+
+          <Card className="bg-gradient-to-br from-purple-50 to-white border-l-4 border-purple-500">
+            <CardBody className="p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="text-5xl">🤖</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                    {isSpanish
+                      ? "¿Por qué necesitas un Mentor Técnico si existe ChatGPT?"
+                      : "Why do you need a Technical Mentor if ChatGPT exists?"}
+                  </h3>
+                  <p className="text-lg text-default-700 leading-relaxed mb-4">
+                    {isSpanish
+                      ? "ChatGPT te da respuestas técnicas, pero un Mentor Técnico te da algo que ninguna IA puede replicar:"
+                      : "ChatGPT gives you technical answers, but a Technical Mentor gives you something no AI can replicate:"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-white p-4 rounded-lg border border-purple-200">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-2xl">💭</span>
+                    <h4 className="font-bold text-customgray">
+                      {isSpanish ? "Contexto personal" : "Personal context"}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-default-700">
+                    {isSpanish
+                      ? "La IA no sabe tu historia, tus miedos, tu contexto cultural peruano, tus limitaciones reales"
+                      : "AI doesn't know your story, your fears, your Peruvian cultural context, your real limitations"}
+                  </p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-purple-200">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-2xl">🎯</span>
+                    <h4 className="font-bold text-customgray">
+                      {isSpanish
+                        ? "Accountability humano"
+                        : "Human accountability"}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-default-700">
+                    {isSpanish
+                      ? "ChatGPT no te pregunta '¿hiciste lo que dijiste que harías?' Un mentor sí"
+                      : "ChatGPT doesn't ask you 'did you do what you said you would?' A mentor does"}
+                  </p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-purple-200">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-2xl">🤝</span>
+                    <h4 className="font-bold text-customgray">
+                      {isSpanish
+                        ? "Red profesional real"
+                        : "Real professional network"}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-default-700">
+                    {isSpanish
+                      ? "Un mentor te conecta con su red, te refiere a empleadores, te abre puertas cerradas"
+                      : "A mentor connects you with their network, refers you to employers, opens closed doors"}
+                  </p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-purple-200">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-2xl">❤️</span>
+                    <h4 className="font-bold text-customgray">
+                      {isSpanish ? "Empatía real" : "Real empathy"}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-default-700">
+                    {isSpanish
+                      ? "La IA no siente. Un mentor sí estuvo donde tú estás, sintió lo que tú sientes"
+                      : "AI doesn't feel. A mentor was where you are, felt what you feel"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-purple-100 p-4 rounded-lg">
+                <p className="text-default-700 leading-relaxed">
+                  <strong>
+                    {isSpanish
+                      ? "En 2025, los profesionales tech más exitosos no eligen entre IA o mentores humanos: usan ambos."
+                      : "In 2025, the most successful tech professionals don't choose between AI or human mentors: they use both."}
+                  </strong>{" "}
+                  {isSpanish
+                    ? "ChatGPT para respuestas técnicas rápidas, Mentores para decisiones de carrera que cambiarán tu vida."
+                    : "ChatGPT for quick technical answers, Mentors for career decisions that will change your life."}
+                </p>
+              </div>
+            </CardBody>
+          </Card>
+        </section>
+
         {/* CTA Section */}
         <section className="mb-12">
           <Card className="bg-gradient-to-br from-primary to-primary-600 text-white">

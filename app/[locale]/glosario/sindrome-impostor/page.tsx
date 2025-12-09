@@ -738,6 +738,124 @@ export default async function SindromeImpostorGlosarioPage({
           </div>
         </section>
 
+        {/* Sección IA 2025 */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-customgray mb-6">
+            {isSpanish
+              ? "Síndrome del Impostor en la Era de la IA (2025)"
+              : "Impostor Syndrome in the AI Era (2025)"}
+          </h2>
+
+          <Card className="bg-gradient-to-br from-violet-50 to-white border-l-4 border-violet-500">
+            <CardBody className="p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="text-5xl">🤖</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                    {isSpanish
+                      ? "¿Cómo la IA intensifica el Síndrome del Impostor en Developers?"
+                      : "How AI intensifies Impostor Syndrome in Developers?"}
+                  </h3>
+                  <p className="text-lg text-default-700 leading-relaxed mb-4">
+                    {isSpanish
+                      ? "En 2025, el Síndrome del Impostor alcanzó niveles históricos. La IA no te reemplaza, pero sí alimenta tus inseguridades:"
+                      : "In 2025, Impostor Syndrome reached historic levels. AI doesn't replace you, but it does feed your insecurities:"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border border-violet-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">💭</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "'Si ChatGPT lo hace en segundos, ¿qué tan valioso soy?'"
+                          : "'If ChatGPT does it in seconds, how valuable am I?'"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Ves a la IA generar en 10 segundos lo que a ti te tomaría 1 hora. Tu cerebro dice: 'No valgo nada, cualquiera con Copilot puede hacer mi trabajo'."
+                          : "You see AI generate in 10 seconds what would take you 1 hour. Your brain says: 'I'm worthless, anyone with Copilot can do my job'."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-violet-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🎭</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "'¿Estoy usando IA como ayuda o como muleta?'"
+                          : "'Am I using AI as help or as a crutch?'"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Usas Copilot para completar código y piensas: '¿Realmente sé programar o solo sé usar IA?' La línea entre asistencia e incompetencia se vuelve borrosa."
+                          : "You use Copilot to complete code and think: 'Do I really know how to code or do I just know how to use AI?' The line between assistance and incompetence becomes blurry."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-violet-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📚</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "La barra de 'suficientemente bueno' sube infinito"
+                          : "The bar of 'good enough' rises infinitely"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Antes: 'Debo saber React'. Ahora: 'Debo saber React + Next.js + prompt engineering + LangChain + fine-tuning models'. Nunca es suficiente."
+                          : "Before: 'I must know React'. Now: 'I must know React + Next.js + prompt engineering + LangChain + fine-tuning models'. It's never enough."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-violet-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">👀</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Comparación tóxica amplificada"
+                          : "Amplified toxic comparison"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Ves en Twitter a developers que 'construyeron una startup en 2 días con Claude'. Te comparas y sientes que eres lento, incompetente, un fraude."
+                          : "You see on Twitter developers who 'built a startup in 2 days with Claude'. You compare yourself and feel slow, incompetent, a fraud."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-violet-100 p-4 rounded-lg">
+                <p className="text-default-700 leading-relaxed mb-3">
+                  <strong>
+                    {isSpanish
+                      ? "La verdad incómoda: La IA no reemplaza tu valor, pero sí redefine dónde está."
+                      : "The uncomfortable truth: AI doesn't replace your value, but it does redefine where it is."}
+                  </strong>
+                </p>
+                <p className="text-default-700 leading-relaxed">
+                  {isSpanish
+                    ? "Tu valor en 2025 no está en escribir código sintácticamente perfecto (eso lo hace la IA). Está en tu criterio técnico, tu capacidad de resolver problemas ambiguos, tu comunicación empática, tu liderazgo de equipo, y tu habilidad para tomar decisiones arquitectónicas considerando contexto humano y de negocio. Eso ninguna IA puede hacerlo. Aún."
+                    : "Your value in 2025 isn't in writing syntactically perfect code (AI does that). It's in your technical judgment, your ability to solve ambiguous problems, your empathetic communication, your team leadership, and your ability to make architectural decisions considering human and business context. No AI can do that. Yet."}
+                </p>
+              </div>
+            </CardBody>
+          </Card>
+        </section>
+
         {/* CTA Section */}
         <section className="mb-12">
           <Card className="bg-gradient-to-br from-secondary to-secondary-600 text-white">

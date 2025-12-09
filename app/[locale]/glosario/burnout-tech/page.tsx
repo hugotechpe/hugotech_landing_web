@@ -789,6 +789,122 @@ export default async function BurnoutTechGlosarioPage({
           </div>
         </section>
 
+        {/* Sección IA 2025 */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-customgray mb-6">
+            {isSpanish
+              ? "Burnout Tech en la Era de la IA (2025)"
+              : "Tech Burnout in the AI Era (2025)"}
+          </h2>
+
+          <Card className="bg-gradient-to-br from-orange-50 to-white border-l-4 border-orange-500">
+            <CardBody className="p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="text-5xl">🤖</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-customgray mb-4">
+                    {isSpanish
+                      ? "La paradoja de la IA: ¿Libera o aumenta el Burnout?"
+                      : "The AI paradox: Does it free or increase Burnout?"}
+                  </h3>
+                  <p className="text-lg text-default-700 leading-relaxed mb-4">
+                    {isSpanish
+                      ? "La promesa: 'La IA hará tu trabajo más fácil'. La realidad en 2025:"
+                      : "The promise: 'AI will make your work easier'. The reality in 2025:"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border border-orange-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📈</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Expectativas infladas"
+                          : "Inflated expectations"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "'Si Copilot escribe código, deberías entregar el doble'. La presión aumenta porque asumen que la IA te hace 2x más rápido."
+                          : "'If Copilot writes code, you should deliver twice as much'. Pressure increases because they assume AI makes you 2x faster."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-orange-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">😰</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Ansiedad existencial"
+                          : "Existential anxiety"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "'¿Me reemplazará la IA?' es el nuevo síndrome del impostor. Ansiedad constante por estar 'obsoleto' aunque seas Senior."
+                          : "'Will AI replace me?' is the new impostor syndrome. Constant anxiety about being 'obsolete' even if you're Senior."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-orange-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🔄</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Aprender 24/7 para no quedar atrás"
+                          : "Learning 24/7 to not fall behind"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "Cada semana sale una nueva herramienta de IA. Sientes que si no aprendes Claude, Cursor, v0, quedas obsoleto. El FOMO tecnológico se vuelve insostenible."
+                          : "Every week a new AI tool comes out. You feel if you don't learn Claude, Cursor, v0, you become obsolete. Tech FOMO becomes unsustainable."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-orange-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🧹</span>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-customgray mb-2">
+                        {isSpanish
+                          ? "Limpiar código generado por IA"
+                          : "Cleaning up AI-generated code"}
+                      </h4>
+                      <p className="text-sm text-default-700">
+                        {isSpanish
+                          ? "La IA genera código rápido pero no siempre mantenible. Ahora tu trabajo es 'limpiar' detrás de la IA, lo cual es agotador mentalmente."
+                          : "AI generates code fast but not always maintainable. Now your job is 'cleaning up' after AI, which is mentally exhausting."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-orange-100 p-4 rounded-lg">
+                <p className="text-default-700 leading-relaxed">
+                  <strong>
+                    {isSpanish
+                      ? "La IA no causa burnout directamente, pero amplifica las condiciones que lo generan."
+                      : "AI doesn't directly cause burnout, but amplifies the conditions that generate it."}
+                  </strong>{" "}
+                  {isSpanish
+                    ? "La solución no es rechazar la IA, sino establecer límites claros: 'Uso IA para acelerar, pero no trabajo más horas por eso'. Y reconectar con tu propósito profesional más allá de la productividad."
+                    : "The solution isn't rejecting AI, but setting clear boundaries: 'I use AI to accelerate, but I don't work more hours because of it'. And reconnect with your professional purpose beyond productivity."}
+                </p>
+              </div>
+            </CardBody>
+          </Card>
+        </section>
+
         {/* CTA Section */}
         <section className="mb-12">
           <Card className="bg-gradient-to-br from-danger to-danger-600 text-white">
