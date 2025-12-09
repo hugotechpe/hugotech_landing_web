@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+
 import { client } from "@/lib/sanity.client";
 
 const baseUrl = "https://hugotech.pe";
@@ -11,11 +12,19 @@ const routes = [
   { path: "/about", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/empresas", priority: 0.9, changeFrequency: "monthly" as const },
-  
+
   // Servicios de coaching
   { path: "/coaching", priority: 0.9, changeFrequency: "monthly" as const },
-  { path: "/mentor-coaching", priority: 0.9, changeFrequency: "monthly" as const },
-  { path: "/coaching-con-causa", priority: 0.9, changeFrequency: "monthly" as const },
+  {
+    path: "/mentor-coaching",
+    priority: 0.9,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/coaching-con-causa",
+    priority: 0.9,
+    changeFrequency: "monthly" as const,
+  },
 
   // Landing Pages Específicas (High Priority SEO)
   {
@@ -39,14 +48,14 @@ const routes = [
   { path: "/blog", priority: 0.8, changeFrequency: "daily" as const },
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },
-  
+
   // Glosario Tech (High Priority SEO - Featured Snippets)
   {
     path: "/glosario/coaching-tech",
     priority: 0.95,
     changeFrequency: "monthly" as const,
   },
-  
+
   // Páginas legales
   {
     path: "/privacy-policy",
@@ -91,11 +100,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Obtener posts dinámicos del blog desde Sanity
   try {
-    const posts = await client.fetch<Array<{ slug: string; _updatedAt: string }>>(
+    const posts = await client.fetch<
+      Array<{ slug: string; _updatedAt: string }>
+    >(
       `*[_type == "post" && defined(slug.current)] | order(_updatedAt desc) {
         "slug": slug.current,
         _updatedAt
-      }`
+      }`,
     );
 
     // Agregar cada post del blog en ambos idiomas
@@ -115,8 +126,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         });
       });
     });
-  } catch (error) {
-    console.error("Error fetching blog posts for sitemap:", error);
+  } catch {
+    // Error fetching blog posts for sitemap
   }
 
   return sitemapEntries;
