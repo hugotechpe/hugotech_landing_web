@@ -7,6 +7,7 @@ import { InicioSection } from "@/features/home/components/InicioSection";
 import { MePresentoSection } from "@/features/home/components/MePresentoSection";
 import { FAQSection } from "@/features/home/components/FAQSection";
 import { PorQueGratuitoSection } from "@/features/home/components/PorQueGratuitoSection";
+import { CoachingTechFAQSection } from "@/features/home/components/CoachingTechFAQSection";
 import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
@@ -76,7 +77,7 @@ export default async function Home({
   // Set locale para next-intl
   setRequestLocale(locale);
 
-  // FAQ data para Schema.org
+  // FAQ data para Schema.org (general)
   const faqData = [
     {
       question: "¿Qué hace un mentor de carrera tech?",
@@ -106,6 +107,30 @@ export default async function Home({
     },
   ];
 
+  // FAQ data específico para Coaching Tech (SEO Featured Snippet)
+  const coachingTechFAQData = [
+    {
+      question: "¿Qué es un Technical Coach?",
+      answer:
+        "Un Technical Coach es un profesional que ayuda a desarrolladores y líderes técnicos a crecer más allá de sus habilidades de programación. Se enfoca en desarrollar liderazgo, comunicación, gestión de carrera y bienestar mental en el contexto tech. A diferencia de un mentor técnico que te enseña código, un coach tech te ayuda a navegar decisiones de carrera, superar el síndrome del impostor y liderar equipos efectivamente.",
+    },
+    {
+      question: "¿Cómo funciona el coaching para programadores?",
+      answer:
+        "El coaching para programadores consiste en sesiones 1-a-1 (generalmente 60-90 minutos) donde trabajas con un coach especializado en la industria tech. A través de preguntas poderosas y herramientas específicas, identificas tus objetivos profesionales, superas bloqueos mentales y diseñas un plan de acción concreto. No es teoría: cada sesión termina con tareas prácticas que aplicas inmediatamente en tu trabajo.",
+    },
+    {
+      question: "¿Cuál es la diferencia entre mentoría y coaching tech?",
+      answer:
+        "La mentoría técnica se enfoca en enseñar habilidades específicas (frameworks, arquitectura, code reviews), mientras que el coaching tech trabaja en tu desarrollo como profesional integral: liderazgo, toma de decisiones, gestión de carrera y bienestar. Un mentor te dice 'cómo' hacer las cosas desde su experiencia; un coach te ayuda a descubrir 'tu propio cómo' que funcione para ti. Idealmente, los mejores programas combinan ambos enfoques.",
+    },
+    {
+      question: "¿El coaching tech es para mí si soy senior?",
+      answer:
+        "¡Absolutamente! Los seniors son quienes más se benefician del coaching tech. Si eres senior o tech lead, probablemente ya dominas lo técnico, pero enfrentas desafíos nuevos: liderar sin autoridad formal, gestionar equipos distribuidos, comunicarte con stakeholders, decidir entre management o IC, o simplemente evitar el burnout mientras escalas. El coaching tech está diseñado precisamente para estas transiciones que las skills técnicas no resuelven.",
+    },
+  ];
+
   return (
     <>
       {/* Schemas JSON-LD para SEO */}
@@ -114,12 +139,15 @@ export default async function Home({
       <JsonLd data={serviceSchema} />
       <JsonLd data={aggregateRatingSchema} />
       <JsonLd data={faqSchema(faqData)} />
+      {/* Schema específico para Coaching Tech (Featured Snippet) */}
+      <JsonLd data={faqSchema(coachingTechFAQData)} />
 
       <HomeLayout>
         <InicioSection />
         <MePresentoSection />
         <FAQSection />
         <PorQueGratuitoSection />
+        <CoachingTechFAQSection />
         <PilaresSection />
         <EmpresasSection />
         <TestimoniosSection />
