@@ -40,6 +40,13 @@ const routes = [
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },
   
+  // Glosario Tech (High Priority SEO - Featured Snippets)
+  {
+    path: "/glosario/coaching-tech",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  
   // Páginas legales
   {
     path: "/privacy-policy",
