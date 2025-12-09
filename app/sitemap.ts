@@ -55,6 +55,26 @@ const routes = [
     priority: 0.95,
     changeFrequency: "monthly" as const,
   },
+  {
+    path: "/glosario/mentor-tecnico",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/tech-lead",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/burnout-tech",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/glosario/sindrome-impostor",
+    priority: 0.95,
+    changeFrequency: "monthly" as const,
+  },
 
   // Páginas legales
   {
