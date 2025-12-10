@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import HomeLayout from "../../HomeLayout";
 
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
@@ -172,6 +173,19 @@ export default async function MentorTecnicoGlosarioPage({
     <HomeLayout>
       <JsonLd data={articleSchema} />
       <JsonLd data={faqSchema} />
+      <Breadcrumb
+        items={[
+          { name: isSpanish ? "Inicio" : "Home", url: `/${locale}` },
+          {
+            name: isSpanish ? "Glosario Tech" : "Tech Glossary",
+            url: `/${locale}/glosario`,
+          },
+          {
+            name: isSpanish ? "Mentor Técnico" : "Technical Mentor",
+            url: `/${locale}/glosario/mentor-tecnico`,
+          },
+        ]}
+      />
 
       <article className="container mx-auto max-w-5xl px-6 py-12 md:py-16">
         {/* Breadcrumb */}

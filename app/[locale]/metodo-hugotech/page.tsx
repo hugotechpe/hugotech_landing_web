@@ -5,6 +5,8 @@ import { Button } from "@heroui/button";
 
 import { Link } from "@/i18n/navigation";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
+import HomeLayout from "../HomeLayout";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -59,7 +61,17 @@ export default async function MetodoHugotechPage({
   setRequestLocale(locale);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
+    <HomeLayout>
+      <Breadcrumb
+        items={[
+          { name: locale === "es" ? "Inicio" : "Home", url: `/${locale}` },
+          {
+            name: locale === "es" ? "Método Hugotech" : "Hugotech Method",
+            url: `/${locale}/metodo-hugotech`,
+          },
+        ]}
+      />
+      <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Hero Section */}
       <div className="text-center mb-16">
         <Chip className="mb-6" color="primary" size="lg" variant="flat">
@@ -196,6 +208,7 @@ export default async function MetodoHugotechPage({
           </CardBody>
         </Card>
       </section>
-    </div>
+      </div>
+    </HomeLayout>
   );
 }
