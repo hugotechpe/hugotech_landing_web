@@ -1,3 +1,4 @@
+// Last verified: 2025-12-10 - All pages working
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { getTranslations } from "next-intl/server";
