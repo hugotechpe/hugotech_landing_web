@@ -3,6 +3,7 @@ import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { getTranslations } from "next-intl/server";
 import NextLink from "next/link";
+import HomeLayout from "../HomeLayout";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -132,9 +133,10 @@ export default async function GlosarioIndexPage({ params }: Props) {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <HomeLayout>
+    <div className="max-w-7xl mx-auto px-4 py-16">
       {/* Hero Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-20">
         <Chip className="mb-6" color="primary" size="lg" variant="flat">
           {t("hero.badge")}
         </Chip>
@@ -202,5 +204,6 @@ export default async function GlosarioIndexPage({ params }: Props) {
         </Card>
       </section>
     </div>
+    </HomeLayout>
   );
 }
