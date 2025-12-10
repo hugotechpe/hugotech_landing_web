@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
+import Link from "next/link";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 import HomeLayout from "../../HomeLayout";
 
@@ -41,6 +42,27 @@ export default async function Management30Page({
   return (
     <HomeLayout>
       <div className="max-w-5xl mx-auto px-4 py-12">
+      {/* Breadcrumb */}
+      <nav aria-label="breadcrumb" className="mb-6">
+        <ol className="flex flex-wrap items-center gap-2 text-sm text-default-600">
+          <li>
+            <Link className="hover:text-primary transition-colors" href="/">
+              {locale === "es" ? "Inicio" : "Home"}
+            </Link>
+          </li>
+          <li>/</li>
+          <li>
+            <Link className="hover:text-primary transition-colors" href="/glosario">
+              {locale === "es" ? "Glosario Tech" : "Tech Glossary"}
+            </Link>
+          </li>
+          <li>/</li>
+          <li className="text-primary font-semibold">
+            Management 3.0
+          </li>
+        </ol>
+      </nav>
+
       <div className="text-center mb-16">
         <Chip className="mb-6" color="primary" size="lg" variant="flat">
           {locale === "es" ? "Framework de Liderazgo" : "Leadership Framework"}
