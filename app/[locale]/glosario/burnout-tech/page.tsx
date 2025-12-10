@@ -920,27 +920,27 @@ export default async function BurnoutTechGlosarioPage({
                   : "You're not alone. At HugoTech we help developers recover from burnout, establish healthy boundaries, and rebuild their relationship with technology."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  as={Link}
-                  className="bg-white text-danger font-bold text-lg px-8 py-6 h-auto"
-                  href="/#cita"
-                  size="lg"
-                >
-                  {isSpanish
-                    ? "Agendar Sesión de Recuperación"
-                    : "Schedule Recovery Session"}
-                </Button>
-                <Button
-                  as={Link}
-                  className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-danger transition-colors"
-                  href="/mentoring-burnout"
-                  size="lg"
-                  variant="bordered"
-                >
-                  {isSpanish
-                    ? "Ver Mentoría Anti-Burnout"
-                    : "View Anti-Burnout Mentoring"}
-                </Button>
+                <Link href="/#cita">
+                  <Button
+                    className="bg-white text-danger font-bold text-lg px-8 py-6 h-auto"
+                    size="lg"
+                  >
+                    {isSpanish
+                      ? "Agendar Sesión de Recuperación"
+                      : "Schedule Recovery Session"}
+                  </Button>
+                </Link>
+                <Link href="/mentoring-burnout">
+                  <Button
+                    className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-danger transition-colors"
+                    size="lg"
+                    variant="bordered"
+                  >
+                    {isSpanish
+                      ? "Más sobre Mentoring Burnout"
+                      : "More about Burnout Mentoring"}
+                  </Button>
+                </Link>
               </div>
             </CardBody>
           </Card>

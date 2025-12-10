@@ -875,27 +875,27 @@ export default async function TechLeadGlosarioPage({
                   : "At HugoTech we help you develop the technical and leadership skills needed to be an effective Tech Lead."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  as={Link}
-                  className="bg-white text-primary font-bold text-lg px-8 py-6 h-auto"
-                  href="/#cita"
-                  size="lg"
-                >
-                  {isSpanish
-                    ? "Agendar Sesión Gratuita"
-                    : "Schedule Free Session"}
-                </Button>
-                <Button
-                  as={Link}
-                  className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-primary transition-colors"
-                  href="/liderazgo-introvertidos"
-                  size="lg"
-                  variant="bordered"
-                >
-                  {isSpanish
-                    ? "Ver Coaching de Liderazgo"
-                    : "View Leadership Coaching"}
-                </Button>
+                <Link href="/#cita">
+                  <Button
+                    className="bg-white text-primary font-bold text-lg px-8 py-6 h-auto"
+                    size="lg"
+                  >
+                    {isSpanish
+                      ? "Agendar Sesión Gratuita"
+                      : "Schedule Free Session"}
+                  </Button>
+                </Link>
+                <Link href="/liderazgo-introvertidos">
+                  <Button
+                    className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-primary transition-colors"
+                    size="lg"
+                    variant="bordered"
+                  >
+                    {isSpanish
+                      ? "Ver Coaching de Liderazgo"
+                      : "View Leadership Coaching"}
+                  </Button>
+                </Link>
               </div>
             </CardBody>
           </Card>

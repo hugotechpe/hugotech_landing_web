@@ -871,25 +871,25 @@ export default async function SindromeImpostorGlosarioPage({
                   : "At HugoTech we work with developers to overcome impostor syndrome, recognize your true value, and advance with confidence in your tech career."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  as={Link}
-                  className="bg-white text-secondary font-bold text-lg px-8 py-6 h-auto"
-                  href="/#cita"
-                  size="lg"
-                >
-                  {isSpanish
-                    ? "Agendar Sesión de Confianza"
-                    : "Schedule Confidence Session"}
-                </Button>
-                <Button
-                  as={Link}
-                  className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-secondary transition-colors"
-                  href="/coaching"
-                  size="lg"
-                  variant="bordered"
-                >
-                  {isSpanish ? "Ver Coaching Tech" : "View Tech Coaching"}
-                </Button>
+                <Link href="/#cita">
+                  <Button
+                    className="bg-white text-secondary font-bold text-lg px-8 py-6 h-auto"
+                    size="lg"
+                  >
+                    {isSpanish
+                      ? "Agendar Sesión de Confianza"
+                      : "Schedule Confidence Session"}
+                  </Button>
+                </Link>
+                <Link href="/coaching">
+                  <Button
+                    className="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-6 h-auto hover:bg-white hover:text-secondary transition-colors"
+                    size="lg"
+                    variant="bordered"
+                  >
+                    {isSpanish ? "Ver Coaching Tech" : "View Tech Coaching"}
+                  </Button>
+                </Link>
               </div>
             </CardBody>
           </Card>
