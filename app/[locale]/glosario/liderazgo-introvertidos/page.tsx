@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
+import HomeLayout from "../../HomeLayout";
 
 export async function generateMetadata({
   params,
@@ -34,7 +35,8 @@ export default async function LiderazgoIntrovertidosPage({
   setRequestLocale(locale);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
+    <HomeLayout>
+      <div className="max-w-5xl mx-auto px-4 py-12">
       <div className="text-center mb-16">
         <Chip className="mb-6" color="primary" size="lg" variant="flat">
           {locale === "es" ? "Liderazgo Auténtico" : "Authentic Leadership"}
@@ -139,5 +141,6 @@ export default async function LiderazgoIntrovertidosPage({
         </div>
       </section>
     </div>
+    </HomeLayout>
   );
 }

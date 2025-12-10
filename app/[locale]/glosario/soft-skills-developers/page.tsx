@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
+import HomeLayout from "../../HomeLayout";
 
 import { generateMetadata as genMetadata } from "@/lib/metadata";
 
@@ -57,7 +58,8 @@ export default async function SoftSkillsDevelopersPage({
   setRequestLocale(locale);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
+    <HomeLayout>
+      <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Hero */}
       <div className="text-center mb-16">
         <Chip className="mb-6" color="primary" size="lg" variant="flat">
@@ -295,5 +297,6 @@ export default async function SoftSkillsDevelopersPage({
         </div>
       </section>
     </div>
+    </HomeLayout>
   );
 }
