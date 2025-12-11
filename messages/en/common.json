@@ -2313,6 +2313,177 @@
       "subtitle": "The Glossary gives you concepts. The Hugotech Method gives you real transformation with 1-on-1 mentoring.",
       "button": "Learn About the Hugotech Method"
     }
+  },
+  "CoachingTecnologico": {
+    "hero": {
+      "chip": "Ontological ReCode® for Tech Leaders",
+      "title": "You Don't Change What You DO. You Change Who You ARE.",
+      "subtitle": "And Everything Else Changes with You.",
+      "tagline": "I'm not a guru with perfect answers. I'm an engineer who broke, ReCoded himself from BEING, and now accompanies others on that journey. It's not theory. It's Ontological ReCoding®: you recode your observer, your language, your leader identity.",
+      "cta": "Start Your ReCode® Journey"
+    },
+    "journey": {
+      "title": "My Breaking Point: When Success Left Me Empty",
+      "cards": [
+        {
+          "year": "2006-2024",
+          "title": "The 'Success' Climb: Backend Dev → Tech Lead → Country Manager",
+          "description": "18 years building tech products, scaling teams, hitting KPIs. I was 'succeeding' by every metric. But inside: emptiness, exhaustion, disconnection. 'Is this what I worked so hard for?'"
+        },
+        {
+          "year": "2023",
+          "title": "My Break: Country Manager... and Completely Lost",
+          "description": "I reached the 'dream role'. More money, more power, more recognition. And more emptiness. I realized I had climbed the wrong mountain: I was DOING everything right... but BEING someone I didn't recognize. Burnout wasn't lack of rest. It was lack of BEING."
+        },
+        {
+          "year": "2024-Present",
+          "title": "My ReCode®: From Engineer to Ontological Coach (ICF Training)",
+          "description": "I didn't need more technical skills. I needed to ReCode WHO I WAS when leading. Ontological coaching (ICF training) taught me: you don't change WHAT you do. You change your OBSERVER, your language, your identity. I ReCoded from control to trust. From ego to service. From fear to purpose. Now I accompany leaders in that same ReCode® journey."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Ontological ReCode®: From BEING to Real Impact",
+      "subtitle": "I don't work on 'improving your leadership'. I work on ReCoding the OBSERVER you are. As an engineer you recode buggy code. As a leader, you ReCode your identity, your language, your emotionality.",
+      "description": "ReCode® Method combines 18 years in engineering with professional ontological coaching (ICF training). I don't give you recipes. I ReCode you through powerful questions that transform who you are when you lead: Do you lead from control or trust? From ego or service? From fear or purpose?",
+      "tagline": "Ontological ReCode®: When you ReCode who you ARE, you ReCode how you LEAD, how you RELATE, how you DECIDE. Sustainable high performance is natural consequence."
+    },
+    "pillars": {
+      "title": "4 Pillars of Ontological ReCode® Method",
+      "subtitle": "ReCode who you ARE, not just what you DO",
+      "items": [
+        {
+          "focus": "Observer Transformation",
+          "service": "ReCode® Your Way of Seeing",
+          "impact": "The core problem isn't 'what you do'. It's WHO YOU ARE when doing it. Change your observer, and your actions automatically change.",
+          "iconKey": "liderazgo",
+          "details": [
+            "From 'I have to control everything' to 'I trust my team'",
+            "From 'I'm an impostor' to 'I'm constantly learning'",
+            "From 'problems overwhelm me' to 'challenges drive me'",
+            "Real case: Senior Dev saw himself as 'just coder'. ReCoded to 'strategic architect'. Got promotion without trying."
+          ]
+        },
+        {
+          "focus": "Powerful Conversations",
+          "service": "ReCode® Your Language and Relationships",
+          "impact": "Ontological coaching doesn't work on 'communication techniques'. It works on the BEING that speaks. Your language creates your reality.",
+          "iconKey": "mentoring",
+          "details": [
+            "From avoiding conflict to having generative conversations",
+            "From reactive feedback to transformative feedback",
+            "From 'convincing' to 'co-creating with team'",
+            "Real case: Tech Lead couldn't delegate (control). ReCoded conversations from 'command' to 'trust'. Team bloomed."
+          ]
+        },
+        {
+          "focus": "Embodied Leadership",
+          "service": "ReCode® Your Presence and Emotionality",
+          "impact": "You can't 'act like a leader' if you don't FEEL like one inside. Ontological ReCode® transforms your body, emotions, identity.",
+          "iconKey": "equipos",
+          "details": [
+            "From constant anxiety to centered calm",
+            "From being 'always reactive' to conscious responses",
+            "From burnout to sustainable energy",
+            "Real case: Manager with anxiety attacks. ReCoded emotional relationship with pressure. Now leads crisis with clarity."
+          ]
+        },
+        {
+          "focus": "Teams as Living Organisms",
+          "service": "ReCode® Your Team Culture",
+          "impact": "A team isn't 'resources'. It's a living organism. ReCode® how you see your team, and you ReCode how they perform.",
+          "iconKey": "equipos",
+          "details": [
+            "From 'team executes my vision' to 'we co-create vision'",
+            "From psychological fear to psychological safety",
+            "From silos to organic collaboration",
+            "Real case: Fragmented team (distrust). ReCoded from 'control' to 'vulnerability'. Doubled delivery in 3 months."
+          ]
+        }
+      ]
+    },
+    "benefits": {
+      "title": "What You ReCode in Yourself (From BEING)",
+      "subtitle": "I don't promise 'tools'. I promise Ontological ReCode®. ReCode who you are, not just what you do.",
+      "items": [
+        {
+          "title": "Authentic Leader Identity",
+          "description": "From impostor syndrome to 'I AM a leader'. Not acting like leader. BEING leader. Deep identity shift.",
+          "icon": "🧬"
+        },
+        {
+          "title": "Conversations that Transform",
+          "description": "From avoiding conflict to powerful conversations that generate commitment, clarity, real action. Your language creates your reality.",
+          "icon": "💬"
+        },
+        {
+          "title": "Inner Peace + High Performance",
+          "description": "From 'success or burnout' to sustainable high performance. You don't sacrifice wellbeing for results. You generate results FROM wellbeing.",
+          "icon": "⚡"
+        },
+        {
+          "title": "Teams that Flow, Not Just Execute",
+          "description": "From 'managing resources' to co-creating with living organisms. Your team stops 'working for you' and starts co-creating WITH you.",
+          "icon": "🌊"
+        }
+      ],
+      "cta": "It's not about 'improving'. It's about ReCoding® yourself. Ontological ReCode®: You ReCode who you are, and everything else ReCodes with you."
+    },
+    "cta": {
+      "title": "Begin Your Ontological ReCode® with Hugo Casanova",
+      "subtitle": "Talk directly with Hugo. I don't sell packages. I offer real ontological ReCoding: BEING transformation that generates sustainable results. ReCode® Fulldays and Camps available. First session free. No commitment. Just deep clarity.",
+      "primaryButton": "Schedule Free ReCode® Session",
+      "secondaryLink": "Meet Hugo Casanova (Engineer + Ontological Coach)"
+    },
+    "faq": {
+      "title": "Questions About Ontological ReCode® Method",
+      "items": [
+        {
+          "question": "Why Hugo Casanova and not another tech coach?",
+          "answer": "Because Hugo LIVED 18 years in tech from 'doing': Backend Developer, Tech Lead, Country Manager. He reached visible success... and internal emptiness. His breaking point led him to ontological coaching (ICF training), where he discovered he DIDN'T need to 'do things better'. He needed to ReCode himself as BEING. That's how his Ontological ReCode® method was born: as engineer you recode buggy code, as leader you ReCode limiting beliefs, reactive emotionality, and toxic leadership patterns. He's the ONLY coach who unites senior engineering with Ontological ReCoding in Latin America."
+        },
+        {
+          "question": "What exactly is Ontological ReCoding®?",
+          "answer": "It's NOT 'improve your leadership skills'. It's NOT 'learn to communicate better'. Ontological coaching works on WHO YOU ARE when you lead, communicate, decide. Your OBSERVER: how you see yourself, your team, challenges. Your LANGUAGE: what you say creates your reality. Your EMOTIONALITY: you can't 'act calm' if inside you're anxious. ReCode® Method: as engineer you recode buggy code (if-else, loops, architecture). As leader, you ReCode your identity, your conversations, your emotional patterns. Same logic: identify bug (limiting belief), understand root cause (where it comes from), recode (transform observer), test (new results). It's ontological coaching with engineering thinking."
+        },
+        {
+          "question": "How is it different from traditional executive coaching?",
+          "answer": "Traditional coaching: 'What do you want to achieve?' → actions → habits. Ontological coaching: 'WHO are you BEING when you lead?' → observer transformation → identity shift → actions flow naturally. Example: Traditional coach: 'Learn to delegate (technique)'. Ontological ReCode®: 'Why do you need to control everything? What do you fear if you let go? Who would you BE if you trusted?' You don't learn to delegate. You BECOME someone who naturally trusts. Delegation is consequence, not objective. Plus: Hugo speaks your language (sprints, deploys, on-call, tech debt). He doesn't have to 'understand your context' because he lived it 18 years."
+        },
+        {
+          "question": "What's the ReCode® Fulldays and Camps format?",
+          "answer": "ReCode® Fulldays: intensive 1-day immersions (8 hours) where we work deeply on ONE specific transformation: from control to trust, from impostor to leader, from burnout to sustainable energy. It's NOT theory. It's experiential ontological work with powerful questions, somatic practices, identity deconstruction. You leave with deep shift, not just 'notes'. ReCode® Camps: 2-3 day retreats (fri-sun) for teams or individual leaders seeking profound transformation. We combine ontological coaching, nature, vulnerability, real community. Participants describe it as 'before and after in my leadership'. Investment: fulldays from $500, camps from $1,500. First exploratory session always free."
+        },
+        {
+          "question": "Is it for me if I don't have a 'big problem'?",
+          "answer": "Ontological ReCode® is NOT therapy (doesn't work on trauma). It's NOT consulting (doesn't give you solutions). It's accompaniment for leaders who: (1) Feel 'successful outside, empty inside'. (2) Want to lead from purpose, not obligation. (3) Seek sustainable high performance, not burnout. (4) Want authentic relationships, not masks. (5) Want to BE the leader they admire, not act like one. If you're 'fine but not fulfilled', if you sense 'there must be another way to lead', if you're tired of 'acting confident' when inside you doubt: ReCode® is for you. It's not about fixing problems. It's about expanding who you ARE."
+        },
+        {
+          "question": "How long until I see results?",
+          "answer": "FIRST SESSION: you leave with deep clarity (not 'aha' moments, but ontological shifts). 3 MONTHS (12 sessions): sustainable identity transformation. You stop 'trying to be better leader' and start BEING different leader naturally. 6 MONTHS: consolidated ReCode®. Your team, peers, family notice you're different (calmer, clearer, more present, more powerful). It's NOT 'learning techniques gradually'. Ontological coaching can generate immediate shifts ('I never saw it that way'). But consolidating new identity requires time, practice, accompaniment. First session is free: you'll know if ReCode® resonates with you. No pressure, no sales. Just authentic conversation."
+        },
+        {
+          "question": "Do you work 1-on-1 or with teams?",
+          "answer": "BOTH. (1) Individual Ontological Coaching: for CTOs, Tech Leads, Engineering Managers, Staff Engineers who need profound personal transformation. 1-hour sessions, biweekly, 3-6 month minimum. (2) Team ReCode® Programs: for 5-15 person teams needing culture, collaboration, leadership transformation. 12-week programs with group + individual sessions. (3) ReCode® Fulldays and Camps: intensive for individuals or teams seeking deep transformation in short time. First call is diagnostic: we see what format fits your real need."
+        },
+        {
+          "question": "Do you work with companies outside Peru?",
+          "answer": "Yes, 100% remote. I serve clients throughout Latin America (Mexico, Colombia, Argentina, Chile) and United States. Sessions via Zoom/Google Meet, Spanish or English. Flexible schedule for your timezone. Ontological coaching has no borders: if your challenge is leadership, identity, purpose, I can accompany you wherever you are. ReCode® Fulldays and Camps can be in-person (Peru/your country) or remote intensive format."
+        },
+        {
+          "question": "How much does Ontological ReCode® investment cost?",
+          "answer": "Individual Coaching: $150/session (1 hour). Recommended packages: 12 sessions (3 months) $1,500, 24 sessions (6 months) $2,800. ReCode® Fulldays: from $500 (individual), $3,000 (team 5-10 people). ReCode® Camps: from $1,500 (individual 2 days), $8,000 (team retreat 3 days). FIRST SESSION ALWAYS FREE (1 hour): no commitment, no sales. Just authentic conversation to see if ReCode® is for you. If you don't feel connection or clarity, no problem. Ontological coaching requires resonance, not convincing."
+        },
+        {
+          "question": "What if I'm not sure if ontological coaching is for me?",
+          "answer": "Perfect. FIRST SESSION IS FREE (no commitment). We'll have authentic conversation: I ask powerful questions, you explore your current situation, we see if ReCode® method resonates with you. You'll leave with clarity, whether you continue or not. I don't 'sell packages'. I seek authentic connections with leaders truly ready to ReCode their BEING, not just 'improve their doing'. If after first session you feel 'this is what I needed', we continue. If not, no problem. You'll still leave with value (deep clarity about yourself)."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Ontological ReCode® for Tech Leaders with Hugo Casanova",
+      "description": "Hugo Casanova combines 18 years in software engineering (Backend Developer, Tech Lead, Country Manager) with professional ontological coaching (ICF training) to accompany tech leaders in profound BEING transformation. It's not improving 'what you do'. It's ReCoding 'who you ARE' when you lead. Ontological ReCode® Method: transform your observer, your language, your leader identity. From control to trust. From ego to service. From impostor syndrome to authentic leadership. From burnout to sustainable high performance. 1-on-1 Coaching, ReCode® Fulldays, Transformational Camps. Serving Latin America and United States remotely. First session free.",
+      "keywords": "ontological coaching for tech leaders, ontological recode, recode method, hugo casanova ontological coach, leadership transformation for engineers, from engineer to leader, impostor syndrome in tech, tech leadership burnout, sustainable high performance, authentic tech leadership, observer transformation, powerful conversations, embodied leadership, teams as living organisms, tech lead coaching, cto coaching, engineering manager coaching, ontological coaching latin america, ontological coaching united states, recode fulldays, transformational camps for leaders"
+    }
   }
-}
 }

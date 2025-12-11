@@ -2448,5 +2448,176 @@
       "subtitle": "El Glosario te da conceptos. El Método Hugotech te da transformación real con mentoría 1-a-1.",
       "button": "Conocer el Método Hugotech"
     }
+  },
+  "CoachingTecnologico": {
+    "hero": {
+      "chip": "🚀 Coaching Ontológico para Líderes Tech | Hugo Casanova",
+      "title": "No Cambias lo que HACES. Cambias Quién ERES. Y Todo lo Demás Cambia Contigo.",
+      "subtitle": "Soy Hugo Casanova. Ingeniero de software transformado en Coach Ontológico. Después de 18 años liderando equipos tech—y quebrándome en el proceso—descubrí la verdad: No necesitas más frameworks ágiles. Necesitas transformar el observador que eres. Porque quién eres define cómo lideras, cómo decides, cómo te relacionas con tu equipo.",
+      "questions": [
+        "¿Sientes que sabes 'cómo' liderar pero algo interno te bloquea?",
+        "¿Tu equipo crece pero tú te sientes cada vez más desconectado de quién realmente eres?",
+        "¿Lideras desde el 'deber ser' en lugar de desde tu autenticidad?"
+      ],
+      "hook": "El problema no es tu técnica de liderazgo. Es el observador que eres cuando lideras. Transforma tu SER, y transformarás tu realidad.",
+      "cta": "Conversemos sobre tu Transformación (Sesión Sin Costo)"
+    },
+    "journey": {
+      "title": "Mi Quiebre: Cuando el Éxito Me Dejó Vacío",
+      "subtitle": "No te voy a vender teoría de libros. Te comparto mi transformación ontológica: de líder técnico exitoso y vacío, a ser humano que lidera desde su esencia.",
+      "story": [
+        "Llegué al puesto más alto de mi carrera tech en Latinoamérica. Country Manager. Éxito visible, vacío interno. Un día me desperté exitoso... y completamente desconectado de quién era. No sabía quién era Hugo sin el cargo, sin el código, sin la máscara de 'líder técnico perfecto'.",
+        "Ese quiebre me llevó al coaching ontológico. No para 'arreglarme'. Para RE-CREARME. Descubrí que llevaba años liderando desde el miedo disfrazado de perfeccionismo. Desde el 'deber ser' que aprendí, no desde el SER auténtico que soy.",
+        "Me formé como Coach ICF, estudié ontología del coaching, Management 3.0, y lo más difícil: desaprendí quién creía que debía ser, para descubrir quién realmente soy. Y desde ahí, todo cambió: mi liderazgo, mis relaciones, mi paz interna.",
+        "Hoy acompaño a líderes tech en esa misma transformación ontológica: de liderar desde el 'deber' a liderar desde el SER. No te enseño a fingir ser mejor líder. Te acompaño a CONVERTIRTE en el líder que ya eres, pero que aún no has descubierto."
+      ],
+      "tagline": "No soy un gurú con respuestas perfectas. Soy un ingeniero que se quebró, se RecoProgramó desde el SER, y ahora acompaña a otros en ese viaje. No es teoría. Es RecoProgramación ontológica: reprogramas tu observador, tu lenguaje, tu identidad de líder."
+    },
+    "solution": {
+      "title": "RecoProgramación® Ontológica: Del SER al Impacto Real",
+      "subtitle": "No trabajo en 'mejorar tu liderazgo'. Trabajo en RecoProgramar el OBSERVADOR que eres. Como ingeniero reprogramas código. Como líder, RecoProgramas tu identidad, tu lenguaje, tu emocionalidad.",
+      "description": "Método RecoProgramación® combina 18 años en ingeniería con coaching ontológico profesional (en formación ICF). No te doy recetas. Te RecoProgramo a través de preguntas poderosas que transforman quién eres cuando lideras: ¿Lideras desde el control o desde la confianza? ¿Desde el ego o desde el servicio? ¿Desde el miedo o desde el propósito?",
+      "tagline": "RecoProgramación Ontológica: Cuando RecoProgramas quién ERES, RecoProgramas cómo LIDERAS, cómo te RELACIONAS, cómo DECIDES. El alto rendimiento sostenible es consecuencia natural."
+    },
+    "pillars": {
+      "title": "Los 4 Pilares de la Transformación Ontológica en Liderazgo Tech",
+      "subtitle": "No son técnicas. Son ámbitos de transformación del SER que cambian TODO lo demás.",
+      "items": [
+        {
+          "focus": "Transformación del Observador",
+          "service": "Coaching Ontológico: ¿Quién Eres Cuando Lideras?",
+          "impact": "Descubres que el problema no es 'allá afuera'. Es el observador que eres. Transformas cómo VES (observador), para transformar cómo ACTUAS (acción), para transformar lo que LOGRAS (resultados).",
+          "iconKey": "mentoring",
+          "details": [
+            "Identidad de líder: ¿Quién ERES vs quién CREES que debes ser?",
+            "Emocionalidad en liderazgo: liderar desde el miedo vs desde el propósito",
+            "El lenguaje que usas CREA tu realidad de equipo",
+            "Autoconocimiento radical: ver tus puntos ciegos como líder"
+          ]
+        },
+        {
+          "focus": "Conversaciones Poderosas",
+          "service": "De Reuniones Transaccionales a Diálogos Transformadores",
+          "impact": "Aprendes que liderar ES conversar. Pero no 'hablar'. Conversaciones que CREAN realidad, construyen confianza, y transforman equipos. El lenguaje no describe el mundo: lo CREA.",
+          "iconKey": "equipos",
+          "details": [
+            "Feedback ontológico: conversaciones que transforman, no hieren",
+            "Escucha activa profunda: oír lo NO dicho en tu equipo",
+            "Declaraciones de compromiso vs promesas vacías",
+            "Crear seguridad psicológica desde el SER, no desde el discurso"
+          ]
+        },
+        {
+          "focus": "Liderazgo Encarnado",
+          "service": "Coherencia SER-HACER-TENER (Ontología + Management 3.0)",
+          "impact": "No finges ser líder. TE CONVIERTES en líder. Coherencia entre quién dices ser, cómo actúas, y qué generas. Tu equipo no sigue tu discurso. Sigue tu SER.",
+          "iconKey": "liderazgo",
+          "details": [
+            "Vulnerabilidad como fortaleza (no como debilidad)",
+            "Liderar sin autoridad formal: influencia desde el SER",
+            "Energía sostenible vs burnout glorificado",
+            "Propósito como brújula: por qué haces lo que haces"
+          ]
+        },
+        {
+          "focus": "Equipos como Organismos Vivos",
+          "service": "De 'Gestionar Recursos' a Co-Crear con Personas",
+          "impact": "Tu equipo no es 'máquina de productividad'. Es organismo vivo con emociones, historias, miedos, sueños. Lideras personas, no recursos. Y eso lo cambia TODO.",
+          "iconKey": "equipos",
+          "details": [
+            "IA como herramienta: las habilidades humanas que NUNCA serán reemplazables",
+            "Agilidad real: adaptabilidad ontológica, no ceremonias Scrum",
+            "Equipos híbridos: conexión humana en pantallas",
+            "Co-creación vs micromanagement: soltar control, ganar confianza"
+          ]
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Lo que RecoProgramas en Ti (Desde el SER)",
+      "subtitle": "No te prometo 'herramientas'. Te prometo RecoProgramación Ontológica®. RecoProgramar quién eres, no solo qué haces.",
+      "items": [
+        {
+          "title": "Identidad de Líder Auténtico",
+          "description": "Dejas de 'actuar como líder' para CONVERTIRTE en líder. Coherencia entre quien eres y cómo lideras. Sin máscaras.",
+          "icon": "🎯"
+        },
+        {
+          "title": "Conversaciones que Transforman",
+          "description": "Tu lenguaje crea realidad. Aprendes a conversar de forma que CONSTRUYE equipos, no que los destruye. El poder del lenguaje ontológico.",
+          "icon": "💬"
+        },
+        {
+          "title": "Paz Interna + Alto Rendimiento",
+          "description": "El éxito sin paz es vacío. Logras alto rendimiento sostenible DESDE tu esencia, no sacrificándola. Rendimiento con alma.",
+          "icon": "⚡"
+        },
+        {
+          "title": "Transformación Medible y Sentida",
+          "description": "No solo 'sientes' que mejoras. TÚ y tu EQUIPO ven cambios tangibles: decisiones más claras, relaciones más profundas, resultados sostenibles.",
+          "icon": "🚀"
+        }
+      ],
+      "cta": "No se trata de 'mejorar'. Se trata de RecoProgramarte®. RecoProgramación ontológica: RecoProgramas quién eres, y todo lo demás se RecoPrograma contigo."
+    },
+    "cta": {
+      "title": "Comienza tu RecoProgramación® Ontológica con Hugo Casanova",
+      "subtitle": "Habla directamente con Hugo. No vendo paquetes. Ofrezco RecoProgramación ontológica real: transformación del SER que genera resultados sostenibles. Fulldays RecoProgramación® y Campamentos disponibles. Primera sesión sin costo. Sin compromiso. Solo claridad profunda.",
+      "primaryButton": "Agendar Sesión Gratuita con Hugo",
+      "secondaryLink": "Ver Programas para Equipos Tech"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Coaching Ontológico para Líderes Tech",
+      "items": [
+        {
+          "question": "¿Qué es el Coaching Ontológico y en qué se diferencia del coaching tradicional?",
+          "answer": "El coaching ontológico NO trabaja en 'qué hacer' o 'cómo hacerlo mejor'. Trabaja en QUIÉN ERES cuando haces lo que haces. Se basa en ontología del lenguaje: el observador que eres determina la acción que tomas, y la acción determina los resultados. Hugo Casanova te acompaña a transformar tu IDENTIDAD de líder, no solo tus habilidades. Porque cuando cambias QUIÉN ERES (tu forma de VER, de CONVERSAR, de RELACIONARTE), cambias TODO: tu liderazgo, tus resultados, tu paz interna. No es coaching de consejos. Es transformación del SER."
+        },
+        {
+          "question": "¿Por qué Hugo Casanova combina ingeniería con coaching ontológico?",
+          "answer": "Porque Hugo VIVIÓ los 18 años en tecnología desde el 'hacer': Backend Developer, Tech Lead, Country Manager. Llegó al éxito visible... y al vacío interno. Su quiebre lo llevó al coaching ontológico (en formación ICF), donde descubrió que NO necesitaba 'hacer mejor las cosas'. Necesitaba RecoProgramarse como SER. Así nació su método RecoProgramación® Ontológica: como ingeniero reprogramas código defectuoso, como líder RecoProgramas creencias limitantes, emocionalidad reactiva, y patrones de liderazgo tóxicos. Es el ÚNICO coach que une ingeniería senior con RecoProgramación ontológica en Latinoamérica."
+        },
+        {
+          "question": "¿Qué es el Coaching Tecnológico con Hugo Casanova?",
+          "answer": "El Coaching Tecnológico con Hugo Casanova es un proceso de acompañamiento profesional para líderes tech que combina 18+ años de experiencia en ingeniería de software con certificación ICF en coaching profesional. No es coaching genérico aplicado a tech: es coaching diseñado desde la trinchera de la tecnología. Hugo pasó de Backend Developer a Country Manager, vivió el burnout en carne propia, y ahora ayuda a CTOs, Tech Leads y Engineering Managers a transformarse desde el SER hacia equipos de alto rendimiento sostenible. Especialización en mindset ágil real, prevención de burnout, liderazgo con IA, y equipos híbridos."
+        },
+        {
+          "question": "¿Cómo ayuda el coaching tecnológico a CTOs y Tech Leads en 2025-2026?",
+          "answer": "En 2025-2026, los CTOs y Tech Leads enfrentan desafíos únicos: integración de IA en equipos, gestión de talento remoto/híbrido, retención de seniors, burnout en DevOps/SRE, y transiciones de rol (IC a Manager). Hugo Casanova te ayuda a: (1) Liderar la adopción de IA sin generar pánico en tu equipo, (2) Construir cultura de alto rendimiento sin glorificar el agotamiento, (3) Desarrollar seguridad psicológica para que tu equipo innove sin miedo, (4) Comunicar cambios técnicos complejos a stakeholders no técnicos, (5) Decidir entre seguir como IC (Staff Engineer) o pivotar a management. Coaching 1-a-1 personalizado según tu contexto real."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre coaching tecnológico y mentoría técnica?",
+          "answer": "La mentoría técnica se enfoca en enseñar habilidades específicas (arquitectura, código, frameworks). El coaching tecnológico trabaja en tu transformación como líder integral. Hugo Casanova no te enseña a programar mejor (eso ya lo sabes). Te ayuda a: autoconocerte como líder, superar el síndrome del impostor, liderar sin autoridad formal, dar feedback difícil sin romper egos, delegar sin micromanagement, construir equipos que confían. El coaching es desarrollo de tu SER. La mentoría es desarrollo de tu HACER. Idealmente, combinas ambos. Hugo ofrece ambos enfoques según tu necesidad."
+        },
+        {
+          "question": "¿El coaching tecnológico funciona para seniors developers que no quieren ser managers?",
+          "answer": "¡Absolutamente! No todos los seniors quieren o deben ser managers. Hugo Casanova acompaña seniors developers en 3 caminos: (1) Senior → Staff Engineer: influencia técnica sin gestión de personas, (2) Senior → Tech Lead: liderazgo técnico de equipo sin perder el código, (3) Senior estancado: career reset para encontrar tu siguiente motivación. Si eres senior y sientes que: creciste técnicamente pero no sabes cuál es tu siguiente paso, te da miedo que la IA te reemplace, o te cansaste de hacer 'más de lo mismo'—el coaching tech te ayuda a clarificar tu siguiente capítulo sin forzarte al management."
+        },
+        {
+          "question": "¿Cómo previene Hugo Casanova el burnout en equipos tech?",
+          "answer": "Hugo Casanova vivió el burnout en su rol como Country Manager. Sabe cómo se siente estar 'exitoso' pero vacío por dentro. Su enfoque anti-burnout incluye: (1) Identificar las 7 señales tempranas de burnout antes de que explote, (2) Crear límites digitales saludables (Slack 24/7, reuniones infinitas, 'urgencias' falsas), (3) Diseñar tu semana de 'alto rendimiento sostenible' (no trabajar más, sino mejor), (4) Aprender a decir NO sin culpa ni miedo, (5) Construir cultura de equipo donde pedir ayuda no es debilidad. El burnout no es badge of honor. Es señal de que algo está roto. Hugo te ayuda a arreglarlo antes de renunciar."
+        },
+        {
+          "question": "¿Qué es el mindset ágil real según Hugo Casanova?",
+          "answer": "Mindset ágil real NO es: hacer Scrum, tener dailys de 15 minutos, o usar Jira. Mindset ágil real ES: adaptabilidad continua, aprendizaje como hábito, experimentar sin miedo al fracaso, feedback honesto como regalo. Hugo Casanova combina Management 3.0 con coaching para que ENTIENDAS la filosofía ágil, no solo sigas ceremonias. Trabajas en: mentalidad growth vs mindset fijo, vulnerabilidad como fortaleza de líder, iteración sobre perfección, colaboración sobre competencia interna. Si tu equipo 'hace Agile' pero sigue siendo rígido, tóxico o lento—necesitas transformar el mindset, no agregar más reuniones."
+        },
+        {
+          "question": "¿Hugo Casanova trabaja con equipos remotos e híbridos fuera de Perú?",
+          "answer": "Sí, 100% online. Hugo Casanova atiende clientes en toda Latinoamérica (México, Colombia, Argentina, Chile, Ecuador) y Estados Unidos. Las sesiones son vía Zoom/Google Meet, con horarios flexibles según tu zona horaria. Puede ser en español o inglés. Ha acompañado a: Tech Leads en startups de San Francisco, Engineering Managers en fintechs de México, CTOs de empresas remotas en Colombia, y seniors en empresas híbridas de Perú. El coaching tecnológico no tiene fronteras: si tu desafío es liderar en tech, Hugo puede ayudarte sin importar tu ubicación geográfica."
+        },
+        {
+          "question": "¿Cuánto tiempo dura un proceso de coaching tecnológico con Hugo Casanova?",
+          "answer": "Depende de tu objetivo. Para coaching individual: mínimo 3 meses (12 sesiones quincenales) para ver transformación sostenible. Para equipos: programas de 4-6 meses con sesiones semanales. Para diagnósticos puntuales: 1-2 meses. La primera sesión es SIEMPRE gratuita y sin compromiso: 45 minutos para conocernos, entender tu situación, y evaluar si el método de Hugo Casanova es para ti. No vende paquetes cerrados ni contratos largos. Diseña el plan según tu contexto real. Si después de la sesión gratuita decides que no es para ti, no hay presión ni venta agresiva."
+        },
+        {
+          "question": "¿Cómo prepara Hugo Casanova a líderes tech para la era de la IA?",
+          "answer": "Hugo Casanova no ve la IA como amenaza, sino como herramienta de potenciación. Su enfoque AI-Ready incluye: (1) Integrar IA en workflows de tu equipo sin generar resistencia o pánico, (2) Decidir éticamente qué automatizar y qué mantener humano, (3) Comunicar cambios AI a tu equipo con empatía (no solo eficiencia), (4) Desarrollar las habilidades humanas que la IA NUNCA tendrá: empatía, creatividad contextual, toma de decisiones complejas, liderazgo inspiracional. La IA no reemplazará a líderes tech. Pero líderes tech que usen IA inteligentemente, sí reemplazarán a quienes no lo hagan. Hugo te prepara para ese futuro, HOY."
+        },
+        {
+          "question": "¿Por qué elegir a Hugo Casanova sobre otros coaches tech?",
+          "answer": "Diferenciadores clave: (1) No es coach 'que estudió tech'. Es INGENIERO que se transformó en coach. 18+ años escribiendo código, liderando equipos, sufriendo deploys de viernes. Te habla desde la trinchera. (2) Certificación ICF + Management 3.0: no es 'life coach' improvisado. Es coach profesional con credenciales internacionales. (3) Vivió el burnout: llegó al puesto más alto y se quebró. Sabe lo que es liderar exitosamente... y vacío por dentro. (4) Enfoque 'del SER': primero transformas quién eres, luego transformas tu equipo. (5) Primera sesión sin costo: evalúas si su método te sirve sin riesgo. No promete milagros. Promete acompañamiento real, vulnerable y efectivo."
+        }
+      ]
+    }
   }
 }

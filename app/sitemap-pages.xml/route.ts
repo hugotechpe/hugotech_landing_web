@@ -23,6 +23,11 @@ const routes = [
     priority: 0.9,
     changeFrequency: "monthly" as const,
   },
+  {
+    path: "/coaching-tecnologico",
+    priority: 0.95,
+    changeFrequency: "weekly" as const,
+  },
 
   // Landing Pages Específicas (High Priority SEO)
   {

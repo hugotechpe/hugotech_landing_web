@@ -286,4 +286,48 @@ export const pageMetadata = {
       ],
     },
   },
+
+  coachingTecnologico: {
+    es: {
+      title:
+        "Coaching Ontológico para Líderes Tech | Hugo Casanova - Transformación del SER",
+      description:
+        "Coaching ontológico especializado para CTOs, Tech Leads y Engineering Managers. Hugo Casanova, ingeniero con 18+ años + coach ontológico en formación ICF. Transforma tu SER, no solo tu hacer. Del observador que eres a los resultados que generas.",
+      keywords: [
+        "coaching ontológico",
+        "coaching ontológico para líderes",
+        "Hugo Casanova coach ontológico",
+        "transformación del ser",
+        "coaching para CTOs",
+        "liderazgo ontológico",
+        "transformación ontológica tech",
+        "coach ontológico Peru",
+        "observador líder",
+        "identidad de líder",
+        "conversaciones poderosas liderazgo",
+        "liderazgo auténtico tech",
+        "coaching ser hacer tener",
+        "ontología del coaching",
+        "anti-burnout ontológico",
+      ],
+    },
+    en: {
+      title:
+        "Ontological Coaching for Tech Leaders | Hugo Casanova - Being Transformation",
+      description:
+        "Specialized ontological coaching for CTOs, Tech Leads and Engineering Managers. Hugo Casanova, engineer with 18+ years + ontological coach in ICF training. Transform your BEING, not just your doing.",
+      keywords: [
+        "ontological coaching",
+        "ontological coaching for leaders",
+        "Hugo Casanova ontological coach",
+        "being transformation",
+        "coaching for CTOs",
+        "ontological leadership",
+        "tech ontological transformation",
+        "ontological coach Peru",
+        "leader observer",
+        "leader identity",
+      ],
+    },
+  },
 };

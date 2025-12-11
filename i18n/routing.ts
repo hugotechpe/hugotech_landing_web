@@ -10,6 +10,10 @@ export const routing = defineRouting({
     "/testimonials": { es: "/testimonios", en: "/testimonials" },
     "/mentor-coaching": { es: "/mentor-coaching", en: "/mentor-coaching" },
     "/coaching": { es: "/coaching", en: "/coaching" },
+    "/coaching-tecnologico": {
+      es: "/coaching-tecnologico",
+      en: "/tech-coaching",
+    },
     "/coaching-con-causa": {
       es: "/coaching-con-causa",
       en: "/coaching-with-purpose",
