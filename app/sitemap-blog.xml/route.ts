@@ -76,9 +76,13 @@ export async function GET() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${sitemapEntries
   .map(
-    (entry) => `  <url>
+    (entry) => {
+      const lastMod = entry.lastModified instanceof Date 
+        ? entry.lastModified.toISOString() 
+        : entry.lastModified;
+      return `  <url>
     <loc>${entry.url}</loc>
-    <lastmod>${entry.lastModified?.toISOString()}</lastmod>
+    <lastmod>${lastMod}</lastmod>
     <changefreq>${entry.changeFrequency}</changefreq>
     <priority>${entry.priority}</priority>
     ${
@@ -91,7 +95,8 @@ ${sitemapEntries
             .join("\n    ")
         : ""
     }
-  </url>`,
+  </url>`;
+    },
   )
   .join("\n")}
 </urlset>`;
