@@ -32,6 +32,11 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/sitemap-pages.xml`,
+      `${baseUrl}/sitemap-blog.xml`,
+      `${baseUrl}/sitemap-glosario.xml`,
+    ],
   };
 }

@@ -2,8 +2,7 @@ import { MetadataRoute } from "next";
 
 const baseUrl = "https://hugotech.pe";
 
-// Sitemap index que apunta a los sitemaps específicos
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemapIndex(): MetadataRoute.Sitemap {
   return [
     {
       url: `${baseUrl}/sitemap-pages.xml`,
