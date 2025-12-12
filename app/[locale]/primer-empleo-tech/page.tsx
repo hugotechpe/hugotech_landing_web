@@ -1,6 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
+import { Card, CardBody } from "@heroui/card";
+import { Chip } from "@heroui/chip";
+import { Button } from "@heroui/button";
+import { Rocket, ArrowRight } from "lucide-react";
 
 import HomeLayout from "../HomeLayout";
+import { Link } from "@/i18n/navigation";
 
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
@@ -317,6 +322,50 @@ export default async function PrimerEmpleoTechPage({
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Cross-Link a Método HugoTech */}
+        <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+          <div className="container mx-auto max-w-screen-xl px-6">
+            <Card className="border-2 border-blue-100 bg-white/80 backdrop-blur-sm">
+              <CardBody className="p-10 md:p-14">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-32 h-32 bg-gradient-to-br from-blue-500 via-indigo-500 to-blue-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <Rocket className="w-16 h-16 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <Chip className="mb-4" color="primary" size="lg" variant="flat">
+                      📘 {locale === "es" ? "Método Completo" : "Complete Method"}
+                    </Chip>
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      {locale === "es" 
+                        ? "Descubre el Método HugoTech: De Junior a Senior con Propósito"
+                        : "Discover the HugoTech Method: From Junior to Senior with Purpose"}
+                    </h3>
+                    <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                      {locale === "es"
+                        ? "Conseguir tu primer empleo es solo el inicio. El Método HugoTech integra mentoría técnica + coaching profesional + IA para acelerar tu crecimiento de Junior a Senior sin perderte en el camino."
+                        : "Getting your first job is just the beginning. The HugoTech Method integrates technical mentoring + professional coaching + AI to accelerate your growth from Junior to Senior without getting lost along the way."}
+                    </p>
+                    <Link href="/metodo-hugotech">
+                      <Button 
+                        color="primary" 
+                        size="lg" 
+                        className="font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                        endContent={<ArrowRight className="w-5 h-5" />}
+                      >
+                        {locale === "es" 
+                          ? "Conocer el Método Completo" 
+                          : "Discover the Complete Method"}
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
           </div>
         </section>
 

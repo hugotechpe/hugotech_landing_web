@@ -1,6 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
+import { Card, CardBody } from "@heroui/card";
+import { Chip } from "@heroui/chip";
+import { Button } from "@heroui/button";
+import { Brain, ArrowRight } from "lucide-react";
 
 import HomeLayout from "../HomeLayout";
+import { Link } from "@/i18n/navigation";
 
 import { CalendlyButton } from "@/components/calendly/CalendlyButton";
 import { generateMetadata as genMetadata } from "@/lib/metadata";
@@ -263,6 +268,50 @@ export default async function MentoringBurnoutPage({
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Cross-Link a Coaching Tecnológico */}
+        <section className="py-16 bg-gradient-to-br from-orange-50 to-red-50">
+          <div className="container mx-auto max-w-screen-xl px-6">
+            <Card className="border-2 border-red-100 bg-white/80 backdrop-blur-sm">
+              <CardBody className="p-10 md:p-14">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-32 h-32 bg-gradient-to-br from-red-500 via-orange-500 to-red-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <Brain className="w-16 h-16 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <Chip className="mb-4" color="danger" size="lg" variant="flat">
+                      🔥 Transformación Profunda
+                    </Chip>
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      {locale === "es" 
+                        ? "¿El burnout viene de más adentro? Descubre el Coaching Ontológico"
+                        : "Does burnout come from deeper within? Discover Ontological Coaching"}
+                    </h3>
+                    <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                      {locale === "es"
+                        ? "Si el burnout no es solo cansancio, sino una crisis de identidad ('¿quién soy sin mi trabajo?'), el coaching ontológico transforma quién ERES cuando lideras, no solo cómo gestionas el estrés."
+                        : "If burnout is not just tiredness, but an identity crisis ('who am I without my work?'), ontological coaching transforms who you ARE when you lead, not just how you manage stress."}
+                    </p>
+                    <Link href="/coaching-tecnologico">
+                      <Button 
+                        color="danger" 
+                        size="lg" 
+                        className="font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                        endContent={<ArrowRight className="w-5 h-5" />}
+                      >
+                        {locale === "es" 
+                          ? "Conocer Coaching Ontológico Anti-Burnout" 
+                          : "Discover Ontological Anti-Burnout Coaching"}
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
           </div>
         </section>
 
