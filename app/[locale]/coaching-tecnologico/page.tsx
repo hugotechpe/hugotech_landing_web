@@ -615,7 +615,7 @@ export default function CoachingTecnologicoPage() {
                         ? "El coaching ontológico es parte del Método HugoTech. Si estás comenzando tu carrera tech o buscas mentoría técnica, conoce nuestro método completo que integra mentoría + coaching + IA."
                         : "Ontological coaching is part of the HugoTech Method. If you're starting your tech career or looking for technical mentorship, discover our complete method that integrates mentoring + coaching + AI."}
                     </p>
-                    <Link href={t("hero.chip").includes("Ontológico") ? "/es/metodo-hugotech" : "/en/metodo-hugotech"}>
+                    <Link href="/metodo-hugotech">
                       <Button 
                         color="secondary" 
                         size="lg" 

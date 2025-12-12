@@ -610,7 +610,7 @@ export default async function MetodoHugotechPage({
                     ? "Si ya lideras equipos pero sientes que algo interno te bloquea, o te preguntas quién eres sin el cargo... el coaching ontológico transforma quién ERES cuando lideras, no solo qué HACES."
                     : "If you already lead teams but feel something internal is blocking you, or wonder who you are without the title... ontological coaching transforms who you ARE when you lead, not just what you DO."}
                 </p>
-                <Link href={`/${locale}/coaching-tecnologico`}>
+                <Link href="/coaching-tecnologico">
                   <Button 
                     color="primary" 
                     size="lg" 
