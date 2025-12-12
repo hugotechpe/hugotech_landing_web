@@ -98,8 +98,8 @@ export default async function MetodoHugotechPage({
           </Chip>
           <Heart className="w-6 h-6 text-primary animate-pulse" />
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-customgray mb-8 leading-tight">
-          <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+          <span className="text-primary">
             {locale === "es"
               ? "El Camino HugoTech"
               : "The HugoTech Path"}
@@ -122,7 +122,7 @@ export default async function MetodoHugotechPage({
               : "Here we accompany developers who need to grow technically... and leaders who need to transform ontologically."}
           </p>
         </div>
-        <div className="inline-flex items-center gap-3 bg-gradient-to-r from-secondary-100 to-primary-100 px-8 py-6 rounded-2xl mb-10 shadow-lg border-2 border-primary-200">
+        <div className="inline-flex items-center gap-3 bg-primary-50 px-8 py-6 rounded-2xl mb-10 shadow-lg border-2 border-primary-200">
           <Brain className="w-10 h-10 text-primary" />
           <p className="text-xl md:text-2xl font-bold text-customgray">
             {locale === "es"
@@ -159,11 +159,11 @@ export default async function MetodoHugotechPage({
               : "I don't sell you a method because I didn't follow one either. I accompany you from my own transformation."}
           </p>
         </div>
-        <Card className="bg-gradient-to-br from-primary-50/50 to-secondary-50/50 border-2 border-primary-100 hover:shadow-2xl transition-shadow">
-          <CardBody className="p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8">
+        <Card className=\"bg-white border-2 border-primary-200 hover:shadow-2xl transition-shadow\">
+          <CardBody className=\"p-8 md:p-12\">
+            <div className=\"grid md:grid-cols-2 gap-8\">
               {/* Lado izquierdo: La historia */}
-              <div className="space-y-6">
+              <div className=\"space-y-6\">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-warning-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Zap className="w-6 h-6 text-warning-600" />
@@ -219,7 +219,7 @@ export default async function MetodoHugotechPage({
                   {locale === "es" ? "Mis Credenciales" : "My Credentials"}
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3 p-4 bg-gradient-to-r from-primary-50 to-primary-100 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-primary-100 rounded-lg border border-primary-200">
                     <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-bold text-customgray">
@@ -235,7 +235,7 @@ export default async function MetodoHugotechPage({
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 bg-gradient-to-r from-secondary-50 to-secondary-100 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-secondary-100 rounded-lg border border-secondary-200">
                     <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-bold text-customgray">
@@ -249,7 +249,7 @@ export default async function MetodoHugotechPage({
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 bg-gradient-to-r from-success-50 to-success-100 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-success-100 rounded-lg border border-success-200">
                     <CheckCircle2 className="w-6 h-6 text-success-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-bold text-customgray">
@@ -265,7 +265,7 @@ export default async function MetodoHugotechPage({
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 bg-gradient-to-r from-warning-50 to-warning-100 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-warning-100 rounded-lg border border-warning-200">
                     <CheckCircle2 className="w-6 h-6 text-warning-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-bold text-customgray">
@@ -282,7 +282,7 @@ export default async function MetodoHugotechPage({
                   </div>
                 </div>
 
-                <div className="mt-6 p-6 bg-gradient-to-r from-primary-100 via-secondary-100 to-primary-100 rounded-xl border-2 border-primary-200">
+                <div className="mt-6 p-6 bg-primary-100 rounded-xl border-2 border-primary-200">
                   <p className="text-lg font-bold text-center text-customgray">
                     {locale === "es"
                       ? "No te enseño desde la teoría. Te acompaño desde la experiencia vivida."
@@ -315,10 +315,10 @@ export default async function MetodoHugotechPage({
 
         <div className="grid gap-8 md:grid-cols-2">
           {/* Camino 1: Mentoría Técnica */}
-          <Card className="border-2 border-success-200 hover:shadow-2xl transition-all group bg-gradient-to-br from-success-50/30 to-white">
+          <Card className="border-2 border-success-200 hover:shadow-2xl transition-all group bg-white">
             <CardBody className="p-8 md:p-10">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-success-400 to-success-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <div className="w-16 h-16 bg-success-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                   <Rocket className="w-9 h-9 text-white" />
                 </div>
                 <div>
@@ -386,10 +386,10 @@ export default async function MetodoHugotechPage({
           </Card>
 
           {/* Camino 2: Coaching Ontológico */}
-          <Card className="border-2 border-primary-200 hover:shadow-2xl transition-all group bg-gradient-to-br from-primary-50/30 to-white">
+          <Card className="border-2 border-primary-200 hover:shadow-2xl transition-all group bg-white">
             <CardBody className="p-8 md:p-10">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                   <Brain className="w-9 h-9 text-white" />
                 </div>
                 <div>
@@ -474,7 +474,7 @@ export default async function MetodoHugotechPage({
 
         {/* Nota importante */}
         <div className="mt-12 max-w-4xl mx-auto">
-          <Card className="bg-gradient-to-r from-warning-50 via-yellow-50 to-warning-50 border-2 border-warning-200">
+          <Card className="bg-warning-50 border-2 border-warning-200">
             <CardBody className="p-8 text-center">
               <Lightbulb className="w-12 h-12 text-warning-600 mx-auto mb-4" />
               <p className="text-xl font-bold text-customgray mb-3">
@@ -511,9 +511,9 @@ export default async function MetodoHugotechPage({
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-primary-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-primary-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4">
                 <Heart className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -529,9 +529,9 @@ export default async function MetodoHugotechPage({
             </CardBody>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-secondary-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-secondary-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-secondary to-success-600 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-4">
                 <Target className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -547,9 +547,9 @@ export default async function MetodoHugotechPage({
             </CardBody>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-success-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-success-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-success-600 to-primary rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-success-600 rounded-xl flex items-center justify-center mb-4">
                 <Rocket className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -565,9 +565,9 @@ export default async function MetodoHugotechPage({
             </CardBody>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-warning-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-warning-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-warning-500 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-warning-600 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -583,9 +583,9 @@ export default async function MetodoHugotechPage({
             </CardBody>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-primary-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-primary-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary via-secondary to-primary rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4">
                 <Brain className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -601,9 +601,9 @@ export default async function MetodoHugotechPage({
             </CardBody>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-br from-white to-secondary-50/30">
+          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border border-secondary-100">
             <CardBody className="p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center mb-4">
+              <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-4">
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-customgray mb-3">
@@ -623,7 +623,7 @@ export default async function MetodoHugotechPage({
 
       {/* Cross-Link a Coaching Tecnológico */}
       <section className="mb-20">
-        <Card className="bg-gradient-to-r from-primary-50 via-secondary-50 to-primary-50 border-2 border-primary-100">
+        <Card className="bg-primary-50 border-2 border-primary-200">
           <CardBody className="p-10 md:p-14">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">
@@ -654,7 +654,7 @@ export default async function MetodoHugotechPage({
                 </Link>
               </div>
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary via-secondary to-primary rounded-3xl flex items-center justify-center shadow-2xl">
+                <div className="w-32 h-32 bg-primary rounded-3xl flex items-center justify-center shadow-2xl">
                   <Brain className="w-16 h-16 text-white" />
                 </div>
               </div>
@@ -664,7 +664,7 @@ export default async function MetodoHugotechPage({
       </section>
       {/* CTA Final */}
       <section className="mt-24">
-        <Card className="bg-gradient-to-br from-primary via-secondary to-primary border-4 border-primary-200 overflow-hidden relative">
+        <Card className="bg-primary border-4 border-primary-300 overflow-hidden relative">
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           <CardBody className="p-12 md:p-20 text-center relative z-10">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-8 shadow-xl">
