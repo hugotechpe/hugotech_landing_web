@@ -47,6 +47,7 @@ const routes = [
   },
 
   // Contenido y recursos
+  { path: "/blog", priority: 0.8, changeFrequency: "daily" as const },
   { path: "/testimonials", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/docs", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" as const },

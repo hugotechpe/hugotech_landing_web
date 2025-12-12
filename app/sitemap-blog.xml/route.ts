@@ -5,8 +5,45 @@ import { client } from "@/lib/sanity.client";
 const baseUrl = "https://hugotech.pe";
 const locales = ["es", "en"] as const;
 
+// Artículos de blog estáticos (legacy posts antes de Sanity)
+const staticBlogPosts = [
+  {
+    slug: "burnout-silencioso-tech-2026",
+    lastModified: new Date("2025-12-03"),
+    priority: 0.9,
+  },
+  {
+    slug: "estancamiento-senior-developer-2026",
+    lastModified: new Date("2025-12-03"),
+    priority: 0.9,
+  },
+  {
+    slug: "liderazgo-tech-leads-introvertidos-2026",
+    lastModified: new Date("2025-12-03"),
+    priority: 0.9,
+  },
+] as const;
+
 export async function GET() {
   const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  // Agregar artículos estáticos primero (alta prioridad SEO)
+  staticBlogPosts.forEach((post) => {
+    locales.forEach((locale) => {
+      sitemapEntries.push({
+        url: `${baseUrl}/${locale}/blog/${post.slug}`,
+        lastModified: post.lastModified,
+        changeFrequency: "monthly",
+        priority: post.priority,
+        alternates: {
+          languages: {
+            es: `${baseUrl}/es/blog/${post.slug}`,
+            en: `${baseUrl}/en/blog/${post.slug}`,
+          },
+        },
+      });
+    });
+  });
 
   // Obtener posts dinámicos del blog desde Sanity
   try {
