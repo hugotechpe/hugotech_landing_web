@@ -589,6 +589,52 @@ export default function CoachingTecnologicoPage() {
         </div>
       </section>
 
+      {/* Cross-Link a Método HugoTech */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto max-w-7xl px-6">
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-gradient-to-r from-secondary-50 via-primary-50 to-secondary-50 border-2 border-secondary-100">
+              <CardBody className="p-10 md:p-14">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-32 h-32 bg-gradient-to-br from-secondary via-primary to-secondary rounded-3xl flex items-center justify-center shadow-2xl">
+                      <Rocket className="w-16 h-16 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <Chip className="mb-4" color="secondary" size="lg" variant="flat">
+                      📘 {t("hero.chip").includes("Ontológico") ? "Método Completo" : "Complete Method"}
+                    </Chip>
+                    <h3 className="text-3xl md:text-4xl font-bold text-customgray mb-4">
+                      {t("hero.chip").includes("Ontológico")
+                        ? "Descubre el Método HugoTech Completo"
+                        : "Discover the Complete HugoTech Method"}
+                    </h3>
+                    <p className="text-lg md:text-xl text-default-700 mb-6 leading-relaxed">
+                      {t("hero.chip").includes("Ontológico")
+                        ? "El coaching ontológico es parte del Método HugoTech. Si estás comenzando tu carrera tech o buscas mentoría técnica, conoce nuestro método completo que integra mentoría + coaching + IA."
+                        : "Ontological coaching is part of the HugoTech Method. If you're starting your tech career or looking for technical mentorship, discover our complete method that integrates mentoring + coaching + AI."}
+                    </p>
+                    <Link href={t("hero.chip").includes("Ontológico") ? "/es/metodo-hugotech" : "/en/metodo-hugotech"}>
+                      <Button 
+                        color="secondary" 
+                        size="lg" 
+                        className="font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                        endContent={<Target className="w-5 h-5" />}
+                      >
+                        {t("hero.chip").includes("Ontológico")
+                          ? "Ver Método HugoTech"
+                          : "View HugoTech Method"}
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Section - Keywords Semánticas para IA */}
       <section className="py-12 bg-white">
         <div className="container mx-auto max-w-6xl px-6">

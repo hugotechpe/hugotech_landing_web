@@ -16,7 +16,8 @@ import {
   Bot,
   Lightbulb,
   MessageCircle,
-  Award
+  Award,
+  ArrowRight
 } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
@@ -590,7 +591,47 @@ export default async function MetodoHugotechPage({
           </CardBody>
         </Card>
       </section>
-
+      {/* Cross-Link a Coaching Tecnológico */}
+      <section className="mb-20">
+        <Card className="bg-gradient-to-r from-primary-50 via-secondary-50 to-primary-50 border-2 border-primary-100">
+          <CardBody className="p-10 md:p-14">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1">
+                <Chip className="mb-4" color="warning" size="lg" variant="flat">
+                  {locale === "es" ? "🚀 Transformación Profunda" : "🚀 Deep Transformation"}
+                </Chip>
+                <h3 className="text-3xl md:text-4xl font-bold text-customgray mb-4">
+                  {locale === "es"
+                    ? "¿Ya eres líder tech? Descubre RecoProgramación® Ontológica"
+                    : "Already a tech leader? Discover Ontological ReCode®"}
+                </h3>
+                <p className="text-lg md:text-xl text-default-700 mb-6 leading-relaxed">
+                  {locale === "es"
+                    ? "Si ya lideras equipos pero sientes que algo interno te bloquea, o te preguntas quién eres sin el cargo... el coaching ontológico transforma quién ERES cuando lideras, no solo qué HACES."
+                    : "If you already lead teams but feel something internal is blocking you, or wonder who you are without the title... ontological coaching transforms who you ARE when you lead, not just what you DO."}
+                </p>
+                <Link href={`/${locale}/coaching-tecnologico`}>
+                  <Button 
+                    color="primary" 
+                    size="lg" 
+                    className="font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                    endContent={<ArrowRight className="w-5 h-5" />}
+                  >
+                    {locale === "es" 
+                      ? "Conocer RecoProgramación® Ontológica" 
+                      : "Discover Ontological ReCode®"}
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 bg-gradient-to-br from-primary via-secondary to-primary rounded-3xl flex items-center justify-center shadow-2xl">
+                  <Brain className="w-16 h-16 text-white" />
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
+      </section>
       {/* CTA Final */}
       <section className="mt-24">
         <Card className="bg-gradient-to-br from-primary via-secondary to-primary border-4 border-primary-200 overflow-hidden relative">
