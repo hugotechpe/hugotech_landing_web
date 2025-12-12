@@ -617,9 +617,9 @@ export default function CoachingTecnologicoPage() {
                     </p>
                     <Link href="/metodo-hugotech">
                       <Button 
-                        color="secondary" 
+                        color="primary" 
                         size="lg" 
-                        className="font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                        className="font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-white"
                         endContent={<Target className="w-5 h-5" />}
                       >
                         {t("hero.chip").includes("Ontológico")

@@ -217,6 +217,29 @@
         }
       ]
     },
+    "Caminos": {
+      "title": "Dos Caminos, Un Mismo Espacio de Transformación",
+      "subtitle": "Elige el acompañamiento que necesitas según tu momento profesional",
+      "coaching": {
+        "title": "Coaching Ontológico",
+        "target": "Para Seniors, Tech Leads, EMs, CTOs",
+        "description": "Transformación profunda del OBSERVADOR que eres. Si ya dominas lo técnico pero necesitas liderar desde tu autenticidad, prevenir burnout o escalar equipos sin perder tu esencia.",
+        "benefit1": "Cambias QUIÉN ERES cuando lideras",
+        "benefit2": "Prevención y recuperación de burnout profundo",
+        "benefit3": "Alto rendimiento sostenible desde tu SER",
+        "cta": "Conocer Coaching Ontológico"
+      },
+      "metodo": {
+        "title": "El Camino HugoTech",
+        "target": "Para Juniors, Career Changers, Mid-Level",
+        "description": "Acompañamiento integral que combina mentoría técnica, coaching y uso de IA. Si estás comenzando tu carrera tech o necesitas claridad sobre tu camino profesional.",
+        "benefit1": "Plan de carrera personalizado paso a paso",
+        "benefit2": "Mentoría técnica + coaching de mindset",
+        "benefit3": "Acompañamiento hasta tu primer empleo tech",
+        "cta": "Descubrir El Camino HugoTech"
+      },
+      "footer": "No tienes que elegir desde el inicio. La primera sesión gratuita nos ayuda a encontrar el mejor camino para ti."
+    },
     "MePresento": {
       "title": "Nuestro Manifiesto: Innovación con Alma",
       "subtitle": "No estamos aquí para 'hackear' el sistema. Estamos aquí para construir uno mejor.",

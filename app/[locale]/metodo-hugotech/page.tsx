@@ -159,11 +159,11 @@ export default async function MetodoHugotechPage({
               : "I don't sell you a method because I didn't follow one either. I accompany you from my own transformation."}
           </p>
         </div>
-        <Card className=\"bg-white border-2 border-primary-200 hover:shadow-2xl transition-shadow\">
-          <CardBody className=\"p-8 md:p-12\">
-            <div className=\"grid md:grid-cols-2 gap-8\">
+        <Card className="bg-white border-2 border-primary-200 hover:shadow-2xl transition-shadow">
+          <CardBody className="p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8">
               {/* Lado izquierdo: La historia */}
-              <div className=\"space-y-6\">
+              <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-warning-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Zap className="w-6 h-6 text-warning-600" />

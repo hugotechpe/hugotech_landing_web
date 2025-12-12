@@ -12,6 +12,7 @@ import { EmpresasSection } from "@/features/home/components/EmpresasSection";
 import { CoachingSection } from "@/features/home/components/CoachingSection";
 import { TestimoniosSection } from "@/features/home/components/TestimoniosSection";
 import { PilaresSection } from "@/features/home/components/PilaresSection";
+import { CaminosSection } from "@/features/home/components/CaminosSection";
 import {
   JsonLd,
   personSchema,
@@ -149,6 +150,7 @@ export default async function Home({
         <PorQueGratuitoSection />
         <CoachingTechFAQSection />
         <PilaresSection />
+        <CaminosSection />
         <EmpresasSection />
         <TestimoniosSection />
         <AgendaSection />

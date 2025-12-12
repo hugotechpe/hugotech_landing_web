@@ -144,6 +144,29 @@
         }
       ]
     },
+    "Caminos": {
+      "title": "Two Paths, One Transformation Space",
+      "subtitle": "Choose the support you need based on your professional moment",
+      "coaching": {
+        "title": "Ontological Coaching",
+        "target": "For Seniors, Tech Leads, EMs, CTOs",
+        "description": "Deep transformation of the OBSERVER you are. If you already master the technical but need to lead from authenticity, prevent burnout or scale teams without losing your essence.",
+        "benefit1": "You change WHO YOU ARE when you lead",
+        "benefit2": "Prevention and recovery from deep burnout",
+        "benefit3": "Sustainable high performance from your BEING",
+        "cta": "Discover Ontological Coaching"
+      },
+      "metodo": {
+        "title": "The HugoTech Path",
+        "target": "For Juniors, Career Changers, Mid-Level",
+        "description": "Comprehensive support combining technical mentoring, coaching and AI use. If you're starting your tech career or need clarity on your professional path.",
+        "benefit1": "Personalized career plan step by step",
+        "benefit2": "Technical mentoring + mindset coaching",
+        "benefit3": "Support until your first tech job",
+        "cta": "Discover The HugoTech Path"
+      },
+      "footer": "You don't have to choose from the start. The free first session helps us find the best path for you."
+    },
     "MePresento": {
       "title": "Our Manifesto: Innovation with Soul 🧠💚",
       "subtitle": "We're not here to 'hack' the system. We're here to build a better one.",
