@@ -394,7 +394,7 @@ export default async function MetodoHugotechPage({
                 </div>
                 <div>
                   <Chip color="primary" size="lg" variant="flat">
-                    {locale === "es" ? "🧠 Coaching Ontológico" : "🧠 Ontological Coaching"}
+                    {locale === "es" ? "🧠 Coaching Tecnológico (Ontológico)" : "🧠 Tech Coaching (Ontological)"}
                   </Chip>
                 </div>
               </div>

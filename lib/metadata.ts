@@ -290,12 +290,12 @@ export const pageMetadata = {
   coachingTecnologico: {
     es: {
       title:
-        "Coaching Ontológico para Líderes Tech | Hugo Casanova - Transformación del SER",
+        "Coaching Tecnológico para Líderes Tech | Hugo Casanova - Basado en Ontología",
       description:
-        "Coaching ontológico especializado para CTOs, Tech Leads y Engineering Managers. Hugo Casanova, ingeniero con 18+ años + coach ontológico en formación ICF. Transforma tu SER, no solo tu hacer. Del observador que eres a los resultados que generas.",
+        "Coaching tecnológico basado en ontología del lenguaje para CTOs, Tech Leads y Engineering Managers. Hugo Casanova, ingeniero con 18+ años + coach ontológico en formación ICF. Transforma tu SER, no solo tu hacer. Del observador que eres a los resultados que generas.",
       keywords: [
-        "coaching ontológico",
-        "coaching ontológico para líderes",
+        "coaching tecnológico",
+        "coaching tecnológico para líderes",
         "Hugo Casanova coach ontológico",
         "transformación del ser",
         "coaching para CTOs",

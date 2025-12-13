@@ -6,7 +6,7 @@ import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { CheckCircle2, Users, Zap, Rocket, Target } from "lucide-react";
 
 import { LazyCalendlyEmbed } from "@/components/calendly/LazyCalendlyEmbed";
@@ -18,6 +18,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function CoachingTecnologicoPage() {
   const t = useTranslations("CoachingTecnologico");
+  const locale = useLocale();
 
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
@@ -611,9 +612,9 @@ export default function CoachingTecnologicoPage() {
                         : "Discover the Complete HugoTech Method"}
                     </h3>
                     <p className="text-lg md:text-xl text-default-700 mb-6 leading-relaxed">
-                      {t("hero.chip").includes("Ontológico")
-                        ? "El coaching ontológico es parte del Método HugoTech. Si estás comenzando tu carrera tech o buscas mentoría técnica, conoce nuestro método completo que integra mentoría + coaching + IA."
-                        : "Ontological coaching is part of the HugoTech Method. If you're starting your tech career or looking for technical mentorship, discover our complete method that integrates mentoring + coaching + AI."}
+                      {locale === "es"
+                        ? "El coaching tecnológico basado en ontología es parte del Método HugoTech. Si estás comenzando tu carrera tech o buscas mentoría técnica, conoce nuestro método completo que integra mentoría + coaching + IA."
+                        : "Tech coaching based on ontology is part of the HugoTech Method. If you're starting your tech career or looking for technical mentoring, discover our complete method that integrates mentoring + coaching + AI."}
                     </p>
                     <Link href="/metodo-hugotech">
                       <Button 
@@ -622,7 +623,7 @@ export default function CoachingTecnologicoPage() {
                         className="font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-white"
                         endContent={<Target className="w-5 h-5" />}
                       >
-                        {t("hero.chip").includes("Ontológico")
+                        {locale === "es"
                           ? "Ver Método HugoTech"
                           : "View HugoTech Method"}
                       </Button>

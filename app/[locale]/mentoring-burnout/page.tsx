@@ -288,13 +288,13 @@ export default async function MentoringBurnoutPage({
                     </Chip>
                     <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                       {locale === "es" 
-                        ? "¿El burnout viene de más adentro? Descubre el Coaching Ontológico"
-                        : "Does burnout come from deeper within? Discover Ontological Coaching"}
+                        ? "¿El burnout viene de más adentro? Descubre el Coaching Tecnológico Ontológico"
+                        : "Does burnout come from deeper within? Discover Ontological Tech Coaching"}
                     </h3>
                     <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
                       {locale === "es"
-                        ? "Si el burnout no es solo cansancio, sino una crisis de identidad ('¿quién soy sin mi trabajo?'), el coaching ontológico transforma quién ERES cuando lideras, no solo cómo gestionas el estrés."
-                        : "If burnout is not just tiredness, but an identity crisis ('who am I without my work?'), ontological coaching transforms who you ARE when you lead, not just how you manage stress."}
+                        ? "Si el burnout no es solo cansancio, sino una crisis de identidad ('¿quién soy sin mi trabajo?'), el coaching tecnológico basado en ontología transforma quién ERES cuando lideras, no solo cómo gestionas el estrés."
+                        : "If burnout is not just tiredness, but an identity crisis ('who am I without my work?'), tech coaching based on ontology transforms who you ARE when you lead, not just how you manage stress."}
                     </p>
                     <Link href="/coaching-tecnologico">
                       <Button 
@@ -304,8 +304,8 @@ export default async function MentoringBurnoutPage({
                         endContent={<ArrowRight className="w-5 h-5" />}
                       >
                         {locale === "es" 
-                          ? "Conocer Coaching Ontológico Anti-Burnout" 
-                          : "Discover Ontological Anti-Burnout Coaching"}
+                          ? "Conocer Coaching Tecnológico Anti-Burnout" 
+                          : "Discover Tech Anti-Burnout Coaching"}
                       </Button>
                     </Link>
                   </div>

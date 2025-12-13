@@ -346,13 +346,13 @@ export default async function LiderazgoIntrovertidosPage({
                     </Chip>
                     <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                       {locale === "es" 
-                        ? "Liderazgo Auténtico desde Adentro: Coaching Ontológico"
-                        : "Authentic Leadership from Within: Ontological Coaching"}
+                        ? "Liderazgo Auténtico desde Adentro: Coaching Tecnológico Ontológico"
+                        : "Authentic Leadership from Within: Ontological Tech Coaching"}
                     </h3>
                     <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
                       {locale === "es"
-                        ? "Ser introvertido no es debilidad, es tu superpoder. El Coaching Ontológico te ayuda a liderar sin traicionar quién eres: desde la escucha profunda, no desde el ruido corporativo."
-                        : "Being introverted isn't a weakness, it's your superpower. Ontological Coaching helps you lead without betraying who you are: from deep listening, not corporate noise."}
+                        ? "Ser introvertido no es debilidad, es tu superpoder. El Coaching Tecnológico basado en Ontología te ayuda a liderar sin traicionar quién eres: desde la escucha profunda, no desde el ruido corporativo."
+                        : "Being introverted isn't a weakness, it's your superpower. Tech Coaching based on Ontology helps you lead without betraying who you are: from deep listening, not corporate noise."}
                     </p>
                     <Link href="/coaching-tecnologico">
                       <Button 
@@ -362,8 +362,8 @@ export default async function LiderazgoIntrovertidosPage({
                         endContent={<ArrowRight className="w-5 h-5" />}
                       >
                         {locale === "es" 
-                          ? "Descubrir Coaching Ontológico" 
-                          : "Discover Ontological Coaching"}
+                          ? "Descubrir Coaching Tecnológico" 
+                          : "Discover Tech Coaching"}
                       </Button>
                     </Link>
                   </div>
