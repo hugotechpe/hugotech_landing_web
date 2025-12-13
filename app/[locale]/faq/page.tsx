@@ -56,7 +56,7 @@ function parseLinks(text: string) {
 export default function FAQPage() {
   const t = useTranslations("FAQ");
 
-  // Preguntas frecuentes para JSON-LD
+  // Preguntas frecuentes para JSON-LD (sin links internos para schema)
   const faqItems = [
     "que-es-coaching-desde-mi-perspectiva",
     "que-es-mentor-coach",
@@ -85,7 +85,11 @@ export default function FAQPage() {
     "como-agendar",
   ].map((key) => ({
     question: t(`items.${key}.question`),
-    answer: t(`items.${key}.answer`),
+    // Limpiar los tags <link> del answer para JSON-LD
+    answer: (t.raw(`items.${key}.answer`) as string).replace(
+      /<link href='[^']+'>(.*?)<\/link>/g,
+      "$1",
+    ),
   }));
 
   return (
@@ -199,7 +203,7 @@ export default function FAQPage() {
                         {t(`items.${key}.question`)}
                       </h3>
                       <div className="pl-10 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                        {parseLinks(t(`items.${key}.answer`))}
+                        {parseLinks(t.raw(`items.${key}.answer`) as string)}
                       </div>
                     </CardBody>
                   </Card>
