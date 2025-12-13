@@ -22,6 +22,11 @@ export default function FAQPage() {
 
   // Preguntas frecuentes para JSON-LD
   const faqItems = [
+    "que-es-coaching-desde-mi-perspectiva",
+    "que-es-mentor-coach",
+    "que-es-mentor-coach-tech",
+    "que-es-coaching-tech",
+    "para-que-sirve-coaching-vida",
     "por-que-senior-necesita-mentor",
     "como-ayuda-mentor-burnout",
     "diferencia-mentor-coach-tech",
@@ -122,6 +127,11 @@ export default function FAQPage() {
           >
             <div className="space-y-6">
               {[
+                "que-es-coaching-desde-mi-perspectiva",
+                "que-es-mentor-coach",
+                "que-es-mentor-coach-tech",
+                "que-es-coaching-tech",
+                "para-que-sirve-coaching-vida",
                 "por-que-senior-necesita-mentor",
                 "como-ayuda-mentor-burnout",
                 "diferencia-mentor-coach-tech",
