@@ -68,9 +68,47 @@ export default function FAQPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
               {t("hero.title")}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-4">
               {t("hero.subtitle")}
             </p>
+            <p className="text-lg text-gray-500 dark:text-gray-500 italic">
+              — Hugo Casanova, Mentor Tech & Coach
+            </p>
+          </motion.div>
+        </section>
+
+        {/* CTA Section - Inicio */}
+        <section className="py-12 px-4 bg-white dark:bg-gray-900 border-b-2 border-success-100">
+          <motion.div
+            animate="visible"
+            className="max-w-3xl mx-auto text-center"
+            initial="hidden"
+            variants={fadeIn}
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+              {t("cta.title")}
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+              {t("cta.subtitle")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold bg-success-500 hover:bg-success-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+                href="https://calendly.com/hugotech/mentor-coaching-1-a-1"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {t("cta.buttonPrimary")}
+              </a>
+              <a
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold bg-white hover:bg-gray-50 text-success-600 border-2 border-success-500 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                href="https://wa.me/51946483010?text=Hola%20Hugo%2C%20tengo%20una%20pregunta"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {t("cta.buttonSecondary")}
+              </a>
+            </div>
           </motion.div>
         </section>
 
