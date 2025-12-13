@@ -1701,7 +1701,7 @@
       },
       "sesiones-empresas": {
         "question": "Do you offer corporate programs?",
-        "answer": "Yes. I work with tech teams through agile leadership workshops, executive coaching, organizational culture programs and high-performance team transformation. B2B services have an investment because they require structure, follow-up and measurable results."
+        "answer": "Yes. I work with tech teams through agile leadership workshops, executive coaching, organizational culture programs and high-performance team transformation. B2B services have an investment because they require structure, follow-up and measurable results. <link href='/empresas'>Discover corporate programs here</link>."
       },
       "modalidad": {
         "question": "Are sessions in-person or online?",
@@ -1745,7 +1745,7 @@
       },
       "que-es-coaching-tecnologico": {
         "question": "What is tech coaching?",
-        "answer": "Tech coaching is a specialized professional development process for people in the tech sector (developers, QA, tech leads, product managers). It combines traditional coaching (self-awareness, emotional management, decision-making) with tech industry expertise: tech career transitions, dev team leadership, impostor syndrome in programmers, startup burnout, tech salary negotiation, and tech stack decisions. Unlike generic executive coaching, tech coaches understand the jargon, culture, and unique challenges of working in technology: sprints, code reviews, oncall, deployments, software architecture, and the constant pressure to stay updated. It's mentoring + coaching applied to the tech world."
+        "answer": "Tech coaching is a specialized professional development process for people in the tech sector (developers, QA, tech leads, product managers). It combines traditional coaching (self-awareness, emotional management, decision-making) with tech industry expertise: tech career transitions, dev team leadership, impostor syndrome in programmers, startup burnout, tech salary negotiation, and tech stack decisions. Unlike generic executive coaching, tech coaches understand the jargon, culture, and unique challenges of working in technology: sprints, code reviews, oncall, deployments, software architecture, and the constant pressure to stay updated. It's mentoring + coaching applied to the tech world. <link href='/coaching-tecnologico'>Learn more about my tech coaching approach here</link>."
       },
       "cuales-son-4-pilares-coaching": {
         "question": "What are the 4 pillars of coaching?",

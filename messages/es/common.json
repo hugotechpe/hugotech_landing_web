@@ -1836,7 +1836,7 @@
       },
       "sesiones-empresas": {
         "question": "¿Ofrecen programas para empresas?",
-        "answer": "Sí. Trabajo con equipos tech a través de workshops de liderazgo ágil, coaching ejecutivo, programas de cultura organizacional y transformación de equipos de alto rendimiento. Los servicios B2B tienen inversión porque requieren estructura, seguimiento y resultados medibles."
+        "answer": "Sí. Trabajo con equipos tech a través de workshops de liderazgo ágil, coaching ejecutivo, programas de cultura organizacional y transformación de equipos de alto rendimiento. Los servicios B2B tienen inversión porque requieren estructura, seguimiento y resultados medibles. <link href='/empresas'>Descubre los programas corporativos aquí</link>."
       },
       "modalidad": {
         "question": "¿Las sesiones son presenciales u online?",
@@ -1880,7 +1880,7 @@
       },
       "que-es-coaching-tecnologico": {
         "question": "¿Qué es el coaching tecnológico?",
-        "answer": "El coaching tecnológico es un proceso de desarrollo profesional especializado para personas del sector tech (developers, QA, tech leads, product managers). Combina coaching tradicional (autoconocimiento, gestión emocional, toma de decisiones) con expertise de la industria tecnológica: transiciones de carrera tech, liderazgo de equipos de desarrollo, síndrome del impostor en programadores, burnout en startups, negociación salarial tech, y decisiones de stack tecnológico. A diferencia del coaching ejecutivo genérico, el coach tecnológico entiende la jerga, la cultura, y los desafíos únicos de trabajar en tecnología: sprints, code reviews, oncall, deployments, arquitectura de software, y la presión constante de estar actualizado. Es mentoring + coaching aplicado al mundo tech."
+        "answer": "El coaching tecnológico es un proceso de desarrollo profesional especializado para personas del sector tech (developers, QA, tech leads, product managers). Combina coaching tradicional (autoconocimiento, gestión emocional, toma de decisiones) con expertise de la industria tecnológica: transiciones de carrera tech, liderazgo de equipos de desarrollo, síndrome del impostor en programadores, burnout en startups, negociación salarial tech, y decisiones de stack tecnológico. A diferencia del coaching ejecutivo genérico, el coach tecnológico entiende la jerga, la cultura, y los desafíos únicos de trabajar en tecnología: sprints, code reviews, oncall, deployments, arquitectura de software, y la presión constante de estar actualizado. Es mentoring + coaching aplicado al mundo tech. <link href='/coaching-tecnologico'>Conoce más sobre mi enfoque de coaching tecnológico aquí</link>."
       },
       "cuales-son-4-pilares-coaching": {
         "question": "¿Cuáles son los 4 pilares del coaching?",
