@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import { motion } from "framer-motion";
+import { Link } from "@/i18n/navigation";
 
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
@@ -16,6 +17,41 @@ const fadeIn = {
 const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
+
+// Helper function to convert <link> tags to React Link components
+function parseLinks(text: string) {
+  const linkRegex = /<link href='([^']+)'>([^<]+)<\/link>/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+
+    // Add the link
+    parts.push(
+      <Link
+        key={match.index}
+        className="text-success-600 dark:text-success-400 hover:text-success-700 dark:hover:text-success-300 underline font-medium transition-colors"
+        href={match[1] as any}
+      >
+        {match[2]}
+      </Link>,
+    );
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
 
 export default function FAQPage() {
   const t = useTranslations("FAQ");
@@ -163,7 +199,7 @@ export default function FAQPage() {
                         {t(`items.${key}.question`)}
                       </h3>
                       <div className="pl-10 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                        {t(`items.${key}.answer`)}
+                        {parseLinks(t(`items.${key}.answer`))}
                       </div>
                     </CardBody>
                   </Card>
